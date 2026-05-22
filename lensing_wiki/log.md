@@ -4,6 +4,84 @@ Append-only record of what was done to this wiki, by whom, and when.
 
 ---
 
+## 2026-05-22 — Scope expansion + sibling sub-wikis
+
+**By:** Claude (Opus 4.7, PyAutoLabs feature/pyautopaper-wiki-expansion
+session).
+
+**What changed in `lensing_wiki/` itself**
+
+- Added new source-collection pages:
+  - `sources/pyautolens-papers.md` — PyAutoLens-self / lead-author
+    works pulled from `PyAutoLens/` folder and root-level singletons
+    (1807.05566, AutoLens.pdf, autolens_paper1_resubmit*, MN-* proofs,
+    RusuMNRASProof).
+  - `sources/frb-lenses.md` — `FRBLenses/` (3 papers).
+  - `sources/weak-lensing.md` — `WeakLensing/`, `WeakLensingHaloShape/`,
+    root `Mandelbaum2018*`.
+  - `sources/wdm-and-lya.md` — `Lyman_Alpha_Forest/` papers and stream
+    gaps.
+  - `sources/reviews-and-summaries.md` — `Summarys/` folder.
+- Extended existing source pages:
+  - `sources/interferometric-lensing.md` — added `uvplane/` papers.
+  - `sources/cluster-lensing.md` — added `Clusters/`, root cluster
+    PDFs (Postman2012Abell, Abell1201XRay, Harvey2015*).
+  - `sources/dark-matter-substructure.md` — added 11 `Substructure/`
+    papers.
+  - `sources/gr-cosmology.md` — added root `Planck2015.pdf` and
+    `LSS/Lee2016_DM_Evinronments_Bolshoi_Planck.pdf`.
+
+**Sibling sub-wikis created at repo root**
+
+- `smbh_wiki/` — supermassive black holes (44 SMBHs/ PDFs + GWB/).
+- `cti_wiki/` — Charge Transfer Inefficiency (40 CTI/, 5 Euclid/,
+  root Euclid TP + Henk).
+- `methods_wiki/` — statistical and computational methods (Stats,
+  GaussianLinearModels, PPLs, Deep Learning, Software, Simulation,
+  root NUFFT / PolyChord / MessagePassing / BigData / imfit / Profit
+  / PyLops + Medical).
+- `galaxies_wiki/` — galaxy formation and evolution (MassiveEllPaper,
+  Ellipticals, Bulge_Disk_Decomp, LightProFFits, IFUs, Manga, COSMOS,
+  StellarHalos, High_Redshift_galaxies, Dark_Matter_Geometry,
+  AndrewSuggests, UnRead, SpiralsMorph, Collaborations, plus most
+  root-level singletons).
+
+Each sibling sub-wiki has its own `CLAUDE.md` (inherits schema from
+`lensing_wiki/CLAUDE.md`, diverges on `## Scope`), `index.md`,
+`log.md`, plus initial concept / entity / sources content.
+
+**Top-level repo restructure**
+
+- New `PyAutoPaper/index.md` — top-level map of all sub-wikis +
+  reading queue.
+- `PyAutoPaper/README.md` rewritten to describe the multi-wiki layout.
+- `admin_jammy/papers.md` moved to `PyAutoPaper/reading-queue.md`
+  with a header explaining the move. References fixed in
+  `PyAutoPrompt/README.md`, `admin_jammy/README.md`,
+  `admin_jammy/claude.md`, and (un-versioned local file)
+  `PyAutoLabs/CLAUDE.md`.
+
+**PDF removal (separate commit, same day)**
+
+After backup-location confirmation, all in-repo PDFs were removed
+(~615 files across the historic folders). The `File:` line in every
+stub is the archival anchor for restoration. Preserved: all `.bib`,
+`.sty`, README.md, the no-extension reference files (`Hubble1926.321H`,
+`devaucoleurs1948.247D`, `CTI/Hall1952Theory`, etc.), and
+`Medical/Liu2024CUPRCT.htm`.
+
+**Status of new stubs**
+
+All entries created in this build are `status: stub` — filename-inferred
+summaries, not yet verified against PDFs. Same convention as the
+initial 193-paper build.
+
+**Provenance**
+
+Total wiki coverage after this build: ~615 papers across 5 sub-wikis.
+
+---
+
 ## 2026-05-22 — Initial build
 
 **By:** Claude (Opus 4.7, PyAutoLens AI-assistant wiki bootstrap session).

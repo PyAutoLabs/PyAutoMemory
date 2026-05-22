@@ -149,7 +149,92 @@ subhalo predictions.
 **Summary (stub):** Constrains the perturber's c-M relation; J0946
 appears overconcentrated for CDM.
 
+## Benitez 2020 — detailed structure of halos
+
+**File:** `Substructure/Benitez2020DetailedstructureHalos.pdf`
+**Concepts:** [[dark-matter-substructure]]
+**Summary (stub):** Detailed halo-substructure analysis (Benitez 2020).
+(stub — verify against PDF)
+
+## Despali 2018 — baryons on substructure
+
+**File:** `Substructure/Despali2018BaryonsonSub.pdf`
+**Concepts:** [[dark-matter-substructure]]
+**Summary (stub):** Effects of baryonic physics on subhalo populations.
+(stub — verify against PDF)
+
+## Despali 2018 — LOS
+
+**File:** `Substructure/Despali2018LOS.pdf`
+**Concepts:** [[line-of-sight-effects]], [[dark-matter-substructure]]
+**Summary (stub):** Line-of-sight halos vs in-host subhalos in lensing.
+(stub — verify against PDF)
+
+## Despali 2021 — sensitivity
+
+**File:** `Substructure/Despali2021Senstitoty.pdf`
+**Concepts:** [[dark-matter-substructure]]
+**Summary (stub):** Sensitivity analysis of lensing substructure
+detection.
+(stub — verify against PDF)
+
+## Despali 2024 — sensitivity II
+
+**File:** `Substructure/Despali2024SensitivityII.pdf`
+**Concepts:** [[dark-matter-substructure]]
+**Summary (stub):** Follow-up sensitivity analysis.
+(stub — verify against PDF)
+
+## Loudas 2022 — milli-lensing
+
+**File:** `Substructure/Loudas2022MiliLensing.pdf`
+**Concepts:** [[dark-matter-substructure]]
+**Summary (stub):** Milli-arcsec-scale lensing of compact sources by
+sub-galactic halos.
+(stub — verify against PDF)
+
+## Nightingale 2022 — scanning for substructure
+
+**File:** `Substructure/Nightingale2022Scanm.pdf`
+**Concepts:** [[gravitational-imaging]], [[dark-matter-substructure]],
+[[pyautolens]]
+**Summary (stub):** Nightingale et al. systematic scanning approach to
+substructure detection in PyAutoLens.
+(stub — verify against PDF)
+
+## Ritondale 2018 — BELLS
+
+**File:** `Substructure/Ritondale2018BELLS.pdf`
+**Concepts:** [[dark-matter-substructure]]
+**Summary (stub):** BELLS-survey substructure analysis.
+(stub — verify against PDF)
+
+## Ritondale 2018 — BELLS Lyman-α
+
+**File:** `Substructure/Ritondale2018BELLLymaAlphs.pdf`
+**Concepts:** [[dark-matter-substructure]]
+**Summary (stub):** BELLS Lyman-α background sources for substructure
+detection.
+(stub — verify against PDF)
+
+## Sawala 2016 — the chosen few
+
+**File:** `Substructure/Sawala2016TheChosenFew.pdf`
+**Concepts:** [[dark-matter-substructure]]
+**Summary (stub):** APOSTLE / EAGLE Local-Group satellite halos —
+"chosen few" zoom simulations.
+(stub — verify against PDF)
+
+## Vegetti 2018 — stellar streams / neutrinos
+
+**File:** `Substructure/Vegetti2018StellarNeutrinos.pdf`
+**Concepts:** [[dark-matter-substructure]], [[dark-matter-physics]]
+**Summary (stub):** Vegetti on stellar-stream / lensing combined
+constraints on neutrino DM (verify scope).
+(stub — verify against PDF)
+
 ## See also
 
 - [[dark-matter-substructure]]
 - [[gravitational-imaging]]
+- [[sources-wdm-and-lya]]

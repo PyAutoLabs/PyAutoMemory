@@ -49,8 +49,33 @@ with MERLIN.
 **Summary (stub):** ALMA central-image detection / constraint. Filename
 year is mistyped (2071→2017?). Verify.
 
+## uvplane — Tazzari 2017 GALARIO
+
+**File:** `uvplane/Tazzari2017GALARIO.pdf`
+**Concepts:** [[interferometric-lensing]]
+**Summary (stub):** GALARIO — GPU-accelerated visibility synthesis for
+ALMA disk modelling; underlying NUFFT-style operator relevant to
+interferometric lens modelling.
+(stub — verify against PDF; cross-link `../methods_wiki/sources/nufft.md`.)
+
+## uvplane — image-plane gridding
+
+**File:** `uvplane/ImagePlaneGridding.pdf`
+**Concepts:** [[interferometric-lensing]]
+**Summary (stub):** Notes / paper on image-plane gridding for
+interferometric lensing.
+(stub — verify against PDF)
+
+## uvplane — radio gridding
+
+**File:** `uvplane/radiogridding.pdf`
+**Concepts:** [[interferometric-lensing]]
+**Summary (stub):** Radio-interferometric gridding methodology.
+(stub — verify against PDF)
+
 ## See also
 
 - [[interferometric-lensing]]
 - [[multipoles]] (cross-link: Stacey 2024 lives in
   [[sources-multipoles]])
+- `../methods_wiki/concepts/nufft.md`

@@ -1,0 +1,45 @@
+-> Luca
+
+    Hi James,
+
+    Very nice paper.
+    I only have a question: I remember there was the possibility (if not the baseline) that charge injection would happen with the shutter open, hence with stars and galaxies in the background.
+    This seems confirmed in your text as you mention that the sequence would last 565 s, the same of a typical VIS exposure.
+
+    If this is the case, do you think the presence of background objects would affect the analysis?
+
+    If instead the plan is to observe with the shutter closed, then forget my question (sorry, I didn’t follow Euclid too much in the last months).
+
+    Kind regards,
+    Luca
+
+-> Ruyman
+
+    https://drive.google.com/file/d/1ff56U5ShOAEZ5J79TyZHI_UNoLZvF7KW/view
+
+-> Jesper
+
+    Thank you for an interesting and well-written paper. I don’t have any major changes, but there were a few minor things that I wanted to point out:
+
+    Sect 2.2 and table 1:
+        In the middle of the paragraph you refer to table 2, but I think you mean table 1?
+        Table 1 has no units - is that on purpose? I assume that the tau values are in pixel shift times? (I think you refer to that in sect 5.2)
+        In section 2.1 you write that tau depends on the physical nature of the trap species, but I am not sure that the numbers in table 1 has any relation to the actual physical values that we find, for instance with trap pumping, but is rather a best fit representation to the broad distributions we find with the trap pumping method.
+
+    Figs 1,2,4, etc
+        It is a bit odd that your figures showing CIL examples has the readout in the upper left corner, when the axis starts in the lower left corner. That means that you clock towards 0 in x, and away from 0 in y. Can you flip the y-axis?
+        Consider using a uniform sequential colormap (will also be uniform in greyscale - for instance 'viridis') for your plots instead of the 'jet' colormap that goes from dark to light to dark.
+    Sect. 3.4.2: You list a number of things that can give a non-uniform CIL structure: "Voltage spikes, loose connections and faults in the charge injection electronics". However, these things would not give the repeatable pattern that you show in Fig 4, but something completely useless. This pattern comes from very small differences in the CI pixel structure for each column, which is inevitable in the production process. This pattern is highly repeatable as this is governed by kTC noise and not shot noise, as a normal photon flatfield image would. I cannot figure out if this matches with the way you simulate the non-uniform CIL? It sounds like all CILs are random?
+    Figure 3: 
+
+        You have 4 panels but refer to the right and left panel in the first line of the caption. Maybe number each panel and refer to those numbers in the caption instead?
+        Maybe change the title of the plots to 'Parallel (or Serial) CTI model EPER and species profiles (or EPER)'. That way the title is shorter and you can make the font bigger, so it is easier to read. 
+
+    Is Table 2 meant to show the exact same values in both lines?
+    You never reference figure 9. I think the reference to Fig 10 in sect 6.1 2nd para should be to Fig 9.
+    Sect 6.2: missing reference in 2nd paragraph
+    Sect 7.3.1: The paper you cite here, Skottfelt et al. 2017 (Journal of Astronomical Telescopes, Instruments, and Systems, 3, 028001), doesn't actually contain any Trap Pumping data. I suggest you reference this paper instead: http://oro.open.ac.uk/52705/
+
+-> Henk
+
+    See Documents/Papers
