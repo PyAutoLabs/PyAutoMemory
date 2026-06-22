@@ -141,3 +141,10 @@ Euclid Q1 entries without retaining local PDF paths or abstract summaries.
 Verified and migrated the two lensed-supernova and three plasma-lensing entries to compact
 claim support. Corrected the legacy Rydberg and Rogers labels and updated the lensed-supernova
 concept references without retaining local PDF paths.
+
+---
+
+## 2026-06-22 — Migrated microlensing IMF citation
+
+Verified the Jiménez-Vicente & Mediavilla lens-galaxy IMF paper and replaced its misspelt,
+filename-derived stub with compact claim support and canonical citation metadata.
