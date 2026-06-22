@@ -3,9 +3,9 @@ title: Lensed supernovae
 type: concept
 topics: [cosmology, transients]
 sources:
-  - Strong_Lens/Goobar2016_MultiImSuperNova.pdf
-  - Strong_Lens/Grillo2018RefsdelHo.pdf
-  - Strong_Lens/Ryberg2018StrongLensSupernovaRedshift7.pdf
+  - Goobar et al. 2017 — iPTF16geu
+  - Grillo et al. 2018 — SN Refsdal time-delay cosmography
+  - Rydberg et al. 2020 — LSST high-redshift forecasts
 status: drafted
 ---
 
@@ -25,12 +25,12 @@ to find hundreds.
 - **SN Refsdal** — Type II behind a cluster member, in a cluster lens
   ([[hubble-frontier-fields|HFF]] field). The predicted-and-observed
   reappearance was a benchmark for cluster lens models
-  ([[sources-lensed-supernovae|Grillo 2018]]).
+  ([[sources-time-delay-cosmography#grillo-2018-h0-from-sn-refsdal|Grillo 2018]]).
 - **iPTF16geu** — Type Ia at z = 0.4, lensed by a galaxy at z = 0.2,
   microlensed and ~50× magnified.
 - **SN Requiem / SN H0pe / SN Encore** — JWST-era cluster-lensed
   supernovae.
-- **High-z lensed SN** — Ryberg 2018 predicts strongly-lensed SNe
+- **High-z lensed SN** — Rydberg et al. 2020 predict strongly lensed SNe
   detectable to z ~ 7 in upcoming surveys.
 
 ## Why they matter

@@ -133,3 +133,11 @@ schema lives in `CLAUDE.md` so the maintaining LLM has a stable contract.
 Added the repository-wide canonical BibTeX and alias layer, validation tooling, and compact
 claim-support schema inherited by every sub-wiki. Migrated the verified lens-finding and
 Euclid Q1 entries without retaining local PDF paths or abstract summaries.
+
+---
+
+## 2026-06-22 — Migrated lensing transient citations
+
+Verified and migrated the two lensed-supernova and three plasma-lensing entries to compact
+claim support. Corrected the legacy Rydberg and Rogers labels and updated the lensed-supernova
+concept references without retaining local PDF paths.
