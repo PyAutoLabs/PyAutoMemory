@@ -148,3 +148,11 @@ concept references without retaining local PDF paths.
 
 Verified the Jiménez-Vicente & Mediavilla lens-galaxy IMF paper and replaced its misspelt,
 filename-derived stub with compact claim support and canonical citation metadata.
+
+---
+
+## 2026-06-22 — Migrated specific-lenses citations
+
+Verified and migrated the dynamic plasma-lens inversion, resolved-kinematics source
+reconstruction, and WGD 2038-4008 cross-code comparison entries. Replaced three materially
+incorrect filename-derived summaries with bounded claim support.
