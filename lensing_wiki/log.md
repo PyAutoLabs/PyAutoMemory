@@ -156,3 +156,10 @@ filename-derived stub with compact claim support and canonical citation metadata
 Verified and migrated the dynamic plasma-lens inversion, resolved-kinematics source
 reconstruction, and WGD 2038-4008 cross-code comparison entries. Replaced three materially
 incorrect filename-derived summaries with bounded claim support.
+
+---
+
+## 2026-06-22 — Migrated WDM and Lyman-alpha citations
+
+Verified and migrated the Viel and Iršič Lyman-alpha WDM constraints and the Bonaca GD-1
+stream-perturber analysis, preserving their distinct probes and assumption-dependent limits.
