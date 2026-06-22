@@ -60,6 +60,9 @@ should use this wiki.
 
 ## Sources (bibliography by topic)
 
+These pages describe claim support. Canonical citation metadata and key-management rules
+live in [`../bibliography/`](../bibliography/README.md).
+
 - [[sources-smbh-binaries]]
 - [[sources-smbh-recoil-scouring]]
 - [[sources-smbh-seeds-growth]]

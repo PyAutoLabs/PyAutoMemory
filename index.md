@@ -1,8 +1,7 @@
 # PyAutoPaper — top-level index
 
-Multi-domain paper-management repo. Source PDFs (gitignored) sit
-alongside several Karpathy-style LLM wikis. Each sub-wiki is
-self-contained and uses the schema in
+Multi-domain paper-management repo containing several Karpathy-style LLM wikis
+and a shared canonical bibliography. Each sub-wiki uses the schema in
 [`lensing_wiki/CLAUDE.md`](lensing_wiki/CLAUDE.md).
 
 ## Sub-wikis
@@ -44,6 +43,12 @@ only on the `## Scope` section. Per-page frontmatter, naming
 conventions, `[[wiki-links]]`, status flags (`stub | drafted |
 reviewed`), and source-page layout are uniform across sub-wikis.
 
+## Citation metadata
+
+The sub-wikis explain which claims papers support. Canonical BibTeX metadata,
+key aliases, downstream-project resolution rules, and validation live in
+[`bibliography/`](bibliography/README.md).
+
 ## Status (2026-05-22)
 
 - Initial lensing-wiki build: 193 papers from Strong_Lens/,
@@ -61,7 +66,6 @@ reviewed`), and source-page layout are uniform across sub-wikis.
 - PDFs deleted from the repo on the same day (backed up externally);
   `File:` lines in stubs are archival relative paths.
 
-All per-paper entries remain `status: stub` (filename-inferred,
-unread) — same convention as the initial lensing build. Upgrade to
-`drafted` after reading the corresponding PDF; log the upgrade in the
-relevant sub-wiki's `log.md`.
+Most legacy per-paper entries remain filename-inferred stubs. Upgrade them to
+compact, claim-oriented `drafted` entries only after verifying the paper, and
+log the change in the relevant sub-wiki.

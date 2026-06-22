@@ -44,6 +44,9 @@ should use this wiki.
 
 ## Sources (bibliography by topic)
 
+These pages describe claim support. Canonical citation metadata and key-management rules
+live in [`../bibliography/`](../bibliography/README.md).
+
 - [[sources-cti-detector-physics]]
 - [[sources-euclid-vis-calibration]]
 - [[sources-cti-correction-algorithms]]

@@ -123,3 +123,13 @@ Dark_Matter_Detection (2), DarkMatterModels (5).
 The format follows Karpathy's LLM Wiki pattern (April 2026 gist): raw PDFs
 are immutable, the wiki layer is compiled and cross-linked, and the
 schema lives in `CLAUDE.md` so the maintaining LLM has a stable contract.
+
+---
+
+## 2026-06-22 — Added canonical citation metadata
+
+**By:** Codex (maintainer session).
+
+Added the repository-wide canonical BibTeX and alias layer, validation tooling, and compact
+claim-support schema inherited by every sub-wiki. Migrated the verified lens-finding and
+Euclid Q1 entries without retaining local PDF paths or abstract summaries.

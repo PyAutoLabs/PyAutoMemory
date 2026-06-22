@@ -18,7 +18,7 @@ galaxies_wiki/
 ├── log.md              # append-only compilation log
 ├── concepts/           # galaxy-formation & morphology topics
 ├── entities/           # surveys (MaNGA, SAMI, COSMOS-Web), notable galaxies
-└── sources/            # per-topic bibliography pages
+└── sources/            # per-topic claim support
 ```
 
 ## Schema

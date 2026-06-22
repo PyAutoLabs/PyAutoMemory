@@ -17,7 +17,7 @@ methods_wiki/
 ├── log.md              # append-only compilation log
 ├── concepts/           # Bayes basics, samplers, deep learning, etc.
 ├── entities/           # PyAutoFit, PolyChord, BlackJAX, jax-finufft, …
-└── sources/            # per-topic bibliography pages
+└── sources/            # per-topic claim support
 ```
 
 ## Schema
