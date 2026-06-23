@@ -11,53 +11,116 @@ Survey overview / instrument papers from the `Collaborations/` folder.
 
 ## Anderson 2013 — BAO SDSS
 
-**File:** `Collaborations/Anderson2013BAOSDSS.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[high-redshift-galaxies]]
-**Summary (stub):** BOSS / SDSS BAO measurement at z~0.5.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Eisenstein 2001 — SDSS LRG
 
-**File:** `Collaborations/Eisenstein2001SDSSLRG.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-mass-halo-mass-relation]]
-**Summary (stub):** Eisenstein LRG sample-definition paper.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Euclid 2011
 
-**File:** `Collaborations/Euclid2011.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[cosmos-web]]
-**Summary (stub):** Euclid definition / red-book overview (2011).
-(stub — verify against PDF; cross-link `../cti_wiki/entities/euclid-vis.md`.)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Hildebrandt 2016 — KiDS cosmology
 
-**File:** `Collaborations/Hildcrant2016KidsSCosmology.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** none specific (cross-link `../lensing_wiki/sources/weak-lensing.md`)
-**Summary (stub):** KiDS cosmic-shear cosmology paper.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## LSST 2012
 
-**File:** `Collaborations/LSST2012.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[high-redshift-galaxies]]
-**Summary (stub):** LSST science book.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Planck 2018
 
-**File:** `Collaborations/Planck2018.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** none specific
-**Summary (stub):** Planck 2018 cosmological parameters.
-(stub — verify against PDF; cross-link `../lensing_wiki/sources/gr-cosmology.md`.)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Shuntov 2022 — stellar halo COSMOS 2020
 
-**File:** `Collaborations/Shuntov2022StellarHaloCOMSOS2020.pdf`
+**Canonical BibTeX key:** `Shuntov2022`
+**Reference:** COSMOS2020: Cosmic evolution of the stellar-to-halo mass relation for central and satellite galaxies up to z ∼5; arXiv:2203.10895; doi:10.1051/0004-6361/202243136; A\&A
 **Concepts:** [[stellar-halos]]
-**Summary (stub):** Stellar-halo / clustering analysis in COSMOS2020
-catalog.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses COSMOS2020: Cosmic evolution of the stellar-to-halo mass relation for central and satellite galaxies up to z ∼5 as the verified public title/reference scope for this source.
+- Provides citable context for [[stellar-halos]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: COSMOS2020: Cosmic evolution of the stellar-to-halo mass relation for central and satellite galaxies up to z ∼5.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## See also
 

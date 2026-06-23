@@ -13,30 +13,53 @@ requirements on Euclid VIS CTI correction.
 
 ## Rhodes 2010 — CTI on galaxy shape
 
-**File:** `CTI/Rhodes2010_CTI_On_GalaxyShape.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[cti-shape-bias]]
-**Summary (stub):** Quantifies CTI-induced galaxy-shape biases in
-weak-lensing surveys, motivating the precision targets for forward-
-model CTI correction.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Cropper 2013 — defining WL
 
-**File:** `CTI/Cropper2013DefiningWL.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[cti-shape-bias]]
-**Summary (stub):** (cross-listed in
-[[sources-euclid-vis-calibration]]) Sets weak-lensing requirements
-that drive CTI shape-bias budgets.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Halverson 2016 — radial budgets for exoplanets
 
-**File:** `CTI/Halverson2016RadialBudgetsExoplanets.pdf`
+**Canonical BibTeX key:** `Halverson2016`
+**Reference:** A comprehensive radial velocity error budget for next generation Doppler spectrometers; arXiv:1607.05634; doi:10.1117/12.2232761; Ground-based and Airborne Instrumentation for Astronomy VI
 **Concepts:** [[cti-shape-bias]]
-**Summary (stub):** Radial-velocity / RV systematic budgets in
-exoplanet imaging that share CTI-style detector biases — adjacent
-methodology.
-(stub — verify against PDF)
+
+**Supports:**
+- Builds a modular error budget for the NEID next-generation Doppler spectrometer concept.
+- Treats precision as the combined contribution of many instrumental error sources rather than a single dominant term.
+- Uses simulations, published constraints, laboratory measurements, and upper limits to estimate systematic-error contributions.
+
+**Use when:**
+- Citing radial-velocity instrumental error budgeting as an adjacent systematic-error methodology.
+
+**Do not use for:**
+- CTI-induced galaxy-shape bias, CCD trap physics, or weak-lensing detector calibration.
+
 
 ## See also
 

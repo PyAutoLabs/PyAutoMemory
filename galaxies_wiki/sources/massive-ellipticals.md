@@ -14,266 +14,551 @@ matters directly for PyAutoLens priors.
 
 ## Ma 2014 — MASSIVE I overview
 
-**File:** `MassiveEllPaper/Ma2014MassiveIOverview.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[massive-ellipticals]], [[etg-structure]]
-**Summary (stub):** Overview paper of the MASSIVE survey — the 100
-nearest log M_K < −25.3 ETGs studied with multi-wavelength imaging and
-IFU spectroscopy.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Greene 2015 — MASSIVE II stellar populations
 
-**File:** `MassiveEllPaper/Greene2015MassiveIIStellarPopTrends.pdf`
+**Canonical BibTeX key:** TODO — ambiguous candidates: `Greene2015`, `Greene2015a`.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
 **Concepts:** [[massive-ellipticals]], [[etg-radial-gradients]]
-**Summary (stub):** Stellar-population gradients in the MASSIVE-survey
-ETGs.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: canonical key is ambiguous, so claim support must be verified after key resolution.
+
+**Use when TODO:**
+- TODO — use only after the canonical key and paper identity are resolved.
+
+**Do not use for TODO:**
+- Evidence until the ambiguous canonical key is resolved.
+
 
 ## Goulding 2017 — MASSIVE III X-ray halos
 
-**File:** `MassiveEllPaper/Goulding2017MassiveIIIXrayHalos.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[massive-ellipticals]]
-**Summary (stub):** X-ray halo properties of MASSIVE survey ETGs as
-proxies for dynamical mass.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Veale 2017 — MASSIVE V angular momentum
 
-**File:** `MassiveEllPaper/Veale2017MassiveVAngMom.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
-**Summary (stub):** Slow / fast rotator demographics in MASSIVE-survey
-ETGs.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Veale 2018 — MASSIVE VII angular momentum
 
-**File:** `MassiveEllPaper/Veale2018MassiveVIIAngMom.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
-**Summary (stub):** Companion angular-momentum analysis.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Veale 2018 — MASSIVE VIII stellar velocity profile
 
-**File:** `MassiveEllPaper/Veale2018MassiveVIIIStellarVelProfile.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
-**Summary (stub):** Radial stellar-velocity-dispersion profiles in
-MASSIVE-survey ETGs.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Pandya 2017 — MASSIVE VI warm gas
 
-**File:** `MassiveEllPaper/Pandaya2017MassiveVIWarmGas.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[massive-ellipticals]]
-**Summary (stub):** Warm-gas content of MASSIVE-survey ETGs.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Ene 2018 — MASSIVE X kinematic / photometric offsets
 
-**File:** `MassiveEllPaper/Ene2018MASSIVESurveyXKienamticAndPhotoMetriOffsets.pdf`
+**Canonical BibTeX key:** TODO — ambiguous candidates: `Ene2018`, `Ene2018a`.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
 **Concepts:** [[etg-kinematics]]
-**Summary (stub):** Photometric and kinematic centre offsets in
-MASSIVE-survey ETGs.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: canonical key is ambiguous, so claim support must be verified after key resolution.
+
+**Use when TODO:**
+- TODO — use only after the canonical key and paper identity are resolved.
+
+**Do not use for TODO:**
+- Evidence until the ambiguous canonical key is resolved.
+
 
 ## Goullard 2018 — MASSIVE IX photometric offsets
 
-**File:** `MassiveEllPaper/Goullard2018MASSIVESurveyIXPhotMetricOffsets.pdf`
+**Canonical BibTeX key:** TODO — ambiguous candidates: `Goullaud2018`, `Goullaud2018a`.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
 **Concepts:** [[etg-structure]]
-**Summary (stub):** Photometric centre offsets in MASSIVE-survey ETGs.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: canonical key is ambiguous, so claim support must be verified after key resolution.
+
+**Use when TODO:**
+- TODO — use only after the canonical key and paper identity are resolved.
+
+**Do not use for TODO:**
+- Evidence until the ambiguous canonical key is resolved.
+
 
 ## Greene 2019 — MASSIVE XII
 
-**File:** `MassiveEllPaper/Greene2019MASSSIVEXII.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[massive-ellipticals]], [[etg-radial-gradients]]
-**Summary (stub):** Stellar-population work, paper XII of the MASSIVE
-series.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## MASSIVE 9 — photometry catalog
 
-**File:** `MassiveEllPaper/MASSIVE9PhotometrytoMASSIVE.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
-**Summary (stub):** MASSIVE survey photometric catalog paper.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Schombert 2014 — galaxy scaling relations II
 
-**File:** `MassiveEllPaper/Schombert_2014_GalScaRelationsII.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
-**Summary (stub):** Galaxy scaling-relation paper II — surface-
-brightness / size / luminosity correlations.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Schombert 2015
 
-**File:** `MassiveEllPaper/Schombert_2015_AJ_150_162.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
-**Summary (stub):** Continuation of the Schombert ETG scaling-relations
-series.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Peng 2010 — AJ 139 2097
 
-**File:** `MassiveEllPaper/Peng_2010_AJ_139_2097.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
-**Summary (stub):** Likely Peng GALFIT-paper or extension; verify.
-(Note duplicate filename in `LightProFFits/Peng_2010_AJ_139_2097.pdf`.)
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## de Lucia 2006 — BCG semi-analytic
 
-**File:** `MassiveEllPaper/DeLucia2006BCGsSemiAnalyic.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[massive-ellipticals]]
-**Summary (stub):** Semi-analytic-model formation history of brightest
-cluster galaxies through dry mergers.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Steinmetz — hierarchical origin of galaxies
 
-**File:** `MassiveEllPaper/SteinmetzHierachicalOiginGals.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[massive-ellipticals]]
-**Summary (stub):** Steinmetz review on hierarchical galaxy formation.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Lauer 2005 — dust in ETG centres
 
-**File:** `MassiveEllPaper/Lauer2005DustCentersETGs.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
-**Summary (stub):** HST imaging of dust in ETG centres — affects
-photometric / lens-modelling decompositions.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Rest 2001 — centres of ETGs
 
-**File:** `MassiveEllPaper/Rest2001CentersETGHST.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]], [[smbh-scouring]]
-**Summary (stub):** HST imaging of ETG centres; foundation for
-core-vs-cusp ETG classification.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Dully cores 2019
 
-**File:** `MassiveEllPaper/DullyCores2019.pdf`
+**Canonical BibTeX key:** `Dullo2019`
+**Reference:** The Most Massive Galaxies with Large Depleted Cores: Structural Parameter Relations and Black Hole Masses; arXiv:1910.10240; doi:10.3847/1538-4357/ab4d4f; ApJ
 **Concepts:** [[smbh-scouring]], [[etg-structure]]
-**Summary (stub):** "Dully cores" — survey of cored ETGs (Dullo et al.),
-mass deficits and SMBH-scouring inferences.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses The Most Massive Galaxies with Large Depleted Cores: Structural Parameter Relations and Black Hole Masses as the verified public title/reference scope for this source.
+- Provides citable context for [[smbh-scouring]], [[etg-structure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: The Most Massive Galaxies with Large Depleted Cores: Structural Parameter Relations and Black Hole Masses.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Trujillo — strong size evolution of ETGs
 
-**File:** `MassiveEllPaper/TrujilloStrongsizeEvolofETGS.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]], [[high-redshift-galaxies]]
-**Summary (stub):** Strong size evolution of red sequence ETGs from
-z~2 to z=0 — the "compact red nuggets" phenomenon.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Lilly 2016 — progenitor bias and surface brightness
 
-**File:** `MassiveEllPaper/Lilly2016ProgenitorBiasSurfaceBrightness.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
-**Summary (stub):** Surface-brightness selection bias in ETG-progenitor
-samples.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Szomoru 2011 — morphology evolution of galaxies HST
 
-**File:** `MassiveEllPaper/Szomoru2011MOrphEvoofGalaxiesHST.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]], [[high-redshift-galaxies]]
-**Summary (stub):** Morphological evolution of ETG progenitors with
-HST.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Newman 2012 — ETG mass growth
 
-**File:** `MassiveEllPaper/Newman2012EllMassGrowth.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
-**Summary (stub):** Cosmological mass growth of ETGs from minor /
-major mergers.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Nipoti 2014 — dry mergers not enough
 
-**File:** `MassiveEllPaper/Nipoti2014DryMergersNotEnough.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
-**Summary (stub):** Argues that dry mergers alone cannot reproduce
-the observed ETG size growth.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Huang 2012 — three-component ETG models
 
-**File:** `MassiveEllPaper/Huang2012ThreeCompEllModels.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]], [[light-profile-fitting]]
-**Summary (stub):** Three-component (inner / outer / halo) Sérsic
-decompositions of ETGs.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Oh 2017 — multiple photometric ETG components
 
-**File:** `MassiveEllPaper/Oh2017MultiplePhotomeetricETGComponents.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]], [[light-profile-fitting]]
-**Summary (stub):** Multi-component photometric decomposition of ETGs.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Oh 2017 — two-component Sérsic local SDSS
 
-**File:** `MassiveEllPaper/Oh2017TwoCompSersicLocalSDSS.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]], [[light-profile-fitting]]
-**Summary (stub):** Two-component Sérsic fits to local SDSS ETGs.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Jiménez 2012 — X-rays in ETGs
 
-**File:** `MassiveEllPaper/Jumphrey2012XrayInEl.pdf`
+**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautopaper.bib` before citing.
+**Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[massive-ellipticals]]
-**Summary (stub):** X-ray emission from ETG hot gas; total-mass-tracer.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: automated canonical-key match was unsafe.
+
+**Use when TODO:**
+- TODO — use only after the paper identity and canonical key are resolved.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
 
 ## Chevance 2012 — shape evolution at high-z
 
-**File:** `MassiveEllPaper/Chevance_2012_Shape_High__.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]], [[high-redshift-galaxies]]
-**Summary (stub):** ETG morphology evolution with redshift; verify
-exact scope from PDF.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Mendel 2020 — evolution z~2
 
-**File:** `MassiveEllPaper/Mendel2020EvolutionZ2.pdf`
+**Canonical BibTeX key:** `Mendel2020`
+**Reference:** The kinematics of massive quiescent galaxies at 1.4 < z < 2.1: dark matter fractions, IMF variation, and the relation to local early-type galaxies; arXiv:2006.13949; doi:10.3847/1538-4357/ab9ffc; arXiv
 **Concepts:** [[etg-structure]], [[high-redshift-galaxies]]
-**Summary (stub):** z~2 quiescent-galaxy evolution.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses The kinematics of massive quiescent galaxies at 1.4 < z < 2.1: dark matter fractions, IMF variation, and the relation to local early-type galaxies as the verified public title/reference scope for this source.
+- Provides citable context for [[etg-structure]], [[high-redshift-galaxies]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: The kinematics of massive quiescent galaxies at 1.4 < z < 2.1: dark matter fractions, IMF variation, and the relation to local early-type galaxies.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Morishita 2018 — metallicity high-z
 
-**File:** `MassiveEllPaper/Morishita2018MetallicityHighZ.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[high-redshift-galaxies]]
-**Summary (stub):** High-z galaxy metallicity gradients with grism /
-HST spectroscopy.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Wang 2019 — Illustris slope evolution
 
-**File:** `MassiveEllPaper/Wang2019IllustrisSlopeEvo.pdf`
+**Canonical BibTeX key:** `Wang2019`
+**Reference:** Early-type galaxy density profiles from IllustrisTNG - II. Evolutionary trend of the total density profile; arXiv:1910.08552; doi:10.1093/mnras/stz2907; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[etg-radial-gradients]]
-**Summary (stub):** Time evolution of the inner total mass-density
-slope in Illustris ETGs.
-(stub — verify against PDF; cross-link `../lensing_wiki/sources-mass-models.md`.)
+
+**Supports:**
+- Addresses Early-type galaxy density profiles from IllustrisTNG - II. Evolutionary trend of the total density profile as the verified public title/reference scope for this source.
+- Provides citable context for [[etg-radial-gradients]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Early-type galaxy density profiles from IllustrisTNG - II. Evolutionary trend of the total density profile.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Yang 2019 — slow / fast in Illustris
 
-**File:** `MassiveEllPaper/Yang2019SlowFastIllustris.pdf`
+**Canonical BibTeX key:** `Yang2019a`
+**Reference:** Photometric and kinematic misalignments and their evolution among fast and slow rotators in the illustris simulation; arXiv:1908.01102; doi:10.1093/mnras/stz2156; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[etg-kinematics]]
-**Summary (stub):** Slow / fast rotator demographics in Illustris
-simulations.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses Photometric and kinematic misalignments and their evolution among fast and slow rotators in the illustris simulation as the verified public title/reference scope for this source.
+- Provides citable context for [[etg-kinematics]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Photometric and kinematic misalignments and their evolution among fast and slow rotators in the illustris simulation.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Zibetti 2020 — CALIFA age metal
 
-**File:** `MassiveEllPaper/Zibetti2020CalifaAgeMetal.pdf`
+**Canonical BibTeX key:** `Zibetti2020`
+**Reference:** Insights into formation scenarios of massive early-type galaxies from spatially resolved stellar population analysis in CALIFA; arXiv:1906.02209; doi:10.1093/mnras/stz3205; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[etg-radial-gradients]]
-**Summary (stub):** CALIFA IFU age / metallicity gradients in ETGs.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses Insights into formation scenarios of massive early-type galaxies from spatially resolved stellar population analysis in CALIFA as the verified public title/reference scope for this source.
+- Provides citable context for [[etg-radial-gradients]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Insights into formation scenarios of massive early-type galaxies from spatially resolved stellar population analysis in CALIFA.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## See also
 

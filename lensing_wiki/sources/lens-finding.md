@@ -156,7 +156,15 @@ status: drafted
 **Canonical BibTeX key:** TODO — no unambiguous match in the supplied bibliography
 **Reference:** Space Warps 2017 — Spaghetti
 **Concepts:** [[lens-finding]], [[space-warps]]
-**Summary:** Citizen-science lens discoveries.
+
+**Supports TODO:**
+- TODO — resolve the canonical key and verify the Space Warps claim context before using as evidence.
+
+**Use when TODO:**
+- TODO — use only after the paper identity and canonical key are resolved.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
 
 ## Tran 2022 — AGEL
 

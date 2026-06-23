@@ -14,56 +14,116 @@ growth.
 
 ## Sirianni 2004 — ACS calibration
 
-**File:** `CTI/Sirianni2004ACS.pdf`
+**Canonical BibTeX key:** `Sirianni2004`
+**Reference:** Performance of the Advanced Camera for Surveys CCDs after two years on orbit; doi:10.1117/12.552584; Optical and Infrared Detectors for Astronomy
 **Concepts:** [[hubble-acs-cti]]
-**Summary (stub):** Foundational HST ACS calibration paper, with early
-CTI characterisation as part of the broader instrument paper.
-(stub — verify against PDF)
+
+**Supports:**
+- Reports ACS CCD performance after two years on orbit.
+- Provides HST/ACS calibration context relevant to later ACS CTI and CTE correction work.
+
+**Use when:**
+- Citing early on-orbit ACS CCD performance and calibration context.
+
+**Do not use for:**
+- Pixel-based CTI correction algorithms or post-2010 ACS CTE pipeline updates.
+
 
 ## Anderson 2010 — CTI correction on HST
 
-**File:** `CTI/Anderson2010_CTI_Correction_HST.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]], [[hubble-acs-cti]]
-**Summary (stub):** (cross-listed in
-[[sources-cti-correction-algorithms]]) Anderson's iterative pixel-based
-ACS CTI correction.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Anderson 2018 — ACS CTI
 
-**File:** `CTI/Anderson2018ACS.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[hubble-acs-cti]]
-**Summary (stub):** (cross-listed) 2018 ACS CTI recalibration.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Anderson 2021 — ACS CTI
 
-**File:** `CTI/Anderson2021ACS.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[hubble-acs-cti]]
-**Summary (stub):** (cross-listed) Latest ACS CTI update.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Massey 2010 — CTI correction on HST
 
-**File:** `CTI/Massey2010_CTI_Correction_On_HST.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]], [[hubble-acs-cti]]
-**Summary (stub):** (cross-listed) Validation of the Massey
-forward-model correction on HST ACS WFC data.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## PastedGraphic-2
 
-**File:** `CTI/PastedGraphic-2.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[hubble-acs-cti]]
-**Summary (stub):** Likely a screenshot or figure attachment, not a
-paper — flag for cleanup. (stub — verify; candidate for deletion.)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Contract change JN-signed
 
-**File:** `CTI/Contract change JN-signed.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** none
-**Summary (stub):** Administrative contract document, not a paper —
-flag for cleanup. (stub — candidate for deletion.)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 

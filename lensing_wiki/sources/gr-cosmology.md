@@ -9,32 +9,69 @@ status: stub
 
 ## Collett 2018 — γ_PPN with ESO325-G004
 
-**File:** `Strong_Lens/Collett2018GR.pdf`
+**Canonical BibTeX key:** `Collett2018`
+**Reference:** A precise extragalactic test of General Relativity; Science
 **Concepts:** [[gr-tests]]
-**Summary (stub):** ~10% extragalactic test of γ_PPN combining lensing
-+ dynamics of a nearby massive elliptical.
+
+**Supports:**
+- Addresses A precise extragalactic test of General Relativity as the verified public title/reference scope for this source.
+- Provides citable context for [[gr-tests]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: A precise extragalactic test of General Relativity.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Melo 2023 — probing GR
 
-**File:** `Strong_Lens/Melo2023ProbeGR.pdf`
+**Canonical BibTeX key:** `Melo2023`
+**Reference:** Probing general relativity in galactic scales at z ∼ 0.3; arXiv:2212.08463; doi:10.1093/mnras/stad162; MNRAS
 **Concepts:** [[gr-tests]]
-**Summary (stub):** Extends γ_PPN tests to additional lens systems.
+
+**Supports:**
+- Addresses Probing general relativity in galactic scales at z ∼ 0.3 as the verified public title/reference scope for this source.
+- Provides citable context for [[gr-tests]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Probing general relativity in galactic scales at z ∼ 0.3.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Planck 2015 — cosmological parameters
 
-**File:** `Planck2015.pdf` (root)
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[gr-tests]]
-**Summary (stub):** Planck 2015 cosmological-parameter constraints —
-the Λ-CDM baseline that all PyAutoLens cosmography compares against.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Lee 2016 — DM environments Bolshoi-Planck
 
-**File:** `LSS/Lee2016_DM_Evinronments_Bolshoi_Planck.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[gr-tests]]
-**Summary (stub):** Bolshoi-Planck DM environments / cosmic-web
-classification.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 

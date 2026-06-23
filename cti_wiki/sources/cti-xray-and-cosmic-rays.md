@@ -12,29 +12,56 @@ detector-systematics concerns that overlap with the CTI literature.
 
 ## Townsley 2001 — X-ray Chandra CTI
 
-**File:** `CTI/Townsley2001XrayChandra.pdf`
+**Canonical BibTeX key:** `Townsley2002`
+**Reference:** Modeling charge transfer inefficiency in the Chandra Advanced CCD Imaging Spectrometer; doi:10.1016/s0168-9002(01)02156-8; Nuclear Instruments and Methods in Physics Research, Section A: Accelerators, Spectrometers, Detectors and Associated Equipment
 **Concepts:** [[ccd-trap-physics]]
-**Summary (stub):** CTI characterisation in Chandra ACIS-S after the
-on-orbit proton damage event; CTI correction strategy for X-ray
-spectroscopy.
-(stub — verify against PDF)
+
+**Supports:**
+- Models CTI in the Chandra ACIS CCDs after radiation damage.
+- Connects charge traps and parallel readout to degraded detector performance in the ACIS instrument.
+- Provides a Chandra X-ray detector example of CTI modelling outside optical weak-lensing CCDs.
+
+**Use when:**
+- Citing Chandra/ACIS CTI modelling or X-ray CCD examples of radiation-induced CTI.
+
+**Do not use for:**
+- HST ACS pixel-based correction performance or Euclid VIS trap-pumping calibration.
+
 
 ## Grant — X-ray Chandra
 
-**File:** `CTI/Grant200XrayChandra.pdf`
+**Canonical BibTeX key:** `Grant2006`
+**Reference:** Temperature dependence of charge transfer inefficiency in Chandra X-ray CCDs; doi:10.1117/12.672019; High Energy, Optical, and Infrared Detectors for Astronomy II
 **Concepts:** [[ccd-trap-physics]]
-**Summary (stub):** Companion Chandra ACIS CTI analysis (filename year
-truncated — verify).
-(stub — verify against PDF)
+
+**Supports:**
+- Studies temperature dependence of CTI in Chandra X-ray CCDs.
+- Uses Chandra detector data as an example of how operating conditions affect CTI behaviour.
+
+**Use when:**
+- Citing temperature-dependent CTI behaviour in Chandra X-ray CCDs.
+
+**Do not use for:**
+- General-purpose optical cosmic-ray rejection or HST ACS CTI correction algorithms.
+
 
 ## van Dokkum 2001 — L.A.Cosmic
 
-**File:** `CTI/vanDokkum2001LACosic.pdf`
+**Canonical BibTeX key:** `VanDokkum2002`
+**Reference:** Cosmic‐Ray Rejection by Laplacian Edge Detection; doi:10.1086/323894; Publ. Astron. Soc. Pac.
 **Concepts:** [[ccd-trap-physics]]
-**Summary (stub):** L.A.Cosmic, the Laplacian-edge cosmic-ray rejection
-algorithm — adjacent to CTI literature only via image-cleaning
-pipelines.
-(stub — verify against PDF)
+
+**Supports:**
+- Introduces L.A.Cosmic, a cosmic-ray rejection algorithm based on Laplacian edge detection.
+- Targets single-exposure CCD data where conventional contrast-based rejection can fail.
+- Distinguishes sharp cosmic-ray edges from undersampled point sources in imaging and spectroscopic data.
+
+**Use when:**
+- Citing Laplacian-edge cosmic-ray rejection in CCD image preprocessing.
+
+**Do not use for:**
+- CTI trap modelling, charge-transfer correction, or radiation-damage calibration.
+
 
 ## See also
 

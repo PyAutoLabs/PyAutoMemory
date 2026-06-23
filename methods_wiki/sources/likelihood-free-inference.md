@@ -9,19 +9,37 @@ status: stub
 
 ## Exoplanets 2018 — ABC
 
-**File:** `Stats/Exoplanets2018ABC.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[simulation-based-inference]]
-**Summary (stub):** Approximate-Bayesian-computation analysis of
-exoplanet occurrence rates.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Barthelme 2014 — EP-ABC (cross-listed)
 
-**File:** `Stats/Barthelme2014EPABC.pdf`
+**Canonical BibTeX key:** `Barthelme2014`
+**Reference:** Expectation propagation for likelihood-free inference; arXiv:1107.5959; doi:10.1080/01621459.2013.864178; Journal of the American Statistical Association
 **Concepts:** [[simulation-based-inference]], [[bayesian-inference]]
-**Summary (stub):** EP-ABC hybrid (also listed in
-[[sources-bayesian-inference]]).
-(stub — verify against PDF)
+
+**Supports:**
+- Combines expectation propagation with likelihood-free inference/ABC ideas.
+- Targets approximate inference where the likelihood is unavailable or expensive but simulation is possible.
+- Provides a bridge between EP and simulation-based Bayesian computation.
+
+**Use when:**
+- Citing EP methods for likelihood-free or ABC-style inference.
+
+**Do not use for:**
+- General-purpose nested sampling or probabilistic-programming language design.
+
 
 ## See also
 

@@ -12,165 +12,357 @@ methodology and applications.
 
 ## Hernquist 1990 — Nuker profile (Lauer)
 
-**File:** `LightProFFits/Hernquist1990Nuker.pdf`
+**Canonical BibTeX key:** `Hernquist1990`
+**Reference:** An analytical model for spherical galaxies and buldges; arXiv:1011.1669; ApJ
 **Concepts:** [[sersic-profile]]
-**Summary (stub):** Nuker-profile fitting of ETG centres (Lauer et al.
-— filename attributes incorrectly; verify).
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses An analytical model for spherical galaxies and buldges as the verified public title/reference scope for this source.
+- Provides citable context for [[sersic-profile]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: An analytical model for spherical galaxies and buldges.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Graham 2000 — spirals
 
-**File:** `LightProFFits/Graham2000Spirals.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[sersic-profile]]
-**Summary (stub):** Sérsic-bulge / exponential-disk fits to spirals.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Peng 2009 — beyond axisymmetry
 
-**File:** `LightProFFits/Peng2009BeyondAxisymm.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
-**Summary (stub):** GALFIT extension beyond axisymmetric profiles —
-the "shape modes" that became Fourier perturbations.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Peng 2010 — extra components
 
-**File:** `LightProFFits/Peng2010ExtraCops.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
-**Summary (stub):** Additional component types in GALFIT — bars,
-rings, spirals.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Peng 2010 — AJ 139 2097
 
-**File:** `LightProFFits/Peng_2010_AJ_139_2097.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
-**Summary (stub):** Peng GALFIT-paper canonical reference.
-(stub — verify against PDF; cross-listed in
-[[sources-massive-ellipticals]].)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Devour 2017 — inclination and dust Sérsic biases
 
-**File:** `LightProFFits/Devour2017InclinationAndDustSersicBiases.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[sersic-profile]]
-**Summary (stub):** Inclination and dust biases in Sérsic fits — the
-hidden systematics in axisymmetric profile fits to disks.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Van der Wel 2012 — CANDELS
 
-**File:** `LightProFFits/VanderWell2012CANDELS.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]], [[high-redshift-galaxies]]
-**Summary (stub):** CANDELS Sérsic morphologies catalog at z=0–3.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Buitrago 2008 — GOODS
 
-**File:** `LightProFFits/Buitrago2008GOODS.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
-**Summary (stub):** GOODS Sérsic morphologies of high-z galaxies.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Berta 2016 — CANDELS bulge / disk
 
-**File:** `LightProFFits/Berta2016CandelsBulgedisk.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
-**Summary (stub):** CANDELS B/D decomposition.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Hopkins 2006 — merger-driven model
 
-**File:** `LightProFFits/Hopkins2006MergerDrivenModel.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
-**Summary (stub):** Hopkins merger-driven model for ETG formation;
-sub-Sérsic structural predictions.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Naab 2007 — ETG formation from initial conditions
 
-**File:** `LightProFFits/Naab2007ETGformatinFromInitConditions.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
-**Summary (stub):** Initial-condition dependence of simulated ETG
-formation.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Naab 2009 — minor mergers
 
-**File:** `LightProFFits/Naab2009MinorMergersProgen.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
-**Summary (stub):** Minor-merger-driven ETG size growth.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Dekel 2009 — formation of ETGs
 
-**File:** `LightProFFits/Dekel2009FormatonETGs.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
-**Summary (stub):** Dekel formation theory for ETGs.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Dekel 2009 — cold streams in ETGs
 
-**File:** `LightProFFits/Dekel2009ColdStreamsInETG.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
-**Summary (stub):** Cold-stream-fed compact red nuggets at high-z.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Barro — progenitor compact quiescent
 
-**File:** `LightProFFits/BarroProgenCompactQuiesient.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]], [[high-redshift-galaxies]]
-**Summary (stub):** Compact-quiescent progenitor population at z~2.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Aguero 2017 — rings
 
-**File:** `LightProFFits/Aguero2017Rings.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
-**Summary (stub):** Galaxy-ring morphology fits.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Buta 2017 — rings GalZoo
 
-**File:** `LightProFFits/Buta2017RingsGalZoo.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
-**Summary (stub):** Galaxy Zoo ring statistics.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Barazza 2008 — bars in local galaxies
 
-**File:** `LightProFFits/Barazza2008BarsLocalGals.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
-**Summary (stub):** Local-galaxy bar fractions and properties.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Gadotti 2009 — bar SDSS fits
 
-**File:** `LightProFFits/Gadotti2009BarSDSSFits.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
-**Summary (stub):** Multi-component (bulge + bar + disk) SDSS fits.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Gadotti 2010 — bars secular evolution
 
-**File:** `LightProFFits/Gadotti2010BarsSecularEvo.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
-**Summary (stub):** Bar-driven secular evolution.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Greco 2017 — LSB Hyper Suprime
 
-**File:** `Greco2017LSBHyperSurpeme.pdf` (root)
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
-**Summary (stub):** Low-surface-brightness galaxy catalog from HSC.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Gallight — root
 
-**File:** `Gallight.pdf` (root)
+**Canonical BibTeX key:** `Ding2021`
+**Reference:** Galaxy shapes of Light (GaLight): a 2D modeling of galaxy images; arXiv:2111.08721
 **Concepts:** [[light-profile-fitting]]
-**Summary (stub):** Filename unclear — likely a generic galaxy-light
-reference; verify.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses Galaxy shapes of Light (GaLight): a 2D modeling of galaxy images as the verified public title/reference scope for this source.
+- Provides citable context for [[light-profile-fitting]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Galaxy shapes of Light (GaLight): a 2D modeling of galaxy images.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## See also
 

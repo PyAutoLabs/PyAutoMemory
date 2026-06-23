@@ -9,53 +9,120 @@ status: stub
 
 ## Wong 2011 — shear environment
 
-**File:** `Strong_Lens/Wong2011ShearEnvironment.pdf`
+**Canonical BibTeX key:** `Wong2011`
+**Reference:** The effect of environment on shear in strong gravitational lenses; doi:10.1088/0004-637x/726/2/84; ApJ
 **Concepts:** [[external-convergence-shear]]
-**Summary (stub):** Compares fitted external shear in lens models to the
-shear inferred from galaxy counting along the LOS. Establishes when each
-matches the other.
+
+**Supports:**
+- Addresses The effect of environment on shear in strong gravitational lenses as the verified public title/reference scope for this source.
+- Provides citable context for [[external-convergence-shear]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: The effect of environment on shear in strong gravitational lenses.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Birrer 2019 — shear from weak + strong lensing
 
-**File:** `Strong_Lens/Birrer2019ShearWLSL.pdf`
+**Canonical BibTeX key:** `Birrer2017`
+**Reference:** Line-of-sight effects in strong lensing: Putting theory into practice; arXiv:1610.01599; doi:10.1088/1475-7516/2017/04/049; Journal of Cosmology and Astroparticle Physics
 **Concepts:** [[external-convergence-shear]]
-**Summary (stub):** Joint inference of γ_ext using strong+weak lensing.
+
+**Supports:**
+- Addresses Line-of-sight effects in strong lensing: Putting theory into practice as the verified public title/reference scope for this source.
+- Provides citable context for [[external-convergence-shear]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Line-of-sight effects in strong lensing: Putting theory into practice.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Fleury 2022 — LOS shear
 
-**File:** `Strong_Lens/Fleury2022LosShear.pdf`
-**Concepts:** [[line-of-sight-effects]],
-[[external-convergence-shear]]
-**Summary (stub):** Beyond-leading-order LOS terms — flexion-like
-contributions to lensing.
+**Canonical BibTeX key:** `Fleury2021`
+**Reference:** Line-of-sight effects in strong gravitational lensing; arXiv:2104.08883; doi:10.1088/1475-7516/2021/08/024; Journal of Cosmology and Astroparticle Physics
+**Concepts:** [[line-of-sight-effects]], [[external-convergence-shear]]
+
+**Supports:**
+- Addresses Line-of-sight effects in strong gravitational lensing as the verified public title/reference scope for this source.
+- Provides citable context for [[line-of-sight-effects]], [[external-convergence-shear]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Line-of-sight effects in strong gravitational lensing.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Chirivì 2017 — LOS clusters
 
-**File:** `Strong_Lens/Chirivi2017_Lineofsight_Clusters.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[line-of-sight-effects]], [[cluster-lensing]]
-**Summary (stub):** LOS halos perturb cluster lens models; multi-plane
-ray tracing necessary.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Jaroszynski 2012 — shear redshift
 
-**File:** `Strong_Lens/Jaroszynski2012ShearRedshift.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[external-convergence-shear]]
-**Summary (stub):** External shear vs. lens redshift trend.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Kuhn 2020 — SL+WL+COSMOS shear
 
-**File:** `Strong_Lens/Kuhn2020SLWLCOSMOSSHEAR.pdf`
+**Canonical BibTeX key:** `Kuhn2021`
+**Reference:** Combining strong and weak lensing estimates in the Cosmos field; arXiv:2010.08680; doi:10.1088/1475-7516/2021/04/010; JCAP
 **Concepts:** [[external-convergence-shear]]
-**Summary (stub):** Joint SL+WL shear analysis in COSMOS-style data.
+
+**Supports:**
+- Addresses Combining strong and weak lensing estimates in the Cosmos field as the verified public title/reference scope for this source.
+- Provides citable context for [[external-convergence-shear]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Combining strong and weak lensing estimates in the Cosmos field.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## He 2021 — LOS
 
-**File:** `Strong_Lens/He2021LoS.pdf`
-**Concepts:** [[line-of-sight-effects]],
-[[dark-matter-substructure]]
-**Summary (stub):** LOS halos' contribution to substructure inference;
-quantifies fraction of "detections" that come from LOS rather than
-in-lens.
+**Canonical BibTeX key:** `He2022b`
+**Reference:** Galaxy–galaxy strong lens perturbations: line-of-sight haloes versus lens subhaloes; arXiv:2110.04512; doi:10.1093/mnras/stac759; MNRAS
+**Concepts:** [[line-of-sight-effects]], [[dark-matter-substructure]]
+
+**Supports:**
+- Addresses Galaxy–galaxy strong lens perturbations: line-of-sight haloes versus lens subhaloes as the verified public title/reference scope for this source.
+- Provides citable context for [[line-of-sight-effects]], [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Galaxy–galaxy strong lens perturbations: line-of-sight haloes versus lens subhaloes.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## See also
 

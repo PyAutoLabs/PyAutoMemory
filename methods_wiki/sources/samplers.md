@@ -12,51 +12,101 @@ hopping, and the libraries that implement them.
 
 ## PolyChord 2015
 
-**File:** `Stats/PolyChod2015.pdf`
+**Canonical BibTeX key:** `Handley2015a`
+**Reference:** POLYCHORD: Next-generation nested sampling; arXiv:1506.00171; doi:10.1093/mnras/stv1911; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[nested-sampling]]
-**Summary (stub):** Handley, Hobson & Lasenby's PolyChord — slice-
-sampling-based nested sampler used by PyAutoFit / PyAutoLens for
-high-dimensional model fitting.
-(stub — verify against PDF)
+
+**Supports:**
+- Introduces PolyChord as a next-generation nested-sampling algorithm.
+- Uses slice-sampling ideas to handle high-dimensional nested-sampling problems.
+- Provides the canonical PolyChord method citation.
+
+**Use when:**
+- Citing PolyChord or high-dimensional nested sampling.
+
+**Do not use for:**
+- Dynamic nested sampling in dynesty or MCMC ensemble sampling.
+
 
 ## PolyChord — root copy
 
-**File:** `PolyChord.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[nested-sampling]]
-**Summary (stub):** Duplicate / alternative PolyChord paper at repo
-root. (stub — verify whether identical to Stats/PolyChod2015.pdf.)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Buchner — PyMultiNest
 
-**File:** `Stats/ButchnerPyMultiNest.pdf`
+**Canonical BibTeX key:** TODO — ambiguous candidates: `Buchner2014`, `Johannesen2007`, `pymultinest`.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
 **Concepts:** [[nested-sampling]]
-**Summary (stub):** Buchner's PyMultiNest wrapper and X-ray-spectra
-applications of MultiNest.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: canonical key is ambiguous, so claim support must be verified after key resolution.
+
+**Use when TODO:**
+- TODO — use only after the canonical key and paper identity are resolved.
+
+**Do not use for TODO:**
+- Evidence until the ambiguous canonical key is resolved.
+
 
 ## Nested basin sampling
 
-**File:** `Stats/Nested Basin-Sampling.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[nested-sampling]]
-**Summary (stub):** Combines nested sampling with basin hopping for
-hard multi-modal landscapes.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Dynesty
 
-**File:** `PPLs/Dynesty.pdf`
+**Canonical BibTeX key:** TODO — ambiguous candidates: `Dynesty`, `Speagle2020`, `dynesty`.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
 **Concepts:** [[nested-sampling]]
-**Summary (stub):** Speagle's dynesty — dynamic / static nested sampler
-in Python, widely used in astronomy.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: canonical key is ambiguous, so claim support must be verified after key resolution.
+
+**Use when TODO:**
+- TODO — use only after the canonical key and paper identity are resolved.
+
+**Do not use for TODO:**
+- Evidence until the ambiguous canonical key is resolved.
+
 
 ## emcee
 
-**File:** `PPLs/Emcee.pdf`
+**Canonical BibTeX key:** TODO — ambiguous candidates: `Emcee`, `Foreman-Mackey2013`, `emcee`.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
 **Concepts:** [[mcmc-samplers]]
-**Summary (stub):** Foreman-Mackey emcee — affine-invariant ensemble
-MCMC, the default sampler for a generation of astrophysics fits.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: canonical key is ambiguous, so claim support must be verified after key resolution.
+
+**Use when TODO:**
+- TODO — use only after the canonical key and paper identity are resolved.
+
+**Do not use for TODO:**
+- Evidence until the ambiguous canonical key is resolved.
+
 
 ## See also
 

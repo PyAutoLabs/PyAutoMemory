@@ -9,83 +9,205 @@ status: stub
 
 ## Chu 2013 — multipoles
 
-**File:** `Strong_Lens/Chu2013Multipoles.pdf`
+**Canonical BibTeX key:** `Chu2013`
+**Reference:** Multipole gravitational lensing and high-order perturbations on the quadrupole lens; doi:10.1088/0004-637x/765/2/134; ApJ
 **Concepts:** [[multipoles]]
-**Summary (stub):** Early multipole-perturbation study of lens galaxies.
+
+**Supports:**
+- Addresses Multipole gravitational lensing and high-order perturbations on the quadrupole lens as the verified public title/reference scope for this source.
+- Provides citable context for [[multipoles]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Multipole gravitational lensing and high-order perturbations on the quadrupole lens.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Cohen 2024 — multipoles
 
-**File:** `Strong_Lens/Cohen2024Multipoles.pdf`
+**Canonical BibTeX key:** `Cohen2024`
+**Reference:** General Multipoles and Their Implications for Dark Matter Inference; arXiv:2403.08895; arxiv.org:2403.08895
 **Concepts:** [[multipoles]], [[dark-matter-substructure]]
-**Summary (stub):** Demonstrates that ignoring m=4 multipoles produces
-false subhalo detections; must be marginalised over in modern
-analyses.
+
+**Supports:**
+- Addresses General Multipoles and Their Implications for Dark Matter Inference as the verified public title/reference scope for this source.
+- Provides citable context for [[multipoles]], [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: General Multipoles and Their Implications for Dark Matter Inference.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Stacey 2024 — ALMA multipoles
 
-**File:** `Strong_Lens/Stacey2024MultipolesALMA.pdf`
+**Canonical BibTeX key:** `Stacey2024`
+**Reference:** Complex angular structure of three elliptical galaxies from high-resolution ALMA observations of strong gravitational lenses; arXiv:2403.04850; arxiv.org/2403.04850
 **Concepts:** [[multipoles]], [[interferometric-lensing]]
-**Summary (stub):** ALMA-resolved lenses show clear m=4 signal — required
-for fits and contaminates substructure inference if omitted.
+
+**Supports:**
+- Addresses Complex angular structure of three elliptical galaxies from high-resolution ALMA observations of strong gravitational lenses as the verified public title/reference scope for this source.
+- Provides citable context for [[multipoles]], [[interferometric-lensing]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Complex angular structure of three elliptical galaxies from high-resolution ALMA observations of strong gravitational lenses.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Amvrosiadis 2025 — m=1 multipole
 
-**File:** `Strong_Lens/Amvrosiadis2025M1Multipole.pdf`
+**Canonical BibTeX key:** `Amvrosiadis2024`
+**Reference:** Lopsidedness in Early-Type Galaxies: the role of the $m=1$ multipole in Isophote Fitting and Strong Lens Modelling; arXiv:2407.12983
 **Concepts:** [[multipoles]]
-**Summary (stub):** First detection / quantification of m=1
-(lopsidedness) multipole signal in lens galaxies.
+
+**Supports:**
+- Addresses Lopsidedness in Early-Type Galaxies: the role of the $m=1$ multipole in Isophote Fitting and Strong Lens Modelling as the verified public title/reference scope for this source.
+- Provides citable context for [[multipoles]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Lopsidedness in Early-Type Galaxies: the role of the $m=1$ multipole in Isophote Fitting and Strong Lens Modelling.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Amvrosiadis 2025 — onset of bar
 
-**File:** `Strong_Lens/Amvrosiadis2025OnsetBar.pdf`
+**Canonical BibTeX key:** `Amvrosiadis2025`
+**Reference:** The onset of bar formation in a massive galaxy at z $\sim$ 3.8; doi:10.1093/mnras/staf048; MNRAS
 **Concepts:** [[multipoles]]
-**Summary (stub):** Bar-related angular structure detected via lensing.
+
+**Supports:**
+- Addresses The onset of bar formation in a massive galaxy at z $\sim$ 3.8 as the verified public title/reference scope for this source.
+- Provides citable context for [[multipoles]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: The onset of bar formation in a massive galaxy at z $\sim$ 3.8.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## O'Riordan 2024 — angular complexity
 
-**File:** `Strong_Lens/ORiodan2024Angularcomplexity.pdf`
+**Canonical BibTeX key:** `Oriordan2024`
+**Reference:** Angular complexity in strong lens substructure detection; arXiv:2310.10714; doi:10.1093/mnras/stae153; MNRAS
 **Concepts:** [[multipoles]], [[dark-matter-substructure]]
-**Summary (stub):** Angular complexity in lens models is the dominant
-systematic for substructure detection.
+
+**Supports:**
+- Addresses Angular complexity in strong lens substructure detection as the verified public title/reference scope for this source.
+- Provides citable context for [[multipoles]], [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Angular complexity in strong lens substructure detection.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## van de Vyvere 2022 — azimuthal
 
-**File:** `Strong_Lens/vandevyree2022Azimuthal.pdf`
+**Canonical BibTeX key:** `VanDeVyvere2022b`
+**Reference:** Consequences of the lack of azimuthal freedom in the modeling of lensing galaxies; arXiv:2206.00022; A\&A
 **Concepts:** [[multipoles]]
-**Summary (stub):** Azimuthal mass structure measurement.
+
+**Supports:**
+- Addresses Consequences of the lack of azimuthal freedom in the modeling of lensing galaxies as the verified public title/reference scope for this source.
+- Provides citable context for [[multipoles]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Consequences of the lack of azimuthal freedom in the modeling of lensing galaxies.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## van de Vyvere 2022 — boxiness/disciness
 
-**File:** `Strong_Lens/vandevyree2022BoxynessDiscyness.pdf`
+**Canonical BibTeX key:** `VanDeVyvere2022a`
+**Reference:** TDCOSMO: VII. Boxyness/discyness in lensing galaxies: Detectability and impact on H 0; arXiv:2112.03932; doi:10.1051/0004-6361/202141551; A\&A
 **Concepts:** [[multipoles]]
-**Summary (stub):** Boxy/discy isophotes in lens galaxies and their
-lensing effect.
+
+**Supports:**
+- Addresses TDCOSMO: VII. Boxyness/discyness in lensing galaxies: Detectability and impact on H 0 as the verified public title/reference scope for this source.
+- Provides citable context for [[multipoles]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: TDCOSMO: VII. Boxyness/discyness in lensing galaxies: Detectability and impact on H 0.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## O'Riordan 2019 — BPL I (broken power-law)
 
-**File:** `Strong_Lens/ORiodan2019BPL1.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[mass-models]]
-**Summary (stub):** Broken-power-law mass model — relaxes the
-single-slope assumption.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## O'Riordan 2020 — BPL II
 
-**File:** `Strong_Lens/ORiodan2020BPL2.pdf`
+**Canonical BibTeX key:** `Oriordan2020`
+**Reference:** Galaxy mass profiles from strong lensing II: The elliptical power-law model; arXiv:2004.13435; doi:10.1093/mnras/staa1697; MNRAS
 **Concepts:** [[mass-models]]
-**Summary (stub):** BPL series continuation.
+
+**Supports:**
+- Addresses Galaxy mass profiles from strong lensing II: The elliptical power-law model as the verified public title/reference scope for this source.
+- Provides citable context for [[mass-models]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Galaxy mass profiles from strong lensing II: The elliptical power-law model.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## O'Riordan 2020 — BPL II (alternate)
 
-**File:** `Strong_Lens/ORiodan2020BPL2Try.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[mass-models]]
-**Summary (stub):** Possibly an early / alternate version of BPL II.
-Verify provenance.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## O'Riordan 2020 — BPL III
 
-**File:** `Strong_Lens/ORiodan2020BPL3.pdf`
+**Canonical BibTeX key:** `Oriordan2021`
+**Reference:** Galaxy mass profiles from strong lensing - III. The two-dimensional broken power-law model; arXiv:2007.11588; doi:10.1093/mnras/staa3747; MNRAS
 **Concepts:** [[mass-models]]
-**Summary (stub):** BPL series, paper III.
+
+**Supports:**
+- Addresses Galaxy mass profiles from strong lensing - III. The two-dimensional broken power-law model as the verified public title/reference scope for this source.
+- Provides citable context for [[mass-models]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Galaxy mass profiles from strong lensing - III. The two-dimensional broken power-law model.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## See also
 

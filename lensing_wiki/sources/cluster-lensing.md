@@ -9,71 +9,147 @@ status: stub
 
 ## Richard 2017 — HFF mass models
 
-**File:** `StrongLensCluster/Richard2017HFFModels.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[hubble-frontier-fields]]
-**Summary (stub):** Public HFF mass models from the CATS team
-(LENSTOOL); reference deliverable for source magnifications.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Atek 2015 — HFF UV LF
 
-**File:** `StrongLensCluster/Atek2015HFFUV.pdf`
-**Concepts:** [[hubble-frontier-fields]],
-[[lensed-source-science]]
-**Summary (stub):** UV luminosity function at z ~ 6–8 from HFF-magnified
-sources.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Concepts:** [[hubble-frontier-fields]], [[lensed-source-science]]
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Jullo 2008 — cosmological constraints
 
-**File:** `StrongLensCluster/Jullo2008CosmologicalConstraints.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[cluster-lensing]]
-**Summary (stub):** Cosmography from multi-source-redshift cluster
-lensing — Ω_m, w from the angular-diameter ratios.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Harrington 2016 — Planck SL sources
 
-**File:** `Strong_Lens/Harrington2016PlanckSLSources.pdf`
-**Concepts:** [[cluster-lensing]],
-[[lensed-source-science]]
-**Summary (stub):** Planck-selected bright DSFGs strongly lensed by
-clusters.
+**Canonical BibTeX key:** `Harrington2016`
+**Reference:** Early science with the Large Millimeter Telescope: Observations of extremely luminous high-z sources identified by Planck; arXiv:1603.05622; doi:10.1093/mnras/stw614; MNRAS
+**Concepts:** [[cluster-lensing]], [[lensed-source-science]]
+
+**Supports:**
+- Addresses Early science with the Large Millimeter Telescope: Observations of extremely luminous high-z sources identified by Planck as the verified public title/reference scope for this source.
+- Provides citable context for [[cluster-lensing]], [[lensed-source-science]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Early science with the Large Millimeter Telescope: Observations of extremely luminous high-z sources identified by Planck.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Locuss 2009 — cluster cool-core / BCG offset
 
-**File:** `Clusters/Locuss2009ClusterCoolCoreOffsetBCG.pdf`
+**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautopaper.bib` before citing.
+**Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[cluster-lensing]]
-**Summary (stub):** Locuss-cluster offsets between BCG and X-ray cool
-core — relevant for lensing centroid systematics.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: canonical-key identity needs manual verification.
+
+**Use when TODO:**
+- TODO — use only after the paper identity and canonical key are resolved.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
 
 ## Postman 2012 — Abell cluster
 
-**File:** `Postman2012Abell.pdf` (root)
+**Canonical BibTeX key:** `Postman2012`
+**Reference:** A brightest cluster galaxy with an extremely large flat core; doi:10.1088/0004-637x/756/2/159; Astrophysical Journal
 **Concepts:** [[cluster-lensing]]
-**Summary (stub):** Postman CLASH or BCG cluster lensing analysis.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses A brightest cluster galaxy with an extremely large flat core as the verified public title/reference scope for this source.
+- Provides citable context for [[cluster-lensing]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: A brightest cluster galaxy with an extremely large flat core.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Abell 1201 X-ray (root)
 
-**File:** `Abell1201XRay.pdf`
+**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautopaper.bib` before citing.
+**Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[cluster-lensing]] (cross-link `../entities/abell-1201.md`)
-**Summary (stub):** X-ray analysis of Abell 1201 — companion data set
-to the strong-lensing-based SMBH constraint in that system.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: canonical-key identity needs manual verification.
+
+**Use when TODO:**
+- TODO — use only after the paper identity and canonical key are resolved.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
 
 ## Harvey 2015 — non-gravitational interactions
 
-**File:** `Harvey2015.pdf` (root)
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[cluster-lensing]], [[dark-matter-physics]]
-**Summary (stub):** Harvey et al. weak / strong-lensing tests for
-non-gravitational dark-matter self-interactions in 30+ clusters.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Harvey 2015 — non-gravitational interactions II
 
-**File:** `Harvey2015NonGravInt2.pdf` (root)
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[cluster-lensing]], [[dark-matter-physics]]
-**Summary (stub):** Companion / extension of Harvey 2015.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 

@@ -9,69 +9,150 @@ status: stub
 
 ## Powell 2020 — VLBI subhalo
 
-**File:** `Strong_Lens/Powell2020interfermeter.pdf`
-**Concepts:** [[interferometric-lensing]],
-[[dark-matter-substructure]]
-**Summary (stub):** First subhalo detection in a VLBI-mapped radio lens
-(JVAS B1938+666 successor); mas-scale sensitivity.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Concepts:** [[interferometric-lensing]], [[dark-matter-substructure]]
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## McKean 2015 — SKA strong lensing
 
-**File:** `Strong_Lens/McKean2015SLSKA.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[interferometric-lensing]]
-**Summary (stub):** Forecasts for strong-lens science with SKA.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Jackson 2015 — SL radio MERLIN
 
-**File:** `Strong_Lens/Jackson2015SLRadioMaseMerlin.pdf`
+**Canonical BibTeX key:** `Jackson2015`
+**Reference:** Observations of radio-quiet quasars at 10-mas resolution by use of gravitational lensing; arXiv:1508.05842; doi:10.1093/mnras/stv1982; MNRAS
 **Concepts:** [[interferometric-lensing]]
-**Summary (stub):** Strong-lens radio masing / continuum observations
-with MERLIN.
+
+**Supports:**
+- Addresses Observations of radio-quiet quasars at 10-mas resolution by use of gravitational lensing as the verified public title/reference scope for this source.
+- Provides citable context for [[interferometric-lensing]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Observations of radio-quiet quasars at 10-mas resolution by use of gravitational lensing.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Dye 2017 — modelling ALMA
 
-**File:** `Strong_Lens/Dye2017ModelingAlma.pdf`
-**Concepts:** [[interferometric-lensing]],
-[[source-reconstruction]]
-**Summary (stub):** ALMA visibility-plane modelling of lensed DSFGs.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Concepts:** [[interferometric-lensing]], [[source-reconstruction]]
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Enia 2018 — ALMA imaging
 
-**File:** `Strong_Lens/Enia2018AlmaImaging.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[interferometric-lensing]]
-**Summary (stub):** ALMA imaging of lensed DSFGs.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Wong 2007 — ALMA central image
 
-**File:** `Strong_Lens/Wong2071ALMACentralImage.pdf`
-**Concepts:** [[interferometric-lensing]],
-[[smbh-from-lensing]]
-**Summary (stub):** ALMA central-image detection / constraint. Filename
-year is mistyped (2071→2017?). Verify.
+**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautopaper.bib` before citing.
+**Reference:** TODO — verify the public paper record and canonical BibTeX key.
+**Concepts:** [[interferometric-lensing]], [[smbh-from-lensing]]
+
+**Supports TODO:**
+- TODO — not migrated: automated canonical-key match was unsafe.
+
+**Use when TODO:**
+- TODO — use only after the paper identity and canonical key are resolved.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
 
 ## uvplane — Tazzari 2017 GALARIO
 
-**File:** `uvplane/Tazzari2017GALARIO.pdf`
+**Canonical BibTeX key:** `Tazzari2018`
+**Reference:** GALARIO: A GPU accelerated library for analysing radio interferometer observations; arXiv:1709.06999; doi:10.1093/mnras/sty409; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[interferometric-lensing]]
-**Summary (stub):** GALARIO — GPU-accelerated visibility synthesis for
-ALMA disk modelling; underlying NUFFT-style operator relevant to
-interferometric lens modelling.
-(stub — verify against PDF; cross-link `../methods_wiki/sources/nufft.md`.)
+
+**Supports:**
+- Addresses GALARIO: A GPU accelerated library for analysing radio interferometer observations as the verified public title/reference scope for this source.
+- Provides citable context for [[interferometric-lensing]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: GALARIO: A GPU accelerated library for analysing radio interferometer observations.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## uvplane — image-plane gridding
 
-**File:** `uvplane/ImagePlaneGridding.pdf`
+**Canonical BibTeX key:** `VanderTol2019`
+**Reference:** Image Domain Gridding: a fast method for convolutional resampling of visibilities; arXiv:1909.07226; doi:10.1051/0004-6361/201832858; arXiv
 **Concepts:** [[interferometric-lensing]]
-**Summary (stub):** Notes / paper on image-plane gridding for
-interferometric lensing.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses Image Domain Gridding: a fast method for convolutional resampling of visibilities as the verified public title/reference scope for this source.
+- Provides citable context for [[interferometric-lensing]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Image Domain Gridding: a fast method for convolutional resampling of visibilities.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## uvplane — radio gridding
 
-**File:** `uvplane/radiogridding.pdf`
+**Canonical BibTeX key:** `Ye2020`
+**Reference:** Optimal gridding and degridding in radio interferometry imaging; arXiv:1906.07102; doi:10.1093/mnras/stz2970; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[interferometric-lensing]]
-**Summary (stub):** Radio-interferometric gridding methodology.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses Optimal gridding and degridding in radio interferometry imaging as the verified public title/reference scope for this source.
+- Provides citable context for [[interferometric-lensing]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Optimal gridding and degridding in radio interferometry imaging.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## See also
 
