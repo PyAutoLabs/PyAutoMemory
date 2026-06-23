@@ -9,56 +9,134 @@ status: stub
 
 ## Etherington 2022 — bulge–halo
 
-**File:** `Strong_Lens/Etherington2022BulgeHalo.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-halo-decomposition]], [[pyautolens]]
-**Summary (stub):** Composite stellar + NFW lens modelling with
-PyAutoLens / SLaM on SLACS-style data.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Etherington 2023 — beyond bulge
 
-**File:** `Strong_Lens/Etherington2023aBeyondBulge.pdf`
+**Canonical BibTeX key:** `Etherington2023`
+**Reference:** Beyond the bulge – halo conspiracy ? Density profiles of early-type galaxies fr om extended-source strong lensing; MNRAS
 **Concepts:** [[bulge-halo-decomposition]]
-**Summary (stub):** Continuation; relaxes the single-bulge assumption.
+
+**Supports:**
+- Addresses Beyond the bulge – halo conspiracy ? Density profiles of early-type galaxies fr om extended-source strong lensing as the verified public title/reference scope for this source.
+- Provides citable context for [[bulge-halo-decomposition]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Beyond the bulge – halo conspiracy ? Density profiles of early-type galaxies fr om extended-source strong lensing.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Etherington 2023 — shear
 
-**File:** `Strong_Lens/Etherington2023Shear.pdf`
-**Concepts:** [[bulge-halo-decomposition]],
-[[external-convergence-shear]]
-**Summary (stub):** External-shear impact on stellar+DM decompositions.
+**Canonical BibTeX key:** `Etherington2023a`
+**Reference:** Strong gravitational lensing's "external shear" is not shear; arXiv:2301.05244
+**Concepts:** [[bulge-halo-decomposition]], [[external-convergence-shear]]
+
+**Supports:**
+- Addresses Strong gravitational lensing's "external shear" is not shear as the verified public title/reference scope for this source.
+- Provides citable context for [[bulge-halo-decomposition]], [[external-convergence-shear]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Strong gravitational lensing's "external shear" is not shear.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Oldham 2016 — red nuggets
 
-**File:** `Strong_Lens/Oldham2016_RedNuggets.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-halo-decomposition]]
-**Summary (stub):** Lensing analysis of compact red-nugget galaxies.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Oldham 2018 — stellar and dark
 
-**File:** `Strong_Lens/Oldham2018StellarAndDark.pdf`
+**Canonical BibTeX key:** `Oldham2018`
+**Reference:** Dark matter contraction and stellar-mass-to-light ratio gradients in massive early-type galaxies; arXiv:1801.01887; doi:10.1093/mnras/sty065; MNRAS
 **Concepts:** [[bulge-halo-decomposition]]
-**Summary (stub):** Joint stellar + DM decomposition of a lens sample.
+
+**Supports:**
+- Addresses Dark matter contraction and stellar-mass-to-light ratio gradients in massive early-type galaxies as the verified public title/reference scope for this source.
+- Provides citable context for [[bulge-halo-decomposition]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Dark matter contraction and stellar-mass-to-light ratio gradients in massive early-type galaxies.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Sonnenfeld 2018 — radial gradients
 
-**File:** `Strong_Lens/Sonnenfed2018RadialGrads.pdf`
+**Canonical BibTeX key:** TODO — ambiguous candidates: `Sonnenfeld2018`, `Sonnenfeld2018a`.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
 **Concepts:** [[bulge-halo-decomposition]]
-**Summary (stub):** Stellar M/L radial gradients in lens galaxies.
+
+**Supports TODO:**
+- TODO — not migrated: canonical key is ambiguous, so claim support must be verified after key resolution.
+
+**Use when TODO:**
+- TODO — use only after the canonical key and paper identity are resolved.
+
+**Do not use for TODO:**
+- Evidence until the ambiguous canonical key is resolved.
+
 
 ## Xu 2016 — inner structure MST in ETGs
 
-**File:** `Strong_Lens/Xu2016_InnerStrMST_ETG.pdf`
-**Concepts:** [[bulge-halo-decomposition]],
-[[mass-sheet-degeneracy]]
-**Summary (stub):** Inner mass structure of ETGs through lensing, with
-MSD-aware treatment.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Concepts:** [[bulge-halo-decomposition]], [[mass-sheet-degeneracy]]
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Wang — IllustrisTNG ellipticals
 
-**File:** `Strong_Lens/WangMassiveEllDensitPrfilesIlliutrisTNG.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-halo-decomposition]]
-**Summary (stub):** Massive elliptical density profiles in IllustrisTNG
-compared to lensing inferences.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 

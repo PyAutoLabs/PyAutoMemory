@@ -15,118 +15,231 @@ Euclid-specific extension.
 
 ## Bristow 2002 — early CTI model
 
-**File:** `CTI/Bristow2002_CTI_Model_Early.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]]
-**Summary (stub):** One of the earliest physically motivated CTI
-forward models, with HST FOC / STIS in mind.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Bristow 2003 — first-pixel CTI correction
 
-**File:** `CTI/Bristow2003_First_Pixel_CTI_Correction.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]]
-**Summary (stub):** The "first pixel" correction scheme, a simpler
-restoration alternative to full forward modelling.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Massey 2009 — CTI correction I
 
-**File:** `CTI/Massey2009_CTI_Correction_1.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]], [[arctic-algorithm]]
-**Summary (stub):** The first Massey forward-model CTI correction
-paper, kernel of what becomes the `arctic` algorithm used by Euclid VIS.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Massey 2010 — CTI correction on HST
 
-**File:** `CTI/Massey2010_CTI_Correction_On_HST.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]], [[hubble-acs-cti]]
-**Summary (stub):** Application of the Massey forward-model correction
-to HST ACS WFC data, validating reduction in residual CTI biases.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Massey 2010 — pixel-based correction
 
-**File:** `CTI/Massey2010PixelBased.pdf`
+**Canonical BibTeX key:** `Massey2010d`
+**Reference:** Pixel-based correction for charge transfer inefficiency in the hubble space telescope advanced camera for surveys; arXiv:0909.0507; doi:10.1111/j.1365-2966.2009.15638.x; MNRAS
 **Concepts:** [[forward-model-cti]]
-**Summary (stub):** Pixel-based forward-model formulation, the
-implementation that becomes `arctic`.
-(stub — verify against PDF)
+
+**Supports:**
+- Models CTI in HST ACS/WFC data and motivates a pixel-based correction applied to raw readout data.
+- Uses warm pixels to measure CTI trailing and calibrate the correction.
+- Demonstrates a large reduction in ACS CTI trails in COSMOS imaging and quantifies effects on photometry, astrometry, and galaxy shapes.
+
+**Use when:**
+- Citing the Massey pixel-based ACS CTI correction or the HST precedent for physically motivated CTI reversal.
+
+**Do not use for:**
+- Euclid-specific trap-pumping calibration or PyAutoCTI software architecture.
+
 
 ## Massey 2014 — CTI correction II
 
-**File:** `CTI/Massey2014_CTI_Correction_2.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]], [[arctic-algorithm]]
-**Summary (stub):** Second-generation Massey forward model with
-multi-species traps and improved time-of-flight handling.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Anderson 2010 — CTI correction on HST
 
-**File:** `CTI/Anderson2010_CTI_Correction_HST.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]], [[hubble-acs-cti]]
-**Summary (stub):** Anderson's pixel-by-pixel iterative CTI correction
-on HST ACS WFC, the standard pipeline correction for ACS data.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Anderson 2018 — ACS CTI
 
-**File:** `CTI/Anderson2018ACS.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[hubble-acs-cti]]
-**Summary (stub):** Updated Anderson-style ACS CTI correction, late-era
-recalibration.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Anderson 2021 — ACS CTI
 
-**File:** `CTI/Anderson2021ACS.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[hubble-acs-cti]]
-**Summary (stub):** Latest Anderson ACS CTI correction update; tracks
-trap-density growth across the HST mission.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Israel 2015 — CTI correction for Euclid
 
-**File:** `CTI/Israel2015_CTI_Correct_Euclid.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]], [[euclid-vis-cti]]
-**Summary (stub):** Adapts the Massey forward-model correction for
-Euclid VIS, including trap-density and release-time-scale priors.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Short 2013 — analytic CTI model
 
-**File:** `CTI/Short2013_CTIanalyticModel.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]]
-**Summary (stub):** Closed-form analytic CTI model as a fast
-approximate alternative to full numerical forward modelling.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Murray 2012 — mitigating CTI
 
-**File:** `CTI/Murray2012_Mitigating_CTI.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]]
-**Summary (stub):** Operational strategies for in-flight CTI
-mitigation: pre-flashing, clocking schemes.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Murray 2013 — multi-level clocking
 
-**File:** `CTI/Murray2013_MultiLevel_CCD_Clocking.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]]
-**Summary (stub):** Multi-level CCD clocking as a CTI-mitigation
-scheme for Euclid VIS.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Nightingale 2024 — PyAutoCTI
 
-**File:** `CTI/Nightingale2024PyAutoCTI.pdf`
-**Concepts:** [[forward-model-cti]], [[arctic-algorithm]],
-[[pyautofit]] (cross-link)
-**Summary (stub):** The PyAutoCTI package — a Bayesian forward-modelling
-framework for CTI calibration, built on PyAutoFit. Used in Euclid VIS
-trap-pumping calibration analysis.
-(stub — verify against PDF; this is a co-authored / lead-authored work
-relevant to PyAutoLens-adjacent infrastructure.)
+**Canonical BibTeX key:** `Nightingale2024a`
+**Reference:** PyAutoCTI: Open-Source Charge Transfer Inefficiency Calibration; doi:10.21105/joss.04904; J. Open Source Softw.
+**Concepts:** [[forward-model-cti]], [[arctic-algorithm]], [[pyautofit]] (cross-link)
+
+**Supports:**
+- Presents PyAutoCTI as an open-source package for CTI calibration.
+- Places PyAutoCTI in the JOSS software-publication record, with package citation metadata and DOI.
+- Identifies the package as Python-based astronomical software for charge-transfer-inefficiency calibration.
+
+**Use when:**
+- Citing PyAutoCTI itself, its software DOI, or the existence of an open-source CTI-calibration package.
+
+**Do not use for:**
+- Detailed detector-physics claims that require the underlying CTI modelling papers.
+
 
 ## See also
 

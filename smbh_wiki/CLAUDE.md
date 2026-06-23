@@ -17,7 +17,7 @@ smbh_wiki/
 ├── log.md              # append-only compilation log
 ├── concepts/           # one topic per page — the physics
 ├── entities/           # named surveys, collaborations, codes
-└── sources/            # per-topic bibliography pages (one paper = one section)
+└── sources/            # per-topic claim support (one paper = one section)
 ```
 
 ## Schema
@@ -50,10 +50,6 @@ Adjacent topics that link out:
 
 ## How the assistant should use this wiki
 
-1. On a SMBH question, open `index.md`.
-2. Follow the relevant `concepts/` or `entities/` page.
-3. Cite specific results by linking the `[[sources-topic#author-year]]`
-   anchor. If unread, open the PDF at the `File:` path.
-4. When a PDF is read in full, upgrade the stub's `status:` to `drafted`,
-   replace the inferred summary, and add a line to `log.md`.
-5. Never fabricate a citation.
+Follow the protocol in `../lensing_wiki/CLAUDE.md`: trace claims through compact
+source entries, use canonical metadata from `../bibliography/`, resolve keys
+against downstream projects before changing LaTeX, and never fabricate.

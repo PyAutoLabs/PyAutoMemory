@@ -12,50 +12,103 @@ survey-specific work in [[sources-massive-ellipticals]].
 
 ## Kormendy 2015 — elliptical galaxies
 
-**File:** `Ellipticals/Kormandy2015EllGal.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
-**Summary (stub):** Kormendy 2015 review of elliptical-galaxy
-structure.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## La Barbera 2019 — IMF varies in ETGs
 
-**File:** `Ellipticals/LaBerbera2019IMFVaryMostEll.pdf`
+**Canonical BibTeX key:** `LaBarbera2019`
+**Reference:** IMF radial gradients in most massive early-type galaxies; arXiv:1909.01382; doi:10.1093/mnras/stz2192; MNRAS
 **Concepts:** [[etg-radial-gradients]]
-**Summary (stub):** Spectroscopic evidence for a non-universal IMF in
-the most massive ETGs.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses IMF radial gradients in most massive early-type galaxies as the verified public title/reference scope for this source.
+- Provides citable context for [[etg-radial-gradients]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: IMF radial gradients in most massive early-type galaxies.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Napolitano 2005 — ETG M/L radial gradients
 
-**File:** `Ellipticals/Napolitano2005ETGMLRRatioGradients.pdf`
+**Canonical BibTeX key:** `Napolitano2005`
+**Reference:** Mass-to-light ratio gradients in early-type galaxy haloes; doi:10.1111/j.1365-2966.2005.08683.x; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[etg-radial-gradients]]
-**Summary (stub):** Mass-to-light radial gradients in ETGs from
-planetary-nebula and integrated stellar kinematics.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses Mass-to-light ratio gradients in early-type galaxy haloes as the verified public title/reference scope for this source.
+- Provides citable context for [[etg-radial-gradients]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Mass-to-light ratio gradients in early-type galaxy haloes.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Oosterloo 2002 — extended HI disk
 
-**File:** `Ellipticals/Oosterloo2002ExtendedHIDisk.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
-**Summary (stub):** Extended HI disk around an ETG; counter-example
-to gas-poor ETG picture.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Richings 2020 — strong-lensing simulations
 
-**File:** `Ellipticals/Richings2020StrongLEnsSim.pdf`
+**Canonical BibTeX key:** `Richings2021`
+**Reference:** A high-resolution cosmological simulation of a strong gravitational lens; arXiv:2005.14495; doi:10.1093/mnras/staa4013; MNRAS
 **Concepts:** [[etg-structure]] (cross-link `../lensing_wiki/`)
-**Summary (stub):** Hydrodynamic-simulation-based strong-lensing
-analysis of ETGs.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses A high-resolution cosmological simulation of a strong gravitational lens as the verified public title/reference scope for this source.
+- Provides citable context for [[etg-structure]] (cross-link `../lensing_wiki/`) when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: A high-resolution cosmological simulation of a strong gravitational lens.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## van Dokkum 2017 — IMF dwarfs
 
-**File:** `Ellipticals/vanDokkum2017IMFDwarfs.pdf`
+**Canonical BibTeX key:** `VanDokkum2017`
+**Reference:** The Stellar Initial Mass Function in Early-type Galaxies from Absorption Line Spectroscopy. III. Radial Gradients; arXiv:1611.09859; doi:10.3847/1538-4357/aa7135; ApJ
 **Concepts:** [[etg-radial-gradients]]
-**Summary (stub):** van Dokkum on dwarf-star-rich IMF in massive ETGs.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses The Stellar Initial Mass Function in Early-type Galaxies from Absorption Line Spectroscopy. III. Radial Gradients as the verified public title/reference scope for this source.
+- Provides citable context for [[etg-radial-gradients]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: The Stellar Initial Mass Function in Early-type Galaxies from Absorption Line Spectroscopy. III. Radial Gradients.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## See also
 

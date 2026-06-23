@@ -16,7 +16,7 @@ cti_wiki/
 ├── log.md              # append-only compilation log
 ├── concepts/           # CTI physics + algorithmic topics
 ├── entities/           # Euclid VIS, Hubble ACS, arctic, etc.
-└── sources/            # per-topic bibliography pages
+└── sources/            # per-topic claim support
 ```
 
 ## Schema
@@ -46,6 +46,6 @@ Adjacent topics that link out:
 
 ## How the assistant should use this wiki
 
-Same protocol as `../lensing_wiki/CLAUDE.md`: open `index.md`, follow
-`concepts/` or `entities/`, cite via `[[sources-topic#author-year]]`,
-upgrade stubs after reading the PDF, never fabricate.
+Same protocol as `../lensing_wiki/CLAUDE.md`: follow concepts/entities to
+compact source claims, use canonical metadata from `../bibliography/`, resolve
+downstream keys before editing LaTeX, and never fabricate.

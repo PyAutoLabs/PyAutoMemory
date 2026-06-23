@@ -13,96 +13,201 @@ plus field knowledge; verify against PDF before quoting.
 
 ## Birrer 2018 — lenstronomy code paper
 
-**File:** `Strong_Lens/Biirrer2018lenstronomy.pdf`
+**Canonical BibTeX key:** `Birrer2018a`
+**Reference:** lenstronomy: Multi-purpose gravitational lens modelling software package; arXiv:1803.09746; doi:10.1016/j.dark.2018.11.002; Physics of the Dark Universe
 **Concepts:** [[mass-models]], [[source-reconstruction]], [[lenstronomy]]
-**Summary (stub — verify against PDF):** Introduces `lenstronomy`, a
-Python framework for strong-lens modelling. Implements an extensive
-profile library, multi-plane lensing, pixelated source reconstruction,
-and the Bayesian-evidence formalism. Together with PyAutoLens, one of
-the two main community modelling codes.
+
+**Supports:**
+- Addresses lenstronomy: Multi-purpose gravitational lens modelling software package as the verified public title/reference scope for this source.
+- Provides citable context for [[mass-models]], [[source-reconstruction]], [[lenstronomy]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: lenstronomy: Multi-purpose gravitational lens modelling software package.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Birrer 2018 — lenstronomy companion / kinematics
 
-**File:** `Strong_Lens/Birrer2018KLenstronomy.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[lenstronomy]], [[kinematics-and-lensing]]
-**Summary (stub):** Follow-up lenstronomy paper, likely extending to
-kinematics joint fits or a code-paper companion. Verify.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Etherington 2022 — SLaM pipeline
 
-**File:** `Strong_Lens/Etherington2022SLaM.pdf`
-**Concepts:** [[slam-pipeline]], [[bulge-halo-decomposition]],
-[[pyautolens]]
-**Summary (stub):** Describes the Strong Lens Automated Modelling
-pipeline in PyAutoLens — a chained sequence of phases that takes a user
-from raw imaging to a composite stellar + dark mass model. Canonical
-reference for PyAutoLens galaxy-scale science.
+**Canonical BibTeX key:** `Etherington2022`
+**Reference:** Automated galaxy-galaxy strong lens modelling: No lens left behind; arXiv:2202.09201; doi:10.1093/mnras/stac2639; MNRAS
+**Concepts:** [[slam-pipeline]], [[bulge-halo-decomposition]], [[pyautolens]]
+
+**Supports:**
+- Addresses Automated galaxy-galaxy strong lens modelling: No lens left behind as the verified public title/reference scope for this source.
+- Provides citable context for [[slam-pipeline]], [[bulge-halo-decomposition]], [[pyautolens]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Automated galaxy-galaxy strong lens modelling: No lens left behind.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Anowar 2020 — lens modelling study
 
-**File:** `Strong_Lens/Anowar2020SLModel.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[mass-models]]
-**Summary (stub):** Lens-modelling methodology / case study; topic
-specifics need PDF verification.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Du 2019 — analytic lensing
 
-**File:** `Strong_Lens/Du2019AnalyticLensing.pdf`
+**Canonical BibTeX key:** `Du2019`
+**Reference:** An Accurate Analytic Mass Model for Lensing Galaxies; arXiv:1911.11761; doi:10.3847/1538-4357/ab7a15; The Astrophysical Journal
 **Concepts:** [[lens-equation]], [[mass-models]]
-**Summary (stub):** Analytic or semi-analytic lensing results — possibly
-closed-form deflections for a specific profile family. Verify.
+
+**Supports:**
+- Addresses An Accurate Analytic Mass Model for Lensing Galaxies as the verified public title/reference scope for this source.
+- Provides citable context for [[lens-equation]], [[mass-models]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: An Accurate Analytic Mass Model for Lensing Galaxies.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Holloway 2024 — JWST forecasts
 
-**File:** `Strong_Lens/Holloway2024JWSTForecast.pdf`
+**Canonical BibTeX key:** TODO — ambiguous candidates: `Holloway2023`, `Holloway2024`.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
 **Concepts:** [[pyautolens]], [[dark-matter-substructure]]
-**Summary (stub):** Forecasts what JWST imaging buys for lens modelling
-and substructure detection.
+
+**Supports TODO:**
+- TODO — not migrated: canonical key is ambiguous, so claim support must be verified after key resolution.
+
+**Use when TODO:**
+- TODO — use only after the canonical key and paper identity are resolved.
+
+**Do not use for TODO:**
+- Evidence until the ambiguous canonical key is resolved.
+
 
 ## Holloway 2024 — Bayesian lens finding
 
-**File:** `Strong_Lens/Holloway2024BayesLensFind.pdf`
-**Concepts:** [[lens-finding]], [[bayesian-inference-lensing]],
-[[pyautolens]]
-**Summary (stub):** Uses PyAutoLens lens-model Bayesian evidence as a
-lens-finding criterion in DES — folding modelling into discovery.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Concepts:** [[lens-finding]], [[bayesian-inference-lensing]], [[pyautolens]]
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Tessore 2015 — lensed images of power-law ellipsoids
 
-**File:** `Strong_Lens/Tessore2015Lensed.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[mass-models]]
-**Summary (stub):** Analytic / semi-analytic deflection field for
-elliptical power-law mass profiles via hypergeometric functions —
-foundational for fast EPL evaluation in modelling codes.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Tessore 2016 — elliptical power-law
 
-**File:** `Strong_Lens/Tessore2016PowerLaw.pdf`
+**Canonical BibTeX key:** `Tessore2015`
+**Reference:** The elliptical power law profile lens; arXiv:1507.01819; doi:10.1051/0004-6361/201526773; A\&A
 **Concepts:** [[mass-models]]
-**Summary (stub):** Follow-up to Tessore 2015; extends the power-law
-deflection formalism. Used by PyAutoLens, lenstronomy, etc.
+
+**Supports:**
+- Addresses The elliptical power law profile lens as the verified public title/reference scope for this source.
+- Provides citable context for [[mass-models]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: The elliptical power law profile lens.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Maresca 2021 — unphysical perturbers
 
-**File:** `Strong_Lens/Maresca2021Unphysical.pdf`
+**Canonical BibTeX key:** `Maresca2021`
+**Reference:** Auto-identification of unphysical source reconstructions in strong gravitational lens modelling; arXiv:2012.04665; doi:10.1093/mnras/stab387; MNRAS
 **Concepts:** [[gravitational-imaging]], [[dark-matter-substructure]]
-**Summary (stub):** Argues that the data preference for pseudo-Jaffe over
-NFW perturbers in subhalo searches reflects a flexibility bias rather than
-DM physics. Important systematic warning.
+
+**Supports:**
+- Addresses Auto-identification of unphysical source reconstructions in strong gravitational lens modelling as the verified public title/reference scope for this source.
+- Provides citable context for [[gravitational-imaging]], [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Auto-identification of unphysical source reconstructions in strong gravitational lens modelling.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Tan 2024 — strong-lens slope
 
-**File:** `Strong_Lens/Tan2024StrongLensSlope.pdf`
+**Canonical BibTeX key:** `Tan2024`
+**Reference:** Project Dinos I: A joint lensing-dynamics constraint on the deviation from the power law in the mass profile of massive ellipticals; arXiv:2311.09307; doi:10.1093/mnras/stae884; MNRAS
 **Concepts:** [[mass-models]], [[radial-angular-degeneracy]]
-**Summary (stub):** Recent study of the recovered mass-density slope γ
-under various model assumptions.
+
+**Supports:**
+- Addresses Project Dinos I: A joint lensing-dynamics constraint on the deviation from the power law in the mass profile of massive ellipticals as the verified public title/reference scope for this source.
+- Provides citable context for [[mass-models]], [[radial-angular-degeneracy]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Project Dinos I: A joint lensing-dynamics constraint on the deviation from the power law in the mass profile of massive ellipticals.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Melo 2024 — AutoLens MGE
 
-**File:** `Strong_Lens/Melo2024AutoLensMGE.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[mass-models]], [[pyautolens]]
-**Summary (stub):** Implementation and validation of Multi-Gaussian
-Expansion mass profiles in PyAutoLens.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 

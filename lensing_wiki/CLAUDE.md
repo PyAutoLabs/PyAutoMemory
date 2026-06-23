@@ -1,11 +1,9 @@
 # PyAutoLens AI Assistant — Strong Lensing Wiki
 
-This wiki gives a PyAutoLens AI assistant the broad scientific context of
-strong gravitational lensing. It follows Karpathy's "LLM Wiki" pattern: the
-PDFs in the surrounding `PyAutoPaper/` repo are the immutable `raw/` layer
-(gitignored — kept locally only), and this `lensing_wiki/` folder is the
-compiled, cross-linked knowledge layer the assistant reads at query time
-and that lives in git for collaborators.
+This wiki gives a PyAutoLens AI assistant broad scientific context for strong
+gravitational lensing. It follows Karpathy's "LLM Wiki" pattern: concise,
+cross-linked pages are read at query time, while canonical citation metadata
+lives separately in `../bibliography/`.
 
 ## Layout
 
@@ -17,18 +15,22 @@ PyAutoPaper/                  # repo root
 │   ├── log.md                # append-only compilation log
 │   ├── concepts/             # one topic per page — the science
 │   ├── entities/             # specific surveys, lenses, collaborations, software
-│   └── sources/              # per-topic bibliography pages (one paper = one section)
-├── Strong_Lens/              # raw/ layer — PDFs (gitignored)
-├── Substructure/
-├── StrongLensCluster/
-├── Dark_Matter_Detection/
-├── DarkMatterModels/
-└── ...                       # other PDF folders (gitignored)
+│   └── sources/              # compact claim support (one paper = one section)
+└── bibliography/             # canonical BibTeX, aliases, citation instructions
 ```
 
-The PDFs are the ground truth. Wiki pages are syntheses. If a wiki page and a
-PDF disagree, the PDF wins; the wiki page should be updated and the change
-noted in `log.md`.
+Papers are the ground truth; wiki pages are syntheses. If they disagree, update
+the wiki and note the change in `log.md`.
+
+## References and citation metadata
+
+- `sources/*.md` records compact guidance about what claims a paper supports.
+- `../bibliography/pyautopaper.bib` records canonical metadata and keys.
+- `../bibliography/bibkey_aliases.yaml` maps known alternate keys to canonical keys.
+
+Never record local PDF paths or fabricate metadata. A canonical key is local to
+PyAutoPaper: resolve it against a target project's `.bib` before patching LaTeX.
+See [`../bibliography/README.md`](../bibliography/README.md) for the workflow.
 
 ## Page types
 
@@ -36,7 +38,7 @@ noted in `log.md`.
 |-------------|--------------|-------------------------------------------------------|
 | Concept     | `concepts/`  | One scientific concept (e.g. mass-sheet degeneracy)   |
 | Entity      | `entities/`  | One named thing (survey, lens, code, collaboration)   |
-| Sources     | `sources/`   | All paper stubs for one topic, one section per paper  |
+| Sources     | `sources/`   | Claim support for one topic, one section per paper    |
 | Index/log   | root         | Navigation and provenance                             |
 
 ## Naming
@@ -53,11 +55,8 @@ Use `[[page-slug]]` for wiki-internal links — for example
 `.md`. A `[[link]]` that has no target file yet is fine — it marks a future
 page to write.
 
-External references point at the PDF on disk using a relative path from
-the `PyAutoPaper/` repo root, e.g. `Strong_Lens/Suyu2016Holicow.pdf`.
-The PDFs themselves are kept locally (gitignored), so collaborators
-cloning the repo will see the wiki references but need to source the
-PDFs separately (most are on arXiv or the journal site).
+External references use verified DOI, arXiv, journal, or author/year/title
+metadata, never a local path.
 
 ## Frontmatter
 
@@ -69,8 +68,8 @@ title: Mass-sheet degeneracy
 type: concept            # concept | entity | sources | meta
 topics: [degeneracies, cosmography]
 sources:                 # optional — papers most relevant to this page
-  - Strong_Lens/Suyu2016Holicow.pdf
-  - Strong_Lens/Birrer2020TDCOSMOSIVH0.pdf
+  - Suyu et al. 2017 — H0LiCOW overview
+  - Birrer et al. 2020 — TDCOSMO IV
 status: stub             # stub | drafted | reviewed
 ---
 ```
@@ -112,30 +111,37 @@ collaborations (TDCOSMO, Space Warps).
 ```
 # Sources: <topic>
 
-Bibliography of papers in `Papers/` covering this topic. Each paper has its
-own H2 section; cross-link from concept and entity pages with
+Papers covering this topic. Each paper has its own H2 section; cross-link with
 `[[sources-<topic>#author-year-slug]]`.
 
 ## Author Year — short tag
 
-**File:** `Strong_Lens/Filename.pdf`
+**Canonical BibTeX key:** `KeyYYYY`
+**Reference:** DOI/arXiv/journal reference if known
 **Concepts:** [[concept-1]], [[concept-2]]
-**Summary:** one-paragraph stub inferred from filename and field knowledge.
-Mark `(stub — verify against PDF)` if not yet read.
+
+**Supports:**
+- Claim this paper directly supports.
+- Another claim this paper directly supports.
+
+**Use when:**
+- Situation where the citation is appropriate.
+
+**Do not use for:**
+- Similar but unsupported claim.
 ```
+
+Keep entries short: normally 2–5 support bullets and no long prose. Do not copy
+abstracts or infer claims from filenames. Add a TODO when support is unverified.
 
 ## How the assistant should use this wiki
 
 1. On a user question, first open `index.md`.
 2. Follow the relevant `concepts/` or `entities/` page.
-3. Cite specific results by linking the `[[sources-topic#author-year]]`
-   anchor. If a claim is needed and the source stub is unread, open the
-   PDF at the path in the stub's `File:` line.
-4. When a PDF is read in full, upgrade the stub's `status:` from `stub` to
-   `drafted`, replace the inferred summary with what the paper actually
-   says, and add a line to `log.md`.
-5. Never fabricate a citation. If a result is not on a wiki page, say so
-   and offer to read the relevant PDF.
+3. Follow the source entry for claim scope and its canonical key for metadata.
+4. Resolve that key against downstream `.bib` files before changing LaTeX.
+5. If support or metadata is unclear, read the public paper and add a TODO
+   rather than guessing. Log verified upgrades.
 
 ## Scope
 
@@ -151,6 +157,4 @@ Other folders (`WeakLensing/`, `Ellipticals/`, `Deep Learning/`, etc.)
 contain papers that touch lensing tangentially but are out of scope until
 explicitly added — see `log.md` for the decision.
 
-This wiki is the **lensing** sub-wiki of `PyAutoPaper/`. Future sub-wikis
-(e.g. `imaging_wiki/`, `cosmology_wiki/`) may sit alongside it at the
-repo root following the same schema.
+This is the **lensing** sub-wiki. Sibling domain wikis inherit this schema.

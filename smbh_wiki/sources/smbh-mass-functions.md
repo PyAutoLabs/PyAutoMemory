@@ -13,12 +13,21 @@ the nanohertz GW background.
 
 ## Marconi — local and relic BH mass functions
 
-**File:** `SMBHs/MarconiLocalAndRelicBHMassFunctions.pdf`
+**Canonical BibTeX key:** `Arcetri2018`
+**Reference:** Local supermassive black holes, relics of active galactic nuclei and the X-ray background; doi:10.1111/j.1365-2966.2004.07765.x; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[smbh-mass-functions]], [[gw-background]]
-**Summary (stub):** Classic decomposition of the local SMBH mass
-function into the "relic" of accretion history (Soltan argument) — used
-to seed predictions of the nanohertz SGWB.
-(stub — verify against PDF)
+
+**Supports:**
+- Connects local SMBH demographics with relics of active galactic nuclei.
+- Uses the X-ray background/AGN history to constrain relic SMBH mass density.
+- Provides a mass-function reference linking SMBH growth and AGN populations.
+
+**Use when:**
+- Citing local/relic SMBH mass functions or Soltan-style demographic arguments.
+
+**Do not use for:**
+- Individual SMBH dynamical mass measurements.
+
 
 ## See also
 

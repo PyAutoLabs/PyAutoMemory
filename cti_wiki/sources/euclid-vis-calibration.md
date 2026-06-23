@@ -14,69 +14,132 @@ CTI bias into cosmic-shear measurements.
 
 ## Cropper 2013 — defining weak lensing requirements
 
-**File:** `CTI/Cropper2013DefiningWL.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[cti-shape-bias]], [[euclid-vis-cti]]
-**Summary (stub):** The reference paper defining Euclid weak-lensing
-shape-measurement requirements that flow down to detector-level CTI
-budgets.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Israel 2015 — CTI correction for Euclid
 
-**File:** `CTI/Israel2015_CTI_Correct_Euclid.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]], [[euclid-vis-cti]]
-**Summary (stub):** (cross-listed in
-[[sources-cti-correction-algorithms]]) Euclid-specific extension of
-the Massey forward-model correction.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Azzollini 2021 — charge-injection report
 
-**File:** `Euclid/Azzollini2021CIReport.pdf`
+**Canonical BibTeX key:** `VISReport2021`
+**Reference:** VIS Ground Calibration Campaign: Test Report; doi:eucl-mss-tr-6-129
 **Concepts:** [[charge-injection]], [[euclid-vis-cti]]
-**Summary (stub):** Euclid VIS charge-injection-line characterisation,
-in-flight CTI monitoring methodology.
-(stub — verify against PDF)
+
+**Supports:**
+- Provides Euclid VIS ground-calibration campaign reporting.
+- Records VIS charge-injection calibration context used by later Euclid VIS processing discussions.
+
+**Use when:**
+- Citing the Euclid VIS ground-calibration campaign or charge-injection calibration documentation.
+
+**Do not use for:**
+- Peer-reviewed CTI algorithm performance claims unless the calibration report itself is the intended source.
+
 
 ## Euclid Prep IX — mean redshift
 
-**File:** `Euclid/EuclidPrepIXMeanRedshift.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[euclid-vis-cti]]
-**Summary (stub):** Euclid preparation paper on mean-redshift
-calibration — connects to VIS shape budgets via the photometric chain.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Kitching 2019 — propagating bias
 
-**File:** `Euclid/Kitching2019Propagatebias.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[cti-shape-bias]], [[euclid-vis-cti]]
-**Summary (stub):** Propagation of detector-level systematic biases
-(including residual CTI) through to cosmic-shear cosmological
-parameters.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Paykari 2019 — propagating bias
 
-**File:** `Euclid/Paykari2019propagatingbias.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[cti-shape-bias]], [[euclid-vis-cti]]
-**Summary (stub):** Companion / parallel bias-propagation analysis for
-Euclid weak-lensing science.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Euclid TP serial — root-level
 
-**File:** `Euclid_TP_serial.pdf`
+**Canonical BibTeX key:** TODO — ambiguous candidates: `Skottfelt`, `Skottfelta`.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
 **Concepts:** [[trap-pumping]], [[euclid-vis-cti]]
-**Summary (stub):** (cross-listed) Serial-direction trap-pumping for
-Euclid VIS.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: canonical key is ambiguous, so claim support must be verified after key resolution.
+
+**Use when TODO:**
+- TODO — use only after the canonical key and paper identity are resolved.
+
+**Do not use for TODO:**
+- Evidence until the ambiguous canonical key is resolved.
+
 
 ## CTI calibration — Henk
 
-**File:** `CTI_Calibration_Henk.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[trap-pumping]], [[euclid-vis-cti]]
-**Summary (stub):** (cross-listed) Internal CTI calibration document.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 

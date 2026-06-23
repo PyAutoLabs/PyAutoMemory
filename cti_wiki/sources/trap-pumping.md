@@ -13,70 +13,133 @@ location within the buried channel.
 
 ## Hall 2014 — trap properties from trap pumping
 
-**File:** `CTI/Hall2014_Trap_Properties_from_TrapPump.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[trap-pumping]]
-**Summary (stub):** Demonstrates extraction of per-trap release
-time-scales and densities from pocket-pumping data; ground-truth method
-for Euclid VIS calibration.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Hall 2014 — traps in situ
 
-**File:** `CTI/Hall2014_Traps_Insitu.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[trap-pumping]]
-**Summary (stub):** In-flight trap-pumping prescription for in-situ
-characterisation of CTI traps without ground tests.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Skottfelt 2017 — trap pumping
 
-**File:** `CTI/Skottfelt2017TrapPumping.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[trap-pumping]], [[euclid-vis-cti]]
-**Summary (stub):** Trap-pumping calibration applied to Euclid VIS
-flight-spare CCDs.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Skottfelt 2017 — compare Euclid data
 
-**File:** `CTI/Skottfelt2017CompaeEuclidData.pdf`
+**Canonical BibTeX key:** `Skottfelt2017`
+**Reference:** Comparing simulations and test data of a radiation damaged charge-coupled device for the Euclid mission; arXiv:1710.10958; doi:10.1117/1.jatis.3.2.028001; J. Astron. Telesc. Instrum. Syst.
 **Concepts:** [[trap-pumping]], [[euclid-vis-cti]]
-**Summary (stub):** Comparison of trap-pumping-derived trap models
-with on-orbit Euclid VIS ground-test data.
-(stub — verify against PDF)
+
+**Supports:**
+- Compares simulations with test data for a radiation-damaged CCD in the Euclid mission context.
+- Describes a Monte Carlo CCD radiation-damage model based on Shockley-Read-Hall theory.
+- Models electrode-level charge transfer using trap positions, potential structure, and multi-level clocking.
+
+**Use when:**
+- Citing Euclid CCD radiation-damage simulation/test-data comparison or electrode-level CTI modelling.
+
+**Do not use for:**
+- PyAutoCTI package citation or HST ACS pixel-based correction performance.
+
 
 ## Gow 2016 — correction via trap pumping
 
-**File:** `CTI/Gow2016_Correction_Trap_Pump.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[trap-pumping]], [[forward-model-cti]]
-**Summary (stub):** Forward-model CTI correction informed by trap
-parameters extracted from trap pumping; feeds back into the Massey /
-Israel algorithm.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Murray 2013 — pumping and signal relation
 
-**File:** `CTI/Murray2013_Pumping_and_signal_Relation.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[trap-pumping]]
-**Summary (stub):** Signal-amplitude dependence of trap-pumping
-diagnostics — addresses non-linearity in the extracted trap
-properties.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Euclid trap-pumping serial-direction
 
-**File:** `Euclid_TP_serial.pdf` (root-level)
+**Canonical BibTeX key:** TODO — ambiguous candidates: `Skottfelt`, `Skottfelta`.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
 **Concepts:** [[trap-pumping]], [[euclid-vis-cti]]
-**Summary (stub):** Serial-direction trap-pumping measurements for the
-Euclid VIS detectors.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: canonical key is ambiguous, so claim support must be verified after key resolution.
+
+**Use when TODO:**
+- TODO — use only after the canonical key and paper identity are resolved.
+
+**Do not use for TODO:**
+- Evidence until the ambiguous canonical key is resolved.
+
 
 ## CTI calibration — Henk
 
-**File:** `CTI_Calibration_Henk.pdf` (root-level)
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[trap-pumping]], [[euclid-vis-cti]]
-**Summary (stub):** CTI calibration document by H. Hoekstra / H.
-Israel (filename ambiguous — verify).
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 

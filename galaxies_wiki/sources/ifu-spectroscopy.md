@@ -12,157 +12,342 @@ backbone of modern galaxy-population work.
 
 ## Bacon 2001 — SAURON
 
-**File:** `IFUs/Bacon2001SAURSON.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ifu-spectroscopy]]
-**Summary (stub):** The SAURON IFU spectrograph reference paper.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Cappellari 2008 — inclination dust via IFS
 
-**File:** `IFUs/Cappellari2008InclinationDustviaIFS.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ifu-spectroscopy]]
-**Summary (stub):** Inclination and dust modelling using IFS data.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Cappellari 2012 — IMF ATLAS3D
 
-**File:** `IFUs/Cappellari2012IMFATLAS3d.pdf`
+**Canonical BibTeX key:** `Cappellari2012a`
+**Reference:** Systematic variation of the stellar initial mass function in early-type galaxies; arXiv:1202.3308; doi:10.1038/nature10972; Nature
 **Concepts:** [[etg-radial-gradients]]
-**Summary (stub):** ATLAS3D IFU evidence for IMF variation across ETGs.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses Systematic variation of the stellar initial mass function in early-type galaxies as the verified public title/reference scope for this source.
+- Provides citable context for [[etg-radial-gradients]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Systematic variation of the stellar initial mass function in early-type galaxies.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Krajnović 2011 — ATLAS3D II morphology
 
-**File:** `IFUs/Krajnovic2011ATLASIIMorphology.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ifu-spectroscopy]]
-**Summary (stub):** ATLAS3D paper II — morphological classification
-of the survey ETGs.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Krajnović 2012 — ATLAS3D XVII Sérsic fits
 
-**File:** `IFUs/Krajnovic2012ATLASXVIISersicFits.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
-**Summary (stub):** Sérsic structural fits of ATLAS3D ETGs.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Emsellem 2011 — ATLAS3D kinematic misalignments
 
-**File:** `IFUs/Emsellem2011KinematicMisalignsATLAS3d.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
-**Summary (stub):** Kinematic-photometric misalignments distinguishing
-slow / fast rotators.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Weijmans 2014 — intrinsic shape ETG kinematic misalignments
 
-**File:** `IFUs/Weijmans2014IntrinsicShapeETGSKinematicMisal.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
-**Summary (stub):** Inferring intrinsic 3-D shapes of ETGs from
-kinematic / photometric misalignments.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Bellstedt 2018 — SLUGGS mass profile to 4 Re
 
-**File:** `IFUs/Bellesdt2018SLUGGSMassProfileETGTo4RE.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ifu-spectroscopy]], [[etg-radial-gradients]]
-**Summary (stub):** SLUGGS-survey IFU + GC + PNe mass profiles to
-large radii.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Greene 2018 — MaNGA angular momentum early-types
 
-**File:** `IFUs/Greene2018MangaAngularMomEarlyTypes.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
-**Summary (stub):** MaNGA angular momentum of ETGs.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Van de Sande — SAMI stellar moments
 
-**File:** `IFUs/VanDeSande_Sami_StellarMoments.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ifu-spectroscopy]]
-**Summary (stub):** SAMI-survey stellar-kinematic high-order LOSVD
-moments.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## MaNGA — Ellison 2017 SF radial gradient
 
-**File:** `Manga/Ellison2017SFRadialGrad.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ifu-spectroscopy]]
-**Summary (stub):** MaNGA SF-rate radial gradients.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## MaNGA — Greene 2017 angular momentum
 
-**File:** `Manga/Greene2017AngMom.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
-**Summary (stub):** MaNGA angular momentum.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## MaNGA — Greene 2017 kinematic / morphology
 
-**File:** `Manga/Greene2017KinematicMorphRel.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
-**Summary (stub):** MaNGA kinematic / morphology relation.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## MaNGA — Johnston B/D 2017
 
-**File:** `Manga/JohnstonBD2017.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
-**Summary (stub):** MaNGA B/D decompositions.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## MaNGA — Lacerna 2020 ETG quenching
 
-**File:** `Manga/Lacerna2020ETGQuenching.pdf`
+**Canonical BibTeX key:** `Lacerna2020`
+**Reference:** SDSS-IV MaNGA: global and local stellar population properties of elliptical galaxies and their assembly histories; arXiv:2001.05506
 **Concepts:** [[etg-kinematics]], [[galaxy-quenching]]
-**Summary (stub):** MaNGA ETG quenching kinematic signatures.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses SDSS-IV MaNGA: global and local stellar population properties of elliptical galaxies and their assembly histories as the verified public title/reference scope for this source.
+- Provides citable context for [[etg-kinematics]], [[galaxy-quenching]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: SDSS-IV MaNGA: global and local stellar population properties of elliptical galaxies and their assembly histories.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## MaNGA — Li 2016 IMF
 
-**File:** `Manga/Li2016MangaIMF.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-radial-gradients]]
-**Summary (stub):** MaNGA IMF measurements.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## MaNGA — Ran 2016
 
-**File:** `Manga/RanManga2016.pdf`
+**Canonical BibTeX key:** TODO — ambiguous candidates: `Yan2016`, `Yan2016a`.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
 **Concepts:** [[ifu-spectroscopy]]
-**Summary (stub):** Early MaNGA result; verify topic.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: canonical key is ambiguous, so claim support must be verified after key resolution.
+
+**Use when TODO:**
+- TODO — use only after the canonical key and paper identity are resolved.
+
+**Do not use for TODO:**
+- Evidence until the ambiguous canonical key is resolved.
+
 
 ## MaNGA — Tabor B/D 2017
 
-**File:** `Manga/TaborBD2017.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
-**Summary (stub):** MaNGA B/D decompositions, companion to Johnston.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## ETG Kine 1 — root
 
-**File:** `ETGKine1.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
-**Summary (stub):** Root-level ETG kinematics paper #1; verify
-attribution.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## ETG Kine 2 — root
 
-**File:** `ETGKine2.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
-**Summary (stub):** Root-level ETG kinematics paper #2.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Ferraras 2019 — SAMI radial gradient ETG
 
-**File:** `Ferraras2019SAMIRadialGradientETG.pdf` (root)
+**Canonical BibTeX key:** `Ferreras2019`
+**Reference:** The SAMI galaxy survey: Stellar population radial gradients in early-type galaxies; arXiv:1905.03257; doi:10.1093/mnras/stz2095; MNRAS
 **Concepts:** [[etg-radial-gradients]]
-**Summary (stub):** Ferreras SAMI IFU stellar-population radial
-gradients in ETGs.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses The SAMI galaxy survey: Stellar population radial gradients in early-type galaxies as the verified public title/reference scope for this source.
+- Provides citable context for [[etg-radial-gradients]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: The SAMI galaxy survey: Stellar population radial gradients in early-type galaxies.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## See also
 

@@ -123,3 +123,43 @@ Dark_Matter_Detection (2), DarkMatterModels (5).
 The format follows Karpathy's LLM Wiki pattern (April 2026 gist): raw PDFs
 are immutable, the wiki layer is compiled and cross-linked, and the
 schema lives in `CLAUDE.md` so the maintaining LLM has a stable contract.
+
+---
+
+## 2026-06-22 — Added canonical citation metadata
+
+**By:** Codex (maintainer session).
+
+Added the repository-wide canonical BibTeX and alias layer, validation tooling, and compact
+claim-support schema inherited by every sub-wiki. Migrated the verified lens-finding and
+Euclid Q1 entries without retaining local PDF paths or abstract summaries.
+
+---
+
+## 2026-06-22 — Migrated lensing transient citations
+
+Verified and migrated the two lensed-supernova and three plasma-lensing entries to compact
+claim support. Corrected the legacy Rydberg and Rogers labels and updated the lensed-supernova
+concept references without retaining local PDF paths.
+
+---
+
+## 2026-06-22 — Migrated microlensing IMF citation
+
+Verified the Jiménez-Vicente & Mediavilla lens-galaxy IMF paper and replaced its misspelt,
+filename-derived stub with compact claim support and canonical citation metadata.
+
+---
+
+## 2026-06-22 — Migrated specific-lenses citations
+
+Verified and migrated the dynamic plasma-lens inversion, resolved-kinematics source
+reconstruction, and WGD 2038-4008 cross-code comparison entries. Replaced three materially
+incorrect filename-derived summaries with bounded claim support.
+
+---
+
+## 2026-06-22 — Migrated WDM and Lyman-alpha citations
+
+Verified and migrated the Viel and Iršič Lyman-alpha WDM constraints and the Bonaca GD-1
+stream-perturber analysis, preserving their distinct probes and assumption-dependent limits.

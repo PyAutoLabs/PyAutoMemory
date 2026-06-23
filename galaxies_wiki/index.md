@@ -78,6 +78,9 @@ should use this wiki.
 
 ## Sources (bibliography by topic)
 
+These pages describe claim support. Canonical citation metadata and key-management rules
+live in [`../bibliography/`](../bibliography/README.md).
+
 - [[sources-elliptical-galaxies]]
 - [[sources-bulge-disk-decomposition]]
 - [[sources-light-profile-fitting]]

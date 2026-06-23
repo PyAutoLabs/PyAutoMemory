@@ -9,31 +9,69 @@ status: stub
 
 ## Pearson 2024 — strong-lens JWST
 
-**File:** `Strong_Lens/Pearson2024StrongLensJWST.pdf`
+**Canonical BibTeX key:** `Pearson2024`
+**Reference:** A large population of strongly lensed faint submillimetre galaxies in future dark energy surveys inferred from JWST imaging; arXiv:2309.00888; doi:10.1093/mnras/stad3916; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[deep-learning-lensing]]
-**Summary (stub):** Deep-learning lens modelling forecast for JWST.
+
+**Supports:**
+- Addresses A large population of strongly lensed faint submillimetre galaxies in future dark energy surveys inferred from JWST imaging as the verified public title/reference scope for this source.
+- Provides citable context for [[deep-learning-lensing]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: A large population of strongly lensed faint submillimetre galaxies in future dark energy surveys inferred from JWST imaging.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Morningstar 2019 — deep-learning source reconstruction
 
-**File:** `Strong_Lens/Morningstar2019DeepLearnGalaxyRecon.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[deep-learning-lensing]], [[source-reconstruction]]
-**Summary (stub):** Recurrent inference machines for lensed source
-reconstruction.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Wagner-Carena 2021 — hierarchical BNN
 
-**File:** `Strong_Lens/WagnerCarena2021BNNHierachical.pdf`
+**Canonical BibTeX key:** `Wagner-Carena2021`
+**Reference:** Hierarchical Inference with Bayesian Neural Networks: An Application to Strong Gravitational Lensing; arXiv:2010.13787; doi:10.3847/1538-4357/abdf59; The Astrophysical Journal
 **Concepts:** [[deep-learning-lensing]], [[lens-statistics]]
-**Summary (stub):** Bayesian neural networks with hierarchical priors —
-calibrated uncertainties for population inference.
+
+**Supports:**
+- Addresses Hierarchical Inference with Bayesian Neural Networks: An Application to Strong Gravitational Lensing as the verified public title/reference scope for this source.
+- Provides citable context for [[deep-learning-lensing]], [[lens-statistics]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Hierarchical Inference with Bayesian Neural Networks: An Application to Strong Gravitational Lensing.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Brehmer 2019 — mining DM substructure
 
-**File:** `Strong_Lens/Brehmer2019MiningDMSub.pdf`
-**Concepts:** [[deep-learning-lensing]],
-[[dark-matter-substructure]]
-**Summary (stub):** Simulation-based inference / "mining gold" applied
-to DM substructure — extracts the latent likelihood information.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Concepts:** [[deep-learning-lensing]], [[dark-matter-substructure]]
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 

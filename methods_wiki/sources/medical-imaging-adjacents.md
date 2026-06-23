@@ -15,34 +15,65 @@ for lensing.
 
 ## Medical — 00118405 P60 2025
 
-**File:** `Medical/00118405_P60_2025.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[deep-learning-astro]]
-**Summary (stub):** Medical-imaging paper; filename is journal ID
-00118405 P60 2025. Topic unknown without PDF.
-(stub — verify against PDF; flag for clarity on whether to keep
-indexed.)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Medical — Concr 2024
 
-**File:** `Medical/Concr2024.pdf`
+**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautopaper.bib` before citing.
+**Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[deep-learning-astro]]
-**Summary (stub):** Medical-imaging paper (Concr / cancer 2024?).
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: automated canonical-key match was unsafe.
+
+**Use when TODO:**
+- TODO — use only after the paper identity and canonical key are resolved.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
 
 ## Medical — He 2023 CUP framework
 
-**File:** `Medical/He2023CUPFramework.pdf`
+**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautopaper.bib` before citing.
+**Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[deep-learning-astro]]
-**Summary (stub):** "CUP framework" for clinical imaging.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: canonical-key identity needs manual verification.
+
+**Use when TODO:**
+- TODO — use only after the paper identity and canonical key are resolved.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
 
 ## Medical — Liu 2024 CUPRCT (HTML)
 
-**File:** `Medical/Liu2024CUPRCT.htm`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** none
-**Summary (stub):** HTML snapshot of Liu 2024 CUP-RCT paper. Not a PDF,
-not part of the deletion sweep. (Kept as-is.)
-(stub — file is HTML.)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 

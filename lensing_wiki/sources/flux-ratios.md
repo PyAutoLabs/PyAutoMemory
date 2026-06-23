@@ -9,55 +9,132 @@ status: stub
 
 ## Gilman 2016 — flux method
 
-**File:** `Strong_Lens/Gilman2016FluxMethod.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[flux-ratio-anomalies]]
-**Summary (stub):** Methodology paper for flux-ratio-based DM inference.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Gilman 2018 — probe DM forward model
 
-**File:** `Strong_Lens/Gilman2018ProbeNatureDMForwardModel.pdf`
-**Concepts:** [[flux-ratio-anomalies]],
-[[dark-matter-physics]]
-**Summary (stub):** Forward-model Bayesian pipeline using flux ratios to
-constrain DM nature.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Concepts:** [[flux-ratio-anomalies]], [[dark-matter-physics]]
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Gilman 2019 — constraints on DM
 
-**File:** `Strong_Lens/Gilman2019ConstraintsDM.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[flux-ratio-anomalies]]
-**Summary (stub):** Quantitative constraints on WDM from sample.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Gilman 2019 — low-mass haloes
 
-**File:** `Strong_Lens/Gilman2019LowMass.pdf`
+**Canonical BibTeX key:** `Gilman2019`
+**Reference:** Probing dark matter structure down to 107 solar masses: flux ratio statistics in gravitational lenses with line-of-sight haloes; arXiv:1901.11031; doi:10.1093/mnras/stz1593; MNRAS
 **Concepts:** [[flux-ratio-anomalies]]
-**Summary (stub):** Sensitivity of flux ratios to low-mass halo
-populations.
+
+**Supports:**
+- Addresses Probing dark matter structure down to 107 solar masses: flux ratio statistics in gravitational lenses with line-of-sight haloes as the verified public title/reference scope for this source.
+- Provides citable context for [[flux-ratio-anomalies]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Probing dark matter structure down to 107 solar masses: flux ratio statistics in gravitational lenses with line-of-sight haloes.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Gilman 2016 — luminous subs in ETGs
 
-**File:** `Strong_Lens/Gilman2016_LumSubinETG.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[flux-ratio-anomalies]]
-**Summary (stub):** Luminous (galaxy-hosting) subhaloes as perturbers.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Hsueh 2016 — disk substructure
 
-**File:** `Strong_Lens/Huseh2016_DiskSubstruct2.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[flux-ratio-anomalies]]
-**Summary (stub):** Baryonic disks in lens galaxies generate flux
-anomalies — confounder for DM inference. Filename misspelt (Hsueh).
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Hsueh 2017 — disk substructure
 
-**File:** `Strong_Lens/Huseh2017_DiskSubstruct2.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[flux-ratio-anomalies]]
-**Summary (stub):** Companion paper.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Hsueh 2018 — disk substructure
 
-**File:** `Strong_Lens/Huseh2018_DiskSubstruct2.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[flux-ratio-anomalies]]
-**Summary (stub):** Continuation.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 

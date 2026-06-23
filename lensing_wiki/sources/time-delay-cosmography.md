@@ -9,58 +9,133 @@ status: stub
 
 ## Suyu 2016 — H0liCOW
 
-**File:** `Strong_Lens/Suyu2016Holicow.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[h0licow]], [[time-delay-cosmography]]
-**Summary (stub):** Programme paper for H0liCOW — methodology, sample,
-goals.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Birrer 2018 — H0liCOW IX
 
-**File:** `Strong_Lens/Birrer2018HolicowIX.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[h0licow]], [[lenstronomy]]
-**Summary (stub):** Paper IX in the H0liCOW series; likely the
-lenstronomy-based analysis of one of the H0liCOW lenses.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Birrer 2020 — TDCOSMO IV (H0)
 
-**File:** `Strong_Lens/Birrer2020TDCOSMOSIVH0.pdf`
+**Canonical BibTeX key:** `Birrer2020`
+**Reference:** TDCOSMO: IV. Hierarchical time-delay cosmography - Joint inference of the Hubble constant and galaxy density profiles; arXiv:2007.02941; doi:10.1051/0004-6361/202038861; A\&A
 **Concepts:** [[tdcosmo]], [[mass-sheet-degeneracy]]
-**Summary (stub):** TDCOSMO IV — relaxes the power-law assumption,
-allows an internal mass-sheet transformation, broadens the H0
-uncertainty and brings the lensing H0 into overlap with Planck.
+
+**Supports:**
+- Addresses TDCOSMO: IV. Hierarchical time-delay cosmography - Joint inference of the Hubble constant and galaxy density profiles as the verified public title/reference scope for this source.
+- Provides citable context for [[tdcosmo]], [[mass-sheet-degeneracy]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: TDCOSMO: IV. Hierarchical time-delay cosmography - Joint inference of the Hubble constant and galaxy density profiles.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Wong 2019 — H0liCOW six lenses
 
-**File:** `Strong_Lens/Wong2019H0licow6lenses.pdf`
+**Canonical BibTeX key:** `Wong2019`
+**Reference:** H0LiCOW XIII. A 2.4% measurement of H0 from lensed quasars: 5.3$\sigma$ tension between early and late-Universe probes; arXiv:1907.04869; doi:10.1093/mnras/stz3094; MNRAS
 **Concepts:** [[h0licow]], [[hubble-tension]]
-**Summary (stub):** Combined H0 from six H0liCOW lenses → 73.3 ± 1.7
-km/s/Mpc; consistent with the distance ladder, ~3σ from Planck.
+
+**Supports:**
+- Addresses H0LiCOW XIII. A 2.4% measurement of H0 from lensed quasars: 5.3$\sigma$ tension between early and late-Universe probes as the verified public title/reference scope for this source.
+- Provides citable context for [[h0licow]], [[hubble-tension]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: H0LiCOW XIII. A 2.4% measurement of H0 from lensed quasars: 5.3$\sigma$ tension between early and late-Universe probes.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Tagore 2017 — error on H0
 
-**File:** `Strong_Lens/Tagore2017_Error_On_Ho.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[time-delay-cosmography]], [[mass-sheet-degeneracy]]
-**Summary (stub):** Error budget for lensing H0 measurements.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Rana 2017 — cosmic distance ladder
 
-**File:** `Strong_Lens/Rana_Cosmic_Distance_Ladder2017.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[time-delay-cosmography]]
-**Summary (stub):** Lensing's place in the cosmic distance ladder.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Ding 2018 — time-delay model challenge
 
-**File:** `Strong_Lens/Ding2018TimeDelayModelChallenge.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[time-delay-cosmography]]
-**Summary (stub):** Blind modelling challenge for time-delay lenses;
-benchmarks different teams / codes against simulated truth.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Grillo 2018 — H0 from SN Refsdal
 
-**File:** `Strong_Lens/Grillo2018RefsdelHo.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[lensed-supernovae]], [[time-delay-cosmography]]
-**Summary (stub):** First H0 measurement from a lensed supernova (SN
-Refsdal); demonstrates the technique on a cluster lens.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 
