@@ -9,67 +9,137 @@ status: stub
 
 ## Cappellari 2002 — MGE
 
-**File:** `GaussianLinearModels/Cappelari2002MGE.pdf`
+**Canonical BibTeX key:** `Cappellari2002`
+**Reference:** Efficient multi-Gaussian expansion of galaxies; doi:10.1046/j.1365-8711.2002.05412.x; MNRAS
 **Concepts:** [[mge]], [[linear-inversion]]
-**Summary (stub):** Cappellari's Multi-Gaussian Expansion for galaxy
-light and mass models — sums of 2-D Gaussians with analytic projection
-and deprojection.
-(stub — verify against PDF)
+
+**Supports:**
+- Introduces efficient multi-Gaussian expansion modelling for galaxy light distributions.
+- Represents galaxy surface brightness as sums of Gaussian components useful for dynamical and lensing calculations.
+- Provides the standard MGE reference for compact analytic galaxy-light parameterizations.
+
+**Use when:**
+- Citing multi-Gaussian expansion of galaxy images/light profiles.
+
+**Do not use for:**
+- Non-negative least squares in general or probabilistic sampling methods.
+
 
 ## Brodersen & de Jong 1997 — FNNLS
 
-**File:** `GaussianLinearModels/brodejong1997fnnlks.pdf`
+**Canonical BibTeX key:** `Bro1997`
+**Reference:** A fast non-negativity-constrained least squares algorithm; doi:10.1002/(sici)1099-128x(199709/10)11:5<393::aid-cem483>3.0.co;2-l; Journal of Chemometrics
 **Concepts:** [[linear-inversion]]
-**Summary (stub):** Fast non-negative least squares — algorithm
-relevant for non-negative pixel-source-reconstruction inversions.
-(stub — verify against PDF)
+
+**Supports:**
+- Presents a fast algorithm for non-negativity-constrained least squares.
+- Supports using NNLS-style solvers when coefficients are constrained to be positive.
+- Provides a numerical linear-algebra reference for constrained least-squares subproblems.
+
+**Use when:**
+- Citing fast non-negative least-squares algorithms.
+
+**Do not use for:**
+- Bayesian posterior sampling or astronomical image modelling claims.
+
 
 ## Fergus 2014 — spectra as nuisance
 
-**File:** `GaussianLinearModels/Fergus2014SpectraNuisance.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[gaussian-linear-models]]
-**Summary (stub):** Marginalising over nuisance spectral structure in
-exoplanet RV / transmission spectroscopy.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Ness 2014 — Cannon stellar labels
 
-**File:** `GaussianLinearModels/Ness2014StellarLabeling.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[gaussian-linear-models]]
-**Summary (stub):** "The Cannon" — data-driven stellar-parameter
-inference via Gaussian linear models trained on labeled spectra.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Wang 2016 — causal Kepler
 
-**File:** `GaussianLinearModels/Wang2016CauslaKepler.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[gaussian-linear-models]]
-**Summary (stub):** Causal-Pixel-Model (CPM) data-driven detrending of
-Kepler / K2 light curves.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Wang 2017 — pixel-level time-domain
 
-**File:** `GaussianLinearModels/Wang2017PixelLevelTimeDomain.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[gaussian-linear-models]]
-**Summary (stub):** Pixel-level time-domain image modelling — extension
-of the CPM framework.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Linear algebra — root
 
-**File:** `linearalgebra.pdf`
+**Canonical BibTeX key:** `Boyd2018`
+**Reference:** Introduction to Applied Linear Algebra; doi:10.1017/9781108583664; Introduction to Applied Linear Algebra
 **Concepts:** [[linear-inversion]]
-**Summary (stub):** Generic linear-algebra reference at repo root —
-verify whether this is a textbook or a paper.
-(stub — verify against PDF)
+
+**Supports:**
+- Provides a textbook reference for applied linear algebra.
+- Covers vectors, matrices, least squares, and related computational foundations.
+- Useful as a general reference for linear-algebra primitives used by modelling codes.
+
+**Use when:**
+- Citing general applied-linear-algebra background.
+
+**Do not use for:**
+- A primary source for a specific astronomy algorithm.
+
 
 ## Big data — root
 
-**File:** `BigData.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[linear-inversion]]
-**Summary (stub):** Generic Big Data reference / review at repo root.
-(stub — verify against PDF; may be tangential.)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 

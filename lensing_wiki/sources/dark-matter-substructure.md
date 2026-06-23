@@ -11,227 +11,517 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Vegetti 2018 — sterile-neutrino constraints
 
-**File:** `Substructure/Vegetti2018StellarNeutrinos.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]], [[dark-matter-physics]]
-**Summary (stub):** Combined sample analysis using gravitational
-imaging; constrains the sterile-neutrino / thermal-relic warm-DM mass.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Nightingale 2022 — PyAutoLens subhalo scan
 
-**File:** `Substructure/Nightingale2022Scanm.pdf`
+**Canonical BibTeX key:** `Nightingale2024`
+**Reference:** Scanning for dark matter subhaloes in Hubble Space Telescope imaging of 54 strong lenses; arXiv:2209.10566; doi:10.1093/mnras/stad3694; MNRAS
 **Concepts:** [[gravitational-imaging]], [[pyautolens]]
-**Summary (stub):** Subhalo scanning methodology in PyAutoLens applied
-to a sample of galaxy-galaxy lenses; statistical population constraints
-on subhalo abundance.
+
+**Supports:**
+- Addresses Scanning for dark matter subhaloes in Hubble Space Telescope imaging of 54 strong lenses as the verified public title/reference scope for this source.
+- Provides citable context for [[gravitational-imaging]], [[pyautolens]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Scanning for dark matter subhaloes in Hubble Space Telescope imaging of 54 strong lenses.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Despali 2018 — baryons on substructure
 
-**File:** `Substructure/Despali2018BaryonsonSub.pdf`
+**Canonical BibTeX key:** `Despali2017`
+**Reference:** The impact of baryonic physics on the subhalo mass function and implications for gravitational lensing; arXiv:1608.06938; doi:10.1093/mnras/stx966; MNRAS
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** Hydrodynamical simulations show baryons modify
-subhalo populations relative to DM-only predictions.
+
+**Supports:**
+- Addresses The impact of baryonic physics on the subhalo mass function and implications for gravitational lensing as the verified public title/reference scope for this source.
+- Provides citable context for [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: The impact of baryonic physics on the subhalo mass function and implications for gravitational lensing.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Despali 2018 — LOS
 
-**File:** `Substructure/Despali2018LOS.pdf`
-**Concepts:** [[line-of-sight-effects]],
-[[dark-matter-substructure]]
-**Summary (stub):** Quantifies the fraction of detected perturbers in
-strong lenses that are LOS halos rather than in-lens subhaloes.
+**Canonical BibTeX key:** `Despali2018`
+**Reference:** Modelling the line-of-sight contribution in substructure lensing; arXiv:1710.05029; doi:10.1093/mnras/sty159; MNRAS
+**Concepts:** [[line-of-sight-effects]], [[dark-matter-substructure]]
+
+**Supports:**
+- Addresses Modelling the line-of-sight contribution in substructure lensing as the verified public title/reference scope for this source.
+- Provides citable context for [[line-of-sight-effects]], [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Modelling the line-of-sight contribution in substructure lensing.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Despali 2021 — sensitivity
 
-**File:** `Substructure/Despali2021Senstitoty.pdf`
+**Canonical BibTeX key:** `Despali2022`
+**Reference:** Detecting low-mass haloes with strong gravitational lensing I: the effect of data quality and lensing configuration; arXiv:2111.08718; doi:10.1093/mnras/stab3537; MNRAS
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** Forward-model sensitivity study for subhalo
-detection.
+
+**Supports:**
+- Addresses Detecting low-mass haloes with strong gravitational lensing I: the effect of data quality and lensing configuration as the verified public title/reference scope for this source.
+- Provides citable context for [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Detecting low-mass haloes with strong gravitational lensing I: the effect of data quality and lensing configuration.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Despali 2022 — sensitivity
 
-**File:** `Strong_Lens/Despali2022Sensitivity.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** Updated detection-sensitivity grids for subhaloes
-across mass, position, and noise levels.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Despali 2024 — sensitivity II
 
-**File:** `Substructure/Despali2024SensitivityII.pdf`
+**Canonical BibTeX key:** `Despali2024`
+**Reference:** Detecting low-mass haloes with strong gravitational lensing II: constraints on the density profiles of two detected subhaloes; arXiv:2407.12910
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** Continuation of the Despali sensitivity series with
-updated forward modelling.
+
+**Supports:**
+- Addresses Detecting low-mass haloes with strong gravitational lensing II: constraints on the density profiles of two detected subhaloes as the verified public title/reference scope for this source.
+- Provides citable context for [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Detecting low-mass haloes with strong gravitational lensing II: constraints on the density profiles of two detected subhaloes.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Amorscio 2022 — sensitivity
 
-**File:** `Strong_Lens/Amorscio2022Sensiti.pdf`
+**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautopaper.bib` before citing.
+**Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** Sensitivity / forecast paper. Filename misspelled —
-verify author (likely Amorisco).
+
+**Supports TODO:**
+- TODO — not migrated: canonical-key identity needs manual verification.
+
+**Use when TODO:**
+- TODO — use only after the paper identity and canonical key are resolved.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
 
 ## He 2017 — substructure halos vs globular clusters
 
-**File:** `Strong_Lens/He2017_Substructure_Halos_vs_Globs.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** Argues that lensing perturbers may include globular
-clusters as well as DM subhaloes.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## He 2022 — preprint
 
-**File:** `Strong_Lens/He2022Preprint.pdf`
+**Canonical BibTeX key:** `He2023`
+**Reference:** Testing strong lensing subhalo detection with a cosmological simulation; arXiv:2202.10191; doi:10.1093/mnras/stac2779; MNRAS
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** Topic uncertain from filename. Verify.
+
+**Supports:**
+- Addresses Testing strong lensing subhalo detection with a cosmological simulation as the verified public title/reference scope for this source.
+- Provides citable context for [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Testing strong lensing subhalo detection with a cosmological simulation.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Loudas 2022 — millilensing
 
-**File:** `Substructure/Loudas2022MiliLensing.pdf`
+**Canonical BibTeX key:** `Loudas2022`
+**Reference:** Discriminating power of milli-lensing observations for dark matter models; arXiv:2209.13393
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** Mas-scale "millilensing" by DM subhaloes in radio
-lenses.
+
+**Supports:**
+- Addresses Discriminating power of milli-lensing observations for dark matter models as the verified public title/reference scope for this source.
+- Provides citable context for [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Discriminating power of milli-lensing observations for dark matter models.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Ran Li 2016 — substructure
 
-**File:** `Strong_Lens/RanLi2016Sub.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** Substructure inference paper.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Ran Li 2016 — substructure II
 
-**File:** `Strong_Lens/RanLi2016Sub2.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** Companion paper.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Diaz-Rivero 2019 — subhalo without lens model
 
-**File:** `Strong_Lens/Rivero2019DirectSubhaLoCircumventLensmodel.pdf`
-**Concepts:** [[dark-matter-substructure]],
-[[deep-learning-lensing]]
-**Summary (stub):** Direct subhalo-population inference that bypasses
-the per-lens mass model — population-level statistics from arc residuals.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Concepts:** [[dark-matter-substructure]], [[deep-learning-lensing]]
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Ritondale 2018 — BELLS subhaloes
 
-**File:** `Substructure/Ritondale2018BELLS.pdf`
-**Concepts:** [[bells-gallery]],
-[[dark-matter-substructure]]
-**Summary (stub):** Subhalo search in BELLS-GALLERY sample.
+**Canonical BibTeX key:** `Ritondale2019a`
+**Reference:** Low-mass halo perturbations in strong gravitational lenses at redshift z $\sim$ 0.5 are consistent with CDM; arXiv:1811.03627; doi:10.1093/mnras/stz464; MNRAS
+**Concepts:** [[bells-gallery]], [[dark-matter-substructure]]
+
+**Supports:**
+- Addresses Low-mass halo perturbations in strong gravitational lenses at redshift z $\sim$ 0.5 are consistent with CDM as the verified public title/reference scope for this source.
+- Provides citable context for [[bells-gallery]], [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Low-mass halo perturbations in strong gravitational lenses at redshift z $\sim$ 0.5 are consistent with CDM.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Ritondale 2018 — Lyman-α
 
-**File:** `Substructure/Ritondale2018BELLLymaAlphs.pdf`
-**Concepts:** [[bells-gallery]],
-[[lensed-source-science]]
-**Summary (stub):** Lyman-α emission from BELLS-GALLERY sources.
+**Canonical BibTeX key:** `Ritondale2019`
+**Reference:** Resolving on 100 pc scales the UV-continuum in Lyman-$\alpha$ emitters between redshift 2 and 3 with gravitational lensing; arXiv:1811.03628; doi:10.1093/mnras/sty2833; MNRAS
+**Concepts:** [[bells-gallery]], [[lensed-source-science]]
+
+**Supports:**
+- Addresses Resolving on 100 pc scales the UV-continuum in Lyman-$\alpha$ emitters between redshift 2 and 3 with gravitational lensing as the verified public title/reference scope for this source.
+- Provides citable context for [[bells-gallery]], [[lensed-source-science]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Resolving on 100 pc scales the UV-continuum in Lyman-$\alpha$ emitters between redshift 2 and 3 with gravitational lensing.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Sawala 2016 — the chosen few
 
-**File:** `Substructure/Sawala2016TheChosenFew.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** N-body / hydro simulations exploring which subhaloes
-host galaxies — calibrates the lensing-DM-galaxy connection.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Benitez 2020 — detailed structure of halos
 
-**File:** `Substructure/Benitez2020DetailedstructureHalos.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** Detailed-structure simulations relevant to lensing
-subhalo predictions.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Minor 2020 — DM concentration of J0946
 
-**File:** `Strong_Lens/Minor2020DMConcentration0946.pdf`
+**Canonical BibTeX key:** `Minor2021`
+**Reference:** An unexpected high concentration for the dark substructure in the gravitational lens SDSSJ0946+1006; arXiv:2011.10627; doi:10.1093/mnras/stab2247; MNRAS
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** Mass-concentration of the perturber in SDSSJ0946.
+
+**Supports:**
+- Addresses An unexpected high concentration for the dark substructure in the gravitational lens SDSSJ0946+1006 as the verified public title/reference scope for this source.
+- Provides citable context for [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: An unexpected high concentration for the dark substructure in the gravitational lens SDSSJ0946+1006.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Minor 2021 — DM concentration
 
-**File:** `Strong_Lens/Minor2021DMConcentration.pdf`
-**Concepts:** [[dark-matter-substructure]],
-[[dark-matter-physics]]
-**Summary (stub):** Constrains the perturber's c-M relation; J0946
-appears overconcentrated for CDM.
+**Canonical BibTeX key:** `Minor2021a`
+**Reference:** Inferring the concentration of dark matter subhaloes perturbing strongly lensed images; arXiv:2011.10629; doi:10.1093/mnras/stab2209; MNRAS
+**Concepts:** [[dark-matter-substructure]], [[dark-matter-physics]]
+
+**Supports:**
+- Addresses Inferring the concentration of dark matter subhaloes perturbing strongly lensed images as the verified public title/reference scope for this source.
+- Provides citable context for [[dark-matter-substructure]], [[dark-matter-physics]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Inferring the concentration of dark matter subhaloes perturbing strongly lensed images.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Benitez 2020 — detailed structure of halos
 
-**File:** `Substructure/Benitez2020DetailedstructureHalos.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** Detailed halo-substructure analysis (Benitez 2020).
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Despali 2018 — baryons on substructure
 
-**File:** `Substructure/Despali2018BaryonsonSub.pdf`
+**Canonical BibTeX key:** `Despali2017`
+**Reference:** The impact of baryonic physics on the subhalo mass function and implications for gravitational lensing; arXiv:1608.06938; doi:10.1093/mnras/stx966; MNRAS
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** Effects of baryonic physics on subhalo populations.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses The impact of baryonic physics on the subhalo mass function and implications for gravitational lensing as the verified public title/reference scope for this source.
+- Provides citable context for [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: The impact of baryonic physics on the subhalo mass function and implications for gravitational lensing.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Despali 2018 — LOS
 
-**File:** `Substructure/Despali2018LOS.pdf`
+**Canonical BibTeX key:** `Despali2018`
+**Reference:** Modelling the line-of-sight contribution in substructure lensing; arXiv:1710.05029; doi:10.1093/mnras/sty159; MNRAS
 **Concepts:** [[line-of-sight-effects]], [[dark-matter-substructure]]
-**Summary (stub):** Line-of-sight halos vs in-host subhalos in lensing.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses Modelling the line-of-sight contribution in substructure lensing as the verified public title/reference scope for this source.
+- Provides citable context for [[line-of-sight-effects]], [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Modelling the line-of-sight contribution in substructure lensing.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Despali 2021 — sensitivity
 
-**File:** `Substructure/Despali2021Senstitoty.pdf`
+**Canonical BibTeX key:** `Despali2022`
+**Reference:** Detecting low-mass haloes with strong gravitational lensing I: the effect of data quality and lensing configuration; arXiv:2111.08718; doi:10.1093/mnras/stab3537; MNRAS
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** Sensitivity analysis of lensing substructure
-detection.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses Detecting low-mass haloes with strong gravitational lensing I: the effect of data quality and lensing configuration as the verified public title/reference scope for this source.
+- Provides citable context for [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Detecting low-mass haloes with strong gravitational lensing I: the effect of data quality and lensing configuration.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Despali 2024 — sensitivity II
 
-**File:** `Substructure/Despali2024SensitivityII.pdf`
+**Canonical BibTeX key:** `Despali2024`
+**Reference:** Detecting low-mass haloes with strong gravitational lensing II: constraints on the density profiles of two detected subhaloes; arXiv:2407.12910
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** Follow-up sensitivity analysis.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses Detecting low-mass haloes with strong gravitational lensing II: constraints on the density profiles of two detected subhaloes as the verified public title/reference scope for this source.
+- Provides citable context for [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Detecting low-mass haloes with strong gravitational lensing II: constraints on the density profiles of two detected subhaloes.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Loudas 2022 — milli-lensing
 
-**File:** `Substructure/Loudas2022MiliLensing.pdf`
+**Canonical BibTeX key:** `Loudas2022`
+**Reference:** Discriminating power of milli-lensing observations for dark matter models; arXiv:2209.13393
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** Milli-arcsec-scale lensing of compact sources by
-sub-galactic halos.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses Discriminating power of milli-lensing observations for dark matter models as the verified public title/reference scope for this source.
+- Provides citable context for [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Discriminating power of milli-lensing observations for dark matter models.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Nightingale 2022 — scanning for substructure
 
-**File:** `Substructure/Nightingale2022Scanm.pdf`
-**Concepts:** [[gravitational-imaging]], [[dark-matter-substructure]],
-[[pyautolens]]
-**Summary (stub):** Nightingale et al. systematic scanning approach to
-substructure detection in PyAutoLens.
-(stub — verify against PDF)
+**Canonical BibTeX key:** `Nightingale2024`
+**Reference:** Scanning for dark matter subhaloes in Hubble Space Telescope imaging of 54 strong lenses; arXiv:2209.10566; doi:10.1093/mnras/stad3694; MNRAS
+**Concepts:** [[gravitational-imaging]], [[dark-matter-substructure]], [[pyautolens]]
+
+**Supports:**
+- Addresses Scanning for dark matter subhaloes in Hubble Space Telescope imaging of 54 strong lenses as the verified public title/reference scope for this source.
+- Provides citable context for [[gravitational-imaging]], [[dark-matter-substructure]], [[pyautolens]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Scanning for dark matter subhaloes in Hubble Space Telescope imaging of 54 strong lenses.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Ritondale 2018 — BELLS
 
-**File:** `Substructure/Ritondale2018BELLS.pdf`
+**Canonical BibTeX key:** `Ritondale2019a`
+**Reference:** Low-mass halo perturbations in strong gravitational lenses at redshift z $\sim$ 0.5 are consistent with CDM; arXiv:1811.03627; doi:10.1093/mnras/stz464; MNRAS
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** BELLS-survey substructure analysis.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses Low-mass halo perturbations in strong gravitational lenses at redshift z $\sim$ 0.5 are consistent with CDM as the verified public title/reference scope for this source.
+- Provides citable context for [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Low-mass halo perturbations in strong gravitational lenses at redshift z $\sim$ 0.5 are consistent with CDM.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Ritondale 2018 — BELLS Lyman-α
 
-**File:** `Substructure/Ritondale2018BELLLymaAlphs.pdf`
+**Canonical BibTeX key:** `Ritondale2019`
+**Reference:** Resolving on 100 pc scales the UV-continuum in Lyman-$\alpha$ emitters between redshift 2 and 3 with gravitational lensing; arXiv:1811.03628; doi:10.1093/mnras/sty2833; MNRAS
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** BELLS Lyman-α background sources for substructure
-detection.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses Resolving on 100 pc scales the UV-continuum in Lyman-$\alpha$ emitters between redshift 2 and 3 with gravitational lensing as the verified public title/reference scope for this source.
+- Provides citable context for [[dark-matter-substructure]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Resolving on 100 pc scales the UV-continuum in Lyman-$\alpha$ emitters between redshift 2 and 3 with gravitational lensing.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Sawala 2016 — the chosen few
 
-**File:** `Substructure/Sawala2016TheChosenFew.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]]
-**Summary (stub):** APOSTLE / EAGLE Local-Group satellite halos —
-"chosen few" zoom simulations.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Vegetti 2018 — stellar streams / neutrinos
 
-**File:** `Substructure/Vegetti2018StellarNeutrinos.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]], [[dark-matter-physics]]
-**Summary (stub):** Vegetti on stellar-stream / lensing combined
-constraints on neutrino DM (verify scope).
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 

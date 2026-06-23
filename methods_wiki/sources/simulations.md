@@ -14,143 +14,296 @@ gas-physics work and pure DM-only studies.
 
 ## Springel — LSS
 
-**File:** `Simulation/SpringelLSS.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
-**Summary (stub):** Springel large-scale-structure / Millennium-style
-simulation paper.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## IllustrisTNG — Nelson 2017 colour bimodality
 
-**File:** `Simulation/Nelsono2017_IllustrisTNG_ColourBimod.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
-**Summary (stub):** IllustrisTNG result on the galaxy
-colour bimodality.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## IllustrisTNG model overview 2017
 
-**File:** `Simulation/TNGModelOverview2017.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
-**Summary (stub):** Overview of the IllustrisTNG simulation suite and
-its galaxy-formation subgrid model.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Genel 2017 — IllustrisTNG size evolution
 
-**File:** `Simulation/GenelIllustrisTNGSizeEvo2017.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
-**Summary (stub):** Galaxy size evolution in IllustrisTNG.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Algorry 2016 — barred galaxies in EAGLE
 
-**File:** `Simulation/Algorry2016BarredGalEAGLE.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
-**Summary (stub):** Bar fraction and properties in EAGLE simulations.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Rosas-Guevara 2016 — SMBH in EAGLE
 
-**File:** `Simulation/RosasGuevara2016SMBHEGGLE.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]] (cross-link `../smbh_wiki/`)
-**Summary (stub):** EAGLE-simulation results on SMBH growth and AGN
-feedback.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Lovell 2018 — dark-matter fractions
 
-**File:** `Simulation/Lovell2018darkMatterFracs.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
-**Summary (stub):** Dark-matter / baryon fractions in simulated halos
-across alternative DM models.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Ludlow 2016 — concentration-mass for DM halos
 
-**File:** `Simulation/Ludlow2016MCRDMHalos.pdf`
+**Canonical BibTeX key:** `Ludlow2016`
+**Reference:** The mass-concentration-redshift relation of cold and warm dark matter haloes; arXiv:1601.02624; doi:10.1093/mnras/stw1046; MNRAS
 **Concepts:** [[forward-modelling]]
-**Summary (stub):** Concentration–mass relation for dark-matter halos
-across simulations.
-(stub — verify against PDF)
+
+**Supports:**
+- Studies the mass-concentration-redshift relation of cold and warm dark-matter haloes.
+- Provides simulation-based context for halo concentration as a function of mass and redshift.
+- Includes warm-dark-matter halo concentration behaviour relevant to structure-formation comparisons.
+
+**Use when:**
+- Citing halo mass-concentration-redshift relations in CDM/WDM simulations.
+
+**Do not use for:**
+- Observed lensing substructure constraints by itself.
+
 
 ## Governato 2015 — faint dwarfs
 
-**File:** `Simulation/GovernatoFaintDwarfs2015.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
-**Summary (stub):** Simulated faint-dwarf-galaxy properties and DM
-cusp / core question.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Pontzen — CDM heats 2015
 
-**File:** `Simulation/PontzenCDMHeats2015.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
-**Summary (stub):** Pontzen et al. on baryonic feedback heating DM
-cusps into cores in simulated dwarfs.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Pontzen — quenching 2017
 
-**File:** `Simulation/PontzenQuench2017.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
-**Summary (stub):** Pontzen et al. mechanisms for galaxy quenching in
-hydro simulations.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Pontzen — sphere 2015
 
-**File:** `Simulation/PontzenSphere2015.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
-**Summary (stub):** Pontzen sphere / shape paper (verify).
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Oman 2017 — cores wrong
 
-**File:** `Simulation/Oman2017_CoresWrong.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
-**Summary (stub):** Oman et al. arguing that the cusp / core puzzle is
-mis-stated when comparing simulations to data.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Peirani 2019 — Horizon-AGN total power-law slopes
 
-**File:** `Simulation/Peirani2019TotalPLSlopesHorizonAGN.pdf`
+**Canonical BibTeX key:** `Peirani2019`
+**Reference:** Total density profile of massive early-type galaxies in H orizon -AGN simulation: Impact of AGN feedback and comparison with observations; arXiv:1801.09754; doi:10.1093/mnras/sty3475; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[forward-modelling]]
-**Summary (stub):** Horizon-AGN result on the inner total mass-density
-slope of ETGs — direct relevance to lensing-modelling priors.
-(stub — verify against PDF; cross-link `../lensing_wiki/`.)
+
+**Supports:**
+- Studies total density profiles of massive early-type galaxies in the Horizon-AGN simulation.
+- Tests the impact of AGN feedback on simulated galaxy density slopes.
+- Compares simulated early-type-galaxy density profiles with observations.
+
+**Use when:**
+- Citing simulated total density slopes of massive ETGs and AGN-feedback effects.
+
+**Do not use for:**
+- Direct strong-lens modelling of a particular observed lens.
+
 
 ## Di Cintio 2017 — SIDM
 
-**File:** `Simulation/DiCinitSIDM2017.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
-**Summary (stub):** Self-interacting dark matter (SIDM) hydro
-simulations and the core-collapse phenomenology.
-(stub — verify against PDF; cross-link `../lensing_wiki/sources-dark-matter-physics.md`.)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Ferrero 2016 — Tully-Fisher
 
-**File:** `Simulation/Ferreo2016TullyFishRel.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
-**Summary (stub):** Simulated Tully-Fisher relation in EAGLE / similar
-simulations.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Mukherjee 2019 — SEAGLE I
 
-**File:** `Simulation/Mukherjee2019SEGLE1.pdf`
+**Canonical BibTeX key:** `Mukherjee2018`
+**Reference:** SEAGLE - I. A pipeline for simulating and modelling strong lenses from cosmological hydrodynamic simulations; arXiv:1802.06629; doi:10.1093/mnras/sty1741; MNRAS
 **Concepts:** [[forward-modelling]]
-**Summary (stub):** SEAGLE — strong-lensing analysis of EAGLE-simulated
-galaxies, first paper. Direct lensing-simulation relevance.
-(stub — verify against PDF; cross-link `../lensing_wiki/`.)
+
+**Supports:**
+- Introduces the SEAGLE pipeline for simulating and modelling strong lenses from hydrodynamic simulations.
+- Connects cosmological hydrodynamic simulations to mock strong-lensing analysis.
+- Provides a simulation-to-lens-modelling workflow reference.
+
+**Use when:**
+- Citing SEAGLE-I or simulated strong lenses from hydrodynamic simulations.
+
+**Do not use for:**
+- SEAGLE-II feedback constraints or observational lens surveys.
+
 
 ## Mukherjee 2019 — SEAGLE II
 
-**File:** `Simulation/Mukherjee2019SEGLE2.pdf`
+**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautopaper.bib` before citing.
+**Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
-**Summary (stub):** SEAGLE companion paper.
-(stub — verify against PDF; cross-link `../lensing_wiki/`.)
+
+**Supports TODO:**
+- TODO — not migrated: automated canonical-key match was unsafe.
+
+**Use when TODO:**
+- TODO — use only after the paper identity and canonical key are resolved.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
 
 ## See also
 

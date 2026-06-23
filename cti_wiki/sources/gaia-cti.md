@@ -13,46 +13,84 @@ mitigation via supplementary buried channels.
 
 ## Prodhomme 2011 — impact on Gaia astrometry
 
-**File:** `CTI/Prodhomme2011_ImpactGaiaAstrometry.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
-**Summary (stub):** Quantifies the impact of CTI on Gaia astrometric
-performance, validating the case for the supplementary buried channel
-mitigation.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Bron 2018 — Gaia DR2
 
-**File:** `CTI/Bron2018GaiaDR2.pdf`
+**Canonical BibTeX key:** `Brown2018`
+**Reference:** Summary of the contents and survey properties; arXiv:1804.09365; doi:10.1051/0004-6361/201833051; A\&A
 **Concepts:** [[ccd-trap-physics]]
-**Summary (stub):** CTI status and impact on Gaia Data Release 2
-photometry / astrometry.
-(stub — verify against PDF)
+
+**Supports:**
+- Summarizes Gaia Data Release 2 survey contents and survey properties.
+- Provides Gaia DR2 context rather than a CTI-specific detector-modelling paper.
+
+**Use when:**
+- Citing the Gaia DR2 data-release reference.
+
+**Do not use for:**
+- Detailed Gaia CTI modelling or radiation-damage mitigation claims.
+
 
 ## Crowley 2016 — Radiation 30-month Gaia L2
 
-**File:** `CTI/Crowley2016_Radiation30MonthGaiaL2.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
-**Summary (stub):** Gaia in-flight radiation environment tracked over
-the first 30 months of mission at L2.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Seabroke 2008 — radiation model
 
-**File:** `CTI/Seabroke2008_ModelRadiationGia.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
-**Summary (stub):** Pre-launch modelling of expected radiation
-environment for Gaia CCDs.
-(stub — verify against PDF; also listed under
-[[sources-cti-detector-physics]])
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Seabroke 2013 — supplementary buried channels
 
-**File:** `CTI/Seabroke2013_SupplemenaryBuriedChannelsGaia.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
-**Summary (stub):** SBC mitigation strategy as implemented in Gaia
-flight detectors.
-(stub — verify against PDF; also listed under
-[[sources-cti-detector-physics]])
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 

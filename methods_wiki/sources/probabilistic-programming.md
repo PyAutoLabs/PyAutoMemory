@@ -12,43 +12,93 @@ adjacent work either uses or competes with.
 
 ## STAN
 
-**File:** `PPLs/STAN.pdf`
+**Canonical BibTeX key:** `Carpenter2017`
+**Reference:** Stan: A probabilistic programming language; doi:10.18637/jss.v076.i01; Journal of Statistical Software
 **Concepts:** [[probabilistic-programming]], [[hamiltonian-monte-carlo]]
-**Summary (stub):** Carpenter et al. reference paper for Stan — a
-PPL with NUTS-based HMC backend.
-(stub — verify against PDF)
+
+**Supports:**
+- Presents Stan as a probabilistic programming language.
+- Supports Bayesian model specification with automatic inference machinery.
+- Provides the canonical software/method citation for Stan.
+
+**Use when:**
+- Citing Stan or probabilistic programming for Bayesian models.
+
+**Do not use for:**
+- PyMC, Pyro, or PyAutoFit-specific API claims.
+
 
 ## PyMC3
 
-**File:** `PPLs/PyMC3.pdf`
+**Canonical BibTeX key:** `Salvatier2016`
+**Reference:** Probabilistic programming in Python using PyMC3; arXiv:1507.08050; doi:10.7717/peerj-cs.55; PeerJ Computer Science
 **Concepts:** [[probabilistic-programming]]
-**Summary (stub):** Salvatier et al. PyMC3 — Python PPL with NUTS / VI /
-SMC backends.
-(stub — verify against PDF)
+
+**Supports:**
+- Presents PyMC3 as a Python probabilistic-programming system.
+- Supports Bayesian statistical modelling with MCMC and related inference tools.
+- Provides the canonical citation for PyMC3 software.
+
+**Use when:**
+- Citing PyMC3 or Python probabilistic programming.
+
+**Do not use for:**
+- Stan, Pyro, or PyAutoFit-specific implementation details.
+
 
 ## Pyro
 
-**File:** `PPLs/Pyro.pdf`
+**Canonical BibTeX key:** `Bingham2019`
+**Reference:** Pyro: Deep universal probabilistic programming; arXiv:1810.09538; Journal of Machine Learning Research
 **Concepts:** [[probabilistic-programming]], [[deep-learning-astro]]
-**Summary (stub):** Bingham et al. Pyro — deep universal PPL built on
-PyTorch.
-(stub — verify against PDF)
+
+**Supports:**
+- Presents Pyro as a deep universal probabilistic-programming system.
+- Connects probabilistic modelling with deep-learning frameworks.
+- Provides the software citation for Pyro.
+
+**Use when:**
+- Citing Pyro or deep probabilistic programming.
+
+**Do not use for:**
+- General Bayesian inference without Pyro-specific relevance.
+
 
 ## GetDist
 
-**File:** `PPLs/GetDist.pdf`
+**Canonical BibTeX key:** `Lewis2019`
+**Reference:** GetDist: a Python package for analysing Monte Carlo samples; arXiv:1910.13970; preprint (arXiv:1910.13970)
 **Concepts:** [[probabilistic-programming]]
-**Summary (stub):** Lewis GetDist — posterior-sample analysis and
-publication-quality contour plotting used widely in cosmology.
-(stub — verify against PDF)
+
+**Supports:**
+- Presents GetDist as a Python package for analysing Monte Carlo samples.
+- Supports posterior-sample analysis and visualization workflows.
+- Provides the package citation for GetDist.
+
+**Use when:**
+- Citing GetDist for Monte Carlo sample analysis.
+
+**Do not use for:**
+- Running samplers or defining probabilistic models.
+
 
 ## corner
 
-**File:** `PPLs/corner.pdf`
+**Canonical BibTeX key:** `Foreman-Mackey2016`
+**Reference:** corner.py: Scatterplot matrices in Python; doi:10.21105/joss.00024; J. Open Source Softw.
 **Concepts:** [[probabilistic-programming]]
-**Summary (stub):** Foreman-Mackey corner.py — standard corner-plot
-library for posterior visualisation.
-(stub — verify against PDF)
+
+**Supports:**
+- Presents corner.py for scatterplot-matrix visualizations in Python.
+- Supports visualizing multidimensional posterior samples and parameter covariances.
+- Provides the JOSS software citation for corner.py.
+
+**Use when:**
+- Citing corner plots or corner.py visualisation.
+
+**Do not use for:**
+- Sampler algorithms or posterior-estimation methodology.
+
 
 ## See also
 

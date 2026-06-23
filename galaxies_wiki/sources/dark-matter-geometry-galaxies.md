@@ -14,204 +14,451 @@ work in `../lensing_wiki/`.
 
 ## Brainerd 2005 — anisotropic SDSS galaxies
 
-**File:** `Dark_Matter_Geometry/Bainerd_Anisotropi_SDSS_Gals_2005.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Anisotropic satellite-galaxy distribution around
-SDSS hosts.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Agustsson 2005 — anisotropic satellites
 
-**File:** `Dark_Matter_Geometry/Agustsson2005AnisotopicSats.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Anisotropy in satellite distribution.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Agustsson 2005 — distance of satellites
 
-**File:** `Dark_Matter_Geometry/Agustsson2005DistSats.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Radial-distance distribution of satellites.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Aubert 2004 — isotropy of halos
 
-**File:** `Dark_Matter_Geometry/Aubert2004IsotrophyHalos.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Isotropy of DM halos.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Bailin 2005 — shapes and angular momentum
 
-**File:** `Dark_Matter_Geometry/BailinShapesAngMom2005.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Halo shapes vs angular momentum.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Bailin 2008 — anisotropic distribution
 
-**File:** `Dark_Matter_Geometry/BailinAniDistSatGals2008.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Anisotropic satellite distribution.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Cautun 2015 — planes of satellites
 
-**File:** `Dark_Matter_Geometry/CautonPlanesSatGalsExcepts2015.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Statistics of satellite planes in LCDM.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Deason 2009 — distance of satellites in disk galaxies
 
-**File:** `Dark_Matter_Geometry/Deason_Dist_Sat_DiskGal_2009.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Satellite distance distribution around disk hosts.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Kang 2007 — SAM and observations
 
-**File:** `Dark_Matter_Geometry/Kang_2007_Sam_And_Obs.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Semi-analytic-model comparison to satellite
-observations.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Liao 2016 — segregation of baryons
 
-**File:** `Dark_Matter_Geometry/Liao_Seg_OfBaryons_2016.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Baryon / DM segregation in halos.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Libeskind 2005 — satellite distribution
 
-**File:** `Dark_Matter_Geometry/LibeskiDistSatellite2005.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Constrained-simulation satellite-distribution
-prediction.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Libeskind 2014 — universal subhalo accretion
 
-**File:** `Dark_Matter_Geometry/LibeskinUniNatureSubhaloAccrete2014.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Universal subhalo accretion patterns.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Lovell 2011 — linking galactic satellites
 
-**File:** `Dark_Matter_Geometry/LovvellLinkgalacticsatellite2011.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Linking galactic satellite distributions to host.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Sales 2015 — origin of disks
 
-**File:** `Dark_Matter_Geometry/SalesOriginDisks2015.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Cosmological origin of galactic disks; angular-
-momentum alignment.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Shao 2016 — alignment galaxy halo satellite
 
-**File:** `Dark_Matter_Geometry/Shao_AlignmentGalHaloSat_2016.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Galaxy / halo / satellite mutual alignments.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Shi 2017 — angular momentum of galaxies
 
-**File:** `Dark_Matter_Geometry/ShiAngMomofGalaxies2017.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Angular-momentum statistics across galaxy populations.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Shi 2015 — flow patterns
 
-**File:** `Dark_Matter_Geometry/ShiFlowPatterns2015.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Cosmological-flow alignment of galaxies and halos.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Siverd 2009 — Galactic orientation alignment SDSS
 
-**File:** `Dark_Matter_Geometry/SiverdGalOriAlignSDSS2009.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** SDSS galaxy orientation alignment with environment.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Tenneti — galaxy shapes massive black
 
-**File:** `Dark_Matter_Geometry/TennenitGalShapesMassiveBlack.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Galaxy intrinsic shapes in MassiveBlack
-hydrodynamic simulations.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Tenneti 2015 — intrinsic alignment disk / ETG
 
-**File:** `Dark_Matter_Geometry/TennitiIntrSlignDiskEll2015.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Intrinsic alignments of disks vs ETGs.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Wang 2005 — alignment of satellites
 
-**File:** `Dark_Matter_Geometry/Wang_2005_Aignmnt_Of_Satellites.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Anisotropic satellite alignment in SDSS hosts.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Wang 2006 — alignment satellite central
 
-**File:** `Dark_Matter_Geometry/Wang_Alignment_Sat_Central_2006.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Satellite-central alignment statistics.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Wang 2013 — spatial satellite
 
-**File:** `Dark_Matter_Geometry/WangSpatialSat2013.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Spatial distribution of satellites.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Wang 2014 — satellite alignment
 
-**File:** `Dark_Matter_Geometry/WangSatelliteAlignment2014.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Satellite-galaxy alignment statistics.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Xia 2017 — halo intrinsic alignment
 
-**File:** `Dark_Matter_Geometry/Xia2017_HaloIntrnAlignment.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Halo intrinsic-alignment correlations.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Yang 2008 — infall sub
 
-**File:** `Dark_Matter_Geometry/YangInfallSub2008.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Subhalo infall and alignment.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Zehavi 2017 — assembly bias galaxy content
 
-**File:** `Dark_Matter_Geometry/Zehavi2017_AssemblyBiasGlaxyContent.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[halo-occupation]]
-**Summary (stub):** Galaxy-content dependence on halo assembly history.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Zentner 2005 — anisotropic satellites
 
-**File:** `Dark_Matter_Geometry/Zentner_AnisotrpicSat_2005.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
-**Summary (stub):** Anisotropic satellite-galaxy distributions.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 

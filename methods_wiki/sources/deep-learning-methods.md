@@ -13,35 +13,67 @@ lensing-specific applications (which live in
 
 ## Schmidhuber 2014 — deep learning review
 
-**File:** `Deep Learning/Schmidhuber2014.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[deep-learning-astro]]
-**Summary (stub):** Schmidhuber's foundational deep-learning review.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Gao 2015 — deep learning
 
-**File:** `Deep Learning/Gao2015.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[deep-learning-astro]]
-**Summary (stub):** Deep-learning paper from 2015; specific topic
-needs verification from PDF.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Lanusse — CMU deep
 
-**File:** `Deep Learning/LanusseCMUDeep.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[deep-learning-astro]]
-**Summary (stub):** Lanusse / CMU deep-learning-in-astronomy work
-(generative models / neural emulators — verify).
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Kids strong-lensing deep
 
-**File:** `Deep Learning/KidsStrongLensingDeep.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[deep-learning-astro]]
-**Summary (stub):** KiDS-survey strong-lensing-finding deep network
-paper (cross-link `../lensing_wiki/sources/deep-learning-lensing.md`
-and `../lensing_wiki/sources/lens-finding.md`).
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 

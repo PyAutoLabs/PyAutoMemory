@@ -14,61 +14,133 @@ and `sources-cluster-lensing.md`.
 
 ## Bartelmann 2016 — weak-lensing summary
 
-**File:** `WeakLensing/Bartelmann2016Summary.pdf`
+**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautopaper.bib` before citing.
+**Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[weak-lensing]]
-**Summary (stub):** Bartelmann weak-lensing review.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: canonical-key identity needs manual verification.
+
+**Use when TODO:**
+- TODO — use only after the paper identity and canonical key are resolved.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
 
 ## Mandelbaum 2017 — weak-lensing summary
 
-**File:** `WeakLensing/mandelbuam2017Summary.pdf`
+**Canonical BibTeX key:** `Mandelbaum2017`
+**Reference:** Weak Lensing for Precision Cosmology; arXiv:1710.03235; doi:10.1146/annurev-astro-081817-051928; Annual Review of Astronomy and Astrophysics
 **Concepts:** [[weak-lensing]]
-**Summary (stub):** Mandelbaum review.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses Weak Lensing for Precision Cosmology as the verified public title/reference scope for this source.
+- Provides citable context for [[weak-lensing]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Weak Lensing for Precision Cosmology.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Miller 2007 — Bayes PSF
 
-**File:** `WeakLensing/Miller2007BayesPSF.pdf`
+**Canonical BibTeX key:** `Miller2007`
+**Reference:** Bayesian galaxy shape measurement for weak lensing surveys - I. Methodology and a fast-fitting algorithm; arXiv:0708.2340; doi:10.1111/j.1365-2966.2007.12363.x; MNRAS
 **Concepts:** [[weak-lensing]]
-**Summary (stub):** Bayesian shape measurement with PSF
-marginalisation; lensfit.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses Bayesian galaxy shape measurement for weak lensing surveys - I. Methodology and a fast-fitting algorithm as the verified public title/reference scope for this source.
+- Provides citable context for [[weak-lensing]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Bayesian galaxy shape measurement for weak lensing surveys - I. Methodology and a fast-fitting algorithm.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Kitching 2008 — Bayes PSF
 
-**File:** `WeakLensing/Kitching2008BayesPSF.pdf`
+**Canonical BibTeX key:** `Kitching2008`
+**Reference:** Bayesian galaxy shape measurement for weak lensing surveys - II. Application to simulations; arXiv:0802.1528; doi:10.1111/j.1365-2966.2008.13628.x; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[weak-lensing]]
-**Summary (stub):** Kitching Bayesian shape-measurement methodology.
-(stub — verify against PDF)
+
+**Supports:**
+- Addresses Bayesian galaxy shape measurement for weak lensing surveys - II. Application to simulations as the verified public title/reference scope for this source.
+- Provides citable context for [[weak-lensing]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Bayesian galaxy shape measurement for weak lensing surveys - II. Application to simulations.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Rhodes 2001 — detection of shear
 
-**File:** `WeakLensing/Rhodes2001DetectionShear.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[weak-lensing]]
-**Summary (stub):** Early cosmic-shear detection with HST WFPC2.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Schrabback 2013 — evidence in COSMOS
 
-**File:** `WeakLensing/Schraback2013EvidenceCosomos.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[weak-lensing]]
-**Summary (stub):** Cosmic-shear evidence in COSMOS.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Hoekstra 2004 — weak-lensing halo shape
 
-**File:** `WeakLensingHaloShape/Hoekstra_2004_ApJ_606_67.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[weak-lensing]]
-**Summary (stub):** Galaxy-galaxy weak-lensing constraints on DM-halo
-ellipticity.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Mandelbaum 2018 — HSC shear calibration
 
-**File:** `Mandelbaum2018WeaklensingShearCalHSC.pdf` (root)
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[weak-lensing]]
-**Summary (stub):** HSC-survey weak-lensing shear-calibration paper.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 

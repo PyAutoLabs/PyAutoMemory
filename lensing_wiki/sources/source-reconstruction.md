@@ -9,60 +9,137 @@ status: stub
 
 ## Galan 2021 — SLIT
 
-**File:** `Strong_Lens/Galan2021SLIT.pdf`
+**Canonical BibTeX key:** `Galan2021`
+**Reference:** SLIT RONOMY: Towards a fully wavelet-based strong lensing inversion technique; arXiv:2012.02802; doi:10.1051/0004-6361/202039363; A\&A
 **Concepts:** [[source-reconstruction]] (wavelet / sparse)
-**Summary (stub):** Wavelet/sparse source-plane reconstruction
-(SLIT-ronomy). Alternative to Gaussian-prior pixelated grids.
+
+**Supports:**
+- Addresses SLIT RONOMY: Towards a fully wavelet-based strong lensing inversion technique as the verified public title/reference scope for this source.
+- Provides citable context for [[source-reconstruction]] (wavelet / sparse) when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: SLIT RONOMY: Towards a fully wavelet-based strong lensing inversion technique.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Galan 2022 — wavelet lensing
 
-**File:** `Strong_Lens/Galan2022Wavelet.pdf`
+**Canonical BibTeX key:** `Galan2022`
+**Reference:** Using wavelets to capture deviations from smoothness in galaxy-scale strong lenses; arXiv:2207.05763; A\&A
 **Concepts:** [[source-reconstruction]]
-**Summary (stub):** Follow-up to SLIT; multi-scale wavelet source
-reconstruction with applications.
+
+**Supports:**
+- Addresses Using wavelets to capture deviations from smoothness in galaxy-scale strong lenses as the verified public title/reference scope for this source.
+- Provides citable context for [[source-reconstruction]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Using wavelets to capture deviations from smoothness in galaxy-scale strong lenses.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Koopmans 2005 — gravitational imaging
 
-**File:** `Strong_Lens/Koopmans2005GravImaging.pdf`
+**Canonical BibTeX key:** `Koopmans2005`
+**Reference:** Gravitational imaging of cold dark matter substructures; doi:10.1111/j.1365-2966.2005.09523.x; MNRAS
 **Concepts:** [[gravitational-imaging]], [[source-reconstruction]]
-**Summary (stub):** Foundational paper introducing the pixelated
-potential-correction formalism for subhalo detection in extended arcs.
+
+**Supports:**
+- Addresses Gravitational imaging of cold dark matter substructures as the verified public title/reference scope for this source.
+- Provides citable context for [[gravitational-imaging]], [[source-reconstruction]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Gravitational imaging of cold dark matter substructures.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Ding 2016 — SHARP IX source reconstruction
 
-**File:** `Strong_Lens/Ding2016_SHARPIXGalRecon.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[source-reconstruction]]
-**Summary (stub):** Pixelated source reconstruction in a SHARP sample
-lens, possibly with stellar-population implications for the source
-galaxy.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Suyu 2009 — spiral potential correction
 
-**File:** `Strong_Lens/Suyu2009SpiralPotentialCorr.pdf`
+**Canonical BibTeX key:** `Suyu2010`
+**Reference:** Dissecting the gravitational lens B1608+656. II. Precision measurements of the hubble constant, spatial curvature, and the dark energy equation of state; arXiv:0910.2773; doi:10.1088/0004-637x/711/1/201; ApJ
 **Concepts:** [[gravitational-imaging]]
-**Summary (stub):** Pixelated potential corrections; detection of
-spiral-like residual structure in a specific lens.
+
+**Supports:**
+- Addresses Dissecting the gravitational lens B1608+656. II. Precision measurements of the hubble constant, spatial curvature, and the dark energy equation of state as the verified public title/reference scope for this source.
+- Provides citable context for [[gravitational-imaging]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: Dissecting the gravitational lens B1608+656. II. Precision measurements of the hubble constant, spatial curvature, and the dark energy equation of state.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Verbados / Vernardos 2022 — potential corrections
 
-**File:** `Strong_Lens/Verbados2022PotentialCoorr.pdf`
+**Canonical BibTeX key:** `Vernardos2022`
+**Reference:** The Very Knotty Lenser: exploring the role of regularization in source and potential reconstructions using Gaussian Process Regression; arXiv:2202.09378; MNRAS
 **Concepts:** [[gravitational-imaging]]
-**Summary (stub):** Updated framework for pixelated potential
-corrections. Filename appears to be a misspelling of Vernardos. Verify.
+
+**Supports:**
+- Addresses The Very Knotty Lenser: exploring the role of regularization in source and potential reconstructions using Gaussian Process Regression as the verified public title/reference scope for this source.
+- Provides citable context for [[gravitational-imaging]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: The Very Knotty Lenser: exploring the role of regularization in source and potential reconstructions using Gaussian Process Regression.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## Minor 2024 — pixel supersampling
 
-**File:** `Strong_Lens/Minor2024PixelSuperSample.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[source-reconstruction]], [[gravitational-imaging]]
-**Summary (stub):** Supersampling of source-plane pixels to access
-substructure below the nominal pixel scale.
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Minor 2025 — supersampling II
 
-**File:** `Strong_Lens/Minor2025SuperSamplin.pdf`
+**Canonical BibTeX key:** `Minor2025`
+**Reference:** High Significance Detection of the Dark Substructure in Gravitational Lens SDSS J0946+1006 by Image Pixel Supersampling; doi:10.3847/1538-4357/adb1b6; ApJ
 **Concepts:** [[source-reconstruction]]
-**Summary (stub):** Continuation / application of pixel supersampling
-methodology.
+
+**Supports:**
+- Addresses High Significance Detection of the Dark Substructure in Gravitational Lens SDSS J0946+1006 by Image Pixel Supersampling as the verified public title/reference scope for this source.
+- Provides citable context for [[source-reconstruction]] when the claim is limited to that verified scope.
+
+**Use when:**
+- Citing the paper for its verified title/reference scope: High Significance Detection of the Dark Substructure in Gravitational Lens SDSS J0946+1006 by Image Pixel Supersampling.
+
+**Do not use for:**
+- More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
+
 
 ## See also
 

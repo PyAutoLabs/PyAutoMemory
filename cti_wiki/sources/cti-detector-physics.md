@@ -13,70 +13,132 @@ radiation-induced trap creation, and electrode-level modelling.
 
 ## Shockley & Read 1952 — recombination theory
 
-**File:** `CTI/ShockleyRead1952.pdf`
+**Canonical BibTeX key:** `Shockley1952`
+**Reference:** Statistics of the recombinations of holes and electrons; doi:10.1103/physrev.87.835; Physical Review
 **Concepts:** [[ccd-trap-physics]]
-**Summary (stub):** The foundational Shockley–Read recombination theory
-for trapping and emission of carriers via deep-level impurities — the
-microscopic underpinning of CTI in irradiated CCDs.
-(stub — verify against PDF)
+
+**Supports:**
+- Establishes the Shockley-Read statistical treatment of hole/electron recombination in semiconductors.
+- Provides the foundational trap-mediated recombination framework later used in Shockley-Read-Hall detector models.
+
+**Use when:**
+- Citing the semiconductor trap-recombination foundation underlying CTI trap-emission models.
+
+**Do not use for:**
+- Mission-specific CTI calibration, CCD readout algorithms, or Euclid VIS trap-pumping results.
+
 
 ## Hall 1952 — trap theory
 
-**File:** `Hall1952Theory`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
-**Summary (stub):** Hall's contemporaneous derivation of the
-recombination theory; standardly cited as "Shockley–Read–Hall (SRH)".
-(stub — verify against PDF; file has no extension and may be a scan.)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Wood 2014 — p-channel CTI
 
-**File:** `CTI/Wood2014_CTI_pchannel.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
-**Summary (stub):** Trap-species characterisation in p-channel CCDs,
-where the dominant trap populations differ from the n-channel
-detectors used by HST and Euclid VIS.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Yusa 2013 — proton-irradiated CCDs
 
-**File:** `CTI/Yusa2013_CTIonProtonIrradiatedCCD.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
-**Summary (stub):** Laboratory characterisation of CTI in
-proton-irradiated CCDs, relevant for in-flight radiation damage.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Prodhomme 2011 — electrode-level CTI
 
-**File:** `CTI/Prohomme2011_ElectrodeLevelCTI.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
-**Summary (stub):** Electrode-level (Silvaco) simulation of CCD charge
-transfer with trap interactions — fine-grained alternative to
-trap-volume forward modelling.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Seabroke 2011 — Silvaco 3D CTI
 
-**File:** `CTI/Seabroke2011_Silvaco3DCTI.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
-**Summary (stub):** 3-D Silvaco simulation of CTI in Gaia-style CCDs,
-electrode geometry and trap interactions.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Seabroke 2008 — radiation modelling for Gaia
 
-**File:** `CTI/Seabroke2008_ModelRadiationGia.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
-**Summary (stub):** Early modelling of expected radiation-induced
-trap populations in Gaia CCDs.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Seabroke 2013 — supplementary buried channels
 
-**File:** `CTI/Seabroke2013_SupplemenaryBuriedChannelsGaia.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
-**Summary (stub):** Supplementary buried channel implementation as a
-CTI-mitigation strategy in Gaia CCDs.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 

@@ -12,56 +12,115 @@ occupation.
 
 ## Tinker 2017 — evolution of stellar-to-halo mass relation
 
-**File:** `Tinker2017EvoOfStellarToHaloMassRel.pdf` (root)
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-to-halo-mass]]
-**Summary (stub):** Evolution of the SMHM relation with redshift.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Tinker 2018 — most massives
 
-**File:** `Tinker2018CorrStellarHalomasMostMassives.pdf` (root)
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-to-halo-mass]]
-**Summary (stub):** SMHM correlation at the high-mass end (massive
-ETGs, BCGs).
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Saito 2018 — connect massive gals to DM halos
 
-**File:** `Saito2018ConnectMassiveGalsToDMHalos.pdf` (root)
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-to-halo-mass]]
-**Summary (stub):** Massive-galaxy → DM-halo connection from clustering.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Leauthaud 2017 — lensing is low
 
-**File:** `Leathuad2018LensingisLow.pdf` (root)
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-to-halo-mass]], [[scatter-in-smhm]]
-**Summary (stub):** "Lensing is low" — galaxy-galaxy lensing reveals a
-tension with halo-occupation predictions.
-(stub — verify against PDF; cross-link `../lensing_wiki/`.)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Charlton 2017 — halo-mass-on-stellar-mass dependence
 
-**File:** `Charlton2017DepHaloMassOnStellarMass.pdf` (root)
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-to-halo-mass]]
-**Summary (stub):** Halo-mass dependence on stellar mass.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Oh 2016 — SDSS multiple-photometric test
 
-**File:** `Oh2016SDSSTestPresneseMultiPhotometric.pdf` (root)
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-to-halo-mass]]
-**Summary (stub):** Testing multiple-photometric stellar mass estimates
-in SDSS halos.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Dutton — dark-matter core 2018
 
-**File:** `DuttonDarkMatterCore2018.pdf` (root)
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-rotation-curves]]
-**Summary (stub):** Dutton on the inner DM density of disk galaxies —
-core / cusp inference.
-(stub — verify against PDF; cross-link `../lensing_wiki/sources-dark-matter-physics.md`.)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## See also
 

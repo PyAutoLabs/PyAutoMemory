@@ -13,80 +13,162 @@ models.
 
 ## Lackner 2012 — astro-motivated B/D decomposition
 
-**File:** `Bulge_Disk_Decomp/Lackner2012_AstroMotivated_BD_Decomp.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
-**Summary (stub):** Bulge / disk decomposition with priors motivated
-by physically expected profile shapes.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Brooks 2015 — simulated bulge via mergers
 
-**File:** `Bulge_Disk_Decomp/Brooks2015_Sim_Bbulge_Via_Mergers.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
-**Summary (stub):** Merger-driven bulge formation in zoom simulations.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Brooks 2016 — bulges in cosmological sims
 
-**File:** `Bulge_Disk_Decomp/Brooks2016_Bulges_CosSim_Review.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
-**Summary (stub):** Review of bulge formation in cosmological
-simulations.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Christensen 2015 — simulated disk with bulge
 
-**File:** `Bulge_Disk_Decomp/Christensen2015_Sim_Disk_With_Bulge.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
-**Summary (stub):** Simulating disks with classical bulges in cosmo
-zoom simulations.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Hopkins 2009 — gas on morphology
 
-**File:** `Bulge_Disk_Decomp/Hopkins2009_Gas_On_Morph.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
-**Summary (stub):** Gas content's role in setting late-type vs
-early-type morphology.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Kruk 2017 — offset disks / bars
 
-**File:** `Bulge_Disk_Decomp/Kruk2017_OffsetDisksBars.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
-**Summary (stub):** Disk and bar centring offsets in 2D decompositions.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Mendez 2007 — bulge intrinsic shape
 
-**File:** `Bulge_Disk_Decomp/Mendez2007SBulgeIntrinsicShape.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
-**Summary (stub):** Intrinsic 3-D shape of classical bulges from 2-D
-decompositions.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Mendez 2007 — bulges and disks structural properties
 
-**File:** `Bulge_Disk_Decomp/Mendez2007StructPropBulgesDisks.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
-**Summary (stub):** Structural properties of bulges and disks in a
-combined sample.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Mendez 2016 — B/D CALIFA
 
-**File:** `Bulge_Disk_Decomp/Mendez2016_BD_Califa.pdf`
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-disk-decomposition-galaxies]], [[ifu-spectroscopy]]
-**Summary (stub):** B/D decomposition of CALIFA-survey galaxies using
-IFU + imaging data.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
+
+**Use when TODO:**
+- TODO — use only after the paper is identified and claim support is verified.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
+
 
 ## Disk Illustris morph 2020
 
-**File:** `Bulge_Disk_Decomp/2020DiskIllustrisMoprh.pdf`
+**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautopaper.bib` before citing.
+**Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
-**Summary (stub):** Bulge / disk morphology in Illustris-TNG.
-(stub — verify against PDF)
+
+**Supports TODO:**
+- TODO — not migrated: automated canonical-key match was unsafe.
+
+**Use when TODO:**
+- TODO — use only after the paper identity and canonical key are resolved.
+
+**Do not use for TODO:**
+- Evidence until the paper identity and canonical key are verified.
 
 ## See also
 
