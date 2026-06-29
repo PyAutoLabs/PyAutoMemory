@@ -3,7 +3,7 @@
 This sub-wiki gives an AI assistant the scientific context of supermassive
 black holes (SMBHs): their binaries, recoil, scouring of galactic nuclei,
 mass functions, and the nanohertz gravitational-wave background. It is a
-sibling of `lensing_wiki/` under the same `PyAutoPaper/` repo and follows
+sibling of `lensing_wiki/` under the same `PyAutoMemory/` repo and follows
 the same Karpathy "LLM Wiki" pattern: the PDFs in surrounding folders are
 the immutable raw layer (gitignored), and this `smbh_wiki/` folder is the
 compiled, cross-linked knowledge layer that lives in git.

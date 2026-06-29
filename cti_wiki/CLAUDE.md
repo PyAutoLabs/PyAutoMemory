@@ -5,7 +5,7 @@ Transfer Inefficiency (CTI) in CCDs — the physics of charge trapping
 and release in silicon, its impact on astronomical imaging, the
 forward-model correction algorithms (`arctic`), and the Euclid VIS
 detector calibration programme. Sibling of `lensing_wiki/` under
-`PyAutoPaper/`, same Karpathy "LLM Wiki" pattern.
+`PyAutoMemory/`, same Karpathy "LLM Wiki" pattern.
 
 ## Layout
 

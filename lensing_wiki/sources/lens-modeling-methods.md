@@ -30,7 +30,7 @@ plus field knowledge; verify against PDF before quoting.
 
 ## Birrer 2018 — lenstronomy companion / kinematics
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[lenstronomy]], [[kinematics-and-lensing]]
 
@@ -63,7 +63,7 @@ plus field knowledge; verify against PDF before quoting.
 
 ## Anowar 2020 — lens modelling study
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[mass-models]]
 
@@ -97,7 +97,7 @@ plus field knowledge; verify against PDF before quoting.
 ## Holloway 2024 — JWST forecasts
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `Holloway2023`, `Holloway2024`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
 **Concepts:** [[pyautolens]], [[dark-matter-substructure]]
 
 **Supports TODO:**
@@ -112,7 +112,7 @@ plus field knowledge; verify against PDF before quoting.
 
 ## Holloway 2024 — Bayesian lens finding
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[lens-finding]], [[bayesian-inference-lensing]], [[pyautolens]]
 
@@ -128,7 +128,7 @@ plus field knowledge; verify against PDF before quoting.
 
 ## Tessore 2015 — lensed images of power-law ellipsoids
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[mass-models]]
 
@@ -195,7 +195,7 @@ plus field knowledge; verify against PDF before quoting.
 
 ## Melo 2024 — AutoLens MGE
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[mass-models]], [[pyautolens]]
 

@@ -11,7 +11,7 @@ Survey overview / instrument papers from the `Collaborations/` folder.
 
 ## Anderson 2013 — BAO SDSS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[high-redshift-galaxies]]
 
@@ -27,7 +27,7 @@ Survey overview / instrument papers from the `Collaborations/` folder.
 
 ## Eisenstein 2001 — SDSS LRG
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-mass-halo-mass-relation]]
 
@@ -43,7 +43,7 @@ Survey overview / instrument papers from the `Collaborations/` folder.
 
 ## Euclid 2011
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[cosmos-web]]
 
@@ -59,7 +59,7 @@ Survey overview / instrument papers from the `Collaborations/` folder.
 
 ## Hildebrandt 2016 — KiDS cosmology
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** none specific (cross-link `../lensing_wiki/sources/weak-lensing.md`)
 
@@ -75,7 +75,7 @@ Survey overview / instrument papers from the `Collaborations/` folder.
 
 ## LSST 2012
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[high-redshift-galaxies]]
 
@@ -91,7 +91,7 @@ Survey overview / instrument papers from the `Collaborations/` folder.
 
 ## Planck 2018
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** none specific
 

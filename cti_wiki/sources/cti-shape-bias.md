@@ -13,7 +13,7 @@ requirements on Euclid VIS CTI correction.
 
 ## Rhodes 2010 — CTI on galaxy shape
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[cti-shape-bias]]
 
@@ -29,7 +29,7 @@ requirements on Euclid VIS CTI correction.
 
 ## Cropper 2013 — defining WL
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[cti-shape-bias]]
 

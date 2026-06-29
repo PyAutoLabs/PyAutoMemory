@@ -14,7 +14,7 @@ gas-physics work and pure DM-only studies.
 
 ## Springel — LSS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
 
@@ -30,7 +30,7 @@ gas-physics work and pure DM-only studies.
 
 ## IllustrisTNG — Nelson 2017 colour bimodality
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
 
@@ -46,7 +46,7 @@ gas-physics work and pure DM-only studies.
 
 ## IllustrisTNG model overview 2017
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
 
@@ -62,7 +62,7 @@ gas-physics work and pure DM-only studies.
 
 ## Genel 2017 — IllustrisTNG size evolution
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
 
@@ -78,7 +78,7 @@ gas-physics work and pure DM-only studies.
 
 ## Algorry 2016 — barred galaxies in EAGLE
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
 
@@ -94,7 +94,7 @@ gas-physics work and pure DM-only studies.
 
 ## Rosas-Guevara 2016 — SMBH in EAGLE
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]] (cross-link `../smbh_wiki/`)
 
@@ -110,7 +110,7 @@ gas-physics work and pure DM-only studies.
 
 ## Lovell 2018 — dark-matter fractions
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
 
@@ -144,7 +144,7 @@ gas-physics work and pure DM-only studies.
 
 ## Governato 2015 — faint dwarfs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
 
@@ -160,7 +160,7 @@ gas-physics work and pure DM-only studies.
 
 ## Pontzen — CDM heats 2015
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
 
@@ -176,7 +176,7 @@ gas-physics work and pure DM-only studies.
 
 ## Pontzen — quenching 2017
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
 
@@ -192,7 +192,7 @@ gas-physics work and pure DM-only studies.
 
 ## Pontzen — sphere 2015
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
 
@@ -208,7 +208,7 @@ gas-physics work and pure DM-only studies.
 
 ## Oman 2017 — cores wrong
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
 
@@ -242,7 +242,7 @@ gas-physics work and pure DM-only studies.
 
 ## Di Cintio 2017 — SIDM
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
 
@@ -258,7 +258,7 @@ gas-physics work and pure DM-only studies.
 
 ## Ferrero 2016 — Tully-Fisher
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
 
@@ -292,7 +292,7 @@ gas-physics work and pure DM-only studies.
 
 ## Mukherjee 2019 — SEAGLE II
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[forward-modelling]]
 

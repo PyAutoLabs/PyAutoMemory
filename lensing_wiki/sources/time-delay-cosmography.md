@@ -9,7 +9,7 @@ status: stub
 
 ## Suyu 2016 — H0liCOW
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[h0licow]], [[time-delay-cosmography]]
 
@@ -25,7 +25,7 @@ status: stub
 
 ## Birrer 2018 — H0liCOW IX
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[h0licow]], [[lenstronomy]]
 
@@ -75,7 +75,7 @@ status: stub
 
 ## Tagore 2017 — error on H0
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[time-delay-cosmography]], [[mass-sheet-degeneracy]]
 
@@ -91,7 +91,7 @@ status: stub
 
 ## Rana 2017 — cosmic distance ladder
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[time-delay-cosmography]]
 
@@ -107,7 +107,7 @@ status: stub
 
 ## Ding 2018 — time-delay model challenge
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[time-delay-cosmography]]
 
@@ -123,7 +123,7 @@ status: stub
 
 ## Grillo 2018 — H0 from SN Refsdal
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[lensed-supernovae]], [[time-delay-cosmography]]
 

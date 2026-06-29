@@ -1,4 +1,4 @@
-"""Tests for the canonical PyAutoPaper citation layer."""
+"""Tests for the canonical PyAutoMemory citation layer."""
 
 from pathlib import Path
 

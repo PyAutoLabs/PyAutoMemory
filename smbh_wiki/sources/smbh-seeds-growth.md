@@ -13,7 +13,7 @@ SMBHs at z > 4.
 
 ## Smith 2019 — SMBHs in the early universe
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[smbh-seeds]], [[high-redshift-galaxies]]
 
@@ -29,7 +29,7 @@ SMBHs at z > 4.
 
 ## Jin 2017 — super-Eddington
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[smbh-accretion]]
 
@@ -45,7 +45,7 @@ SMBHs at z > 4.
 
 ## Mehrgan 2019 — SMBH 40 billion solar masses
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[smbh-mass-measurement]], [[smbh-host-scaling]]
 
@@ -115,7 +115,7 @@ SMBHs at z > 4.
 
 ## McAlpine 2017 — linking BH growth
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[smbh-accretion]], [[smbh-host-scaling]]
 

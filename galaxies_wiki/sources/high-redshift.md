@@ -12,7 +12,7 @@ red dots" puzzle.
 
 ## Akins 2024 — little red dot
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[little-red-dots]]
 
@@ -79,7 +79,7 @@ red dots" puzzle.
 
 ## Bouwens 2017 — z 4-10
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[high-redshift-galaxies]]
 
@@ -94,7 +94,7 @@ red dots" puzzle.
 
 ## Blain 2000 — sub-mm summary
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[high-redshift-galaxies]]
 
@@ -160,7 +160,7 @@ red dots" puzzle.
 
 ## Hubble 1926 — root reference
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[galaxy-morphology]]
 

@@ -1,9 +1,13 @@
-# Canonical PyAutoPaper bibliography
+# Canonical PyAutoMemory bibliography
 
-`pyautopaper.bib` is the canonical metadata layer shared by every `*_wiki/` in this
+`pyautomemory.bib` is the canonical metadata layer shared by every `*_wiki/` in this
 repository. Wiki source entries explain which claims papers support; the BibTeX file records
 citation metadata and canonical keys. Keep PDFs, local paths, abstracts, and long paper
 summaries out of both layers.
+
+> Renamed from `pyautopaper.bib` (when this repo was PyAutoPaper). The old path
+> `pyautopaper.bib` remains as a symlink to `pyautomemory.bib` for backwards
+> compatibility; new references should use `pyautomemory.bib`.
 
 The initial canonical file prioritises `library.bib`. Entries with new keys from the other
 tracked legacy `.bib` files were added, but conflicting records never replaced the
@@ -13,7 +17,7 @@ new canonical metadata belongs here.
 ## Adding a paper
 
 1. Verify the paper from an authoritative public record or the paper itself.
-2. Search `pyautopaper.bib` by DOI, arXiv ID, and title. Reuse the existing canonical key;
+2. Search `pyautomemory.bib` by DOI, arXiv ID, and title. Reuse the existing canonical key;
    otherwise add verified metadata under a unique, stable author-year key.
 3. Add a compact section to the relevant `<domain>_wiki/sources/*.md` using the inherited
    schema in [`../lensing_wiki/CLAUDE.md`](../lensing_wiki/CLAUDE.md).
@@ -33,7 +37,7 @@ Suyu16H0: Suyu2016Holicow
 
 Before patching another project's LaTeX, inspect that project's `.bib`. Match papers by DOI,
 then arXiv ID, then title/authors, and use the project's existing key when present. Do not
-assume a PyAutoPaper canonical key exists downstream. Add an alias only for an alternate key
+assume a PyAutoMemory canonical key exists downstream. Add an alias only for an alternate key
 that is actually in use.
 
 ## Validation

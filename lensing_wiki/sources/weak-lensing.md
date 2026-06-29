@@ -14,7 +14,7 @@ and `sources-cluster-lensing.md`.
 
 ## Bartelmann 2016 — weak-lensing summary
 
-**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[weak-lensing]]
 
@@ -80,7 +80,7 @@ and `sources-cluster-lensing.md`.
 
 ## Rhodes 2001 — detection of shear
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[weak-lensing]]
 
@@ -96,7 +96,7 @@ and `sources-cluster-lensing.md`.
 
 ## Schrabback 2013 — evidence in COSMOS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[weak-lensing]]
 
@@ -112,7 +112,7 @@ and `sources-cluster-lensing.md`.
 
 ## Hoekstra 2004 — weak-lensing halo shape
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[weak-lensing]]
 
@@ -128,7 +128,7 @@ and `sources-cluster-lensing.md`.
 
 ## Mandelbaum 2018 — HSC shear calibration
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[weak-lensing]]
 

@@ -30,7 +30,7 @@ hopping, and the libraries that implement them.
 
 ## PolyChord — root copy
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[nested-sampling]]
 
@@ -47,7 +47,7 @@ hopping, and the libraries that implement them.
 ## Buchner — PyMultiNest
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `Buchner2014`, `Johannesen2007`, `pymultinest`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
 **Concepts:** [[nested-sampling]]
 
 **Supports TODO:**
@@ -62,7 +62,7 @@ hopping, and the libraries that implement them.
 
 ## Nested basin sampling
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[nested-sampling]]
 
@@ -79,7 +79,7 @@ hopping, and the libraries that implement them.
 ## Dynesty
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `Dynesty`, `Speagle2020`, `dynesty`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
 **Concepts:** [[nested-sampling]]
 
 **Supports TODO:**
@@ -95,7 +95,7 @@ hopping, and the libraries that implement them.
 ## emcee
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `Emcee`, `Foreman-Mackey2013`, `emcee`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
 **Concepts:** [[mcmc-samplers]]
 
 **Supports TODO:**

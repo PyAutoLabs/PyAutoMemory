@@ -60,7 +60,7 @@ status: stub
 
 ## Chirivì 2017 — LOS clusters
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[line-of-sight-effects]], [[cluster-lensing]]
 
@@ -76,7 +76,7 @@ status: stub
 
 ## Jaroszynski 2012 — shear redshift
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[external-convergence-shear]]
 

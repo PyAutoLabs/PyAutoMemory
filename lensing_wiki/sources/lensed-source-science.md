@@ -9,7 +9,7 @@ status: stub
 
 ## Rizzo 2018 — kinematics of lensed sources
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[lensed-source-science]], [[kinematics-and-lensing]]
 
@@ -59,7 +59,7 @@ status: stub
 
 ## Berg 2018 — window on star formation
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[lensed-source-science]]
 
@@ -75,7 +75,7 @@ status: stub
 
 ## Bayliss 2017 — hydrogen in lensed quasar
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[lensed-source-science]]
 
@@ -91,7 +91,7 @@ status: stub
 
 ## Lipnicky 2018 — hydrogen in lensed spiral
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[lensed-source-science]]
 
@@ -107,7 +107,7 @@ status: stub
 
 ## James 2018 — Horseshoe UV
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[lensed-source-science]], [[cosmic-horseshoe]]
 

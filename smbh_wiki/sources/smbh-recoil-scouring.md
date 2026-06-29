@@ -50,7 +50,7 @@ shallow inner-light gradients that interact with mass-profile fits.
 
 ## Hlavacek-Larrondo 2021 — SMBHs in BCGs
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[smbh-scouring]], [[smbh-host-scaling]]
 
@@ -65,7 +65,7 @@ shallow inner-light gradients that interact with mass-profile fits.
 
 ## Hlavacek-Larrondo — UMBH
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[smbh-scouring]], [[smbh-mass-measurement]]
 

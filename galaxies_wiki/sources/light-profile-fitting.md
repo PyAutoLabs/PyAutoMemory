@@ -29,7 +29,7 @@ methodology and applications.
 
 ## Graham 2000 — spirals
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[sersic-profile]]
 
@@ -45,7 +45,7 @@ methodology and applications.
 
 ## Peng 2009 — beyond axisymmetry
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
 
@@ -61,7 +61,7 @@ methodology and applications.
 
 ## Peng 2010 — extra components
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
 
@@ -77,7 +77,7 @@ methodology and applications.
 
 ## Peng 2010 — AJ 139 2097
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
 
@@ -93,7 +93,7 @@ methodology and applications.
 
 ## Devour 2017 — inclination and dust Sérsic biases
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[sersic-profile]]
 
@@ -109,7 +109,7 @@ methodology and applications.
 
 ## Van der Wel 2012 — CANDELS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]], [[high-redshift-galaxies]]
 
@@ -125,7 +125,7 @@ methodology and applications.
 
 ## Buitrago 2008 — GOODS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
 
@@ -141,7 +141,7 @@ methodology and applications.
 
 ## Berta 2016 — CANDELS bulge / disk
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
 
@@ -157,7 +157,7 @@ methodology and applications.
 
 ## Hopkins 2006 — merger-driven model
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
 
@@ -173,7 +173,7 @@ methodology and applications.
 
 ## Naab 2007 — ETG formation from initial conditions
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -189,7 +189,7 @@ methodology and applications.
 
 ## Naab 2009 — minor mergers
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -205,7 +205,7 @@ methodology and applications.
 
 ## Dekel 2009 — formation of ETGs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -221,7 +221,7 @@ methodology and applications.
 
 ## Dekel 2009 — cold streams in ETGs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -237,7 +237,7 @@ methodology and applications.
 
 ## Barro — progenitor compact quiescent
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]], [[high-redshift-galaxies]]
 
@@ -253,7 +253,7 @@ methodology and applications.
 
 ## Aguero 2017 — rings
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
 
@@ -269,7 +269,7 @@ methodology and applications.
 
 ## Buta 2017 — rings GalZoo
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
 
@@ -285,7 +285,7 @@ methodology and applications.
 
 ## Barazza 2008 — bars in local galaxies
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
 
@@ -301,7 +301,7 @@ methodology and applications.
 
 ## Gadotti 2009 — bar SDSS fits
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
 
@@ -317,7 +317,7 @@ methodology and applications.
 
 ## Gadotti 2010 — bars secular evolution
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
 
@@ -333,7 +333,7 @@ methodology and applications.
 
 ## Greco 2017 — LSB Hyper Suprime
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
 

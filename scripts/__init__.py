@@ -1,1 +1,1 @@
-"""Maintenance scripts for PyAutoPaper."""
+"""Maintenance scripts for PyAutoMemory."""

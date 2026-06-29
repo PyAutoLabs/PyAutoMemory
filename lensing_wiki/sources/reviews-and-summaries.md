@@ -12,7 +12,7 @@ introductions or for cross-referencing established field-knowledge.
 
 ## Achwanden 2017 — order from chaos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** none specific
 
@@ -45,7 +45,7 @@ introductions or for cross-referencing established field-knowledge.
 
 ## Graham 2011 — elliptical / disk scaling laws
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** none specific
 
@@ -95,7 +95,7 @@ introductions or for cross-referencing established field-knowledge.
 
 ## Kormendy 2015 — elliptical bulge
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** none specific (cross-link `../galaxies_wiki/`)
 
@@ -111,7 +111,7 @@ introductions or for cross-referencing established field-knowledge.
 
 ## Latif 2016 — BH seeds
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** none specific (cross-link `../smbh_wiki/`)
 
@@ -160,7 +160,7 @@ introductions or for cross-referencing established field-knowledge.
 
 ## Sofue 2016 — rotation curves spirals
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[dark-matter-physics]]
 

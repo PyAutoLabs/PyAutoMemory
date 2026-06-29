@@ -14,7 +14,7 @@ matters directly for PyAutoLens priors.
 
 ## Ma 2014 — MASSIVE I overview
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[massive-ellipticals]], [[etg-structure]]
 
@@ -31,7 +31,7 @@ matters directly for PyAutoLens priors.
 ## Greene 2015 — MASSIVE II stellar populations
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `Greene2015`, `Greene2015a`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
 **Concepts:** [[massive-ellipticals]], [[etg-radial-gradients]]
 
 **Supports TODO:**
@@ -46,7 +46,7 @@ matters directly for PyAutoLens priors.
 
 ## Goulding 2017 — MASSIVE III X-ray halos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[massive-ellipticals]]
 
@@ -62,7 +62,7 @@ matters directly for PyAutoLens priors.
 
 ## Veale 2017 — MASSIVE V angular momentum
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
 
@@ -78,7 +78,7 @@ matters directly for PyAutoLens priors.
 
 ## Veale 2018 — MASSIVE VII angular momentum
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
 
@@ -94,7 +94,7 @@ matters directly for PyAutoLens priors.
 
 ## Veale 2018 — MASSIVE VIII stellar velocity profile
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
 
@@ -110,7 +110,7 @@ matters directly for PyAutoLens priors.
 
 ## Pandya 2017 — MASSIVE VI warm gas
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[massive-ellipticals]]
 
@@ -127,7 +127,7 @@ matters directly for PyAutoLens priors.
 ## Ene 2018 — MASSIVE X kinematic / photometric offsets
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `Ene2018`, `Ene2018a`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
 **Concepts:** [[etg-kinematics]]
 
 **Supports TODO:**
@@ -143,7 +143,7 @@ matters directly for PyAutoLens priors.
 ## Goullard 2018 — MASSIVE IX photometric offsets
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `Goullaud2018`, `Goullaud2018a`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -158,7 +158,7 @@ matters directly for PyAutoLens priors.
 
 ## Greene 2019 — MASSIVE XII
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[massive-ellipticals]], [[etg-radial-gradients]]
 
@@ -174,7 +174,7 @@ matters directly for PyAutoLens priors.
 
 ## MASSIVE 9 — photometry catalog
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -190,7 +190,7 @@ matters directly for PyAutoLens priors.
 
 ## Schombert 2014 — galaxy scaling relations II
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -206,7 +206,7 @@ matters directly for PyAutoLens priors.
 
 ## Schombert 2015
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -222,7 +222,7 @@ matters directly for PyAutoLens priors.
 
 ## Peng 2010 — AJ 139 2097
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -238,7 +238,7 @@ matters directly for PyAutoLens priors.
 
 ## de Lucia 2006 — BCG semi-analytic
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[massive-ellipticals]]
 
@@ -254,7 +254,7 @@ matters directly for PyAutoLens priors.
 
 ## Steinmetz — hierarchical origin of galaxies
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[massive-ellipticals]]
 
@@ -270,7 +270,7 @@ matters directly for PyAutoLens priors.
 
 ## Lauer 2005 — dust in ETG centres
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -286,7 +286,7 @@ matters directly for PyAutoLens priors.
 
 ## Rest 2001 — centres of ETGs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]], [[smbh-scouring]]
 
@@ -319,7 +319,7 @@ matters directly for PyAutoLens priors.
 
 ## Trujillo — strong size evolution of ETGs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]], [[high-redshift-galaxies]]
 
@@ -335,7 +335,7 @@ matters directly for PyAutoLens priors.
 
 ## Lilly 2016 — progenitor bias and surface brightness
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -351,7 +351,7 @@ matters directly for PyAutoLens priors.
 
 ## Szomoru 2011 — morphology evolution of galaxies HST
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]], [[high-redshift-galaxies]]
 
@@ -367,7 +367,7 @@ matters directly for PyAutoLens priors.
 
 ## Newman 2012 — ETG mass growth
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -383,7 +383,7 @@ matters directly for PyAutoLens priors.
 
 ## Nipoti 2014 — dry mergers not enough
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -399,7 +399,7 @@ matters directly for PyAutoLens priors.
 
 ## Huang 2012 — three-component ETG models
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]], [[light-profile-fitting]]
 
@@ -415,7 +415,7 @@ matters directly for PyAutoLens priors.
 
 ## Oh 2017 — multiple photometric ETG components
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]], [[light-profile-fitting]]
 
@@ -431,7 +431,7 @@ matters directly for PyAutoLens priors.
 
 ## Oh 2017 — two-component Sérsic local SDSS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]], [[light-profile-fitting]]
 
@@ -447,7 +447,7 @@ matters directly for PyAutoLens priors.
 
 ## Jiménez 2012 — X-rays in ETGs
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[massive-ellipticals]]
 
@@ -462,7 +462,7 @@ matters directly for PyAutoLens priors.
 
 ## Chevance 2012 — shape evolution at high-z
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]], [[high-redshift-galaxies]]
 
@@ -495,7 +495,7 @@ matters directly for PyAutoLens priors.
 
 ## Morishita 2018 — metallicity high-z
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[high-redshift-galaxies]]
 

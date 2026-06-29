@@ -15,7 +15,7 @@ Euclid-specific extension.
 
 ## Bristow 2002 — early CTI model
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]]
 
@@ -31,7 +31,7 @@ Euclid-specific extension.
 
 ## Bristow 2003 — first-pixel CTI correction
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]]
 
@@ -47,7 +47,7 @@ Euclid-specific extension.
 
 ## Massey 2009 — CTI correction I
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]], [[arctic-algorithm]]
 
@@ -63,7 +63,7 @@ Euclid-specific extension.
 
 ## Massey 2010 — CTI correction on HST
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]], [[hubble-acs-cti]]
 
@@ -97,7 +97,7 @@ Euclid-specific extension.
 
 ## Massey 2014 — CTI correction II
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]], [[arctic-algorithm]]
 
@@ -113,7 +113,7 @@ Euclid-specific extension.
 
 ## Anderson 2010 — CTI correction on HST
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]], [[hubble-acs-cti]]
 
@@ -129,7 +129,7 @@ Euclid-specific extension.
 
 ## Anderson 2018 — ACS CTI
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[hubble-acs-cti]]
 
@@ -145,7 +145,7 @@ Euclid-specific extension.
 
 ## Anderson 2021 — ACS CTI
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[hubble-acs-cti]]
 
@@ -161,7 +161,7 @@ Euclid-specific extension.
 
 ## Israel 2015 — CTI correction for Euclid
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]], [[euclid-vis-cti]]
 
@@ -177,7 +177,7 @@ Euclid-specific extension.
 
 ## Short 2013 — analytic CTI model
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]]
 
@@ -193,7 +193,7 @@ Euclid-specific extension.
 
 ## Murray 2012 — mitigating CTI
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]]
 
@@ -209,7 +209,7 @@ Euclid-specific extension.
 
 ## Murray 2013 — multi-level clocking
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]]
 

@@ -12,7 +12,7 @@ work by core developers / collaborators that uses it.
 
 ## Etherington 2022 — automated modelling
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[lens-modeling-methods]], [[pyautolens]]
 
@@ -62,7 +62,7 @@ work by core developers / collaborators that uses it.
 
 ## Brown 2019 — deep learning weird DM
 
-**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[deep-learning-lensing]], [[dark-matter-physics]]
 
@@ -94,7 +94,7 @@ work by core developers / collaborators that uses it.
 
 ## He 2021 — LOS vs sub
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[line-of-sight-effects]], [[dark-matter-substructure]]
 
@@ -162,7 +162,7 @@ work by core developers / collaborators that uses it.
 ## Yang 2019 — CO ALMA dust
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `Yang2019`, `Yang2019b`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
 **Concepts:** [[interferometric-lensing]], [[lensed-source-science]]
 
 **Supports TODO:**
@@ -177,7 +177,7 @@ work by core developers / collaborators that uses it.
 
 ## PyAutoLens 1807.05566 — root
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[pyautolens]]
 
@@ -193,7 +193,7 @@ work by core developers / collaborators that uses it.
 
 ## AutoLens — root
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[pyautolens]]
 
@@ -209,7 +209,7 @@ work by core developers / collaborators that uses it.
 
 ## AutoLens paper 1 resubmit 2018-02-16
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[pyautolens]]
 
@@ -225,7 +225,7 @@ work by core developers / collaborators that uses it.
 
 ## MN-23-4123-MJ R1 proof
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[pyautolens]]
 
@@ -241,7 +241,7 @@ work by core developers / collaborators that uses it.
 
 ## MN-24-0938-MJ R2 proof
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[pyautolens]]
 

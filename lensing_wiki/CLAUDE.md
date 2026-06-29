@@ -8,7 +8,7 @@ lives separately in `../bibliography/`.
 ## Layout
 
 ```
-PyAutoPaper/                  # repo root
+PyAutoMemory/                  # repo root
 ├── lensing_wiki/             # this folder — the compiled wiki (in git)
 │   ├── CLAUDE.md             # this file — schema + usage rules
 │   ├── index.md              # top-level navigation
@@ -25,11 +25,11 @@ the wiki and note the change in `log.md`.
 ## References and citation metadata
 
 - `sources/*.md` records compact guidance about what claims a paper supports.
-- `../bibliography/pyautopaper.bib` records canonical metadata and keys.
+- `../bibliography/pyautomemory.bib` records canonical metadata and keys.
 - `../bibliography/bibkey_aliases.yaml` maps known alternate keys to canonical keys.
 
 Never record local PDF paths or fabricate metadata. A canonical key is local to
-PyAutoPaper: resolve it against a target project's `.bib` before patching LaTeX.
+PyAutoMemory: resolve it against a target project's `.bib` before patching LaTeX.
 See [`../bibliography/README.md`](../bibliography/README.md) for the workflow.
 
 ## Page types

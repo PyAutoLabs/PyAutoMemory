@@ -9,7 +9,7 @@ status: stub
 
 ## Wertz 2018 — pySPT
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[source-position-transformation]], [[mass-sheet-degeneracy]]
 
@@ -76,7 +76,7 @@ status: stub
 
 ## Keeton 1997 — shear vs ellipticity
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[shear-ellipticity-degeneracy]]
 
@@ -126,7 +126,7 @@ status: stub
 
 ## Gomer 2018 — quad-plane fundamentals
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[shear-ellipticity-degeneracy]], [[mass-models]]
 
@@ -142,7 +142,7 @@ status: stub
 
 ## Gomer 2023 — NFW + potential / mass
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[mass-models]], [[radial-angular-degeneracy]]
 
@@ -175,7 +175,7 @@ status: stub
 
 ## Qu 2018 — revised curvature test
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[radial-angular-degeneracy]], [[mass-models]]
 

@@ -6,7 +6,7 @@ elliptical-galaxy structure, bulge/disk/halo decompositions, light-
 profile fitting, stellar halos, IFU kinematics, high-redshift galaxies,
 COSMOS / COSMOS-Web morphology, dark-matter halo geometry from
 galaxy-scale dynamics, and halo-galaxy connection statistics. Sibling
-of `lensing_wiki/` under `PyAutoPaper/`, same Karpathy "LLM Wiki"
+of `lensing_wiki/` under `PyAutoMemory/`, same Karpathy "LLM Wiki"
 pattern.
 
 ## Layout
