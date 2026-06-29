@@ -1,8 +1,8 @@
 # Reading queue
 
-This file used to live at `admin_jammy/papers.md`. It moved to
-PyAutoPaper on 2026-05-22 when PyAutoPaper became the unified
-paper-management repo. Section headers below match topic folders
+This file used to live at `admin_jammy/papers.md`. It moved here on
+2026-05-22 when this repo (then named PyAutoPaper, now PyAutoMemory)
+became the unified knowledge repo. Section headers below match topic folders
 in this repo (Strong Lensing, SMBHs, Galaxy Formation, Dark Matter,
 Stats, …) — when a paper here is acquired as a PDF, it should be
 filed under the matching folder and stubbed in the relevant

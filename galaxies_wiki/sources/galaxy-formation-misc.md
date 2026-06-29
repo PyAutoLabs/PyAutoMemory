@@ -14,7 +14,7 @@ review collection.
 
 ## Cole 2000 — hierarchical galaxy formation
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[galaxy-morphology]]
 
@@ -30,7 +30,7 @@ review collection.
 
 ## Baugh 1996 — evolution of halos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-mass-halo-mass-relation]]
 
@@ -46,7 +46,7 @@ review collection.
 
 ## Bower 2006 — breaking the galaxy-formation hierarchy
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[galaxy-quenching]]
 
@@ -62,7 +62,7 @@ review collection.
 
 ## Bower 2016 — BH nemesis of galaxy formation
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[galaxy-quenching]] (cross-link `../smbh_wiki/`)
 
@@ -78,7 +78,7 @@ review collection.
 
 ## Boylan-Kolchin 2006 — red mergers
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -94,7 +94,7 @@ review collection.
 
 ## Bullock 2005 — tracing galaxy formation
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-mass-halo-mass-relation]]
 
@@ -110,7 +110,7 @@ review collection.
 
 ## Croton 2006 — many lives of AGN
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[galaxy-quenching]] (cross-link `../smbh_wiki/`)
 
@@ -127,7 +127,7 @@ review collection.
 ## De Lucia 2006 — BCG formation
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `De-Lucia:2007aa`, `DeLucia2007`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
 **Concepts:** [[massive-ellipticals]]
 
 **Supports TODO:**
@@ -142,7 +142,7 @@ review collection.
 
 ## De Lucia 2006 — formation history of ellipticals
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -158,7 +158,7 @@ review collection.
 
 ## Furlong 2017 — size evolution EAGLE
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -174,7 +174,7 @@ review collection.
 
 ## Guo 2007 — galaxy growth in CDM
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-mass-halo-mass-relation]]
 
@@ -190,7 +190,7 @@ review collection.
 
 ## Guo 2007 — galaxy growth in CDM (b)
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-mass-halo-mass-relation]]
 
@@ -206,7 +206,7 @@ review collection.
 
 ## Kormendy 2009 — structural evolution
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -222,7 +222,7 @@ review collection.
 
 ## Laporte 2009 — growth of clusters
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[massive-ellipticals]]
 
@@ -238,7 +238,7 @@ review collection.
 
 ## Laporte 2013 — growth since z=2
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -255,7 +255,7 @@ review collection.
 ## Oser 2009 — two-phase formation
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `Oser2010a`, `Oser:2010aa`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -270,7 +270,7 @@ review collection.
 
 ## Cooper 2009 — galactic stellar halos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-halos]]
 
@@ -286,7 +286,7 @@ review collection.
 
 ## Cooper 2015 — in-situ halos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-halos]]
 
@@ -302,7 +302,7 @@ review collection.
 
 ## Amorisco 2017 — contributions to stellar halo
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-halos]]
 
@@ -318,7 +318,7 @@ review collection.
 
 ## Trujillo 2006 — size evolution
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -334,7 +334,7 @@ review collection.
 
 ## Roy 2018 — size evolution KiDS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -350,7 +350,7 @@ review collection.
 
 ## Xie 2014 — size evolution
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-structure]]
 
@@ -366,7 +366,7 @@ review collection.
 
 ## UnRead — Belfiore 2017 MaNGA green valley
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[galaxy-quenching]]
 
@@ -382,7 +382,7 @@ review collection.
 
 ## UnRead — Coenda 2017 green valley environment
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[galaxy-quenching]]
 
@@ -398,7 +398,7 @@ review collection.
 
 ## UnRead — Constantin 2017 bulge morphology CALIFA
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
 
@@ -414,7 +414,7 @@ review collection.
 
 ## UnRead — Kocevski 2017 black hole growth CANDELS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[smbh-accretion]] (cross-link `../smbh_wiki/`)
 
@@ -430,7 +430,7 @@ review collection.
 
 ## UnRead — Spindler 2017 MaNGA SF radial
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ifu-spectroscopy]]
 
@@ -446,7 +446,7 @@ review collection.
 
 ## UnRead — Ness 2014 stellar labeling (duplicate)
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[gaussian-linear-models]]
 
@@ -462,7 +462,7 @@ review collection.
 
 ## SpiralsMorph — MacArthur 2009 stellar pop spiral bulges
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulges-vs-pseudobulges]]
 
@@ -478,7 +478,7 @@ review collection.
 
 ## SpiralsMorph — Thomas 2006 rejuvenation of spiral bulges
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulges-vs-pseudobulges]]
 

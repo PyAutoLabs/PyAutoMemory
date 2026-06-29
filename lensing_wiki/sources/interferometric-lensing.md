@@ -9,7 +9,7 @@ status: stub
 
 ## Powell 2020 — VLBI subhalo
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[interferometric-lensing]], [[dark-matter-substructure]]
 
@@ -25,7 +25,7 @@ status: stub
 
 ## McKean 2015 — SKA strong lensing
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[interferometric-lensing]]
 
@@ -58,7 +58,7 @@ status: stub
 
 ## Dye 2017 — modelling ALMA
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[interferometric-lensing]], [[source-reconstruction]]
 
@@ -74,7 +74,7 @@ status: stub
 
 ## Enia 2018 — ALMA imaging
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[interferometric-lensing]]
 
@@ -90,7 +90,7 @@ status: stub
 
 ## Wong 2007 — ALMA central image
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[interferometric-lensing]], [[smbh-from-lensing]]
 

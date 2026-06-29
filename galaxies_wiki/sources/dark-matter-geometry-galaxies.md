@@ -14,7 +14,7 @@ work in `../lensing_wiki/`.
 
 ## Brainerd 2005 — anisotropic SDSS galaxies
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -30,7 +30,7 @@ work in `../lensing_wiki/`.
 
 ## Agustsson 2005 — anisotropic satellites
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -46,7 +46,7 @@ work in `../lensing_wiki/`.
 
 ## Agustsson 2005 — distance of satellites
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -62,7 +62,7 @@ work in `../lensing_wiki/`.
 
 ## Aubert 2004 — isotropy of halos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -78,7 +78,7 @@ work in `../lensing_wiki/`.
 
 ## Bailin 2005 — shapes and angular momentum
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -94,7 +94,7 @@ work in `../lensing_wiki/`.
 
 ## Bailin 2008 — anisotropic distribution
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -110,7 +110,7 @@ work in `../lensing_wiki/`.
 
 ## Cautun 2015 — planes of satellites
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -126,7 +126,7 @@ work in `../lensing_wiki/`.
 
 ## Deason 2009 — distance of satellites in disk galaxies
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -142,7 +142,7 @@ work in `../lensing_wiki/`.
 
 ## Kang 2007 — SAM and observations
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -158,7 +158,7 @@ work in `../lensing_wiki/`.
 
 ## Liao 2016 — segregation of baryons
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -174,7 +174,7 @@ work in `../lensing_wiki/`.
 
 ## Libeskind 2005 — satellite distribution
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -190,7 +190,7 @@ work in `../lensing_wiki/`.
 
 ## Libeskind 2014 — universal subhalo accretion
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -206,7 +206,7 @@ work in `../lensing_wiki/`.
 
 ## Lovell 2011 — linking galactic satellites
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -222,7 +222,7 @@ work in `../lensing_wiki/`.
 
 ## Sales 2015 — origin of disks
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -238,7 +238,7 @@ work in `../lensing_wiki/`.
 
 ## Shao 2016 — alignment galaxy halo satellite
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -254,7 +254,7 @@ work in `../lensing_wiki/`.
 
 ## Shi 2017 — angular momentum of galaxies
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -270,7 +270,7 @@ work in `../lensing_wiki/`.
 
 ## Shi 2015 — flow patterns
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -286,7 +286,7 @@ work in `../lensing_wiki/`.
 
 ## Siverd 2009 — Galactic orientation alignment SDSS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -302,7 +302,7 @@ work in `../lensing_wiki/`.
 
 ## Tenneti — galaxy shapes massive black
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -318,7 +318,7 @@ work in `../lensing_wiki/`.
 
 ## Tenneti 2015 — intrinsic alignment disk / ETG
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -334,7 +334,7 @@ work in `../lensing_wiki/`.
 
 ## Wang 2005 — alignment of satellites
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -350,7 +350,7 @@ work in `../lensing_wiki/`.
 
 ## Wang 2006 — alignment satellite central
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -366,7 +366,7 @@ work in `../lensing_wiki/`.
 
 ## Wang 2013 — spatial satellite
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -382,7 +382,7 @@ work in `../lensing_wiki/`.
 
 ## Wang 2014 — satellite alignment
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -398,7 +398,7 @@ work in `../lensing_wiki/`.
 
 ## Xia 2017 — halo intrinsic alignment
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -414,7 +414,7 @@ work in `../lensing_wiki/`.
 
 ## Yang 2008 — infall sub
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 
@@ -430,7 +430,7 @@ work in `../lensing_wiki/`.
 
 ## Zehavi 2017 — assembly bias galaxy content
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[halo-occupation]]
 
@@ -446,7 +446,7 @@ work in `../lensing_wiki/`.
 
 ## Zentner 2005 — anisotropic satellites
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-halo-shapes]]
 

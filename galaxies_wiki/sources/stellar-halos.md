@@ -13,7 +13,7 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Bullock & Johnston 2005 — Milky Way stellar halo simulation
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-halos]]
 
@@ -29,7 +29,7 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Cooper 2013 — from SAMs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-halos]]
 
@@ -45,7 +45,7 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## D'Souza 2014 — parametrise stellar halos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-halos]]
 
@@ -61,7 +61,7 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Elias 2018 — stellar halos Milky Way Illustris
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-halos]]
 
@@ -77,7 +77,7 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Greene 2012 — small sample metals
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-halos]]
 
@@ -93,7 +93,7 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Greene 2013 — sample of 33 metals
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-halos]]
 
@@ -109,7 +109,7 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Huang 2017 — stellar halos 1D
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-halos]], [[halo-mass-proxies]]
 
@@ -125,7 +125,7 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Huang 2018 — stellar halo env detect
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-halos]], [[halo-mass-proxies]]
 
@@ -141,7 +141,7 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Buitrago 2017 — 6 halos HUDF redshift 0.65
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-halos]]
 
@@ -157,7 +157,7 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Sparvoni 2018 — VEGAS 4 galaxies
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-halos]]
 
@@ -173,7 +173,7 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Xie 2014 — stellar halos SAM model
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-halos]]
 
@@ -189,7 +189,7 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Cohen 2018 — Dragonfly V
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[low-surface-brightness]], [[stellar-halos]]
 

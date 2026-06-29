@@ -67,7 +67,7 @@ either uses or interoperates with.
 ## Colossus 2018
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `Diemer2018`, `colossus`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
 **Concepts:** [[scientific-software]]
 
 **Supports TODO:**
@@ -82,7 +82,7 @@ either uses or interoperates with.
 
 ## numba SC15
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[scientific-software]]
 
@@ -99,7 +99,7 @@ either uses or interoperates with.
 ## jimaging — MDPI
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `PyNUFFT`, `pynufft`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
 **Concepts:** [[scientific-software]]
 
 **Supports TODO:**
@@ -114,7 +114,7 @@ either uses or interoperates with.
 
 ## NUFFT GPU (cross-listed)
 
-**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[nufft]]
 
@@ -147,7 +147,7 @@ either uses or interoperates with.
 
 ## ProFit 2019 — root
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[scientific-software]], [[light-profile-fitting]]
 

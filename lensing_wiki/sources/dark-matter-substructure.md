@@ -11,7 +11,7 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Vegetti 2018 — sterile-neutrino constraints
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]], [[dark-matter-physics]]
 
@@ -95,7 +95,7 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Despali 2022 — sensitivity
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]]
 
@@ -128,7 +128,7 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Amorscio 2022 — sensitivity
 
-**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]]
 
@@ -143,7 +143,7 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## He 2017 — substructure halos vs globular clusters
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]]
 
@@ -193,7 +193,7 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Ran Li 2016 — substructure
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]]
 
@@ -209,7 +209,7 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Ran Li 2016 — substructure II
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]]
 
@@ -225,7 +225,7 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Diaz-Rivero 2019 — subhalo without lens model
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]], [[deep-learning-lensing]]
 
@@ -275,7 +275,7 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Sawala 2016 — the chosen few
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]]
 
@@ -291,7 +291,7 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Benitez 2020 — detailed structure of halos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]]
 
@@ -341,7 +341,7 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Benitez 2020 — detailed structure of halos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]]
 
@@ -493,7 +493,7 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Sawala 2016 — the chosen few
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]]
 
@@ -509,7 +509,7 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Vegetti 2018 — stellar streams / neutrinos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]], [[dark-matter-physics]]
 

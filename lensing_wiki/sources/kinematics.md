@@ -9,7 +9,7 @@ status: stub
 
 ## Gebhardt 2011 — M87 with Gemini IFIS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[kinematics-and-lensing]]
 
@@ -25,7 +25,7 @@ status: stub
 
 ## Smith 2017 — stellar dynamics IMF
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[kinematics-and-lensing]], [[microlensing-imf]]
 
@@ -58,7 +58,7 @@ status: stub
 
 ## Talbot 2018 — MaNGA lenses
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[kinematics-and-lensing]]
 
@@ -74,7 +74,7 @@ status: stub
 
 ## Cauton 2015 — spinning disks
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[kinematics-and-lensing]]
 

@@ -13,7 +13,7 @@ lensing-specific applications (which live in
 
 ## Schmidhuber 2014 — deep learning review
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[deep-learning-astro]]
 
@@ -29,7 +29,7 @@ lensing-specific applications (which live in
 
 ## Gao 2015 — deep learning
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[deep-learning-astro]]
 
@@ -45,7 +45,7 @@ lensing-specific applications (which live in
 
 ## Lanusse — CMU deep
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[deep-learning-astro]]
 
@@ -61,7 +61,7 @@ lensing-specific applications (which live in
 
 ## Kids strong-lensing deep
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[deep-learning-astro]]
 

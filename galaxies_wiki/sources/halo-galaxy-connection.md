@@ -12,7 +12,7 @@ occupation.
 
 ## Tinker 2017 — evolution of stellar-to-halo mass relation
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-to-halo-mass]]
 
@@ -28,7 +28,7 @@ occupation.
 
 ## Tinker 2018 — most massives
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-to-halo-mass]]
 
@@ -44,7 +44,7 @@ occupation.
 
 ## Saito 2018 — connect massive gals to DM halos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-to-halo-mass]]
 
@@ -60,7 +60,7 @@ occupation.
 
 ## Leauthaud 2017 — lensing is low
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-to-halo-mass]], [[scatter-in-smhm]]
 
@@ -76,7 +76,7 @@ occupation.
 
 ## Charlton 2017 — halo-mass-on-stellar-mass dependence
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-to-halo-mass]]
 
@@ -92,7 +92,7 @@ occupation.
 
 ## Oh 2016 — SDSS multiple-photometric test
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[stellar-to-halo-mass]]
 
@@ -108,7 +108,7 @@ occupation.
 
 ## Dutton — dark-matter core 2018
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dm-rotation-curves]]
 

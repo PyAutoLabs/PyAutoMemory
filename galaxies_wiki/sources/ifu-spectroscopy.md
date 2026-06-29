@@ -12,7 +12,7 @@ backbone of modern galaxy-population work.
 
 ## Bacon 2001 — SAURON
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ifu-spectroscopy]]
 
@@ -28,7 +28,7 @@ backbone of modern galaxy-population work.
 
 ## Cappellari 2008 — inclination dust via IFS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ifu-spectroscopy]]
 
@@ -61,7 +61,7 @@ backbone of modern galaxy-population work.
 
 ## Krajnović 2011 — ATLAS3D II morphology
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ifu-spectroscopy]]
 
@@ -77,7 +77,7 @@ backbone of modern galaxy-population work.
 
 ## Krajnović 2012 — ATLAS3D XVII Sérsic fits
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[light-profile-fitting]]
 
@@ -93,7 +93,7 @@ backbone of modern galaxy-population work.
 
 ## Emsellem 2011 — ATLAS3D kinematic misalignments
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
 
@@ -109,7 +109,7 @@ backbone of modern galaxy-population work.
 
 ## Weijmans 2014 — intrinsic shape ETG kinematic misalignments
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
 
@@ -125,7 +125,7 @@ backbone of modern galaxy-population work.
 
 ## Bellstedt 2018 — SLUGGS mass profile to 4 Re
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ifu-spectroscopy]], [[etg-radial-gradients]]
 
@@ -141,7 +141,7 @@ backbone of modern galaxy-population work.
 
 ## Greene 2018 — MaNGA angular momentum early-types
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
 
@@ -157,7 +157,7 @@ backbone of modern galaxy-population work.
 
 ## Van de Sande — SAMI stellar moments
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ifu-spectroscopy]]
 
@@ -173,7 +173,7 @@ backbone of modern galaxy-population work.
 
 ## MaNGA — Ellison 2017 SF radial gradient
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ifu-spectroscopy]]
 
@@ -189,7 +189,7 @@ backbone of modern galaxy-population work.
 
 ## MaNGA — Greene 2017 angular momentum
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
 
@@ -205,7 +205,7 @@ backbone of modern galaxy-population work.
 
 ## MaNGA — Greene 2017 kinematic / morphology
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
 
@@ -221,7 +221,7 @@ backbone of modern galaxy-population work.
 
 ## MaNGA — Johnston B/D 2017
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
 
@@ -254,7 +254,7 @@ backbone of modern galaxy-population work.
 
 ## MaNGA — Li 2016 IMF
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-radial-gradients]]
 
@@ -271,7 +271,7 @@ backbone of modern galaxy-population work.
 ## MaNGA — Ran 2016
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `Yan2016`, `Yan2016a`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
 **Concepts:** [[ifu-spectroscopy]]
 
 **Supports TODO:**
@@ -286,7 +286,7 @@ backbone of modern galaxy-population work.
 
 ## MaNGA — Tabor B/D 2017
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
 
@@ -302,7 +302,7 @@ backbone of modern galaxy-population work.
 
 ## ETG Kine 1 — root
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
 
@@ -318,7 +318,7 @@ backbone of modern galaxy-population work.
 
 ## ETG Kine 2 — root
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[etg-kinematics]]
 

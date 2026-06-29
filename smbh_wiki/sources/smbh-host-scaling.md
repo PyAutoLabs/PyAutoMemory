@@ -13,7 +13,7 @@ filename-inferred and unread.
 
 ## Ferrarese & Merritt 2000 — M–σ relation
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[smbh-host-scaling]]
 
@@ -64,7 +64,7 @@ filename-inferred and unread.
 
 ## Graham 2016 — galactic bulges and SMBHs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[smbh-host-scaling]], [[bulges-vs-pseudobulges]]
 
@@ -98,7 +98,7 @@ filename-inferred and unread.
 
 ## Kormendy 2004 — SMBH summary
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[smbh-host-scaling]]
 
@@ -114,7 +114,7 @@ filename-inferred and unread.
 
 ## Heckman & Best 2014 — SMBH coevolution
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[smbh-host-scaling]], [[smbh-accretion]]
 
@@ -184,7 +184,7 @@ filename-inferred and unread.
 
 ## Savorgnan 2016 — SMBH and galaxy I
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[smbh-host-scaling]]
 
@@ -200,7 +200,7 @@ filename-inferred and unread.
 
 ## Savorgnan 2016 — SMBH and galaxy II
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[smbh-host-scaling]]
 
@@ -217,7 +217,7 @@ filename-inferred and unread.
 ## de Nicola 2019 — SMBHs
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `Ferrarese2000`, `Ferrarese2000a`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
 **Concepts:** [[smbh-host-scaling]]
 
 **Supports TODO:**

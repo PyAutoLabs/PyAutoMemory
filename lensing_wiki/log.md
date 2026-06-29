@@ -52,10 +52,10 @@ Each sibling sub-wiki has its own `CLAUDE.md` (inherits schema from
 
 **Top-level repo restructure**
 
-- New `PyAutoPaper/index.md` — top-level map of all sub-wikis +
+- New `PyAutoMemory/index.md` — top-level map of all sub-wikis +
   reading queue.
-- `PyAutoPaper/README.md` rewritten to describe the multi-wiki layout.
-- `admin_jammy/papers.md` moved to `PyAutoPaper/reading-queue.md`
+- `PyAutoMemory/README.md` rewritten to describe the multi-wiki layout.
+- `admin_jammy/papers.md` moved to `PyAutoMemory/reading-queue.md`
   with a header explaining the move. References fixed in
   `PyAutoPrompt/README.md`, `admin_jammy/README.md`,
   `admin_jammy/claude.md`, and (un-versioned local file)

@@ -60,7 +60,7 @@ status: stub
 
 ## Ding 2016 — SHARP IX source reconstruction
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[source-reconstruction]]
 
@@ -110,7 +110,7 @@ status: stub
 
 ## Minor 2024 — pixel supersampling
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[source-reconstruction]], [[gravitational-imaging]]
 

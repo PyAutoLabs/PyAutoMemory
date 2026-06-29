@@ -13,7 +13,7 @@ location within the buried channel.
 
 ## Hall 2014 — trap properties from trap pumping
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[trap-pumping]]
 
@@ -29,7 +29,7 @@ location within the buried channel.
 
 ## Hall 2014 — traps in situ
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[trap-pumping]]
 
@@ -45,7 +45,7 @@ location within the buried channel.
 
 ## Skottfelt 2017 — trap pumping
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[trap-pumping]], [[euclid-vis-cti]]
 
@@ -79,7 +79,7 @@ location within the buried channel.
 
 ## Gow 2016 — correction via trap pumping
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[trap-pumping]], [[forward-model-cti]]
 
@@ -95,7 +95,7 @@ location within the buried channel.
 
 ## Murray 2013 — pumping and signal relation
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[trap-pumping]]
 
@@ -112,7 +112,7 @@ location within the buried channel.
 ## Euclid trap-pumping serial-direction
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `Skottfelt`, `Skottfelta`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
 **Concepts:** [[trap-pumping]], [[euclid-vis-cti]]
 
 **Supports TODO:**
@@ -127,7 +127,7 @@ location within the buried channel.
 
 ## CTI calibration — Henk
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[trap-pumping]], [[euclid-vis-cti]]
 

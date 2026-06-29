@@ -14,7 +14,7 @@ CTI bias into cosmic-shear measurements.
 
 ## Cropper 2013 — defining weak lensing requirements
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[cti-shape-bias]], [[euclid-vis-cti]]
 
@@ -30,7 +30,7 @@ CTI bias into cosmic-shear measurements.
 
 ## Israel 2015 — CTI correction for Euclid
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[forward-model-cti]], [[euclid-vis-cti]]
 
@@ -63,7 +63,7 @@ CTI bias into cosmic-shear measurements.
 
 ## Euclid Prep IX — mean redshift
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[euclid-vis-cti]]
 
@@ -79,7 +79,7 @@ CTI bias into cosmic-shear measurements.
 
 ## Kitching 2019 — propagating bias
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[cti-shape-bias]], [[euclid-vis-cti]]
 
@@ -95,7 +95,7 @@ CTI bias into cosmic-shear measurements.
 
 ## Paykari 2019 — propagating bias
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[cti-shape-bias]], [[euclid-vis-cti]]
 
@@ -112,7 +112,7 @@ CTI bias into cosmic-shear measurements.
 ## Euclid TP serial — root-level
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `Skottfelt`, `Skottfelta`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
 **Concepts:** [[trap-pumping]], [[euclid-vis-cti]]
 
 **Supports TODO:**
@@ -127,7 +127,7 @@ CTI bias into cosmic-shear measurements.
 
 ## CTI calibration — Henk
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[trap-pumping]], [[euclid-vis-cti]]
 

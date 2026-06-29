@@ -30,7 +30,7 @@ radiation-induced trap creation, and electrode-level modelling.
 
 ## Hall 1952 — trap theory
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
 
@@ -46,7 +46,7 @@ radiation-induced trap creation, and electrode-level modelling.
 
 ## Wood 2014 — p-channel CTI
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
 
@@ -62,7 +62,7 @@ radiation-induced trap creation, and electrode-level modelling.
 
 ## Yusa 2013 — proton-irradiated CCDs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
 
@@ -78,7 +78,7 @@ radiation-induced trap creation, and electrode-level modelling.
 
 ## Prodhomme 2011 — electrode-level CTI
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
 
@@ -94,7 +94,7 @@ radiation-induced trap creation, and electrode-level modelling.
 
 ## Seabroke 2011 — Silvaco 3D CTI
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
 
@@ -110,7 +110,7 @@ radiation-induced trap creation, and electrode-level modelling.
 
 ## Seabroke 2008 — radiation modelling for Gaia
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
 
@@ -126,7 +126,7 @@ radiation-induced trap creation, and electrode-level modelling.
 
 ## Seabroke 2013 — supplementary buried channels
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
 

@@ -26,7 +26,7 @@ status: stub
 
 ## Morningstar 2019 — deep-learning source reconstruction
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[deep-learning-lensing]], [[source-reconstruction]]
 
@@ -59,7 +59,7 @@ status: stub
 
 ## Brehmer 2019 — mining DM substructure
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[deep-learning-lensing]], [[dark-matter-substructure]]
 

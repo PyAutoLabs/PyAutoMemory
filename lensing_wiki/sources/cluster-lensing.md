@@ -9,7 +9,7 @@ status: stub
 
 ## Richard 2017 — HFF mass models
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[hubble-frontier-fields]]
 
@@ -25,7 +25,7 @@ status: stub
 
 ## Atek 2015 — HFF UV LF
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[hubble-frontier-fields]], [[lensed-source-science]]
 
@@ -41,7 +41,7 @@ status: stub
 
 ## Jullo 2008 — cosmological constraints
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[cluster-lensing]]
 
@@ -74,7 +74,7 @@ status: stub
 
 ## Locuss 2009 — cluster cool-core / BCG offset
 
-**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[cluster-lensing]]
 
@@ -106,7 +106,7 @@ status: stub
 
 ## Abell 1201 X-ray (root)
 
-**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[cluster-lensing]] (cross-link `../entities/abell-1201.md`)
 
@@ -121,7 +121,7 @@ status: stub
 
 ## Harvey 2015 — non-gravitational interactions
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[cluster-lensing]], [[dark-matter-physics]]
 
@@ -137,7 +137,7 @@ status: stub
 
 ## Harvey 2015 — non-gravitational interactions II
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[cluster-lensing]], [[dark-matter-physics]]
 

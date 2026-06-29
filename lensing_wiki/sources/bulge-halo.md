@@ -9,7 +9,7 @@ status: stub
 
 ## Etherington 2022 — bulge–halo
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-halo-decomposition]], [[pyautolens]]
 
@@ -59,7 +59,7 @@ status: stub
 
 ## Oldham 2016 — red nuggets
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-halo-decomposition]]
 
@@ -93,7 +93,7 @@ status: stub
 ## Sonnenfeld 2018 — radial gradients
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `Sonnenfeld2018`, `Sonnenfeld2018a`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
 **Concepts:** [[bulge-halo-decomposition]]
 
 **Supports TODO:**
@@ -108,7 +108,7 @@ status: stub
 
 ## Xu 2016 — inner structure MST in ETGs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-halo-decomposition]], [[mass-sheet-degeneracy]]
 
@@ -124,7 +124,7 @@ status: stub
 
 ## Wang — IllustrisTNG ellipticals
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bulge-halo-decomposition]]
 

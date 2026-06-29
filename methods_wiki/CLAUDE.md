@@ -6,7 +6,7 @@ related codes: Bayesian inference, nested and Hamiltonian sampling,
 deep learning for astrophysics, probabilistic programming languages,
 linear-algebra primitives (NUFFT, message passing), and the wider
 scientific-software ecosystem. Sibling of `lensing_wiki/` under
-`PyAutoPaper/`, same Karpathy "LLM Wiki" pattern.
+`PyAutoMemory/`, same Karpathy "LLM Wiki" pattern.
 
 ## Layout
 

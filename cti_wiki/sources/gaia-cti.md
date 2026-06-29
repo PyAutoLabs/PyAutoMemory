@@ -13,7 +13,7 @@ mitigation via supplementary buried channels.
 
 ## Prodhomme 2011 — impact on Gaia astrometry
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
 
@@ -46,7 +46,7 @@ mitigation via supplementary buried channels.
 
 ## Crowley 2016 — Radiation 30-month Gaia L2
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
 
@@ -62,7 +62,7 @@ mitigation via supplementary buried channels.
 
 ## Seabroke 2008 — radiation model
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
 
@@ -78,7 +78,7 @@ mitigation via supplementary buried channels.
 
 ## Seabroke 2013 — supplementary buried channels
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[ccd-trap-physics]]
 

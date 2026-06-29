@@ -9,7 +9,7 @@ status: stub
 
 ## Gilman 2016 — flux method
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[flux-ratio-anomalies]]
 
@@ -25,7 +25,7 @@ status: stub
 
 ## Gilman 2018 — probe DM forward model
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[flux-ratio-anomalies]], [[dark-matter-physics]]
 
@@ -41,7 +41,7 @@ status: stub
 
 ## Gilman 2019 — constraints on DM
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[flux-ratio-anomalies]]
 
@@ -74,7 +74,7 @@ status: stub
 
 ## Gilman 2016 — luminous subs in ETGs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[flux-ratio-anomalies]]
 
@@ -90,7 +90,7 @@ status: stub
 
 ## Hsueh 2016 — disk substructure
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[flux-ratio-anomalies]]
 
@@ -106,7 +106,7 @@ status: stub
 
 ## Hsueh 2017 — disk substructure
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[flux-ratio-anomalies]]
 
@@ -122,7 +122,7 @@ status: stub
 
 ## Hsueh 2018 — disk substructure
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[flux-ratio-anomalies]]
 

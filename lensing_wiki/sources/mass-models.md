@@ -81,7 +81,7 @@ entry is a stub.
 ## Shajib 2019 — is every strong lens happy
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `Pub---ae2019`, `Shajib2018`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautopaper.bib` and an authoritative public record.
+**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
 **Concepts:** [[mass-models]]
 
 **Supports TODO:**
@@ -96,7 +96,7 @@ entry is a stub.
 
 ## Tian — Einstein rings mass discrepancy
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[einstein-radius]], [[radial-angular-degeneracy]]
 
@@ -112,7 +112,7 @@ entry is a stub.
 
 ## Li 2018 — SIS / Einstein-mass discrepancy
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[einstein-radius]], [[mass-models]]
 

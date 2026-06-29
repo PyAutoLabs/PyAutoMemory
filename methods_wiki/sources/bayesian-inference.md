@@ -13,7 +13,7 @@ machinery used in astrophysics fits.
 
 ## Variational inference — review for statisticians
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bayesian-inference]]
 
@@ -29,7 +29,7 @@ machinery used in astrophysics fits.
 
 ## Expectation propagation as a way of life
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bayesian-inference]], [[message-passing]]
 
@@ -81,7 +81,7 @@ machinery used in astrophysics fits.
 
 ## Expectation propagation gates — slides
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bayesian-inference]], [[message-passing]]
 
@@ -97,7 +97,7 @@ machinery used in astrophysics fits.
 
 ## Minka — gates technical report
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bayesian-inference]], [[message-passing]]
 
@@ -113,7 +113,7 @@ machinery used in astrophysics fits.
 
 ## Factor graphs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bayesian-inference]], [[message-passing]]
 
@@ -129,7 +129,7 @@ machinery used in astrophysics fits.
 
 ## Message passing is a way of life
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[message-passing]], [[bayesian-inference]]
 
@@ -145,7 +145,7 @@ machinery used in astrophysics fits.
 
 ## Czekala 2015 — Gaussian-process noise
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bayesian-inference]]
 
@@ -179,7 +179,7 @@ machinery used in astrophysics fits.
 
 ## 2008.09375 — unidentified arXiv
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[bayesian-inference]]
 

@@ -31,7 +31,7 @@ mapping, ALMA molecular-gas dynamics, and the EHT.
 
 ## Peterson 2004 — broad-line region
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[smbh-mass-measurement]]
 
@@ -47,7 +47,7 @@ mapping, ALMA molecular-gas dynamics, and the EHT.
 
 ## McClure 2014 — quasar BH masses
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[smbh-mass-measurement]]
 
@@ -98,7 +98,7 @@ mapping, ALMA molecular-gas dynamics, and the EHT.
 
 ## Davis 2018 — links to spiral pitch angle
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[smbh-mass-measurement]], [[smbh-host-scaling]]
 
@@ -114,7 +114,7 @@ mapping, ALMA molecular-gas dynamics, and the EHT.
 
 ## Event Horizon Telescope 2019 — M87 first image
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[smbh-mass-measurement]]
 
@@ -148,7 +148,7 @@ mapping, ALMA molecular-gas dynamics, and the EHT.
 
 ## Thater 2019 — six new SMBHs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[smbh-mass-measurement]]
 
@@ -164,7 +164,7 @@ mapping, ALMA molecular-gas dynamics, and the EHT.
 
 ## Do 2014 — SMBHs with thirty-metre telescopes
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[smbh-mass-measurement]]
 
@@ -197,7 +197,7 @@ mapping, ALMA molecular-gas dynamics, and the EHT.
 
 ## Sanghvi 2014 — low-mass quasar disc correction
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautopaper.bib` before citing.
+**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
 **Reference:** TODO — verify the public paper record and canonical BibTeX key.
 **Concepts:** [[smbh-mass-measurement]]
 

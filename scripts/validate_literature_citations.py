@@ -1,4 +1,4 @@
-"""Validate links between PyAutoPaper source entries and canonical BibTeX metadata."""
+"""Validate links between PyAutoMemory source entries and canonical BibTeX metadata."""
 
 from __future__ import annotations
 
@@ -8,7 +8,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_BIBLIOGRAPHY = ROOT / "bibliography" / "pyautopaper.bib"
+DEFAULT_BIBLIOGRAPHY = ROOT / "bibliography" / "pyautomemory.bib"
 DEFAULT_ALIASES = ROOT / "bibliography" / "bibkey_aliases.yaml"
 
 BIBTEX_ENTRY = re.compile(

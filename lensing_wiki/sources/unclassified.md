@@ -14,7 +14,7 @@ create a new one); update `log.md` when this is done.
 
 ## arXiv 1901.07801
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** unknown
 
@@ -30,7 +30,7 @@ create a new one); update `log.md` when this is done.
 
 ## MN-24-0938 R3 proof
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** unknown (MNRAS proof)
 
@@ -46,7 +46,7 @@ create a new one); update `log.md` when this is done.
 
 ## MN-24-0938 proof
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** unknown (MNRAS proof)
 
@@ -62,7 +62,7 @@ create a new one); update `log.md` when this is done.
 
 ## Scaling up Lensing — ULiège
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[deep-learning-lensing]] (?)
 
@@ -78,7 +78,7 @@ create a new one); update `log.md` when this is done.
 
 ## Detections stochastic no zeros
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautopaper.bib`.
+**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
 **Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
 **Concepts:** [[dark-matter-substructure]] (?)
 
