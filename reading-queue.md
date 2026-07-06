@@ -21,7 +21,7 @@ Role of General Users in the Lifecycle of Scientific Software
 Strong Lensing:
 
 LEGGOS I: The JWST LEGGOS Survey -- LEnsing and Galaxy Growth: Observing Substructures -- Unpacks the Nature of Clumpy Star Formation and Quenching in Gravitationally Lensed Galaxies beyond Cosmic Noon
-LEGGOS III: Mapping Star Formation and Dust in Gravitationally Lensed Galaxies with , a UMAP and Clustering Framework
+LEGGOS III: Mapping Star Formation and Dust in Gravitationally Lensed Galaxies with SUMAC, a UMAP and Clustering Framework
 LEGGOS II: A Strong Lens Model and Source-Plane Projection of the Clumpy Star-Forming Galaxy SGASJ111020.0+645950.8 at z=2.48
 The free-streaming length of dark matter from JWST observations of 28 strong gravitational lenses
 Dynamical models of cluster members to probe the total mass properties of cluster subhalos. I. A comparison with parametric strong lensing models
