@@ -61,6 +61,23 @@ plus field knowledge; verify against PDF before quoting.
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
 
+## Shajib 2025 — dolphin automation pipeline
+
+**Canonical BibTeX key:** `Shajib2025dolphin`
+**Reference:** dolphin: A fully automated forward modeling pipeline powered by artificial intelligence for galaxy-scale strong lenses; arXiv:2503.22657
+**Concepts:** [[lenstronomy]]
+
+**Supports:**
+- Introduces `dolphin`, an automated forward-modelling pipeline for galaxy-scale strong lenses.
+- Uses AI-based component recognition to configure and fit lens models with `lenstronomy`.
+
+**Use when:**
+- Citing automated end-to-end modelling of galaxy-galaxy or galaxy-quasar strong lenses.
+
+**Do not use for:**
+- Quantitative performance claims or detailed implementation choices without checking the paper text.
+
+
 ## Anowar 2020 — lens modelling study
 
 **Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
