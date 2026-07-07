@@ -8,10 +8,6 @@ and related science.
 
 Start at [`index.md`](index.md).
 
-> Renamed from **PyAutoPaper**. It has outgrown being a repository of papers: it
-> is now the organism's memory. Backwards compatibility is preserved where
-> practical (see *Renamed from PyAutoPaper* below).
-
 ## What PyAutoMemory stores
 
 PyAutoMemory holds what the organism has learned, not just a pile of papers:
@@ -80,18 +76,6 @@ sources from public DOI/arXiv/journal references when claim verification is need
 
 New knowledge must update canonical metadata and compact claim support together,
 then pass `make validate-literature-citations`.
-
-## Renamed from PyAutoPaper
-
-This repository was previously **PyAutoPaper**. The rename to **PyAutoMemory**
-reflects its role as the organism's long-term memory rather than a collection of
-papers. Functionality is unchanged, and backwards compatibility is preserved
-where practical:
-
-- The canonical bibliography is now `bibliography/pyautomemory.bib`; the old
-  path `bibliography/pyautopaper.bib` remains as a symlink so existing
-  references keep resolving.
-- The validation entry point is unchanged: `make validate-literature-citations`.
 
 ## Roadmap
 

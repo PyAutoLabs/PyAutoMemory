@@ -5,9 +5,6 @@ accumulated scientific and project knowledge, organised as several
 Karpathy-style LLM wikis over a shared canonical bibliography. Each sub-wiki uses
 the schema in [`lensing_wiki/CLAUDE.md`](lensing_wiki/CLAUDE.md).
 
-(Renamed from PyAutoPaper — it stores what the organism has learned, not just
-papers.)
-
 ## Sub-wikis
 
 - [`lensing_wiki/`](lensing_wiki/index.md) — **strong gravitational
