@@ -33,6 +33,9 @@ ecosystem and the wider literature:
 
 Variational inference and EP are deterministic alternatives that scale
 to very large catalogs (Celeste, Cannon) but trade away exactness.
+PyAutoFit implements EP over factor graphs for multi-dataset /
+hierarchical fits — see [[expectation-propagation]] for the algorithm
+as implemented and the 2026 audit findings.
 
 ## Why it matters for PyAutoLens
 

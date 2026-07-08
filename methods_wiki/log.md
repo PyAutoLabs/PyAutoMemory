@@ -53,3 +53,19 @@ numbers, raw-output locations). All `status: draft` — grounded in
 `autofit_workspace_developer/searches_minimal` outputs and the
 autolens_profiling HPC campaign, not yet in the PDF sources; source
 citations to be tightened when the Stats/ PDFs are ingested.
+
+## 2026-07-08 — expectation-propagation concept page
+
+Added `concepts/expectation-propagation.md` (status: draft): the EP
+algorithm as PyAutoFit implements it — factor/variable mean-field
+factorisation, cavity/tilted/moment-matching update with damping as an
+EMA on natural parameters, evidence decomposition, exact conjugate
+updates, and the three deterministic-composition mechanisms. Includes
+the 2026-07-08 audit findings (PyAutoFit #1330/#1331/#1332): KL
+direction inconsistency (Gamma/Beta reversed), truncated-normal KL
+approximation error (1.5%→140% near bounds), and the three-legged
+evidence-bookkeeping breakage. Linked from index.md (Start here) and
+concepts/bayesian-inference.md. Written as Phase 1 output of
+PyAutoMind research/graphical_ep/ep_framework_review.md; a public,
+personal-content-free version is planned for the future
+autofit_assistant wiki (PyAutoMind research/autofit_assistant/).

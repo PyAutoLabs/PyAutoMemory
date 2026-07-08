@@ -8,6 +8,8 @@ should use this wiki.
 - [[bayesian-inference]] — likelihoods, priors, posteriors, evidence.
 - [[model-comparison]] — Bayes factors, AIC/BIC, posterior predictive
   checks.
+- [[expectation-propagation]] — factor graphs, message passing,
+  PyAutoFit's `graphical/` EP framework; 2026 audit findings.
 
 ## Samplers
 
