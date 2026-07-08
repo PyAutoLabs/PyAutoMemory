@@ -27,15 +27,10 @@ here is the distilled, durable knowledge.
 
 ## The organism
 
-PyAutoMemory is one organ of the PyAuto organism; each repo has one job:
-
-| Organ | Repo | Role |
-|-------|------|------|
-| **Mind** | PyAutoMind | Decides *what* should be done — intent, goals, future work. |
-| **Brain** | PyAutoBrain | Figures out *how* — reasoning, planning, orchestration. |
-| **Hands** | PyAutoBuild | Builds and releases the software. |
-| **Heart** | PyAutoHeart | Determines whether the organism is healthy. |
-| **Memory** | **PyAutoMemory** (this repo) | Stores what the organism has learned — long-term knowledge. |
+PyAutoMemory is the Memory organ of the PyAuto organism — it stores what the
+organism has learned. The organs and their boundaries are defined once in
+`PyAutoBrain/ORGANISM.md`; how agents should read this repo is defined in
+[`AGENTS.md`](AGENTS.md).
 
 ## What's in here
 
