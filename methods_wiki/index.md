@@ -12,9 +12,15 @@ should use this wiki.
 ## Samplers
 
 - [[mcmc-samplers]] — Metropolis-Hastings, ensemble samplers, Eryn.
-- [[hamiltonian-monte-carlo]] — NUTS, NumPyro, Stan.
+- [[hamiltonian-monte-carlo]] — NUTS, BlackJAX, NumPyro, Stan; gradients
+  via JAX.
 - [[nested-sampling]] — MultiNest, PolyChord, dynesty, UltraNest.
-- [[gpu-nested-sampling]] — JAX-accelerated nested sampling.
+- [[gpu-nested-sampling]] — JAX-accelerated nested sampling (NSS);
+  vmap batching, chunked vmap.
+- [[initialization-chaining]] — which samplers provide vs require
+  starting points; PyAutoFit chained searches.
+- [[sampler-benchmarks]] — the benchmarking-campaign record (MLTracker
+  contract, minimal + A100 results, raw-output locations).
 
 ## Likelihood-free inference
 
