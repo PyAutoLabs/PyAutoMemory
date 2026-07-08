@@ -39,3 +39,17 @@ Same Karpathy "LLM Wiki" pattern as the lensing sub-wiki. Many entries
 cross-link to `../lensing_wiki/` (Bayesian-inference-lensing,
 source-reconstruction regularization) and `../smbh_wiki/`
 (Rosas-Guevara EAGLE SMBH simulations, Latif SMBH seeds review).
+
+## 2026-07-08 — Sampler pages for the Brain samplers faculty
+
+Added four concept pages backing PyAutoBrain's new samplers faculty
+(PyAutoBrain#54): [[hamiltonian-monte-carlo]] (fills index red-link;
+NUTS/BlackJAX, gradient + warm-start requirements),
+[[gpu-nested-sampling]] (fills index red-link; NSS, vmap fan-out OOM +
+chunked-vmap fix), [[initialization-chaining]] (provider/consumer map,
+PyAutoFit chained searches), [[sampler-benchmarks]] (MLTracker
+diagnostic contract, minimal 1D-Gaussian table, A100 campaign headline
+numbers, raw-output locations). All `status: draft` — grounded in
+`autofit_workspace_developer/searches_minimal` outputs and the
+autolens_profiling HPC campaign, not yet in the PDF sources; source
+citations to be tightened when the Stats/ PDFs are ingested.
