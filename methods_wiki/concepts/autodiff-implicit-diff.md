@@ -60,8 +60,17 @@ throughout; per-parameter step `1e-5 * max(|x|, 0.1)`).
   including `RectangularAdaptImage` in the full production shape
   (`reg.Adapt` + `AdaptImages` + border relocator, ≤ ~1% on mass;
   `AdaptDensity` ≤ ~3%; FD drifts toward AD as h→0, so the residue is FD
-  staircase contamination). Production-config gradient mass inference is
-  therefore certified; only the os_pix=1 adaptive corner is unusable. Key distinction vs the paper
+  staircase contamination). Imaging production-config gradient mass inference
+  is therefore certified; only the os_pix=1 adaptive corner is unusable —
+  **and interferometer is that corner by construction** (its pixelization has
+  no over-sampling): on the production sparse-operator path
+  (`TransformerDFT` + `apply_sparse_operator(use_jax=True)` +
+  `RectangularAdaptDensity` + `reg.Adapt`) every mass/shear gradient is
+  correctly zero and, with no lens light in interferometer models, there are
+  no usable gradients at all. Interferometer gradient work needs
+  `RectangularUniform` (FD-validated on the same sparse path) until a
+  smooth-density transform exists. Interferometer parametric light profiles
+  (standard + linear Sérsic through the DFT) are FD-certified ≤ ~1e-6. Key distinction vs the paper
   (arXiv:2606.30620): Enzi et al. build the CDF from a *smooth* density, not
   empirical point ranks — that is what makes their RTU formulation fully
   differentiable. The old `jnp.interp` vjp explosion (PyAutoArray PR #281,
