@@ -75,6 +75,19 @@ throughout; per-parameter step `1e-5 * max(|x|, 0.1)`).
   empirical point ranks — that is what makes their RTU formulation fully
   differentiable. The old `jnp.interp` vjp explosion (PyAutoArray PR #281,
   closed unmerged) is moot on the refactored code — do not re-land it.
+- **The spline meshes are the prior attempt at exactly this**:
+  `RectangularSplineAdapt{Density,Image}` (PyAutoArray PR #289, 2026-04-22,
+  opt-in, built "for gradient-based samplers": deg-11 polynomial fit to the
+  inverse empirical CDF at Chebyshev nodes + Hermite inversion). Measured
+  2026-07-09: they DO break the rank invariance (AD live on all params even
+  at os_pix=1) but the likelihood surface is noisy — eager-vs-JIT LL gap
+  ~15, FD erratic across h=1e-7..1e-5 — matching #289's shipped
+  "oscillations" limitation; noise suspects are the
+  `_enforce_strict_monotone` eps-jitter, polyfit conditioning, and the
+  inversion table. A 727-line jax-friendly spline-interpolator refactor is
+  parked in PyAutoArray stash@{0} (Mind parked.md `rectangular-spline-cdf`,
+  2026-05-08). Fix path: de-noise the spline chain or leapfrog to a
+  kernel-density CDF; then FD-certify incl. the interferometer sparse path.
 - **Frozen Delaunay connectivity** would give exact gradients almost
   everywhere (connectivity is piecewise-constant), but today the path
   hard-errors: `pure_callback` has no JVP rule — a `custom_jvp` zero-rule
