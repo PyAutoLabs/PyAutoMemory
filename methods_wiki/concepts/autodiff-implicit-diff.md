@@ -56,7 +56,12 @@ throughout; per-parameter step `1e-5 * max(|x|, 0.1)`).
   *correct* a.e. derivative; naive FD "gradients" there are discontinuity
   artifacts. Controls: `RectangularUniform` is exactly smooth (AD = FD to
   7 s.f.); over-sampling > 1 restores a smooth mass signal via sub-pixel
-  strain (AD ≈ FD(h→0) within ~3%). Key distinction vs the paper
+  strain — full 14-param FD sweeps at os_pix=4 validate both adaptive meshes,
+  including `RectangularAdaptImage` in the full production shape
+  (`reg.Adapt` + `AdaptImages` + border relocator, ≤ ~1% on mass;
+  `AdaptDensity` ≤ ~3%; FD drifts toward AD as h→0, so the residue is FD
+  staircase contamination). Production-config gradient mass inference is
+  therefore certified; only the os_pix=1 adaptive corner is unusable. Key distinction vs the paper
   (arXiv:2606.30620): Enzi et al. build the CDF from a *smooth* density, not
   empirical point ranks — that is what makes their RTU formulation fully
   differentiable. The old `jnp.interp` vjp explosion (PyAutoArray PR #281,
