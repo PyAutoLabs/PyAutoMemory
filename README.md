@@ -1,5 +1,7 @@
 # PyAutoMemory
 
+📖 **Full documentation → <https://pyautoscientist.readthedocs.io>** — the whole PyAutoScientist organism, including how to fork and run your own.
+
 The long-term memory of the PyAuto organism: what it has learned, distilled
 into cross-linked LLM wikis — literature summaries, scientific concepts, and
 the citation metadata to verify them. Source PDFs live off-repo; what's here
