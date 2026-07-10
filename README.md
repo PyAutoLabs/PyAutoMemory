@@ -2,8 +2,10 @@
 
 The long-term memory of the PyAuto organism: what it has learned, distilled
 into cross-linked LLM wikis — literature summaries, scientific concepts, and
-the citation metadata to verify them. Source PDFs live off-repo; what's here
-is the durable knowledge. Start at [`index.md`](index.md).
+the citation metadata to verify them. When the plain-English task you lead
+needs domain grounding, this is where the agents look. Source PDFs live
+off-repo; what's here is the durable knowledge. Start at
+[`index.md`](index.md).
 
 The sub-wikis (self-contained, shared schema):
 
