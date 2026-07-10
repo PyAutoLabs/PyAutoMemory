@@ -25,7 +25,8 @@ The wiki schema is defined in
 [`lensing_wiki/CLAUDE.md`](lensing_wiki/CLAUDE.md) and inherited by every
 sub-wiki. How agents should read this repo: [AGENTS.md](AGENTS.md). The
 organism this repo is the Memory of:
-[PyAutoBrain/ORGANISM.md](https://github.com/PyAutoLabs/PyAutoBrain/blob/main/ORGANISM.md).
+[PyAutoBrain/ORGANISM.md](https://github.com/PyAutoLabs/PyAutoBrain/blob/main/ORGANISM.md),
+documented in full at <https://pyautoscientist.readthedocs.io>.
 
 Licence: structure and tooling MIT; wiki content CC BY 4.0 — see
 [LICENSE](LICENSE).
