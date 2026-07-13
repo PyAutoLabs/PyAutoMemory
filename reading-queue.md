@@ -20,6 +20,9 @@ Role of General Users in the Lifecycle of Scientific Software
 
 Strong Lensing:
 
+XShooter DESI Lens Program: Sample characterization
+Strong-lensing effects in high-redshift massive black-hole binary population inference
+Polar coordinate transformations for machine learning based dark matter subhalo detection in strong gravitational lenses
 LEGGOS I: The JWST LEGGOS Survey -- LEnsing and Galaxy Growth: Observing Substructures -- Unpacks the Nature of Clumpy Star Formation and Quenching in Gravitationally Lensed Galaxies beyond Cosmic Noon
 LEGGOS III: Mapping Star Formation and Dust in Gravitationally Lensed Galaxies with SUMAC, a UMAP and Clustering Framework
 LEGGOS II: A Strong Lens Model and Source-Plane Projection of the Clumpy Star-Forming Galaxy SGASJ111020.0+645950.8 at z=2.48
