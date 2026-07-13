@@ -5,7 +5,7 @@ topics: [autodiff, jax, gradients, finite-differences, inversions, hmc]
 sources:
   - autolens_workspace_developer/jax_profiling/gradient/ (probes + README)
   - autolens_workspace_test/scripts/jax_grad/ (FD correctness tests)
-  - arXiv:2606.30620 (Enzi et al., RTU grids)
+  - arXiv:2606.30620 (Enzi et al., RTU grids) — canonical key `Enzi2026`; see [[sources-source-reconstruction#enzi-2026-ray-guided-transformed-uniform-rtu-grids]]
   - PyAutoArray PR #281 (closed unmerged)
 status: draft
 ---
@@ -75,7 +75,9 @@ throughout; per-parameter step `1e-5 * max(|x|, 0.1)`).
   empirical point ranks — that is what makes their RTU formulation fully
   differentiable. The old `jnp.interp` vjp explosion (PyAutoArray PR #281,
   closed unmerged) is moot on the refactored code — do not re-land it.
-- **The spline meshes are the prior attempt at exactly this**:
+- **The spline meshes are the prior attempt at exactly this** (and are the
+  PyAuto analogue of the Enzi et al. RTU formulation, `Enzi2026`,
+  [[sources-source-reconstruction#enzi-2026-ray-guided-transformed-uniform-rtu-grids]]):
   `RectangularSplineAdapt{Density,Image}` (PyAutoArray PR #289, 2026-04-22,
   opt-in, built "for gradient-based samplers": deg-11 polynomial fit to the
   inverse empirical CDF at Chebyshev nodes + Hermite inversion). Measured

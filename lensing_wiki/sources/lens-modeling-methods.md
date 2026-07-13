@@ -226,8 +226,79 @@ plus field knowledge; verify against PDF before quoting.
 - Evidence until the paper identity and canonical key are verified.
 
 
+## Gu 2022 — GIGA-Lens
+
+**Canonical BibTeX key:** `Gu2022`
+**Reference:** GIGA-Lens: Fast Bayesian Inference for Strong Gravitational Lens Modeling; arXiv:2202.07663; doi:10.3847/1538-4357/ac6de4; ApJ 935, 49
+**Concepts:** [[bayesian-inference-lensing]], [[mass-models]], [[gigalens]]
+
+**Supports:**
+- Introduces GIGA-Lens, a GPU-accelerated, fully forward-modelling Bayesian lens-modelling code using automatic differentiation.
+- Models a galaxy-scale lens in ~minutes on a GPU, targeting the ~10^5 lenses expected from surveys (DESI, Rubin/LSST, Euclid).
+
+**Use when:**
+- Citing GPU-accelerated, gradient-based Bayesian forward modelling of strong lenses at survey scale, or as an external analogue to the JAX/autodiff direction ([[autodiff-implicit-diff]]).
+
+**Do not use for:**
+- Quantitative accuracy or timing claims on a specific system without checking the paper text.
+
+
+## Huang 2026 — GIGA-Lens 2.0
+
+**Canonical BibTeX key:** `Huang2026`
+**Reference:** GIGA-Lens 2.0: Strong-Lens Modeling on Multiple GPU Nodes; arXiv:2606.30633
+**Concepts:** [[bayesian-inference-lensing]], [[gigalens]]
+
+**Supports:**
+- Presents GIGA-Lens 2.0, extending the code to run across multiple GPU nodes (demonstrated on 128 nodes / 512 A100 GPUs).
+- Validated on 100 simulated systems and the real lens DESI J238.5690+04.7276.
+
+**Use when:**
+- Citing multi-node GPU scaling of forward-model Bayesian lens fitting.
+
+**Do not use for:**
+- Detailed per-node scaling numbers without checking the paper text.
+
+
+## Ding 2025 — CASSOWARY 19 (PyAutoLens)
+
+**Canonical BibTeX key:** `Ding2025`
+**Reference:** Pixel-level modelling of group-scale strong lens CASSOWARY 19; arXiv:2504.11445; doi:10.1088/1674-4527/add0a0; RAA
+**Concepts:** [[source-reconstruction]], [[pyautolens]], [[cluster-lensing]]
+
+**Supports:**
+- Pixel-level (adaptive-pixelisation) modelling of a group-scale strong lens with the PyAutoLens software package on HST imaging.
+- Reports a high-precision mass model and source reconstruction, with higher magnification estimates than prior studies of this system.
+
+**Use when:**
+- Citing a PyAutoLens group-scale application, or adaptive-pixelisation source reconstruction on a real group-scale lens.
+
+**Do not use for:**
+- Quantitative magnification/mass numbers without checking the paper text.
+
+
+## Acebron 2024 — cluster extended-arc modelling (GLEE)
+
+**Canonical BibTeX key:** `Acebron2024`
+**Reference:** The next step in galaxy cluster strong lensing: modeling the surface brightness of multiply-imaged sources; arXiv:2410.01883; ApJ
+**Concepts:** [[cluster-lensing]], [[source-reconstruction]]
+
+**Supports:**
+- Models the extended surface-brightness distribution of a strongly lensed source in a galaxy cluster (with GLEE), rather than image positions alone.
+- Demonstrates tighter cluster mass constraints from including the extended lensed light of the source host.
+
+**Use when:**
+- Citing extended surface-brightness (as opposed to point-image) modelling in cluster-scale strong lensing.
+
+**Do not use for:**
+- Attributing the method to PyAutoLens or Herculens — this analysis uses GLEE.
+
+
 ## See also
 
 - [[sources-mass-models]]
 - [[sources-source-reconstruction]]
 - [[mass-models]]
+- [[gigalens]]
+- [[herculens]]
+- [[cluster-lensing]]

@@ -163,3 +163,35 @@ incorrect filename-derived summaries with bounded claim support.
 
 Verified and migrated the Viel and Iršič Lyman-alpha WDM constraints and the Bonaca GD-1
 stream-perturber analysis, preserving their distinct probes and assumption-dependent limits.
+
+---
+
+## 2026-07-13 — Added GIGA-Lens and Herculens differentiable-modelling papers
+
+Added 9 canonical BibTeX entries to `bibliography/pyautomemory.bib`:
+- **GIGA-Lens** (GPU forward-model Bayesian): `Gu2022` (code paper, 2202.07663),
+  `Huang2026` (GIGA-Lens 2.0, 2606.30633), `Huang2025` (DESI Strong Lens Foundry I,
+  2502.03455), `Urcelay2025` (compact-group lens, 2412.04567).
+- **Enzi RTU grids**: `Enzi2026` (2606.30620) — the published ray-guided
+  transformed-uniform / smooth-CDF formulation behind our rectangular-pixelization
+  spline meshes.
+- **Herculens** (differentiable, JAX): `Biggio2022` (neural-field potentials,
+  2210.09169), `Galan2023` (COOLEST standard, JOSS 8/5567), `Galan2024`
+  (El Anzuelo JWST cluster arcs, 2402.18636), `Galan2024a` (systematic-biases
+  cross-method comparison, 2406.08484). Existing `Galan2021`/`Galan2022` already
+  covered SLITronomy + the Herculens code paper.
+
+New entity pages `entities/gigalens.md` and `entities/herculens.md` (registered in
+`index.md`). GIGA-Lens source entries added to `sources/lens-modeling-methods.md`;
+Enzi RTU entry added to `sources/source-reconstruction.md` and cross-linked to the
+`RectangularSplineAdapt{Density,Image}` discussion in
+`../methods_wiki/concepts/autodiff-implicit-diff.md` (`Enzi2026` key wired in).
+
+Also added (by request) two adjacent modelling papers, labelled by the code they
+actually use — **not** Herculens: `Ding2025` (CASSOWARY 19, 2504.11445, PyAutoLens
+group-scale application) and `Acebron2024` (2410.01883, GLEE cluster extended-arc
+surface-brightness modelling), both as source entries in
+`sources/lens-modeling-methods.md`.
+
+Dropped only the H0pe SN-host paper (2510.20561): Galan-led but Herculens use
+unconfirmed.
