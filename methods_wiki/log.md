@@ -69,3 +69,19 @@ concepts/bayesian-inference.md. Written as Phase 1 output of
 PyAutoMind research/graphical_ep/ep_framework_review.md; a public,
 personal-content-free version is planned for the future
 autofit_assistant wiki (PyAutoMind research/autofit_assistant/).
+
+---
+
+## 2026-07-14 — Gradient-optimizer benchmarks (MAP on the MGE lens likelihood)
+
+**By:** Claude (Opus 4.8, PyAutoLabs next-wave-population-optimizers session).
+
+**Scope:** new `concepts/gradient-optimizer-benchmarks.md` recording the
+2026-07-13/14 study of JAX gradient-based MAP/optimization on the real MGE lens
+likelihood (autolens_workspace_developer #95 + #97, merged PRs #96/#98). Headline:
+robust MAP needs **diversity × gradients** — single cold-start fails; multi-start
+Adam wins and scales to ~100 % basin-hit on an A100 (GIGA-Lens); SVGD reaches the
+truth but is GPU-only; CMA-ES collapses. Includes exact CPU + A100 runtimes /
+iterations (RAL A100 80GB), the diversity×gradient verdict, durable traps, the
+reusable RAL A100 pipeline, and a Herculens/Enzi cold-start-vs-warm-start note.
+Cross-linked from index.md (Samplers) and concepts/sampler-benchmarks.md.

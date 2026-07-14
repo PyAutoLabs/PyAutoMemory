@@ -83,6 +83,9 @@ Raw outputs, job scripts and result JSON/PNGs live in
 
 ## See also
 
+- [[gradient-optimizer-benchmarks]] — the sibling study on gradient-based
+  MAP/optimization (multi-start Adam, SVGD, CMA-ES) on the MGE lens likelihood,
+  CPU + A100.
 - [[gpu-nested-sampling]] — why the JAX tiers win and where they OOM.
 - [[hamiltonian-monte-carlo]] — the gradient kernel behind nss_grad.
 - [[initialization-chaining]] — how fast consumers get their start.

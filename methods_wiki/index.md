@@ -23,6 +23,9 @@ should use this wiki.
   starting points; PyAutoFit chained searches.
 - [[sampler-benchmarks]] — the benchmarking-campaign record (MLTracker
   contract, minimal + A100 results, raw-output locations).
+- [[gradient-optimizer-benchmarks]] — JAX MAP/optimization study on the MGE
+  lens likelihood (CPU + A100): diversity × gradients; multi-start Adam scales
+  (GIGA-Lens), SVGD reaches truth, CMA-ES collapses.
 
 ## Likelihood-free inference
 
