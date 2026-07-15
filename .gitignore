@@ -20,6 +20,7 @@
 *.jpeg
 *.png
 *.PNG
+!logo.png
 *.gif
 *.tif
 *.tiff
