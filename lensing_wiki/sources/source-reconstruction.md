@@ -141,7 +141,36 @@ status: stub
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
 
+## Enzi 2026 — ray-guided transformed uniform (RTU) grids
+
+**Canonical BibTeX key:** `Enzi2026`
+**Reference:** Gaussian processes on ray-guided transformed uniform grids for fast, flexible, and auto-differentiable adaptive source reconstruction in lens modelling; arXiv:2606.30620; MNRAS (submitted)
+**Concepts:** [[source-reconstruction]], [[autodiff-implicit-diff]]
+
+**Supports:**
+- Introduces adaptive source reconstruction on **ray-guided transformed uniform (RTU) grids** with a Gaussian-process prior — the grid deforms with the lens geometry while staying fully auto-differentiable.
+- Achieves accurate reconstructions with fewer source pixels, targeting fast, gradient-based modelling of large survey samples (e.g. Euclid).
+
+**Directly relevant to PyAuto:** this is the published formulation behind our
+**rectangular-pixelization spline meshes** — `RectangularSplineAdapt{Density,Image}`
+in PyAutoArray build a smooth CDF transform of a rectangular grid so the
+pixelization becomes differentiable for gradient-based samplers. Enzi et al.
+build their CDF from a *smooth density* rather than empirical point ranks, which
+is precisely what makes the RTU formulation cleanly differentiable, versus the
+rank-invariance staircase seen on our empirical-CDF adaptive meshes. See
+[[autodiff-implicit-diff]] for the PyAuto-side spline-mesh status.
+
+**Use when:**
+- Citing differentiable adaptive source-plane pixelization / GP source priors on lens-deformed grids, or motivating the rectangular-spline CDF-transform approach.
+
+**Do not use for:**
+- Specific PyAutoArray implementation claims — the shared idea is the smooth-CDF transform; the codes differ. Verify quantitative results against the paper text.
+
+
 ## See also
 
 - [[source-reconstruction]]
 - [[gravitational-imaging]]
+- [[autodiff-implicit-diff]]
+- [[gigalens]]
+- [[herculens]]

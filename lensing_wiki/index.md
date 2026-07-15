@@ -76,8 +76,8 @@ should use this wiki.
 - Lens-finding initiatives: [[space-warps]], [[lens-finding-challenge]].
 - Notable individual lenses: [[abell-1201]], [[cosmic-horseshoe]],
   [[razor-arc]], [[cosmos-web-ring]].
-- Software: [[pyautolens]], [[lenstronomy]], [[slam-pipeline]],
-  [[pyautofit]].
+- Software: [[pyautolens]], [[lenstronomy]], [[herculens]], [[gigalens]],
+  [[slam-pipeline]], [[pyautofit]].
 
 ## Sources (bibliography by topic)
 
