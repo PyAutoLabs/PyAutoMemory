@@ -22,6 +22,7 @@ def test_clean_layout_passes(tmp_path):
 def test_unexpected_top_level_entries_fail(tmp_path):
     root = _minimal_repo(tmp_path)
     (root / "DarkMatterModels").mkdir()
+    (root / "DarkMatterModels" / "Navarro1996").write_text("", encoding="utf-8")
     (root / "euclid.sty").write_text("", encoding="utf-8")
     errors = validate_structure(root)
     assert any("DarkMatterModels" in e for e in errors)

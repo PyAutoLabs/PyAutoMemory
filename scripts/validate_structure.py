@@ -10,6 +10,7 @@ with or without a file extension), and unrecognised top-level entries.
 from __future__ import annotations
 
 import argparse
+import subprocess
 import sys
 from pathlib import Path
 
@@ -41,6 +42,26 @@ BINARY_EXEMPT = {"logo.png"}
 
 
 def iter_repo_files(root: Path):
+    """Yield the repo's content files — git-tracked when git is available.
+
+    Validating `git ls-files` (not the raw filesystem) keeps untracked local
+    scratch — caches, in-progress downloads — out of scope: the contract is
+    about what gets committed. Outside a git checkout (e.g. a freshly spawned
+    template before `git init`) fall back to walking the tree.
+    """
+    try:
+        tracked = subprocess.run(
+            ["git", "-C", str(root), "ls-files", "-z"],
+            capture_output=True,
+            check=True,
+        ).stdout.decode()
+        for rel in sorted(filter(None, tracked.split("\0"))):
+            path = root / rel
+            if path.is_file():
+                yield path
+        return
+    except (OSError, subprocess.CalledProcessError):
+        pass
     for path in sorted(root.rglob("*")):
         if ".git" in path.relative_to(root).parts:
             continue
@@ -50,11 +71,12 @@ def iter_repo_files(root: Path):
 
 def validate_structure(root: Path) -> list[str]:
     errors: list[str] = []
+    top_level = {p.relative_to(root).parts[0] for p in iter_repo_files(root)}
 
     for entry in sorted(root.iterdir()):
         name = entry.name
-        if name == ".git":  # a directory in a normal checkout, a file in a worktree
-            continue
+        if name == ".git" or name not in top_level:
+            continue  # untracked local scratch (caches, downloads) is out of scope
         if entry.is_dir():
             if name not in ALLOWED_TOP_DIRS:
                 errors.append(
