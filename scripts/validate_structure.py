@@ -32,6 +32,7 @@ ALLOWED_TOP_FILES = {
     "LICENSE",
     "Makefile",
     "README.md",
+    "SPAWNED_FROM",  # provenance marker stamped into spawned templates
     "index.md",
     "logo.png",
     "reading-queue.md",
