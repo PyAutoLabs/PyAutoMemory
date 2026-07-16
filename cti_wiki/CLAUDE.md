@@ -28,15 +28,12 @@ This file only diverges on scope.
 
 ## Scope
 
-In-scope folders:
-
-- `CTI/` — primary; ~40 PDFs on CTI physics, correction algorithms,
-  trap-pumping calibration, charge injection lines.
-- `Euclid/` — 5 PDFs on Euclid VIS detector and calibration pipeline.
-- Root-level `Euclid_TP_serial.pdf` (trap-pumping serial-direction
-  measurements) and `CTI_Calibration_Henk.pdf`.
-- Root-level `Hall1952Theory` (no-extension reference file) on the
-  Hall-Shockley-Read trap-emission theory underlying CTI.
+CTI physics, correction algorithms, trap-pumping calibration, charge
+injection, the Euclid VIS detector and calibration pipeline, and the
+Hall-Shockley-Read trap-emission theory underlying CTI. Source PDFs live
+off-repo (the wiki was compiled from an off-repo CTI/Euclid paper corpus);
+what's here is the durable knowledge plus canonical citation metadata in
+`../bibliography/`.
 
 Adjacent topics that link out:
 - Sampling / Bayesian inference of trap-density posteriors —

@@ -31,9 +31,9 @@ the schema in [`lensing_wiki/CLAUDE.md`](lensing_wiki/CLAUDE.md).
 - [`reading-queue.md`](reading-queue.md) — paper queue (moved from
   `admin_jammy/papers.md` on 2026-05-22). Section headers (Strong
   Lensing, SMBHs, Galaxy Formation, Dark Matter, Stats, SETI, Cancer)
-  match topic folders. When a queued paper is acquired as a PDF, file
-  it under the matching folder and stub it in the appropriate
-  `<sub>_wiki/sources/*.md`.
+  match the sub-wiki domains. When a queued paper is read, stub it in
+  the appropriate sub-wiki `sources/*.md` and add its canonical entry
+  to `bibliography/` — the PDF itself stays off-repo, never committed.
 
 ## Schema
 
