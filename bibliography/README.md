@@ -1,6 +1,6 @@
 # Canonical PyAutoMemory bibliography
 
-`pyautomemory.bib` is the canonical metadata layer shared by every `*_wiki/` in this
+`pyautomemory.bib` is the canonical metadata layer shared by every sub-wiki under `../wiki/` in this
 repository. Wiki source entries explain which claims papers support; the BibTeX file records
 citation metadata and canonical keys. Keep PDFs, local paths, abstracts, and long paper
 summaries out of both layers.
@@ -20,8 +20,8 @@ added elsewhere in the repo.
 1. Verify the paper from an authoritative public record or the paper itself.
 2. Search `pyautomemory.bib` by DOI, arXiv ID, and title. Reuse the existing canonical key;
    otherwise add verified metadata under a unique, stable author-year key.
-3. Add a compact section to the relevant `<domain>_wiki/sources/*.md` using the inherited
-   schema in [`../lensing_wiki/CLAUDE.md`](../lensing_wiki/CLAUDE.md).
+3. Add a compact section to the relevant `../wiki/<domain>/sources/*.md` using the inherited
+   schema in [`../wiki/CLAUDE.md`](../wiki/CLAUDE.md).
 4. Add concept/entity links only where the paper materially supports existing text.
 5. Run `make validate-literature-citations`.
 
