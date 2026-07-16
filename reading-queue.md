@@ -6,7 +6,7 @@ became the unified knowledge repo. Section headers below match topic folders
 in this repo (Strong Lensing, SMBHs, Galaxy Formation, Dark Matter,
 Stats, …) — when a paper here is acquired as a PDF, it should be
 filed under the matching folder and stubbed in the relevant
-`<sub>_wiki/sources/*.md` page.
+the matching `wiki/<domain>/sources/*.md` page.
 
 ---
 
