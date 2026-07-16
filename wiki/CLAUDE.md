@@ -49,14 +49,14 @@ target project's `.bib` before patching LaTeX. See
 ## Naming
 
 - File names are lowercase kebab-case: `mass-sheet-degeneracy.md`,
-  `slacs.md`, `time-delay-cosmography.md`.
+  `h0licow.md`, `time-delay-cosmography.md`.
 - One concept per concept page. If a page tries to cover two ideas, split it.
 - Source-collection pages are named by topic: `sources/dark-matter-substructure.md`.
 
 ## Cross-references
 
 Use `[[page-slug]]` for wiki-internal links — for example
-`[[mass-sheet-degeneracy]]` or `[[slacs]]`. Slugs match the filename without
+`[[mass-sheet-degeneracy]]` or `[[h0licow]]`. Slugs match the filename without
 `.md`. A `[[link]]` that has no target file yet is fine — it marks a future
 page to write.
 
@@ -107,7 +107,7 @@ follow the link to the per-paper section.
 ## Entity page structure
 
 Same idea but the headings are "What it is / Key facts / Papers / See also".
-Use entity pages for: surveys (SLACS, BELLS, H0liCOW), specific objects
+Use entity pages for: surveys (BELLS, H0liCOW), specific objects
 (Abell 1201, the Cosmic Horseshoe), software (PyAutoLens, lenstronomy),
 collaborations (TDCOSMO, Space Warps).
 
