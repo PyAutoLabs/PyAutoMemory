@@ -57,6 +57,9 @@ should use this wiki.
 ## Software ecosystem
 
 - [[jax-ecosystem]] — Equinox, Optimistix, BlackJAX, NumPyro, …
+- [[aggregator-performance]] — PyAutoFit result loading at catalogue
+  scale: 2026-07 profiling campaign, sqlite verdict, deserialization floor,
+  bugs found by realistic mock data.
 - [[pyautofit]] (cross-link to `../lensing/`) — model-fitting
   framework underlying PyAutoLens.
 - [[scientific-software]] — general-purpose tooling.

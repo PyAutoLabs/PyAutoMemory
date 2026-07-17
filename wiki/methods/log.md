@@ -85,3 +85,22 @@ truth but is GPU-only; CMA-ES collapses. Includes exact CPU + A100 runtimes /
 iterations (RAL A100 80GB), the diversity×gradient verdict, durable traps, the
 reusable RAL A100 pipeline, and a Herculens/Enzi cold-start-vs-warm-start note.
 Cross-linked from index.md (Samplers) and concepts/sampler-benchmarks.md.
+
+---
+
+## 2026-07-17 — Aggregator performance (result loading at catalogue scale)
+
+**By:** Claude (Fable 5, PyAutoLabs aggregator-profiling arc session).
+
+**Scope:** new `concepts/aggregator-performance.md` recording the 2026-07-16/17
+profiling campaign over every PyAutoFit result-loading pathway (directory
+Aggregator, sqlite scrape + direct-write, csv/png/fits catalogue workflows,
+lens-level al.agg wrappers) at 3000-lens catalogue scale, via mock result trees
+from PYAUTO_TEST_MODE_SAMPLES bypass fits. Headlines: samples-per-result is the
+scaling axis; every stage floor-bounded by from_dict deserialization (model load
+−44% after JSONPriorConfig lookup caching, Conf#130); representative-scale sqlite
+reads comparable to directory (revising the small-data 2-10×-slower verdict);
+three crash-level bugs found and fixed (from_dict 0.0-drop, AggregateFITS fd
+leak at ~500 results, database slicing inversion). Durable methodology lessons
+(fresh-Aggregator staging, idle-machine grids, interleaved A/B under load)
+recorded. Cross-linked from index.md (Software ecosystem).
