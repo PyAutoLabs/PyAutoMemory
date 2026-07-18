@@ -43,8 +43,9 @@ the allowlist is in `scripts/validate_structure.py`.
 ## What does NOT live here
 
 - **Operational history** — what the organism *did* (prior tasks, decisions,
-  failed approaches) lives in **PyAutoMind** (`complete.md`, GitHub issues),
-  not here. Memory = what the science says; Mind = what the organism did.
+  failed approaches) lives in **PyAutoMind** (the `complete/<YYYY>/<MM>/`
+  records, GitHub issues), not here. Memory = what the science says; Mind = what
+  the organism did.
 - **Workflow state, health, execution** — Mind / Heart / Build respectively.
 
 ## This repo is personal
