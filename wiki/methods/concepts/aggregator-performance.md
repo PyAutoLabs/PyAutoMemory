@@ -3,8 +3,8 @@ title: Aggregator performance (result loading at catalogue scale)
 type: concept
 topics: [software, aggregator, performance, profiling, sqlite, database, io, pyautofit]
 sources:
-  - PyAutoFit issues #1375, #1377, #1385; PyAutoConf #129; autolens_workspace_test #171
-  - Merged PRs: PyAutoFit #1376/#1380/#1384/#1386, PyAutoConf #130, autofit_workspace_test #48/#49/#50/#51, autolens_workspace_test #172
+  - PyAutoFit issues #1375, #1377, #1385; PyAutoNerves #129; autolens_workspace_test #171
+  - Merged PRs: PyAutoFit #1376/#1380/#1384/#1386, PyAutoNerves #130, autofit_workspace_test #48/#49/#50/#51, autolens_workspace_test #172
   - Harnesses: autofit_workspace_test scripts/profiling/aggregator/ + autolens_workspace_test scripts/profiling/aggregator/
   - Raw grids: <workspace>/output/profiling_aggregator/results/*.json (local, 2026-07-16/17)
 status: draft
