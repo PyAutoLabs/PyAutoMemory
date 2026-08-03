@@ -20,17 +20,17 @@ Role of General Users in the Lifecycle of Scientific Software
 
 Strong Lensing:
 
+Cosmic CORALS: Timing the Universe with high-z star clusters
+A pilot sample of Planck-selected strongly lensed sub-mm galaxies: NOEMA observations and physical characterisation
+Polar coordinate transformations for machine learning based dark matter subhalo detection in strong gravitational lenses
 XShooter DESI Lens Program: Sample characterization
 Strong-lensing effects in high-redshift massive black-hole binary population inference
-Polar coordinate transformations for machine learning based dark matter subhalo detection in strong gravitational lenses
-LEGGOS I: The JWST LEGGOS Survey -- LEnsing and Galaxy Growth: Observing Substructures -- Unpacks the Nature of Clumpy Star Formation and Quenching in Gravitationally Lensed Galaxies beyond Cosmic Noon
+
 LEGGOS III: Mapping Star Formation and Dust in Gravitationally Lensed Galaxies with SUMAC, a UMAP and Clustering Framework
 LEGGOS II: A Strong Lens Model and Source-Plane Projection of the Clumpy Star-Forming Galaxy SGASJ111020.0+645950.8 at z=2.48
-The free-streaming length of dark matter from JWST observations of 28 strong gravitational lenses
+
 Dynamical models of cluster members to probe the total mass properties of cluster subhalos. I. A comparison with parametric strong lensing models
-The Sensitivity of Substructure Lensing to SIDM Core-collapse Model Variation
 COOL-LAMPS IX: A Rare Duo of Quasars Each Lensed by a Single Massive Galaxy Cluster
-Microlensing time-scales and flux magnification probabilities of a sample of 204 lensed quasars
 Beyond collective fluctuations: probing micro-image swarms in lensed quasars with intensity interferometry
 Constraining Axion-like Particles through Multi-epoch Monitoring of Strong Gravitational Lenses
 A boost in the precision of cluster-mass models: Exploiting the extended surface brightness of the lensed supernova Refsdal host galaxy
