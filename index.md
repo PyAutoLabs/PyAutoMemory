@@ -28,12 +28,14 @@ the schema in [`wiki/CLAUDE.md`](wiki/CLAUDE.md).
 
 ## Reading queue
 
-- [`reading-queue.md`](reading-queue.md) — paper queue (moved from
-  `admin_jammy/papers.md` on 2026-05-22). Section headers (Strong
-  Lensing, SMBHs, Galaxy Formation, Dark Matter, Stats, SETI, Cancer)
-  match the sub-wiki domains. When a queued paper is read, stub it in
-  the appropriate sub-wiki `sources/*.md` and add its canonical entry
-  to `bibliography/` — the PDF itself stays off-repo, never committed.
+- [`reading-queue.md`](reading-queue.md) — the paper queue AND the reading
+  history: `## ` section headers group papers by domain, one title per line,
+  and a read paper is never deleted — its line gains a `DONE <date> — `
+  prefix. When a queued paper is read, add its canonical entry to
+  `bibliography/`, stub it in the matching sub-wiki `sources/*.md`, mark the
+  line DONE, and run `make validate` — the PDF itself stays off-repo, never
+  committed. Per-section waiting/read counts live on the
+  [knowledge board](https://pyautolabs.github.io/PyAutoMemory/).
 
 ## Schema
 

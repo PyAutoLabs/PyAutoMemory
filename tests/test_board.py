@@ -39,7 +39,8 @@ def _tree(tmp_path: Path) -> Path:
                                   "@book{Other2021,\n title={U}\n}\n")
     (tmp_path / "reading-queue.md").write_text(
         "# Reading queue\n\nintro prose\n\n---\n\n"
-        "Demo Papers:\n\nTitle One\nTitle Two\n\nOther Things:\n\nTitle Three\n")
+        "## Demo Papers\n\nTitle One\nTitle Two\n"
+        "DONE 2026-06-01 — Old Title\n\n## Other Things\n\nTitle Three\n")
     return tmp_path
 
 
@@ -51,8 +52,8 @@ def test_counts_from_a_synthetic_tree(tmp_path):
     assert w["statuses"] == {"drafted": 1, "stub": 1}
     assert w["sections"] == 2 and w["todo"] == 1 and w["resolved_keys"] == 1
     assert snap["bib_entries"] == 2
-    assert snap["queue"] == [{"section": "Demo Papers", "count": 2},
-                             {"section": "Other Things", "count": 1}]
+    assert snap["queue"] == [{"section": "Demo Papers", "count": 2, "done": 1},
+                             {"section": "Other Things", "count": 1, "done": 0}]
     # alpha exists; beta/gamma are wanted
     assert snap["links"]["wanted"] == 2
 
