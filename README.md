@@ -4,7 +4,7 @@
 
 # PyAutoMemory
 
-[![PyAutoScientist GitHub](https://img.shields.io/badge/%F0%9F%A7%AE%20PyAutoScientist-GitHub-181717?style=for-the-badge)](https://github.com/PyAutoLabs/PyAutoScientist) [![PyAutoScientist ReadTheDocs](https://img.shields.io/badge/%F0%9F%93%96%20PyAutoScientist-ReadTheDocs-8CA1AF?style=for-the-badge)](https://pyautoscientist.readthedocs.io)
+[![PyAutoScientist GitHub](https://img.shields.io/badge/%F0%9F%A7%AE%20PyAutoScientist-GitHub-181717?style=flat-square)](https://github.com/PyAutoLabs/PyAutoScientist) [![PyAutoScientist ReadTheDocs](https://img.shields.io/badge/%F0%9F%93%96%20PyAutoScientist-ReadTheDocs-8CA1AF?style=flat-square)](https://pyautoscientist.readthedocs.io)
 
 The long-term memory of the PyAuto organism: what it has learned, distilled
 into cross-linked LLM wikis — literature summaries, scientific concepts, and
