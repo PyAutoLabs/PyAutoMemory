@@ -5,7 +5,7 @@ topics: [nested-sampling, jax, gpu, vmap, samplers]
 sources:
   - Stats/PolyChod2015.pdf
   - Software (NSS, https://github.com/yallup/nss)
-status: draft
+status: drafted
 ---
 
 # GPU / JAX nested sampling

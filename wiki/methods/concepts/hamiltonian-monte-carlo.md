@@ -5,7 +5,7 @@ topics: [hmc, nuts, gradients, jax, samplers]
 sources:
   - PPLs/Dynesty.pdf
   - Software (BlackJAX docs, https://blackjax-devs.github.io/blackjax/)
-status: draft
+status: drafted
 ---
 
 # Hamiltonian Monte Carlo

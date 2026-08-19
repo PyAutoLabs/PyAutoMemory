@@ -50,23 +50,12 @@ The sub-wikis explain which claims papers support. Canonical BibTeX metadata,
 key aliases, downstream-project resolution rules, and validation live in
 [`bibliography/`](bibliography/README.md).
 
-## Status (2026-05-22)
+## Provenance
 
-- Initial lensing-wiki build: 193 papers from Strong_Lens/,
-  Substructure/, StrongLensCluster/, Dark_Matter_Detection/,
-  DarkMatterModels/.
-- Sibling sub-wiki build (this commit): ~422 additional papers from
-  SMBHs/, CTI/, Euclid/, MassiveEllPaper/, Ellipticals/,
-  Bulge_Disk_Decomp/, LightProFFits/, IFUs/, Manga/, COSMOS/,
-  StellarHalos/, High_Redshift_galaxies/, Dark_Matter_Geometry/,
-  Stats/, GaussianLinearModels/, PPLs/, Deep Learning/, Software/,
-  Simulation/, PyAutoLens/, uvplane/, FRBLenses/, WeakLensing/,
-  WeakLensingHaloShape/, Clusters/, LSS/, Lyman_Alpha_Forest/,
-  SpiralsMorph/, AndrewSuggests/, UnRead/, Summarys/,
-  Collaborations/, GWB/, Medical/, plus root-level singletons.
-- PDFs deleted from the repo on the same day (backed up externally);
-  `File:` lines in stubs are archival relative paths.
-
-Most legacy per-paper entries remain filename-inferred stubs. Upgrade them to
-compact, claim-oriented `drafted` entries only after verifying the paper, and
-log the change in the relevant sub-wiki.
+The wikis were seeded in 2026-05 from a ~615-paper personal PDF library
+(the PDFs themselves were deleted from the repo the same day, backed up
+externally). Most legacy per-paper entries remain filename-inferred stubs:
+upgrade them to compact, claim-oriented `drafted` entries only after
+verifying the paper, and log the change in the relevant sub-wiki. The live
+counts — pages, maturity, unresolved citation keys, reading queue — are on
+the [knowledge board](https://pyautolabs.github.io/PyAutoMemory/).

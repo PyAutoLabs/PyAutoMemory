@@ -5,15 +5,9 @@ repository. Wiki source entries explain which claims papers support; the BibTeX 
 citation metadata and canonical keys. Keep PDFs, local paths, abstracts, and long paper
 summaries out of both layers.
 
-> Renamed from `pyautopaper.bib` (when this repo was PyAutoPaper); the back-compat
-> `pyautopaper.bib` symlink was retired in 2026-07 once nothing referenced it.
-
-The initial canonical file prioritised `library.bib`. Entries with new keys from the other
-tracked legacy `.bib` files were added, but conflicting records never replaced the
-`library.bib` entry. The legacy root-level `.bib` files were deleted in 2026-07 after a
-key-level audit confirmed every unique key already existed here (they remain in git
-history). All canonical metadata lives in this folder; loose `.bib` files must not be
-added elsewhere in the repo.
+All canonical metadata lives in this folder; loose `.bib` files must not be
+added elsewhere in the repo. (The file was consolidated from a legacy
+personal library in 2026-07 — the merge audit is in git history.)
 
 ## Adding a paper
 
