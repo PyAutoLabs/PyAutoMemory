@@ -1,19 +1,22 @@
 # Reading queue
 
-This file used to live at `admin_jammy/papers.md`. It moved here on
-2026-05-22 when this repo (then named PyAutoPaper, now PyAutoMemory)
-became the unified knowledge repo. Section headers below match topic folders
-in this repo (Strong Lensing, SMBHs, Galaxy Formation, Dark Matter,
-Stats, …) — when a paper here is acquired as a PDF, it should be
-filed under the matching folder and stubbed in the relevant
-the matching `wiki/<domain>/sources/*.md` page.
+Papers waiting to be read and filed. Format:
+
+- `## <Section>` headers group papers by domain (matching `wiki/<domain>/`
+  where one exists).
+- One paper per line — a bare title, optionally followed by ` — <arXiv id or URL>`.
+- A read/consumed paper is never deleted: prefix its line with
+  `DONE <YYYY-MM-DD> — ` and leave it in place (the reading history).
+- Filing a read paper: add its canonical entry to `bibliography/`, stub it in
+  the matching `wiki/<domain>/sources/*.md` page per `wiki/CLAUDE.md`, then
+  mark the line DONE and run `make validate`.
+
+(Moved from `admin_jammy/papers.md` on 2026-05-22, when this repo — then
+PyAutoPaper, now PyAutoMemory — became the unified knowledge repo.)
 
 ---
 
-Imagining the Alien: Human Projections and Cognitive Limitations
-
-Strong Lensing:
-
+## Strong Lensing
 The X-Ray Continuum Emission Region in the Lensed Quasar SDSS J133907.23+131038.6 is Much Smaller than the Accretion Disk
 Confirmation of the Finch Flatter-Fainter Relation for the Quadruple Images of Lensed Point Sources
 The Koi Pond: A Strongly Lensed Protocluster Core hosting a Diverse Population of DSFGs
@@ -63,8 +66,7 @@ High-Dimensional Bayesian Model Comparison in Cosmology with GPU-accelerated Nes
 THE STELLAR AND DARK MATTER DISTRIBUTIONS IN ELLIPTICAL GALAXIES MEASURED BY  STACKED WEAK GRAVITATIONAL LENSING
 
 
-SMBHs:
-
+## SMBHs
 Overmassive and Undermassive Massive Black Holes: The Role of Environment and Gravitational-Wave Recoils
 Core Scouring Dynamics and Gravitational Wave Consequences: Constraints on Supermassive Black Hole Binary Hardening
 Stellar cores live long and prosper in cuspy dark matter halos
@@ -126,8 +128,7 @@ Mass-redshift dependency of Supermassive Black Hole Binaries for the Gravitation
 SLICK: Strong Lensing Identification of Candidates Kindred in gravitational wave data
 
 
-Galaxy Formation / Evolution:
-
+## Galaxy Formation / Evolution
 The heartbeat of stellar halos: Insights from the stellar halo mass-metallicity relation
 Mock Observations: Morphological Analysis of Galaxies in TNG100 Simulations
 The Outskirt Stellar Mass of Low-Redshift Massive Galaxies is an Excellent Halo Mass Proxy in Illustris/IllustrisTNG Simulations
@@ -151,8 +152,7 @@ The MillenniumTNG Project: Many papers 2022
 The MASSIVE Survey. XVIII. Deep Wide-Field K-band Photometry and Local Scaling Relations for Massive Early-Type Galaxies
 Sizes and mass profiles of candidate massive galaxies discovered by JWST at 7<z<9: evidence for very early formation of the central ∼100 pc of present-day ellipticals
 
-Dark Matter:
-
+## Dark Matter
 The AIDA-TNG project: 3D halo shapes
 The AIDA-TNG project: dark matter profiles and concentrations in alternative dark matter models
 Connection between galaxy morphology and dark-matter halo structure II: predicting disk structure from dark-matter halo properties
@@ -187,8 +187,7 @@ Binary System
 The massive relic galaxy NGC 1277 is dark matter deficient. From dynamical models of integral-field stellar kinematics out to five effective radii
 The impact of baryonic potentials on the gravothermal evolution of self-interacting dark matter haloes
 
-Stats:
-
+## Stats
 AstroAlertBench: Evaluating the Accuracy, Reasoning, and Honesty of Multimodal LLMs in Astronomical Classification
 ALABI: Active Learning for Accelerated Bayesian Inference
 Probabilistic Graphical Models in Astronomy
@@ -201,15 +200,14 @@ Bayesian Computation in Astronomy: Novel methods for parallel and gradient-free 
 Finding reproducible cluster partitions for the k-means algorithm
 Scalable hierarchical BayeSN inference: Investigating dependence of SN Ia host galaxy dust properties on stellar mass and redshift
 
-SETI:
-
+## SETI
+Imagining the Alien: Human Projections and Cognitive Limitations
 Results of ten years of UCLA SETI searches with the Green Bank Telescope
 OmniCosmos: Transferring Particle Physics Knowledge Across the Cosmos
 From Extraterrestrial Microbes to Alien Intelligence: Rebalancing Astronomical Research Priorities
 Microlensing Signatures of Dyson Sphere-like Structures around Primordial Black Holes as Technosignatures of Extraterrestrial Advanced Civilizations
 
-Cancer:
-
+## Cancer
 https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fturbine-ai_network-driven-cancer-cell-avatars-for-combination-activity-7211408647778668547-nd7n%3Futm_source%3Dshare%26utm_medium%3Dmember_desktop&data=05%7C02%7CJames.Nightingale%40newcastle.ac.uk%7Cb88055fe74cc48f5d2e708dc9a85e8e8%7C9c5012c9b61644c2a91766814fbe3e87%7C1%7C0%7C638555147133736023%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=WefLDikVOdmU5gFIaZTXyRjF5fyvksFjdZ6hpJl9lHc%3D&reserved=0
 
 https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fjournals.plos.org%2Fploscompbiol%2Farticle%3Fid%3D10.1371%2Fjournal.pcbi.1005268&data=05%7C02%7CJames.Nightingale%40newcastle.ac.uk%7Cb88055fe74cc48f5d2e708dc9a85e8e8%7C9c5012c9b61644c2a91766814fbe3e87%7C1%7C0%7C638555147133749366%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=RaOdWGBY8mRAssK2Haar9r6dK8lGQfp3ZWU%2Fz1uzFpI%3D&reserved=0
@@ -280,8 +278,7 @@ Premature supermassive black hole mergers in cosmological simulations of structu
 
     Brilliant example of how numerical effects in simulations can lead to delays on SMBH mergers which impact SWGB PTA results.
 
-KetJU:
-
+## KetJU
 https://arxiv.org/pdf/2211.11788.pdf
 
 Big Galaxies and Big Black Holes: The Massive Ends of the Local Stellar and Black Hole Mass Functions and the Implications for Nanohertz Gravitational Waves

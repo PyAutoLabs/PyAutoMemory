@@ -43,7 +43,11 @@ STATUS_RE = re.compile(r"^status:\s*(\S+)", re.MULTILINE)
 WIKILINK_RE = re.compile(r"\[\[([^\]]+)\]\]")
 BIB_ENTRY_RE = re.compile(r"^@\w+\{", re.MULTILINE)
 RESOLVED_KEY_RE = re.compile(r"\*\*Canonical BibTeX key:\*\* `([^`]+)`")
-QUEUE_SECTION_RE = re.compile(r"^([A-Za-z][A-Za-z /&'\-]+):\s*$")
+# Queue sections are real `## ` headers (the 2026-08 restructure, #35); a
+# consumed paper stays in place as a `DONE <date> — <title>` line, so the
+# queue is also the reading history.
+QUEUE_SECTION_RE = re.compile(r"^##\s+(.+?)\s*$")
+QUEUE_DONE_RE = re.compile(r"^DONE\b")
 
 
 def _owner_repo() -> tuple[str, str]:
@@ -109,17 +113,22 @@ def collect(root: Path | None = None) -> dict:
 
     queue = root / "reading-queue.md"
     if queue.exists():
-        section, count = None, 0
+        section, count, done = None, 0, 0
+        def _flush():
+            if section is not None:
+                snapshot["queue"].append({"section": section, "count": count,
+                                          "done": done})
         for line in queue.read_text(errors="replace").splitlines():
-            m = QUEUE_SECTION_RE.match(line.strip())
-            if m:
-                if section is not None:
-                    snapshot["queue"].append({"section": section, "count": count})
-                section, count = m.group(1), 0
+            m = QUEUE_SECTION_RE.match(line)
+            if m and not m.group(1).startswith("#"):
+                _flush()
+                section, count, done = m.group(1), 0, 0
             elif section is not None and line.strip():
-                count += 1
-        if section is not None:
-            snapshot["queue"].append({"section": section, "count": count})
+                if QUEUE_DONE_RE.match(line.strip()):
+                    done += 1
+                else:
+                    count += 1
+        _flush()
 
     slugs = [s.split("|")[0].strip() for s in all_slugs]
     uniq = set(slugs)
@@ -163,11 +172,12 @@ def _repo_url(snapshot: dict) -> str:
 
 def _read_prompt(snapshot: dict, section: str) -> str:
     repo = snapshot.get("repo") or "the memory repo"
-    return (f"Work through the next paper in the '{section}' section of "
+    return (f"Work through the next paper in the '## {section}' section of "
             f"{repo}/reading-queue.md: verify it against an authoritative "
             f"record, add its canonical entry to the bibliography/ BibTeX "
             f"file, stub it in the matching wiki/<domain>/sources/ page per "
-            f"wiki/CLAUDE.md, remove it from the queue, and run make validate.")
+            f"wiki/CLAUDE.md, mark its queue line 'DONE <date> — <title>', "
+            f"and run make validate.")
 
 
 def _todo_prompt(snapshot: dict, wiki: str) -> str:
@@ -205,7 +215,8 @@ def _render_md(snapshot: dict) -> str:
                      f"{w.get('todo', 0)} |")
     lines += ["", "## Reading queue", ""]
     for q in snapshot.get("queue") or []:
-        lines.append(f"- {q['section']}: {q['count']}")
+        done = f", {q['done']} read" if q.get("done") else ""
+        lines.append(f"- {q['section']}: {q['count']} waiting{done}")
     if not snapshot.get("queue"):
         lines.append("- _(queue empty or unavailable)_")
     url = pages_url(snapshot)
@@ -250,9 +261,11 @@ def _render_html(snapshot: dict) -> str:
 
     queue_rows = []
     for q in snapshot.get("queue") or []:
+        done = (f" <span class='meta'>· {q['done']} read</span>"
+                if q.get("done") else "")
         queue_rows.append(
             f"<tr><td class='name'>{_html.escape(q['section'])}</td>"
-            f"<td>{q['count']} waiting "
+            f"<td>{q['count']} waiting{done} "
             f"{_copy_btn(_read_prompt(snapshot, q['section']), 'copy: file the next paper')}"
             f"</td></tr>")
     if not queue_rows:
