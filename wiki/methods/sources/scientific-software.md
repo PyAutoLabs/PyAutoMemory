@@ -164,5 +164,5 @@ either uses or interoperates with.
 
 - [[scientific-software]]
 - [[pyautofit]]
-- [[../lensing/entities/pyautolens.md]]
-- [[../lensing/entities/pyautofit.md]]
+- [[pyautolens]]
+- [[pyautofit]]

@@ -2,14 +2,14 @@
 title: Interferometric strong lensing
 type: concept
 topics: [methods, observations]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Powell2020interfermeter.pdf
   - Strong_Lens/McKean2015SLSKA.pdf
   - Strong_Lens/Jackson2015SLRadioMaseMerlin.pdf
   - Strong_Lens/Dye2017ModelingAlma.pdf
   - Strong_Lens/Enia2018AlmaImaging.pdf
   - Strong_Lens/Stacey2024MultipolesALMA.pdf
-status: drafted
 ---
 
 # Interferometric lensing

@@ -179,4 +179,4 @@ red dots" puzzle.
 - [[high-redshift-galaxies]]
 - [[little-red-dots]]
 - [[sources-cosmos-survey]]
-- [[../lensing/sources-lensed-source-science]]
+- [[sources-lensed-source-science]]

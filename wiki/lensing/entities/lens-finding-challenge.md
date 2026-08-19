@@ -2,9 +2,9 @@
 title: Strong-Lens Finding Challenge
 type: entity
 topics: [lens-finding, methods]
-sources:
-  - Strong_Lens/Metcalf2018LensFindingChallenge.pdf
 status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
+  - Strong_Lens/Metcalf2018LensFindingChallenge.pdf
 ---
 
 # The Strong-Lens Finding Challenge

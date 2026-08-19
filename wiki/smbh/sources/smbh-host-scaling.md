@@ -251,5 +251,5 @@ filename-inferred and unread.
 ## See also
 
 - [[smbh-host-scaling]]
-- [[../galaxies/sources-elliptical-galaxies]]
+- [[sources-elliptical-galaxies]]
 - [[sources-smbh-mass-measurement]]

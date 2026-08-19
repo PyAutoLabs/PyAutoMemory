@@ -2,10 +2,10 @@
 title: Hubble Frontier Fields
 type: entity
 topics: [cluster-lensing, sample]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - StrongLensCluster/Richard2017HFFModels.pdf
   - StrongLensCluster/Atek2015HFFUV.pdf
-status: drafted
 ---
 
 # Hubble Frontier Fields (HFF)

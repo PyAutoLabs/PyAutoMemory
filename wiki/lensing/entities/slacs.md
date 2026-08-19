@@ -2,12 +2,12 @@
 title: SLACS (Sloan Lens ACS Survey)
 type: entity
 topics: [survey, sample]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Shu2012SLACSXII.pdf
   - Strong_Lens/Shu2018SLACS4Mass.pdf
   - Strong_Lens/Sonnenfeld2024SlacsDebiased.pdf
   - Strong_Lens/Sonnefendl2025SLACSDebiadedII.pdf
-status: drafted
 ---
 
 # SLACS — Sloan Lens ACS Survey

@@ -65,4 +65,4 @@ requirements on Euclid VIS CTI correction.
 
 - [[cti-shape-bias]]
 - [[sources-euclid-vis-calibration]]
-- [[../lensing/sources-degeneracies-systematics]]
+- [[sources-degeneracies-systematics]]

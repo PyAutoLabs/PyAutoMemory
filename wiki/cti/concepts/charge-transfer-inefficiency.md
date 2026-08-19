@@ -2,11 +2,11 @@
 title: Charge Transfer Inefficiency (CTI)
 type: concept
 topics: [cti, detector-systematics]
-sources:
+status: stub
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - CTI/ShockleyRead1952.pdf
   - CTI/Massey2010PixelBased.pdf
   - CTI/Israel2015_CTI_Correct_Euclid.pdf
-status: stub
 ---
 
 # Charge Transfer Inefficiency (CTI)

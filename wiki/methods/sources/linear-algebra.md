@@ -146,5 +146,5 @@ status: stub
 - [[linear-inversion]]
 - [[gaussian-linear-models]]
 - [[mge]]
-- [[../lensing/sources-source-reconstruction]] (semi-linear
+- [[sources-source-reconstruction]] (semi-linear
   inversion in source reconstruction)

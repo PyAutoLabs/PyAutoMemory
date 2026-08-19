@@ -2,13 +2,13 @@
 title: Bulge–halo (stellar + dark matter) decomposition
 type: concept
 topics: [galaxy-structure]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Etherington2022BulgeHalo.pdf
   - Strong_Lens/Etherington2022SLaM.pdf
   - Strong_Lens/Etherington2023aBeyondBulge.pdf
   - Strong_Lens/Shajib2021MassSlopeNFW.pdf
   - Strong_Lens/Oldham2018StellarAndDark.pdf
-status: drafted
 ---
 
 # Bulge–halo decomposition

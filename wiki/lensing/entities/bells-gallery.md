@@ -2,12 +2,12 @@
 title: BELLS / BELLS-GALLERY
 type: entity
 topics: [survey, sample]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Shu2016BELLSGALLERY.pdf
   - Strong_Lens/cornachione2017BellsSource.pdf
   - Substructure/Ritondale2018BELLS.pdf
   - Substructure/Ritondale2018BELLLymaAlphs.pdf
-status: drafted
 ---
 
 # BELLS / BELLS-GALLERY

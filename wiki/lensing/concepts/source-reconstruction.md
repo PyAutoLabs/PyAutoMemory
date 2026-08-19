@@ -2,13 +2,13 @@
 title: Source reconstruction
 type: concept
 topics: [lens-modelling]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Galan2021SLIT.pdf
   - Strong_Lens/Galan2022Wavelet.pdf
   - Strong_Lens/Koopmans2005GravImaging.pdf
   - Strong_Lens/Ding2016_SHARPIXGalRecon.pdf
   - Strong_Lens/Suyu2009SpiralPotentialCorr.pdf
-status: drafted
 ---
 
 # Source reconstruction

@@ -2,10 +2,10 @@
 title: SLaM (Strong Lens Automated Modelling) pipeline
 type: entity
 topics: [software, pipeline]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Etherington2022SLaM.pdf
   - Strong_Lens/Etherington2022BulgeHalo.pdf
-status: drafted
 ---
 
 # SLaM pipeline

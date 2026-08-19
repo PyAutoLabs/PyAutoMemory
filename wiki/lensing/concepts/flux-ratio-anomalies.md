@@ -2,12 +2,12 @@
 title: Flux-ratio anomalies
 type: concept
 topics: [dark-matter, methods]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Gilman2018ProbeNatureDMForwardModel.pdf
   - Strong_Lens/Gilman2019ConstraintsDM.pdf
   - Strong_Lens/Gilman2016FluxMethod.pdf
   - Strong_Lens/CyrRacine2018SLMany.pdf
-status: drafted
 ---
 
 # Flux-ratio anomalies

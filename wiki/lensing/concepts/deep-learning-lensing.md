@@ -2,13 +2,13 @@
 title: Deep learning for strong lensing
 type: concept
 topics: [methods]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Pearson2020MLAndParametric.pdf
   - Strong_Lens/Pearson2024StrongLensJWST.pdf
   - Strong_Lens/Morningstar2019DeepLearnGalaxyRecon.pdf
   - Strong_Lens/WagnerCarena2021BNNHierachical.pdf
   - Strong_Lens/Brehmer2019MiningDMSub.pdf
-status: drafted
 ---
 
 # Deep learning for strong lensing

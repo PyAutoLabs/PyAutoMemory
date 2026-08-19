@@ -100,4 +100,4 @@ and for the PyLops sparse-linear-operator framework.
 
 - [[nufft]]
 - [[jax-finufft]]
-- [[../lensing/concepts/interferometric-lensing.md]]
+- [[interferometric-lensing]]

@@ -2,11 +2,11 @@
 title: Joint lensing + kinematics
 type: concept
 topics: [methods, galaxy-structure]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Gebhardt2011M87GeminiIFIS.pdf
   - Strong_Lens/Smith2017_StellarDyn_IMF.pdf
   - Strong_Lens/Cao2021MangaLenses.pdf
-status: drafted
 ---
 
 # Joint lensing + kinematics

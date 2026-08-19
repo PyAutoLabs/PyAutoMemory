@@ -126,4 +126,4 @@ Survey overview / instrument papers from the `Collaborations/` folder.
 
 - [[cosmos-web]]
 - [[sources-cosmos-survey]]
-- [[../lensing/sources-lens-statistics]]
+- [[sources-lens-statistics]]

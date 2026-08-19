@@ -2,13 +2,13 @@
 title: Time-delay cosmography (H0 from strong lensing)
 type: concept
 topics: [cosmology]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Suyu2016Holicow.pdf
   - Strong_Lens/Birrer2018HolicowIX.pdf
   - Strong_Lens/Birrer2020TDCOSMOSIVH0.pdf
   - Strong_Lens/Wong2019H0licow6lenses.pdf
   - Strong_Lens/Grillo2018RefsdelHo.pdf
-status: drafted
 ---
 
 # Time-delay cosmography

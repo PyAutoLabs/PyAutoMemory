@@ -3,9 +3,10 @@ title: Expectation propagation
 type: concept
 topics: [expectation-propagation, graphical-models, bayesian-inference, message-passing]
 sources:
-  - MessagePassingIsAWayOfLife.pdf
   - sources/bayesian-inference.md
 status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
+  - MessagePassingIsAWayOfLife.pdf
 ---
 
 # Expectation propagation (as PyAutoFit implements it)

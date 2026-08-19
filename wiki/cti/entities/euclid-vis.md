@@ -2,11 +2,11 @@
 title: Euclid VIS
 type: entity
 topics: [euclid, cti]
-sources:
+status: stub
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - CTI/Cropper2013DefiningWL.pdf
   - Euclid/Azzollini2021CIReport.pdf
   - CTI/Israel2015_CTI_Correct_Euclid.pdf
-status: stub
 ---
 
 # Euclid VIS

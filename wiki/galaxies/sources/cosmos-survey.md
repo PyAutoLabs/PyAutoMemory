@@ -368,5 +368,5 @@ high-z morphology.
 ## See also
 
 - [[cosmos-web]]
-- [[../lensing/sources-lens-finding]]
+- [[sources-lens-finding]]
 - [[sources-high-redshift]]

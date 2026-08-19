@@ -2,12 +2,12 @@
 title: Nested sampling
 type: concept
 topics: [nested-sampling, samplers]
-sources:
+status: stub
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Stats/PolyChod2015.pdf
   - PolyChord.pdf
   - Stats/ButchnerPyMultiNest.pdf
   - PPLs/Dynesty.pdf
-status: stub
 ---
 
 # Nested sampling

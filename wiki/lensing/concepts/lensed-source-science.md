@@ -2,14 +2,14 @@
 title: Source-plane science with strongly-lensed sources
 type: concept
 topics: [high-redshift, dsfg, agn]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Rizzo2018KinematicsStrongLenssources.pdf
   - Strong_Lens/Rizzo2020DSFGNature.pdf
   - Strong_Lens/Rizzo2021DSFTSample.pdf
   - Strong_Lens/Berg2018WindowOnSF.pdf
   - Strong_Lens/Dye2017ModelingAlma.pdf
   - Strong_Lens/Bayliss2017_Hyodrgen_Lensed_Quasar.pdf
-status: drafted
 ---
 
 # Source-plane science

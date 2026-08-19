@@ -2,11 +2,11 @@
 title: Selection effects in strong-lens samples
 type: concept
 topics: [populations, systematics]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Sonnenfeld2023SelectionEffects.pdf
   - Strong_Lens/Sonnenfeld2024SlacsDebiased.pdf
   - Strong_Lens/Sonnefendl2025SLACSDebiadedII.pdf
-status: drafted
 ---
 
 # Selection effects

@@ -2,9 +2,9 @@
 title: The Razor Arc
 type: entity
 topics: [specific-lens, dark-matter, smbh]
-sources:
-  - Strong_Lens/Banik2019SMBHRazorArc.pdf
 status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
+  - Strong_Lens/Banik2019SMBHRazorArc.pdf
 ---
 
 # The Razor Arc

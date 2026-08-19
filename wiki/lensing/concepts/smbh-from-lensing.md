@@ -2,12 +2,12 @@
 title: Supermassive black holes from strong lensing
 type: concept
 topics: [smbh, dark-matter]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Nightingale2023SMBH.pdf
   - Strong_Lens/Spingola2019SMBHVLBI.pdf
   - Strong_Lens/Banik2019SMBHRazorArc.pdf
   - Strong_Lens/Chen2018SMBH.pdf
-status: drafted
 ---
 
 # Supermassive black holes from strong lensing

@@ -10,18 +10,17 @@ the matching `wiki/<domain>/sources/*.md` page.
 
 ---
 
-https://www.nature.com/articles/s41576-025-00912-4
-https://www.nature.com/articles/s41576-025-00912-4
-https://www.nature.com/articles/s41576-025-00912-4
-
 Imagining the Alien: Human Projections and Cognitive Limitations
-High-impact Scientific Software in Astronomy and its creators
-Role of General Users in the Lifecycle of Scientific Software
 
 Strong Lensing:
 
+The X-Ray Continuum Emission Region in the Lensed Quasar SDSS J133907.23+131038.6 is Much Smaller than the Accretion Disk
+Confirmation of the Finch Flatter-Fainter Relation for the Quadruple Images of Lensed Point Sources
+The Koi Pond: A Strongly Lensed Protocluster Core hosting a Diverse Population of DSFGs
+Addressing position anomalies in the Strong Gravitational Lensing System HS~0810+2554 through Dark Matter Subhalos
+The Fornax Cluster VLT Spectroscopic Survey - V. Mass modelling of the BCG NGC 1399 out to 150 kpc
+Galaxy-LRD Strong Lenses: A Missing Population?
 Cosmic CORALS: Timing the Universe with high-z star clusters
-A pilot sample of Planck-selected strongly lensed sub-mm galaxies: NOEMA observations and physical characterisation
 Polar coordinate transformations for machine learning based dark matter subhalo detection in strong gravitational lenses
 XShooter DESI Lens Program: Sample characterization
 Strong-lensing effects in high-redshift massive black-hole binary population inference
@@ -33,8 +32,6 @@ Dynamical models of cluster members to probe the total mass properties of cluste
 COOL-LAMPS IX: A Rare Duo of Quasars Each Lensed by a Single Massive Galaxy Cluster
 Beyond collective fluctuations: probing micro-image swarms in lensed quasars with intensity interferometry
 Constraining Axion-like Particles through Multi-epoch Monitoring of Strong Gravitational Lenses
-A boost in the precision of cluster-mass models: Exploiting the extended surface brightness of the lensed supernova Refsdal host galaxy
-The approximate gravitational lensing multiple plane mass sheet degeneracy
 Mapping dark matter in the Bullet Cluster using JWST imaging and spectroscopy
 Detecting Strongly-Lensed Supernovae in Wide-field Space Telescope Imaging via Deep Learning
 Microlensing Black Hole Shadows-II: Constraining Primordial Black Hole Dark Matter using the photon rings of M87 and Sgr A*
@@ -350,9 +347,3 @@ Eryn: A multi-purpose sampler for Bayesian inference: https://arxiv.org/list/ast
 
 
 
-
-JAX:
-
-https://github.com/flatironinstitute/jax-finufft
-https://dfm.io/posts/extending-jax/
-https://arxiv.org/pdf/2403.08847.pdf

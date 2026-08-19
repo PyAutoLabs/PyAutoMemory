@@ -2,9 +2,9 @@
 title: TDCOSMO
 type: entity
 topics: [cosmography, collaboration]
-sources:
-  - Strong_Lens/Birrer2020TDCOSMOSIVH0.pdf
 status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
+  - Strong_Lens/Birrer2020TDCOSMOSIVH0.pdf
 ---
 
 # TDCOSMO

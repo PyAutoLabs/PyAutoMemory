@@ -2,12 +2,12 @@
 title: External convergence and shear
 type: concept
 topics: [systematics, environment]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Wong2011ShearEnvironment.pdf
   - Strong_Lens/Birrer2019ShearWLSL.pdf
   - Strong_Lens/Fleury2022LosShear.pdf
   - Strong_Lens/Chirivi2017_Lineofsight_Clusters.pdf
-status: drafted
 ---
 
 # External convergence and shear

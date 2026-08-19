@@ -2,9 +2,9 @@
 title: Space Warps
 type: entity
 topics: [citizen-science, lens-finding]
-sources:
-  - Strong_Lens/Spacewarms2017Spaghetti.pdf
 status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
+  - Strong_Lens/Spacewarms2017Spaghetti.pdf
 ---
 
 # Space Warps

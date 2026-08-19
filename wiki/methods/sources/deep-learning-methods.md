@@ -78,5 +78,5 @@ lensing-specific applications (which live in
 ## See also
 
 - [[deep-learning-astro]]
-- [[../lensing/sources-deep-learning-lensing]]
-- [[../lensing/sources-lens-finding]]
+- [[sources-deep-learning-lensing]]
+- [[sources-lens-finding]]

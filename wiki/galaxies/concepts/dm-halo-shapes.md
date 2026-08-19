@@ -2,10 +2,10 @@
 title: Dark-matter halo shapes
 type: concept
 topics: [dm-halo-shapes, galaxy-scale]
-sources:
+status: stub
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Dark_Matter_Geometry/BailinShapesAngMom2005.pdf
   - Dark_Matter_Geometry/TennitiIntrSlignDiskEll2015.pdf
-status: stub
 ---
 
 # Dark-matter halo shapes (galaxy-scale)
@@ -52,5 +52,5 @@ parameters — a possible systematic on inferred shear / convergence.
 ## See also
 
 - [[stellar-mass-halo-mass-relation]]
-- [[../lensing/concepts/external-convergence-shear.md]]
-- [[../lensing/sources-dark-matter-physics]]
+- [[external-convergence-shear]]
+- [[sources-dark-matter-physics]]

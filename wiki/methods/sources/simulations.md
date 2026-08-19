@@ -309,5 +309,5 @@ gas-physics work and pure DM-only studies.
 
 - [[forward-modelling]]
 - [[hierarchical-population-models]]
-- [[../lensing/sources-mass-models]] (for simulated mass slopes)
-- [[../galaxies/sources-elliptical-galaxies]]
+- [[sources-mass-models]] (for simulated mass slopes)
+- [[sources-elliptical-galaxies]]

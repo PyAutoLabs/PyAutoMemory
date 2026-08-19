@@ -2,11 +2,11 @@
 title: Mass-sheet degeneracy
 type: concept
 topics: [degeneracies]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Birrer2020TDCOSMOSIVH0.pdf
   - Strong_Lens/Wertz2018PySPT.pdf
   - Strong_Lens/Tagore2017_Error_On_Ho.pdf
-status: drafted
 ---
 
 # Mass-sheet degeneracy (MSD)

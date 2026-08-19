@@ -2,13 +2,13 @@
 title: Lens population statistics
 type: concept
 topics: [populations]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Sonnenfeld2021StatsI.pdf
   - Strong_Lens/Sonnenfeld2021StatsII.pdf
   - Strong_Lens/Sonnenfeld2022Stats.pdf
   - Strong_Lens/Li2023StrongLensPopulations.pdf
   - Strong_Lens/Geng2025SLRelations.pdf
-status: drafted
 ---
 
 # Lens statistics

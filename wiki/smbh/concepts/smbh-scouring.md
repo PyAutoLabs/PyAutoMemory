@@ -2,10 +2,10 @@
 title: SMBH core scouring
 type: concept
 topics: [smbh, scouring, etg-structure]
-sources:
+status: stub
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - SMBHs/Thomas2013DynamicalFootprintCoreScouring.pdf
   - SMBHs/Kormendy2013CoresEll.pdf
-status: stub
 ---
 
 # SMBH core scouring

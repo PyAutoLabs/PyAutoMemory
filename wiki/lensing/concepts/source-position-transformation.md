@@ -2,9 +2,9 @@
 title: Source position transformation (SPT)
 type: concept
 topics: [degeneracies]
-sources:
-  - Strong_Lens/Wertz2018PySPT.pdf
 status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
+  - Strong_Lens/Wertz2018PySPT.pdf
 ---
 
 # Source position transformation (SPT)
