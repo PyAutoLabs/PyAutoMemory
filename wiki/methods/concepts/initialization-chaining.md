@@ -2,9 +2,9 @@
 title: Initialization chaining
 type: concept
 topics: [samplers, initialization, search-chaining, hmc]
-sources:
-  - Stats/PolyChod2015.pdf
 status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
+  - Stats/PolyChod2015.pdf
 ---
 
 # Initialization chaining

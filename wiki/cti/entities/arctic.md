@@ -2,10 +2,10 @@
 title: arctic
 type: entity
 topics: [cti, software]
-sources:
+status: stub
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - CTI/Massey2010PixelBased.pdf
   - CTI/Massey2014_CTI_Correction_2.pdf
-status: stub
 ---
 
 # arctic

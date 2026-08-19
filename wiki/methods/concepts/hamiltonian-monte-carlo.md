@@ -3,9 +3,10 @@ title: Hamiltonian Monte Carlo
 type: concept
 topics: [hmc, nuts, gradients, jax, samplers]
 sources:
-  - PPLs/Dynesty.pdf
   - Software (BlackJAX docs, https://blackjax-devs.github.io/blackjax/)
 status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
+  - PPLs/Dynesty.pdf
 ---
 
 # Hamiltonian Monte Carlo

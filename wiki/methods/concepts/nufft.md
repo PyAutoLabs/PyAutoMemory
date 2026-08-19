@@ -2,11 +2,11 @@
 title: Non-uniform FFT (NUFFT)
 type: concept
 topics: [nufft, interferometry]
-sources:
+status: stub
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - NUFFTPAper.pdf
   - PYNUFFT.pdf
   - Software/NUFFTGPU.pdf
-status: stub
 ---
 
 # Non-uniform FFT (NUFFT)

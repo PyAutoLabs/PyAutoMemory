@@ -2,10 +2,10 @@
 title: SMBH binaries
 type: concept
 topics: [smbh, binaries]
-sources:
+status: stub
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - SMBHs/Liao2024RABBITS2.pdf
   - SMBHs/Shen2013BBHsViaTimeChangeOfBLRs.pdf
-status: stub
 ---
 
 # SMBH binaries

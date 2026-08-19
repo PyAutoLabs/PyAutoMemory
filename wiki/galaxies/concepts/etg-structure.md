@@ -2,10 +2,10 @@
 title: ETG structure
 type: concept
 topics: [etg-structure, ellipticals]
-sources:
+status: stub
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - MassiveEllPaper/Ma2014MassiveIOverview.pdf
   - LightProFFits/Peng_2010_AJ_139_2097.pdf
-status: stub
 ---
 
 # ETG structure

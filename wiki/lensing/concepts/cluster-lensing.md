@@ -2,13 +2,13 @@
 title: Cluster-scale strong lensing
 type: concept
 topics: [cluster-lensing]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - StrongLensCluster/Richard2017HFFModels.pdf
   - StrongLensCluster/Atek2015HFFUV.pdf
   - StrongLensCluster/Jullo2008CosmologicalConstraints.pdf
   - Strong_Lens/Chirivi2017_Lineofsight_Clusters.pdf
   - Strong_Lens/Schneider2013SPT.pdf
-status: drafted
 ---
 
 # Cluster-scale strong lensing

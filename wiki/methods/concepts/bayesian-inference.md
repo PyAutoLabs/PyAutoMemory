@@ -2,10 +2,10 @@
 title: Bayesian inference
 type: concept
 topics: [bayesian-inference, methods]
-sources:
+status: stub
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Stats/Variation Inference - A Review for Statisticians.pdf
   - Stats/Expectation propagation as a way of life.pdf
-status: stub
 ---
 
 # Bayesian inference

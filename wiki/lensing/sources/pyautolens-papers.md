@@ -275,7 +275,7 @@ work by core developers / collaborators that uses it.
 ## See also
 
 - [[pyautolens]]
-- [[../entities/pyautolens]]
+- [[pyautolens]]
 - [[sources-lens-modeling-methods]]
 - [[sources-interferometric-lensing]]
 - [[sources-deep-learning-lensing]]

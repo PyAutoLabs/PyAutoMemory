@@ -120,4 +120,4 @@ shallow inner-light gradients that interact with mass-profile fits.
 - [[smbh-scouring]]
 - [[smbh-recoil]]
 - [[sources-smbh-binaries]]
-- [[../galaxies/sources-elliptical-galaxies]]
+- [[sources-elliptical-galaxies]]

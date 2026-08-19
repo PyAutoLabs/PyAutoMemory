@@ -2,11 +2,11 @@
 title: Abell 1201
 type: entity
 topics: [specific-lens, smbh, cluster-lensing]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Edge2003Abell1201.pdf
   - Strong_Lens/Smith2017CounterImageAbell1201.pdf
   - Strong_Lens/Nightingale2023SMBH.pdf
-status: drafted
 ---
 
 # Abell 1201

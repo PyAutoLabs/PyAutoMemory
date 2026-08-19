@@ -174,4 +174,4 @@ models.
 
 - [[bulge-disk-decomposition-galaxies]]
 - [[sources-light-profile-fitting]]
-- [[../lensing/sources-bulge-halo]]
+- [[sources-bulge-halo]]

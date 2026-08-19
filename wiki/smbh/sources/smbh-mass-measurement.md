@@ -214,5 +214,5 @@ mapping, ALMA molecular-gas dynamics, and the EHT.
 
 - [[smbh-mass-measurement]]
 - [[sources-smbh-host-scaling]]
-- [[../lensing/sources-time-delay-cosmography]] for lensed-AGN
+- [[sources-time-delay-cosmography]] for lensed-AGN
   SMBH-mass constraints

@@ -354,4 +354,4 @@ backbone of modern galaxy-population work.
 - [[ifu-spectroscopy]]
 - [[etg-kinematics]]
 - [[manga-survey]]
-- [[../lensing/sources-kinematics]]
+- [[sources-kinematics]]

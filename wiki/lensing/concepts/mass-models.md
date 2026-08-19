@@ -2,13 +2,13 @@
 title: Mass models for lens galaxies
 type: concept
 topics: [lens-modelling]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Tessore2015Lensed.pdf
   - Strong_Lens/Tessore2016PowerLaw.pdf
   - Strong_Lens/Oguri2021CSE.pdf
   - Strong_Lens/Shajib2020GaussianDecomp].pdf
   - Strong_Lens/He2024MGE.pdf
-status: drafted
 ---
 
 # Mass models for lens galaxies

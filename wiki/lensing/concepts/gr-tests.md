@@ -2,10 +2,10 @@
 title: Tests of GR with strong lensing
 type: concept
 topics: [cosmology, fundamental-physics]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Collett2018GR.pdf
   - Strong_Lens/Melo2023ProbeGR.pdf
-status: drafted
 ---
 
 # Tests of GR with strong lensing

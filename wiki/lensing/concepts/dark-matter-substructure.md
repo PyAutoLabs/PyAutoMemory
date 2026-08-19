@@ -2,13 +2,13 @@
 title: Dark matter substructure from strong lensing
 type: concept
 topics: [dark-matter]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Vegetti2018StellarNeutrinos.pdf
   - Strong_Lens/Nightingale2022Scanm.pdf
   - Strong_Lens/Despali2022Sensitivity.pdf
   - Strong_Lens/Despali2024SensitivityII.pdf
   - Strong_Lens/Gilman2019ConstraintsDM.pdf
-status: drafted
 ---
 
 # Dark matter substructure

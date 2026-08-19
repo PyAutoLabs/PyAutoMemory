@@ -2,9 +2,9 @@
 title: COSMOS-Web Ring
 type: entity
 topics: [specific-lens, jwst]
-sources:
-  - Strong_Lens/Mercier2024COSMOSRing.pdf
 status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
+  - Strong_Lens/Mercier2024COSMOSRing.pdf
 ---
 
 # COSMOS-Web Ring

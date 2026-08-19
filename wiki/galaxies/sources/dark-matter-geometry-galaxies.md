@@ -464,5 +464,5 @@ work in `../lensing/`.
 
 - [[dm-halo-shapes]]
 - [[halo-occupation]]
-- [[../lensing/sources-dark-matter-physics]]
-- [[../lensing/sources-mass-models]]
+- [[sources-dark-matter-physics]]
+- [[sources-mass-models]]

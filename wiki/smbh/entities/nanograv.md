@@ -2,9 +2,9 @@
 title: NANOGrav
 type: entity
 topics: [pta, gw-background]
-sources:
-  - GWB/NANOGrav152024SMBHB.pdf
 status: stub
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
+  - GWB/NANOGrav152024SMBHB.pdf
 ---
 
 # NANOGrav

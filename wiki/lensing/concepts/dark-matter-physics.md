@@ -2,14 +2,14 @@
 title: Dark matter physics from strong lensing
 type: concept
 topics: [dark-matter, cosmology]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - DarkMatterModels/Bose2016WDMSims.pdf
   - DarkMatterModels/Newton2021ConstraintsSatellites.pdf
   - DarkMatterModels/Robertson2018SIDMsimulation.pdf
   - DarkMatterModels/Navarro1996StructureCDMHalos.pdf
   - Strong_Lens/Enzi2020JointConstraintsthermalRelic.pdf
   - Strong_Lens/Gomez2016_FermionicDM.pdf
-status: drafted
 ---
 
 # Dark matter physics from strong lensing

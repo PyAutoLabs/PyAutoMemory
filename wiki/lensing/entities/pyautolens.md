@@ -2,10 +2,10 @@
 title: PyAutoLens
 type: entity
 topics: [software]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - AutoLens.pdf
   - autolens_paper1_resubmit_20180216.pdf
-status: drafted
 ---
 
 # PyAutoLens

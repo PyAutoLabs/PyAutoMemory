@@ -2,12 +2,12 @@
 title: Gravitational imaging
 type: concept
 topics: [dark-matter, methods]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Koopmans2005GravImaging.pdf
   - Strong_Lens/Vegetti2018StellarNeutrinos.pdf
   - Strong_Lens/Nightingale2022Scanm.pdf
   - Strong_Lens/Verbados2022PotentialCoorr.pdf
-status: drafted
 ---
 
 # Gravitational imaging

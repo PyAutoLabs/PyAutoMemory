@@ -46,4 +46,4 @@ status: stub
 - [[simulation-based-inference]]
 - [[neural-posterior-estimation]]
 - [[sources-deep-learning-methods]]
-- [[../lensing/sources-deep-learning-lensing]]
+- [[sources-deep-learning-lensing]]

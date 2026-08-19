@@ -116,4 +116,4 @@ survey-specific work in [[sources-massive-ellipticals]].
 - [[etg-radial-gradients]]
 - [[sources-massive-ellipticals]]
 - [[sources-ifu-spectroscopy]]
-- [[../lensing/sources-bulge-halo]]
+- [[sources-bulge-halo]]

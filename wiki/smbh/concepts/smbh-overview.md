@@ -2,11 +2,11 @@
 title: SMBH overview
 type: concept
 topics: [smbh, host-galaxies]
-sources:
+status: stub
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - SMBHs/Kormendy1995SearchInward.pdf
   - SMBHs/Ferrarese2000VeloDisp.pdf
   - SMBHs/Gebhardt2000SMBHVelDisp.pdf
-status: stub
 ---
 
 # SMBH overview

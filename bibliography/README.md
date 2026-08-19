@@ -22,18 +22,13 @@ personal library in 2026-07 — the merge audit is in git history.)
 Never record a local PDF path or infer claims from a filename. If metadata or support is
 uncertain, add a TODO rather than guessing.
 
-## Aliases and downstream projects
-
-`bibkey_aliases.yaml` is a flat YAML mapping from a known alternate key to its canonical key:
-
-```yaml
-Suyu16H0: Suyu2016Holicow
-```
+## Downstream projects
 
 Before patching another project's LaTeX, inspect that project's `.bib`. Match papers by DOI,
 then arXiv ID, then title/authors, and use the project's existing key when present. Do not
-assume a PyAutoMemory canonical key exists downstream. Add an alias only for an alternate key
-that is actually in use.
+assume a PyAutoMemory canonical key exists downstream. (A key-alias subsystem existed but was
+never used and was retired in #34; renaming a canonical key is a sed across the wiki, which
+validation guards.)
 
 ## Validation
 
@@ -42,6 +37,6 @@ make validate-literature-citations
 # or: python scripts/validate_literature_citations.py
 ```
 
-Duplicate canonical keys, missing source keys, new claim entries without canonical keys, and
-aliases with missing targets fail validation. Canonical entries not yet referenced by a wiki
-source entry are reported but do not fail; use `--show-all` for the complete list.
+Duplicate canonical keys, missing source keys, and new claim entries without canonical keys
+fail validation. Canonical entries not yet referenced by a wiki source entry are reported but
+do not fail; use `--show-all` for the complete list.

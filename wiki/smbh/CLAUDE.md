@@ -27,8 +27,9 @@ concept page structure, source-collection structure, status flags
 [`../CLAUDE.md`](../CLAUDE.md). Read that file
 first; this one only diverges on scope.
 
-Cross-wiki links work: `[[../lensing/concepts/smbh-from-lensing]]`
-or just `[[smbh-from-lensing]]` if the resolver is sub-wiki-aware.
+Cross-wiki links use the same slug form as everything else:
+`[[smbh-from-lensing]]` — slugs are unique across sub-wikis, so no path
+prefix is ever needed (the slug-only rule in `../CLAUDE.md`).
 
 ## Scope
 

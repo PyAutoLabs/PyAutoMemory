@@ -2,10 +2,10 @@
 title: lenstronomy
 type: entity
 topics: [software]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Biirrer2018lenstronomy.pdf
   - Strong_Lens/Birrer2018KLenstronomy.pdf
-status: drafted
 ---
 
 # lenstronomy

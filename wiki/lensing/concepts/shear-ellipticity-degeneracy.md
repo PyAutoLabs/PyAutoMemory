@@ -2,12 +2,12 @@
 title: Shear–ellipticity degeneracy
 type: concept
 topics: [degeneracies]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Witt1997Shear.pdf
   - Strong_Lens/Keeton1997ShearEllipticity.pdf
   - Strong_Lens/Gomer2021ShearEllipseDegen.pdf
   - Strong_Lens/Hogg2022SLShear.pdf
-status: drafted
 ---
 
 # Shear–ellipticity degeneracy

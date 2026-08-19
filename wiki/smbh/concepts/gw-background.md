@@ -2,10 +2,10 @@
 title: Nanohertz gravitational-wave background
 type: concept
 topics: [smbh, gw-background, pta]
-sources:
+status: stub
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - GWB/NANOGrav152024SMBHB.pdf
   - SMBHs/MarconiLocalAndRelicBHMassFunctions.pdf
-status: stub
 ---
 
 # Nanohertz gravitational-wave background

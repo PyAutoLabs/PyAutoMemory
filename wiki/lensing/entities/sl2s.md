@@ -2,10 +2,10 @@
 title: SL2S (Strong Lensing Legacy Survey)
 type: entity
 topics: [survey, sample]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Gavazzi2012SL2SI.pdf
   - Strong_Lens/Gavazzi2014Ringfinder.pdf
-status: drafted
 ---
 
 # SL2S — Strong Lensing Legacy Survey

@@ -2,11 +2,11 @@
 title: HSC lens samples
 type: entity
 topics: [survey, sample]
-sources:
+status: drafted
+archive:  # off-repo PDF provenance from the 2026-05 import (never live paths)
   - Strong_Lens/Sonnenfeld2018Yattalens.pdf
   - Strong_Lens/Sonnenfeld2020HSCLENSMODELINGFIND.pdf
   - Strong_Lens/Jaelani2023SLFindHSC.pdf
-status: drafted
 ---
 
 # HSC lens samples

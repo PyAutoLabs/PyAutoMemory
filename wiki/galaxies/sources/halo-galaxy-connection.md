@@ -127,4 +127,4 @@ occupation.
 - [[stellar-to-halo-mass]]
 - [[halo-occupation]]
 - [[sources-stellar-halos]]
-- [[../lensing/sources-mass-models]]
+- [[sources-mass-models]]

@@ -175,6 +175,6 @@ introductions or for cross-referencing established field-knowledge.
 
 ## See also
 
-- [[../galaxies/sources-galaxy-formation-misc]]
+- [[sources-galaxy-formation-misc]]
 - [[sources-galaxy-formation]] (existing field-galaxy-formation
   bibliography)
