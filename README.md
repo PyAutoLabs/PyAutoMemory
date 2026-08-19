@@ -27,7 +27,7 @@ upgrade a stub, or `/memory <domain>` to recall what's known).
 <!-- The line below is auto-updated by .github/workflows/knowledge_board.yml (everything -->
 <!-- between the memory:begin/memory:end markers is replaced with the rendered strip). -->
 <!-- memory:begin -->
-🧠 **166 pages** · 69 drafted · 40% of 643 paper sections cite a resolved key · 230 papers queued · [knowledge board →](https://pyautolabs.github.io/PyAutoMemory/)
+🧠 **166 pages** · 69 drafted · 40% of 643 paper sections cite a resolved key · 231 papers queued · [knowledge board →](https://pyautolabs.github.io/PyAutoMemory/)
 <!-- memory:end -->
 
 ## The sub-wikis
