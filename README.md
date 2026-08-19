@@ -6,12 +6,32 @@
 
 [![PyAutoScientist GitHub](https://img.shields.io/badge/%F0%9F%A7%AE%20PyAutoScientist-GitHub-181717?style=flat-square)](https://github.com/PyAutoLabs/PyAutoScientist) [![PyAutoScientist ReadTheDocs](https://img.shields.io/badge/%F0%9F%93%96%20PyAutoScientist-ReadTheDocs-8CA1AF?style=flat-square)](https://pyautoscientist.readthedocs.io)
 
-The long-term memory of the PyAuto organism: what it has learned, distilled
-into cross-linked LLM wikis — literature summaries, scientific concepts, and
-the citation metadata to verify them. Source PDFs live off-repo; what's here
-is the durable knowledge. Start at [`index.md`](index.md).
+[![knowledge](https://img.shields.io/endpoint?url=https://pyautolabs.github.io/PyAutoMemory/badge.json)](https://pyautolabs.github.io/PyAutoMemory/)
 
-The sub-wikis (self-contained, shared schema):
+**PyAutoMemory is the Memory of the PyAutoScientist** — the long-term memory
+of the organism: what it has learned, distilled into cross-linked LLM wikis —
+literature summaries, scientific concepts, and the citation metadata to
+verify them. Memory holds *what the science says*; what the organism *did*
+lives in the Mind. Source PDFs live off-repo; what's here is the durable
+knowledge. Start at [`index.md`](index.md).
+
+See the **[PyAutoMemory Knowledge Board](https://pyautolabs.github.io/PyAutoMemory/)**
+(mobile phone dashboard) for managing all of it from one page: the reading
+queue, the paper sections still needing a canonical citation key, and each
+sub-wiki's maturity — every work queue carrying a one-tap 📋 button that
+copies a paste-ready Claude prompt (file the next paper, resolve keys,
+upgrade a stub, or `/memory <domain>` to recall what's known).
+
+## Current contents
+
+<!-- The line below is auto-updated by .github/workflows/knowledge_board.yml (everything -->
+<!-- between the memory:begin/memory:end markers is replaced with the rendered strip). -->
+<!-- memory:begin -->
+<!-- memory:end -->
+
+## The sub-wikis
+
+Self-contained, shared schema:
 
 | Wiki | Covers |
 |------|--------|
@@ -24,8 +44,8 @@ The sub-wikis (self-contained, shared schema):
 [`bibliography/`](bibliography/README.md) holds the canonical BibTeX
 metadata every wiki cites against; [`reading-queue.md`](reading-queue.md)
 is what's waiting to be read and filed. New knowledge updates the metadata
-and the claim support together, then passes
-`make validate`.
+and the claim support together, then passes `make validate` (CI-enforced on
+every push).
 
 The wiki schema is defined in
 [`wiki/CLAUDE.md`](wiki/CLAUDE.md) and inherited by every

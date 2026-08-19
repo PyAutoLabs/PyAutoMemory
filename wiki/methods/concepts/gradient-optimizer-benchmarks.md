@@ -8,7 +8,7 @@ sources:
   - autolens_workspace_developer/searches_minimal/gradient_optimizer_findings.md
   - GitHub issues autolens_workspace_developer #95, #97
   - A100 runs: RAL /mnt/ral/jnightin/nextwave_logs/ (SLURM 330165/170/171/172)
-status: draft
+status: drafted
 last_updated: 2026-07-14
 ---
 

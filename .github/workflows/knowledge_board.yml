@@ -1,0 +1,104 @@
+name: Knowledge Board
+
+# Publishes the knowledge board — the management view of the Memory's papers
+# and wikis (scripts/board.py, the Heart/Hands dashboard pattern):
+#   * the GitHub Pages page (one-tap 📋 work prompts for a phone),
+#   * badge.json (the shields endpoint the README badge reads),
+#   * the one-line README strip between the memory:begin/end markers.
+#
+# Contents-level only: titles and counts, never claim text. Nothing is
+# committed — validate_structure.py bans .html and gates the root allowlist,
+# so every surface is rendered fresh here.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "wiki/**"
+      - "bibliography/**"
+      - "reading-queue.md"
+      - "index.md"
+      - "scripts/board.py"
+  schedule:
+    - cron: "45 5 * * 1"
+  workflow_dispatch:
+
+# contents: write → the README strip self-commit; pages/id-token → publish.
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: knowledge-board-pages
+  cancel-in-progress: false
+
+jobs:
+  board:
+    name: Render + publish the knowledge board
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Render every surface (local parse, no network)
+        run: |
+          mkdir -p _site
+          python scripts/board.py --html     > _site/index.html
+          python scripts/board.py --badge    > _site/badge.json
+          python scripts/board.py --md       > board.md
+          python scripts/board.py --md-brief > readme_strip.md
+
+      - name: Write the board to the job step summary
+        run: cat board.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Update the README strip (own repo only, main only)
+        if: github.ref == 'refs/heads/main'
+        run: |
+          python - <<'PY'
+          import pathlib, re
+          readme = pathlib.Path("README.md")
+          text = readme.read_text()
+          strip = pathlib.Path("readme_strip.md").read_text().strip()
+          begin, end = "<!-- memory:begin -->", "<!-- memory:end -->"
+          block = f"{begin}\n{strip}\n{end}"
+          if begin in text and end in text:
+              text = re.sub(re.escape(begin) + r".*?" + re.escape(end), block,
+                            text, flags=re.DOTALL)
+              readme.write_text(text)
+          PY
+          if ! git diff --quiet README.md; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "docs(memory): auto-update knowledge-board strip [skip ci]"
+            for attempt in 1 2 3; do
+              if git push; then exit 0; fi
+              git pull --rebase origin main || exit 1
+            done
+            echo "::error::could not push the README strip after 3 attempts"
+            exit 1
+          else
+            echo "README strip unchanged — nothing to commit."
+          fi
+
+      # The Pages site is created once out-of-band (gh api -X POST
+      # repos/<owner>/<repo>/pages -f build_type=workflow) — enablement here
+      # cannot create it with the default token (the Hands lesson).
+      - uses: actions/configure-pages@v5
+        if: github.ref == 'refs/heads/main'
+
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
+        if: github.ref == 'refs/heads/main'

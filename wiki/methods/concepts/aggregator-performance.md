@@ -7,7 +7,7 @@ sources:
   - Merged PRs: PyAutoFit #1376/#1380/#1384/#1386, PyAutoNerves #130, autofit_workspace_test #48/#49/#50/#51, autolens_workspace_test #172
   - Harnesses: autofit_workspace_test scripts/profiling/aggregator/ + autolens_workspace_test scripts/profiling/aggregator/
   - Raw grids: <workspace>/output/profiling_aggregator/results/*.json (local, 2026-07-16/17)
-status: draft
+status: drafted
 last_updated: 2026-07-17
 ---
 

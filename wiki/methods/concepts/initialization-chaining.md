@@ -4,7 +4,7 @@ type: concept
 topics: [samplers, initialization, search-chaining, hmc]
 sources:
   - Stats/PolyChod2015.pdf
-status: draft
+status: drafted
 ---
 
 # Initialization chaining

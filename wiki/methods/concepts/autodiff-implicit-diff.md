@@ -7,7 +7,7 @@ sources:
   - autolens_workspace_test/scripts/jax_grad/ (FD correctness tests)
   - arXiv:2606.30620 (Enzi et al., RTU grids) — canonical key `Enzi2026`; see [[sources-source-reconstruction#enzi-2026-ray-guided-transformed-uniform-rtu-grids]]
   - PyAutoArray PR #281 (closed unmerged)
-status: draft
+status: drafted
 ---
 
 # Automatic differentiation of PyAuto likelihoods

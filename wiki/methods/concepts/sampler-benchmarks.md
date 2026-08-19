@@ -5,7 +5,7 @@ topics: [samplers, benchmarks, profiling, jax]
 sources:
   - autofit_workspace_developer/searches_minimal/output/ (local, regenerable)
   - autolens_profiling (local repo, HPC campaign results)
-status: draft
+status: drafted
 ---
 
 # Sampler benchmarks

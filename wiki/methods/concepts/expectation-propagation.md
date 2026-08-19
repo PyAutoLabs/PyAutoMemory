@@ -5,7 +5,7 @@ topics: [expectation-propagation, graphical-models, bayesian-inference, message-
 sources:
   - MessagePassingIsAWayOfLife.pdf
   - sources/bayesian-inference.md
-status: draft
+status: drafted
 ---
 
 # Expectation propagation (as PyAutoFit implements it)
