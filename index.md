@@ -35,7 +35,7 @@ the schema in [`wiki/CLAUDE.md`](wiki/CLAUDE.md).
   `bibliography/`, stub it in the matching sub-wiki `sources/*.md`, mark the
   line DONE, and run `make validate` — the PDF itself stays off-repo, never
   committed. Per-section waiting/read counts live on the
-  [knowledge board](https://pyautolabs.github.io/PyAutoMemory/).
+  [dashboard](https://pyautolabs.github.io/PyAutoMemory/).
 
 ## Schema
 
@@ -60,4 +60,4 @@ externally). Most legacy per-paper entries remain filename-inferred stubs:
 upgrade them to compact, claim-oriented `drafted` entries only after
 verifying the paper, and log the change in the relevant sub-wiki. The live
 counts — pages, maturity, unresolved citation keys, reading queue — are on
-the [knowledge board](https://pyautolabs.github.io/PyAutoMemory/).
+the [dashboard](https://pyautolabs.github.io/PyAutoMemory/).

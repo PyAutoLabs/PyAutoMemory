@@ -1,4 +1,4 @@
-"""scripts/board.py — the PyAutoMemory knowledge board.
+"""scripts/board.py — the PyAutoMemory Dashboard.
 
 A phone-readable, MANAGEMENT-FIRST view of the repo's knowledge: what is
 waiting to be read, which paper sections still need a canonical BibTeX key,
@@ -199,7 +199,7 @@ def _stub_prompt(snapshot: dict, wiki: str) -> str:
 # --- renderers ------------------------------------------------------------------
 def _render_md(snapshot: dict) -> str:
     t = _totals(snapshot)
-    lines = ["# PyAutoMemory knowledge board", "",
+    lines = ["# PyAutoMemory Dashboard", "",
              "_Contents and work queues — the knowledge itself lives in the "
              "wiki pages._", "",
              f"**{t['pages']} pages** across {len(snapshot.get('wikis') or [])} "
@@ -221,7 +221,7 @@ def _render_md(snapshot: dict) -> str:
         lines.append("- _(queue empty or unavailable)_")
     url = pages_url(snapshot)
     if url:
-        lines += ["", f"[Knowledge board]({url}) — one-tap 📋 work prompts"]
+        lines += ["", f"[Dashboard]({url}) — one-tap 📋 work prompts"]
     return "\n".join(lines)
 
 
@@ -233,7 +233,7 @@ def _render_md_brief(snapshot: dict) -> str:
             f"{t['queued']} papers queued"]
     url = pages_url(snapshot)
     if url:
-        bits.append(f"[knowledge board →]({url})")
+        bits.append(f"[dashboard →]({url})")
     return " · ".join(bits)
 
 
@@ -339,8 +339,8 @@ function ok(b){{b.textContent='✓';setTimeout(function(){{b.textContent='📋'}
 function fb(t){{window.prompt('Copy this:',t)}}
 </script></head>
 <body><div class="wrap">
-  <h1>PyAutoMemory knowledge board</h1>
-  <p><span class="pill">{t['pages']} pages · {pct}% cited</span></p>
+  <h1>PyAutoMemory Dashboard</h1>
+  <p><span class="pill">{t['pages']} pages · {pct}% cited</span> <span class="meta"><a href="dashboard.md">markdown version</a></span></p>
   <p class="meta">Contents and work queues for the organism's long-term memory
   — titles and counts only; the knowledge itself lives in the wiki pages.
   📋 copies a paste-ready prompt for a Claude Code chat.</p>

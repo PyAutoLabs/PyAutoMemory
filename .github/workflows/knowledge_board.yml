@@ -1,6 +1,6 @@
-name: Knowledge Board
+name: Dashboard
 
-# Publishes the knowledge board — the management view of the Memory's papers
+# Publishes the PyAutoMemory Dashboard — the management view of the Memory's papers
 # and wikis (scripts/board.py, the Heart/Hands dashboard pattern):
 #   * the GitHub Pages page (one-tap 📋 work prompts for a phone),
 #   * badge.json (the shields endpoint the README badge reads),
@@ -35,7 +35,7 @@ concurrency:
 
 jobs:
   board:
-    name: Render + publish the knowledge board
+    name: Render + publish the dashboard
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -53,6 +53,7 @@ jobs:
           python scripts/board.py --html     > _site/index.html
           python scripts/board.py --badge    > _site/badge.json
           python scripts/board.py --md       > board.md
+          cp board.md _site/dashboard.md
           python scripts/board.py --md-brief > readme_strip.md
 
       - name: Write the board to the job step summary
