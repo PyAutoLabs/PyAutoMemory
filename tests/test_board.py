@@ -1,4 +1,4 @@
-"""tests/test_board.py — the knowledge board (scripts/board.py).
+"""tests/test_board.py — the PyAutoMemory Dashboard (scripts/board.py).
 
 The board's contract: counts are computed correctly from a synthetic tree,
 every fmt renders, the work-queue prompts reference the repo's documented

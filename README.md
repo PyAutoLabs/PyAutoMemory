@@ -15,8 +15,8 @@ verify them. Memory holds *what the science says*; what the organism *did*
 lives in the Mind. Source PDFs live off-repo; what's here is the durable
 knowledge. Start at [`index.md`](index.md).
 
-See the **[PyAutoMemory Knowledge Board](https://pyautolabs.github.io/PyAutoMemory/)**
-(mobile phone dashboard) for managing all of it from one page: the reading
+See the **[PyAutoMemory Dashboard](https://pyautolabs.github.io/PyAutoMemory/)**
+for managing all of it from one page: the reading
 queue, the paper sections still needing a canonical citation key, and each
 sub-wiki's maturity — every work queue carrying a one-tap 📋 button that
 copies a paste-ready Claude prompt (file the next paper, resolve keys,
@@ -27,7 +27,7 @@ upgrade a stub, or `/memory <domain>` to recall what's known).
 <!-- The line below is auto-updated by .github/workflows/knowledge_board.yml (everything -->
 <!-- between the memory:begin/memory:end markers is replaced with the rendered strip). -->
 <!-- memory:begin -->
-🧠 **166 pages** · 69 drafted · 40% of 643 paper sections cite a resolved key · 231 papers queued · [knowledge board →](https://pyautolabs.github.io/PyAutoMemory/)
+🧠 **166 pages** · 69 drafted · 40% of 643 paper sections cite a resolved key · 231 papers queued · [dashboard →](https://pyautolabs.github.io/PyAutoMemory/)
 <!-- memory:end -->
 
 ## The sub-wikis
