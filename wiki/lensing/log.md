@@ -195,3 +195,23 @@ surface-brightness modelling), both as source entries in
 
 Dropped only the H0pe SN-host paper (2510.20561): Galan-led but Herculens use
 unconfirmed.
+
+## 2026-08-20 — Vincken 2026 placeholder; dolphin logged retroactively
+
+**By:** Claude (Opus 5, PyAutoLabs `vincken-2026-bib-placeholder` session,
+PyAutoMemory#39).
+
+- **`Vincken2026` — placeholder, not a verified entry.** Euclid DR1 strong lens
+  finding network comparison (Euclid Collaboration: Vincken et al., in
+  preparation). Recorded **generically** — author/year/topic only, no title or
+  author list — because this repo is public and the only available copy is an
+  unpublished Euclid Consortium draft. Added to `bibliography/pyautomemory.bib`
+  as `@unpublished` and to `sources/lens-finding.md` beside the Q1 Discovery
+  Engine A/B/C entries, with an explicit "no claim verified" guard.
+  **Pending:** replace the TODO title/reference with verified metadata (title,
+  arXiv ID, DOI, author list) and real `**Supports:**` claims once the paper is
+  on arXiv.
+- **`Shajib2025dolphin` — logged retroactively.** The dolphin automated
+  forward-modelling pipeline (arXiv:2503.22657) was added to the bibliography
+  and `sources/lens-modeling-methods.md` during the #34/#36 wiki-hygiene pass
+  but never recorded here. No content change; this line closes the log gap.
