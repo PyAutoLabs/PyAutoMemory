@@ -294,6 +294,21 @@ status: drafted
 **Do not use for:**
 - The targeted high-velocity-dispersion visual search.
 
+## Vincken 2026 — Euclid DR1 lens-finding network comparison
+
+**Canonical BibTeX key:** `Vincken2026`
+**Reference:** TODO — in preparation, not yet on arXiv. Refresh with the verified title, arXiv ID and DOI once the paper is public.
+**Concepts:** [[euclid-q1]], [[lens-finding]], [[deep-learning-lensing]]
+
+**Supports:**
+- Placeholder only — a citable canonical key for the Euclid DR1 strong lens finding network comparison. No claim has been verified against a public record.
+
+**Use when:**
+- You need a stable key to cite the DR1 network-comparison paper before it is public. Nothing more.
+
+**Do not use for:**
+- Any quantitative result, method detail or interpretation. The paper is an unpublished Euclid Consortium draft; replace this entry with verified claims once it is on arXiv.
+
 ## See also
 
 - [[lens-finding]]
