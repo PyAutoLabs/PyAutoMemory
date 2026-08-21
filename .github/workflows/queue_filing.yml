@@ -156,7 +156,10 @@ jobs:
             echo "::error::Claude produced no changes"; exit 1
           fi
           git commit -m "queue: file paper from #${ISSUE}"
-          git push -u origin "$branch"
+          # claude-code-action rewires the checkout git credentials for its
+          # own short-lived OIDC token (the first live run died here with
+          # 'Invalid username or token') — push with the job token explicitly.
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${GH_REPO}.git" "HEAD:refs/heads/${branch}"
           {
             echo "Files the paper requested in #${ISSUE} (label: $(cat /tmp/issue_label.txt))."
             echo
