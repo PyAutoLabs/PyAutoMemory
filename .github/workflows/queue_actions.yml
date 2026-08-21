@@ -1,0 +1,87 @@
+name: Queue actions
+
+# The dashboard's per-paper ✅ button opens a prefilled `queue-read` issue;
+# this workflow marks that paper's reading-queue.md line
+# `DONE <date> — <title>` (never deleted — the reading history), pushes the
+# commit, re-renders the dashboard, and closes the issue. 📥 `queue-intake`
+# and 📑 `queue-cite` issues are NOT handled here — they stay open as filing
+# work items (full wiki filing / bib-entry-plus-minimal-section).
+#
+# Only owner/member/collaborator-authored issues act: this is a public repo,
+# and a stranger's issue must never mutate the queue (they cannot apply the
+# label either, but the gate does not rely on that).
+
+on:
+  issues:
+    types: [opened]
+
+# contents: write → the queue commit; issues: write → comment + close;
+# actions: write → re-dispatch the Dashboard workflow (token pushes do not
+# retrigger `on: push` workflows).
+permissions:
+  contents: write
+  issues: write
+  actions: write
+
+concurrency:
+  group: queue-actions
+  cancel-in-progress: false
+
+jobs:
+  mark-read:
+    if: >-
+      contains(github.event.issue.labels.*.name, 'queue-read') &&
+      contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'),
+               github.event.issue.author_association)
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ISSUE: ${{ github.event.issue.number }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Mark the queue line DONE
+        id: mark
+        env:
+          # env, never inline interpolation — the body is untrusted text.
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          printf '%s' "$ISSUE_BODY" > /tmp/issue_body.txt
+          status=$(python scripts/queue_mark_done.py \
+            --queue reading-queue.md --body-file /tmp/issue_body.txt) || true
+          echo "status=${status}" >> "$GITHUB_OUTPUT"
+          echo "queue_mark_done: ${status}"
+
+      - name: Commit + push (explicit path only)
+        if: steps.mark.outputs.status == 'marked'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reading-queue.md
+          git commit -m "queue: mark paper read (#${ISSUE}) [skip ci]"
+          for attempt in 1 2 3; do
+            if git push; then exit 0; fi
+            git pull --rebase origin main || exit 1
+          done
+          echo "::error::could not push the queue commit after 3 attempts"
+          exit 1
+
+      - name: Refresh the dashboard
+        if: steps.mark.outputs.status == 'marked'
+        run: gh workflow run knowledge_board.yml --ref main
+
+      - name: Close or report on the issue
+        env:
+          STATUS: ${{ steps.mark.outputs.status }}
+        run: |
+          case "$STATUS" in
+            marked)
+              gh issue close "$ISSUE" --comment \
+                "Marked read in reading-queue.md — the line stays, DONE-prefixed (the reading history). Dashboard refresh dispatched." ;;
+            already-done)
+              gh issue close "$ISSUE" --comment \
+                "Already marked read in reading-queue.md — nothing to change." ;;
+            *)
+              gh issue comment "$ISSUE" --body \
+                "Could not process this queue action (status: ${STATUS:-error}) — the paper's line was not found in its section of reading-queue.md. Handle manually; leaving the issue open." ;;
+          esac

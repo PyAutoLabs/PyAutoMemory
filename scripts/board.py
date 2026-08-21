@@ -6,7 +6,14 @@ how mature each sub-wiki is — each work queue carrying a one-tap 📋 copy
 block holding a paste-ready Claude Code prompt that executes this repo's own
 documented workflow (``bibliography/README.md`` "Adding a paper",
 ``wiki/CLAUDE.md``'s schema) — plus contents cards with ``/memory <domain>``
-recall chips.
+recall chips. Reading-queue sections expand to the individual papers: each
+title links out (arXiv abstract page, or a title search when the line has no
+ref) and carries three prefilled-GitHub-issue actions — 📥 intake-into-memory
+(really interesting: full filing), 📑 make-citeable (worth citing, not
+pivotal: bib entry + minimal sources section), both open work items carrying
+the human's free-text notes, and ✅ read-don't-file (processed automatically
+by ``queue_actions.yml`` via ``queue_mark_done.py``). Nothing changes state
+until the human submits the issue.
 
 **Contents-level only.** The board shows titles and counts, never claim text
 or summaries — the knowledge itself stays in the wiki pages.
@@ -35,6 +42,7 @@ import re
 import subprocess
 import sys
 from pathlib import Path
+from urllib.parse import quote as _quote
 
 MEMORY_HOME = Path(__file__).resolve().parents[1]
 
@@ -48,6 +56,11 @@ RESOLVED_KEY_RE = re.compile(r"\*\*Canonical BibTeX key:\*\* `([^`]+)`")
 # queue is also the reading history.
 QUEUE_SECTION_RE = re.compile(r"^##\s+(.+?)\s*$")
 QUEUE_DONE_RE = re.compile(r"^DONE\b")
+QUEUE_DONE_LINE_RE = re.compile(r"^DONE\s+(\d{4}-\d{2}-\d{2})\s*—\s*(.*)$")
+# A paper line may end ` — <arXiv id or URL>`; anything else after an em dash
+# is part of the title.
+QUEUE_REF_RE = re.compile(
+    r"^(.*\S)\s+—\s+((?:arXiv:)?\d{4}\.\d{4,5}(?:v\d+)?|https?://\S+)$")
 
 
 def _owner_repo() -> tuple[str, str]:
@@ -113,21 +126,22 @@ def collect(root: Path | None = None) -> dict:
 
     queue = root / "reading-queue.md"
     if queue.exists():
-        section, count, done = None, 0, 0
+        section, papers = None, []
         def _flush():
             if section is not None:
-                snapshot["queue"].append({"section": section, "count": count,
-                                          "done": done})
+                snapshot["queue"].append({
+                    "section": section,
+                    "count": sum(1 for p in papers if not p["done"]),
+                    "done": sum(1 for p in papers if p["done"]),
+                    "papers": papers,
+                })
         for line in queue.read_text(errors="replace").splitlines():
             m = QUEUE_SECTION_RE.match(line)
             if m and not m.group(1).startswith("#"):
                 _flush()
-                section, count, done = m.group(1), 0, 0
+                section, papers = m.group(1), []
             elif section is not None and line.strip():
-                if QUEUE_DONE_RE.match(line.strip()):
-                    done += 1
-                else:
-                    count += 1
+                papers.append(_parse_paper(line.strip()))
         _flush()
 
     slugs = [s.split("|")[0].strip() for s in all_slugs]
@@ -141,6 +155,91 @@ def collect(root: Path | None = None) -> dict:
 
 
 # --- pure helpers --------------------------------------------------------------
+def _parse_paper(text: str) -> dict:
+    """One queue line → {title, ref, done, done_date, line} (line = as written)."""
+    raw, done_date = text, None
+    m = QUEUE_DONE_LINE_RE.match(text)
+    if m:
+        done_date, text = m.group(1), m.group(2)
+    elif QUEUE_DONE_RE.match(text):
+        done_date, text = "", text[4:].lstrip(" —-")
+    ref = None
+    m = QUEUE_REF_RE.match(text)
+    if m:
+        text, ref = m.group(1), m.group(2)
+    return {"title": text, "ref": ref, "done": done_date is not None,
+            "done_date": done_date or None, "line": raw}
+
+
+def paper_url(paper: dict) -> str:
+    """Where to read the paper: its abstract page, or an arXiv title search."""
+    ref = paper.get("ref")
+    if ref:
+        if ref.startswith("http"):
+            return ref
+        return "https://arxiv.org/abs/" + ref.removeprefix("arXiv:")
+    return ("https://arxiv.org/search/?searchtype=title&query="
+            + _quote(paper.get("title", ""), safe=""))
+
+
+def _queue_issue_url(snapshot: dict, section: str, paper: dict,
+                     action: str) -> str:
+    """A prefilled new-issue URL for a per-paper action.
+
+    Three tiers — 'intake' (really interesting: full wiki filing), 'cite'
+    (worth citing, not pivotal: bib entry + a minimal sources section), and
+    'read' (done with it: DONE-mark only, processed automatically by
+    queue_actions.yml). Nothing changes state until the human submits the
+    issue on GitHub; intake/cite issues stay open as the filing work item,
+    and their `notes:` field is free text the human edits before submitting.
+    Empty when the checkout has no remote (spawned templates).
+    """
+    repo_url = _repo_url(snapshot)
+    if not repo_url:
+        return ""
+    where = f"section: {section}\nline: {paper['line']}"
+    notes = ("notes: (optional — replace this with why you added it or "
+             "what was noteworthy, in your own words; whoever files the "
+             "paper folds it in)")
+    if action == "read":
+        issue_title = f"queue read: {paper['title']}"[:200]
+        label = "queue-read"
+        body = ("Mark this reading-queue paper as read without filing it "
+                "(the line stays, DONE-prefixed — the reading history).\n\n"
+                f"{where}\n\n"
+                "Processed automatically by queue_actions.yml.")
+    elif action == "cite":
+        issue_title = f"queue cite: {paper['title']}"[:200]
+        label = "queue-cite"
+        body = ("Make this reading-queue paper citeable — read, worth "
+                "citing, but not pivotal enough for full wiki treatment.\n\n"
+                f"{where}\n\n"
+                f"{notes}\n\n"
+                "Workflow (bibliography/README.md \"Adding a paper\", "
+                "wiki/CLAUDE.md): verify the paper against an authoritative "
+                "record, add its canonical entry to the bibliography/ BibTeX "
+                "file, add a minimal section to the matching "
+                "wiki/<domain>/sources/ page — canonical key plus the notes "
+                "above, nothing deeper — mark its queue line "
+                "'DONE <date> — <title>' in reading-queue.md, and run "
+                "make validate.")
+    else:
+        issue_title = f"queue intake: {paper['title']}"[:200]
+        label = "queue-intake"
+        body = ("File this reading-queue paper into memory.\n\n"
+                f"{where}\n\n"
+                f"{notes}\n\n"
+                "Workflow (bibliography/README.md \"Adding a paper\", "
+                "wiki/CLAUDE.md): verify the paper against an authoritative "
+                "record, add its canonical entry to the bibliography/ BibTeX "
+                "file, stub it in the matching wiki/<domain>/sources/ page — "
+                "incorporating the notes above — mark its queue line "
+                "'DONE <date> — <title>' in reading-queue.md, and run "
+                "make validate.")
+    return (f"{repo_url}/issues/new?title={_quote(issue_title, safe='')}"
+            f"&body={_quote(body, safe='')}&labels={_quote(label, safe='')}")
+
+
 def _totals(snapshot: dict) -> dict:
     wikis = snapshot.get("wikis") or []
     statuses: dict[str, int] = {}
@@ -216,7 +315,20 @@ def _render_md(snapshot: dict) -> str:
     lines += ["", "## Reading queue", ""]
     for q in snapshot.get("queue") or []:
         done = f", {q['done']} read" if q.get("done") else ""
-        lines.append(f"- {q['section']}: {q['count']} waiting{done}")
+        lines += [f"<details><summary>{q['section']}: {q['count']} "
+                  f"waiting{done}</summary>", ""]
+        for p in q.get("papers") or []:
+            if p["done"]:
+                continue
+            label = p["title"].replace("[", "\\[").replace("]", "\\]")
+            bits = [f"- [{label}]({paper_url(p)})"]
+            for action, chip in (("intake", "intake 📥"), ("cite", "cite 📑"),
+                                 ("read", "read ✅")):
+                u = _queue_issue_url(snapshot, q["section"], p, action)
+                if u:
+                    bits.append(f"[{chip}]({u})")
+            lines.append(" · ".join(bits))
+        lines += ["", "</details>"]
     if not snapshot.get("queue"):
         lines.append("- _(queue empty or unavailable)_")
     url = pages_url(snapshot)
@@ -241,7 +353,7 @@ def _copy_btn(payload: str, label: str = "copy") -> str:
     return (f"<button class='copy' type='button' "
             f"title='{_html.escape(label, quote=True)}' "
             f"data-copy=\"{_html.escape(payload, quote=True)}\" "
-            f"onclick='cp(this)'>📋</button>")
+            f"onclick='cp(this,event)'>📋</button>")
 
 
 def _bar(statuses: dict) -> str:
@@ -259,17 +371,45 @@ def _render_html(snapshot: dict) -> str:
     pct = round(100 * t["resolved"] / t["sections"]) if t["sections"] else 0
     repo_url = _repo_url(snapshot)
 
-    queue_rows = []
+    queue_blocks = []
     for q in snapshot.get("queue") or []:
-        done = (f" <span class='meta'>· {q['done']} read</span>"
-                if q.get("done") else "")
-        queue_rows.append(
-            f"<tr><td class='name'>{_html.escape(q['section'])}</td>"
-            f"<td>{q['count']} waiting{done} "
+        done = (f" · {q['done']} read" if q.get("done") else "")
+        items = []
+        hist_items = []
+        for p in q.get("papers") or []:
+            if p["done"]:
+                hist_items.append(
+                    f"<li class='done'>DONE {_html.escape(p.get('done_date') or '?')}"
+                    f" — {_html.escape(p['title'])}</li>")
+                continue
+            acts = []
+            for action, icon, hint in (
+                    ("intake", "📥", "intake into memory: really interesting — "
+                                     "opens a prefilled issue (add your notes) "
+                                     "that becomes the full filing work item"),
+                    ("cite", "📑", "make citeable: worth citing, not pivotal — "
+                                   "opens a prefilled issue (add your notes) "
+                                   "for a bib entry + minimal sources section"),
+                    ("read", "✅", "read — don't file: opens a prefilled issue; "
+                                   "submitting marks this line DONE")):
+                u = _queue_issue_url(snapshot, q["section"], p, action)
+                if u:
+                    acts.append(f"<a class='act' href=\"{_html.escape(u, quote=True)}\" "
+                                f"title='{_html.escape(hint, quote=True)}'>{icon}</a>")
+            items.append(
+                f"<li><a href=\"{_html.escape(paper_url(p), quote=True)}\">"
+                f"{_html.escape(p['title'])}</a>{''.join(acts)}</li>")
+        hist = (f"<details class='hist'><summary class='meta'>reading history "
+                f"({len(hist_items)})</summary><ul class='papers'>"
+                f"{''.join(hist_items)}</ul></details>" if hist_items else "")
+        queue_blocks.append(
+            f"<details class='qsec'><summary><span class='name'>"
+            f"{_html.escape(q['section'])}</span> <span class='meta'>"
+            f"{q['count']} waiting{done}</span> "
             f"{_copy_btn(_read_prompt(snapshot, q['section']), 'copy: file the next paper')}"
-            f"</td></tr>")
-    if not queue_rows:
-        queue_rows.append("<tr><td colspan='2'>queue empty or unavailable</td></tr>")
+            f"</summary><ul class='papers'>{''.join(items)}</ul>{hist}</details>")
+    if not queue_blocks:
+        queue_blocks.append("<p class='meta'>queue empty or unavailable</p>")
 
     todo_rows = []
     for w in snapshot.get("wikis") or []:
@@ -328,10 +468,25 @@ def _render_html(snapshot: dict) -> str:
                 color: #c9d1d9; cursor: pointer; padding: .05rem .45rem;
                 margin-left: .35rem; font-size: .85rem; line-height: 1.4; }}
   button.copy:hover {{ background: #30363d; }}
+  details.qsec {{ border-top: 1px solid #21262d; padding: .5rem .25rem; }}
+  details.qsec > summary {{ cursor: pointer; list-style: none; }}
+  details.qsec > summary::-webkit-details-marker {{ display: none; }}
+  details.qsec > summary .name::before {{ content: "▸ "; color: #8b949e; }}
+  details.qsec[open] > summary .name::before {{ content: "▾ "; }}
+  .name {{ font-weight: 600; }}
+  ul.papers {{ margin: .5rem 0 .25rem; padding-left: 1.3rem; }}
+  ul.papers li {{ margin: .4rem 0; }}
+  ul.papers li.done {{ color: #8b949e; }}
+  a.act {{ margin-left: .35rem; padding: .05rem .35rem; font-size: .85rem;
+          border: 1px solid #30363d; border-radius: 6px; background: #21262d; }}
+  a.act:hover {{ background: #30363d; text-decoration: none; }}
+  details.hist {{ margin: .25rem 0 .25rem 1.3rem; }}
+  details.hist > summary {{ cursor: pointer; }}
   footer {{ margin-top: 2rem; color: #8b949e; font-size: .8rem; }}
 </style>
 <script>
-function cp(b){{var t=b.getAttribute('data-copy');
+function cp(b,e){{if(e){{e.preventDefault();e.stopPropagation();}}
+ var t=b.getAttribute('data-copy');
  if(navigator.clipboard&&navigator.clipboard.writeText){{
    navigator.clipboard.writeText(t).then(function(){{ok(b)}},function(){{fb(t)}});
  }}else{{fb(t)}}}}
@@ -343,9 +498,12 @@ function fb(t){{window.prompt('Copy this:',t)}}
   <p><span class="pill">{t['pages']} pages · {pct}% cited</span> <span class="meta"><a href="dashboard.md">markdown version</a></span></p>
   <p class="meta">Contents and work queues for the organism's long-term memory
   — titles and counts only; the knowledge itself lives in the wiki pages.
-  📋 copies a paste-ready prompt for a Claude Code chat.</p>
+  📋 copies a paste-ready prompt for a Claude Code chat; on a paper, the
+  buttons open a prefilled GitHub issue — edit in your notes, submit to act:
+  📥 intake into memory (really interesting), 📑 make citeable (worth citing,
+  not pivotal), ✅ read — don't file (marked DONE automatically).</p>
   <h2>Reading queue <span class='meta'>({t['queued']} papers waiting)</span></h2>
-  <table>{''.join(queue_rows)}</table>
+  {''.join(queue_blocks)}
   <h2>Citation work queue <span class='meta'>({t['todo']} sections need a canonical key)</span></h2>
   <table>{''.join(todo_rows)}</table>
   <h2>Sub-wikis <span class='meta'>({snapshot.get('bib_entries', 0)} bibliography entries ·
