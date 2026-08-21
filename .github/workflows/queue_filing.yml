@@ -169,11 +169,17 @@ jobs:
             echo
             echo "Closes #${ISSUE}."
           } > /tmp/pr_body.md
-          gh pr create --base main --head "$branch" \
-            --title "queue filing: paper from #${ISSUE}" \
-            --body-file /tmp/pr_body.md
-          gh issue comment "$ISSUE" --body \
-            "Filing PR opened: $(gh pr view "$branch" --json url --jq .url). Review and merge to complete the intake."
+          if gh pr create --base main --head "$branch" \
+              --title "queue filing: paper from #${ISSUE}" \
+              --body-file /tmp/pr_body.md; then
+            gh issue comment "$ISSUE" --body \
+              "Filing PR opened: $(gh pr view "$branch" --json url --jq .url). Review and merge to complete the intake."
+          else
+            # Repo/org policy can forbid Actions-created PRs. The branch is
+            # pushed and gated — degrade to a one-tap PR link, not a failure.
+            gh issue comment "$ISSUE" --body \
+              "Filing branch pushed and gated: \`${branch}\` — but this repo's policy blocks Actions from opening PRs. Open it with one tap: ${GITHUB_SERVER_URL}/${GH_REPO}/compare/main...${branch}?expand=1 — or enable 'Allow GitHub Actions to create and approve pull requests' (Settings → Actions → General) to make this automatic."
+          fi
 
       - name: Report failure on the issue
         if: failure()
