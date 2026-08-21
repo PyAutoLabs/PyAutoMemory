@@ -130,6 +130,24 @@ def test_md_lists_papers(tmp_path):
     assert "labels=queue-cite" in md
 
 
+def test_read_trend_from_done_history(tmp_path):
+    snap = board.collect(_tree(tmp_path))
+    # fixture DONE date is 2026-06-01; pin "now" via the generated stamp
+    snap["generated"] = "2026-06-10T00:00:00+00:00"
+    trend = board._read_trend(snap)
+    assert trend == {"d7": 0, "d30": 1,
+                     "weeks": [0, 0, 0, 0, 0, 0, 1, 0]}  # age 9d → bucket 6
+    html = board.render(snap, "html")
+    assert "0 read last 7d · 1 last 30d" in html
+    assert "class='spark'" in html
+    assert "1 in the last 30." in board.render(snap, "md")
+
+
+def test_filter_box_markup(tmp_path):
+    html = board.render(board.collect(_tree(tmp_path)), "html")
+    assert "id='pfilter'" in html and "function flt(" in html
+
+
 def test_md_brief_is_one_line(tmp_path):
     out = board.render(board.collect(_tree(tmp_path)), "md-brief")
     assert "\n" not in out and "pages" in out

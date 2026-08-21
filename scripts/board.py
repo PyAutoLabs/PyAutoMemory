@@ -240,6 +240,34 @@ def _queue_issue_url(snapshot: dict, section: str, paper: dict,
             f"&body={_quote(body, safe='')}&labels={_quote(label, safe='')}")
 
 
+def _read_trend(snapshot: dict) -> dict:
+    """Read counts from the DONE history, relative to the snapshot's
+    `generated` timestamp (pure — no wall clock): papers read in the last
+    7/30 days plus eight weekly buckets, oldest first."""
+    trend = {"d7": 0, "d30": 0, "weeks": [0] * 8}
+    try:
+        now = datetime.date.fromisoformat(str(snapshot.get("generated"))[:10])
+    except ValueError:
+        return trend
+    for q in snapshot.get("queue") or []:
+        for p in q.get("papers") or []:
+            if not p.get("done_date"):
+                continue
+            try:
+                age = (now - datetime.date.fromisoformat(p["done_date"])).days
+            except ValueError:
+                continue
+            if age < 0:
+                continue
+            if age < 7:
+                trend["d7"] += 1
+            if age < 30:
+                trend["d30"] += 1
+            if age < 56:
+                trend["weeks"][7 - age // 7] += 1
+    return trend
+
+
 def _totals(snapshot: dict) -> dict:
     wikis = snapshot.get("wikis") or []
     statuses: dict[str, int] = {}
@@ -313,6 +341,10 @@ def _render_md(snapshot: dict) -> str:
                      f"{s.get('drafted', 0)} | {s.get('reviewed', 0)} | "
                      f"{w.get('todo', 0)} |")
     lines += ["", "## Reading queue", ""]
+    trend = _read_trend(snapshot)
+    if sum(q.get("done", 0) for q in snapshot.get("queue") or []):
+        lines += [f"_{trend['d7']} read in the last 7 days · "
+                  f"{trend['d30']} in the last 30._", ""]
     for q in snapshot.get("queue") or []:
         done = f", {q['done']} read" if q.get("done") else ""
         lines += [f"<details><summary>{q['section']}: {q['count']} "
@@ -411,6 +443,26 @@ def _render_html(snapshot: dict) -> str:
     if not queue_blocks:
         queue_blocks.append("<p class='meta'>queue empty or unavailable</p>")
 
+    trend = _read_trend(snapshot)
+    total_done = sum(q.get("done", 0) for q in snapshot.get("queue") or [])
+    trend_bits = f"{t['queued']} papers waiting"
+    spark = ""
+    if total_done:
+        trend_bits += (f" · {trend['d7']} read last 7d · "
+                       f"{trend['d30']} last 30d")
+        if sum(trend["weeks"]):
+            mx = max(trend["weeks"])
+            bars = "".join(
+                f"<span class='sb' style='height:{max(2, round(12 * w / mx))}px'"
+                f" title='{w}'></span>" for w in trend["weeks"])
+            spark = (f" <span class='spark' title='papers read per week, "
+                     f"last 8 weeks'>{bars}</span>")
+    filter_box = ""
+    if t["queued"]:
+        filter_box = (f"<input id='pfilter' type='search' "
+                      f"placeholder='filter {t['queued']} papers…' "
+                      f"oninput='flt(this.value)'>")
+
     todo_rows = []
     for w in snapshot.get("wikis") or []:
         if not w.get("todo"):
@@ -482,6 +534,13 @@ def _render_html(snapshot: dict) -> str:
   a.act:hover {{ background: #30363d; text-decoration: none; }}
   details.hist {{ margin: .25rem 0 .25rem 1.3rem; }}
   details.hist > summary {{ cursor: pointer; }}
+  #pfilter {{ width: 100%; padding: .45rem .6rem; margin: .25rem 0 .5rem;
+             background: #0d1117; color: #c9d1d9; border: 1px solid #30363d;
+             border-radius: 6px; font: inherit; }}
+  .spark {{ display: inline-flex; align-items: flex-end; gap: 2px; height: 12px;
+           margin-left: .45rem; }}
+  .spark .sb {{ width: 5px; background: #8957e5; border-radius: 1px;
+               display: inline-block; }}
   footer {{ margin-top: 2rem; color: #8b949e; font-size: .8rem; }}
 </style>
 <script>
@@ -492,13 +551,26 @@ function cp(b,e){{if(e){{e.preventDefault();e.stopPropagation();}}
  }}else{{fb(t)}}}}
 function ok(b){{b.textContent='✓';setTimeout(function(){{b.textContent='📋'}},1200)}}
 function fb(t){{window.prompt('Copy this:',t)}}
+function flt(q){{q=q.toLowerCase();
+ var secs=document.querySelectorAll('details.qsec');
+ for(var i=0;i<secs.length;i++){{var d=secs[i],any=false,histHit=false;
+  var lis=d.querySelectorAll('ul.papers li');
+  for(var j=0;j<lis.length;j++){{var li=lis[j];
+   var hit=!q||li.textContent.toLowerCase().indexOf(q)>=0;
+   li.style.display=hit?'':'none';
+   if(hit){{any=true;if(li.className==='done')histHit=true;}}}}
+  if(q){{d.style.display=any?'':'none';d.open=any;}}
+  else{{d.style.display='';d.open=false;}}
+  var h=d.querySelector('details.hist');
+  if(h){{h.style.display=(q&&!histHit)?'none':'';h.open=!!q&&histHit;}}}}}}
 </script></head>
 <body><div class="wrap">
   <h1>PyAutoMemory Dashboard</h1>
   <p><span class="pill">{t['pages']} pages · {pct}% cited</span> <span class="meta"><a href="dashboard.md">markdown version</a></span></p>
   <p class="meta">On a paper: 📥 intake · 📑 cite · ✅ mark read — each opens a
   prefilled issue (add notes, submit to act). 📋 copies a Claude Code prompt.</p>
-  <h2>Reading queue <span class='meta'>({t['queued']} papers waiting)</span></h2>
+  <h2>Reading queue <span class='meta'>({trend_bits})</span>{spark}</h2>
+  {filter_box}
   {''.join(queue_blocks)}
   <h2>Citation work queue <span class='meta'>({t['todo']} sections need a canonical key)</span></h2>
   <table>{''.join(todo_rows)}</table>
