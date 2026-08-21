@@ -496,12 +496,8 @@ function fb(t){{window.prompt('Copy this:',t)}}
 <body><div class="wrap">
   <h1>PyAutoMemory Dashboard</h1>
   <p><span class="pill">{t['pages']} pages · {pct}% cited</span> <span class="meta"><a href="dashboard.md">markdown version</a></span></p>
-  <p class="meta">Contents and work queues for the organism's long-term memory
-  — titles and counts only; the knowledge itself lives in the wiki pages.
-  📋 copies a paste-ready prompt for a Claude Code chat; on a paper, the
-  buttons open a prefilled GitHub issue — edit in your notes, submit to act:
-  📥 intake into memory (really interesting), 📑 make citeable (worth citing,
-  not pivotal), ✅ read — don't file (marked DONE automatically).</p>
+  <p class="meta">On a paper: 📥 intake · 📑 cite · ✅ mark read — each opens a
+  prefilled issue (add notes, submit to act). 📋 copies a Claude Code prompt.</p>
   <h2>Reading queue <span class='meta'>({t['queued']} papers waiting)</span></h2>
   {''.join(queue_blocks)}
   <h2>Citation work queue <span class='meta'>({t['todo']} sections need a canonical key)</span></h2>
