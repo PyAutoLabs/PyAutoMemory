@@ -1,0 +1,170 @@
+name: Queue filing
+
+# The dashboard's 📥 `queue-intake` / 📑 `queue-cite` buttons open prefilled
+# issues; this workflow has Claude file the named paper — bibliography entry,
+# wiki sources section (minimal for cite, full stub for intake, the human's
+# notes folded in), DONE-mark on the queue line — and opens a reviewable PR
+# that closes the issue. Merge stays human.
+#
+# Trigger is `labeled` only: GitHub fires it both for labels applied at
+# creation (the dashboard path) and for labels added later, and using it alone
+# avoids the double-run an `opened`+`labeled` pair would cause. Only
+# owner/member/collaborator-authored issues act (public repo — same gate as
+# queue_actions.yml), and only triage+ users can apply labels at all.
+#
+# The PR is created with the runner's GITHUB_TOKEN, so `pull_request`
+# workflows (validate.yml) do NOT run on it — `make validate` + pytest run
+# here as the gate instead, before anything is pushed.
+#
+# Claude runs with tools scoped to workspace edits plus arXiv lookups; the
+# deterministic steps below stage explicit paths only — never `git add -A`.
+
+on:
+  issues:
+    types: [labeled]
+
+# contents: write → push the filing branch; pull-requests/issues: write → the
+# PR + failure comment; id-token: write → claude-code-action's OIDC startup
+# (same requirement as PyAutoMind's arxiv_papers.yml).
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write
+
+concurrency:
+  group: queue-filing-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  file-paper:
+    if: >-
+      contains(fromJSON('["queue-intake", "queue-cite"]'),
+               github.event.label.name) &&
+      contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'),
+               github.event.issue.author_association)
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      # gh needs explicit repo context in the pre-checkout secret-guard step.
+      GH_REPO: ${{ github.repository }}
+      ISSUE: ${{ github.event.issue.number }}
+    steps:
+      - name: Require the Claude OAuth token
+        env:
+          TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::error::CLAUDE_CODE_OAUTH_TOKEN is not set on this repo — add it under Settings → Secrets and variables → Actions to enable queue filing."
+            gh issue comment "$ISSUE" --body \
+              "Queue filing is not enabled yet: the CLAUDE_CODE_OAUTH_TOKEN secret is missing on this repo (Settings → Secrets and variables → Actions). File this paper from a Claude Code session instead, or add the secret and re-apply the label."
+            exit 1
+          fi
+
+      - uses: actions/checkout@v4
+
+      - name: Stash the request for Claude
+        env:
+          # env, never inline interpolation — issue text is untrusted input.
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          LABEL: ${{ github.event.label.name }}
+        run: |
+          printf '%s' "$ISSUE_BODY" > /tmp/issue_body.txt
+          printf '%s' "$LABEL" > /tmp/issue_label.txt
+
+      - name: File the paper with Claude
+        uses: anthropics/claude-code-action@v1
+        with:
+          # Claude subscription OAuth token — NOT an API key (the org pattern
+          # from PyAutoMind arxiv_papers.yml / morning_status.yml).
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # Default-hidden output masks real failures — surface everything.
+          show_full_output: true
+          # Workspace edits + the repo's own gates + arXiv metadata lookups.
+          # No git/gh: the deterministic steps below own branch/commit/PR.
+          claude_args: '--allowedTools "Read,Glob,Grep,Edit,Write,Bash(make:*),Bash(python:*),Bash(python3:*),WebFetch(domain:arxiv.org),WebFetch(domain:export.arxiv.org)"'
+          prompt: |
+            You are filing one paper into this PyAutoMemory checkout.
+
+            Read /tmp/issue_body.txt (a dashboard queue request). Extract:
+            - `section:` — the reading-queue section header,
+            - `line:` — the exact reading-queue.md line (title, possibly
+              with a trailing ` — <arXiv id or URL>` ref),
+            - `notes:` — the human's free-text notes; treat as absent if it
+              still holds the "(optional — replace this…)" placeholder.
+            Read /tmp/issue_label.txt: `queue-intake` (full filing) or
+            `queue-cite` (minimal, citeable-only).
+
+            Follow this repo's documented workflow — bibliography/README.md
+            "Adding a paper" and wiki/CLAUDE.md's schema:
+
+            1. Identify the paper. Use the arXiv ref if the line has one;
+               otherwise search arXiv by title (WebFetch against arxiv.org /
+               export.arxiv.org only). Get authoritative metadata: authors,
+               year, arXiv id, journal if published.
+            2. Add the canonical BibTeX entry to the bibliography (the single
+               canonical .bib file per bibliography/README.md). Follow the
+               README's key convention exactly.
+            3. Wiki sources page: pick the sub-wiki whose domain matches the
+               section (e.g. "Strong Lensing" → wiki/lensing/); check the
+               sub-wiki index if unsure. In the matching sources/*.md page:
+               - queue-cite → add a MINIMAL section: heading, the
+                 `**Canonical BibTeX key:**` marker with the new key, and the
+                 human's notes (lightly cleaned up) — nothing deeper.
+               - queue-intake → add a full stub section per wiki/CLAUDE.md,
+                 folding the notes into the summary.
+            4. reading-queue.md: prefix the exact `line:` inside its
+               `## section` with `DONE <today's date> — ` (never delete it).
+            5. Run `make validate` and `python -m pytest tests/ -q`; fix your
+               own filing mistakes until both are green.
+
+            Touch ONLY bibliography/, wiki/, and reading-queue.md. Do not
+            commit — the workflow handles git. If the paper cannot be
+            identified confidently, write the reason to /tmp/filing_error.txt
+            and stop without editing anything.
+
+      - name: Abort cleanly if Claude could not identify the paper
+        run: |
+          if [ -f /tmp/filing_error.txt ]; then
+            gh issue comment "$ISSUE" --body-file /tmp/filing_error.txt
+            echo "::error::filing aborted — reason posted to the issue"
+            exit 1
+          fi
+
+      - name: Gate the filing (validate + tests)
+        run: |
+          make validate
+          python -m pytest tests/ -q
+
+      - name: Branch, commit, push, open the PR (explicit paths only)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          branch="queue-filing/issue-${ISSUE}"
+          git checkout -b "$branch"
+          git add bibliography/ wiki/ reading-queue.md
+          if git diff --cached --quiet; then
+            echo "::error::Claude produced no changes"; exit 1
+          fi
+          git commit -m "queue: file paper from #${ISSUE}"
+          git push -u origin "$branch"
+          {
+            echo "Files the paper requested in #${ISSUE} (label: $(cat /tmp/issue_label.txt))."
+            echo
+            echo "Rendered by claude-code-action from the issue's section/line/notes;"
+            echo "\`make validate\` + \`pytest tests/\` ran green in the filing workflow"
+            echo "(GITHUB_TOKEN-created PRs do not trigger validate.yml)."
+            echo
+            echo "Closes #${ISSUE}."
+          } > /tmp/pr_body.md
+          gh pr create --base main --head "$branch" \
+            --title "queue filing: paper from #${ISSUE}" \
+            --body-file /tmp/pr_body.md
+          gh issue comment "$ISSUE" --body \
+            "Filing PR opened: $(gh pr view "$branch" --json url --jq .url). Review and merge to complete the intake."
+
+      - name: Report failure on the issue
+        if: failure()
+        run: |
+          gh issue comment "$ISSUE" --body \
+            "Queue filing failed — see the workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}. The issue stays open; file manually from a Claude Code session if needed." || true
