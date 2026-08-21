@@ -24,6 +24,16 @@ status: drafted
 **Do not use for:**
 - The IMF of an individual lens galaxy or an IMF constraint independent of external priors.
 
+## Morgan et al. 2026 — SDSS J1339+1310 X-ray continuum size
+
+**Canonical BibTeX key:** `Morgan2026`
+**Reference:** arXiv:2608.17041; accepted ApJ
+
+Microlensing of the lensed quasar SDSS J133907.23+131038.6 gives a
+half-light size for the X-ray continuum emission region consistent with
+the ISCO in Schwarzschild geometry, and smaller than the far-UV
+(193 nm) accretion-disk size measured from the same monitoring.
+
 ## See also
 
 - [[microlensing-imf]]

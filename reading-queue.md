@@ -17,7 +17,7 @@ PyAutoPaper, now PyAutoMemory — became the unified knowledge repo.)
 ---
 
 ## Strong Lensing
-The X-Ray Continuum Emission Region in the Lensed Quasar SDSS J133907.23+131038.6 is Much Smaller than the Accretion Disk
+DONE 2026-08-21 — The X-Ray Continuum Emission Region in the Lensed Quasar SDSS J133907.23+131038.6 is Much Smaller than the Accretion Disk
 Confirmation of the Finch Flatter-Fainter Relation for the Quadruple Images of Lensed Point Sources
 The Koi Pond: A Strongly Lensed Protocluster Core hosting a Diverse Population of DSFGs
 Addressing position anomalies in the Strong Gravitational Lensing System HS~0810+2554 through Dark Matter Subhalos
