@@ -297,6 +297,21 @@ def _repo_url(snapshot: dict) -> str:
     return f"https://github.com/{owner}/{repo}" if owner and repo else ""
 
 
+# The one-tap board family — the cross-board footer nav every board carries,
+# each board skipping its own entry. Owner comes from the snapshot.
+BOARD_FAMILY = (("mind", "PyAutoMind"), ("brain", "PyAutoBrain"),
+                ("heart", "PyAutoHeart"), ("hands", "PyAutoHands"),
+                ("organism", "PyAutoScientist"))
+
+
+def _boards_nav(snapshot: dict) -> str:
+    owner = str(snapshot.get("owner") or "").lower()
+    if not owner:
+        return ""
+    return " · ".join(f'<a href="https://{owner}.github.io/{repo}/">{name}</a>'
+                      for name, repo in BOARD_FAMILY)
+
+
 def _read_prompt(snapshot: dict, section: str) -> str:
     repo = snapshot.get("repo") or "the memory repo"
     return (f"Work through the next paper in the '## {section}' section of "
@@ -579,6 +594,7 @@ function flt(q){{q=q.toLowerCase();
   <table>{''.join(wiki_rows)}</table>
   <footer>Rendered by <code>scripts/board.py</code> from the checkout —
   nothing here is committed; generated {_html.escape(str(snapshot.get('generated') or '?'))}.</footer>
+  <p class="meta">Boards: {_boards_nav(snapshot)}</p>
 </div></body></html>
 """
 
