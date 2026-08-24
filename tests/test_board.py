@@ -90,7 +90,7 @@ def test_contents_level_only_no_body_text_leaks(tmp_path):
 def test_work_queue_prompts_reference_the_documented_workflow(tmp_path):
     snap = board.collect(_tree(tmp_path))
     html = board.render(snap, "html")
-    assert "data-copy=" in html and "cp(this,event)" in html
+    assert "data-cmd=" in html  # the shared copy handler's payload hook
     assert "reading-queue.md" in html          # file-the-next-paper prompt
     assert "make validate" in html             # every prompt ends at the gate
     assert "/memory demo" in html              # the recall chip
@@ -164,7 +164,7 @@ def test_html_is_self_contained(tmp_path):
     assert out.lstrip().startswith("<!doctype html>")
     assert "src=" not in out and "<link" not in out.lower()
     assert "fetch(" not in out and "XMLHttpRequest" not in out
-    stripped = re.sub(r'data-copy="[^"]*"', "", out)
+    stripped = re.sub(r'data-cmd="[^"]*"', "", out)
     for m in re.finditer(r"(?:http|https)://", stripped):
         before = stripped[max(0, m.start() - 30):m.start()]
         assert 'href="' in before or "href='" in before, f"non-href URL at {m.start()}"
@@ -177,3 +177,15 @@ def test_live_repo_statuses_are_schema_valid():
     for w in snap["wikis"]:
         seen |= set(w["statuses"])
     assert seen <= {"stub", "drafted", "reviewed"}, f"schema-invalid statuses: {seen}"
+
+
+def test_html_wears_the_shared_family_theme(tmp_path):
+    # The look is the Brain's `board/_theme.py`, not a stylesheet copied in
+    # here: the page must carry this board's hero (mark, wordmark, tagline)
+    # and its accent, or it has silently fallen out of the family.
+    t = board.theme()
+    html = board.render(board.collect(_tree(tmp_path)), "html")
+    assert t.MARKS[board.BOARD_KEY] in html
+    assert t.ORGANS[board.BOARD_KEY]["tagline"] in html
+    assert t.ORGANS[board.BOARD_KEY]["ink_dark"] in html
+    assert "#58a6ff" not in html  # the old hard-coded GitHub blue

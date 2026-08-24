@@ -38,6 +38,7 @@ from __future__ import annotations
 import datetime
 import html as _html
 import json
+import os
 import re
 import subprocess
 import sys
@@ -45,6 +46,46 @@ from pathlib import Path
 from urllib.parse import quote as _quote
 
 MEMORY_HOME = Path(__file__).resolve().parents[1]
+
+# The family look lives once, in the Brain (``board/_theme.py``): the
+# stylesheet, the hero that redraws this organ's logo as a mark, and the
+# cross-board footer. Imported rather than copied, so the look moves for the
+# whole family at once — knowledge_board.yml checks PyAutoBrain out beside
+# this repo, and a local run finds the sibling checkout the way the other
+# PyAuto tools resolve each other.
+BOARD_KEY = "memory"  # this board's entry in the Brain's palette table
+
+
+def _workspace_root() -> Path:
+    """Where the sibling PyAuto checkouts live: `$PYAUTO_ROOT`, else `~/Code`.
+
+    The org's own directory name is an instance fact, so it is never written
+    here — a workspace that does not follow the default sets `$PYAUTO_ROOT`
+    (the same variable the dev-flow doors read).
+    """
+    return Path(os.environ.get("PYAUTO_ROOT") or Path.home() / "Code")
+
+
+def theme():
+    """The shared theme module, or a RuntimeError naming the fix.
+
+    Only the html path needs it; ``--md``/``--badge``/``--json`` never call
+    here, so the digest keeps working with no PyAutoBrain in reach.
+    """
+    for cand in (os.environ.get("PYAUTO_BRAIN"), MEMORY_HOME / "PyAutoBrain",
+                 MEMORY_HOME.parent / "PyAutoBrain",
+                 _workspace_root() / "PyAutoBrain"):
+        if not cand:
+            continue
+        board = Path(cand) / "board"
+        if (board / "_theme.py").is_file():
+            if str(board) not in sys.path:
+                sys.path.insert(0, str(board))
+            import _theme
+            return _theme
+    raise RuntimeError(
+        "the shared board theme (PyAutoBrain/board/_theme.py) is not in reach "
+        "— check PyAutoBrain out beside this repo or set PYAUTO_BRAIN")
 
 KEY_MARK = "**Canonical BibTeX key:**"
 STATUS_RE = re.compile(r"^status:\s*(\S+)", re.MULTILINE)
@@ -305,11 +346,14 @@ BOARD_FAMILY = (("mind", "PyAutoMind"), ("brain", "PyAutoBrain"),
 
 
 def _boards_nav(snapshot: dict) -> str:
+    """The cross-board footer — one chip per sibling, each in its own organ's
+    colour (the theme owns the chip palette; this board owns the URLs)."""
     owner = str(snapshot.get("owner") or "").lower()
     if not owner:
         return ""
-    return " · ".join(f'<a href="https://{owner}.github.io/{repo}/">{name}</a>'
-                      for name, repo in BOARD_FAMILY)
+    links = {key: f"https://{owner}.github.io/{repo}/"
+             for key, repo in BOARD_FAMILY}
+    return theme().boards_footer(links, BOARD_KEY)
 
 
 def _read_prompt(snapshot: dict, section: str) -> str:
@@ -399,8 +443,7 @@ def _render_md_brief(snapshot: dict) -> str:
 def _copy_btn(payload: str, label: str = "copy") -> str:
     return (f"<button class='copy' type='button' "
             f"title='{_html.escape(label, quote=True)}' "
-            f"data-copy=\"{_html.escape(payload, quote=True)}\" "
-            f"onclick='cp(this,event)'>📋</button>")
+            f"data-cmd=\"{_html.escape(payload, quote=True)}\">📋</button>")
 
 
 def _bar(statuses: dict) -> str:
@@ -413,7 +456,74 @@ def _bar(statuses: dict) -> str:
     return f"<span class='bar'>{seg(reviewed, 'ok')}{seg(drafted, 'mid')}{seg(stub, 'lo')}</span>"
 
 
+# The lede, and the page-specific shapes the shared sheet has no opinion on:
+# the citation bar, the collapsible queue sections, the paper list and its
+# filter, the read-rate sparkline. All written against the theme's variables,
+# so this board follows the family accent instead of setting a second palette.
+_LEDE = ("What the organism knows, and what it still owes a citation. On a "
+         "paper: \U0001f4e5 intake · \U0001f4d1 cite · \u2705 mark read — each opens a "
+         "prefilled issue (add notes, submit to act). \U0001f4cb copies a Claude Code "
+         "prompt.")
+
+_EXTRA_CSS = """
+.bar{display:inline-block;width:90px;height:8px;border-radius:4px;
+ overflow:hidden;background:var(--btn);vertical-align:middle;
+ border:1px solid var(--line)}
+.seg{display:inline-block;height:8px;float:left}
+.seg.ok{background:var(--ok)}
+.seg.mid{background:var(--accent)}
+.seg.lo{background:var(--muted)}
+details.qsec{border-top:1px solid var(--line);padding:.5rem .25rem}
+details.qsec>summary{cursor:pointer;list-style:none}
+details.qsec>summary::-webkit-details-marker{display:none}
+details.qsec>summary .name::before{content:"\u25b8 ";color:var(--accent)}
+details.qsec[open]>summary .name::before{content:"\u25be "}
+.name{font-weight:600}
+ul.papers{margin:.5rem 0 .25rem;padding-left:1.3rem}
+ul.papers li{margin:.4rem 0}
+ul.papers li.done{color:var(--muted)}
+a.act{margin-left:.35rem;padding:.05rem .4rem;font-size:.85rem;
+ border:1px solid var(--line);border-radius:6px;background:var(--btn)}
+a.act:hover{background:var(--tint);border-color:var(--accent);
+ text-decoration:none}
+details.hist{margin:.25rem 0 .25rem 1.3rem}
+details.hist>summary{cursor:pointer}
+#pfilter{width:100%;padding:.45rem .6rem;margin:.25rem 0 .5rem;
+ background:var(--btn);color:var(--fg);border:1px solid var(--line);
+ border-radius:8px;font:inherit}
+#pfilter:focus{outline:none;border-color:var(--accent)}
+.spark{display:inline-flex;align-items:flex-end;gap:2px;height:12px;
+ margin-left:.45rem}
+.spark .sb{width:5px;background:var(--accent);border-radius:1px;
+ display:inline-block}
+table.recent td.name{white-space:nowrap}
+footer{margin-top:2rem;color:var(--muted);font-size:.82em}
+"""
+
+# The shared copy handler is delegated, so a chip inside a <summary> would
+# also toggle its section. Swallow that one default; the filter is this
+# board's own behaviour and stays here.
+_EXTRA_JS = """
+document.addEventListener("click",function(e){
+  var b=e.target.closest("button.copy");
+  if(b&&b.closest("summary")){e.preventDefault();}},true);
+function flt(q){q=q.toLowerCase();
+ var secs=document.querySelectorAll('details.qsec');
+ for(var i=0;i<secs.length;i++){var d=secs[i],any=false,histHit=false;
+  var lis=d.querySelectorAll('ul.papers li');
+  for(var j=0;j<lis.length;j++){var li=lis[j];
+   var hit=!q||li.textContent.toLowerCase().indexOf(q)>=0;
+   li.style.display=hit?'':'none';
+   if(hit){any=true;if(li.className==='done')histHit=true;}}
+  if(q){d.style.display=any?'':'none';d.open=any;}
+  else{d.style.display='';d.open=false;}
+  var h=d.querySelector('details.hist');
+  if(h){h.style.display=(q&&!histHit)?'none':'';h.open=!!q&&histHit;}}}
+"""
+
+
 def _render_html(snapshot: dict) -> str:
+    t_ = theme()
     t = _totals(snapshot)
     pct = round(100 * t["resolved"] / t["sections"]) if t["sections"] else 0
     repo_url = _repo_url(snapshot)
@@ -505,97 +615,34 @@ def _render_html(snapshot: dict) -> str:
             f"{_copy_btn('/memory ' + w['name'], 'copy: recall this domain')}"
             f"</td></tr>")
 
+    hero = t_.hero(BOARD_KEY, "Dashboard", _LEDE)
+    stats = t_.stats((t["pages"], "Pages"), (f"{pct}%", "Cited"),
+                     (t["todo"], "To cite"), (t["queued"], "Queued"))
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PyAutoMemory — {t['pages']} pages</title>
-<style>
-  :root {{ color-scheme: light dark; }}
-  * {{ box-sizing: border-box; }}
-  body {{ font: 15px/1.5 -apple-system, Segoe UI, Roboto, sans-serif;
-         margin: 0; padding: 2rem 1rem; background: #0d1117; color: #c9d1d9; }}
-  .wrap {{ max-width: 760px; margin: 0 auto; }}
-  h1 {{ font-size: 1.3rem; margin: 0 0 .25rem; }}
-  h2 {{ font-size: 1rem; margin: 1.5rem 0 .5rem; }}
-  .pill {{ display: inline-block; padding: .3rem .9rem; border-radius: 999px;
-          font-weight: 700; background: #8957e5; color: #fff; }}
-  .meta {{ color: #8b949e; font-size: .9rem; }}
-  table {{ width: 100%; border-collapse: collapse; }}
-  td {{ padding: .5rem .5rem; border-top: 1px solid #21262d; vertical-align: top; }}
-  td.name {{ font-weight: 600; white-space: nowrap; }}
-  a {{ color: #58a6ff; text-decoration: none; }}
-  a:hover {{ text-decoration: underline; }}
-  .bar {{ display: inline-block; width: 90px; height: 8px; border-radius: 4px;
-         overflow: hidden; background: #21262d; vertical-align: middle; }}
-  .seg {{ display: inline-block; height: 8px; float: left; }}
-  .seg.ok {{ background: #3fb950; }}
-  .seg.mid {{ background: #58a6ff; }}
-  .seg.lo {{ background: #6e7681; }}
-  button.copy {{ background: #21262d; border: 1px solid #30363d; border-radius: 6px;
-                color: #c9d1d9; cursor: pointer; padding: .05rem .45rem;
-                margin-left: .35rem; font-size: .85rem; line-height: 1.4; }}
-  button.copy:hover {{ background: #30363d; }}
-  details.qsec {{ border-top: 1px solid #21262d; padding: .5rem .25rem; }}
-  details.qsec > summary {{ cursor: pointer; list-style: none; }}
-  details.qsec > summary::-webkit-details-marker {{ display: none; }}
-  details.qsec > summary .name::before {{ content: "▸ "; color: #8b949e; }}
-  details.qsec[open] > summary .name::before {{ content: "▾ "; }}
-  .name {{ font-weight: 600; }}
-  ul.papers {{ margin: .5rem 0 .25rem; padding-left: 1.3rem; }}
-  ul.papers li {{ margin: .4rem 0; }}
-  ul.papers li.done {{ color: #8b949e; }}
-  a.act {{ margin-left: .35rem; padding: .05rem .35rem; font-size: .85rem;
-          border: 1px solid #30363d; border-radius: 6px; background: #21262d; }}
-  a.act:hover {{ background: #30363d; text-decoration: none; }}
-  details.hist {{ margin: .25rem 0 .25rem 1.3rem; }}
-  details.hist > summary {{ cursor: pointer; }}
-  #pfilter {{ width: 100%; padding: .45rem .6rem; margin: .25rem 0 .5rem;
-             background: #0d1117; color: #c9d1d9; border: 1px solid #30363d;
-             border-radius: 6px; font: inherit; }}
-  .spark {{ display: inline-flex; align-items: flex-end; gap: 2px; height: 12px;
-           margin-left: .45rem; }}
-  .spark .sb {{ width: 5px; background: #8957e5; border-radius: 1px;
-               display: inline-block; }}
-  footer {{ margin-top: 2rem; color: #8b949e; font-size: .8rem; }}
-</style>
-<script>
-function cp(b,e){{if(e){{e.preventDefault();e.stopPropagation();}}
- var t=b.getAttribute('data-copy');
- if(navigator.clipboard&&navigator.clipboard.writeText){{
-   navigator.clipboard.writeText(t).then(function(){{ok(b)}},function(){{fb(t)}});
- }}else{{fb(t)}}}}
-function ok(b){{b.textContent='✓';setTimeout(function(){{b.textContent='📋'}},1200)}}
-function fb(t){{window.prompt('Copy this:',t)}}
-function flt(q){{q=q.toLowerCase();
- var secs=document.querySelectorAll('details.qsec');
- for(var i=0;i<secs.length;i++){{var d=secs[i],any=false,histHit=false;
-  var lis=d.querySelectorAll('ul.papers li');
-  for(var j=0;j<lis.length;j++){{var li=lis[j];
-   var hit=!q||li.textContent.toLowerCase().indexOf(q)>=0;
-   li.style.display=hit?'':'none';
-   if(hit){{any=true;if(li.className==='done')histHit=true;}}}}
-  if(q){{d.style.display=any?'':'none';d.open=any;}}
-  else{{d.style.display='';d.open=false;}}
-  var h=d.querySelector('details.hist');
-  if(h){{h.style.display=(q&&!histHit)?'none':'';h.open=!!q&&histHit;}}}}}}
-</script></head>
-<body><div class="wrap">
-  <h1>PyAutoMemory Dashboard</h1>
-  <p><span class="pill">{t['pages']} pages · {pct}% cited</span> <span class="meta"><a href="dashboard.md">markdown version</a></span></p>
-  <p class="meta">On a paper: 📥 intake · 📑 cite · ✅ mark read — each opens a
-  prefilled issue (add notes, submit to act). 📋 copies a Claude Code prompt.</p>
-  <h2>Reading queue <span class='meta'>({trend_bits})</span>{spark}</h2>
-  {filter_box}
-  {''.join(queue_blocks)}
-  <h2>Citation work queue <span class='meta'>({t['todo']} sections need a canonical key)</span></h2>
-  <table>{''.join(todo_rows)}</table>
-  <h2>Sub-wikis <span class='meta'>({snapshot.get('bib_entries', 0)} bibliography entries ·
-  {snapshot.get('links', {}).get('wanted', 0)} wanted pages)</span></h2>
-  <table>{''.join(wiki_rows)}</table>
-  <footer>Rendered by <code>scripts/board.py</code> from the checkout —
-  nothing here is committed; generated {_html.escape(str(snapshot.get('generated') or '?'))}.</footer>
-  <p class="meta">Boards: {_boards_nav(snapshot)}</p>
-</div></body></html>
+<title>PyAutoMemory Dashboard</title>
+<style>{t_.css(BOARD_KEY)}{_EXTRA_CSS}</style>
+</head>
+<body>
+{hero}
+{stats}
+<p class="muted mdsrc"><a href="dashboard.md">markdown version</a></p>
+<h2>Reading queue <span class="muted">({trend_bits})</span>{spark}</h2>
+{filter_box}
+{''.join(queue_blocks)}
+<h2>Citation work queue <span class="muted">({t['todo']} sections need a
+ canonical key)</span></h2>
+<table class="recent">{''.join(todo_rows)}</table>
+<h2>Sub-wikis <span class="muted">({snapshot.get('bib_entries', 0)} bibliography
+ entries · {snapshot.get('links', {}).get('wanted', 0)} wanted pages)</span></h2>
+<table class="recent">{''.join(wiki_rows)}</table>
+{_boards_nav(snapshot)}
+<footer>Rendered by <code>scripts/board.py</code> from the checkout —
+nothing here is committed; generated
+{_html.escape(str(snapshot.get('generated') or '?'))}.</footer>
+<script>{t_.JS}{_EXTRA_JS}</script>
+</body></html>
 """
 
 
