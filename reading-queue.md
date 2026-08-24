@@ -64,6 +64,8 @@ HOLISMOKES XVIII: Detecting strongly lensed SNe Ia from time series of multi-ban
 The  collar of early-type galaxies -- probing evolution by focusing on the inner stellar density profile
 High-Dimensional Bayesian Model Comparison in Cosmology with GPU-accelerated Nested Sampling and Neural Emulators
 THE STELLAR AND DARK MATTER DISTRIBUTIONS IN ELLIPTICAL GALAXIES MEASURED BY  STACKED WEAK GRAVITATIONAL LENSING
+Model independent lensing sub-structure detection with multiply-imaged star clusters constellations — 2608.21253
+On what scales does strong lensing robustly constrain the mass profile of low-mass perturbers? — 2608.20454
 
 
 ## SMBHs
