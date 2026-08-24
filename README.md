@@ -44,7 +44,9 @@ Self-contained, shared schema:
 
 [`bibliography/`](bibliography/README.md) holds the canonical BibTeX
 metadata every wiki cites against; [`reading-queue.md`](reading-queue.md)
-is what's waiting to be read and filed. New knowledge updates the metadata
+is what's waiting to be read and filed, and
+[`arxiv-inbox.md`](arxiv-inbox.md) is the overnight suggestions tier in front
+of it. New knowledge updates the metadata
 and the claim support together, then passes `make validate` (CI-enforced on
 every push).
 

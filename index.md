@@ -28,6 +28,15 @@ the schema in [`wiki/CLAUDE.md`](wiki/CLAUDE.md).
 
 ## Reading queue
 
+- [`arxiv-inbox.md`](arxiv-inbox.md) — the tier *in front of* the queue:
+  papers the nightly arXiv digest suggested, one per line as
+  `<YYYY-MM-DD> — <title>[ — <ref>]`, where the date is the arXiv announcement
+  date. The [dashboard](https://pyautolabs.github.io/PyAutoMemory/) renders
+  each with four one-tap actions — ➕ add to the queue, 📥 intake, 📑 cite,
+  ✖️ dismiss — and un-acted lines lapse after seven days
+  (`INBOX_WINDOW_DAYS` in `scripts/inbox_actions.py`). Nothing here has been
+  chosen yet: a suggestion is not reading history, so a lapsed line is dropped
+  rather than DONE-marked, and git history keeps it.
 - [`reading-queue.md`](reading-queue.md) — the paper queue AND the reading
   history: `## ` section headers group papers by domain, one title per line,
   and a read paper is never deleted — its line gains a `DONE <date> — `

@@ -1,11 +1,17 @@
 name: Queue actions
 
-# The dashboard's per-paper ✅ button opens a prefilled `queue-read` issue;
-# this workflow marks that paper's reading-queue.md line
-# `DONE <date> — <title>` (never deleted — the reading history), pushes the
-# commit, re-renders the dashboard, and closes the issue. 📥 `queue-intake`
-# and 📑 `queue-cite` issues are NOT handled here — they stay open as filing
-# work items (full wiki filing / bib-entry-plus-minimal-section).
+# The dashboard's mechanical per-paper buttons land here. Three of them:
+#
+#   ✅ `queue-read`     marks a reading-queue.md line `DONE <date> — <title>`
+#                       (never deleted — the reading history)
+#   ➕ `queue-add`      moves an arxiv-inbox.md line into its reading-queue
+#                       section, unread
+#   ✖️ `queue-dismiss`  drops an arxiv-inbox.md line — an un-acted suggestion
+#                       is not reading history, and git history holds it
+#
+# Each commits the file it touched, re-renders the dashboard, and closes the
+# issue. 📥 `queue-intake` and 📑 `queue-cite` are NOT handled here — they stay
+# open as filing work items and are driven by queue_filing.yml.
 #
 # Only owner/member/collaborator-authored issues act: this is a public repo,
 # and a stranger's issue must never mutate the queue (they cannot apply the
@@ -28,37 +34,75 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  mark-read:
+  queue-action:
+    # One job, three labels. The gate is unchanged: this is a public repo, and
+    # a stranger's issue must never mutate the queue or the inbox.
     if: >-
-      contains(github.event.issue.labels.*.name, 'queue-read') &&
+      (contains(github.event.issue.labels.*.name, 'queue-read') ||
+       contains(github.event.issue.labels.*.name, 'queue-add') ||
+       contains(github.event.issue.labels.*.name, 'queue-dismiss')) &&
       contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'),
                github.event.issue.author_association)
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}
       ISSUE: ${{ github.event.issue.number }}
+      LABELS: ${{ join(github.event.issue.labels.*.name, ',') }}
     steps:
       - uses: actions/checkout@v4
 
-      - name: Mark the queue line DONE
+      - name: Apply the action
         id: mark
         env:
           # env, never inline interpolation — the body is untrusted text.
           ISSUE_BODY: ${{ github.event.issue.body }}
         run: |
           printf '%s' "$ISSUE_BODY" > /tmp/issue_body.txt
-          status=$(python scripts/queue_mark_done.py \
-            --queue reading-queue.md --body-file /tmp/issue_body.txt) || true
+          case ",$LABELS," in
+            *,queue-add,*)
+              action=add
+              status=$(python scripts/inbox_actions.py add \
+                --body-file /tmp/issue_body.txt) || true ;;
+            *,queue-dismiss,*)
+              action=dismiss
+              status=$(python scripts/inbox_actions.py dismiss \
+                --body-file /tmp/issue_body.txt) || true ;;
+            *)
+              action=read
+              status=$(python scripts/queue_mark_done.py \
+                --queue reading-queue.md --body-file /tmp/issue_body.txt) || true ;;
+          esac
+          # A status the scripts do not define means they died before printing;
+          # normalise so the close step reports rather than mis-closing.
+          case "$status" in
+            marked|already-done|added|already-there|dismissed|already-gone) ;;
+            *) status="${status:-error}" ;;
+          esac
+          echo "action=${action}" >> "$GITHUB_OUTPUT"
           echo "status=${status}" >> "$GITHUB_OUTPUT"
-          echo "queue_mark_done: ${status}"
+          echo "queue action ${action}: ${status}"
+          # Did anything actually change on disk? Cheaper and more honest than
+          # inferring it from the status token.
+          if [ -n "$(git status --porcelain -- reading-queue.md arxiv-inbox.md)" ]; then
+            echo "changed=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=no" >> "$GITHUB_OUTPUT"
+          fi
 
-      - name: Commit + push (explicit path only)
-        if: steps.mark.outputs.status == 'marked'
+      - name: Commit + push (explicit paths only)
+        if: steps.mark.outputs.changed == 'yes'
+        env:
+          ACTION: ${{ steps.mark.outputs.action }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add reading-queue.md
-          git commit -m "queue: mark paper read (#${ISSUE}) [skip ci]"
+          case "$ACTION" in
+            add)     msg="queue: add inbox paper to the reading queue" ;;
+            dismiss) msg="queue: dismiss inbox paper" ;;
+            *)       msg="queue: mark paper read" ;;
+          esac
+          git add reading-queue.md arxiv-inbox.md
+          git commit -m "${msg} (#${ISSUE}) [skip ci]"
           for attempt in 1 2 3; do
             if git push; then exit 0; fi
             git pull --rebase origin main || exit 1
@@ -67,7 +111,7 @@ jobs:
           exit 1
 
       - name: Refresh the dashboard
-        if: steps.mark.outputs.status == 'marked'
+        if: steps.mark.outputs.changed == 'yes'
         run: gh workflow run knowledge_board.yml --ref main
 
       - name: Close or report on the issue
@@ -81,7 +125,22 @@ jobs:
             already-done)
               gh issue close "$ISSUE" --comment \
                 "Already marked read in reading-queue.md — nothing to change." ;;
+            added)
+              gh issue close "$ISSUE" --comment \
+                "Added to the reading queue and cleared from the arXiv inbox. Dashboard refresh dispatched." ;;
+            already-there)
+              gh issue close "$ISSUE" --comment \
+                "Already in the reading queue — cleared the arXiv inbox line and left the queue alone." ;;
+            dismissed)
+              gh issue close "$ISSUE" --comment \
+                "Dropped from the arXiv inbox. Git history still holds the line. Dashboard refresh dispatched." ;;
+            already-gone)
+              gh issue close "$ISSUE" --comment \
+                "Not in the arXiv inbox any more — nothing to change (it may already have lapsed)." ;;
+            no-section)
+              gh issue comment "$ISSUE" --body \
+                "Could not process this queue action — the target section does not exist in reading-queue.md. Handle manually; leaving the issue open." ;;
             *)
               gh issue comment "$ISSUE" --body \
-                "Could not process this queue action (status: ${STATUS:-error}) — the paper's line was not found in its section of reading-queue.md. Handle manually; leaving the issue open." ;;
+                "Could not process this queue action (status: ${STATUS:-error}) — the paper's line was not found. Handle manually; leaving the issue open." ;;
           esac

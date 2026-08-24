@@ -15,6 +15,12 @@ the human's free-text notes, and ✅ read-don't-file (processed automatically
 by ``queue_actions.yml`` via ``queue_mark_done.py``). Nothing changes state
 until the human submits the issue.
 
+Above the queue sits the **arXiv inbox** (``arxiv-inbox.md``): what the nightly
+digest suggested overnight, each line showing how many days it has left before
+it lapses and carrying two further actions — ➕ add-to-the-queue and ✖️ dismiss.
+The inbox's format, window and transitions live in ``scripts/inbox_actions.py``;
+this module reads them rather than re-deriving them.
+
 **Contents-level only.** The board shows titles and counts, never claim text
 or summaries — the knowledge itself stays in the wiki pages.
 
@@ -46,6 +52,11 @@ from pathlib import Path
 from urllib.parse import quote as _quote
 
 MEMORY_HOME = Path(__file__).resolve().parents[1]
+
+# The arXiv inbox owns its own line format, window and transitions; the
+# board reads them rather than re-deriving them (scripts/inbox_actions.py).
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import inbox_actions  # noqa: E402
 
 # The family look lives once, in the Brain (``board/_theme.py``): the
 # stylesheet, the hero that redraws this organ's logo as a mark, and the
@@ -124,6 +135,7 @@ def collect(root: Path | None = None) -> dict:
         "wikis": [],
         "bib_entries": 0,
         "queue": [],
+        "inbox": [],
         "links": {"total": 0, "unique": 0, "wanted": 0},
     }
 
@@ -185,6 +197,20 @@ def collect(root: Path | None = None) -> dict:
                 papers.append(_parse_paper(line.strip()))
         _flush()
 
+    inbox = root / inbox_actions.INBOX_FILE
+    if inbox.exists():
+        today = datetime.datetime.now(datetime.timezone.utc).date()
+        for entry in inbox_actions.papers(inbox.read_text(errors="replace")):
+            snapshot["inbox"].append({
+                "title": entry["title"],
+                "ref": entry["ref"],
+                "line": entry["line"],
+                "added": entry["added"],
+                "days_left": inbox_actions.days_left(entry["added"], today),
+                "done": False,
+                "done_date": None,
+            })
+
     slugs = [s.split("|")[0].strip() for s in all_slugs]
     uniq = set(slugs)
     snapshot["links"] = {
@@ -224,35 +250,60 @@ def paper_url(paper: dict) -> str:
 
 
 def _queue_issue_url(snapshot: dict, section: str, paper: dict,
-                     action: str) -> str:
+                     action: str,
+                     source: str = inbox_actions.QUEUE_FILE) -> str:
     """A prefilled new-issue URL for a per-paper action.
 
-    Three tiers — 'intake' (really interesting: full wiki filing), 'cite'
-    (worth citing, not pivotal: bib entry + a minimal sources section), and
-    'read' (done with it: DONE-mark only, processed automatically by
-    queue_actions.yml). Nothing changes state until the human submits the
-    issue on GitHub; intake/cite issues stay open as the filing work item,
-    and their `notes:` field is free text the human edits before submitting.
-    Empty when the checkout has no remote (spawned templates).
+    Five tiers — 'intake' (really interesting: full wiki filing), 'cite'
+    (worth citing, not pivotal: bib entry + a minimal sources section), 'read'
+    (done with it: DONE-mark only), and, for arXiv-inbox papers, 'add' (into
+    the reading queue) and 'dismiss' (not for me). All but intake/cite are
+    processed automatically by queue_actions.yml. Nothing changes state until
+    the human submits the issue on GitHub; intake/cite issues stay open as the
+    filing work item, and their `notes:` field is free text the human edits
+    before submitting. Empty when the checkout has no remote (spawned
+    templates).
+
+    `source` names the file the line lives in. It is emitted for every tier,
+    including the reading-queue ones, so the workflows never have to guess —
+    the older scripts ignore the extra key.
     """
     repo_url = _repo_url(snapshot)
     if not repo_url:
         return ""
-    where = f"section: {section}\nline: {paper['line']}"
+    from_inbox = source == inbox_actions.INBOX_FILE
+    whose = "arXiv-inbox" if from_inbox else "reading-queue"
+    where = f"file: {source}\nsection: {section}\nline: {paper['line']}"
     notes = ("notes: (optional — replace this with why you added it or "
              "what was noteworthy, in your own words; whoever files the "
              "paper folds it in)")
-    if action == "read":
+    if action == "add":
+        issue_title = f"queue add: {paper['title']}"[:200]
+        label = "queue-add"
+        body = ("Move this arXiv-inbox paper into the reading queue "
+                f"(section: {section}) — worth reading, not yet read.\n\n"
+                f"{where}\n\n"
+                "Processed automatically by queue_actions.yml.")
+    elif action == "dismiss":
+        issue_title = f"queue dismiss: {paper['title']}"[:200]
+        label = "queue-dismiss"
+        body = ("Drop this paper from the arXiv inbox — not one for me. The "
+                "line is removed rather than DONE-marked: an un-acted "
+                "suggestion is not reading history, and git history holds it "
+                "either way.\n\n"
+                f"{where}\n\n"
+                "Processed automatically by queue_actions.yml.")
+    elif action == "read":
         issue_title = f"queue read: {paper['title']}"[:200]
         label = "queue-read"
-        body = ("Mark this reading-queue paper as read without filing it "
+        body = (f"Mark this {whose} paper as read without filing it "
                 "(the line stays, DONE-prefixed — the reading history).\n\n"
                 f"{where}\n\n"
                 "Processed automatically by queue_actions.yml.")
     elif action == "cite":
         issue_title = f"queue cite: {paper['title']}"[:200]
         label = "queue-cite"
-        body = ("Make this reading-queue paper citeable — read, worth "
+        body = (f"Make this {whose} paper citeable — read, worth "
                 "citing, but not pivotal enough for full wiki treatment.\n\n"
                 f"{where}\n\n"
                 f"{notes}\n\n"
@@ -267,7 +318,7 @@ def _queue_issue_url(snapshot: dict, section: str, paper: dict,
     else:
         issue_title = f"queue intake: {paper['title']}"[:200]
         label = "queue-intake"
-        body = ("File this reading-queue paper into memory.\n\n"
+        body = (f"File this {whose} paper into memory.\n\n"
                 f"{where}\n\n"
                 f"{notes}\n\n"
                 "Workflow (bibliography/README.md \"Adding a paper\", "
@@ -277,6 +328,14 @@ def _queue_issue_url(snapshot: dict, section: str, paper: dict,
                 "incorporating the notes above — mark its queue line "
                 "'DONE <date> — <title>' in reading-queue.md, and run "
                 "make validate.")
+    if from_inbox and action not in ("add", "dismiss", "read"):
+        # An inbox paper has no reading-queue line to DONE-mark: filing it
+        # creates that line, already read, and clears the inbox one.
+        body += ("\n\nNOTE: this paper is in arxiv-inbox.md and is NOT in the "
+                 "reading queue yet, so there is no line to mark. Instead "
+                 f"append it to the '{section}' section of reading-queue.md "
+                 "already DONE-prefixed (it is being filed now, not queued to "
+                 "read later) and remove its arxiv-inbox.md line.")
     return (f"{repo_url}/issues/new?title={_quote(issue_title, safe='')}"
             f"&body={_quote(body, safe='')}&labels={_quote(label, safe='')}")
 
@@ -399,7 +458,25 @@ def _render_md(snapshot: dict) -> str:
         lines.append(f"| {w['name']} | {w['pages']} | {s.get('stub', 0)} | "
                      f"{s.get('drafted', 0)} | {s.get('reviewed', 0)} | "
                      f"{w.get('todo', 0)} |")
-    lines += ["", "## Reading queue", ""]
+    lines += ["", "## arXiv inbox", ""]
+    inbox = snapshot.get("inbox") or []
+    if inbox:
+        lines += [f"_{len(inbox)} waiting · un-acted suggestions lapse after "
+                  f"{inbox_actions.INBOX_WINDOW_DAYS} days._", ""]
+        for p in inbox:
+            label = p["title"].replace("[", "\\[").replace("]", "\\]")
+            bits = [f"- [{label}]({paper_url(p)}) — _{p['days_left']}d left_"]
+            for action, chip in (("add", "queue ➕"), ("intake", "intake 📥"),
+                                 ("cite", "cite 📑"), ("dismiss", "dismiss ✖️")):
+                u = _queue_issue_url(snapshot, inbox_actions.INBOX_TARGET_SECTION,
+                                     p, action, source=inbox_actions.INBOX_FILE)
+                if u:
+                    bits.append(f"[{chip}]({u})")
+            lines.append(" · ".join(bits))
+        lines.append("")
+    else:
+        lines += ["- _(nothing waiting — the nightly digest fills this)_", ""]
+    lines += ["## Reading queue", ""]
     trend = _read_trend(snapshot)
     if sum(q.get("done", 0) for q in snapshot.get("queue") or []):
         lines += [f"_{trend['d7']} read in the last 7 days · "
@@ -515,8 +592,9 @@ function flt(q){q=q.toLowerCase();
    var hit=!q||li.textContent.toLowerCase().indexOf(q)>=0;
    li.style.display=hit?'':'none';
    if(hit){any=true;if(li.className==='done')histHit=true;}}
+  var isInbox=d.classList.contains('inbox');
   if(q){d.style.display=any?'':'none';d.open=any;}
-  else{d.style.display='';d.open=false;}
+  else{d.style.display='';d.open=isInbox;}
   var h=d.querySelector('details.hist');
   if(h){h.style.display=(q&&!histHit)?'none':'';h.open=!!q&&histHit;}}}
 """
@@ -567,6 +645,40 @@ def _render_html(snapshot: dict) -> str:
             f"</summary><ul class='papers'>{''.join(items)}</ul>{hist}</details>")
     if not queue_blocks:
         queue_blocks.append("<p class='meta'>queue empty or unavailable</p>")
+
+    inbox = snapshot.get("inbox") or []
+    inbox_items = []
+    for p in inbox:
+        acts = []
+        for action, icon, hint in (
+                ("add", "➕", "add to the reading queue: worth reading — opens "
+                              "a prefilled issue; submitting files the line"),
+                ("intake", "📥", "intake into memory: really interesting — "
+                                 "opens a prefilled issue (add your notes) "
+                                 "that becomes the full filing work item"),
+                ("cite", "📑", "make citeable: worth citing, not pivotal — "
+                               "opens a prefilled issue (add your notes) for a "
+                               "bib entry + minimal sources section"),
+                ("dismiss", "✖️", "not for me: opens a prefilled issue; "
+                                  "submitting drops the line from the inbox")):
+            u = _queue_issue_url(snapshot, inbox_actions.INBOX_TARGET_SECTION,
+                                 p, action, source=inbox_actions.INBOX_FILE)
+            if u:
+                acts.append(f"<a class='act' href=\"{_html.escape(u, quote=True)}\" "
+                            f"title='{_html.escape(hint, quote=True)}'>{icon}</a>")
+        inbox_items.append(
+            f"<li><a href=\"{_html.escape(paper_url(p), quote=True)}\">"
+            f"{_html.escape(p['title'])}</a> "
+            f"<span class='meta'>{p['days_left']}d left</span>{''.join(acts)}</li>")
+    if inbox_items:
+        inbox_block = (
+            f"<details class='qsec inbox' open><summary><span class='name'>"
+            f"arXiv inbox</span> <span class='meta'>{len(inbox_items)} waiting "
+            f"· lapse after {inbox_actions.INBOX_WINDOW_DAYS}d</span></summary>"
+            f"<ul class='papers'>{''.join(inbox_items)}</ul></details>")
+    else:
+        inbox_block = ("<p class='meta'>nothing waiting — the nightly arXiv "
+                       "digest fills this.</p>")
 
     trend = _read_trend(snapshot)
     total_done = sum(q.get("done", 0) for q in snapshot.get("queue") or [])
@@ -628,6 +740,9 @@ def _render_html(snapshot: dict) -> str:
 {hero}
 {stats}
 <p class="muted mdsrc"><a href="dashboard.md">markdown version</a></p>
+<h2>arXiv inbox <span class="muted">(suggested overnight — un-acted papers
+ lapse after {inbox_actions.INBOX_WINDOW_DAYS} days)</span></h2>
+{inbox_block}
 <h2>Reading queue <span class="muted">({trend_bits})</span>{spark}</h2>
 {filter_box}
 {''.join(queue_blocks)}

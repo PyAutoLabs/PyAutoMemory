@@ -96,9 +96,13 @@ jobs:
             You are filing one paper into this PyAutoMemory checkout.
 
             Read /tmp/issue_body.txt (a dashboard queue request). Extract:
+            - `file:` — which file the line lives in: `reading-queue.md`
+              (already queued to read) or `arxiv-inbox.md` (an overnight
+              suggestion, NOT yet in the queue). Absent means reading-queue.md.
             - `section:` — the reading-queue section header,
-            - `line:` — the exact reading-queue.md line (title, possibly
-              with a trailing ` — <arXiv id or URL>` ref),
+            - `line:` — the exact line as written. An arxiv-inbox.md line is
+              prefixed `<YYYY-MM-DD> — `; that date is the inbox timestamp, not
+              part of the title. Strip it before using the title anywhere.
             - `notes:` — the human's free-text notes; treat as absent if it
               still holds the "(optional — replace this…)" placeholder.
             Read /tmp/issue_label.txt: `queue-intake` (full filing) or
@@ -122,12 +126,21 @@ jobs:
                  human's notes (lightly cleaned up) — nothing deeper.
                - queue-intake → add a full stub section per wiki/CLAUDE.md,
                  folding the notes into the summary.
-            4. reading-queue.md: prefix the exact `line:` inside its
-               `## section` with `DONE <today's date> — ` (never delete it).
+            4. Record it as read, which depends on `file:`:
+               - `reading-queue.md` → prefix the exact `line:` inside its
+                 `## section` with `DONE <today's date> — ` (never delete it).
+               - `arxiv-inbox.md` → there is no queue line yet. Append
+                 `DONE <today's date> — <title>[ — <ref>]` to the end of the
+                 `## section` in reading-queue.md (the paper is being filed
+                 now, so it enters the queue already read), then delete the
+                 line from arxiv-inbox.md. An inbox line is a suggestion, not
+                 reading history, so deleting it is correct — the DONE line it
+                 becomes is the history.
             5. Run `make validate` and `python -m pytest tests/ -q`; fix your
                own filing mistakes until both are green.
 
-            Touch ONLY bibliography/, wiki/, and reading-queue.md. Do not
+            Touch ONLY bibliography/, wiki/, reading-queue.md and
+            arxiv-inbox.md. Do not
             commit — the workflow handles git. If the paper cannot be
             identified confidently, write the reason to /tmp/filing_error.txt
             and stop without editing anything.
@@ -151,7 +164,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           branch="queue-filing/issue-${ISSUE}"
           git checkout -b "$branch"
-          git add bibliography/ wiki/ reading-queue.md
+          git add bibliography/ wiki/ reading-queue.md arxiv-inbox.md
           if git diff --cached --quiet; then
             echo "::error::Claude produced no changes"; exit 1
           fi

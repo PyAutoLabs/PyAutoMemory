@@ -16,7 +16,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
+from urllib.parse import unquote  # noqa: E402
+
 import board  # noqa: E402
+import inbox_actions  # noqa: E402
 
 BODY_MARKER = "the-secret-claim-text-that-must-never-leak"
 
@@ -41,6 +44,10 @@ def _tree(tmp_path: Path) -> Path:
         "# Reading queue\n\nintro prose\n\n---\n\n"
         "## Demo Papers\n\nTitle One\nTitle Two — 2406.01234\n"
         "DONE 2026-06-01 — Old Title\n\n## Other Things\n\nTitle Three\n")
+    (tmp_path / "arxiv-inbox.md").write_text(
+        "# arXiv inbox\n\nintro prose\n\n---\n"
+        "2026-08-24 — Suggested One — 2608.00001\n"
+        "2026-08-24 — Suggested Two\n")
     return tmp_path
 
 
@@ -189,3 +196,65 @@ def test_html_wears_the_shared_family_theme(tmp_path):
     assert t.ORGANS[board.BOARD_KEY]["tagline"] in html
     assert t.ORGANS[board.BOARD_KEY]["ink_dark"] in html
     assert "#58a6ff" not in html  # the old hard-coded GitHub blue
+
+
+# --- the arXiv inbox ----------------------------------------------------------
+def test_inbox_is_collected_with_days_left(tmp_path):
+    snap = board.collect(_tree(tmp_path))
+    assert [p["title"] for p in snap["inbox"]] == ["Suggested One", "Suggested Two"]
+    assert snap["inbox"][0]["ref"] == "2608.00001"
+    assert snap["inbox"][1]["ref"] is None
+    # dates in the fixture are fixed, so only the invariant is asserted
+    assert all(0 <= p["days_left"] <= inbox_actions.INBOX_WINDOW_DAYS
+               for p in snap["inbox"])
+
+
+def test_a_missing_inbox_is_not_an_error(tmp_path):
+    root = _tree(tmp_path)
+    (root / "arxiv-inbox.md").unlink()
+    snap = board.collect(root)
+    assert snap["inbox"] == []
+    assert "nothing waiting" in board._render_md(snap)
+    assert "nothing waiting" in board._render_html(snap)
+
+
+def test_inbox_papers_carry_all_four_actions(tmp_path):
+    snap = _snap_with_remote(tmp_path)
+    html = board._render_html(snap)
+    for label in ("queue-add", "queue-intake", "queue-cite", "queue-dismiss"):
+        assert label in html, label
+
+
+def test_inbox_actions_name_the_inbox_file_not_the_queue(tmp_path):
+    """The workflows branch on `file:` — an inbox tap must say so."""
+    snap = _snap_with_remote(tmp_path)
+    url = board._queue_issue_url(snap, "Demo Papers", snap["inbox"][0], "add",
+                                 source=inbox_actions.INBOX_FILE)
+    body = unquote(url)
+    assert "file: arxiv-inbox.md" in body
+    assert "line: 2026-08-24 — Suggested One — 2608.00001" in body
+
+
+def test_reading_queue_actions_still_name_the_queue_file(tmp_path):
+    snap = _snap_with_remote(tmp_path)
+    paper = snap["queue"][0]["papers"][0]
+    body = unquote(board._queue_issue_url(snap, "Demo Papers", paper, "read"))
+    assert "file: reading-queue.md" in body
+
+
+def test_inbox_filing_actions_warn_there_is_no_queue_line(tmp_path):
+    snap = _snap_with_remote(tmp_path)
+    body = unquote(board._queue_issue_url(
+        snap, "Demo Papers", snap["inbox"][0], "intake",
+        source=inbox_actions.INBOX_FILE))
+    assert "NOT in the reading queue yet" in body
+    queue_body = unquote(board._queue_issue_url(
+        snap, "Demo Papers", snap["queue"][0]["papers"][0], "intake"))
+    assert "NOT in the reading queue yet" not in queue_body
+
+
+def test_inbox_renders_before_the_reading_queue(tmp_path):
+    """The inbox is the thing to act on; it sits above the backlog."""
+    snap = _snap_with_remote(tmp_path)
+    for text in (board._render_md(snap), board._render_html(snap)):
+        assert text.index("arXiv inbox") < text.index("Reading queue")

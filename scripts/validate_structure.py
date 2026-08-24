@@ -34,6 +34,7 @@ ALLOWED_TOP_FILES = {
     "Makefile",
     "README.md",
     "SPAWNED_FROM",  # provenance marker stamped into spawned templates
+    "arxiv-inbox.md",
     "index.md",
     "logo.png",
     "reading-queue.md",
