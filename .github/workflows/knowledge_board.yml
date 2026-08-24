@@ -17,15 +17,20 @@ on:
       - "wiki/**"
       - "bibliography/**"
       - "reading-queue.md"
+      - "arxiv-inbox.md"
       - "index.md"
       - "scripts/board.py"
+      - "scripts/inbox_actions.py"
   schedule:
     - cron: "45 5 * * 1"
   workflow_dispatch:
 
-# contents: write → the README strip self-commit; pages/id-token → publish.
+# contents: write → the README strip self-commit; pages/id-token → publish;
+# issues: write → create the action labels the rendered buttons reference
+# (see "Ensure the per-paper action labels exist" below).
 permissions:
   contents: write
+  issues: write
   pages: write
   id-token: write
 
@@ -42,6 +47,28 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+
+      # A prefilled `…/issues/new?…&labels=x` URL silently drops `x` when the
+      # label does not exist in the repo, and queue_actions.yml gates on the
+      # label — so a missing label makes a tapped button look like it worked
+      # and then do nothing. The board renders those buttons, so the board
+      # guarantees their labels. `gh api` rather than `gh label create`: it
+      # works on any gh version, and 422 (already exists) is the normal case.
+      - name: Ensure the per-paper action labels exist
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -u
+          ensure() {
+            gh api "repos/${GITHUB_REPOSITORY}/labels" \
+              -f "name=$1" -f "color=$2" -f "description=$3" \
+              >/dev/null 2>&1 && echo "created $1" || echo "exists $1"
+          }
+          ensure queue-read    "0e8a16" "reading queue: mark this paper read"
+          ensure queue-cite    "1d76db" "reading queue: file a minimal citeable entry"
+          ensure queue-intake  "5319e7" "reading queue: file this paper fully into the wiki"
+          ensure queue-add     "fbca04" "arXiv inbox: move this paper into the reading queue"
+          ensure queue-dismiss "d4c5f9" "arXiv inbox: drop this suggestion"
 
       # The family look (hero, palette, stylesheet) is defined once in the
       # Brain and imported by the renderer — never copied in here.
