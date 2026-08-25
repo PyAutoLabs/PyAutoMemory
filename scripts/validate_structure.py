@@ -17,6 +17,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 ALLOWED_TOP_DIRS = {
+    ".claude",  # agent tooling (session hooks, settings), not content
     ".git",
     ".github",
     "bibliography",
