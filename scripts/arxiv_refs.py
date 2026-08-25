@@ -109,10 +109,12 @@ def search_url(title: str) -> str:
 
 # --- title matching -----------------------------------------------------------
 _PUNCT_RE = re.compile(r"[^a-z0-9]+")
+#: A LaTeX control sequence: ``\leq``, ``\Lambda``, ``\rm``, ``\,``.
+_LATEX_CMD_RE = re.compile(r"\\[A-Za-z]+|\\.")
 
 
 def normalise_title(title: str) -> str:
-    """A title reduced to its comparable core: lowercase alphanumerics only.
+    """A title reduced to its comparable core: lowercase ASCII alphanumerics.
 
     arXiv, the digest and a hand-pasted queue line disagree constantly about
     LaTeX (``$z=2.48$``), dashes (``-``/``–``/``—``), accents and double spaces,
@@ -120,9 +122,32 @@ def normalise_title(title: str) -> str:
     lets the backfill demand an exact match on what remains, rather than a fuzzy
     match on what does not — a wrong id is worse than no id, because it links
     the reader confidently to somebody else's paper.
+
+    The one disagreement that needs more than stripping is **maths**, because
+    the two sides spell it differently rather than merely punctuate it
+    differently: arXiv's metadata carries the LaTeX source (``$0.5\\leq
+    z<1.0$``, ``$\\Lambda$CDM``, ``$M_\\star$``) while a title pasted off the
+    abstract page carries the rendered glyphs (``0.5≤z<1.0``, ``ΛCDM``,
+    ``M⋆``). Neither survives a plain punctuation strip into the same string.
+
+    So both are erased rather than reconciled: LaTeX control sequences go, and
+    so does every non-ASCII character left after accent folding. ``\\leq`` and
+    ``≤`` both become nothing, and the two spellings meet in the middle —
+    ``05z10`` from either side. Erasing is deliberately preferred to a
+    ``\\leq``→``≤`` translation table, which would need every symbol
+    astronomers use and would silently mismatch the day it missed one. The
+    reduction is lossier, and the uniqueness rule in :func:`match_entries` is
+    what keeps that safe: a title that reduces onto two arXiv papers matches
+    neither.
+
+    Accented Latin is *kept* (``Ekström`` → ``ekstrom``): NFKD splits the accent
+    off as a combining mark and the base letter is ASCII, so it survives the
+    non-ASCII drop that removes Greek and maths.
     """
     folded = unicodedata.normalize("NFKD", title)
     folded = "".join(c for c in folded if not unicodedata.combining(c))
+    folded = _LATEX_CMD_RE.sub(" ", folded)
+    folded = folded.encode("ascii", "ignore").decode("ascii")
     return _PUNCT_RE.sub("", folded.lower())
 
 

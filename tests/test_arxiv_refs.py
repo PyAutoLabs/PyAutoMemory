@@ -73,6 +73,39 @@ def test_normalise_title_ignores_the_disagreements_that_are_not_about_identity()
     assert len({arxiv_refs.normalise_title(t) for t in same}) == 1
 
 
+def test_latex_source_and_rendered_glyphs_reduce_to_the_same_title():
+    """arXiv carries the LaTeX; a pasted line carries the rendered glyphs.
+
+    Every pair below is one paper written two ways, and every pair failed to
+    match before maths was erased rather than punctuated away.
+    """
+    for latex, rendered in [
+            (r"$0.5\leq z<1.0$",                    "0.5≤z<1.0"),
+            (r"$\Lambda$CDM Model",                 "ΛCDM Model"),
+            (r"the local $M_{\rm BH}-M_\star$ relation",
+             "the local MBH-M⋆ relation"),
+            (r"$2.2\times10^{-21}$eV",              "2.2×10−21eV"),
+            (r"galaxies at $z\sim3$",               "galaxies at z∼3"),
+            (r"SLICE -- Combining X-ray in AC\,114", "SLICE - Combining X-ray in AC 114")]:
+        assert arxiv_refs.normalise_title(latex) == \
+            arxiv_refs.normalise_title(rendered), latex
+
+
+def test_accented_latin_survives_but_greek_does_not():
+    """NFKD splits the accent off a Latin letter, so the ASCII base remains."""
+    assert arxiv_refs.normalise_title("Ekström") == "ekstrom"
+    assert arxiv_refs.normalise_title("Muñoz-Darias") == "munozdarias"
+    # Greek has no ASCII base and is erased on both sides alike
+    assert arxiv_refs.normalise_title("ΛCDM") == arxiv_refs.normalise_title(r"$\Lambda$CDM")
+
+
+def test_erasing_maths_still_keeps_different_papers_apart():
+    """The reduction is lossier — it must not collapse unrelated titles."""
+    a = arxiv_refs.normalise_title(r"Dark matter at $z\sim3$ in dwarf galaxies")
+    b = arxiv_refs.normalise_title(r"Dark energy at $z\sim3$ in dwarf galaxies")
+    assert a != b
+
+
 def test_a_match_needs_exactly_one_arxiv_paper():
     entries = arxiv_refs.parse_api_entries(
         _atom(("2608.00001", "The Koi Pond"), ("2608.00002", "Another Paper")))
