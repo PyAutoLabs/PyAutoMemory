@@ -126,19 +126,19 @@ Accretion onto supermassive black hole binaries — 2405.14843
 Astrometric Jitter as a Detection Diagnostic for Recoiling and Slingshot Supermassive Black Hole Candidates — 2405.11026
 Detection and Prediction of Future Massive Black Hole Mergers with Machine Learning and Truncated Waveforms — 2405.11340
 How do Primordial Black Holes change the Halo Mass Function and Structure? — 2405.11381
-Tip of the iceberg: overmassive black holes at 4<z<7 found by JWST are not inconsistent with the local MBH-M⋆ relationProj  C
+Tip of the iceberg: overmassive black holes at 4<z<7 found by JWST are not inconsistent with the local MBH-M⋆ relation
 
 
 https://arxiv.org/pdf/2103.16254.pdf
 https://arxiv.org/pdf/2112.03576.pdf
 
-as several triplet SMBHs have
-been observed in the local Universe (Deane et al. 2014;
-Pfeifle et al. 2019; Liu et al. 2019; Kollatschny et al.
-2020).
+NOTE as several triplet SMBHs have
+NOTE been observed in the local Universe (Deane et al. 2014;
+NOTE Pfeifle et al. 2019; Liu et al. 2019; Kollatschny et al.
+NOTE 2020).
 
-, shrink the orbits further (see
-e.g. Amaro-Seoane et al. 2022, for a review).
+NOTE , shrink the orbits further (see
+NOTE e.g. Amaro-Seoane et al. 2022, for a review).
 
 The Redshift Difference in Gravitational Lensed Systems: A Novel Probe of Cosmology — 2308.07529
 Evidence for a milli-parsec separation Supermassive Black Hole Binary with quasar microlensing
@@ -204,8 +204,7 @@ Review of solutions to the Cusp-core problem of the ΛCDM Model
 Matching the mass function of Milky Way satellites in competing dark matter model
 The shape of dark matter haloes: results from weak lensing in the Ultraviolet Near-Infrared Optical Northern Survey (UNIONS) — 2209.09088
 A lensing multi-messenger channel: Combining LIGO-Virgo-Kagra lensed gravitational-wave measurements with Euclid observations
-Chandra Observations of Spikey: A Possible Self-lensing Supermassive Black Hole
-Binary System
+Chandra Observations of Spikey: A Possible Self-lensing Supermassive Black Hole Binary System
 The massive relic galaxy NGC 1277 is dark matter deficient. From dynamical models of integral-field stellar kinematics out to five effective radii — 2303.11360
 The impact of baryonic potentials on the gravothermal evolution of self-interacting dark matter haloes — 2306.08028
 
@@ -241,13 +240,13 @@ https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fjournals.plos.
 
 
 
-postprocessing (Kelley et al. 2017a;
-Katz et al. 2020; Volonteri et al. 2020) find that many
-binaries stall and fail to merge within a Hubble time.
-For example, the fiducial model in Kelley et al. (2017a)
-sees a peak of MBHB lifetimes at a median value is 29
-Gyr, with only ∼ 7 % binaries have lifetime less than 1
-Gyr.
+NOTE postprocessing (Kelley et al. 2017a;
+NOTE Katz et al. 2020; Volonteri et al. 2020) find that many
+NOTE binaries stall and fail to merge within a Hubble time.
+NOTE For example, the fiducial model in Kelley et al. (2017a)
+NOTE sees a peak of MBHB lifetimes at a median value is 29
+NOTE Gyr, with only ∼ 7 % binaries have lifetime less than 1
+NOTE Gyr.
 
 __SMBH__
 
@@ -255,11 +254,11 @@ Massive black holes in galactic nuclei: Theory and Simulations
  
     Cant remember
 
-Massive Black Holes summary: https://arxiv.org/pdf/2304.10233.pdf
+Massive Black Holes summary — https://arxiv.org/pdf/2304.10233.pdf
 
     Thorough summary of black hole binarys
 
-__SMBH Binaries_
+__SMBH Binaries__
 
 Hierarchical Bayesian inference on an analytical model of the LISA massive black hole binary population
 
