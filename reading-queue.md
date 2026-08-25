@@ -170,7 +170,7 @@ Bulgeless disks, dark galaxies, inverted color gradients, and other expected phe
 Has JWST already falsified dark-matter-driven galaxy formation? — 2210.14915
 A shot in the Dark (Ages): a faint galaxy at z=9.76 confirmed with JWST
 CEERS Key Paper IV: The Diversity of Galaxy Structure and Morphology at z=3-9 with JWST
-The MillenniumTNG Project: Many papers 2022
+NOTE The MillenniumTNG Project: Many papers 2022
 The MASSIVE Survey. XVIII. Deep Wide-Field K-band Photometry and Local Scaling Relations for Massive Early-Type Galaxies — 2210.08043
 Sizes and mass profiles of candidate massive galaxies discovered by JWST at 7<z<9: evidence for very early formation of the central ∼100 pc of present-day ellipticals — 2305.17162
 
@@ -252,100 +252,100 @@ __SMBH__
 
 Massive black holes in galactic nuclei: Theory and Simulations — 2304.11541
  
-    Cant remember
+    NOTE Cant remember
 
 Massive Black Holes summary — https://arxiv.org/pdf/2304.10233.pdf
 
-    Thorough summary of black hole binarys
+    NOTE Thorough summary of black hole binarys
 
 __SMBH Binaries__
 
 Hierarchical Bayesian inference on an analytical model of the LISA massive black hole binary population — 2409.06527
 
-    Incredible Bayes Model of SMBH mergers for GW astronomy, INCLUING MERGER TIME DELAYS
+    NOTE Incredible Bayes Model of SMBH mergers for GW astronomy, INCLUING MERGER TIME DELAYS
 
 Dual AGNs: Precursors of Binary Supermassive Black Hole Formation and Mergers: — 2403.17076
 
-    Shows rates of SMBHs around AGNs, implies that galaxies should have many 10^8MSun SMBHs wandering around.
+    NOTE Shows rates of SMBHs around AGNs, implies that galaxies should have many 10^8MSun SMBHs wandering around.
 
 Active Galactic Nuclei and Host Galaxies in COSMOS-Web. II. First Look at the Kpc-scale Dual and  Offset AGN Population — 2405.14980
 
-    High rate of dual AGN in redshift 1-3 galaxies, now possible due to JWST.
+    NOTE High rate of dual AGN in redshift 1-3 galaxies, now possible due to JWST.
 
 Einstein vs Hawking: Black hole binaries and cosmological expansion: — 2308.15117
 
-    Cant remember
+    NOTE Cant remember
 
 Observational Signatures of Supermassive Black Hole Binaries — 2310.16896
 
-    CONTAINS SMBHB EVOLUTION EQUATIONS
+    NOTE CONTAINS SMBHB EVOLUTION EQUATIONS
 
     https://arxiv.org/pdf/2310.16896.pdf
 
-RABBITS Simulations which show that SMBH binaries are driven to coalescence by central nuclear star formation
+NOTE RABBITS Simulations which show that SMBH binaries are driven to coalescence by central nuclear star formation
 
     https://arxiv.org/abs/2311.01499
     https://arxiv.org/abs/2311.01493
 
 Compact object mergers: Observations of supermassive binary black holes and stellar tidal disruption events — 1502.05720
 
-    Run through of observational signatures of SMBHBs, most of which are x-ray or AGN based.
+    NOTE Run through of observational signatures of SMBHBs, most of which are x-ray or AGN based.
 
 The NANOGrav 15-year Data Set: Constraints on Supermassive Black Hole Binaries from the Gravitational Wave Background — 2306.16220
 
-    The link between gravitational wave background and > 10^7MSun SMBHB's.
+    NOTE The link between gravitational wave background and > 10^7MSun SMBHB's.
 
 Premature supermassive black hole mergers in cosmological simulations of structure formation — 2504.17549
 
-    Brilliant example of how numerical effects in simulations can lead to delays on SMBH mergers which impact SWGB PTA results.
+    NOTE Brilliant example of how numerical effects in simulations can lead to delays on SMBH mergers which impact SWGB PTA results.
 
 ## KetJU
 https://arxiv.org/pdf/2211.11788.pdf
 
 Big Galaxies and Big Black Holes: The Massive Ends of the Local Stellar and Black Hole Mass Functions and the Implications for Nanohertz Gravitational Waves — 2407.14595
 
-    Examples of how to make and plot SMBH mass functions and relating them to GWB.
+    NOTE Examples of how to make and plot SMBH mass functions and relating them to GWB.
 
 
 Varstrometry for Off-nucleus and Dual sub-Kpc AGN (VODKA): A Mix of Singles, Lenses, and True Duals at Cosmic Noon — 2409.16363
 
-    Good overview of dual AGN and looking for them
+    NOTE Good overview of dual AGN and looking for them
 
 Identifying supermassive black hole recoil in elliptical galaxies — 2410.13942
 
-    All the stuff SMBH binary recoils do to the Sersic core and galaxy around them.
+    NOTE All the stuff SMBH binary recoils do to the Sersic core and galaxy around them.
 
 
 __SMBH Scouring__
 
 The supermassive black hole merger driven evolution of high-redshift red nuggets into present-day cored early-type galaxies — 2407.18303
 
-    Great KetJU simulation study of how scouring SMBHs can create cored galaxies and impact the galaxies around them.
+    NOTE Great KetJU simulation study of how scouring SMBHs can create cored galaxies and impact the galaxies around them.
 
 __Analysis__
 
 Characterization of JWST NIRCam PSFs and Implications for AGN+Host Image Decomposition: — 2304.13776
 
-    Detailed discussion of the JWST PSF and how to model it, reference for PyAutoGalaxy.
+    NOTE Detailed discussion of the JWST PSF and how to model it, reference for PyAutoGalaxy.
 
 
 __Dark Matter__
 
 THESAN-HR: Galaxies in the Epoch of Reionization in warm dark matter, fuzzy dark matter and interacting dark matter: — 2304.06742
 
-    Good description of how alternative DM models (Warm, Fuzzy, Interacting) impact high-z galaxy formation / reionization.
+    NOTE Good description of how alternative DM models (Warm, Fuzzy, Interacting) impact high-z galaxy formation / reionization.
 
 
 The shape of dark matter halos: a new fundamental cosmological invariance — 2406.15947
 
-    Could be a Cosmology motivation for COMSOSO SL+WL study
+    NOTE Could be a Cosmology motivation for COMSOSO SL+WL study
 
 
 __Galaxies__
 
 Stellar feedback-regulated black hole growth: driving factors from nuclear to halo scales — 2210.09320
 
-    Description of how a mass threshold surpresses stellar feedback to make BH's efficient and quency galaxie,s similar to Bower 2017
+    NOTE Description of how a mass threshold surpresses stellar feedback to make BH's efficient and quency galaxie,s similar to Bower 2017
 
 
 
@@ -355,11 +355,11 @@ Setting SAIL: Leveraging Scientist-AI-Loops for Rigorous Visualization Tools —
 
 https://github.com/patrick-kidger/optimistix?tab=readme-ov-file: 
     
-    LOADS of JAX githubs including lineaer solvers, BlackJAX
+    NOTE LOADS of JAX githubs including lineaer solvers, BlackJAX
    
-Eryn: A multi-purpose sampler for Bayesian inference: https://arxiv.org/list/astro-ph/new
+Eryn: A multi-purpose sampler for Bayesian inference
 
-    Another cool sampler for autofit.
+    NOTE Another cool sampler for autofit.
 
 
 
