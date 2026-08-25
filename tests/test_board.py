@@ -258,3 +258,82 @@ def test_inbox_renders_before_the_reading_queue(tmp_path):
     snap = _snap_with_remote(tmp_path)
     for text in (board._render_md(snap), board._render_html(snap)):
         assert text.index("arXiv inbox") < text.index("Reading queue")
+
+
+# --- the inbox's freshness line -----------------------------------------------
+# The point of the stamp is that an EMPTY inbox stops being ambiguous. These
+# cover the three empty states (quiet / never run / suspect) plus the populated
+# one, on both renderers.
+def _inbox(tmp_path, stamp=None, papers=()):
+    # A fresh subdirectory per call: _tree() builds the tree with mkdir() and
+    # cannot be re-run over one it already made.
+    base = tmp_path / f"t{len(list(tmp_path.iterdir()))}"
+    base.mkdir()
+    root = _tree(base)
+    text = "# arXiv inbox\n\nintro prose\n\n---\n" + "".join(
+        f"{line}\n" for line in papers)
+    if stamp:
+        text = inbox_actions.set_last_digest(text, stamp)
+    (root / "arxiv-inbox.md").write_text(text)
+    snap = board.collect(root)
+    snap["owner"], snap["repo"] = "PyAutoLabs", "PyAutoMemory"
+    snap["generated"] = "2026-08-25T09:00:00+00:00"
+    return snap
+
+
+def test_the_stamp_is_collected(tmp_path):
+    assert _inbox(tmp_path, "2026-08-24")["inbox_last_digest"] == "2026-08-24"
+    assert _inbox(tmp_path)["inbox_last_digest"] is None
+
+
+def test_a_quiet_day_says_the_digest_ran(tmp_path):
+    """The state the old wording could not distinguish from a broken run."""
+    md = board._render_md(_inbox(tmp_path, "2026-08-25"))
+    assert "the last digest ran 2026-08-25 and found nothing" in md
+    assert "⚠" not in md
+
+
+def test_a_stale_inbox_says_the_filing_may_be_broken(tmp_path):
+    for render in (board._render_md, board._render_html):
+        out = render(_inbox(tmp_path, "2026-08-19"))
+        assert "no digest since 2026-08-19" in out
+        assert "the nightly filing may be broken" in out
+
+
+def test_a_never_run_inbox_does_not_cry_wolf(tmp_path):
+    """spawn.py ships the template with an empty inbox and no stamp."""
+    for render in (board._render_md, board._render_html):
+        out = render(_inbox(tmp_path))
+        assert "no run recorded yet" in out
+        assert "may be broken" not in out
+
+
+def test_a_populated_inbox_still_carries_the_date(tmp_path):
+    snap = _inbox(tmp_path, "2026-08-25", ["2026-08-25 — One — 2608.00001"])
+    assert "last digest 2026-08-25" in board._render_md(snap)
+    assert "last digest 2026-08-25" in board._render_html(snap)
+
+
+# --- the client-side contract -------------------------------------------------
+# knowledge_board.yml republishes on pushes to arxiv-inbox.md, which is what
+# stops happening when filing breaks — so the published page freezes and a
+# render-time warning could never fire. The date is rendered; the verdict is
+# recomputed in the browser. These tests pin the handshake between the two.
+def test_the_html_hands_the_browser_what_it_needs(tmp_path):
+    html = board._render_html(_inbox(tmp_path, "2026-08-25"))
+    assert "data-last-digest='2026-08-25'" in html
+    assert (f"data-stale-weekdays='{inbox_actions.INBOX_STALE_WEEKDAYS}'"
+            in html)
+    assert "{n}" in html, "the warning template must keep its placeholder"
+    assert "freshness()" in html
+
+
+def test_a_page_rendered_while_stale_warns_without_js(tmp_path):
+    html = board._render_html(_inbox(tmp_path, "2026-08-19"))
+    assert "class='meta stale fresh'" in html
+
+
+def test_an_unstamped_inbox_hands_the_browser_nothing_to_check(tmp_path):
+    # The attribute-with-value form: the script's own selector text mentions
+    # the bare attribute name and is always present.
+    assert "data-last-digest='" not in board._render_html(_inbox(tmp_path))
