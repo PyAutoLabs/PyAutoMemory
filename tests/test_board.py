@@ -44,7 +44,10 @@ def _tree(tmp_path: Path) -> Path:
         "# Reading queue\n\nintro prose\n\n---\n\n"
         "## Demo Papers\n\nTitle One\nTitle Two — 2406.01234\n"
         "DONE 2026-06-01 — Old Title\n\n## Other Things\n\nTitle Three\n"
-        "Title Four — https://arxiv.org/pdf/2201.00042.pdf\n")
+        "Title Four — https://arxiv.org/pdf/2201.00042.pdf\n"
+        "__A Sub Heading__\nNOTE — just a remark\n"
+        "https://example.org/not-a-paper\n"
+        "https://arxiv.org/abs/2202.00099\n")
     (tmp_path / "arxiv-inbox.md").write_text(
         "# arXiv inbox\n\nintro prose\n\n---\n"
         "2026-08-24 — Suggested One — 2608.00001\n"
@@ -67,21 +70,33 @@ def test_counts_from_a_synthetic_tree(tmp_path):
     assert w["statuses"] == {"drafted": 1, "stub": 1}
     assert w["sections"] == 2 and w["todo"] == 1 and w["resolved_keys"] == 1
     assert snap["bib_entries"] == 2
+    def _paper(kind, title, ref, line, done=False, done_date=None):
+        return {"kind": kind, "title": title, "ref": ref, "done": done,
+                "done_date": done_date, "line": line}
+
     assert snap["queue"] == [
         {"section": "Demo Papers", "count": 2, "done": 1, "papers": [
-            {"title": "Title One", "ref": None, "done": False,
-             "done_date": None, "line": "Title One"},
-            {"title": "Title Two", "ref": "2406.01234", "done": False,
-             "done_date": None, "line": "Title Two — 2406.01234"},
-            {"title": "Old Title", "ref": None, "done": True,
-             "done_date": "2026-06-01",
-             "line": "DONE 2026-06-01 — Old Title"}]},
-        {"section": "Other Things", "count": 2, "done": 0, "papers": [
-            {"title": "Title Three", "ref": None, "done": False,
-             "done_date": None, "line": "Title Three"},
-            {"title": "Title Four", "ref": "https://arxiv.org/pdf/2201.00042.pdf",
-             "done": False, "done_date": None,
-             "line": "Title Four — https://arxiv.org/pdf/2201.00042.pdf"}]}]
+            _paper("paper", "Title One", None, "Title One"),
+            _paper("paper", "Title Two", "2406.01234",
+                   "Title Two — 2406.01234"),
+            _paper("paper", "Old Title", None, "DONE 2026-06-01 — Old Title",
+                   done=True, done_date="2026-06-01")]},
+        # count is 3, not 6: the heading, the remark and the non-arXiv link are
+        # carried in file order but are not queue work.
+        {"section": "Other Things", "count": 3, "done": 0, "papers": [
+            _paper("paper", "Title Three", None, "Title Three"),
+            _paper("paper", "Title Four",
+                   "https://arxiv.org/pdf/2201.00042.pdf",
+                   "Title Four — https://arxiv.org/pdf/2201.00042.pdf"),
+            _paper("subhead", "A Sub Heading", None, "__A Sub Heading__"),
+            _paper("note", "just a remark", None, "NOTE — just a remark"),
+            _paper("note", "https://example.org/not-a-paper", None,
+                   "https://example.org/not-a-paper"),
+            # a bare arXiv link IS a paper — the title was just never written,
+            # so the id in the line stands in for it
+            _paper("paper", "arXiv:2202.00099",
+                   "https://arxiv.org/abs/2202.00099",
+                   "https://arxiv.org/abs/2202.00099")]}]
     # alpha exists; beta/gamma are wanted
     assert snap["links"]["wanted"] == 2
 
@@ -368,12 +383,55 @@ def test_no_pdf_button_where_there_is_no_ref(tmp_path):
     snap = _snap_with_remote(tmp_path)
     for fmt in ("html", "md"):
         out = board.render(snap, fmt)
-        # Title One / Title Three / Suggested Two are ref-less; the only PDF
-        # links on the page belong to the three papers that carry a ref.
-        assert out.count("arxiv.org/pdf/") == 3
+        # Title One / Title Three / Suggested Two are ref-less, and the
+        # heading and the two annotations are not papers at all; the only PDF
+        # links on the page belong to the four papers that carry a ref.
+        assert out.count("arxiv.org/pdf/") == 4
     bare = {"title": "Title One", "ref": None}
     assert board.paper_pdf_url(bare) == ""
     # a non-arXiv ref is still a link, but there is no PDF to derive from it
     assert board.paper_url({"title": "T", "ref": "https://doi.org/10.1/x"}) == \
         "https://doi.org/10.1/x"
     assert board.paper_pdf_url({"title": "T", "ref": "https://doi.org/10.1/x"}) == ""
+
+
+def test_headings_and_notes_render_as_themselves_not_as_papers(tmp_path):
+    """A `__Bold__` grouping and a `NOTE ` annotation are structure, not work.
+
+    Before line kinds the board rendered both as papers: a search link, three
+    issue buttons and a slot in the "N waiting" count, for a line that is a
+    heading or a remark.
+    """
+    snap = _snap_with_remote(tmp_path)
+    html = board.render(snap, "html")
+    md = board.render(snap, "md")
+
+    assert "<li class='subhead'>A Sub Heading</li>" in html
+    assert "- **A Sub Heading**" in md
+    assert "just a remark" in html and "- _just a remark_" in md
+
+    # neither carries a paper's buttons
+    for fragment in ("A Sub Heading", "just a remark"):
+        i = html.index(fragment)
+        assert "class='act'" not in html[i:html.index("</li>", i)]
+        assert "issues/new" not in html[i:html.index("</li>", i)]
+
+    # and neither inflates the count: 3 papers waiting in Other Things, not 6
+    other = next(q for q in snap["queue"] if q["section"] == "Other Things")
+    assert other["count"] == 3
+    assert "Other Things: 3 waiting" in md
+
+
+def test_a_bare_link_is_a_paper_only_when_it_points_at_arxiv(tmp_path):
+    snap = _snap_with_remote(tmp_path)
+    html = board.render(snap, "html")
+    # the arXiv one becomes a real paper, labelled by its id, with a PDF button
+    assert "arXiv:2202.00099" in html
+    assert "https://arxiv.org/pdf/2202.00099" in html
+    # the other stays an annotation: still clickable, but no paper buttons,
+    # and labelled by host rather than a wall of URL
+    assert "<li class='note'><a href=\"https://example.org/not-a-paper\"" in html
+    assert "example.org →" in html
+    i = html.index("example.org →")
+    assert "issues/new" not in html[i:html.index("</li>", i)]
+

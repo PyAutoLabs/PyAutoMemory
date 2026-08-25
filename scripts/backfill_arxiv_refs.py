@@ -73,10 +73,33 @@ def candidates(text: str, source: str) -> list[tuple[int, str]]:
                 continue
             body = raw.strip()
         paper = board._parse_paper(body)
+        # `kind != "paper"` is the whole point of the marker: a `__Heading__`
+        # and a `NOTE ` line are not papers, so they are never looked up — not
+        # this run and not any future one. Without that, every night spends an
+        # arXiv call on a line that can never resolve.
+        if paper["kind"] != "paper":
+            continue
         if paper["done"] or paper["ref"] or not paper["title"]:
             continue
         out.append((i, paper["title"]))
     return out
+
+
+def mark_unresolved_line(raw_line: str) -> str:
+    """`raw_line` prefixed `NOTE `, the "stop asking about this one" marker.
+
+    Written only under ``--mark-unresolved``, never by the nightly run. The
+    distinction matters: a title arXiv cannot identify is usually not a
+    non-paper but a real paper whose line lost something on the way in (a
+    LaTeX redshift, a wrapped subtitle), and those are worth re-trying after a
+    human fixes the line. So the nightly keeps asking, and a human who has
+    looked at the misses runs this once to retire the ones that are genuinely
+    prose, links or headings. The text is untouched and the line stays in
+    place — the never-delete rule covers annotations too.
+    """
+    stripped = raw_line.lstrip()
+    indent = raw_line[:len(raw_line) - len(stripped)]
+    return f"{indent}NOTE {stripped.rstrip()}"
 
 
 def apply_ref(raw_line: str, ref: str) -> str:
@@ -89,12 +112,18 @@ def apply_ref(raw_line: str, ref: str) -> str:
     return f"{raw_line.rstrip()} — {ref}"
 
 
-def backfill(root: Path, *, write: bool, limit: int,
+def backfill(root: Path, *, write: bool, limit: int, mark_unresolved: bool = False,
              resolve=arxiv_refs.resolve_title,
              delay: float = arxiv_refs.API_DELAY_SECONDS,
              sleep=time.sleep, log=print) -> dict:
-    """Resolve up to `limit` ref-less titles across the queue and the inbox."""
-    stats = {"scanned": 0, "matched": 0, "unmatched": 0, "files": []}
+    """Resolve up to `limit` ref-less titles across the queue and the inbox.
+
+    With `mark_unresolved`, a line that fails its lookup is also `NOTE `-marked
+    so no later run asks about it again — a human-driven cleanup, never the
+    nightly's own decision (see :func:`mark_unresolved_line`).
+    """
+    stats = {"scanned": 0, "matched": 0, "unmatched": 0, "marked": 0,
+             "files": []}
     budget = limit
     for name in TARGETS:
         path = root / name
@@ -103,7 +132,7 @@ def backfill(root: Path, *, write: bool, limit: int,
         lines = path.read_text(errors="replace").splitlines()
         todo = candidates("\n".join(lines), name)
         stats["scanned"] += len(todo)
-        changed = 0
+        changed = file_marked = 0
         for idx, title in todo:
             if budget <= 0:
                 break
@@ -116,7 +145,14 @@ def backfill(root: Path, *, write: bool, limit: int,
                 log(f"  ✔ {ref}  {title[:90]}")
             else:
                 stats["unmatched"] += 1
-                log(f"  · no unique match  {title[:90]}")
+                if mark_unresolved:
+                    lines[idx] = mark_unresolved_line(lines[idx])
+                    changed += 1
+                    file_marked += 1
+                    stats["marked"] += 1
+                    log(f"  ✖ NOTE-marked     {title[:90]}")
+                else:
+                    log(f"  · no unique match  {title[:90]}")
             # Politeness, not throughput: arXiv asks for a few seconds between
             # calls, and this job has all night.
             if budget > 0:
@@ -125,8 +161,9 @@ def backfill(root: Path, *, write: bool, limit: int,
             stats["files"].append(name)
             if write:
                 path.write_text("\n".join(lines) + "\n")
-        log(f"{name}: {len(todo)} ref-less, {changed} resolved"
-            f"{'' if write else ' (dry run — nothing written)'}")
+        marked = f", {file_marked} NOTE-marked" if file_marked else ""
+        log(f"{name}: {len(todo)} ref-less, {changed - file_marked} resolved"
+            f"{marked}{'' if write else ' (dry run — nothing written)'}")
     return stats
 
 
@@ -136,12 +173,20 @@ def main(argv: list[str] | None = None) -> int:
                     help="apply the refs (default: report only)")
     ap.add_argument("--limit", type=int, default=60,
                     help="most arXiv lookups to make in one run (default 60)")
+    ap.add_argument("--mark-unresolved", action="store_true",
+                    help="also NOTE-mark every line that fails to resolve, so "
+                         "later runs skip it. A human-reviewed cleanup for "
+                         "lines that are prose, links or headings rather than "
+                         "papers — never used by the nightly run, which keeps "
+                         "re-trying in case a line gets fixed.")
     ap.add_argument("--root", type=Path, default=MEMORY_HOME)
     args = ap.parse_args(argv)
 
-    stats = backfill(args.root, write=args.write, limit=args.limit)
-    print(f"\n{stats['matched']} resolved, {stats['unmatched']} unresolved, "
-          f"{stats['scanned']} ref-less lines in total.")
+    stats = backfill(args.root, write=args.write, limit=args.limit,
+                     mark_unresolved=args.mark_unresolved)
+    marked = f", {stats['marked']} NOTE-marked" if stats["marked"] else ""
+    print(f"\n{stats['matched']} resolved, {stats['unmatched']} unresolved"
+          f"{marked}, {stats['scanned']} ref-less lines in total.")
     # Not an error: an unresolved title is a normal outcome (not on arXiv, or
     # too ambiguous to be safe), and a run that resolves nothing must not fail
     # the nightly job.
