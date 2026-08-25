@@ -30,6 +30,12 @@ filing broke. The date is rendered into the page, but the "this looks broken"
 warning is computed in the reader's browser (see ``_EXTRA_JS``), because the
 page freezes at its last good render in exactly the failure the warning is for.
 
+A queue section is not a flat list of papers: a `__Bold__` line is a
+sub-heading the human wrote, and a `NOTE `-prefixed line (or a bare non-arXiv
+link) is an annotation. Both render as themselves — no link, no buttons, no
+slot in the "N waiting" count — because a heading is not a paper you can
+download. `_parse_paper` decides which is which; see `reading-queue.md`.
+
 **Contents-level only.** The board shows titles and counts, never claim text
 or summaries — the knowledge itself stays in the wiki pages.
 
@@ -123,6 +129,22 @@ QUEUE_DONE_LINE_RE = re.compile(r"^DONE\s+(\d{4}-\d{2}-\d{2})\s*—\s*(.*)$")
 # is part of the title.
 QUEUE_REF_RE = re.compile(
     r"^(.*\S)\s+—\s+((?:arXiv:)?\d{4}\.\d{4,5}(?:v\d+)?|https?://\S+)$")
+# Not every line under a `## Section` is a paper. Two kinds are not, and saying
+# so is what stops the board rendering a search button for a heading and the
+# backfill spending an arXiv lookup on one every night:
+#   `__Dark Matter__`  a bold sub-heading the human wrote to group the papers
+#                      below it — structure, rendered as structure.
+#   `NOTE <text>`      an annotation: a free-text remark, a link that is not a
+#                      paper, a stray line of pasted prose. Sibling of the
+#                      `DONE ` prefix — same shape, same never-delete rule, and
+#                      the marker `backfill_arxiv_refs.py --mark-unresolved`
+#                      writes so a line it cannot identify is asked about once
+#                      and then left alone.
+QUEUE_SUBHEAD_RE = re.compile(r"^__(.+?)__$")
+QUEUE_NOTE_RE = re.compile(r"^NOTE\b\s*(?:—\s*)?(.*)$")
+#: A line that is nothing but a URL. An arXiv one is a paper whose title was
+#: never written (the ref is the whole line); anything else is an annotation.
+QUEUE_BARE_URL_RE = re.compile(r"^https?://\S+$")
 
 
 def _owner_repo() -> tuple[str, str]:
@@ -195,7 +217,11 @@ def collect(root: Path | None = None) -> dict:
             if section is not None:
                 snapshot["queue"].append({
                     "section": section,
-                    "count": sum(1 for p in papers if not p["done"]),
+                    # Headings and annotations are carried in `papers` so the
+                    # section renders in file order, but they are not work:
+                    # counting them would inflate every "N waiting" on the board.
+                    "count": sum(1 for p in papers
+                                 if p["kind"] == "paper" and not p["done"]),
                     "done": sum(1 for p in papers if p["done"]),
                     "papers": papers,
                 })
@@ -236,19 +262,59 @@ def collect(root: Path | None = None) -> dict:
 
 # --- pure helpers --------------------------------------------------------------
 def _parse_paper(text: str) -> dict:
-    """One queue line → {title, ref, done, done_date, line} (line = as written)."""
+    """One queue line → {kind, title, ref, done, done_date, line}.
+
+    `line` is the line as written — the token every issue button round-trips.
+    `kind` is what the line *is*: a `paper`, a `subhead` (a `__Bold__` grouping
+    the human wrote), or a `note` (a `NOTE `-prefixed annotation, or a bare
+    non-arXiv link). Only a `paper` is counted, given buttons, or looked up on
+    arXiv; the other two are carried through and rendered as themselves, which
+    is the whole point — a heading is not a paper you can download.
+    """
     raw, done_date = text, None
     m = QUEUE_DONE_LINE_RE.match(text)
     if m:
         done_date, text = m.group(1), m.group(2)
     elif QUEUE_DONE_RE.match(text):
         done_date, text = "", text[4:].lstrip(" —-")
+
+    def _built(kind, title, ref=None):
+        return {"kind": kind, "title": title, "ref": ref,
+                "done": done_date is not None,
+                "done_date": done_date or None, "line": raw}
+
+    # Checked before the ref split: a heading or an annotation has no ref to
+    # find, and `NOTE https://…` must not be read as a titleless paper.
+    m = QUEUE_SUBHEAD_RE.match(text)
+    if m:
+        return _built("subhead", m.group(1).strip())
+    m = QUEUE_NOTE_RE.match(text)
+    if m:
+        return _built("note", m.group(1).strip())
+
     ref = None
     m = QUEUE_REF_RE.match(text)
     if m:
         text, ref = m.group(1), m.group(2)
-    return {"title": text, "ref": ref, "done": done_date is not None,
-            "done_date": done_date or None, "line": raw}
+    elif QUEUE_BARE_URL_RE.match(text):
+        # A line that is only a URL. If it points at arXiv the human did write a
+        # paper — just as a link instead of a title — so it earns its abstract
+        # page and its PDF button, labelled by the identifier the line already
+        # contains rather than by a hundred characters of raw URL. (No title is
+        # invented: the id is read out of the line, and the line itself is what
+        # every issue button still round-trips.) Any other bare link is an
+        # annotation.
+        aid = arxiv_refs.arxiv_id(text)
+        if not aid:
+            return _built("note", text)
+        return _built("paper", f"arXiv:{aid}", text)
+    return _built("paper", text, ref)
+
+
+def _url_host(url: str) -> str:
+    """`https://sub.example.org/a/b?c` → `sub.example.org` (the url if unparsable)."""
+    m = re.match(r"^https?://([^/?#]+)", url)
+    return m.group(1) if m else url
 
 
 def paper_url(paper: dict) -> str:
@@ -554,6 +620,14 @@ def _render_md(snapshot: dict) -> str:
             if p["done"]:
                 continue
             label = p["title"].replace("[", "\\[").replace("]", "\\]")
+            if p["kind"] == "subhead":
+                lines.append(f"- **{label}**")
+                continue
+            if p["kind"] == "note":
+                if QUEUE_BARE_URL_RE.match(p["title"]):
+                    label = f"[{_url_host(p['title'])} →]({p['title']})"
+                lines.append(f"- _{label}_")
+                continue
             bits = [f"- [{label}]({paper_url(p)})"]
             pdf = paper_pdf_url(p)
             if pdf:
@@ -627,6 +701,11 @@ details.qsec[open]>summary .name::before{content:"\u25be "}
 ul.papers{margin:.5rem 0 .25rem;padding-left:1.3rem}
 ul.papers li{margin:.4rem 0}
 ul.papers li.done{color:var(--muted)}
+/* A heading the human wrote inside a section, and a line that is not a paper:
+   both render as themselves — no link, no buttons, nothing to tap. */
+ul.papers li.subhead{list-style:none;margin:.7rem 0 .2rem -1.3rem;
+ font-weight:600;letter-spacing:.02em}
+ul.papers li.note{color:var(--muted);font-style:italic}
 a.act{margin-left:.35rem;padding:.05rem .4rem;font-size:.85rem;
  border:1px solid var(--line);border-radius:6px;background:var(--btn)}
 a.act:hover{background:var(--tint);border-color:var(--accent);
@@ -727,6 +806,23 @@ def _render_html(snapshot: dict) -> str:
                 hist_items.append(
                     f"<li class='done'>DONE {_html.escape(p.get('done_date') or '?')}"
                     f" — {_html.escape(p['title'])}</li>")
+                continue
+            if p["kind"] == "subhead":
+                items.append(f"<li class='subhead'>"
+                             f"{_html.escape(p['title'])}</li>")
+                continue
+            if p["kind"] == "note":
+                text = _html.escape(p["title"])
+                if QUEUE_BARE_URL_RE.match(p["title"]):
+                    # A saved link is still a link: render it clickable, just
+                    # without the paper buttons it cannot honour. Labelled by
+                    # host — a tracking-wrapped URL is hundreds of characters
+                    # of noise on a phone, and the line itself keeps the whole
+                    # thing.
+                    text = (f"<a href=\"{_html.escape(p['title'], quote=True)}\" "
+                            f"target='_blank' rel='noopener'>"
+                            f"{_html.escape(_url_host(p['title']))} →</a>")
+                items.append(f"<li class='note'>{text}</li>")
                 continue
             acts = [_pdf_act(p)]
             for action, icon, hint in (

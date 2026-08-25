@@ -13,6 +13,20 @@ Papers waiting to be read and filed. Format:
   and only when exactly one arXiv paper's title matches.
 - A read/consumed paper is never deleted: prefix its line with
   `DONE <YYYY-MM-DD> — ` and leave it in place (the reading history).
+- **Not every line is a paper.** Two kinds are not, and marking them keeps the
+  Dashboard from offering a download button for a heading and stops the nightly
+  ref backfill spending an arXiv lookup on one:
+  - `__Bold Text__` on its own line is a **sub-heading** grouping the papers
+    below it. Rendered as a heading, never counted, never looked up.
+  - `NOTE <text>` is an **annotation** — a remark, a link that is not a paper,
+    a stray line of pasted prose. Sibling of the `DONE ` prefix: same shape,
+    same never-delete rule. A bare non-arXiv link counts as one automatically.
+    `scripts/backfill_arxiv_refs.py --mark-unresolved` applies the prefix in
+    bulk to lines it could not identify — run it after reading a dry run, since
+    an unresolved title is more often a real paper whose line lost something
+    (a LaTeX redshift, a wrapped subtitle) than a genuine non-paper.
+  - A line that is *only* an arXiv link is still a paper — the title was just
+    never written, so the board labels it `arXiv:<id>`.
 - Filing a read paper: add its canonical entry to `bibliography/`, stub it in
   the matching `wiki/<domain>/sources/*.md` page per `wiki/CLAUDE.md`, then
   mark the line DONE and run `make validate`.

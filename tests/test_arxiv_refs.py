@@ -177,3 +177,57 @@ def test_backfill_is_idempotent(tmp_path):
     stats = backfill.backfill(root, **kw)
     assert stats["scanned"] == 0
     assert (root / "reading-queue.md").read_text() == once
+
+
+# --- line kinds: what the backfill refuses to look up -------------------------
+KINDED = ("# Reading queue\n\nprose\n\n---\n\n## Strong Lensing\n"
+          "__A Bold Heading__\n"
+          "Bare Title\n"
+          "NOTE a stray remark someone pasted\n"
+          "NOTE — https://example.org/not-a-paper\n"
+          "https://example.org/also-not-a-paper\n"
+          "https://arxiv.org/abs/2202.00099\n")
+
+
+def test_headings_notes_and_non_arxiv_links_are_never_looked_up():
+    """The marker's whole purpose: these lines cost zero arXiv calls, forever."""
+    got = [t for _, t in backfill.candidates(KINDED, "reading-queue.md")]
+    assert got == ["Bare Title"]   # the bare arXiv link already has its ref
+
+
+def test_mark_unresolved_line_prefixes_without_touching_the_text():
+    assert backfill.mark_unresolved_line("Some Prose Line") == \
+        "NOTE Some Prose Line"
+    # indentation survives; the text is never rewritten
+    assert backfill.mark_unresolved_line("   Indented  ") == "   NOTE Indented"
+
+
+def test_mark_unresolved_retires_a_line_from_all_future_runs(tmp_path):
+    (tmp_path / "reading-queue.md").write_text(
+        "# Q\n\n---\n\n## S\nResolves Fine\nNever Resolves\n")
+    (tmp_path / "arxiv-inbox.md").write_text("# I\n\n---\n")
+    kw = dict(write=True, limit=10, sleep=lambda _: None, log=lambda *a: None,
+              resolve=lambda t: "2608.11111" if t == "Resolves Fine" else None)
+
+    stats = backfill.backfill(tmp_path, mark_unresolved=True, **kw)
+    assert stats["matched"] == 1 and stats["marked"] == 1
+    text = (tmp_path / "reading-queue.md").read_text()
+    assert "Resolves Fine — 2608.11111" in text
+    assert "NOTE Never Resolves" in text
+
+    # the next run has nothing left to ask arXiv about
+    assert backfill.backfill(tmp_path, mark_unresolved=True, **kw)["scanned"] == 0
+
+
+def test_the_nightly_never_marks_on_its_own(tmp_path):
+    """Default off: an unresolved title is usually a real paper with a mangled
+    line, and retrying it after a human fixes the line is the right behaviour."""
+    (tmp_path / "reading-queue.md").write_text(
+        "# Q\n\n---\n\n## S\nNever Resolves\n")
+    (tmp_path / "arxiv-inbox.md").write_text("# I\n\n---\n")
+    stats = backfill.backfill(tmp_path, write=True, limit=10,
+                              resolve=lambda t: None, sleep=lambda _: None,
+                              log=lambda *a: None)
+    assert stats["marked"] == 0
+    assert (tmp_path / "reading-queue.md").read_text().endswith("Never Resolves\n")
+
