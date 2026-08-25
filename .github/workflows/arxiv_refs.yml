@@ -32,6 +32,10 @@ on:
         description: "Report only — resolve nothing into the files"
         type: boolean
         default: false
+      mark_unresolved:
+        description: "Also NOTE-mark every line that fails to resolve, so later runs skip it. Human-reviewed cleanup — read a dry run first."
+        type: boolean
+        default: false
 
 # contents: write → the queue commit; actions: write → re-dispatch the
 # Dashboard (a token push does not retrigger `on: push` workflows).
@@ -60,11 +64,17 @@ jobs:
         env:
           LIMIT: ${{ inputs.limit }}
           DRY_RUN: ${{ inputs.dry_run }}
+          MARK_UNRESOLVED: ${{ inputs.mark_unresolved }}
         run: |
           set -u
           args="--limit ${LIMIT:-60}"
           [ "${DRY_RUN:-false}" = "true" ] || args="$args --write"
-          python scripts/backfill_arxiv_refs.py $args | tee /tmp/backfill.log
+          # Never on the schedule: `inputs.*` is empty on a cron fire, so this
+          # can only ever be a deliberate dispatch.
+          [ "${MARK_UNRESOLVED:-false}" != "true" ] || args="$args --mark-unresolved"
+          # `-u`: unbuffered, so the log streams while the run is in flight
+          # instead of arriving in one block at the end.
+          python -u scripts/backfill_arxiv_refs.py $args | tee /tmp/backfill.log
           {
             echo '## arXiv refs backfill'
             echo '```'
@@ -85,11 +95,18 @@ jobs:
 
       - name: Commit + push (explicit paths only)
         if: steps.backfill.outputs.changed == 'yes' && github.ref == 'refs/heads/main'
+        env:
+          MARK_UNRESOLVED: ${{ inputs.mark_unresolved }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add reading-queue.md arxiv-inbox.md
-          git commit -m "queue: backfill arXiv refs for ref-less papers [skip ci]"
+          if [ "${MARK_UNRESOLVED:-false}" = "true" ]; then
+            msg="queue: backfill arXiv refs, NOTE-mark what cannot be identified"
+          else
+            msg="queue: backfill arXiv refs for ref-less papers"
+          fi
+          git commit -m "${msg} [skip ci]"
           for attempt in 1 2 3; do
             if git push; then exit 0; fi
             git pull --rebase origin main || exit 1
