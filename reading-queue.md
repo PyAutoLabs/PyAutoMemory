@@ -217,16 +217,16 @@ IRIS: A Bayesian Approach for Image Reconstruction in Radio Interferometry with 
 SIDE-real: Truncated marginal neural ratio estimation for Supernova Ia Dust Extinction with real data
 LtU-ILI: An All-in-One Framework for Implicit Inference in Astrophysics and Cosmology — 2402.05137
 nbi: the Astronomer's Package for Neural Posterior Estimation
-Bayesian Computation in Astronomy: Novel methods for parallel and gradient-free inference
+Bayesian Computation in Astronomy: Novel methods for parallel and gradient-free inference — 2303.16134
 Finding reproducible cluster partitions for the k-means algorithm
-Scalable hierarchical BayeSN inference: Investigating dependence of SN Ia host galaxy dust properties on stellar mass and redshift
+Scalable hierarchical BayeSN inference: Investigating dependence of SN Ia host galaxy dust properties on stellar mass and redshift — 2401.08755
 
 ## SETI
-Imagining the Alien: Human Projections and Cognitive Limitations
-Results of ten years of UCLA SETI searches with the Green Bank Telescope
-OmniCosmos: Transferring Particle Physics Knowledge Across the Cosmos
-From Extraterrestrial Microbes to Alien Intelligence: Rebalancing Astronomical Research Priorities
-Microlensing Signatures of Dyson Sphere-like Structures around Primordial Black Holes as Technosignatures of Extraterrestrial Advanced Civilizations
+Imagining the Alien: Human Projections and Cognitive Limitations — 2602.07284
+Results of ten years of UCLA SETI searches with the Green Bank Telescope — 2605.05408
+OmniCosmos: Transferring Particle Physics Knowledge Across the Cosmos — 2512.24422
+From Extraterrestrial Microbes to Alien Intelligence: Rebalancing Astronomical Research Priorities — 2507.17790
+Microlensing Signatures of Dyson Sphere-like Structures around Primordial Black Holes as Technosignatures of Extraterrestrial Advanced Civilizations — 2512.07924
 
 ## Cancer
 https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.linkedin.com%2Fposts%2Fturbine-ai_network-driven-cancer-cell-avatars-for-combination-activity-7211408647778668547-nd7n%3Futm_source%3Dshare%26utm_medium%3Dmember_desktop&data=05%7C02%7CJames.Nightingale%40newcastle.ac.uk%7Cb88055fe74cc48f5d2e708dc9a85e8e8%7C9c5012c9b61644c2a91766814fbe3e87%7C1%7C0%7C638555147133736023%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=WefLDikVOdmU5gFIaZTXyRjF5fyvksFjdZ6hpJl9lHc%3D&reserved=0
@@ -250,7 +250,7 @@ NOTE Gyr.
 
 __SMBH__
 
-Massive black holes in galactic nuclei: Theory and Simulations
+Massive black holes in galactic nuclei: Theory and Simulations — 2304.11541
  
     Cant remember
 
@@ -260,11 +260,11 @@ Massive Black Holes summary — https://arxiv.org/pdf/2304.10233.pdf
 
 __SMBH Binaries__
 
-Hierarchical Bayesian inference on an analytical model of the LISA massive black hole binary population
+Hierarchical Bayesian inference on an analytical model of the LISA massive black hole binary population — 2409.06527
 
     Incredible Bayes Model of SMBH mergers for GW astronomy, INCLUING MERGER TIME DELAYS
 
-Dual AGNs: Precursors of Binary Supermassive Black Hole Formation and Mergers:
+Dual AGNs: Precursors of Binary Supermassive Black Hole Formation and Mergers: — 2403.17076
 
     Shows rates of SMBHs around AGNs, implies that galaxies should have many 10^8MSun SMBHs wandering around.
 
@@ -272,11 +272,11 @@ Active Galactic Nuclei and Host Galaxies in COSMOS-Web. II. First Look at the Kp
 
     High rate of dual AGN in redshift 1-3 galaxies, now possible due to JWST.
 
-Einstein vs Hawking: Black hole binaries and cosmological expansion:
+Einstein vs Hawking: Black hole binaries and cosmological expansion: — 2308.15117
 
     Cant remember
 
-Observational Signatures of Supermassive Black Hole Binaries
+Observational Signatures of Supermassive Black Hole Binaries — 2310.16896
 
     CONTAINS SMBHB EVOLUTION EQUATIONS
 
@@ -287,38 +287,38 @@ RABBITS Simulations which show that SMBH binaries are driven to coalescence by c
     https://arxiv.org/abs/2311.01499
     https://arxiv.org/abs/2311.01493
 
-Compact object mergers: Observations of supermassive binary black holes and stellar tidal disruption events
+Compact object mergers: Observations of supermassive binary black holes and stellar tidal disruption events — 1502.05720
 
     Run through of observational signatures of SMBHBs, most of which are x-ray or AGN based.
 
-The NANOGrav 15-year Data Set: Constraints on Supermassive Black Hole Binaries from the Gravitational Wave Background
+The NANOGrav 15-year Data Set: Constraints on Supermassive Black Hole Binaries from the Gravitational Wave Background — 2306.16220
 
     The link between gravitational wave background and > 10^7MSun SMBHB's.
 
-Premature supermassive black hole mergers in cosmological simulations of structure formation
+Premature supermassive black hole mergers in cosmological simulations of structure formation — 2504.17549
 
     Brilliant example of how numerical effects in simulations can lead to delays on SMBH mergers which impact SWGB PTA results.
 
 ## KetJU
 https://arxiv.org/pdf/2211.11788.pdf
 
-Big Galaxies and Big Black Holes: The Massive Ends of the Local Stellar and Black Hole Mass Functions and the Implications for Nanohertz Gravitational Waves
+Big Galaxies and Big Black Holes: The Massive Ends of the Local Stellar and Black Hole Mass Functions and the Implications for Nanohertz Gravitational Waves — 2407.14595
 
     Examples of how to make and plot SMBH mass functions and relating them to GWB.
 
 
-Varstrometry for Off-nucleus and Dual sub-Kpc AGN (VODKA): A Mix of Singles, Lenses, and True Duals at Cosmic Noon
+Varstrometry for Off-nucleus and Dual sub-Kpc AGN (VODKA): A Mix of Singles, Lenses, and True Duals at Cosmic Noon — 2409.16363
 
     Good overview of dual AGN and looking for them
 
-Identifying supermassive black hole recoil in elliptical galaxies
+Identifying supermassive black hole recoil in elliptical galaxies — 2410.13942
 
     All the stuff SMBH binary recoils do to the Sersic core and galaxy around them.
 
 
 __SMBH Scouring__
 
-The supermassive black hole merger driven evolution of high-redshift red nuggets into present-day cored early-type galaxies
+The supermassive black hole merger driven evolution of high-redshift red nuggets into present-day cored early-type galaxies — 2407.18303
 
     Great KetJU simulation study of how scouring SMBHs can create cored galaxies and impact the galaxies around them.
 
