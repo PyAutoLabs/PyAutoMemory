@@ -9,8 +9,9 @@ Format:
   ` — <arXiv id or URL>` (same title/ref convention as `reading-queue.md`).
 - The date is the arXiv **announcement** date the digest ran against, and is
   the expiry anchor — not the day the paper was submitted.
-- The Dashboard renders each line with four one-tap actions: ➕ add to the
-  reading queue, 📥 intake into memory, 📑 make citeable, ✖️ dismiss.
+- The Dashboard renders each line with a 📄 button straight to the paper's PDF
+  (the ref above is what makes it possible) plus four one-tap actions: ➕ add to
+  the reading queue, 📥 intake into memory, 📑 make citeable, ✖️ dismiss.
 - Un-acted lines **lapse after 7 days** (`INBOX_WINDOW_DAYS` in
   `scripts/inbox_actions.py`) and are swept by the nightly job. A swept line is
   not lost: git history holds it. This is deliberate — the never-delete rule in

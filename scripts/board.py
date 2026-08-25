@@ -7,8 +7,10 @@ block holding a paste-ready Claude Code prompt that executes this repo's own
 documented workflow (``bibliography/README.md`` "Adding a paper",
 ``wiki/CLAUDE.md``'s schema) — plus contents cards with ``/memory <domain>``
 recall chips. Reading-queue sections expand to the individual papers: each
-title links out (arXiv abstract page, or a title search when the line has no
-ref) and carries three prefilled-GitHub-issue actions — 📥 intake-into-memory
+title links out to the arXiv abstract page (or, when the line carries no ref,
+a title search — see ``scripts/arxiv_refs.py``), carries a 📄 button onto the
+PDF itself so a phone can collect a stack of papers without a detour through
+search, and carries three prefilled-GitHub-issue actions — 📥 intake-into-memory
 (really interesting: full filing), 📑 make-citeable (worth citing, not
 pivotal: bib entry + minimal sources section), both open work items carrying
 the human's free-text notes, and ✅ read-don't-file (processed automatically
@@ -17,7 +19,8 @@ until the human submits the issue.
 
 Above the queue sits the **arXiv inbox** (``arxiv-inbox.md``): what the nightly
 digest suggested overnight, each line showing how many days it has left before
-it lapses and carrying two further actions — ➕ add-to-the-queue and ✖️ dismiss.
+it lapses and carrying the same 📄 PDF button plus two further actions —
+➕ add-to-the-queue and ✖️ dismiss.
 The inbox's format, window and transitions live in ``scripts/inbox_actions.py``;
 this module reads them rather than re-deriving them.
 
@@ -62,6 +65,7 @@ MEMORY_HOME = Path(__file__).resolve().parents[1]
 # The arXiv inbox owns its own line format, window and transitions; the
 # board reads them rather than re-deriving them (scripts/inbox_actions.py).
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import arxiv_refs  # noqa: E402
 import inbox_actions  # noqa: E402
 
 # The family look lives once, in the Brain (``board/_theme.py``): the
@@ -248,14 +252,29 @@ def _parse_paper(text: str) -> dict:
 
 
 def paper_url(paper: dict) -> str:
-    """Where to read the paper: its abstract page, or an arXiv title search."""
+    """Where to read the paper: its abstract page, or an arXiv title search.
+
+    An arXiv ref in any shape — bare id, ``arXiv:``-prefixed, an abs URL, a
+    ``/pdf/…pdf`` URL — resolves to the *abstract* page, so every queue line
+    lands on the same kind of page and the PDF is a separate, explicit button
+    (:func:`paper_pdf_url`). A non-arXiv ref is a link the human wrote and is
+    followed verbatim. A line with no ref at all can only be searched for; the
+    search is the fallback, not the design (``scripts/arxiv_refs.py``).
+    """
     ref = paper.get("ref")
     if ref:
-        if ref.startswith("http"):
-            return ref
-        return "https://arxiv.org/abs/" + ref.removeprefix("arXiv:")
-    return ("https://arxiv.org/search/?searchtype=title&query="
-            + _quote(paper.get("title", ""), safe=""))
+        return arxiv_refs.abs_url(ref) or ref
+    return arxiv_refs.search_url(paper.get("title", ""))
+
+
+def paper_pdf_url(paper: dict) -> str:
+    """The paper's direct PDF, or "" when the line carries no arXiv ref.
+
+    Empty is a rendering instruction: no ref, no 📄 button — the board never
+    shows a button that cannot work. Retiring those empties is the backfill's
+    job (``scripts/backfill_arxiv_refs.py``), not the renderer's.
+    """
+    return arxiv_refs.pdf_url(paper.get("ref")) or ""
 
 
 def _queue_issue_url(snapshot: dict, section: str, paper: dict,
@@ -508,6 +527,9 @@ def _render_md(snapshot: dict) -> str:
         for p in inbox:
             label = p["title"].replace("[", "\\[").replace("]", "\\]")
             bits = [f"- [{label}]({paper_url(p)}) — _{p['days_left']}d left_"]
+            pdf = paper_pdf_url(p)
+            if pdf:
+                bits.append(f"[pdf 📄]({pdf})")
             for action, chip in (("add", "queue ➕"), ("intake", "intake 📥"),
                                  ("cite", "cite 📑"), ("dismiss", "dismiss ✖️")):
                 u = _queue_issue_url(snapshot, inbox_actions.INBOX_TARGET_SECTION,
@@ -533,6 +555,9 @@ def _render_md(snapshot: dict) -> str:
                 continue
             label = p["title"].replace("[", "\\[").replace("]", "\\]")
             bits = [f"- [{label}]({paper_url(p)})"]
+            pdf = paper_pdf_url(p)
+            if pdf:
+                bits.append(f"[pdf 📄]({pdf})")
             for action, chip in (("intake", "intake 📥"), ("cite", "cite 📑"),
                                  ("read", "read ✅")):
                 u = _queue_issue_url(snapshot, q["section"], p, action)
@@ -606,6 +631,7 @@ a.act{margin-left:.35rem;padding:.05rem .4rem;font-size:.85rem;
  border:1px solid var(--line);border-radius:6px;background:var(--btn)}
 a.act:hover{background:var(--tint);border-color:var(--accent);
  text-decoration:none}
+a.act.pdf{border-color:var(--accent)}
 details.hist{margin:.25rem 0 .25rem 1.3rem}
 details.hist>summary{cursor:pointer}
 #pfilter{width:100%;padding:.45rem .6rem;margin:.25rem 0 .5rem;
@@ -667,6 +693,24 @@ function flt(q){q=q.toLowerCase();
 """
 
 
+def _pdf_act(paper: dict) -> str:
+    """The 📄 chip: the paper's PDF, one tap from the board.
+
+    First in the row on purpose — the filing actions (📥 📑 ✅) decide what to do
+    *after* reading, and this is the one that gets the paper onto the phone in
+    the first place. ``rel='noopener'`` + ``target='_blank'`` so collecting a
+    dozen PDFs before a flight does not keep navigating the board away.
+    """
+    url = paper_pdf_url(paper)
+    if not url:
+        return ""
+    hint = ("download the PDF: opens arXiv's PDF directly — no search, no "
+            "abstract page in between")
+    return (f"<a class='act pdf' href=\"{_html.escape(url, quote=True)}\" "
+            f"target='_blank' rel='noopener' "
+            f"title='{_html.escape(hint, quote=True)}'>\U0001f4c4</a>")
+
+
 def _render_html(snapshot: dict) -> str:
     t_ = theme()
     t = _totals(snapshot)
@@ -684,7 +728,7 @@ def _render_html(snapshot: dict) -> str:
                     f"<li class='done'>DONE {_html.escape(p.get('done_date') or '?')}"
                     f" — {_html.escape(p['title'])}</li>")
                 continue
-            acts = []
+            acts = [_pdf_act(p)]
             for action, icon, hint in (
                     ("intake", "📥", "intake into memory: really interesting — "
                                      "opens a prefilled issue (add your notes) "
@@ -716,7 +760,7 @@ def _render_html(snapshot: dict) -> str:
     inbox = snapshot.get("inbox") or []
     inbox_items = []
     for p in inbox:
-        acts = []
+        acts = [_pdf_act(p)]
         for action, icon, hint in (
                 ("add", "➕", "add to the reading queue: worth reading — opens "
                               "a prefilled issue; submitting files the line"),

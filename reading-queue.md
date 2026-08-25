@@ -5,6 +5,12 @@ Papers waiting to be read and filed. Format:
 - `## <Section>` headers group papers by domain (matching `wiki/<domain>/`
   where one exists).
 - One paper per line — a bare title, optionally followed by ` — <arXiv id or URL>`.
+- **Add the ref whenever you know it.** It is what lets the Dashboard link the
+  paper's arXiv abstract page and put a 📄 one-tap PDF button beside it; without
+  one the board can only offer an arXiv title *search*, which costs a results
+  page and a squint per paper. `scripts/backfill_arxiv_refs.py` (nightly, via
+  `.github/workflows/arxiv_refs.yml`) fills in the ones nobody wrote by hand,
+  and only when exactly one arXiv paper's title matches.
 - A read/consumed paper is never deleted: prefix its line with
   `DONE <YYYY-MM-DD> — ` and leave it in place (the reading history).
 - Filing a read paper: add its canonical entry to `bibliography/`, stub it in

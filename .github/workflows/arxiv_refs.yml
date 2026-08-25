@@ -1,0 +1,102 @@
+name: arXiv refs backfill
+
+# Gives ref-less reading-queue lines their arXiv id, so the Dashboard can offer
+# the abstract page and the 📄 PDF button instead of an arXiv title search.
+#
+# The queue predates the nightly digest: most of its lines are bare titles, and
+# a bare title is only ever searchable. scripts/backfill_arxiv_refs.py resolves
+# them against the arXiv API and appends `— <id>` where exactly one paper's
+# title matches; anything looser is left alone, because a wrong id sends the
+# reader confidently to the wrong paper.
+#
+# Idempotent and resumable: a line that already has a ref is skipped, so each
+# run only works on what is left and the job goes quiet once the queue is fully
+# resolved. --limit caps the arXiv calls per run (they are spaced ~3 s apart out
+# of politeness, so the cap is really a runtime cap); the default drains the
+# historical backlog over a few nights. Titles arXiv genuinely does not have are
+# re-attempted each run — the deliberate cost of keeping no per-line failure
+# state, and bounded by the same cap.
+
+on:
+  schedule:
+    # 04:10 UTC: after PyAutoMind's 02:00 digest has filed the night's papers,
+    # before the morning read.
+    - cron: "10 4 * * *"
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Most arXiv lookups this run (blank = 60)"
+        required: false
+        default: ""
+      dry_run:
+        description: "Report only — resolve nothing into the files"
+        type: boolean
+        default: false
+
+# contents: write → the queue commit; actions: write → re-dispatch the
+# Dashboard (a token push does not retrigger `on: push` workflows).
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: arxiv-refs
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Resolve ref-less titles against arXiv
+        id: backfill
+        env:
+          LIMIT: ${{ inputs.limit }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          set -u
+          args="--limit ${LIMIT:-60}"
+          [ "${DRY_RUN:-false}" = "true" ] || args="$args --write"
+          python scripts/backfill_arxiv_refs.py $args | tee /tmp/backfill.log
+          {
+            echo '## arXiv refs backfill'
+            echo '```'
+            cat /tmp/backfill.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          if [ -n "$(git status --porcelain -- reading-queue.md arxiv-inbox.md)" ]; then
+            echo "changed=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=no" >> "$GITHUB_OUTPUT"
+          fi
+
+      # The queue is validated like any other edit to it — a backfill that
+      # broke the line grammar must fail here, not on the board.
+      - name: Validate
+        if: steps.backfill.outputs.changed == 'yes'
+        run: make validate
+
+      - name: Commit + push (explicit paths only)
+        if: steps.backfill.outputs.changed == 'yes' && github.ref == 'refs/heads/main'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reading-queue.md arxiv-inbox.md
+          git commit -m "queue: backfill arXiv refs for ref-less papers [skip ci]"
+          for attempt in 1 2 3; do
+            if git push; then exit 0; fi
+            git pull --rebase origin main || exit 1
+          done
+          echo "::error::could not push the backfill commit after 3 attempts"
+          exit 1
+
+      - name: Refresh the dashboard
+        if: steps.backfill.outputs.changed == 'yes' && github.ref == 'refs/heads/main'
+        run: gh workflow run knowledge_board.yml --ref main

@@ -43,7 +43,8 @@ def _tree(tmp_path: Path) -> Path:
     (tmp_path / "reading-queue.md").write_text(
         "# Reading queue\n\nintro prose\n\n---\n\n"
         "## Demo Papers\n\nTitle One\nTitle Two — 2406.01234\n"
-        "DONE 2026-06-01 — Old Title\n\n## Other Things\n\nTitle Three\n")
+        "DONE 2026-06-01 — Old Title\n\n## Other Things\n\nTitle Three\n"
+        "Title Four — https://arxiv.org/pdf/2201.00042.pdf\n")
     (tmp_path / "arxiv-inbox.md").write_text(
         "# arXiv inbox\n\nintro prose\n\n---\n"
         "2026-08-24 — Suggested One — 2608.00001\n"
@@ -75,9 +76,12 @@ def test_counts_from_a_synthetic_tree(tmp_path):
             {"title": "Old Title", "ref": None, "done": True,
              "done_date": "2026-06-01",
              "line": "DONE 2026-06-01 — Old Title"}]},
-        {"section": "Other Things", "count": 1, "done": 0, "papers": [
+        {"section": "Other Things", "count": 2, "done": 0, "papers": [
             {"title": "Title Three", "ref": None, "done": False,
-             "done_date": None, "line": "Title Three"}]}]
+             "done_date": None, "line": "Title Three"},
+            {"title": "Title Four", "ref": "https://arxiv.org/pdf/2201.00042.pdf",
+             "done": False, "done_date": None,
+             "line": "Title Four — https://arxiv.org/pdf/2201.00042.pdf"}]}]
     # alpha exists; beta/gamma are wanted
     assert snap["links"]["wanted"] == 2
 
@@ -110,6 +114,9 @@ def test_paper_links_and_issue_actions(tmp_path):
     assert "https://arxiv.org/abs/2406.01234" in html
     assert ("https://arxiv.org/search/?searchtype=title&amp;query=Title%20One"
             in html)
+    # a ref written as a /pdf/ URL still titles onto the abstract page, so
+    # every paper row reads the same way
+    assert "https://arxiv.org/abs/2201.00042" in html
     # both prefilled-issue actions, on the repo's own issue tracker
     assert "https://github.com/PyAutoLabs/PyAutoMemory/issues/new?" in html
     assert "labels=queue-read" in html and "labels=queue-intake" in html
@@ -337,3 +344,36 @@ def test_an_unstamped_inbox_hands_the_browser_nothing_to_check(tmp_path):
     # The attribute-with-value form: the script's own selector text mentions
     # the bare attribute name and is always present.
     assert "data-last-digest='" not in board._render_html(_inbox(tmp_path))
+
+
+def test_a_reffed_paper_carries_a_one_tap_pdf_button(tmp_path):
+    """The 📄 button: the PDF itself, no search and no abstract page first.
+
+    The reason the queue wants refs at all — a phone collecting a stack of
+    papers before a flight taps once per paper, not three times.
+    """
+    snap = _snap_with_remote(tmp_path)
+    html = board.render(snap, "html")
+    md = board.render(snap, "md")
+    for fmt in (html, md):
+        assert "https://arxiv.org/pdf/2406.01234" in fmt   # bare-id ref
+        assert "https://arxiv.org/pdf/2201.00042" in fmt   # /pdf/ URL ref
+        assert "https://arxiv.org/pdf/2608.00001" in fmt   # inbox paper
+    # it opens away from the board, so collecting a stack does not lose the page
+    assert "class='act pdf'" in html and "rel='noopener'" in html
+
+
+def test_no_pdf_button_where_there_is_no_ref(tmp_path):
+    """A button that cannot work is never rendered — a search is not a PDF."""
+    snap = _snap_with_remote(tmp_path)
+    for fmt in ("html", "md"):
+        out = board.render(snap, fmt)
+        # Title One / Title Three / Suggested Two are ref-less; the only PDF
+        # links on the page belong to the three papers that carry a ref.
+        assert out.count("arxiv.org/pdf/") == 3
+    bare = {"title": "Title One", "ref": None}
+    assert board.paper_pdf_url(bare) == ""
+    # a non-arXiv ref is still a link, but there is no PDF to derive from it
+    assert board.paper_url({"title": "T", "ref": "https://doi.org/10.1/x"}) == \
+        "https://doi.org/10.1/x"
+    assert board.paper_pdf_url({"title": "T", "ref": "https://doi.org/10.1/x"}) == ""
