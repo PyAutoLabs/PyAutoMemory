@@ -20,7 +20,10 @@ for managing all of it from one page: the reading
 queue, the paper sections still needing a canonical citation key, and each
 sub-wiki's maturity — every work queue carrying a one-tap 📋 button that
 copies a paste-ready Claude prompt (file the next paper, resolve keys,
-upgrade a stub, or `/memory <domain>` to recall what's known).
+upgrade a stub, or `/memory <domain>` to recall what's known). Every queued
+paper links to its arXiv abstract page and carries a 📄 button onto the PDF
+itself, so a phone can collect a stack of papers to read offline in one tap
+each.
 
 ## Current contents
 

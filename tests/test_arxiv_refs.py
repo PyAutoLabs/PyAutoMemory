@@ -1,0 +1,179 @@
+"""tests/test_arxiv_refs.py — the arXiv ref grammar and the queue backfill.
+
+Two contracts. ``arxiv_refs``: every ref shape the queue has ever carried
+normalises to one id, from which the abstract page and the PDF follow, and a
+non-arXiv ref yields neither. ``backfill_arxiv_refs``: it only ever touches
+lines the board renders as ref-less papers, and it only writes an id when
+exactly one arXiv title matches — the guard that keeps a wrong id out of the
+queue. Neither test touches the network: the resolver's HTTP call is injected.
+"""
+
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+
+import arxiv_refs  # noqa: E402
+import backfill_arxiv_refs as backfill  # noqa: E402
+
+
+def _atom(*papers) -> bytes:
+    entries = "".join(
+        f"<entry><id>http://arxiv.org/abs/{i}v1</id><title>{t}</title></entry>"
+        for i, t in papers)
+    return (f"<feed xmlns='http://www.w3.org/2005/Atom'>{entries}"
+            f"</feed>").encode()
+
+
+# --- the grammar --------------------------------------------------------------
+def test_every_ref_shape_normalises_to_one_id():
+    for ref in ("2103.16254", "arXiv:2103.16254", "2103.16254v3",
+                "https://arxiv.org/abs/2103.16254",
+                "https://arxiv.org/pdf/2103.16254.pdf",
+                "https://arxiv.org/pdf/2103.16254v2",
+                "http://www.arxiv.org/abs/2103.16254"):
+        assert arxiv_refs.arxiv_id(ref) == "2103.16254", ref
+
+
+def test_pre_2007_identifiers_still_resolve():
+    assert arxiv_refs.arxiv_id("astro-ph/0601001") == "astro-ph/0601001"
+    assert arxiv_refs.abs_url("https://arxiv.org/abs/astro-ph/0601001") == (
+        "https://arxiv.org/abs/astro-ph/0601001")
+
+
+def test_a_non_arxiv_ref_has_no_derivable_urls():
+    for ref in ("https://doi.org/10.1093/mnras/stab123",
+                "https://example.org/papers/thesis.pdf", "", None):
+        assert arxiv_refs.arxiv_id(ref) is None
+        assert arxiv_refs.abs_url(ref) is None
+        assert arxiv_refs.pdf_url(ref) is None
+
+
+def test_abs_and_pdf_are_siblings_of_the_same_id():
+    assert arxiv_refs.abs_url("arXiv:2608.23534") == \
+        "https://arxiv.org/abs/2608.23534"
+    # extensionless: phones open it in the built-in viewer
+    assert arxiv_refs.pdf_url("arXiv:2608.23534") == \
+        "https://arxiv.org/pdf/2608.23534"
+
+
+def test_search_url_escapes_the_title():
+    url = arxiv_refs.search_url("A Title: with / punctuation")
+    assert url.startswith(arxiv_refs.SEARCH_BASE)
+    assert " " not in url and "/" not in url.removeprefix(arxiv_refs.SEARCH_BASE)
+
+
+# --- title matching -----------------------------------------------------------
+def test_normalise_title_ignores_the_disagreements_that_are_not_about_identity():
+    same = ["VENUS: A Strongly Lensed Clumpy Galaxy at $z=2.48$",
+            "VENUS - A Strongly Lensed Clumpy Galaxy at z = 2.48",
+            "VENUS:  a strongly  lensed clumpy galaxy at z=2.48"]
+    assert len({arxiv_refs.normalise_title(t) for t in same}) == 1
+
+
+def test_a_match_needs_exactly_one_arxiv_paper():
+    entries = arxiv_refs.parse_api_entries(
+        _atom(("2608.00001", "The Koi Pond"), ("2608.00002", "Another Paper")))
+    assert arxiv_refs.match_entries("The Koi Pond", entries) == "2608.00001"
+    # near-misses never match: a wrong id is worse than a search box
+    assert arxiv_refs.match_entries("The Koi Ponds", entries) is None
+    # two papers with the same title → a human decides, not this code
+    ambiguous = arxiv_refs.parse_api_entries(
+        _atom(("2608.00003", "Shared Title"), ("2608.00004", "Shared  title")))
+    assert arxiv_refs.match_entries("Shared Title", ambiguous) is None
+
+
+def test_resolve_title_is_injectable_and_survives_a_dead_api():
+    calls = []
+
+    def fake(params):
+        calls.append(params)
+        return _atom(("2608.12345", "A Lensed Quasar Survey"))
+
+    assert arxiv_refs.resolve_title("A Lensed Quasar Survey", query=fake) == \
+        "2608.12345"
+    assert "ti:" in calls[0]["search_query"]
+
+    def dead(params):
+        raise OSError("arxiv is down")
+
+    assert arxiv_refs.resolve_title("Anything", query=dead) is None
+
+
+# --- the backfill -------------------------------------------------------------
+QUEUE = ("# Reading queue\n\nprose that is not a paper\n\n---\n\n"
+         "## Strong Lensing\n"
+         "Bare Title\n"
+         "Already Reffed — 2406.01234\n"
+         "DONE 2026-06-01 — Old Title\n"
+         "\n## Methods\n"
+         "Another Bare Title\n")
+INBOX = ("# arXiv inbox\n\nprose\n\n---\nlast digest: 2026-08-25\n"
+         "2026-08-25 — Inbox Bare Title\n"
+         "2026-08-25 — Inbox Reffed — 2608.00001\n")
+
+
+def test_candidates_are_only_the_ref_less_unread_papers():
+    got = backfill.candidates(QUEUE, "reading-queue.md")
+    assert [t for _, t in got] == ["Bare Title", "Another Bare Title"]
+    assert [t for _, t in backfill.candidates(INBOX, "arxiv-inbox.md")] == \
+        ["Inbox Bare Title"]
+
+
+def _tree(tmp_path: Path) -> Path:
+    (tmp_path / "reading-queue.md").write_text(QUEUE)
+    (tmp_path / "arxiv-inbox.md").write_text(INBOX)
+    return tmp_path
+
+
+def test_backfill_appends_refs_without_disturbing_the_rest_of_the_line(tmp_path):
+    root = _tree(tmp_path)
+    refs = {"Bare Title": "2608.11111", "Inbox Bare Title": "2608.22222"}
+    stats = backfill.backfill(root, write=True, limit=10,
+                              resolve=refs.get, sleep=lambda _: None,
+                              log=lambda *a: None)
+    assert stats["matched"] == 2 and stats["unmatched"] == 1
+    queue = (root / "reading-queue.md").read_text()
+    assert "Bare Title — 2608.11111" in queue
+    assert "Another Bare Title\n" in queue          # unresolved, untouched
+    assert "DONE 2026-06-01 — Old Title" in queue   # history, untouched
+    assert "Already Reffed — 2406.01234" in queue   # idempotent
+    assert "prose that is not a paper" in queue
+    # the inbox keeps its date stamp; the ref is appended after the title
+    assert "2026-08-25 — Inbox Bare Title — 2608.22222" in \
+        (root / "arxiv-inbox.md").read_text()
+
+
+def test_backfill_writes_nothing_without_write(tmp_path):
+    root = _tree(tmp_path)
+    before = (root / "reading-queue.md").read_text()
+    backfill.backfill(root, write=False, limit=10,
+                      resolve=lambda t: "2608.11111", sleep=lambda _: None,
+                      log=lambda *a: None)
+    assert (root / "reading-queue.md").read_text() == before
+
+
+def test_backfill_limit_caps_the_arxiv_calls(tmp_path):
+    root = _tree(tmp_path)
+    seen = []
+
+    def resolve(title):
+        seen.append(title)
+        return None
+
+    backfill.backfill(root, write=True, limit=2, resolve=resolve,
+                      sleep=lambda _: None, log=lambda *a: None)
+    assert len(seen) == 2
+
+
+def test_backfill_is_idempotent(tmp_path):
+    root = _tree(tmp_path)
+    kw = dict(write=True, limit=10, resolve=lambda t: "2608.11111",
+              sleep=lambda _: None, log=lambda *a: None)
+    backfill.backfill(root, **kw)
+    once = (root / "reading-queue.md").read_text()
+    stats = backfill.backfill(root, **kw)
+    assert stats["scanned"] == 0
+    assert (root / "reading-queue.md").read_text() == once
