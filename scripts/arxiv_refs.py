@@ -184,20 +184,61 @@ def match_entries(title: str, entries: list[dict]) -> str | None:
     return hits.pop() if len(hits) == 1 else None
 
 
-def resolve_title(title: str, max_results: int = 20,
+#: A phrase shorter than this is too generic to be worth searching on.
+MIN_PHRASE_WORDS = 3
+
+
+def query_phrase(title: str) -> str:
+    """The longest run of plain alphabetic words in `title`.
+
+    What gets *sent* to arXiv, as opposed to what gets compared afterwards.
+    The two are different problems and conflating them was a real bug: a title
+    carrying maths used to be flattened word-by-word into the phrase search, so
+    ``…galaxies at 0.5≤z<1.0`` was sent as ``ti:"…galaxies at 0 5 z 1 0"``.
+    arXiv indexes ``$0.5\\leq z<1.0$``, matches none of that, and returns
+    nothing — at which point no amount of clever comparison in
+    :func:`match_entries` has anything to compare.
+
+    So the query drops the maths instead of mangling it, and searches on the
+    longest stretch of ordinary words the title contains — the part both sides
+    spell the same way. That is a *broader* search, not a looser match: it only
+    decides which candidates come back, and every one of them still has to
+    survive the exact, unique-title check afterwards.
+
+    Falls back to every ASCII word when no run is long enough
+    (``MIN_PHRASE_WORDS``), since a two-word phrase would drown the result set.
+    """
+    # `flags=re.ASCII` so `\w` stops treating Greek as a word character: `Λ`
+    # became a literal `Λ` in the query string before, which arXiv cannot match
+    # against its own `$\Lambda$` source.
+    tokens = re.sub(r"[^\w\s]", " ", title, flags=re.ASCII).split()
+    best: list[str] = []
+    run: list[str] = []
+    for token in tokens:
+        if token.isalpha():
+            run.append(token)
+            if len(run) > len(best):
+                best = list(run)
+        else:
+            run = []
+    return " ".join(best if len(best) >= MIN_PHRASE_WORDS else tokens)
+
+
+def resolve_title(title: str, max_results: int = 50,
                   query: object = _api_query) -> str | None:
     """Look `title` up on the arXiv API and return its id, or None.
 
     Networked — the Dashboard never calls this; only the backfill does.
     `query` is injected so the matching can be tested without arXiv.
+
+    `max_results` is generous because :func:`query_phrase` deliberately searches
+    on part of a title rather than all of it: more candidates come back, and
+    picking among them costs nothing — the choice is made locally, by exact
+    match, and an ambiguous set still resolves to nothing.
     """
-    # `ti:"…"` is a phrase search over titles. arXiv's search index chokes on
-    # unbalanced quotes and LaTeX, so the phrase is sent as plain words; the
-    # exactness comes from match_entries afterwards, never from the query.
-    words = re.sub(r'[^\w\s]', " ", title).split()
-    if not words:
+    phrase = query_phrase(title)
+    if not phrase:
         return None
-    phrase = " ".join(words)
     try:
         raw = query({"search_query": f'ti:"{phrase}"',
                      "start": 0, "max_results": max_results})

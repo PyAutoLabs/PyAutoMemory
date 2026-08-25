@@ -118,6 +118,69 @@ def test_a_match_needs_exactly_one_arxiv_paper():
     assert arxiv_refs.match_entries("Shared Title", ambiguous) is None
 
 
+def test_the_query_drops_maths_instead_of_mangling_it():
+    """The bug this fixes: maths was flattened into the phrase search.
+
+    `…galaxies at 0.5≤z<1.0` went out as `ti:"…galaxies at 0 5 z 1 0"`, which
+    matches nothing arXiv indexes — so no candidates came back and the exact
+    matcher had nothing to work on.
+    """
+    assert arxiv_refs.query_phrase(
+        "Photometric properties of classical bulge and pseudo-bulge "
+        "galaxies at 0.5≤z<1.0") == (
+        "Photometric properties of classical bulge and pseudo bulge "
+        "galaxies at")
+    assert arxiv_refs.query_phrase(
+        "Dwarf galaxies imply dark matter is heavier than 2.2×10−21eV") == \
+        "Dwarf galaxies imply dark matter is heavier than"
+    # Greek is not a word character to arXiv's index either — before, `Λ` went
+    # into the query string literally
+    assert "Λ" not in arxiv_refs.query_phrase(
+        "Review of solutions to the Cusp-core problem of the ΛCDM Model")
+
+
+def test_the_query_takes_the_longest_clean_run_wherever_it_falls():
+    # maths in the middle: the longer side wins, not merely the leading one
+    assert arxiv_refs.query_phrase("A z=3 study of the formation of dwarf "
+                                   "galaxies in clusters") == \
+        "study of the formation of dwarf galaxies in clusters"
+
+
+def test_a_title_with_no_usable_run_still_sends_something():
+    """Better a mangled query than no query: `match_entries` is the safety net."""
+    phrase = arxiv_refs.query_phrase("M87 z=6 3C273")
+    assert phrase and len(phrase.split()) >= 1
+
+
+def test_resolve_title_searches_on_the_phrase_not_the_raw_title():
+    sent = {}
+
+    def fake(params):
+        sent.update(params)
+        return _atom(("2401.00001", "Dwarf galaxies imply dark matter is "
+                                    r"heavier than $2.2\times10^{-21}$eV"))
+
+    got = arxiv_refs.resolve_title(
+        "Dwarf galaxies imply dark matter is heavier than 2.2×10−21eV",
+        query=fake)
+    # the phrase went out clean...
+    assert sent["search_query"] == \
+        'ti:"Dwarf galaxies imply dark matter is heavier than"'
+    # ...and the full title still had to match exactly to be accepted
+    assert got == "2401.00001"
+
+
+def test_a_broader_query_does_not_mean_a_looser_match():
+    """The phrase only chooses candidates; the title check is unchanged."""
+    def fake(params):
+        return _atom(("2401.00002", "Dwarf galaxies imply dark matter is "
+                                    "heavier than something else entirely"))
+
+    assert arxiv_refs.resolve_title(
+        "Dwarf galaxies imply dark matter is heavier than 2.2×10−21eV",
+        query=fake) is None
+
+
 def test_resolve_title_is_injectable_and_survives_a_dead_api():
     calls = []
 
