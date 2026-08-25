@@ -21,6 +21,12 @@ it lapses and carrying two further actions — ➕ add-to-the-queue and ✖️ d
 The inbox's format, window and transitions live in ``scripts/inbox_actions.py``;
 this module reads them rather than re-deriving them.
 
+The inbox also carries a **freshness line**: the date of the last digest run,
+so an empty inbox says *which* kind of empty it is — arXiv was quiet, or the
+filing broke. The date is rendered into the page, but the "this looks broken"
+warning is computed in the reader's browser (see ``_EXTRA_JS``), because the
+page freezes at its last good render in exactly the failure the warning is for.
+
 **Contents-level only.** The board shows titles and counts, never claim text
 or summaries — the knowledge itself stays in the wiki pages.
 
@@ -136,6 +142,7 @@ def collect(root: Path | None = None) -> dict:
         "bib_entries": 0,
         "queue": [],
         "inbox": [],
+        "inbox_last_digest": None,
         "links": {"total": 0, "unique": 0, "wanted": 0},
     }
 
@@ -200,7 +207,9 @@ def collect(root: Path | None = None) -> dict:
     inbox = root / inbox_actions.INBOX_FILE
     if inbox.exists():
         today = datetime.datetime.now(datetime.timezone.utc).date()
-        for entry in inbox_actions.papers(inbox.read_text(errors="replace")):
+        inbox_text = inbox.read_text(errors="replace")
+        snapshot["inbox_last_digest"] = inbox_actions.last_digest(inbox_text)
+        for entry in inbox_actions.papers(inbox_text):
             snapshot["inbox"].append({
                 "title": entry["title"],
                 "ref": entry["ref"],
@@ -441,6 +450,36 @@ def _stub_prompt(snapshot: dict, wiki: str) -> str:
             f"in wiki/CLAUDE.md, set status: drafted, and run make validate.")
 
 
+def _inbox_freshness(snapshot: dict) -> dict:
+    """The inbox's freshness facts, shared by both renderers.
+
+    ``stale`` is what the *markdown* fallback can say. The HTML page must not
+    trust it for the warning: see ``_EXTRA_JS``.
+    """
+    stamp = snapshot.get("inbox_last_digest")
+    try:
+        today = datetime.datetime.fromisoformat(
+            str(snapshot.get("generated"))).date()
+    except (TypeError, ValueError):
+        today = datetime.datetime.now(datetime.timezone.utc).date()
+    return {
+        "stamp": stamp,
+        "weekdays": inbox_actions.weekdays_since(stamp, today) if stamp else 0,
+        "stale": inbox_actions.is_stale(stamp, today),
+    }
+
+
+def _inbox_empty_note(fresh: dict) -> str:
+    """Why the inbox is empty — quiet, suspect, or never run. Plain text."""
+    if fresh["stale"]:
+        return (f"no digest since {fresh['stamp']} "
+                f"({fresh['weekdays']} weekdays) — the nightly filing may be "
+                f"broken")
+    if fresh["stamp"]:
+        return f"the last digest ran {fresh['stamp']} and found nothing"
+    return "the nightly arXiv digest fills this — no run recorded yet"
+
+
 # --- renderers ------------------------------------------------------------------
 def _render_md(snapshot: dict) -> str:
     t = _totals(snapshot)
@@ -460,9 +499,12 @@ def _render_md(snapshot: dict) -> str:
                      f"{w.get('todo', 0)} |")
     lines += ["", "## arXiv inbox", ""]
     inbox = snapshot.get("inbox") or []
+    fresh = _inbox_freshness(snapshot)
     if inbox:
-        lines += [f"_{len(inbox)} waiting · un-acted suggestions lapse after "
-                  f"{inbox_actions.INBOX_WINDOW_DAYS} days._", ""]
+        digest = (f"last digest {fresh['stamp']} · " if fresh["stamp"] else "")
+        warn = ("⚠ " if fresh["stale"] else "")
+        lines += [f"_{len(inbox)} waiting · {warn}{digest}un-acted suggestions "
+                  f"lapse after {inbox_actions.INBOX_WINDOW_DAYS} days._", ""]
         for p in inbox:
             label = p["title"].replace("[", "\\[").replace("]", "\\]")
             bits = [f"- [{label}]({paper_url(p)}) — _{p['days_left']}d left_"]
@@ -475,7 +517,8 @@ def _render_md(snapshot: dict) -> str:
             lines.append(" · ".join(bits))
         lines.append("")
     else:
-        lines += ["- _(nothing waiting — the nightly digest fills this)_", ""]
+        warn = ("⚠ " if fresh["stale"] else "")
+        lines += [f"- _(nothing waiting — {warn}{_inbox_empty_note(fresh)})_", ""]
     lines += ["## Reading queue", ""]
     trend = _read_trend(snapshot)
     if sum(q.get("done", 0) for q in snapshot.get("queue") or []):
@@ -573,6 +616,7 @@ details.hist>summary{cursor:pointer}
  margin-left:.45rem}
 .spark .sb{width:5px;background:var(--accent);border-radius:1px;
  display:inline-block}
+.fresh.stale{color:var(--warn);font-weight:600}
 table.recent td.name{white-space:nowrap}
 footer{margin-top:2rem;color:var(--muted);font-size:.82em}
 """
@@ -580,7 +624,30 @@ footer{margin-top:2rem;color:var(--muted);font-size:.82em}
 # The shared copy handler is delegated, so a chip inside a <summary> would
 # also toggle its section. Swallow that one default; the filter is this
 # board's own behaviour and stays here.
+#
+# freshness() is the inbox's staleness warning, and it runs HERE rather than in
+# the renderer on purpose. knowledge_board.yml re-publishes on pushes to
+# arxiv-inbox.md — which is precisely what stops happening when the nightly
+# filing breaks. The page then freezes at its last good render, so a warning
+# baked in at render time would sit at "0 weekdays" forever and never fire in
+# the one failure it exists for. The rendered date is a fact and survives the
+# freeze; the verdict is recomputed against the reader's own clock.
 _EXTRA_JS = """
+function freshness(){
+ var els=document.querySelectorAll('.fresh[data-last-digest]');
+ for(var i=0;i<els.length;i++){var el=els[i];
+  var p=el.getAttribute('data-last-digest').split('-');
+  var d=new Date(Date.UTC(+p[0],+p[1]-1,+p[2]));
+  var now=new Date();
+  var today=Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate());
+  var n=0,guard=0;
+  while(d.getTime()<today&&guard++<400){
+   d.setUTCDate(d.getUTCDate()+1);
+   var w=d.getUTCDay(); if(w>0&&w<6){n++;}}
+  if(n>=+el.getAttribute('data-stale-weekdays')){
+   el.textContent=el.getAttribute('data-stale-text').replace('{n}',n);
+   el.classList.add('stale');}}}
+freshness();
 document.addEventListener("click",function(e){
   var b=e.target.closest("button.copy");
   if(b&&b.closest("summary")){e.preventDefault();}},true);
@@ -670,15 +737,41 @@ def _render_html(snapshot: dict) -> str:
             f"<li><a href=\"{_html.escape(paper_url(p), quote=True)}\">"
             f"{_html.escape(p['title'])}</a> "
             f"<span class='meta'>{p['days_left']}d left</span>{''.join(acts)}</li>")
+    # The date goes into the page; the "this looks broken" verdict is left to
+    # the reader's browser (_EXTRA_JS). A stale render is exactly the case the
+    # warning exists for, and a stale render cannot warn about itself.
+    fresh = _inbox_freshness(snapshot)
+    stale_tmpl = (f"⚠ no digest since {fresh['stamp']} ({{n}} weekdays) — the "
+                  f"nightly filing may be broken") if fresh["stamp"] else ""
+
+    def _fresh_span(now_text: str, stale_text: str, cls: str = "meta") -> str:
+        if not fresh["stamp"]:
+            return f"<span class='{cls}'>{_html.escape(now_text)}</span>"
+        if fresh["stale"]:
+            # Already stale at render time: show the warning now, so a reader
+            # with JS off still sees it. The script recomputes `n` regardless.
+            now_text = stale_text.replace("{n}", str(fresh["weekdays"]))
+            cls += " stale"
+        return (f"<span class='{cls} fresh' data-last-digest='{fresh['stamp']}' "
+                f"data-stale-weekdays='{inbox_actions.INBOX_STALE_WEEKDAYS}' "
+                f"data-stale-text=\"{_html.escape(stale_text, quote=True)}\">"
+                f"{_html.escape(now_text)}</span>")
+
     if inbox_items:
+        digest = f" · last digest {fresh['stamp']}" if fresh["stamp"] else ""
+        meta = _fresh_span(
+            f"{len(inbox_items)} waiting{digest} · lapse after "
+            f"{inbox_actions.INBOX_WINDOW_DAYS}d",
+            f"{len(inbox_items)} waiting · {stale_tmpl}")
         inbox_block = (
             f"<details class='qsec inbox' open><summary><span class='name'>"
-            f"arXiv inbox</span> <span class='meta'>{len(inbox_items)} waiting "
-            f"· lapse after {inbox_actions.INBOX_WINDOW_DAYS}d</span></summary>"
+            f"arXiv inbox</span> {meta}</summary>"
             f"<ul class='papers'>{''.join(inbox_items)}</ul></details>")
     else:
-        inbox_block = ("<p class='meta'>nothing waiting — the nightly arXiv "
-                       "digest fills this.</p>")
+        note = _inbox_empty_note(fresh)
+        inbox_block = ("<p>" + _fresh_span(
+            f"nothing waiting — {note}",
+            f"nothing waiting — {stale_tmpl}") + "</p>")
 
     trend = _read_trend(snapshot)
     total_done = sum(q.get("done", 0) for q in snapshot.get("queue") or [])

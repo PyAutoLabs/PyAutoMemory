@@ -16,9 +16,16 @@ Format:
   not lost: git history holds it. This is deliberate — the never-delete rule in
   `reading-queue.md` protects *reading history*, and an un-acted suggestion is
   not history.
+- One `last digest: <YYYY-MM-DD>` line, directly below the `---`, records the
+  last run of the nightly digest — **papers or none**. It is what lets an empty
+  inbox say *which* kind of empty it is: dated today it is a genuinely quiet
+  day, four days stale it means the filing is broken and papers were lost. The
+  same job the `#papers` empty-day heartbeat does on the Slack side. It is
+  replaced, never accumulated, so the sweep has nothing to age out.
 - Written by PyAutoMind's `arxiv_papers.yml`. Hand edits are safe but will race
   a nightly run; prefer the Dashboard buttons.
 
 ---
+last digest: 2026-08-25
 2026-08-25 — Strong Lensing Cosmology with Population-level Calibrated Neural Ratio Estimation — 2608.23534
 2026-08-25 — Mapping the Information Geometry of an Unresolved Dark Matter Population using a Differentiable Strong Lensing Simulator — 2608.18224
