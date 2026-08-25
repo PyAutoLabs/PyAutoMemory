@@ -49,7 +49,7 @@ XShooter DESI Lens Program: Sample characterization — 2607.08562
 Strong-lensing effects in high-redshift massive black-hole binary population inference — 2607.03345
 
 LEGGOS III: Mapping Star Formation and Dust in Gravitationally Lensed Galaxies with SUMAC, a UMAP and Clustering Framework
-LEGGOS II: A Strong Lens Model and Source-Plane Projection of the Clumpy Star-Forming Galaxy SGASJ111020.0+645950.8 at z=2.48
+LEGGOS II: A Strong Lens Model and Source-Plane Projection of the Clumpy Star-Forming Galaxy SGASJ111020.0+645950.8 at z=2.48 — 2606.20804
 
 Dynamical models of cluster members to probe the total mass properties of cluster subhalos. I. A comparison with parametric strong lensing models — 2606.05298
 COOL-LAMPS IX: A Rare Duo of Quasars Each Lensed by a Single Massive Galaxy Cluster — 2605.13514
@@ -69,7 +69,7 @@ The Chandra Strong Lens Sample: Measuring the Dynamical States and Relaxation Fr
 The Impact of Orbital Anisotropy Assumptions in Lensing-Dynamics Modeling — 2511.12013
 SourceREACH (Source REconstruction of Arcs behind Cluster Halos): A New Source Reconstruction Algorithm Optimized for Giant Arcs and Galaxy Cluster Lenses
 JWST Lensed Quasar Dark Matter Survey III: Dark Matter Sensitive Flux Ratios and Warm Dark Matter Constraint from the Full Sample. — 2511.07765
-A Strong Gravitational Lensing Model of PSZ2 G118.46+39.32
+A Strong Gravitational Lensing Model of PSZ2 G118.46+39.32 — 2511.08300
 CSST Strong Lensing Preparation: Cosmological Constraints Forecast from CSST Galaxy-Scale Strong Lensing — 2511.08030
 The complicated nature of the X-ray emission from the field of the strongly lensed hyperluminous infrared galaxy PJ1053+60 at z=3.54
 A cosmographic analysis using DESI-DR2 and strong lensing: I. Time-Delay measurements — 2511.00788
@@ -155,8 +155,8 @@ The heartbeat of stellar halos: Insights from the stellar halo mass-metallicity 
 Mock Observations: Morphological Analysis of Galaxies in TNG100 Simulations — 2504.18042
 The Outskirt Stellar Mass of Low-Redshift Massive Galaxies is an Excellent Halo Mass Proxy in Illustris/IllustrisTNG Simulations — 2412.03406
 Tracing the origins of galaxy lopsidedness across cosmic time — 2411.19426
-Photometric properties of classical bulge and pseudo-bulge galaxies at 0.5≤z<1.0
-ALESS-JWST: Joint (sub-)kiloparsec JWST and ALMA imaging of z∼3 submillimeter galaxies reveals heavily obscured bulge formation events
+Photometric properties of classical bulge and pseudo-bulge galaxies at 0.5≤z<1.0 — 2407.21527
+ALESS-JWST: Joint (sub-)kiloparsec JWST and ALMA imaging of z∼3 submillimeter galaxies reveals heavily obscured bulge formation events — 2407.15846
 Little Red Dots: Rapidly Growing Black Holes Reddened by Extended Dusty Flows — 2407.10760
 Characterising Tidal Features Around Galaxies in Cosmological Simulations — 2404.12436
 A forward-modelling approach to overcome PSF smearing and fit flexible models to the chemical structure of galaxies — 2403.08175
@@ -184,7 +184,7 @@ Probing the Nature of Dark Matter Self-Interactions Through Observations of Mass
 Reaching for the Edge II: Stellar Halos out to Large Radii as a Tracer of Dark Matter Halo Mass — 2511.10723
 Detecting dark matter sub-halos in the Galactic plane with the Cherenkov Telescope Array Observatory — 2501.09789
 Implications of the intriguing constant inner mass surface density observed in dark matter halos — 2501.03761
-Dwarf galaxies imply dark matter is heavier than 2.2×10−21eV
+Dwarf galaxies imply dark matter is heavier than 2.2×10−21eV — 2405.20374
 Effectiveness of halo and galaxy properties in reducing the scatter in the stellar-to-halo mass relation — 2405.15191
 Hydrodynamical simulations of merging galaxy clusters: giant dark matter particle colliders, powered by gravity — 2405.00140
 The Influence of Baryons on Low-mass Haloes — 2403.17044
