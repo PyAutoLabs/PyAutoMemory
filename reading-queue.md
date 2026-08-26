@@ -357,7 +357,7 @@ https://github.com/patrick-kidger/optimistix?tab=readme-ov-file:
     
     NOTE LOADS of JAX githubs including lineaer solvers, BlackJAX
    
-Eryn: A multi-purpose sampler for Bayesian inference
+Eryn: A multi-purpose sampler for Bayesian inference — 2303.02164
 
     NOTE Another cool sampler for autofit.
 
