@@ -27,6 +27,6 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-08-25
+last digest: 2026-08-26
 2026-08-25 — Strong Lensing Cosmology with Population-level Calibrated Neural Ratio Estimation — 2608.23534
 2026-08-25 — Mapping the Information Geometry of an Unresolved Dark Matter Population using a Differentiable Strong Lensing Simulator — 2608.18224
