@@ -20,6 +20,7 @@ from urllib.parse import unquote  # noqa: E402
 
 import board  # noqa: E402
 import inbox_actions  # noqa: E402
+import interests_actions  # noqa: E402
 
 BODY_MARKER = "the-secret-claim-text-that-must-never-leak"
 
@@ -52,6 +53,13 @@ def _tree(tmp_path: Path) -> Path:
         "# arXiv inbox\n\nintro prose\n\n---\n"
         "2026-08-24 — Suggested One — 2608.00001\n"
         "2026-08-24 — Suggested Two\n")
+    # Two day batches, oldest first: the board must show only the first.
+    (tmp_path / "arxiv-interests.md").write_text(
+        "# arXiv interests\n\nintro prose\n\n---\n"
+        "last digest: 2026-08-26\n"
+        "2026-08-25 — [Demo Papers] Interest One — 2608.10001\n"
+        "2026-08-25 — [Nowhere] Interest Two — 2608.10002\n"
+        "2026-08-26 — [Demo Papers] Interest Three — 2608.10003\n")
     return tmp_path
 
 
@@ -297,6 +305,10 @@ def _inbox(tmp_path, stamp=None, papers=()):
     if stamp:
         text = inbox_actions.set_last_digest(text, stamp)
     (root / "arxiv-inbox.md").write_text(text)
+    # The page carries two stamped tiers; blank the other one so these assert
+    # about the inbox's freshness and not the interests list's.
+    (root / "arxiv-interests.md").write_text(
+        "# arXiv interests\n\nintro prose\n\n---\n")
     snap = board.collect(root)
     snap["owner"], snap["repo"] = "PyAutoLabs", "PyAutoMemory"
     snap["generated"] = "2026-08-25T09:00:00+00:00"
@@ -385,8 +397,9 @@ def test_no_pdf_button_where_there_is_no_ref(tmp_path):
         out = board.render(snap, fmt)
         # Title One / Title Three / Suggested Two are ref-less, and the
         # heading and the two annotations are not papers at all; the only PDF
-        # links on the page belong to the four papers that carry a ref.
-        assert out.count("arxiv.org/pdf/") == 4
+        # links on the page belong to the six papers that carry a ref — four
+        # in the queue and inbox, plus the current interests batch's two.
+        assert out.count("arxiv.org/pdf/") == 6
     bare = {"title": "Title One", "ref": None}
     assert board.paper_pdf_url(bare) == ""
     # a non-arXiv ref is still a link, but there is no PDF to derive from it
@@ -434,4 +447,141 @@ def test_a_bare_link_is_a_paper_only_when_it_points_at_arxiv(tmp_path):
     assert "example.org →" in html
     i = html.index("example.org →")
     assert "issues/new" not in html[i:html.index("</li>", i)]
+
+
+# --- the arXiv interests list -------------------------------------------------
+# The sibling suggestion tier. What is tested here is only what makes it
+# DIFFERENT from the inbox: it is a backlog of day batches with the oldest one
+# current, the 🧹 button clears that whole day, and its papers route by their
+# own topic rather than to one section. The per-paper actions themselves are
+# the inbox's, already covered above.
+def _interests(tmp_path, lines, stamp=None):
+    base = tmp_path / f"t{len(list(tmp_path.iterdir()))}"
+    base.mkdir()
+    root = _tree(base)
+    text = "# arXiv interests\n\nintro prose\n\n---\n" + "".join(
+        f"{line}\n" for line in lines)
+    if stamp:
+        text = inbox_actions.set_last_digest(text, stamp)
+    (root / "arxiv-interests.md").write_text(text)
+    (root / "arxiv-inbox.md").write_text(
+        "# arXiv inbox\n\nintro prose\n\n---\n")
+    snap = board.collect(root)
+    snap["owner"], snap["repo"] = "PyAutoLabs", "PyAutoMemory"
+    return snap
+
+
+def test_only_the_oldest_batch_is_collected(tmp_path):
+    snap = _snap_with_remote(tmp_path)
+    assert snap["interests_date"] == "2026-08-25"
+    assert [p["title"] for p in snap["interests"]] == ["Interest One",
+                                                       "Interest Two"]
+    assert snap["interests_batches"] == 2
+    assert snap["interests_backlog"] == 3
+
+
+def test_a_missing_interests_file_is_not_an_error(tmp_path):
+    root = _tree(tmp_path)
+    (root / "arxiv-interests.md").unlink()
+    snap = board.collect(root)
+    assert snap["interests"] == []
+    assert snap["interests_date"] is None
+    for fmt in ("md", "html", "json", "badge", "md-brief"):
+        board.render({**snap, "owner": "o", "repo": "r"}, fmt)
+
+
+def test_interests_papers_carry_the_same_five_actions(tmp_path):
+    snap = _snap_with_remote(tmp_path)
+    html = board._render_html(snap)
+    for label in ("interests-add", "queue-intake", "queue-cite",
+                  "interests-dismiss"):
+        assert label in html, label
+    assert "arxiv.org/pdf/2608.10001" in html
+
+
+def test_interests_actions_name_the_interests_file(tmp_path):
+    snap = _snap_with_remote(tmp_path)
+    body = unquote(board._queue_issue_url(
+        snap, "Demo Papers", snap["interests"][0], "add",
+        source=interests_actions.INTERESTS_FILE))
+    assert "file: arxiv-interests.md" in body
+    assert "line: 2026-08-25 — [Demo Papers] Interest One — 2608.10001" in body
+
+
+def test_interests_filing_actions_warn_there_is_no_queue_line(tmp_path):
+    snap = _snap_with_remote(tmp_path)
+    body = unquote(board._queue_issue_url(
+        snap, "Demo Papers", snap["interests"][0], "intake",
+        source=interests_actions.INTERESTS_FILE))
+    assert "NOT in the reading queue yet" in body
+    assert "arxiv-interests.md" in body
+    assert "arxiv-inbox.md" not in body
+
+
+def test_a_paper_routes_to_its_own_topic(tmp_path):
+    snap = _snap_with_remote(tmp_path)
+    assert snap["interests"][0]["section"] == "Demo Papers"
+    body = unquote(board._queue_issue_url(
+        snap, snap["interests"][0]["section"], snap["interests"][0], "add",
+        source=interests_actions.INTERESTS_FILE))
+    assert "section: Demo Papers" in body
+
+
+def test_a_topicless_paper_falls_back_rather_than_stranding(tmp_path):
+    snap = _interests(tmp_path, ["2026-08-25 — No topic here — 2608.10001"])
+    assert snap["interests"][0]["section"] == interests_actions.FALLBACK_SECTION
+
+
+def test_the_clear_button_names_the_batch_date(tmp_path):
+    snap = _snap_with_remote(tmp_path)
+    html = board._render_html(snap)
+    assert "interests-clear" in html
+    url = board._interests_clear_url(snap, "2026-08-25", 2)
+    body = unquote(url)
+    assert "file: arxiv-interests.md" in body
+    assert "date: 2026-08-25" in body
+    # A batch clear is not a per-paper action: it must not carry a line.
+    assert "line:" not in body
+
+
+def test_no_clear_button_without_a_remote(tmp_path):
+    snap = board.collect(_tree(tmp_path))
+    assert board._interests_clear_url(snap, "2026-08-25", 2) == ""
+    assert "interests-clear" not in board.render(snap, "html")
+
+
+def test_interests_render_between_the_inbox_and_the_queue(tmp_path):
+    """The human asked for it under strong lensing: inbox, then this, then
+    the backlog it feeds."""
+    snap = _snap_with_remote(tmp_path)
+    for text in (board._render_md(snap), board._render_html(snap)):
+        assert text.index("arXiv inbox") < text.index("arXiv interests")
+        assert text.index("arXiv interests") < text.index("Reading queue")
+
+
+def test_the_backlog_depth_is_on_the_page(tmp_path):
+    """A day cleared is a day revealed — the human needs to know how many are
+    behind the one they are looking at."""
+    snap = _snap_with_remote(tmp_path)
+    assert "1 more day behind it" in board._render_html(snap)
+    assert "2 days of backlog" in board._render_html(snap)
+    assert "1 more day behind it" in board._render_md(snap)
+
+
+def test_an_empty_interests_list_says_which_kind_of_empty(tmp_path):
+    quiet = _interests(tmp_path, [], stamp="2026-08-26")
+    assert "the last digest ran 2026-08-26" in board._render_md(quiet)
+    never = _interests(tmp_path, [])
+    assert "no run recorded yet" in board._render_md(never)
+
+
+def test_the_two_tiers_carry_their_own_stamps(tmp_path):
+    """One digest can break while the other keeps running; the page must not
+    report the healthy one's date for the broken one."""
+    snap = _snap_with_remote(tmp_path)
+    snap["inbox_last_digest"] = "2026-08-27"
+    snap["interests_last_digest"] = "2026-08-20"
+    html = board._render_html(snap)
+    assert "data-last-digest='2026-08-27'" in html
+    assert "data-last-digest='2026-08-20'" in html
 

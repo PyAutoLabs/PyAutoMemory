@@ -37,6 +37,16 @@ the schema in [`wiki/CLAUDE.md`](wiki/CLAUDE.md).
   (`INBOX_WINDOW_DAYS` in `scripts/inbox_actions.py`). Nothing here has been
   chosen yet: a suggestion is not reading history, so a lapsed line is dropped
   rather than DONE-marked, and git history keeps it.
+- [`arxiv-interests.md`](arxiv-interests.md) — the same tier for everything
+  that is **not** strong lensing: black holes, dark matter, galaxy formation,
+  statistics. One line per paper as `<YYYY-MM-DD> — [<Topic>] <title>[ — <ref>]`,
+  where the topic names the reading-queue section ➕ files it into. It differs
+  from the inbox in one way: it is a **day-batched backlog, not a timer**. Each
+  run appends that day's ten, the dashboard shows the **oldest un-cleared batch
+  only**, and one 🧹 *clear* button drops that whole day and reveals the next —
+  so a fortnight away is a fortnight of batches to cycle through, not a
+  fortnight of lost recommendations. Same five per-paper actions as the inbox.
+  Format and transitions live in `scripts/interests_actions.py`.
 - [`reading-queue.md`](reading-queue.md) — the paper queue AND the reading
   history: `## ` section headers group papers by domain, one title per line,
   and a read paper is never deleted — its line gains a `DONE <date> — `

@@ -24,7 +24,15 @@ it lapses and carrying the same 📄 PDF button plus two further actions —
 The inbox's format, window and transitions live in ``scripts/inbox_actions.py``;
 this module reads them rather than re-deriving them.
 
-The inbox also carries a **freshness line**: the date of the last digest run,
+Below the inbox sits the **arXiv interests list** (``arxiv-interests.md``):
+the same overnight machinery pointed at everything that is *not* strong
+lensing — black holes, dark matter, galaxy formation, statistics — as one
+day-batch of ten. It renders the same five actions per paper, plus one 🧹
+*clear* button on the batch itself: the list is a backlog rather than a timer,
+so the board shows the OLDEST un-cleared day only and clearing it reveals the
+next. ``scripts/interests_actions.py`` owns that format and those transitions.
+
+Both suggestion tiers also carry a **freshness line**: the date of the last digest run,
 so an empty inbox says *which* kind of empty it is — arXiv was quiet, or the
 filing broke. The date is rendered into the page, but the "this looks broken"
 warning is computed in the reader's browser (see ``_EXTRA_JS``), because the
@@ -73,6 +81,7 @@ MEMORY_HOME = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import arxiv_refs  # noqa: E402
 import inbox_actions  # noqa: E402
+import interests_actions  # noqa: E402
 
 # The family look lives once, in the Brain (``board/_theme.py``): the
 # stylesheet, the hero that redraws this organ's logo as a mark, and the
@@ -169,6 +178,14 @@ def collect(root: Path | None = None) -> dict:
         "queue": [],
         "inbox": [],
         "inbox_last_digest": None,
+        # The interests list is day-batched: `interests` is the oldest
+        # un-cleared batch (what the board shows), and `interests_batches` /
+        # `interests_backlog` are how much is queued behind it.
+        "interests": [],
+        "interests_date": None,
+        "interests_batches": 0,
+        "interests_backlog": 0,
+        "interests_last_digest": None,
         "links": {"total": 0, "unique": 0, "wanted": 0},
     }
 
@@ -249,6 +266,28 @@ def collect(root: Path | None = None) -> dict:
                 "done": False,
                 "done_date": None,
             })
+
+    interests = root / interests_actions.INTERESTS_FILE
+    if interests.exists():
+        text = interests.read_text(errors="replace")
+        snapshot["interests_last_digest"] = inbox_actions.last_digest(text)
+        every = interests_actions.batches(text)
+        snapshot["interests_batches"] = len(every)
+        snapshot["interests_backlog"] = sum(len(b) for _, b in every)
+        current = interests_actions.current_batch(text)
+        if current:
+            snapshot["interests_date"] = current[0]
+            for entry in current[1]:
+                snapshot["interests"].append({
+                    "title": entry["title"],
+                    "ref": entry["ref"],
+                    "line": entry["line"],
+                    "added": entry["added"],
+                    "topic": entry["topic"],
+                    "section": interests_actions.section_for(entry),
+                    "done": False,
+                    "done_date": None,
+                })
 
     slugs = [s.split("|")[0].strip() for s in all_slugs]
     uniq = set(slugs)
@@ -350,8 +389,9 @@ def _queue_issue_url(snapshot: dict, section: str, paper: dict,
 
     Five tiers — 'intake' (really interesting: full wiki filing), 'cite'
     (worth citing, not pivotal: bib entry + a minimal sources section), 'read'
-    (done with it: DONE-mark only), and, for arXiv-inbox papers, 'add' (into
-    the reading queue) and 'dismiss' (not for me). All but intake/cite are
+    (done with it: DONE-mark only), and, for the suggestion tiers
+    (arXiv-inbox, arXiv-interests), 'add' (into the reading queue) and
+    'dismiss' (not for me). All but intake/cite are
     processed automatically by queue_actions.yml. Nothing changes state until
     the human submits the issue on GitHub; intake/cite issues stay open as the
     filing work item, and their `notes:` field is free text the human edits
@@ -365,23 +405,32 @@ def _queue_issue_url(snapshot: dict, section: str, paper: dict,
     repo_url = _repo_url(snapshot)
     if not repo_url:
         return ""
-    from_inbox = source == inbox_actions.INBOX_FILE
-    whose = "arXiv-inbox" if from_inbox else "reading-queue"
+    # Two of the three sources are *suggestion* tiers: a paper there has no
+    # reading-queue line yet, which is what the ➕/✖️ actions and the filing
+    # NOTE below both turn on. Naming that once keeps the interests list from
+    # being a second special case bolted beside the inbox.
+    staged = source != inbox_actions.QUEUE_FILE
+    whose, tier = {
+        inbox_actions.INBOX_FILE: ("arXiv-inbox", "the arXiv inbox"),
+        interests_actions.INTERESTS_FILE: ("arXiv-interests",
+                                           "the arXiv interests list"),
+    }.get(source, ("reading-queue", "the reading queue"))
     where = f"file: {source}\nsection: {section}\nline: {paper['line']}"
     notes = ("notes: (optional — replace this with why you added it or "
              "what was noteworthy, in your own words; whoever files the "
              "paper folds it in)")
+    from_interests = source == interests_actions.INTERESTS_FILE
     if action == "add":
         issue_title = f"queue add: {paper['title']}"[:200]
-        label = "queue-add"
-        body = ("Move this arXiv-inbox paper into the reading queue "
+        label = "interests-add" if from_interests else "queue-add"
+        body = (f"Move this {whose} paper into the reading queue "
                 f"(section: {section}) — worth reading, not yet read.\n\n"
                 f"{where}\n\n"
                 "Processed automatically by queue_actions.yml.")
     elif action == "dismiss":
         issue_title = f"queue dismiss: {paper['title']}"[:200]
-        label = "queue-dismiss"
-        body = ("Drop this paper from the arXiv inbox — not one for me. The "
+        label = "interests-dismiss" if from_interests else "queue-dismiss"
+        body = (f"Drop this paper from {tier} — not one for me. The "
                 "line is removed rather than DONE-marked: an un-acted "
                 "suggestion is not reading history, and git history holds it "
                 "either way.\n\n"
@@ -422,16 +471,43 @@ def _queue_issue_url(snapshot: dict, section: str, paper: dict,
                 "incorporating the notes above — mark its queue line "
                 "'DONE <date> — <title>' in reading-queue.md, and run "
                 "make validate.")
-    if from_inbox and action not in ("add", "dismiss", "read"):
-        # An inbox paper has no reading-queue line to DONE-mark: filing it
-        # creates that line, already read, and clears the inbox one.
-        body += ("\n\nNOTE: this paper is in arxiv-inbox.md and is NOT in the "
+    if staged and action not in ("add", "dismiss", "read"):
+        # A suggestion-tier paper has no reading-queue line to DONE-mark:
+        # filing it creates that line, already read, and clears the tier one.
+        body += (f"\n\nNOTE: this paper is in {source} and is NOT in the "
                  "reading queue yet, so there is no line to mark. Instead "
                  f"append it to the '{section}' section of reading-queue.md "
                  "already DONE-prefixed (it is being filed now, not queued to "
-                 "read later) and remove its arxiv-inbox.md line.")
+                 f"read later) and remove its {source} line.")
     return (f"{repo_url}/issues/new?title={_quote(issue_title, safe='')}"
             f"&body={_quote(body, safe='')}&labels={_quote(label, safe='')}")
+
+
+def _interests_clear_url(snapshot: dict, date: str, count: int) -> str:
+    """The 🧹 button: a prefilled issue that drops one whole interests batch.
+
+    The only board action that is not per-paper, because the list is not a
+    per-paper decision: the human walks a backlog of days, taking what they
+    want out of a day and clearing the rest of it in one tap. Everything still
+    goes through the same gate — an issue, submitted by hand, processed by
+    queue_actions.yml — so nothing changes state on a mis-tap.
+    """
+    repo_url = _repo_url(snapshot)
+    if not repo_url:
+        return ""
+    title = f"interests clear: {date}"
+    body = (f"Clear the {date} batch ({count} paper(s)) from "
+            f"{interests_actions.INTERESTS_FILE} — done with this day, show "
+            "the next one.\n\n"
+            f"file: {interests_actions.INTERESTS_FILE}\n"
+            f"date: {date}\n\n"
+            "The lines are removed rather than DONE-marked: an un-acted "
+            "suggestion is not reading history, and git history holds the "
+            "batch either way.\n\n"
+            "Processed automatically by queue_actions.yml.")
+    return (f"{repo_url}/issues/new?title={_quote(title, safe='')}"
+            f"&body={_quote(body, safe='')}"
+            f"&labels={_quote('interests-clear', safe='')}")
 
 
 def _read_trend(snapshot: dict) -> dict:
@@ -535,13 +611,16 @@ def _stub_prompt(snapshot: dict, wiki: str) -> str:
             f"in wiki/CLAUDE.md, set status: drafted, and run make validate.")
 
 
-def _inbox_freshness(snapshot: dict) -> dict:
-    """The inbox's freshness facts, shared by both renderers.
+def _inbox_freshness(snapshot: dict, key: str = "inbox_last_digest") -> dict:
+    """A suggestion tier's freshness facts, shared by both renderers.
+
+    ``key`` picks the tier — the strong-lensing inbox or the interests list.
+    Each has its own nightly digest and so its own way to be silently broken.
 
     ``stale`` is what the *markdown* fallback can say. The HTML page must not
     trust it for the warning: see ``_EXTRA_JS``.
     """
-    stamp = snapshot.get("inbox_last_digest")
+    stamp = snapshot.get(key)
     try:
         today = datetime.datetime.fromisoformat(
             str(snapshot.get("generated"))).date()
@@ -555,7 +634,7 @@ def _inbox_freshness(snapshot: dict) -> dict:
 
 
 def _inbox_empty_note(fresh: dict) -> str:
-    """Why the inbox is empty — quiet, suspect, or never run. Plain text."""
+    """Why a tier is empty — quiet, suspect, or never run. Plain text."""
     if fresh["stale"]:
         return (f"no digest since {fresh['stamp']} "
                 f"({fresh['weekdays']} weekdays) — the nightly filing may be "
@@ -607,6 +686,41 @@ def _render_md(snapshot: dict) -> str:
     else:
         warn = ("⚠ " if fresh["stale"] else "")
         lines += [f"- _(nothing waiting — {warn}{_inbox_empty_note(fresh)})_", ""]
+
+    lines += ["", "## arXiv interests", ""]
+    interests = snapshot.get("interests") or []
+    ifresh = _inbox_freshness(snapshot, "interests_last_digest")
+    if interests:
+        date = snapshot.get("interests_date") or "?"
+        left = max(0, (snapshot.get("interests_batches") or 1) - 1)
+        backlog = (f" · {left} more day{'s' if left != 1 else ''} behind it"
+                   if left else " · nothing behind it")
+        clear_url = _interests_clear_url(snapshot, date, len(interests))
+        clear = f" · [clear this day \U0001f9f9]({clear_url})" if clear_url else ""
+        lines += [f"_{date} · {len(interests)} "
+                  f"paper{'s' if len(interests) != 1 else ''}{backlog}{clear}_",
+                  ""]
+        for p_ in interests:
+            label = p_["title"].replace("[", "\\[").replace("]", "\\]")
+            bits = [f"- [{label}]({paper_url(p_)})"]
+            if p_.get("topic"):
+                bits.append(f"_{p_['topic']}_")
+            pdf = paper_pdf_url(p_)
+            if pdf:
+                bits.append(f"[pdf 📄]({pdf})")
+            for action, chip in (("add", "queue ➕"), ("intake", "intake 📥"),
+                                 ("cite", "cite 📑"), ("dismiss", "dismiss ✖️")):
+                u = _queue_issue_url(snapshot, p_["section"], p_, action,
+                                     source=interests_actions.INTERESTS_FILE)
+                if u:
+                    bits.append(f"[{chip}]({u})")
+            lines.append(" · ".join(bits))
+        lines.append("")
+    else:
+        warn = ("⚠ " if ifresh["stale"] else "")
+        lines += [f"- _(no batch waiting — {warn}{_inbox_empty_note(ifresh)})_",
+                  ""]
+
     lines += ["## Reading queue", ""]
     trend = _read_trend(snapshot)
     if sum(q.get("done", 0) for q in snapshot.get("queue") or []):
@@ -681,8 +795,8 @@ def _bar(statuses: dict) -> str:
 # so this board follows the family accent instead of setting a second palette.
 _LEDE = ("What the organism knows, and what it still owes a citation. On a "
          "paper: \U0001f4e5 intake · \U0001f4d1 cite · \u2705 mark read — each opens a "
-         "prefilled issue (add notes, submit to act). \U0001f4cb copies a Claude Code "
-         "prompt.")
+         "prefilled issue (add notes, submit to act). \U0001f9f9 clears a whole "
+         "interests day. \U0001f4cb copies a Claude Code prompt.")
 
 _EXTRA_CSS = """
 .bar{display:inline-block;width:90px;height:8px;border-radius:4px;
@@ -711,6 +825,12 @@ a.act{margin-left:.35rem;padding:.05rem .4rem;font-size:.85rem;
 a.act:hover{background:var(--tint);border-color:var(--accent);
  text-decoration:none}
 a.act.pdf{border-color:var(--accent)}
+/* The one batch-level action: it clears a whole day, so it is worded rather
+   than an icon alone — a mis-tap here costs ten papers, not one. */
+a.act.clear{border-color:var(--warn);color:var(--warn);font-weight:600}
+a.act.clear:hover{background:var(--warn);color:var(--bg);border-color:var(--warn)}
+.topic{color:var(--muted);font-size:.82em;margin-left:.4rem;
+ padding:.05rem .35rem;border:1px solid var(--line);border-radius:6px}
 details.hist{margin:.25rem 0 .25rem 1.3rem}
 details.hist>summary{cursor:pointer}
 #pfilter{width:100%;padding:.45rem .6rem;margin:.25rem 0 .5rem;
@@ -755,7 +875,11 @@ function freshness(){
 freshness();
 document.addEventListener("click",function(e){
   var b=e.target.closest("button.copy");
-  if(b&&b.closest("summary")){e.preventDefault();}},true);
+  if(b&&b.closest("summary")){e.preventDefault();}
+  // The 🧹 clear chip lives in a <summary> too: let the link win rather than
+  // collapsing the batch the human is looking at.
+  var a=e.target.closest("a.act");
+  if(a&&a.closest("summary")){e.stopPropagation();}},true);
 function flt(q){q=q.toLowerCase();
  var secs=document.querySelectorAll('details.qsec');
  for(var i=0;i<secs.length;i++){var d=secs[i],any=false,histHit=false;
@@ -764,9 +888,10 @@ function flt(q){q=q.toLowerCase();
    var hit=!q||li.textContent.toLowerCase().indexOf(q)>=0;
    li.style.display=hit?'':'none';
    if(hit){any=true;if(li.className==='done')histHit=true;}}
-  var isInbox=d.classList.contains('inbox');
+  var openByDefault=d.classList.contains('inbox')||
+                    d.classList.contains('interests');
   if(q){d.style.display=any?'':'none';d.open=any;}
-  else{d.style.display='';d.open=isInbox;}
+  else{d.style.display='';d.open=openByDefault;}
   var h=d.querySelector('details.hist');
   if(h){h.style.display=(q&&!histHit)?'none':'';h.open=!!q&&histHit;}}}
 """
@@ -884,7 +1009,10 @@ def _render_html(snapshot: dict) -> str:
     stale_tmpl = (f"⚠ no digest since {fresh['stamp']} ({{n}} weekdays) — the "
                   f"nightly filing may be broken") if fresh["stamp"] else ""
 
-    def _fresh_span(now_text: str, stale_text: str, cls: str = "meta") -> str:
+    def _fresh_span(fresh: dict, now_text: str, stale_text: str,
+                    cls: str = "meta") -> str:
+        """`fresh` is explicit because the page renders two tiers, each with
+        its own digest, its own stamp and its own way of going silent."""
         if not fresh["stamp"]:
             return f"<span class='{cls}'>{_html.escape(now_text)}</span>"
         if fresh["stale"]:
@@ -900,6 +1028,7 @@ def _render_html(snapshot: dict) -> str:
     if inbox_items:
         digest = f" · last digest {fresh['stamp']}" if fresh["stamp"] else ""
         meta = _fresh_span(
+            fresh,
             f"{len(inbox_items)} waiting{digest} · lapse after "
             f"{inbox_actions.INBOX_WINDOW_DAYS}d",
             f"{len(inbox_items)} waiting · {stale_tmpl}")
@@ -910,8 +1039,69 @@ def _render_html(snapshot: dict) -> str:
     else:
         note = _inbox_empty_note(fresh)
         inbox_block = ("<p>" + _fresh_span(
+            fresh,
             f"nothing waiting — {note}",
             f"nothing waiting — {stale_tmpl}") + "</p>")
+
+    interests = snapshot.get("interests") or []
+    interest_items = []
+    for p in interests:
+        acts = [_pdf_act(p)]
+        for action, icon, hint in (
+                ("add", "\u2795", "add to the reading queue: worth reading — opens "
+                              "a prefilled issue; submitting files the line"),
+                ("intake", "\U0001f4e5", "intake into memory: really interesting — "
+                                 "opens a prefilled issue (add your notes) "
+                                 "that becomes the full filing work item"),
+                ("cite", "\U0001f4d1", "make citeable: worth citing, not pivotal — "
+                               "opens a prefilled issue (add your notes) for a "
+                               "bib entry + minimal sources section"),
+                ("dismiss", "\u2716\ufe0f", "not for me: opens a prefilled issue; "
+                                  "submitting drops the line from this batch")):
+            u = _queue_issue_url(snapshot, p["section"], p, action,
+                                 source=interests_actions.INTERESTS_FILE)
+            if u:
+                acts.append(f"<a class='act' href=\"{_html.escape(u, quote=True)}\" "
+                            f"title='{_html.escape(hint, quote=True)}'>{icon}</a>")
+        topic = (f" <span class='topic'>{_html.escape(p['topic'])}</span>"
+                 if p.get("topic") else "")
+        interest_items.append(
+            f"<li><a href=\"{_html.escape(paper_url(p), quote=True)}\">"
+            f"{_html.escape(p['title'])}</a>{topic}{''.join(acts)}</li>")
+    ifresh = _inbox_freshness(snapshot, "interests_last_digest")
+    istale_tmpl = (f"\u26a0 no digest since {ifresh['stamp']} ({{n}} weekdays) — "
+                   f"the nightly filing may be broken") if ifresh["stamp"] else ""
+    if interest_items:
+        idate = snapshot.get("interests_date") or "?"
+        left = max(0, (snapshot.get("interests_batches") or 1) - 1)
+        behind = (f" · {left} more day{'s' if left != 1 else ''} behind it"
+                  if left else "")
+        # The one non-per-paper action on the board. It sits in the <summary>
+        # beside the count, because that is what it acts on: the day, not a
+        # paper. The click handler in _EXTRA_JS lets it through without
+        # toggling the section open (a link inside a <summary> would).
+        clear_url = _interests_clear_url(snapshot, idate, len(interest_items))
+        clear = (f"<a class='act clear' href=\"{_html.escape(clear_url, quote=True)}\" "
+                 f"title='clear this whole day: opens a prefilled issue; "
+                 f"submitting drops the {len(interest_items)} paper(s) left in "
+                 f"the {idate} batch and reveals the next day'>"
+                 f"\U0001f9f9 clear</a>" if clear_url else "")
+        imeta = _fresh_span(
+            ifresh,
+            f"{len(interest_items)} paper"
+            f"{'s' if len(interest_items) != 1 else ''}{behind}",
+            f"{len(interest_items)} paper(s) · {istale_tmpl}")
+        # The batch's date IS its name — this is a backlog of days, and which
+        # day you are looking at is the first thing to know.
+        interests_block = (
+            f"<details class='qsec interests' open><summary><span class='name'>"
+            f"{_html.escape(idate)}</span> {imeta} {clear}</summary>"
+            f"<ul class='papers'>{''.join(interest_items)}</ul></details>")
+    else:
+        interests_block = ("<p>" + _fresh_span(
+            ifresh,
+            f"no batch waiting — {_inbox_empty_note(ifresh)}",
+            f"no batch waiting — {istale_tmpl}") + "</p>")
 
     trend = _read_trend(snapshot)
     total_done = sum(q.get("done", 0) for q in snapshot.get("queue") or [])
@@ -960,6 +1150,12 @@ def _render_html(snapshot: dict) -> str:
             f"{_copy_btn('/memory ' + w['name'], 'copy: recall this domain')}"
             f"</td></tr>")
 
+    n_batches = snapshot.get("interests_batches") or 0
+    interests_backlog_note = (
+        f"; {n_batches} day{'s' if n_batches != 1 else ''} of backlog, "
+        f"{snapshot.get('interests_backlog') or 0} papers"
+        if n_batches else "")
+
     hero = t_.hero(BOARD_KEY, "Dashboard", _LEDE)
     stats = t_.stats((t["pages"], "Pages"), (f"{pct}%", "Cited"),
                      (t["todo"], "To cite"), (t["queued"], "Queued"))
@@ -976,6 +1172,10 @@ def _render_html(snapshot: dict) -> str:
 <h2>arXiv inbox <span class="muted">(suggested overnight — un-acted papers
  lapse after {inbox_actions.INBOX_WINDOW_DAYS} days)</span></h2>
 {inbox_block}
+<h2>arXiv interests <span class="muted">(everything that is not strong
+ lensing — one day's ten at a time; \U0001f9f9 clears the day and shows the
+ next{interests_backlog_note})</span></h2>
+{interests_block}
 <h2>Reading queue <span class="muted">({trend_bits})</span>{spark}</h2>
 {filter_box}
 {''.join(queue_blocks)}

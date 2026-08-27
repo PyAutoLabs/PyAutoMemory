@@ -1,6 +1,7 @@
 name: Queue actions
 
-# The dashboard's mechanical per-paper buttons land here. Three of them:
+# The dashboard's mechanical buttons land here — five per-paper, one
+# per-batch. Six of them:
 #
 #   ✅ `queue-read`     marks a reading-queue.md line `DONE <date> — <title>`
 #                       (never deleted — the reading history)
@@ -8,6 +9,13 @@ name: Queue actions
 #                       section, unread
 #   ✖️ `queue-dismiss`  drops an arxiv-inbox.md line — an un-acted suggestion
 #                       is not reading history, and git history holds it
+#   ➕ `interests-add`      the same move out of arxiv-interests.md, routed by
+#                          the line's own `[Topic]` rather than to one section
+#   ✖️ `interests-dismiss`  the same drop, out of arxiv-interests.md
+#   🧹 `interests-clear`    drops a whole day's batch from arxiv-interests.md,
+#                          revealing the next day — the interests list is a
+#                          backlog to walk, not a seven-day timer, so this is
+#                          the button that moves it along
 #
 # Each commits the file it touched, re-renders the dashboard, and closes the
 # issue. 📥 `queue-intake` and 📑 `queue-cite` are NOT handled here — they stay
@@ -35,12 +43,16 @@ concurrency:
 
 jobs:
   queue-action:
-    # One job, three labels. The gate is unchanged: this is a public repo, and
-    # a stranger's issue must never mutate the queue or the inbox.
+    # One job, six labels. The gate is unchanged: this is a public repo, and
+    # a stranger's issue must never mutate the queue, the inbox or the
+    # interests list.
     if: >-
       (contains(github.event.issue.labels.*.name, 'queue-read') ||
        contains(github.event.issue.labels.*.name, 'queue-add') ||
-       contains(github.event.issue.labels.*.name, 'queue-dismiss')) &&
+       contains(github.event.issue.labels.*.name, 'queue-dismiss') ||
+       contains(github.event.issue.labels.*.name, 'interests-add') ||
+       contains(github.event.issue.labels.*.name, 'interests-dismiss') ||
+       contains(github.event.issue.labels.*.name, 'interests-clear')) &&
       contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'),
                github.event.issue.author_association)
     runs-on: ubuntu-latest
@@ -67,6 +79,18 @@ jobs:
               action=dismiss
               status=$(python scripts/inbox_actions.py dismiss \
                 --body-file /tmp/issue_body.txt) || true ;;
+            *,interests-add,*)
+              action=interests-add
+              status=$(python scripts/interests_actions.py add \
+                --body-file /tmp/issue_body.txt) || true ;;
+            *,interests-dismiss,*)
+              action=interests-dismiss
+              status=$(python scripts/interests_actions.py dismiss \
+                --body-file /tmp/issue_body.txt) || true ;;
+            *,interests-clear,*)
+              action=interests-clear
+              status=$(python scripts/interests_actions.py clear \
+                --body-file /tmp/issue_body.txt) || true ;;
             *)
               action=read
               status=$(python scripts/queue_mark_done.py \
@@ -76,6 +100,7 @@ jobs:
           # normalise so the close step reports rather than mis-closing.
           case "$status" in
             marked|already-done|added|already-there|dismissed|already-gone) ;;
+            already-clear|cleared:*) ;;
             *) status="${status:-error}" ;;
           esac
           echo "action=${action}" >> "$GITHUB_OUTPUT"
@@ -83,7 +108,7 @@ jobs:
           echo "queue action ${action}: ${status}"
           # Did anything actually change on disk? Cheaper and more honest than
           # inferring it from the status token.
-          if [ -n "$(git status --porcelain -- reading-queue.md arxiv-inbox.md)" ]; then
+          if [ -n "$(git status --porcelain -- reading-queue.md arxiv-inbox.md arxiv-interests.md)" ]; then
             echo "changed=yes" >> "$GITHUB_OUTPUT"
           else
             echo "changed=no" >> "$GITHUB_OUTPUT"
@@ -97,11 +122,14 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           case "$ACTION" in
-            add)     msg="queue: add inbox paper to the reading queue" ;;
-            dismiss) msg="queue: dismiss inbox paper" ;;
-            *)       msg="queue: mark paper read" ;;
+            add)                msg="queue: add inbox paper to the reading queue" ;;
+            dismiss)            msg="queue: dismiss inbox paper" ;;
+            interests-add)      msg="interests: add paper to the reading queue" ;;
+            interests-dismiss)  msg="interests: dismiss paper" ;;
+            interests-clear)    msg="interests: clear the day's batch" ;;
+            *)                  msg="queue: mark paper read" ;;
           esac
-          git add reading-queue.md arxiv-inbox.md
+          git add reading-queue.md arxiv-inbox.md arxiv-interests.md
           git commit -m "${msg} (#${ISSUE}) [skip ci]"
           for attempt in 1 2 3; do
             if git push; then exit 0; fi
@@ -117,7 +145,14 @@ jobs:
       - name: Close or report on the issue
         env:
           STATUS: ${{ steps.mark.outputs.status }}
+          ACTION: ${{ steps.mark.outputs.action }}
         run: |
+          # Two suggestion tiers share these statuses, so the comment names
+          # the one the human actually tapped.
+          case "$ACTION" in
+            interests-*) tier="arXiv interests list" ;;
+            *)           tier="arXiv inbox" ;;
+          esac
           case "$STATUS" in
             marked)
               gh issue close "$ISSUE" --comment \
@@ -127,19 +162,25 @@ jobs:
                 "Already marked read in reading-queue.md — nothing to change." ;;
             added)
               gh issue close "$ISSUE" --comment \
-                "Added to the reading queue and cleared from the arXiv inbox. Dashboard refresh dispatched." ;;
+                "Added to the reading queue and cleared from the ${tier}. Dashboard refresh dispatched." ;;
             already-there)
               gh issue close "$ISSUE" --comment \
-                "Already in the reading queue — cleared the arXiv inbox line and left the queue alone." ;;
+                "Already in the reading queue — cleared the ${tier} line and left the queue alone." ;;
             dismissed)
               gh issue close "$ISSUE" --comment \
-                "Dropped from the arXiv inbox. Git history still holds the line. Dashboard refresh dispatched." ;;
+                "Dropped from the ${tier}. Git history still holds the line. Dashboard refresh dispatched." ;;
             already-gone)
               gh issue close "$ISSUE" --comment \
-                "Not in the arXiv inbox any more — nothing to change (it may already have lapsed)." ;;
+                "Not in the arXiv inbox or interests list any more — nothing to change (it may already have lapsed or been cleared)." ;;
+            cleared:*)
+              gh issue close "$ISSUE" --comment \
+                "Cleared ${STATUS#cleared:} paper(s) from the arXiv interests list — the next day's batch is now on the dashboard. Git history still holds the batch. Dashboard refresh dispatched." ;;
+            already-clear)
+              gh issue close "$ISSUE" --comment \
+                "That interests batch is already clear — nothing to change." ;;
             no-section)
               gh issue comment "$ISSUE" --body \
-                "Could not process this queue action — the target section does not exist in reading-queue.md. Handle manually; leaving the issue open." ;;
+                "Could not process this queue action — neither the named section nor the \`## Interests\` fallback exists in reading-queue.md. Handle manually; leaving the issue open." ;;
             *)
               gh issue comment "$ISSUE" --body \
                 "Could not process this queue action (status: ${STATUS:-error}) — the paper's line was not found. Handle manually; leaving the issue open." ;;

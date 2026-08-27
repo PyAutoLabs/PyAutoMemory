@@ -18,9 +18,11 @@ on:
       - "bibliography/**"
       - "reading-queue.md"
       - "arxiv-inbox.md"
+      - "arxiv-interests.md"
       - "index.md"
       - "scripts/board.py"
       - "scripts/inbox_actions.py"
+      - "scripts/interests_actions.py"
   schedule:
     - cron: "45 5 * * 1"
   workflow_dispatch:
@@ -69,6 +71,9 @@ jobs:
           ensure queue-intake  "5319e7" "reading queue: file this paper fully into the wiki"
           ensure queue-add     "fbca04" "arXiv inbox: move this paper into the reading queue"
           ensure queue-dismiss "d4c5f9" "arXiv inbox: drop this suggestion"
+          ensure interests-add     "fbca04" "arXiv interests: move this paper into the reading queue"
+          ensure interests-dismiss "d4c5f9" "arXiv interests: drop this suggestion"
+          ensure interests-clear   "b60205" "arXiv interests: clear a whole day's batch"
 
       # The family look (hero, palette, stylesheet) is defined once in the
       # Brain and imported by the renderer — never copied in here.
