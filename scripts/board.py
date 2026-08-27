@@ -875,11 +875,7 @@ function freshness(){
 freshness();
 document.addEventListener("click",function(e){
   var b=e.target.closest("button.copy");
-  if(b&&b.closest("summary")){e.preventDefault();}
-  // The 🧹 clear chip lives in a <summary> too: let the link win rather than
-  // collapsing the batch the human is looking at.
-  var a=e.target.closest("a.act");
-  if(a&&a.closest("summary")){e.stopPropagation();}},true);
+  if(b&&b.closest("summary")){e.preventDefault();}},true);
 function flt(q){q=q.toLowerCase();
  var secs=document.querySelectorAll('details.qsec');
  for(var i=0;i<secs.length;i++){var d=secs[i],any=false,histHit=false;
@@ -1078,8 +1074,9 @@ def _render_html(snapshot: dict) -> str:
                   if left else "")
         # The one non-per-paper action on the board. It sits in the <summary>
         # beside the count, because that is what it acts on: the day, not a
-        # paper. The click handler in _EXTRA_JS lets it through without
-        # toggling the section open (a link inside a <summary> would).
+        # paper. No click handling needed, unlike the 📋 buttons beside it: a
+        # link navigates away from the board, so whether the section also
+        # toggles on the way out is not observable.
         clear_url = _interests_clear_url(snapshot, idate, len(interest_items))
         clear = (f"<a class='act clear' href=\"{_html.escape(clear_url, quote=True)}\" "
                  f"title='clear this whole day: opens a prefilled issue; "
