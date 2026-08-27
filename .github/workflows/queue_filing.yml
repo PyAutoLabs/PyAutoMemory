@@ -1,7 +1,9 @@
 name: Queue filing
 
 # The dashboard's 📥 `queue-intake` / 📑 `queue-cite` buttons open prefilled
-# issues; this workflow has Claude file the named paper — bibliography entry,
+# issues — from the reading queue or from either suggestion tier
+# (`arxiv-inbox.md`, `arxiv-interests.md`), which the issue's `file:` names;
+# this workflow has Claude file the named paper — bibliography entry,
 # wiki sources section (minimal for cite, full stub for intake, the human's
 # notes folded in), DONE-mark on the queue line — and opens a reviewable PR
 # that closes the issue. Merge stays human.
@@ -97,12 +99,17 @@ jobs:
 
             Read /tmp/issue_body.txt (a dashboard queue request). Extract:
             - `file:` — which file the line lives in: `reading-queue.md`
-              (already queued to read) or `arxiv-inbox.md` (an overnight
-              suggestion, NOT yet in the queue). Absent means reading-queue.md.
+              (already queued to read), or one of the two overnight suggestion
+              tiers, NOT yet in the queue — `arxiv-inbox.md` (strong lensing)
+              and `arxiv-interests.md` (everything else). Absent means
+              reading-queue.md.
             - `section:` — the reading-queue section header,
-            - `line:` — the exact line as written. An arxiv-inbox.md line is
-              prefixed `<YYYY-MM-DD> — `; that date is the inbox timestamp, not
-              part of the title. Strip it before using the title anywhere.
+            - `line:` — the exact line as written. A suggestion-tier line is
+              prefixed `<YYYY-MM-DD> — `, and an arxiv-interests.md one may
+              carry a further `[Topic] ` after that date. Neither is part of
+              the title: strip both before using the title anywhere. (The
+              topic is the same value as `section:`, kept on the line so the
+              file round-trips on its own.)
             - `notes:` — the human's free-text notes; treat as absent if it
               still holds the "(optional — replace this…)" placeholder.
             Read /tmp/issue_label.txt: `queue-intake` (full filing) or
@@ -129,18 +136,18 @@ jobs:
             4. Record it as read, which depends on `file:`:
                - `reading-queue.md` → prefix the exact `line:` inside its
                  `## section` with `DONE <today's date> — ` (never delete it).
-               - `arxiv-inbox.md` → there is no queue line yet. Append
-                 `DONE <today's date> — <title>[ — <ref>]` to the end of the
-                 `## section` in reading-queue.md (the paper is being filed
-                 now, so it enters the queue already read), then delete the
-                 line from arxiv-inbox.md. An inbox line is a suggestion, not
-                 reading history, so deleting it is correct — the DONE line it
-                 becomes is the history.
+               - `arxiv-inbox.md` or `arxiv-interests.md` → there is no queue
+                 line yet. Append `DONE <today's date> — <title>[ — <ref>]` to
+                 the end of the `## section` in reading-queue.md (the paper is
+                 being filed now, so it enters the queue already read), then
+                 delete the line from whichever of those two files `file:`
+                 names. A suggestion line is not reading history, so deleting
+                 it is correct — the DONE line it becomes is the history.
             5. Run `make validate` and `python -m pytest tests/ -q`; fix your
                own filing mistakes until both are green.
 
-            Touch ONLY bibliography/, wiki/, reading-queue.md and
-            arxiv-inbox.md. Do not
+            Touch ONLY bibliography/, wiki/, reading-queue.md,
+            arxiv-inbox.md and arxiv-interests.md. Do not
             commit — the workflow handles git. If the paper cannot be
             identified confidently, write the reason to /tmp/filing_error.txt
             and stop without editing anything.
@@ -164,7 +171,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           branch="queue-filing/issue-${ISSUE}"
           git checkout -b "$branch"
-          git add bibliography/ wiki/ reading-queue.md arxiv-inbox.md
+          git add bibliography/ wiki/ reading-queue.md arxiv-inbox.md arxiv-interests.md
           if git diff --cached --quiet; then
             echo "::error::Claude produced no changes"; exit 1
           fi

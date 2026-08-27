@@ -221,6 +221,10 @@ Bayesian Computation in Astronomy: Novel methods for parallel and gradient-free 
 Finding reproducible cluster partitions for the k-means algorithm
 Scalable hierarchical BayeSN inference: Investigating dependence of SN Ia host galaxy dust properties on stellar mass and redshift — 2401.08755
 
+## Interests
+NOTE Where an `arxiv-interests.md` paper lands when its `[Topic]` names no
+NOTE section above — the fallback, not a domain. Re-file from here.
+
 ## SETI
 Imagining the Alien: Human Projections and Cognitive Limitations — 2602.07284
 Results of ten years of UCLA SETI searches with the Green Bank Telescope — 2605.05408

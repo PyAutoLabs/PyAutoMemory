@@ -36,6 +36,7 @@ ALLOWED_TOP_FILES = {
     "README.md",
     "SPAWNED_FROM",  # provenance marker stamped into spawned templates
     "arxiv-inbox.md",
+    "arxiv-interests.md",
     "index.md",
     "logo.png",
     "reading-queue.md",

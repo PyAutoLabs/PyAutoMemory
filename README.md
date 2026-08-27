@@ -47,9 +47,12 @@ Self-contained, shared schema:
 
 [`bibliography/`](bibliography/README.md) holds the canonical BibTeX
 metadata every wiki cites against; [`reading-queue.md`](reading-queue.md)
-is what's waiting to be read and filed, and
-[`arxiv-inbox.md`](arxiv-inbox.md) is the overnight suggestions tier in front
-of it. New knowledge updates the metadata
+is what's waiting to be read and filed. Two overnight tiers sit in front of it:
+[`arxiv-inbox.md`](arxiv-inbox.md) (strong lensing, a seven-day timer) and
+[`arxiv-interests.md`](arxiv-interests.md) (everything else — black holes,
+dark matter, galaxy formation, statistics — as one day's ten at a time, a
+backlog you clear a day at a time rather than a timer). New knowledge updates
+the metadata
 and the claim support together, then passes `make validate` (CI-enforced on
 every push).
 
