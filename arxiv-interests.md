@@ -37,3 +37,13 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
+last digest: 2026-08-27
+2026-08-27 — [Galaxy Formation / Evolution] Evidence for the transformation from lenticular to spiral galaxies — 2608.25673
+2026-08-27 — [Dark Matter] Distinguishing cold and self-interacting dark matter through topological analysis — 2608.25632
+2026-08-27 — [Stats] Finding and using interpretable latents in a neutrino foundation model with sparse autoencoders — 2608.26090
+2026-08-27 — [SMBHs] Winds Against Alignment: AGN Feedback and the Spin Evolution of Massive Black Hole Binaries — 2608.25978
+2026-08-27 — [Dark Matter] Is the mysterious {\it Punctum} a primordial black hole? — 2608.25423
+2026-08-27 — [SMBHs] A Population Study for Searching Supermassive Binary Black Holes in Active Galactic Nuclei: Continuum Spectral Features and Periodic Variabilities — 2608.25507
+2026-08-27 — [Galaxy Formation / Evolution] REBELS-25: multi-phase morphology and kinematics at z = 7.31 — 2608.25982
+2026-08-27 — [Dark Matter] Multi-messenger signal from QCD-Axion Ultracompact Minihalos — 2608.25338
+2026-08-27 — [SMBHs] The properties of the first continuous gravitational waves: Optimizing pulsar timing observations for supermassive black hole binary detection — 2608.25715
