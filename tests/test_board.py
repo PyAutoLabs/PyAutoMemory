@@ -24,6 +24,15 @@ import interests_actions  # noqa: E402
 
 BODY_MARKER = "the-secret-claim-text-that-must-never-leak"
 
+# The freshness/staleness banners are computed against `snapshot["generated"]`,
+# so a fixture with fixed dates and a live clock ages out of its own window and
+# the suite goes red on a calendar day rather than on a code change (it did, on
+# 2026-08-28: the two-day-old stamp below turned stale and the assertions that
+# expected a quiet day started reading the "filing may be broken" banner). Pin
+# the clock to the day the tree below is written for; `_inbox` already does the
+# same with its own calibrated date.
+FIXTURE_NOW = "2026-08-26T09:00:00+00:00"
+
 
 def _tree(tmp_path: Path) -> Path:
     w = tmp_path / "wiki" / "demo"
@@ -67,6 +76,7 @@ def _snap_with_remote(tmp_path):
     """A synthetic snapshot with repo identity, as a live checkout has."""
     snap = board.collect(_tree(tmp_path))
     snap["owner"], snap["repo"] = "PyAutoLabs", "PyAutoMemory"
+    snap["generated"] = FIXTURE_NOW
     return snap
 
 
@@ -311,7 +321,7 @@ def _inbox(tmp_path, stamp=None, papers=()):
         "# arXiv interests\n\nintro prose\n\n---\n")
     snap = board.collect(root)
     snap["owner"], snap["repo"] = "PyAutoLabs", "PyAutoMemory"
-    snap["generated"] = "2026-08-25T09:00:00+00:00"
+    snap["generated"] = "2026-08-25T09:00:00+00:00"  # calibrated to this helper's dates
     return snap
 
 
@@ -468,6 +478,7 @@ def _interests(tmp_path, lines, stamp=None):
         "# arXiv inbox\n\nintro prose\n\n---\n")
     snap = board.collect(root)
     snap["owner"], snap["repo"] = "PyAutoLabs", "PyAutoMemory"
+    snap["generated"] = FIXTURE_NOW
     return snap
 
 
@@ -566,6 +577,17 @@ def test_the_backlog_depth_is_on_the_page(tmp_path):
     assert "1 more day behind it" in board._render_html(snap)
     assert "2 days of backlog" in board._render_html(snap)
     assert "1 more day behind it" in board._render_md(snap)
+
+
+def test_the_backlog_depth_survives_the_stale_banner(tmp_path):
+    """A late digest is when the depth matters most. The stale text replaces
+    the summary wholesale — server-side here, and client-side via
+    `data-stale-text` — so it has to carry the depth too."""
+    snap = _snap_with_remote(tmp_path)
+    snap["interests_last_digest"] = "2026-08-14"     # stale against FIXTURE_NOW
+    html = board._render_html(snap)
+    assert "the nightly filing may be broken" in html
+    assert html.count("1 more day behind it") == 2   # rendered + data-stale-text
 
 
 def test_an_empty_interests_list_says_which_kind_of_empty(tmp_path):
