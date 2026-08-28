@@ -48,3 +48,7 @@ last digest: 2026-08-28
 2026-08-28 — [Galaxy Formation / Evolution] SERENADE III: Insight into the Origin of the High Dust Temperature and High [O III]/[C II] Ratio at $z\gtrsim6$ — 2608.26708
 2026-08-28 — [Galaxy Formation / Evolution] COSMOS-Web: From early star-formation enhancement to late suppression in galaxy groups — 2608.26348
 2026-08-28 — [Dark Matter] Barren but not Empty: The Impact of Void Environments on Galaxy and Halo Populations — 2608.26256
+2026-08-28 — [Stats] Derivative hierarchy as the origin of kernel-dependent trends in Gaussian process reconstructions of the hubble parameter — 2608.26774
+2026-08-28 — [Galaxy Formation / Evolution] The origin of the stellar mass-size relation of satellite galaxies in the COLIBRE simulations — 2608.26275
+2026-08-28 — [Stats] $\texttt{SPINE}$: Symbolic Models to Predict the Evolution of the $Λ$CDM Nonlinear Power Spectrum — 2608.26276
+2026-08-28 — [Dark Matter] Revisiting the enigmatic sixth star cluster in the Fornax dwarf spheroidal galaxy — 2608.27270
