@@ -37,7 +37,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-08-27
+last digest: 2026-08-28
 2026-08-27 — [Galaxy Formation / Evolution] Evidence for the transformation from lenticular to spiral galaxies — 2608.25673
 2026-08-27 — [Dark Matter] Distinguishing cold and self-interacting dark matter through topological analysis — 2608.25632
 2026-08-27 — [Stats] Finding and using interpretable latents in a neutrino foundation model with sparse autoencoders — 2608.26090
@@ -47,3 +47,13 @@ last digest: 2026-08-27
 2026-08-27 — [Galaxy Formation / Evolution] REBELS-25: multi-phase morphology and kinematics at z = 7.31 — 2608.25982
 2026-08-27 — [Dark Matter] Multi-messenger signal from QCD-Axion Ultracompact Minihalos — 2608.25338
 2026-08-27 — [SMBHs] The properties of the first continuous gravitational waves: Optimizing pulsar timing observations for supermassive black hole binary detection — 2608.25715
+2026-08-28 — [Stats] Cross-simulator transfer with foundation model summaries: Towards robust SKA-era reionization inference — 2608.26354
+2026-08-28 — [SMBHs] Optimal transport regularized dynamic radio interferometric reconstruction — 2608.27192
+2026-08-28 — [Dark Matter] The solitary star cluster of the Andromeda XXV dwarf spheroidal — 2608.26959
+2026-08-28 — [Dark Matter] Scatter, bias, and chaos of satellite orbits in triaxial dark matter haloes — 2608.26249
+2026-08-28 — [Dark Matter] ELUCID-DESI II. Revealing dark matter mass, tidal, and velocity (MTV) fields using galaxy group phase information — 2608.26668
+2026-08-28 — [Dark Matter] Paleo-Detectors as a Novel Probe of Dark Matter-Nucleus Effective Interactions — 2608.26289
+2026-08-28 — [Dark Matter] Effects of the interaction of dark matter and neutron-star matter on extreme and intermediate mass-ratio inspirals — 2608.26274
+2026-08-28 — [Galaxy Formation / Evolution] SERENADE III: Insight into the Origin of the High Dust Temperature and High [O III]/[C II] Ratio at $z\gtrsim6$ — 2608.26708
+2026-08-28 — [Galaxy Formation / Evolution] COSMOS-Web: From early star-formation enhancement to late suppression in galaxy groups — 2608.26348
+2026-08-28 — [Dark Matter] Barren but not Empty: The Impact of Void Environments on Galaxy and Halo Populations — 2608.26256
