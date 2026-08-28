@@ -31,5 +31,4 @@ last digest: 2026-08-28
 2026-08-25 — Strong Lensing Cosmology with Population-level Calibrated Neural Ratio Estimation — 2608.23534
 2026-08-25 — Mapping the Information Geometry of an Unresolved Dark Matter Population using a Differentiable Strong Lensing Simulator — 2608.18224
 2026-08-27 — Accretion Disk Sizes and Temperature Profiles in Lensed Quasars: NIR Microlensing Challenges Thin Disk Theory — 2608.26039
-2026-08-27 — To be lensed or not to be lensed: on the nature of the alleged high-z lensed quasars J0109-5424 and P170+20 — 2608.25044
 2026-08-28 — HOLISMOKES -- XVIII. Cosmology with strongly lensed type II supernovae: Effects of instrumental setups on $H_0$ — 2608.26331
