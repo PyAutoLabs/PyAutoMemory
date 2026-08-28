@@ -207,6 +207,7 @@ A lensing multi-messenger channel: Combining LIGO-Virgo-Kagra lensed gravitation
 Chandra Observations of Spikey: A Possible Self-lensing Supermassive Black Hole Binary System
 The massive relic galaxy NGC 1277 is dark matter deficient. From dynamical models of integral-field stellar kinematics out to five effective radii — 2303.11360
 The impact of baryonic potentials on the gravothermal evolution of self-interacting dark matter haloes — 2306.08028
+Is the mysterious {\it Punctum} a primordial black hole? — 2608.25423
 
 ## Stats
 AstroAlertBench: Evaluating the Accuracy, Reasoning, and Honesty of Multimodal LLMs in Astronomical Classification — 2605.05573
@@ -364,8 +365,3 @@ https://github.com/patrick-kidger/optimistix?tab=readme-ov-file:
 Eryn: A multi-purpose sampler for Bayesian inference — 2303.02164
 
     NOTE Another cool sampler for autofit.
-
-
-
-
-
