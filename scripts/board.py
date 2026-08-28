@@ -1083,11 +1083,15 @@ def _render_html(snapshot: dict) -> str:
                  f"submitting drops the {len(interest_items)} paper(s) left in "
                  f"the {idate} batch and reveals the next day'>"
                  f"\U0001f9f9 clear</a>" if clear_url else "")
+        # `behind` rides on BOTH texts. A late digest is exactly when the
+        # backlog depth matters most, and dropping it from the stale variant
+        # hid it twice over: on a render that is already stale, and on a fresh
+        # render the moment _EXTRA_JS swaps in `data-stale-text`.
         imeta = _fresh_span(
             ifresh,
             f"{len(interest_items)} paper"
             f"{'s' if len(interest_items) != 1 else ''}{behind}",
-            f"{len(interest_items)} paper(s) · {istale_tmpl}")
+            f"{len(interest_items)} paper(s){behind} · {istale_tmpl}")
         # The batch's date IS its name — this is a backlog of days, and which
         # day you are looking at is the first thing to know.
         interests_block = (
