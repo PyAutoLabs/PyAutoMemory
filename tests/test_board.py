@@ -143,6 +143,10 @@ def test_work_queue_prompts_reference_the_documented_workflow(tmp_path):
 
 def test_paper_links_and_issue_actions(tmp_path):
     html = board.render(_snap_with_remote(tmp_path), "html")
+    # the header links the markdown twin and the repository front door
+    assert '<a href="dashboard.md">markdown version</a>' in html
+    assert ('<a href="https://github.com/PyAutoLabs/PyAutoMemory/blob/main/'
+            'README.md">GitHub Page</a>') in html
     # ref'd paper → its abstract page; bare title → an arXiv title search
     assert "https://arxiv.org/abs/2406.01234" in html
     assert ("https://arxiv.org/search/?searchtype=title&amp;query=Title%20One"
@@ -209,6 +213,8 @@ def test_badge_shape(tmp_path):
 def test_html_is_self_contained(tmp_path):
     out = board.render(board.collect(_tree(tmp_path)), "html")
     assert out.lstrip().startswith("<!doctype html>")
+    # no repo identity in this snapshot → the GitHub Page segment drops out
+    assert "GitHub Page" not in out
     assert "src=" not in out and "<link" not in out.lower()
     assert "fetch(" not in out and "XMLHttpRequest" not in out
     stripped = re.sub(r'data-cmd="[^"]*"', "", out)
