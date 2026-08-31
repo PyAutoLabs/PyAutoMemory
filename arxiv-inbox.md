@@ -27,8 +27,15 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-08-28
+last digest: 2026-08-31
 2026-08-25 — Strong Lensing Cosmology with Population-level Calibrated Neural Ratio Estimation — 2608.23534
 2026-08-25 — Mapping the Information Geometry of an Unresolved Dark Matter Population using a Differentiable Strong Lensing Simulator — 2608.18224
 2026-08-27 — Accretion Disk Sizes and Temperature Profiles in Lensed Quasars: NIR Microlensing Challenges Thin Disk Theory — 2608.26039
 2026-08-28 — HOLISMOKES -- XVIII. Cosmology with strongly lensed type II supernovae: Effects of instrumental setups on $H_0$ — 2608.26331
+2026-08-31 — Follow-up of SN 2025wny I: Space-based Observations of the First Multiply-imaged Superluminous Supernova — 2608.28413
+2026-08-31 — Follow-up of SN 2025wny V: Lens Modelling and Cosmography of a Strongly Lensed Superluminous Supernova at $z = 2.015$ using Space Data — 2608.28430
+2026-08-31 — TDCOSMO. XXVII. JWST-based Lens Models and H$_0$ Measurement of WFI2033, HE0435, and PG1115 — 2608.27566
+2026-08-31 — Follow-up of SN 2025wny II: Superluminous Supernova Physics at Cosmic Noon — 2608.28415
+2026-08-31 — Follow-up of SN 2025wny III: Spectroscopic Time-delay Measurements of a Strongly Gravitationally Lensed Superluminous Supernova — 2608.28416
+2026-08-31 — Follow-up of SN 2025wny IV: Photometric Time-delay Measurements of a Strongly Lensed Superluminous Supernova — 2608.28427
+2026-08-31 — Measuring Extragalactic Microlens Masses and Motions in Strongly Lensed Quasar Systems with Intensity Interferometry — 2608.27577
