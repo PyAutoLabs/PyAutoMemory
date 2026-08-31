@@ -37,7 +37,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-08-28
+last digest: 2026-08-31
 2026-08-28 — [Stats] Cross-simulator transfer with foundation model summaries: Towards robust SKA-era reionization inference — 2608.26354
 2026-08-28 — [SMBHs] Optimal transport regularized dynamic radio interferometric reconstruction — 2608.27192
 2026-08-28 — [Dark Matter] The solitary star cluster of the Andromeda XXV dwarf spheroidal — 2608.26959
@@ -52,3 +52,13 @@ last digest: 2026-08-28
 2026-08-28 — [Galaxy Formation / Evolution] The origin of the stellar mass-size relation of satellite galaxies in the COLIBRE simulations — 2608.26275
 2026-08-28 — [Stats] $\texttt{SPINE}$: Symbolic Models to Predict the Evolution of the $Λ$CDM Nonlinear Power Spectrum — 2608.26276
 2026-08-28 — [Dark Matter] Revisiting the enigmatic sixth star cluster in the Fornax dwarf spheroidal galaxy — 2608.27270
+2026-08-31 — [SMBHs] Overmassive supermassive black holes in SDSS close galaxy pairs — 2608.27730
+2026-08-31 — [SMBHs] Formation of black hole stars via star--black hole collisions — 2608.27596
+2026-08-31 — [Galaxy Formation / Evolution] Dust and PAHs in late-stage galaxy evolution: Imprints of TP-AGB dust injection, grain growth and AGN feedback in high-z quiescent galaxies with JWST and ALMA — 2608.27571
+2026-08-31 — [Stats] Fast and efficient nested sampling with BEST — 2608.28514
+2026-08-31 — [SMBHs] Relativistic outflows power a quasi-periodic eruption: constraints on energetics, mass loss, and emission mechanisms — 2608.28507
+2026-08-31 — [SMBHs] From Inspiral to Expansion: The Wake-Driven Torque on Binary Black Holes in Gaseous Medium — 2608.27970
+2026-08-31 — [SMBHs] A Similarity Theorem and Its Breakdown in Atomic Black Hole Accretion — 2608.28587
+2026-08-31 — [Stats] Learning the averaged history of an inhomogeneous universe from its present day density field — 2608.27962
+2026-08-31 — [Dark Matter] Low-energy antinuclei measurements for background-free indirect dark matter searches and PBH signatures — 2608.27787
+2026-08-31 — [Dark Matter] A Unified Tracer Analysis of DESI DR2 Baryon Acoustic Oscillations — 2608.27830
