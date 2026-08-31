@@ -114,6 +114,7 @@ jobs:
           fi
 
       - name: Commit + push (explicit paths only)
+        id: push
         if: steps.mark.outputs.changed == 'yes'
         env:
           ACTION: ${{ steps.mark.outputs.action }}
@@ -141,7 +142,20 @@ jobs:
             [ "$attempt" = 3 ] && break
             git fetch origin main
             git reset --hard origin/main
-            python $CMD --body-file /tmp/issue_body.txt || true
+            retry_status=$(python $CMD --body-file /tmp/issue_body.txt) || true
+            # A clean tree only means "done" if the re-run actually succeeded:
+            # an error status (no-section, a crash) also leaves no diff, and
+            # exiting 0 on it would close the issue on the first run's stale
+            # status — the same silent-loss class this retry exists to fix.
+            case "$retry_status" in
+              marked|already-done|added|already-there|dismissed|already-gone|already-clear|cleared:*) ;;
+              *)
+                echo "::error::re-apply on the moved main returned '${retry_status:-error}'"
+                exit 1 ;;
+            esac
+            # The close step reports what actually landed, not attempt 1's
+            # status (last write wins).
+            echo "status=${retry_status}" >> "$GITHUB_OUTPUT"
             if [ -z "$(git status --porcelain -- reading-queue.md arxiv-inbox.md arxiv-interests.md)" ]; then
               echo "change already on main after the concurrent commit — nothing left to push"
               exit 0
@@ -158,7 +172,7 @@ jobs:
 
       - name: Close or report on the issue
         env:
-          STATUS: ${{ steps.mark.outputs.status }}
+          STATUS: ${{ steps.push.outputs.status || steps.mark.outputs.status }}
           ACTION: ${{ steps.mark.outputs.action }}
         run: |
           # Two suggestion tiers share these statuses, so the comment names
