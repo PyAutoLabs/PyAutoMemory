@@ -65,6 +65,19 @@ jobs:
 
       - uses: actions/checkout@v4
 
+      # The board tests import the family look from the Brain
+      # (PyAutoBrain/board/_theme.py — moved there in dcd1e2c, which added
+      # this step to validate.yml and knowledge_board.yml but not here).
+      # Without it the gate's pytest — and Claude's own in-prompt gate, which
+      # is told to fix its own mistakes until green but cannot fix a missing
+      # checkout — dies on 30 tests/test_board.py errors after the filing
+      # work is already done. So it lands before the Claude step, not just
+      # before the gate.
+      - uses: actions/checkout@v4
+        with:
+          repository: PyAutoLabs/PyAutoBrain
+          path: PyAutoBrain
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
