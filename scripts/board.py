@@ -1160,6 +1160,11 @@ def _render_html(snapshot: dict) -> str:
     hero = t_.hero(BOARD_KEY, "Dashboard", _LEDE)
     stats = t_.stats((t["pages"], "Pages"), (f"{pct}%", "Cited"),
                      (t["todo"], "To cite"), (t["queued"], "Queued"))
+    # The way back from the Pages board to the repository front door; the
+    # segment drops out when the snapshot carries no owner/repo.
+    repo_url = _repo_url(snapshot)
+    github_link = (f' · <a href="{repo_url}/blob/main/README.md">'
+                   "GitHub Page</a>" if repo_url else "")
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1169,7 +1174,7 @@ def _render_html(snapshot: dict) -> str:
 <body>
 {hero}
 {stats}
-<p class="muted mdsrc"><a href="dashboard.md">markdown version</a></p>
+<p class="muted mdsrc"><a href="dashboard.md">markdown version</a>{github_link}</p>
 <h2>arXiv inbox <span class="muted">(suggested overnight — un-acted papers
  lapse after {inbox_actions.INBOX_WINDOW_DAYS} days)</span></h2>
 {inbox_block}
