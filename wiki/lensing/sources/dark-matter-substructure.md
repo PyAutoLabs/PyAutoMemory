@@ -523,6 +523,22 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 - Evidence until the paper identity and canonical key are verified.
 
 
+## Adam 2026 — Fisher information geometry of subhalo populations
+
+**Canonical BibTeX key:** `Adam2026`
+**Reference:** Mapping the Information Geometry of an Unresolved Dark Matter Population using a Differentiable Strong Lensing Simulator; arXiv:2608.18224
+**Concepts:** [[dark-matter-substructure]], [[multipoles]], [[line-of-sight-effects]], [[mass-sheet-degeneracy]]
+
+**Supports:**
+- Represents an unresolved subhalo population with a spectral basis carrying both radial and angular structure, then uses a differentiable strong-lensing simulator and Fisher matrix analysis to quantify how much macro-model and source-model flexibility erode substructure sensitivity.
+- Proposes a Fisher Graph Laplacian prior as a diagnostic for managing the competing macro/source/substructure model components — a linear-algebra approach worth reusing for population-level subhalo fitting.
+
+**Use when:**
+- Citing a Fisher-information / linear-algebra treatment of macro- and source-model degeneracies for an unresolved subhalo population, or its radial+angular spectral-basis parameterization.
+
+**Do not use for:**
+- Claims about how line-of-sight structure, external multipoles, or the mass-sheet transform specifically interact with the radial subhalo signal — the paper does not settle this; it remains an open question to check against the text before citing.
+
 ## See also
 
 - [[dark-matter-substructure]]
