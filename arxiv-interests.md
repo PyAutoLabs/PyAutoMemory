@@ -37,7 +37,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-08-31
+last digest: 2026-09-01
 2026-08-28 — [Stats] Cross-simulator transfer with foundation model summaries: Towards robust SKA-era reionization inference — 2608.26354
 2026-08-28 — [SMBHs] Optimal transport regularized dynamic radio interferometric reconstruction — 2608.27192
 2026-08-28 — [Dark Matter] The solitary star cluster of the Andromeda XXV dwarf spheroidal — 2608.26959
@@ -62,3 +62,13 @@ last digest: 2026-08-31
 2026-08-31 — [Stats] Learning the averaged history of an inhomogeneous universe from its present day density field — 2608.27962
 2026-08-31 — [Dark Matter] Low-energy antinuclei measurements for background-free indirect dark matter searches and PBH signatures — 2608.27787
 2026-08-31 — [Dark Matter] A Unified Tracer Analysis of DESI DR2 Baryon Acoustic Oscillations — 2608.27830
+2026-09-01 — [SMBHs] ALMA CO(2-1) Gas Dynamics in NGC 315: A Multi-Method Benchmark for Supermassive Black Hole Mass Measurement — 2608.31015
+2026-09-01 — [SMBHs] A Self-Sustaining Black Hole Engine Powered by the Tidal Disruptions of Stars — 2608.28947
+2026-09-01 — [Galaxy Formation / Evolution] The Structural Abundance Crisis of Massive Galaxies in Current Cosmological Simulations — 2608.29893
+2026-09-01 — [Dark Matter] Stellar streams around dwarf galaxies are observationally rare in the local Universe — 2608.30806
+2026-09-01 — [Dark Matter] Photon--Dark Matter Elastic Scattering: An Effective-Operator Scan and First Operator-Resolved Sensitivity Estimates from the Galactic Halo — 2608.29546
+2026-09-01 — [SMBHs] The multi-frequency radio light curve of the sub-pc SMBH binary candidate PG 1302-102 — 2608.29682
+2026-09-01 — [Galaxy Formation / Evolution] Radio-dust connection in quasars driven by powerful ionised outflows — 2608.28775
+2026-09-01 — [Galaxy Formation / Evolution] Caught Napping by JWST UNCOVER+MegaScience: Constraining bursty star formation histories and number densities of mini-quenched galaxies at redshifts 4-7 — 2608.30011
+2026-09-01 — [Galaxy Formation / Evolution] Constraining Baryonic Feedback at $z\sim 1$ with the H$α$ Luminosity Function — 2608.30698
+2026-09-01 — [SMBHs] Evidence for an accretion-driven subpopulation of black holes in GWTC-5.0 — 2608.29072
