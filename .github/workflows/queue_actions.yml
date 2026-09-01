@@ -70,32 +70,30 @@ jobs:
           ISSUE_BODY: ${{ github.event.issue.body }}
         run: |
           printf '%s' "$ISSUE_BODY" > /tmp/issue_body.txt
+          # The label picks the script; the push retry below re-runs the same
+          # command on a moved main, so the mapping is stated once and the
+          # command travels as a step output.
           case ",$LABELS," in
             *,queue-add,*)
               action=add
-              status=$(python scripts/inbox_actions.py add \
-                --body-file /tmp/issue_body.txt) || true ;;
+              cmd="scripts/inbox_actions.py add" ;;
             *,queue-dismiss,*)
               action=dismiss
-              status=$(python scripts/inbox_actions.py dismiss \
-                --body-file /tmp/issue_body.txt) || true ;;
+              cmd="scripts/inbox_actions.py dismiss" ;;
             *,interests-add,*)
               action=interests-add
-              status=$(python scripts/interests_actions.py add \
-                --body-file /tmp/issue_body.txt) || true ;;
+              cmd="scripts/interests_actions.py add" ;;
             *,interests-dismiss,*)
               action=interests-dismiss
-              status=$(python scripts/interests_actions.py dismiss \
-                --body-file /tmp/issue_body.txt) || true ;;
+              cmd="scripts/interests_actions.py dismiss" ;;
             *,interests-clear,*)
               action=interests-clear
-              status=$(python scripts/interests_actions.py clear \
-                --body-file /tmp/issue_body.txt) || true ;;
+              cmd="scripts/interests_actions.py clear" ;;
             *)
               action=read
-              status=$(python scripts/queue_mark_done.py \
-                --queue reading-queue.md --body-file /tmp/issue_body.txt) || true ;;
+              cmd="scripts/queue_mark_done.py --queue reading-queue.md" ;;
           esac
+          status=$(python $cmd --body-file /tmp/issue_body.txt) || true
           # A status the scripts do not define means they died before printing;
           # normalise so the close step reports rather than mis-closing.
           case "$status" in
@@ -104,6 +102,7 @@ jobs:
             *) status="${status:-error}" ;;
           esac
           echo "action=${action}" >> "$GITHUB_OUTPUT"
+          echo "cmd=${cmd}" >> "$GITHUB_OUTPUT"
           echo "status=${status}" >> "$GITHUB_OUTPUT"
           echo "queue action ${action}: ${status}"
           # Did anything actually change on disk? Cheaper and more honest than
@@ -115,9 +114,11 @@ jobs:
           fi
 
       - name: Commit + push (explicit paths only)
+        id: push
         if: steps.mark.outputs.changed == 'yes'
         env:
           ACTION: ${{ steps.mark.outputs.action }}
+          CMD: ${{ steps.mark.outputs.cmd }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -131,9 +132,36 @@ jobs:
           esac
           git add reading-queue.md arxiv-inbox.md arxiv-interests.md
           git commit -m "${msg} (#${ISSUE}) [skip ci]"
+          # A rejected push means a sibling run landed a commit first.
+          # Rebasing the stale commit conflicts on adjacent queue lines and
+          # used to discard the action entirely (#69) — rebuild instead:
+          # reset to the moved tip and re-run the action script, which is
+          # idempotent (already-there / already-gone / already-done).
           for attempt in 1 2 3; do
             if git push; then exit 0; fi
-            git pull --rebase origin main || exit 1
+            [ "$attempt" = 3 ] && break
+            git fetch origin main
+            git reset --hard origin/main
+            retry_status=$(python $CMD --body-file /tmp/issue_body.txt) || true
+            # A clean tree only means "done" if the re-run actually succeeded:
+            # an error status (no-section, a crash) also leaves no diff, and
+            # exiting 0 on it would close the issue on the first run's stale
+            # status — the same silent-loss class this retry exists to fix.
+            case "$retry_status" in
+              marked|already-done|added|already-there|dismissed|already-gone|already-clear|cleared:*) ;;
+              *)
+                echo "::error::re-apply on the moved main returned '${retry_status:-error}'"
+                exit 1 ;;
+            esac
+            # The close step reports what actually landed, not attempt 1's
+            # status (last write wins).
+            echo "status=${retry_status}" >> "$GITHUB_OUTPUT"
+            if [ -z "$(git status --porcelain -- reading-queue.md arxiv-inbox.md arxiv-interests.md)" ]; then
+              echo "change already on main after the concurrent commit — nothing left to push"
+              exit 0
+            fi
+            git add reading-queue.md arxiv-inbox.md arxiv-interests.md
+            git commit -m "${msg} (#${ISSUE}) [skip ci]"
           done
           echo "::error::could not push the queue commit after 3 attempts"
           exit 1
@@ -144,7 +172,7 @@ jobs:
 
       - name: Close or report on the issue
         env:
-          STATUS: ${{ steps.mark.outputs.status }}
+          STATUS: ${{ steps.push.outputs.status || steps.mark.outputs.status }}
           ACTION: ${{ steps.mark.outputs.action }}
         run: |
           # Two suggestion tiers share these statuses, so the comment names
@@ -185,3 +213,13 @@ jobs:
               gh issue comment "$ISSUE" --body \
                 "Could not process this queue action (status: ${STATUS:-error}) — the paper's line was not found. Handle manually; leaving the issue open." ;;
           esac
+
+      # The close step above is implicitly `if: success()`, so a died push
+      # used to leave the issue open and completely silent (#69 read as
+      # "never swept up" rather than "failed"). Same shape as
+      # queue_filing.yml's failure report.
+      - name: Report failure on the issue
+        if: failure()
+        run: |
+          gh issue comment "$ISSUE" --body \
+            "Queue action failed — see the workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}. The issue stays open; handle manually if needed." || true
