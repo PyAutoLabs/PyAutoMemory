@@ -37,7 +37,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-09-01
+last digest: 2026-09-02
 2026-08-28 — [Stats] Cross-simulator transfer with foundation model summaries: Towards robust SKA-era reionization inference — 2608.26354
 2026-08-28 — [SMBHs] Optimal transport regularized dynamic radio interferometric reconstruction — 2608.27192
 2026-08-28 — [Dark Matter] The solitary star cluster of the Andromeda XXV dwarf spheroidal — 2608.26959
@@ -72,3 +72,13 @@ last digest: 2026-09-01
 2026-09-01 — [Galaxy Formation / Evolution] Caught Napping by JWST UNCOVER+MegaScience: Constraining bursty star formation histories and number densities of mini-quenched galaxies at redshifts 4-7 — 2608.30011
 2026-09-01 — [Galaxy Formation / Evolution] Constraining Baryonic Feedback at $z\sim 1$ with the H$α$ Luminosity Function — 2608.30698
 2026-09-01 — [SMBHs] Evidence for an accretion-driven subpopulation of black holes in GWTC-5.0 — 2608.29072
+2026-09-02 — [SMBHs] Nanohertz Gravitational-Wave Constraints on Supermassive Binary Black Holes at Cosmic Dawn — 2609.00613
+2026-09-02 — [Galaxy Formation / Evolution] Slow stellar halo rotation as a signature of disc flips and GES-like mergers — 2609.01208
+2026-09-02 — [Stats] Connecting radio pulsars, magnetars, and XDINSs in a unified evolutionary framework using simulation-based inference — 2609.00962
+2026-09-02 — [SMBHs] Accretion-disk sizes in two quasars with interferometrically resolved broad-line regions at $z=2.3$ and $z=4.0$ — 2609.00278
+2026-09-02 — [Dark Matter] Extragalactic Stellar Streams in Time-Dependent Cosmological Halos — 2609.00526
+2026-09-02 — [Galaxy Formation / Evolution] ELVES-Dwarf. II. A Systematic Search for Satellite Systems of Dwarf Galaxies in the Local Volume — 2609.00283
+2026-09-02 — [Dark Matter] Scalar wave scattering by black holes embedded in dark matter halos — 2609.01391
+2026-09-02 — [Dark Matter] Baryonic feedback suppression of the matter power spectrum: a three-parameter fitting formula and its single-parameter reduction — 2609.00807
+2026-09-02 — [Stats] $\texttt{BilbyFlow}$: user-friendly neural posterior estimation for gravitational-wave astronomy — 2609.00766
+2026-09-02 — [SMBHs] Extreme AGN Variability in WISE: Powerful Flares and Candidate Tidal Disruption Events in AGN — 2609.01421
