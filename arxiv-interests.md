@@ -37,7 +37,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-09-02
+last digest: 2026-09-03
 2026-08-28 — [Stats] Cross-simulator transfer with foundation model summaries: Towards robust SKA-era reionization inference — 2608.26354
 2026-08-28 — [SMBHs] Optimal transport regularized dynamic radio interferometric reconstruction — 2608.27192
 2026-08-28 — [Dark Matter] The solitary star cluster of the Andromeda XXV dwarf spheroidal — 2608.26959
@@ -82,3 +82,13 @@ last digest: 2026-09-02
 2026-09-02 — [Dark Matter] Baryonic feedback suppression of the matter power spectrum: a three-parameter fitting formula and its single-parameter reduction — 2609.00807
 2026-09-02 — [Stats] $\texttt{BilbyFlow}$: user-friendly neural posterior estimation for gravitational-wave astronomy — 2609.00766
 2026-09-02 — [SMBHs] Extreme AGN Variability in WISE: Powerful Flares and Candidate Tidal Disruption Events in AGN — 2609.01421
+2026-09-03 — [SMBHs] JWST Reveals a Candidate Supermassive Black Hole Binary at z=4.3 in the Brightest Sub-millimeter Galaxy in COSMOS-Web — 2609.01711
+2026-09-03 — [Galaxy Formation / Evolution] The GOGREEN Survey: AI Powered Deconvolution Lifts The Veil on Outside-in Environmental Quenching at z > 1 — 2609.01903
+2026-09-03 — [Dark Matter] Dark Matter at the Kinematic Edge: Interpreting the 248 keV LZ Nuclear-Recoil Candidate — 2609.02608
+2026-09-03 — [SMBHs] Feeding The Little Monster: An Accreting Intermediate-Mass Black Hole In A Minor Merger Secondary Galaxy — 2609.02667
+2026-09-03 — [Dark Matter] Dark Matter Halo Tumbling Induced by Torques from Massive Mergers — 2609.01796
+2026-09-03 — [Dark Matter] Ultralight Bosons Explain the Mass-Spin Correlations in the Merging Binary Black Hole Population — 2609.02678
+2026-09-03 — [SMBHs] Magnetized accretion onto rapidly spinning binary black holes: mini-disk thermodynamics, magnetic transport, and dual jets — 2609.02867
+2026-09-03 — [Stats] Blast.jl: Differentiable Non-Limber Power Spectra for Joint Clustering, Shear, and CMB lensing Analyses — 2609.01855
+2026-09-03 — [Stats] Revisiting orbital recurrence in the dimmings of Boyajian's star (KIC~8462852) — 2609.02726
+2026-09-03 — [Stats] Learning and Predicting the Nonlinear Variability of X-ray Binaries with the Koopman Operator — 2609.01734
