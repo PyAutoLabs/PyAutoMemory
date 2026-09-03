@@ -86,6 +86,7 @@ High-Dimensional Bayesian Model Comparison in Cosmology with GPU-accelerated Nes
 THE STELLAR AND DARK MATTER DISTRIBUTIONS IN ELLIPTICAL GALAXIES MEASURED BY  STACKED WEAK GRAVITATIONAL LENSING
 Model independent lensing sub-structure detection with multiply-imaged star clusters constellations — 2608.21253
 On what scales does strong lensing robustly constrain the mass profile of low-mass perturbers? — 2608.20454
+DONE 2026-09-03 — Follow-up of SN 2025wny I: Space-based Observations of the First Multiply-imaged Superluminous Supernova — 2608.28413
 
 
 ## SMBHs
