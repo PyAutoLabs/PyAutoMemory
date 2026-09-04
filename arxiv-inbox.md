@@ -37,4 +37,3 @@ last digest: 2026-09-04
 2026-09-01 — Comment on `Measuring the Hubble Constant Using Strongly Lensed Gravitational Wave Signals' — 2608.28765
 2026-09-02 — TDCOSMO XXVIII. The Hubble constant from the quadruply lensed quasar J1537$-$3010 with precise time delays — 2609.00179
 2026-09-02 — The promise of self-supervised and active learning for Strong Lens discovery: Astronomaly applied to KiDS — 2609.00154
-2026-09-04 — TDCOSMO XXIX: JWST/NIRSpec IFU Spatially Resolved Kinematics of Three Time-delay Lenses — 2609.03089

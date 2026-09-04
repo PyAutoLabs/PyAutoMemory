@@ -88,6 +88,7 @@ Model independent lensing sub-structure detection with multiply-imaged star clus
 On what scales does strong lensing robustly constrain the mass profile of low-mass perturbers? — 2608.20454
 Follow-up of SN 2025wny I: Space-based Observations of the First Multiply-imaged Superluminous Supernova — 2608.28413
 Measuring Extragalactic Microlens Masses and Motions in Strongly Lensed Quasar Systems with Intensity Interferometry — 2608.27577
+TDCOSMO XXIX: JWST/NIRSpec IFU Spatially Resolved Kinematics of Three Time-delay Lenses — 2609.03089
 
 
 ## SMBHs
