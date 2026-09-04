@@ -37,7 +37,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-09-03
+last digest: 2026-09-04
 2026-08-28 — [Stats] Cross-simulator transfer with foundation model summaries: Towards robust SKA-era reionization inference — 2608.26354
 2026-08-28 — [SMBHs] Optimal transport regularized dynamic radio interferometric reconstruction — 2608.27192
 2026-08-28 — [Dark Matter] The solitary star cluster of the Andromeda XXV dwarf spheroidal — 2608.26959
@@ -92,3 +92,13 @@ last digest: 2026-09-03
 2026-09-03 — [Stats] Blast.jl: Differentiable Non-Limber Power Spectra for Joint Clustering, Shear, and CMB lensing Analyses — 2609.01855
 2026-09-03 — [Stats] Revisiting orbital recurrence in the dimmings of Boyajian's star (KIC~8462852) — 2609.02726
 2026-09-03 — [Stats] Learning and Predicting the Nonlinear Variability of X-ray Binaries with the Koopman Operator — 2609.01734
+2026-09-04 — [SMBHs] Rapid Growth of Intermediate-Mass Black Holes through Disk-induced Stellar DisruptionsRapid Growth of Intermediate-Mass Black Holes through Disk-induced Stellar Disruptions — 2609.03701
+2026-09-04 — [SMBHs] Unlocking the QPE Mystery: Star-Disk Collisions in Realistic AGN Disks — 2609.03011
+2026-09-04 — [Galaxy Formation / Evolution] Bright star-forming galaxies naturally forming at z>10 in the Shark semi-analytic model — 2609.03537
+2026-09-04 — [Dark Matter] Strong Constraints for Line Signals from Dark Matter Annihilation in Sub-halo — 2609.03016
+2026-09-04 — [SMBHs] Sgr A* as a Galactic PeVatron: Multimessenger Signatures of the Magnetic Penrose Process — 2609.04051
+2026-09-04 — [SMBHs] Absolute Motion of the Infrared Counterpart to Sagittarius A* in the Gaia Celestial Reference Frame 3 and Limits on an Intermediate-mass Black Hole Companion — 2609.04077
+2026-09-04 — [Dark Matter] Euclid preparation. The shape of halo profiles in ΛCDM and non-standard cosmologies — 2609.04192
+2026-09-04 — [Galaxy Formation / Evolution] Same galaxy, different CGM: how the metal loading of galactic winds regulates the baryon cycle in Milky Way-mass galaxies — 2609.03083
+2026-09-04 — [Stats] Observational selection effects on radio pulsars are minimal for masses, but significant for orbits and spins — 2609.03157
+2026-09-04 — [Dark Matter] Prospects for probing dark matter with filamentary 21cm emission — 2609.03649
