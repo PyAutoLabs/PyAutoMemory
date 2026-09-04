@@ -28,7 +28,6 @@ Format:
 
 ---
 last digest: 2026-09-04
-2026-08-31 — Follow-up of SN 2025wny I: Space-based Observations of the First Multiply-imaged Superluminous Supernova — 2608.28413
 2026-08-31 — Follow-up of SN 2025wny V: Lens Modelling and Cosmography of a Strongly Lensed Superluminous Supernova at $z = 2.015$ using Space Data — 2608.28430
 2026-08-31 — TDCOSMO. XXVII. JWST-based Lens Models and H$_0$ Measurement of WFI2033, HE0435, and PG1115 — 2608.27566
 2026-08-31 — Follow-up of SN 2025wny II: Superluminous Supernova Physics at Cosmic Noon — 2608.28415
