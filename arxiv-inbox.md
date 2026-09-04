@@ -27,8 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-09-03
-2026-08-28 — HOLISMOKES -- XVIII. Cosmology with strongly lensed type II supernovae: Effects of instrumental setups on $H_0$ — 2608.26331
+last digest: 2026-09-04
 2026-08-31 — Follow-up of SN 2025wny I: Space-based Observations of the First Multiply-imaged Superluminous Supernova — 2608.28413
 2026-08-31 — Follow-up of SN 2025wny V: Lens Modelling and Cosmography of a Strongly Lensed Superluminous Supernova at $z = 2.015$ using Space Data — 2608.28430
 2026-08-31 — TDCOSMO. XXVII. JWST-based Lens Models and H$_0$ Measurement of WFI2033, HE0435, and PG1115 — 2608.27566
@@ -40,3 +39,4 @@ last digest: 2026-09-03
 2026-09-01 — Comment on `Measuring the Hubble Constant Using Strongly Lensed Gravitational Wave Signals' — 2608.28765
 2026-09-02 — TDCOSMO XXVIII. The Hubble constant from the quadruply lensed quasar J1537$-$3010 with precise time delays — 2609.00179
 2026-09-02 — The promise of self-supervised and active learning for Strong Lens discovery: Astronomaly applied to KiDS — 2609.00154
+2026-09-04 — TDCOSMO XXIX: JWST/NIRSpec IFU Spatially Resolved Kinematics of Three Time-delay Lenses — 2609.03089
