@@ -232,6 +232,58 @@ def test_live_repo_statuses_are_schema_valid():
     assert seen <= {"stub", "drafted", "reviewed"}, f"schema-invalid statuses: {seen}"
 
 
+# The canonical board family, in the order `PyAutoBrain/config/policy.yaml`
+# declares it. This board is `memory`, so its own chip never appears.
+FAMILY_WITHOUT_MEMORY = ["brain", "mind", "cortex", "heart", "hands", "organism"]
+
+
+def _footer(tmp_path) -> str:
+    # The synthetic tree has no git remote, so `collect` finds no owner and
+    # the footer (rightly) renders empty. Name a fake one — this file carries
+    # no instance facts.
+    snap = board.collect(_tree(tmp_path))
+    snap["owner"] = "SomeOrg"
+    html = board.render(snap, "html")
+    return re.search(r'<ul class="boards">.*?</ul>', html, re.S).group(0)
+
+
+def test_the_family_footer_carries_the_cortex_in_the_canonical_order(tmp_path):
+    """The footer's membership is the Brain's config, not a tuple in here.
+
+    It used to be a tuple in here — written before the Cortex had a board —
+    so this page linked five siblings in an ad-hoc order and silently missed
+    the sixth. Reading `_theme.board_links` means adding a board to
+    `config/policy.yaml` lights it in every footer at once.
+    """
+    footer = _footer(tmp_path)
+    assert re.findall(r'data-organ="(\w+)"', footer) == FAMILY_WITHOUT_MEMORY
+    assert "https://someorg.github.io/PyAutoCortex/" in footer
+
+
+def test_the_footer_never_links_the_page_it_is_on(tmp_path):
+    footer = _footer(tmp_path)
+    assert f'data-organ="{board.BOARD_KEY}"' not in footer
+
+
+def test_the_footer_falls_back_when_the_brain_checkout_predates_the_helper():
+    """An older PyAutoBrain beside this repo has no `board_links`. The page
+    must still render its footer — from the legacy tuple — rather than lose
+    the whole board over a nav strip."""
+    class _Older:
+        def __init__(self, real):
+            self.boards_footer = real.boards_footer
+
+    real = board.theme()
+    saved = board._boards_nav.__globals__["theme"]
+    board._boards_nav.__globals__["theme"] = lambda: _Older(real)
+    try:
+        footer = board._boards_nav({"owner": "SomeOrg"})
+    finally:
+        board._boards_nav.__globals__["theme"] = saved
+    assert re.findall(r'data-organ="(\w+)"', footer) == [
+        k for k, _ in board.BOARD_FAMILY]
+
+
 def test_html_wears_the_shared_family_theme(tmp_path):
     # The look is the Brain's `board/_theme.py`, not a stylesheet copied in
     # here: the page must carry this board's hero (mark, wordmark, tagline)
