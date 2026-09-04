@@ -33,7 +33,6 @@ last digest: 2026-09-04
 2026-08-31 — Follow-up of SN 2025wny II: Superluminous Supernova Physics at Cosmic Noon — 2608.28415
 2026-08-31 — Follow-up of SN 2025wny III: Spectroscopic Time-delay Measurements of a Strongly Gravitationally Lensed Superluminous Supernova — 2608.28416
 2026-08-31 — Follow-up of SN 2025wny IV: Photometric Time-delay Measurements of a Strongly Lensed Superluminous Supernova — 2608.28427
-2026-08-31 — Measuring Extragalactic Microlens Masses and Motions in Strongly Lensed Quasar Systems with Intensity Interferometry — 2608.27577
 2026-09-01 — Host Dependence and Line-of-Sight Effects on Galaxy-Galaxy Strong Lensing in Clusters — 2608.30079
 2026-09-01 — Comment on `Measuring the Hubble Constant Using Strongly Lensed Gravitational Wave Signals' — 2608.28765
 2026-09-02 — TDCOSMO XXVIII. The Hubble constant from the quadruply lensed quasar J1537$-$3010 with precise time delays — 2609.00179
