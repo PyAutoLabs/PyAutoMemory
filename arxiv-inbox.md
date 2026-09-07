@@ -27,13 +27,10 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-09-04
-2026-08-31 — Follow-up of SN 2025wny V: Lens Modelling and Cosmography of a Strongly Lensed Superluminous Supernova at $z = 2.015$ using Space Data — 2608.28430
-2026-08-31 — TDCOSMO. XXVII. JWST-based Lens Models and H$_0$ Measurement of WFI2033, HE0435, and PG1115 — 2608.27566
-2026-08-31 — Follow-up of SN 2025wny II: Superluminous Supernova Physics at Cosmic Noon — 2608.28415
-2026-08-31 — Follow-up of SN 2025wny III: Spectroscopic Time-delay Measurements of a Strongly Gravitationally Lensed Superluminous Supernova — 2608.28416
-2026-08-31 — Follow-up of SN 2025wny IV: Photometric Time-delay Measurements of a Strongly Lensed Superluminous Supernova — 2608.28427
+last digest: 2026-09-07
 2026-09-01 — Host Dependence and Line-of-Sight Effects on Galaxy-Galaxy Strong Lensing in Clusters — 2608.30079
 2026-09-01 — Comment on `Measuring the Hubble Constant Using Strongly Lensed Gravitational Wave Signals' — 2608.28765
 2026-09-02 — TDCOSMO XXVIII. The Hubble constant from the quadruply lensed quasar J1537$-$3010 with precise time delays — 2609.00179
 2026-09-02 — The promise of self-supervised and active learning for Strong Lens discovery: Astronomaly applied to KiDS — 2609.00154
+2026-09-07 — Probing Dark Matter with Strongly Lensed Binary Black Hole Mergers: Prospects in the Near Future — 2609.05020
+2026-09-07 — ALPACA I: Controlling source and PSF systematics in JWST time-delay cosmography with differentiable lens modeling — 2609.04312
