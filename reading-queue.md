@@ -89,6 +89,7 @@ On what scales does strong lensing robustly constrain the mass profile of low-ma
 Follow-up of SN 2025wny I: Space-based Observations of the First Multiply-imaged Superluminous Supernova — 2608.28413
 Measuring Extragalactic Microlens Masses and Motions in Strongly Lensed Quasar Systems with Intensity Interferometry — 2608.27577
 TDCOSMO XXIX: JWST/NIRSpec IFU Spatially Resolved Kinematics of Three Time-delay Lenses — 2609.03089
+Host Dependence and Line-of-Sight Effects on Galaxy-Galaxy Strong Lensing in Clusters — 2608.30079
 
 
 ## SMBHs

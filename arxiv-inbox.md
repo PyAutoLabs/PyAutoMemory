@@ -28,7 +28,6 @@ Format:
 
 ---
 last digest: 2026-09-07
-2026-09-01 — Host Dependence and Line-of-Sight Effects on Galaxy-Galaxy Strong Lensing in Clusters — 2608.30079
 2026-09-01 — Comment on `Measuring the Hubble Constant Using Strongly Lensed Gravitational Wave Signals' — 2608.28765
 2026-09-02 — TDCOSMO XXVIII. The Hubble constant from the quadruply lensed quasar J1537$-$3010 with precise time delays — 2609.00179
 2026-09-02 — The promise of self-supervised and active learning for Strong Lens discovery: Astronomaly applied to KiDS — 2609.00154
