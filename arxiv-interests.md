@@ -37,7 +37,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-09-04
+last digest: 2026-09-07
 2026-08-28 — [Stats] Cross-simulator transfer with foundation model summaries: Towards robust SKA-era reionization inference — 2608.26354
 2026-08-28 — [SMBHs] Optimal transport regularized dynamic radio interferometric reconstruction — 2608.27192
 2026-08-28 — [Dark Matter] The solitary star cluster of the Andromeda XXV dwarf spheroidal — 2608.26959
@@ -102,3 +102,13 @@ last digest: 2026-09-04
 2026-09-04 — [Galaxy Formation / Evolution] Same galaxy, different CGM: how the metal loading of galactic winds regulates the baryon cycle in Milky Way-mass galaxies — 2609.03083
 2026-09-04 — [Stats] Observational selection effects on radio pulsars are minimal for masses, but significant for orbits and spins — 2609.03157
 2026-09-04 — [Dark Matter] Prospects for probing dark matter with filamentary 21cm emission — 2609.03649
+2026-09-07 — [Galaxy Formation / Evolution] Widespread Inflows Reveal Baryonic Cycling in Star-forming and Quiescent Galaxies — 2609.04327
+2026-09-07 — [SMBHs] Preferential accretion onto eccentric and unequal binary black holes — 2609.04491
+2026-09-07 — [Dark Matter] Supernovae Unite: Combining Pantheon+ and DES-SN5YR — 2609.05053
+2026-09-07 — [Stats] A guide to choosing data compression methods for cosmological inference — 2609.04829
+2026-09-07 — [Galaxy Formation / Evolution] Extending the Stellar-to-Halo Mass Relation to Dwarf Galaxies with DESI DR1 — 2609.04351
+2026-09-07 — [SMBHs] Electromagnetic alignment and jet precession around supermassive black holes: Quasi-periodic oscillations in tidal disruption events — 2609.05350
+2026-09-07 — [Galaxy Formation / Evolution] Rapid quenching and early gas depletion in the core of a galaxy protocluster at z=2.2 — 2609.05285
+2026-09-07 — [SMBHs] JWST/NIRSpec Reveals Diverse Nuclear Environments in Dwarf Galaxies Hosting AGN — 2609.04315
+2026-09-07 — [Stats] Fast Bayesian Inference for Long-Duration Gravitational-Wave Signals in 3G detectors — 2609.05375
+2026-09-07 — [Stats] Tracing the Cosmic Origins: Machine Learning Reconstruction of the Primordial Density Field from EoR Observations — 2609.05412
