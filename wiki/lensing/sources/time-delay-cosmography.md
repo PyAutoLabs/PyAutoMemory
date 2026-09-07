@@ -137,6 +137,25 @@ status: stub
 - Evidence until the paper identity and canonical key are verified.
 
 
+## Krizic 2026 — ALPACA I (JWST PSF/source systematics)
+
+**Canonical BibTeX key:** `Krizic2026`
+**Reference:** ALPACA I: Controlling source and PSF systematics in JWST time-delay cosmography with differentiable lens modeling; arXiv:2609.04312
+**Concepts:** [[time-delay-cosmography]], [[source-reconstruction]]
+
+**Supports:**
+- Demonstrates ALPACA, a differentiable forward-modeling pipeline that jointly reconstructs source-galaxy morphology, lens mass distribution, and PSF for JWST-observed lensed quasars, reducing H0 bias from ~14% to ~1% (on mock data) relative to fixed/mismodeled-PSF fitting.
+- Describes a concrete recipe for PSF modelling of JWST lensed quasars that is a candidate to build into PyAutoReduce's reduction pipeline.
+
+**Use when:**
+- Citing PSF systematics as a leading bias source in JWST time-delay H0 measurements, and joint source+PSF+mass modelling as the mitigation.
+- Referencing differentiable lens-modeling pipelines for JWST time-delay cosmography, or JWST PSF-modelling approaches relevant to PyAutoReduce.
+
+**Do not use for:**
+- Claims about results from real (non-mock) JWST time-delay lens systems — the headline bias-reduction figures are demonstrated on simulated data.
+- Non-JWST PSF systematics or non-time-delay lens-modelling contexts without checking applicability.
+
+
 ## See also
 
 - [[time-delay-cosmography]]
