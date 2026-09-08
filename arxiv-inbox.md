@@ -27,8 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-09-07
-2026-09-01 — Comment on `Measuring the Hubble Constant Using Strongly Lensed Gravitational Wave Signals' — 2608.28765
+last digest: 2026-09-08
 2026-09-02 — The promise of self-supervised and active learning for Strong Lens discovery: Astronomaly applied to KiDS — 2609.00154
 2026-09-07 — Probing Dark Matter with Strongly Lensed Binary Black Hole Mergers: Prospects in the Near Future — 2609.05020
 2026-09-07 — ALPACA I: Controlling source and PSF systematics in JWST time-delay cosmography with differentiable lens modeling — 2609.04312
