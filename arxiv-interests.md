@@ -37,7 +37,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-09-08
+last digest: 2026-09-09
 2026-08-28 — [Stats] Cross-simulator transfer with foundation model summaries: Towards robust SKA-era reionization inference — 2608.26354
 2026-08-28 — [SMBHs] Optimal transport regularized dynamic radio interferometric reconstruction — 2608.27192
 2026-08-28 — [Dark Matter] The solitary star cluster of the Andromeda XXV dwarf spheroidal — 2608.26959
@@ -112,3 +112,13 @@ last digest: 2026-09-08
 2026-09-07 — [SMBHs] JWST/NIRSpec Reveals Diverse Nuclear Environments in Dwarf Galaxies Hosting AGN — 2609.04315
 2026-09-07 — [Stats] Fast Bayesian Inference for Long-Duration Gravitational-Wave Signals in 3G detectors — 2609.05375
 2026-09-07 — [Stats] Tracing the Cosmic Origins: Machine Learning Reconstruction of the Primordial Density Field from EoR Observations — 2609.05412
+2026-09-09 — [SMBHs] Small-Scale Clustering of Primordial Black Holes: The Little Red Dot Mass Function and the High-Redshift Galaxy Tension — 2609.09078
+2026-09-09 — [Galaxy Formation / Evolution] AEON-z5: A Candidate AGN-driven Outflow Enriching the Circumgalactic Medium at $z\simeq5.23$ — 2609.08264
+2026-09-09 — [SMBHs] Near-Horizon Tidal Disruption Events — 2609.08430
+2026-09-09 — [SMBHs] Hierarchical Inference of the Supermassive Black Hole Binary Merger Rates from Joint Searches using Pulsar Timing Arrays — 2609.09086
+2026-09-09 — [SMBHs] A New Sample of $\sim$ 100 Intermediate-mass Black Holes Reaching $z \approx 1$ — 2609.07836
+2026-09-09 — [Dark Matter] Detection prospects for heavy WIMP dark matter around M31* in microwave band — 2609.08771
+2026-09-09 — [Stats] Neural Posterior Estimation for Tomographic Weak Lensing Mass Mapping — 2609.07833
+2026-09-09 — [Galaxy Formation / Evolution] TILING I: Field-level Bayesian reconstruction of cosmological initial conditions during the epoch of reionization — 2609.09102
+2026-09-09 — [SMBHs] J023721.13$-$010528.5: A Giant $S$-shaped Radio Galaxy Showing Four Episodes of Jet Activity — 2609.08506
+2026-09-09 — [Galaxy Formation / Evolution] The environmental dependence of the circumgalactic medium in a high-resolution cosmological simulation — 2609.08654
