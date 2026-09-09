@@ -27,7 +27,11 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-09-08
-2026-09-02 — The promise of self-supervised and active learning for Strong Lens discovery: Astronomaly applied to KiDS — 2609.00154
+last digest: 2026-09-09
 2026-09-07 — Probing Dark Matter with Strongly Lensed Binary Black Hole Mergers: Prospects in the Near Future — 2609.05020
 2026-09-07 — ALPACA I: Controlling source and PSF systematics in JWST time-delay cosmography with differentiable lens modeling — 2609.04312
+2026-09-09 — Harnessing stellar kinematics to constrain dark energy with the double-source-plane gravitational lens SDSS J0946+1006 — 2609.08573
+2026-09-09 — $\texttt{LensFactory.jl}$: A general-purpose strong lens modeling package — 2609.08649
+2026-09-09 — Observation-driven simulations of strong lensing galaxy clusters — 2609.07840
+2026-09-09 — LEGGOS: Direct abundances of N, O, Ne, S, and Ar in five lensed galaxies at Cosmic Noon — 2609.07851
+2026-09-09 — LEGGOS: A Shocking Lack of Evidence for Shocks at sub-kiloparsec Scales at 2 < z < 4 — 2609.07850
