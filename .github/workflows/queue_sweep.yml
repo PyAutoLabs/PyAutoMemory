@@ -1,0 +1,89 @@
+name: Queue sweep
+
+# The nightly broom behind the dashboard's per-paper buttons. Every button is
+# an issue, and an issue is acted on by an *event* — `opened` for
+# queue_actions.yml, `labeled` for queue_filing.yml. Two things lose the
+# event: an issue form that drops the label on the way in (a `queue add: …`
+# title with no label — it happens on phone submissions; five of the twelve
+# open issues on 2026-09-10), and a run that GitHub cancels before it starts
+# (a shared concurrency group did that to a sibling tap). Either way the
+# issue sat open, un-commented, indistinguishable from "never swept".
+#
+# This job lists every open issue whose title is one of the board's request
+# prefixes and re-dispatches queue_actions.yml on each that nothing has
+# touched yet — no comment from the bot, no filing branch. An issue the bot
+# has already answered is a human's turn (a failed filing, a paper that has
+# moved), and one whose `queue-filing/issue-<n>` branch exists is awaiting
+# merge, which the board shows. It is idempotent: the action scripts answer
+# `already-there` / `already-gone` / `already-done` for work that landed
+# by another tap, and queue_actions closes the issue on those too.
+#
+# Read-only here beyond the dispatch itself: the sweep mutates nothing, the
+# dispatched runs do. Runs after both overnight digests have landed.
+
+on:
+  schedule:
+    - cron: "5 8 * * *"
+  workflow_dispatch:
+
+# issues: read → the listing; actions: write → the per-issue dispatch;
+# contents: read → the checkout that ls-remote runs from.
+permissions:
+  contents: read
+  issues: read
+  actions: write
+
+concurrency:
+  group: queue-sweep
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Re-dispatch every untouched request
+        run: |
+          filed=$(git ls-remote --heads origin 'refs/heads/queue-filing/*' \
+                  | sed -n 's#.*refs/heads/queue-filing/issue-\([0-9]*\)$#\1#p')
+          {
+            echo "## Queue sweep"
+            echo
+            gh api --paginate "repos/${GH_REPO}/issues?state=open&per_page=100" \
+              --jq '.[] | select(.pull_request == null)
+                         | [.number, .author_association, .comments, .title] | @tsv' \
+            | while IFS=$'\t' read -r num assoc comments title; do
+                case "$title" in
+                  "queue read:"*|"queue add:"*|"queue dismiss:"*|\
+                  "queue intake:"*|"queue cite:"*|"interests clear:"*) ;;
+                  *) continue ;;
+                esac
+                # Same gate as the workflows it feeds: a stranger's issue
+                # never drives the queue.
+                case "$assoc" in
+                  OWNER|MEMBER|COLLABORATOR) ;;
+                  *) continue ;;
+                esac
+                if grep -qx "$num" <<<"$filed"; then
+                  echo "- #${num}: filed on \`queue-filing/issue-${num}\` — awaiting merge (on the board)"
+                  continue
+                fi
+                if [ "${comments:-0}" -gt 0 ]; then
+                  bot=$(gh api "repos/${GH_REPO}/issues/${num}/comments" \
+                        --jq '[.[] | select(.user.login == "github-actions[bot]")] | length')
+                  if [ "${bot:-0}" -gt 0 ]; then
+                    echo "- #${num}: already answered by the bot — a human's turn"
+                    continue
+                  fi
+                fi
+                if gh workflow run queue_actions.yml --ref main -f "issue=${num}"; then
+                  echo "- #${num}: re-dispatched — ${title}"
+                else
+                  echo "- #${num}: dispatch FAILED — ${title}"
+                fi
+              done
+          } | tee -a "$GITHUB_STEP_SUMMARY"

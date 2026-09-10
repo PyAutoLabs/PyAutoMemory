@@ -665,3 +665,56 @@ def test_the_two_tiers_carry_their_own_stamps(tmp_path):
     assert "data-last-digest='2026-08-27'" in html
     assert "data-last-digest='2026-08-20'" in html
 
+
+
+# --- filings awaiting merge ---------------------------------------------------
+def test_a_synthetic_tree_has_no_pending_filings(tmp_path):
+    """Only the live checkout asks the remote; a synthetic root never does."""
+    assert board.collect(_tree(tmp_path))["filings"] == []
+
+
+def test_pending_filings_are_parsed_from_ls_remote(monkeypatch):
+    import types
+    out = ("ab3b\trefs/heads/queue-filing/issue-91\n"
+           "ad7d\trefs/heads/queue-filing/issue-72\n"
+           "ffff\trefs/heads/feature/queue-filing-not-a-filing\n")
+    monkeypatch.setattr(board.subprocess, "run",
+                        lambda *a, **k: types.SimpleNamespace(stdout=out))
+    assert board._pending_filings() == [
+        {"issue": 72, "branch": "queue-filing/issue-72"},
+        {"issue": 91, "branch": "queue-filing/issue-91"},
+    ]
+
+
+def test_a_failed_ls_remote_is_an_empty_list_not_an_error(monkeypatch):
+    def boom(*a, **k):
+        raise OSError("no git here")
+    monkeypatch.setattr(board.subprocess, "run", boom)
+    assert board._pending_filings() == []
+
+
+def test_pending_filings_render_above_the_inbox_with_a_pr_link(tmp_path):
+    """A filing on a branch is not in memory: the board says so, first, and
+    hands out the one tap that finishes it."""
+    snap = _snap_with_remote(tmp_path)
+    snap["filings"] = [{"issue": 91, "branch": "queue-filing/issue-91"}]
+    for text in (board._render_md(snap), board._render_html(snap)):
+        assert "Filings awaiting merge" in text
+        assert "compare/main...queue-filing/issue-91?expand=1" in text
+        assert "/issues/91" in text
+        assert text.index("Filings awaiting merge") < text.index("arXiv inbox")
+
+
+def test_no_filings_section_when_nothing_waits(tmp_path):
+    snap = _snap_with_remote(tmp_path)
+    assert snap["filings"] == []
+    for text in (board._render_md(snap), board._render_html(snap)):
+        assert "Filings awaiting merge" not in text
+
+
+def test_pending_filings_without_a_remote_still_name_the_branch(tmp_path):
+    snap = board.collect(_tree(tmp_path))
+    snap["filings"] = [{"issue": 7, "branch": "queue-filing/issue-7"}]
+    for text in (board._render_md(snap), board._render_html(snap)):
+        assert "queue-filing/issue-7" in text
+        assert "compare/main" not in text

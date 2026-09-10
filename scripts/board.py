@@ -165,6 +165,40 @@ def _owner_repo() -> tuple[str, str]:
     return (m.group(1), m.group(2)) if m else ("", "")
 
 
+# queue_filing.yml pushes each filing to `queue-filing/issue-<n>`; the PR
+# that merges it is a human's (and needs a repo setting to be opened by the
+# workflow at all — see the workflow's header).
+FILING_BRANCH_RE = re.compile(r"refs/heads/queue-filing/issue-(\d+)$")
+
+
+def _pending_filings() -> list[dict]:
+    """Filing branches on the remote that nobody has merged yet.
+
+    A 📥/📑 tap ends on a branch, not on main: until its PR is merged the
+    paper is *not* in memory, and nothing on the page said so — three such
+    branches sat unnoticed for a week (2026-09-01 → 09-10) while their
+    papers were re-tapped into the reading queue instead. One `ls-remote`
+    against origin; any failure (no remote, offline, no git) is an empty
+    list, never an error, so a spawned template or a laptop on a train
+    still renders.
+    """
+    try:
+        out = subprocess.run(
+            ["git", "-C", str(MEMORY_HOME), "ls-remote", "--heads", "origin",
+             "refs/heads/queue-filing/*"],
+            capture_output=True, text=True, timeout=30,
+        ).stdout
+    except (OSError, subprocess.SubprocessError):
+        return []
+    found = []
+    for line in out.splitlines():
+        m = FILING_BRANCH_RE.search(line.strip())
+        if m:
+            n = int(m.group(1))
+            found.append({"issue": n, "branch": f"queue-filing/issue-{n}"})
+    return sorted(found, key=lambda f: f["issue"])
+
+
 # --- collect (local files only) ----------------------------------------------
 def collect(root: Path | None = None) -> dict:
     root = root or MEMORY_HOME
@@ -187,6 +221,9 @@ def collect(root: Path | None = None) -> dict:
         "interests_backlog": 0,
         "interests_last_digest": None,
         "links": {"total": 0, "unique": 0, "wanted": 0},
+        # Filings that reached a `queue-filing/issue-<n>` branch but not
+        # main — the one thing on the page that is a human's merge to make.
+        "filings": _pending_filings() if root == MEMORY_HOME else [],
     }
 
     stems: set[str] = set()
@@ -674,6 +711,22 @@ def _render_md(snapshot: dict) -> str:
         lines.append(f"| {w['name']} | {w['pages']} | {s.get('stub', 0)} | "
                      f"{s.get('drafted', 0)} | {s.get('reviewed', 0)} | "
                      f"{w.get('todo', 0)} |")
+    filings = snapshot.get("filings") or []
+    if filings:
+        repo_url = _repo_url(snapshot)
+        lines += ["", "## Filings awaiting merge", "",
+                  f"_{len(filings)} filing{'s' if len(filings) != 1 else ''} "
+                  "reached a branch but not `main` — a paper is not in memory "
+                  "until its PR is merged._", ""]
+        for f in filings:
+            if repo_url:
+                lines.append(
+                    f"- #{f['issue']} — [issue]({repo_url}/issues/{f['issue']}) · "
+                    f"[open the PR →]({repo_url}/compare/main...{f['branch']}"
+                    f"?expand=1)")
+            else:
+                lines.append(f"- #{f['issue']} — `{f['branch']}`")
+        lines.append("")
     lines += ["", "## arXiv inbox", ""]
     inbox = snapshot.get("inbox") or []
     fresh = _inbox_freshness(snapshot)
@@ -1170,6 +1223,30 @@ def _render_html(snapshot: dict) -> str:
         f"{snapshot.get('interests_backlog') or 0} papers"
         if n_batches else "")
 
+    filings = snapshot.get("filings") or []
+    filing_items = []
+    for f in filings:
+        if repo_url:
+            issue_link = (f"<a href=\"{repo_url}/issues/{f['issue']}\">"
+                          f"#{f['issue']}</a>")
+            pr = (f"<a class='act' href=\"{repo_url}/compare/main..."
+                  f"{_html.escape(f['branch'], quote=True)}?expand=1\" "
+                  f"title='open the PR that merges this filing into memory'>"
+                  f"\U0001f500 open PR</a>")
+        else:
+            issue_link, pr = f"#{f['issue']}", ""
+        filing_items.append(
+            f"<li>{issue_link} <span class='meta'>"
+            f"{_html.escape(f['branch'])}</span>{pr}</li>")
+    # Above everything else when present, absent otherwise: it is the one
+    # section that is a human's merge, and an empty "nothing waiting" line
+    # would only teach the eye to skip it.
+    filings_block = (
+        f"<h2>Filings awaiting merge <span class=\"muted\">({len(filing_items)} "
+        f"on a branch, not yet in memory — merge the PR to finish the "
+        f"intake)</span></h2><ul class='papers'>{''.join(filing_items)}</ul>"
+        if filing_items else "")
+
     hero = t_.hero(BOARD_KEY, "Dashboard", _LEDE)
     stats = t_.stats((t["pages"], "Pages"), (f"{pct}%", "Cited"),
                      (t["todo"], "To cite"), (t["queued"], "Queued"))
@@ -1188,6 +1265,7 @@ def _render_html(snapshot: dict) -> str:
 {hero}
 {stats}
 <p class="muted mdsrc"><a href="dashboard.md">markdown version</a>{github_link}</p>
+{filings_block}
 <h2>arXiv inbox <span class="muted">(suggested overnight — un-acted papers
  lapse after {inbox_actions.INBOX_WINDOW_DAYS} days)</span></h2>
 {inbox_block}

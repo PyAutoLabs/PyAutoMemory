@@ -19,74 +19,194 @@ name: Queue actions
 #
 # Each commits the file it touched, re-renders the dashboard, and closes the
 # issue. 📥 `queue-intake` and 📑 `queue-cite` are NOT handled here — they stay
-# open as filing work items and are driven by queue_filing.yml.
+# open as filing work items and are driven by queue_filing.yml. When one of
+# those arrives *without* its label (below), this workflow hands it over by
+# dispatching queue_filing.yml on the issue number.
+#
+# The label is the intent, but it is not trusted to arrive. The dashboard's
+# prefilled `issues/new?…&labels=x` URL is a hint to GitHub's issue form, and
+# on some submissions (five of the twelve open issues on 2026-09-10 — all of
+# them tapped from a phone) the form dropped it, leaving an issue titled
+# `queue add: …` with no label at all. A label-only gate then skipped both
+# workflows and the issue sat open and silent for a week. So the gate reads
+# the *title* prefix the board writes as well (`queue read:`, `queue add:`,
+# `queue dismiss:`, `queue intake:`, `queue cite:`, `interests clear:`),
+# and the resolve step puts the missing label back for the record, with the
+# body's `file:` line telling an inbox add from an interests add.
+#
+# Two doors: the `opened` event (the dashboard path) and `workflow_dispatch`
+# on an issue number (the nightly queue_sweep.yml, which re-dispatches every
+# open request nothing has acted on — and a human's `gh workflow run
+# queue_actions.yml -f issue=N`).
 #
 # Only owner/member/collaborator-authored issues act: this is a public repo,
 # and a stranger's issue must never mutate the queue (they cannot apply the
-# label either, but the gate does not rely on that).
+# label either, but the gate does not rely on that). The dispatch door
+# re-checks the association from the API, since the event carries none.
 
 on:
   issues:
     types: [opened]
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: "Issue number to (re)process — the sweep's door"
+        required: true
+        type: string
 
-# contents: write → the queue commit; issues: write → comment + close;
-# actions: write → re-dispatch the Dashboard workflow (token pushes do not
-# retrigger `on: push` workflows).
+# contents: write → the queue commit; issues: write → label + comment + close;
+# actions: write → re-dispatch the Dashboard workflow and hand a label-less
+# intake/cite over to queue_filing.yml (token pushes do not retrigger
+# `on: push` workflows, and a token-applied label does not fire `labeled`).
 permissions:
   contents: write
   issues: write
   actions: write
 
+# Per issue, not one group for the whole surface. GitHub keeps at most one
+# *pending* run per concurrency group and cancels the older pending one when a
+# newer arrives — so three ➕ taps six seconds apart left the middle one
+# `cancelled` (#85, 2026-09-04), and a cancelled run never reaches its
+# failure step: the issue stayed open with no comment, indistinguishable
+# from "never swept". The push retry below is what serialises the queue
+# commits on a moved main; nothing else needs a shared group.
 concurrency:
-  group: queue-actions
+  group: queue-actions-${{ github.event.issue.number || inputs.issue }}
   cancel-in-progress: false
 
 jobs:
   queue-action:
-    # One job, six labels. The gate is unchanged: this is a public repo, and
-    # a stranger's issue must never mutate the queue, the inbox or the
-    # interests list.
+    # One job, six labels — and the six title prefixes those labels ride
+    # behind, for the submissions that lost the label on the way in.
     if: >-
-      (contains(github.event.issue.labels.*.name, 'queue-read') ||
-       contains(github.event.issue.labels.*.name, 'queue-add') ||
-       contains(github.event.issue.labels.*.name, 'queue-dismiss') ||
-       contains(github.event.issue.labels.*.name, 'interests-add') ||
-       contains(github.event.issue.labels.*.name, 'interests-dismiss') ||
-       contains(github.event.issue.labels.*.name, 'interests-clear')) &&
-      contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'),
-               github.event.issue.author_association)
+      github.event_name == 'workflow_dispatch' ||
+      (contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'),
+                github.event.issue.author_association) &&
+       (contains(github.event.issue.labels.*.name, 'queue-read') ||
+        contains(github.event.issue.labels.*.name, 'queue-add') ||
+        contains(github.event.issue.labels.*.name, 'queue-dismiss') ||
+        contains(github.event.issue.labels.*.name, 'interests-add') ||
+        contains(github.event.issue.labels.*.name, 'interests-dismiss') ||
+        contains(github.event.issue.labels.*.name, 'interests-clear') ||
+        startsWith(github.event.issue.title, 'queue read:') ||
+        startsWith(github.event.issue.title, 'queue add:') ||
+        startsWith(github.event.issue.title, 'queue dismiss:') ||
+        startsWith(github.event.issue.title, 'queue intake:') ||
+        startsWith(github.event.issue.title, 'queue cite:') ||
+        startsWith(github.event.issue.title, 'interests clear:')))
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}
-      ISSUE: ${{ github.event.issue.number }}
-      LABELS: ${{ join(github.event.issue.labels.*.name, ',') }}
+      ISSUE: ${{ github.event.issue.number || inputs.issue }}
     steps:
       - uses: actions/checkout@v4
 
+      # Read the issue back from the API rather than the event: the dispatch
+      # door has no event payload, and one code path for both doors is the
+      # point. Everything downstream keys off `label` — the one the issue
+      # carries, or the one its title says it should have carried.
+      - name: Resolve the request
+        id: resolve
+        run: |
+          issue_json=$(gh api "repos/${GITHUB_REPOSITORY}/issues/${ISSUE}")
+          state=$(jq -r '.state' <<<"$issue_json")
+          assoc=$(jq -r '.author_association' <<<"$issue_json")
+          title=$(jq -r '.title' <<<"$issue_json")
+          labels=$(jq -r '[.labels[].name] | join(",")' <<<"$issue_json")
+          # The body is untrusted text: to a file, never interpolated.
+          jq -r '.body // ""' <<<"$issue_json" > /tmp/issue_body.txt
+          if [ "$state" != "open" ]; then
+            echo "issue #${ISSUE} is ${state} — nothing to do"
+            echo "label=" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          case "$assoc" in
+            OWNER|MEMBER|COLLABORATOR) ;;
+            *) echo "issue #${ISSUE} author is ${assoc} — not acting"
+               echo "label=" >> "$GITHUB_OUTPUT"; exit 0 ;;
+          esac
+          label=""
+          derived=no
+          case ",$labels," in
+            *,queue-read,*)         label=queue-read ;;
+            *,queue-add,*)          label=queue-add ;;
+            *,queue-dismiss,*)      label=queue-dismiss ;;
+            *,interests-add,*)      label=interests-add ;;
+            *,interests-dismiss,*)  label=interests-dismiss ;;
+            *,interests-clear,*)    label=interests-clear ;;
+            *,queue-intake,*)       label=queue-intake ;;
+            *,queue-cite,*)         label=queue-cite ;;
+          esac
+          if [ -z "$label" ]; then
+            # No action label survived the issue form. The title prefix is
+            # the board's own wording; the body's `file:` line says which
+            # suggestion tier an add/dismiss came from.
+            file=$(sed -n 's/^file:[[:space:]]*//p' /tmp/issue_body.txt | head -1)
+            tier=queue
+            [ "$file" = "arxiv-interests.md" ] && tier=interests
+            case "$title" in
+              "queue read:"*)      label=queue-read ;;
+              "queue add:"*)       label=${tier}-add ;;
+              "queue dismiss:"*)   label=${tier}-dismiss ;;
+              "queue intake:"*)    label=queue-intake ;;
+              "queue cite:"*)      label=queue-cite ;;
+              "interests clear:"*) label=interests-clear ;;
+            esac
+            if [ -n "$label" ]; then
+              derived=yes
+              # For the record and for the label-filtered views; a
+              # token-applied label fires no `labeled` event, so the
+              # filing hand-over below is explicit.
+              gh issue edit "$ISSUE" --add-label "$label" || true
+              echo "issue #${ISSUE} carried no label — read '${label}' from its title"
+            fi
+          fi
+          if [ -z "$label" ]; then
+            echo "issue #${ISSUE} is not a queue request (title: ${title}) — nothing to do"
+          fi
+          echo "label=${label}" >> "$GITHUB_OUTPUT"
+          echo "derived=${derived}" >> "$GITHUB_OUTPUT"
+
+      # 📥/📑 are filing work items, not mechanical actions: queue_filing.yml
+      # owns them. A labelled one already fired that workflow's `labeled`
+      # trigger on its own; a label-less one (or a sweep re-dispatch) has no
+      # such event, so this is the hand-over.
+      - name: Hand a filing request to queue_filing.yml
+        if: >-
+          contains(fromJSON('["queue-intake", "queue-cite"]'),
+                   steps.resolve.outputs.label) &&
+          (steps.resolve.outputs.derived == 'yes' ||
+           github.event_name == 'workflow_dispatch')
+        run: |
+          gh workflow run queue_filing.yml --ref main -f "issue=${ISSUE}"
+          echo "dispatched queue_filing.yml for #${ISSUE} (${{ steps.resolve.outputs.label }})"
+
       - name: Apply the action
         id: mark
+        if: >-
+          contains(fromJSON('["queue-read", "queue-add", "queue-dismiss",
+                              "interests-add", "interests-dismiss",
+                              "interests-clear"]'),
+                   steps.resolve.outputs.label)
         env:
-          # env, never inline interpolation — the body is untrusted text.
-          ISSUE_BODY: ${{ github.event.issue.body }}
+          LABEL: ${{ steps.resolve.outputs.label }}
         run: |
-          printf '%s' "$ISSUE_BODY" > /tmp/issue_body.txt
           # The label picks the script; the push retry below re-runs the same
           # command on a moved main, so the mapping is stated once and the
           # command travels as a step output.
-          case ",$LABELS," in
-            *,queue-add,*)
+          case "$LABEL" in
+            queue-add)
               action=add
               cmd="scripts/inbox_actions.py add" ;;
-            *,queue-dismiss,*)
+            queue-dismiss)
               action=dismiss
               cmd="scripts/inbox_actions.py dismiss" ;;
-            *,interests-add,*)
+            interests-add)
               action=interests-add
               cmd="scripts/interests_actions.py add" ;;
-            *,interests-dismiss,*)
+            interests-dismiss)
               action=interests-dismiss
               cmd="scripts/interests_actions.py dismiss" ;;
-            *,interests-clear,*)
+            interests-clear)
               action=interests-clear
               cmd="scripts/interests_actions.py clear" ;;
             *)
@@ -171,6 +291,7 @@ jobs:
         run: gh workflow run knowledge_board.yml --ref main
 
       - name: Close or report on the issue
+        if: steps.mark.outcome == 'success'
         env:
           STATUS: ${{ steps.push.outputs.status || steps.mark.outputs.status }}
           ACTION: ${{ steps.mark.outputs.action }}
@@ -199,7 +320,7 @@ jobs:
                 "Dropped from the ${tier}. Git history still holds the line. Dashboard refresh dispatched." ;;
             already-gone)
               gh issue close "$ISSUE" --comment \
-                "Not in the arXiv inbox or interests list any more — nothing to change (it may already have lapsed or been cleared)." ;;
+                "Not in the arXiv inbox or interests list any more — nothing to change (it may already have lapsed, been cleared, or been moved by an earlier tap)." ;;
             cleared:*)
               gh issue close "$ISSUE" --comment \
                 "Cleared ${STATUS#cleared:} paper(s) from the arXiv interests list — the next day's batch is now on the dashboard. Git history still holds the batch. Dashboard refresh dispatched." ;;
@@ -214,8 +335,8 @@ jobs:
                 "Could not process this queue action (status: ${STATUS:-error}) — the paper's line was not found. Handle manually; leaving the issue open." ;;
           esac
 
-      # The close step above is implicitly `if: success()`, so a died push
-      # used to leave the issue open and completely silent (#69 read as
+      # The close step above runs only after a successful apply, so a died
+      # push used to leave the issue open and completely silent (#69 read as
       # "never swept up" rather than "failed"). Same shape as
       # queue_filing.yml's failure report.
       - name: Report failure on the issue
