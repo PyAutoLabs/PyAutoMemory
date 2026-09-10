@@ -91,6 +91,7 @@ Measuring Extragalactic Microlens Masses and Motions in Strongly Lensed Quasar S
 TDCOSMO XXIX: JWST/NIRSpec IFU Spatially Resolved Kinematics of Three Time-delay Lenses — 2609.03089
 Host Dependence and Line-of-Sight Effects on Galaxy-Galaxy Strong Lensing in Clusters — 2608.30079
 TDCOSMO XXVIII. The Hubble constant from the quadruply lensed quasar J1537$-$3010 with precise time delays — 2609.00179
+HOLISMOKES -- XVIII. Cosmology with strongly lensed type II supernovae: Effects of instrumental setups on $H_0$ — 2608.26331
 
 
 ## SMBHs
