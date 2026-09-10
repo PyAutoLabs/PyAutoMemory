@@ -37,7 +37,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-09-09
+last digest: 2026-09-10
 2026-08-28 — [Stats] Cross-simulator transfer with foundation model summaries: Towards robust SKA-era reionization inference — 2608.26354
 2026-08-28 — [SMBHs] Optimal transport regularized dynamic radio interferometric reconstruction — 2608.27192
 2026-08-28 — [Dark Matter] The solitary star cluster of the Andromeda XXV dwarf spheroidal — 2608.26959
@@ -122,3 +122,13 @@ last digest: 2026-09-09
 2026-09-09 — [Galaxy Formation / Evolution] TILING I: Field-level Bayesian reconstruction of cosmological initial conditions during the epoch of reionization — 2609.09102
 2026-09-09 — [SMBHs] J023721.13$-$010528.5: A Giant $S$-shaped Radio Galaxy Showing Four Episodes of Jet Activity — 2609.08506
 2026-09-09 — [Galaxy Formation / Evolution] The environmental dependence of the circumgalactic medium in a high-resolution cosmological simulation — 2609.08654
+2026-09-10 — [SMBHs] Overmassive No More: The Case for Little Red Dots Hosting Black Hole Seeds as Massive as Single Supermassive Stars — 2609.09274
+2026-09-10 — [SMBHs] First Detection of Radio Polarization During Jet Formation in the Changing-Look AGN 1ES 1927+654 — 2609.09539
+2026-09-10 — [Dark Matter] CROCODILE-SIDM: Tidal Formation of Dark Matter-Deficient Galaxies as a Test Case — 2609.09729
+2026-09-10 — [Galaxy Formation / Evolution] JWST Spectra Conclusively Show an Excess of Neutral Gas Outflows in Quiescent Galaxies at z=2-5 — 2609.09459
+2026-09-10 — [Stats] Beyond the BLUE I: the advantage ceiling - how much can any estimator beat the matched filter in mm/submm survey data? — 2609.10475
+2026-09-10 — [Stats] Likelihood-free inference with nuisance parameters through normalizing flows — 2609.10534
+2026-09-10 — [SMBHs] Exploring the AGN population in protoclusters: results from the TNG300 simulation and comparison with observations — 2609.09297
+2026-09-10 — [Stats] Inductive Biases in Field-Level Cosmological Inference from Galaxy Catalogs — 2609.09504
+2026-09-10 — [SMBHs] Extending the Little Red Dot population at intermediate redshift with VIPERS — 2609.10319
+2026-09-10 — [Galaxy Formation / Evolution] From stardust to interstellar grain growth in the first galaxies: a cosmological transition in dust evolution near z ~ 8.9 — 2609.10290
