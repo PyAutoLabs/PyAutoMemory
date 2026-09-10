@@ -27,7 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-09-09
+last digest: 2026-09-10
 2026-09-07 — Probing Dark Matter with Strongly Lensed Binary Black Hole Mergers: Prospects in the Near Future — 2609.05020
 2026-09-07 — ALPACA I: Controlling source and PSF systematics in JWST time-delay cosmography with differentiable lens modeling — 2609.04312
 2026-09-09 — Harnessing stellar kinematics to constrain dark energy with the double-source-plane gravitational lens SDSS J0946+1006 — 2609.08573
@@ -35,3 +35,6 @@ last digest: 2026-09-09
 2026-09-09 — Observation-driven simulations of strong lensing galaxy clusters — 2609.07840
 2026-09-09 — LEGGOS: Direct abundances of N, O, Ne, S, and Ar in five lensed galaxies at Cosmic Noon — 2609.07851
 2026-09-09 — LEGGOS: A Shocking Lack of Evidence for Shocks at sub-kiloparsec Scales at 2 < z < 4 — 2609.07850
+2026-09-10 — Associating binary black holes with galactic centres using lensed gravitational waves — 2609.10285
+2026-09-10 — TDCOSMO XXX: Spatially resolved kinematics of the deflectors in time-delay lens systems B1608+656 and SDSSJ1206+4332 from JWST-NIRSpec observation — 2609.09411
+2026-09-10 — Chasing Cosmic Reionization: An Extremely Faint Highly Magnified Source at $z=5.66$ with high $ξ_{\rm ion}$ — 2609.09281
