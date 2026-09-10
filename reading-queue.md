@@ -154,6 +154,7 @@ A Bayesian Approach To The Halo-Galaxy-SMBH Connection Through Cosmic Time
 Detection of an X-ray quasar in a gravitationally-lensed z=10.3 galaxy suggests that early supermassive black holes originate from heavy seeds
 Mass-redshift dependency of Supermassive Black Hole Binaries for the Gravitational Wave Background — 2305.18293
 SLICK: Strong Lensing Identification of Candidates Kindred in gravitational wave data — 2403.02994
+A Population Study for Searching Supermassive Binary Black Holes in Active Galactic Nuclei: Continuum Spectral Features and Periodic Variabilities — 2608.25507
 
 
 ## Galaxy Formation / Evolution
