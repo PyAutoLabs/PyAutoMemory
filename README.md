@@ -25,6 +25,17 @@ paper links to its arXiv abstract page and carries a 📄 button onto the PDF
 itself, so a phone can collect a stack of papers to read offline in one tap
 each.
 
+The per-paper buttons file GitHub issues that two workflows act on:
+`queue_actions.yml` makes the mechanical moves (➕ ✅ ✖️ 🧹) and closes the
+issue; `queue_filing.yml` has Claude file a 📥/📑 paper onto a
+`queue-filing/issue-<n>` branch, gated, for a human to merge — and it opens
+that PR itself only once *Allow GitHub Actions to create and approve pull
+requests* is on (Settings → Actions → General). A tap whose label the issue
+form dropped is read from its title; whatever nothing acted on is
+re-dispatched by the nightly `queue_sweep.yml`; and a filing that reached its
+branch but not `main` sits at the top of the board under **Filings awaiting
+merge** until its PR lands — the paper is not in memory before then.
+
 ## Current contents
 
 <!-- The line below is auto-updated by .github/workflows/knowledge_board.yml (everything -->

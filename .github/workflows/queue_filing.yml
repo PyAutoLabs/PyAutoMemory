@@ -8,15 +8,33 @@ name: Queue filing
 # notes folded in), DONE-mark on the queue line — and opens a reviewable PR
 # that closes the issue. Merge stays human.
 #
-# Trigger is `labeled` only: GitHub fires it both for labels applied at
-# creation (the dashboard path) and for labels added later, and using it alone
-# avoids the double-run an `opened`+`labeled` pair would cause. Only
-# owner/member/collaborator-authored issues act (public repo — same gate as
-# queue_actions.yml), and only triage+ users can apply labels at all.
+# Two doors. `labeled` is the dashboard path: GitHub fires it both for labels
+# applied at creation and for labels added later, and using it alone avoids
+# the double-run an `opened`+`labeled` pair would cause. `workflow_dispatch`
+# on an issue number is the hand-over from queue_actions.yml for an issue
+# whose label the issue form dropped (a `queue intake: …` title with no
+# label at all — it happens on phone submissions), and the door the nightly
+# queue_sweep.yml re-dispatches through. Only owner/member/collaborator-
+# authored issues act (public repo — same gate as queue_actions.yml), and
+# only triage+ users can apply labels at all; the dispatch door re-checks
+# the association from the API, since it has no event to read it from.
 #
 # The PR is created with the runner's GITHUB_TOKEN, so `pull_request`
 # workflows (validate.yml) do NOT run on it — `make validate` + pytest run
 # here as the gate instead, before anything is pushed.
+#
+# **The PR needs one repo setting.** GITHUB_TOKEN may open a PR only when
+# "Allow GitHub Actions to create and approve pull requests" is on
+# (Settings → Actions → General → Workflow permissions). Off, the filing
+# still lands on its `queue-filing/issue-<n>` branch, gated, and the issue
+# gets a one-tap compare link instead of a PR — but nothing reaches `main`
+# until a human opens and merges it, and the board's *Filings awaiting
+# merge* section is where those branches wait. Three did, unnoticed, between
+# 2026-09-01 and 2026-09-10; the setting is the fix.
+#
+# A second tap on the same paper does not file it twice: a filing branch
+# that already exists for this issue, or for another open issue naming the
+# same paper, is answered with its compare link and the run stops clean.
 #
 # Claude runs with tools scoped to workspace edits plus arXiv lookups; the
 # deterministic steps below stage explicit paths only — never `git add -A`.
@@ -24,6 +42,12 @@ name: Queue filing
 on:
   issues:
     types: [labeled]
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: "Issue number to file — the hand-over and sweep door"
+        required: true
+        type: string
 
 # contents: write → push the filing branch; pull-requests/issues: write → the
 # PR + failure comment; id-token: write → claude-code-action's OIDC startup
@@ -35,22 +59,23 @@ permissions:
   id-token: write
 
 concurrency:
-  group: queue-filing-${{ github.event.issue.number }}
+  group: queue-filing-${{ github.event.issue.number || inputs.issue }}
   cancel-in-progress: false
 
 jobs:
   file-paper:
     if: >-
-      contains(fromJSON('["queue-intake", "queue-cite"]'),
-               github.event.label.name) &&
-      contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'),
-               github.event.issue.author_association)
+      github.event_name == 'workflow_dispatch' ||
+      (contains(fromJSON('["queue-intake", "queue-cite"]'),
+                github.event.label.name) &&
+       contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'),
+                github.event.issue.author_association))
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}
       # gh needs explicit repo context in the pre-checkout secret-guard step.
       GH_REPO: ${{ github.repository }}
-      ISSUE: ${{ github.event.issue.number }}
+      ISSUE: ${{ github.event.issue.number || inputs.issue }}
     steps:
       - name: Require the Claude OAuth token
         env:
@@ -87,16 +112,89 @@ jobs:
       - name: Install the test runner
         run: pip install pytest
 
-      - name: Stash the request for Claude
-        env:
-          # env, never inline interpolation — issue text is untrusted input.
-          ISSUE_BODY: ${{ github.event.issue.body }}
-          LABEL: ${{ github.event.label.name }}
+      # Read the issue back from the API rather than the event: the dispatch
+      # door has no event payload, and one code path for both doors is the
+      # point. `label` is the filing label the issue carries, or the one its
+      # `queue intake:` / `queue cite:` title says the form dropped.
+      - name: Resolve the request
+        id: resolve
         run: |
-          printf '%s' "$ISSUE_BODY" > /tmp/issue_body.txt
-          printf '%s' "$LABEL" > /tmp/issue_label.txt
+          issue_json=$(gh api "repos/${GITHUB_REPOSITORY}/issues/${ISSUE}")
+          state=$(jq -r '.state' <<<"$issue_json")
+          assoc=$(jq -r '.author_association' <<<"$issue_json")
+          title=$(jq -r '.title' <<<"$issue_json")
+          labels=$(jq -r '[.labels[].name] | join(",")' <<<"$issue_json")
+          # env, never inline interpolation — issue text is untrusted input.
+          jq -r '.body // ""' <<<"$issue_json" > /tmp/issue_body.txt
+          printf '%s' "$title" > /tmp/issue_title.txt
+          skip=no
+          if [ "$state" != "open" ]; then
+            echo "issue #${ISSUE} is ${state} — nothing to file"; skip=yes
+          fi
+          case "$assoc" in
+            OWNER|MEMBER|COLLABORATOR) ;;
+            *) echo "issue #${ISSUE} author is ${assoc} — not acting"; skip=yes ;;
+          esac
+          label="${{ github.event.label.name }}"
+          if [ -z "$label" ]; then
+            case ",$labels," in
+              *,queue-intake,*) label=queue-intake ;;
+              *,queue-cite,*)   label=queue-cite ;;
+            esac
+          fi
+          if [ -z "$label" ]; then
+            case "$title" in
+              "queue intake:"*) label=queue-intake ;;
+              "queue cite:"*)   label=queue-cite ;;
+            esac
+            if [ -n "$label" ]; then
+              gh issue edit "$ISSUE" --add-label "$label" || true
+              echo "issue #${ISSUE} carried no label — read '${label}' from its title"
+            fi
+          fi
+          if [ -z "$label" ]; then
+            echo "issue #${ISSUE} is not a filing request (title: ${title}) — nothing to do"
+            skip=yes
+          fi
+          printf '%s' "$label" > /tmp/issue_label.txt
+          echo "label=${label}" >> "$GITHUB_OUTPUT"
+          echo "skip=${skip}" >> "$GITHUB_OUTPUT"
+
+      # Idempotence for re-taps and re-dispatches: a filing that already
+      # reached a branch is answered with where it is, not filed again (a
+      # second push to the same branch would not fast-forward anyway, and a
+      # second branch for the same paper is a merge conflict waiting to
+      # happen). The sweep treats the comment as "touched" and leaves it.
+      - name: Refuse a duplicate filing
+        id: dup
+        if: steps.resolve.outputs.skip != 'yes'
+        run: |
+          skip=no
+          compare="${GITHUB_SERVER_URL}/${GH_REPO}/compare/main...queue-filing/issue-"
+          existing=$(git ls-remote --heads origin 'refs/heads/queue-filing/*' \
+                     | sed -n 's#.*refs/heads/queue-filing/issue-\([0-9]*\)$#\1#p')
+          if grep -qx "$ISSUE" <<<"$existing"; then
+            gh issue comment "$ISSUE" --body \
+              "This paper is already filed on branch \`queue-filing/issue-${ISSUE}\` — nothing was filed again. Open its PR with one tap: ${compare}${ISSUE}?expand=1 — merging it closes this issue."
+            skip=yes
+          else
+            title=$(cat /tmp/issue_title.txt)
+            paper="${title#queue intake: }"; paper="${paper#queue cite: }"
+            for n in $existing; do
+              other=$(gh api "repos/${GH_REPO}/issues/${n}" --jq '.title' 2>/dev/null || true)
+              o_paper="${other#queue intake: }"; o_paper="${o_paper#queue cite: }"
+              if [ -n "$paper" ] && [ "$paper" = "$o_paper" ]; then
+                gh issue comment "$ISSUE" --body \
+                  "This paper is already filed on branch \`queue-filing/issue-${n}\` (from #${n}) — nothing was filed again. Open that PR with one tap: ${compare}${n}?expand=1 — then close this issue."
+                skip=yes
+                break
+              fi
+            done
+          fi
+          echo "skip=${skip}" >> "$GITHUB_OUTPUT"
 
       - name: File the paper with Claude
+        if: steps.resolve.outputs.skip != 'yes' && steps.dup.outputs.skip != 'yes'
         uses: anthropics/claude-code-action@v1
         with:
           # Claude subscription OAuth token — NOT an API key (the org pattern
@@ -156,16 +254,28 @@ jobs:
                  delete the line from whichever of those two files `file:`
                  names. A suggestion line is not reading history, so deleting
                  it is correct — the DONE line it becomes is the history.
+               - The line may have MOVED since the request was written: an
+                 earlier ➕ tap moves a suggestion into reading-queue.md
+                 unread, and the nightly sweep lapses old inbox lines. So if
+                 `file:` names a suggestion tier and the line is not there,
+                 look for the same paper (by arXiv ref first, then title) in
+                 reading-queue.md: an unread line there is DONE-marked in
+                 place, exactly as the `reading-queue.md` case above. If it
+                 is already DONE-marked anywhere in reading-queue.md, the
+                 paper has been filed before — stop and report that, without
+                 editing anything.
             5. Run `make validate` and `python -m pytest tests/ -q`; fix your
                own filing mistakes until both are green.
 
             Touch ONLY bibliography/, wiki/, reading-queue.md,
             arxiv-inbox.md and arxiv-interests.md. Do not
             commit — the workflow handles git. If the paper cannot be
-            identified confidently, write the reason to /tmp/filing_error.txt
-            and stop without editing anything.
+            identified confidently, or its line cannot be found in any of
+            the three files, write the reason to /tmp/filing_error.txt and
+            stop without editing anything.
 
       - name: Abort cleanly if Claude could not identify the paper
+        if: steps.resolve.outputs.skip != 'yes' && steps.dup.outputs.skip != 'yes'
         run: |
           if [ -f /tmp/filing_error.txt ]; then
             gh issue comment "$ISSUE" --body-file /tmp/filing_error.txt
@@ -174,11 +284,13 @@ jobs:
           fi
 
       - name: Gate the filing (validate + tests)
+        if: steps.resolve.outputs.skip != 'yes' && steps.dup.outputs.skip != 'yes'
         run: |
           make validate
           python -m pytest tests/ -q
 
       - name: Branch, commit, push, open the PR (explicit paths only)
+        if: steps.resolve.outputs.skip != 'yes' && steps.dup.outputs.skip != 'yes'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -210,8 +322,10 @@ jobs:
           else
             # Repo/org policy can forbid Actions-created PRs. The branch is
             # pushed and gated — degrade to a one-tap PR link, not a failure.
+            # The board lists the branch under "Filings awaiting merge" until
+            # it lands or is deleted.
             gh issue comment "$ISSUE" --body \
-              "Filing branch pushed and gated: \`${branch}\` — but this repo's policy blocks Actions from opening PRs. Open it with one tap: ${GITHUB_SERVER_URL}/${GH_REPO}/compare/main...${branch}?expand=1 — or enable 'Allow GitHub Actions to create and approve pull requests' (Settings → Actions → General) to make this automatic."
+              "Filing branch pushed and gated: \`${branch}\` — but this repo's policy blocks Actions from opening PRs. Open it with one tap: ${GITHUB_SERVER_URL}/${GH_REPO}/compare/main...${branch}?expand=1 — or enable 'Allow GitHub Actions to create and approve pull requests' (Settings → Actions → General) to make this automatic. Until it is merged, the paper is on that branch and not in memory; the dashboard lists it under *Filings awaiting merge*."
           fi
 
       - name: Report failure on the issue
