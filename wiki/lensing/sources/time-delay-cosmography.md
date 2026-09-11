@@ -156,6 +156,11 @@ status: stub
 - Non-JWST PSF systematics or non-time-delay lens-modelling contexts without checking applicability.
 
 
+## Galan 2026 — TDCOSMO XXVIII (H0 from J1537-3010)
+
+**Canonical BibTeX key:** `Galan2026`
+
+
 ## See also
 
 - [[time-delay-cosmography]]
