@@ -89,11 +89,13 @@ On what scales does strong lensing robustly constrain the mass profile of low-ma
 Measuring Extragalactic Microlens Masses and Motions in Strongly Lensed Quasar Systems with Intensity Interferometry — 2608.27577
 TDCOSMO XXIX: JWST/NIRSpec IFU Spatially Resolved Kinematics of Three Time-delay Lenses — 2609.03089
 Host Dependence and Line-of-Sight Effects on Galaxy-Galaxy Strong Lensing in Clusters — 2608.30079
-TDCOSMO XXVIII. The Hubble constant from the quadruply lensed quasar J1537$-$3010 with precise time delays — 2609.00179
+DONE 2026-09-11 — TDCOSMO XXVIII. The Hubble constant from the quadruply lensed quasar J1537$-$3010 with precise time delays — 2609.00179
 HOLISMOKES -- XVIII. Cosmology with strongly lensed type II supernovae: Effects of instrumental setups on $H_0$ — 2608.26331
 DONE 2026-09-01 — Mapping the Information Geometry of an Unresolved Dark Matter Population using a Differentiable Strong Lensing Simulator — 2608.18224
 DONE 2026-09-03 — Follow-up of SN 2025wny I: Space-based Observations of the First Multiply-imaged Superluminous Supernova — 2608.28413
 DONE 2026-09-07 — ALPACA I: Controlling source and PSF systematics in JWST time-delay cosmography with differentiable lens modeling — 2609.04312
+DONE 2026-09-11 — Strong Lensing Cosmology with Population-level Calibrated Neural Ratio Estimation — 2608.23534
+DONE 2026-09-11 — TDCOSMO. XXVII. JWST-based Lens Models and H$_0$ Measurement of WFI2033, HE0435, and PG1115 — 2608.27566
 
 
 ## SMBHs

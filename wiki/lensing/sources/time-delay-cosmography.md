@@ -156,6 +156,18 @@ status: stub
 - Non-JWST PSF systematics or non-time-delay lens-modelling contexts without checking applicability.
 
 
+## Williams 2026 — TDCOSMO XXVII (JWST H0: WFI2033, HE0435, PG1115)
+
+**Canonical BibTeX key:** `Williams2026`
+
+If the cosmology natural-language paper ever happens, this is a good work to
+refer to for how H0 analysis is performed currently.
+
+## Galan 2026 — TDCOSMO XXVIII (H0 from J1537-3010)
+
+**Canonical BibTeX key:** `Galan2026`
+
+
 ## See also
 
 - [[time-delay-cosmography]]
