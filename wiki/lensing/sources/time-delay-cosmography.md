@@ -162,7 +162,9 @@ status: stub
 
 If the cosmology natural-language paper ever happens, this is a good work to
 refer to for how H0 analysis is performed currently.
+
 ## Galan 2026 — TDCOSMO XXVIII (H0 from J1537-3010)
+
 **Canonical BibTeX key:** `Galan2026`
 
 
