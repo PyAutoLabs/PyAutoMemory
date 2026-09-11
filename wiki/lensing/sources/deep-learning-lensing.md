@@ -73,6 +73,36 @@ status: stub
 - Evidence until the paper identity and canonical key are verified.
 
 
+## Jarugula 2026 — calibrated NRE cosmology
+
+**Canonical BibTeX key:** `Jarugula2026`
+**Reference:** Strong Lensing Cosmology with Population-level Calibrated Neural Ratio Estimation; arXiv:2608.23534; submitted to Machine Learning: Science and Technology
+**Concepts:** [[deep-learning-lensing]], [[lens-statistics]]
+
+**Supports:**
+- Neural Ratio Estimation (NRE) can combine per-lens likelihood ratios into a
+  population-level posterior, jointly inferring the dark energy
+  equation-of-state parameter w and the matter density Ω_m from lensing
+  images plus spectroscopic data.
+- A posterior-coverage calibration step corrects the overconfidence typical
+  of neural density/ratio estimators, giving honest uncertainties at
+  population scale (~23% on w, ~3% on Ω_m for 100 lenses).
+- A simulation-based-inference example of population-level lensing cosmology
+  with a cosmological target (dark energy, matter density) rather than the
+  dark-matter-substructure target most SBI lensing studies use.
+
+**Use when:**
+- Citing calibrated NRE/SBI as a route to population-level cosmological
+  inference (w, Ω_m) from galaxy-galaxy strong lens samples.
+- Citing the coverage-calibration approach for correcting neural
+  density-estimator overconfidence in lensing inference.
+
+**Do not use for:**
+- Substructure/dark-matter population inference — this paper's target is
+  dark energy and matter density, not subhalo populations.
+- Real-survey results — validated on simulations only at time of writing.
+
+
 ## See also
 
 - [[deep-learning-lensing]]
