@@ -37,7 +37,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-09-10
+last digest: 2026-09-11
 2026-08-28 — [Stats] Cross-simulator transfer with foundation model summaries: Towards robust SKA-era reionization inference — 2608.26354
 2026-08-28 — [SMBHs] Optimal transport regularized dynamic radio interferometric reconstruction — 2608.27192
 2026-08-28 — [Dark Matter] The solitary star cluster of the Andromeda XXV dwarf spheroidal — 2608.26959
@@ -132,3 +132,13 @@ last digest: 2026-09-10
 2026-09-10 — [Stats] Inductive Biases in Field-Level Cosmological Inference from Galaxy Catalogs — 2609.09504
 2026-09-10 — [SMBHs] Extending the Little Red Dot population at intermediate redshift with VIPERS — 2609.10319
 2026-09-10 — [Galaxy Formation / Evolution] From stardust to interstellar grain growth in the first galaxies: a cosmological transition in dust evolution near z ~ 8.9 — 2609.10290
+2026-09-11 — [Stats] Hierarchical Population Inference with Normalizing Flows for Binary Black Holes — 2609.11885
+2026-09-11 — [SMBHs] Probing the details of relativistic electrons with multifrequency observations of M87 black hole — 2609.11609
+2026-09-11 — [SMBHs] Binary-black hole spin population results may be driven by prior degeneracies — 2609.10753
+2026-09-11 — [Stats] Learning JWST. I. A Foundation Model for New Population Discoveries and Morphology-Aware Photometric Redshift Measurements in the JADES Survey — 2609.11879
+2026-09-11 — [Dark Matter] Generating the wide sequence of Diffuse Galaxies with de Broglie waves of Dark Matter — 2609.11510
+2026-09-11 — [SMBHs] Black Hole-Galaxy Correlations in Cluster Zoomed-in Simulations: GIZMO-SIMBA and TNG-Cluster — 2609.11191
+2026-09-11 — [Dark Matter] Impact of LSST systematics on stellar-stream density fluctuations for dark matter — 2609.10897
+2026-09-11 — [SMBHs] The THRILS Factor: Investigating the properties of Little Red Dots (LRDs) at 3<z<6 with JWST/NIRSpec — 2609.10803
+2026-09-11 — [Dark Matter] Constraints on the fuzzy dark matter mass using globular clusters in dwarf galaxies from Euclid ERO data — 2609.11328
+2026-09-11 — [Dark Matter] Probing dynamics of extreme galaxies I. Dark matter content in ultra-diffuse galaxies — 2609.10700
