@@ -94,6 +94,7 @@ HOLISMOKES -- XVIII. Cosmology with strongly lensed type II supernovae: Effects 
 DONE 2026-09-01 — Mapping the Information Geometry of an Unresolved Dark Matter Population using a Differentiable Strong Lensing Simulator — 2608.18224
 DONE 2026-09-03 — Follow-up of SN 2025wny I: Space-based Observations of the First Multiply-imaged Superluminous Supernova — 2608.28413
 DONE 2026-09-07 — ALPACA I: Controlling source and PSF systematics in JWST time-delay cosmography with differentiable lens modeling — 2609.04312
+DONE 2026-09-11 — TDCOSMO. XXVII. JWST-based Lens Models and H$_0$ Measurement of WFI2033, HE0435, and PG1115 — 2608.27566
 
 
 ## SMBHs
