@@ -910,6 +910,27 @@ details.hist>summary{cursor:pointer}
 .fresh.stale{color:var(--warn);font-weight:600}
 table.recent td.name{white-space:nowrap}
 footer{margin-top:2rem;color:var(--muted);font-size:.82em}
+/* One-tap mode (see the script): the 🔑 chip, the inline notes box a 📥/📑
+   tap opens, a busy button, and the toast that says what just happened. */
+#onetap{font:inherit;font-size:.9em;padding:.1rem .5rem;border:1px solid var(--line);
+ border-radius:6px;background:var(--btn);color:var(--fg);cursor:pointer}
+#onetap:hover{border-color:var(--accent)}
+#onetap.on{border-color:var(--ok);color:var(--ok)}
+.notes{margin:.4rem 0 .2rem;padding:.5rem;border:1px solid var(--line);
+ border-radius:8px;background:var(--btn)}
+.notes textarea{width:100%;box-sizing:border-box;font:inherit;padding:.4rem;
+ border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg)}
+.notes textarea:focus{outline:none;border-color:var(--accent)}
+.notes button{margin-top:.35rem;font:inherit;padding:.25rem .6rem;
+ border:1px solid var(--line);border-radius:6px;background:var(--bg);
+ color:var(--fg);cursor:pointer}
+.notes button.go{border-color:var(--accent);font-weight:600}
+a.act.busy{opacity:.5;pointer-events:none}
+#toast{position:fixed;left:50%;bottom:1.2rem;transform:translateX(-50%);
+ max-width:90vw;padding:.5rem .9rem;border-radius:8px;background:var(--fg);
+ color:var(--bg);opacity:0;transition:opacity .2s;pointer-events:none;z-index:9}
+#toast.show{opacity:1}
+#toast.bad{background:var(--warn)}
 """
 
 # The shared copy handler is delegated, so a chip inside a <summary> would
@@ -923,7 +944,7 @@ footer{margin-top:2rem;color:var(--muted);font-size:.82em}
 # baked in at render time would sit at "0 weekdays" forever and never fire in
 # the one failure it exists for. The rendered date is a fact and survives the
 # freeze; the verdict is recomputed against the reader's own clock.
-_EXTRA_JS = """
+_EXTRA_JS = r"""
 function freshness(){
  var els=document.querySelectorAll('.fresh[data-last-digest]');
  for(var i=0;i<els.length;i++){var el=els[i];
@@ -956,6 +977,96 @@ function flt(q){q=q.toLowerCase();
   else{d.style.display='';d.open=openByDefault;}
   var h=d.querySelector('details.hist');
   if(h){h.style.display=(q&&!histHit)?'none':'';h.open=!!q&&histHit;}}}
+/* --- one-tap mode ----------------------------------------------------------
+   Every action button is a prefilled new-issue link, and that stays the
+   fallback. With a fine-grained token pasted into the 🔑 chip (stored in this
+   browser only), a tap creates that same issue from here through the GitHub
+   API instead of leaving the page: same title, body and label, read back out
+   of the link itself, so the workflows behind it see no difference. The row
+   disappears at once and stays hidden across reloads until the re-render no
+   longer carries it (or a day passes with it still there, which means the
+   action failed and it comes back). 📥/📑 open an inline notes box first —
+   the notes are the one thing the link could not carry filled in. */
+var TOK='memory-board-token',HID='memory-board-hidden',API='https://api.github.com';
+function repo(){return document.body.getAttribute('data-repo')||'';}
+function token(){try{return localStorage.getItem(TOK)||'';}catch(e){return '';}}
+function hiddenMap(){try{return JSON.parse(localStorage.getItem(HID)||'{}');}catch(e){return {};}}
+function saveHidden(h){try{localStorage.setItem(HID,JSON.stringify(h));}catch(e){}}
+function toast(msg,bad){var t=document.getElementById('toast');if(!t)return;
+ t.textContent=msg;t.className=bad?'show bad':'show';
+ clearTimeout(toast.h);toast.h=setTimeout(function(){t.className='';},bad?7000:4000);}
+function request(a){var u;try{u=new URL(a.href);}catch(e){return null;}
+ if(u.pathname.indexOf('/issues/new')<0)return null;
+ var body=u.searchParams.get('body')||'';
+ var m=body.match(/^(?:line|date): (.*)$/m);
+ return {title:u.searchParams.get('title')||'',body:body,
+  label:u.searchParams.get('labels')||'',key:m?m[1]:'',
+  row:a.closest('li')||a.closest('details.qsec')};}
+function gh(path,opts,tok){opts=opts||{};opts.headers={
+  'Authorization':'Bearer '+(tok||token()),'Accept':'application/vnd.github+json',
+  'Content-Type':'application/json','X-GitHub-Api-Version':'2022-11-28'};
+ return fetch(API+'/repos/'+repo()+path,opts);}
+async function createIssue(req){
+ var r=await gh('/issues',{method:'POST',body:JSON.stringify(
+  {title:req.title,body:req.body,labels:req.label?[req.label]:[]})});
+ if(!r.ok){throw new Error('GitHub said '+r.status+
+  (r.status===401||r.status===403||r.status===404?
+   ' \u2014 check the token: Issues read & write on '+repo():''));}
+ return (await r.json()).number;}
+function hideRow(req){if(req.row)req.row.hidden=true;
+ if(req.key){var h=hiddenMap();h[req.key]=Date.now();saveHidden(h);}}
+function restoreHidden(){var h=hiddenMap(),seen={},now=Date.now(),changed=false;
+ var as=document.querySelectorAll("a.act[href*='/issues/new']");
+ for(var i=0;i<as.length;i++){var req=request(as[i]);if(!req||!req.key)continue;
+  seen[req.key]=true;var ts=h[req.key];if(!ts)continue;
+  if(now-ts<86400000){if(req.row)req.row.hidden=true;}
+  else{delete h[req.key];changed=true;}}
+ for(var k in h){if(!seen[k]){delete h[k];changed=true;}}
+ if(changed)saveHidden(h);}
+async function run(a,req){a.classList.add('busy');
+ try{var n=await createIssue(req);hideRow(req);
+  toast('queued as #'+n+' \u2014 the board re-renders itself in a minute');}
+ catch(e){toast(e.message,true);}
+ a.classList.remove('busy');}
+function notesForm(a,req){var old=document.querySelector('.notes');if(old)old.remove();
+ var f=document.createElement('div');f.className='notes';
+ f.innerHTML="<textarea rows='3' placeholder='notes (optional): why this paper, "+
+  "what was noteworthy \u2014 folded into the filing'></textarea><div>"+
+  "<button type='button' class='go'>"+(req.label==='queue-cite'?
+  '\ud83d\udcd1 make citeable':'\ud83d\udce5 intake into memory')+
+  "</button> <button type='button' class='no'>cancel</button></div>";
+ (a.closest('li')||a.parentNode).appendChild(f);
+ var ta=f.querySelector('textarea');ta.focus();
+ f.querySelector('.no').onclick=function(){f.remove();};
+ f.querySelector('.go').onclick=function(){var n=ta.value.trim();
+  if(n){req.body=req.body.replace(/^notes: \(optional[^\n]*$/m,
+   'notes: '+n.replace(/\s*\n\s*/g,' '));}
+  f.remove();run(a,req);};}
+document.addEventListener('click',function(e){
+ var a=e.target.closest("a.act[href*='/issues/new']");
+ if(!a||!token()||!repo())return;
+ var req=request(a);if(!req)return;
+ e.preventDefault();
+ if(req.label==='queue-intake'||req.label==='queue-cite')notesForm(a,req);
+ else run(a,req);});
+function keyChip(){var c=document.getElementById('onetap');if(!c)return;
+ var on=!!token();c.textContent=on?'\ud83d\udd11 one-tap on \u00b7 sign out':
+  '\ud83d\udd11 set up one-tap';c.className=on?'on':'';
+ c.onclick=async function(){
+  if(token()){try{localStorage.removeItem(TOK);}catch(e){}keyChip();
+   toast('one-tap off \u2014 the buttons open GitHub again');return;}
+  var t=prompt('One-tap mode: paste a fine-grained GitHub token with Issues: '+
+   'read & write on '+repo()+'. It is stored only in this browser and used '+
+   'only to open the queue issues from here.');
+  if(!t)return;t=t.trim();
+  try{var r=await gh('',{},t);if(!r.ok)throw new Error('GitHub said '+r.status);
+   var j=await r.json();
+   if(!(j.permissions&&j.permissions.push))throw new Error(
+    'that token cannot write to '+repo());
+   localStorage.setItem(TOK,t);keyChip();
+   toast('one-tap on \u2014 every button now files from here');}
+  catch(e){toast(e.message,true);}};}
+restoreHidden();keyChip();
 """
 
 
@@ -1255,16 +1366,26 @@ def _render_html(snapshot: dict) -> str:
     repo_url = _repo_url(snapshot)
     github_link = (f' · <a href="{repo_url}/blob/main/README.md">'
                    "GitHub Page</a>" if repo_url else "")
+    # One-tap mode needs the API's owner/repo and a place to turn it on; both
+    # drop out with the repo identity, like every other GitHub-facing chip.
+    owner, repo = snapshot.get("owner"), snapshot.get("repo")
+    body_attrs = (f' data-repo="{_html.escape(owner + "/" + repo, quote=True)}"'
+                  if repo_url else "")
+    onetap = (" · <button type='button' id='onetap' title='one-tap mode: file "
+              "every button from this page instead of opening GitHub — paste "
+              "a fine-grained token once, kept in this browser only'>"
+              "\U0001f511 set up one-tap</button>" if repo_url else "")
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PyAutoMemory Dashboard</title>
 <style>{t_.css(BOARD_KEY)}{_EXTRA_CSS}</style>
 </head>
-<body>
+<body{body_attrs}>
 {hero}
 {stats}
-<p class="muted mdsrc"><a href="dashboard.md">markdown version</a>{github_link}</p>
+<p class="muted mdsrc"><a href="dashboard.md">markdown version</a>{github_link}{onetap}</p>
+<div id="toast"></div>
 {filings_block}
 <h2>arXiv inbox <span class="muted">(suggested overnight — un-acted papers
  lapse after {inbox_actions.INBOX_WINDOW_DAYS} days)</span></h2>

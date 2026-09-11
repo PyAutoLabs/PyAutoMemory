@@ -25,6 +25,15 @@ paper links to its arXiv abstract page and carries a 📄 button onto the PDF
 itself, so a phone can collect a stack of papers to read offline in one tap
 each.
 
+**One-tap mode.** Out of the box each action button opens a prefilled GitHub
+issue you then submit. Tap the 🔑 chip under the header once and paste a
+fine-grained token (Resource owner PyAutoLabs, repository PyAutoMemory only,
+*Issues: read and write*): from then on every button files that same issue
+from the page, the row disappears at once, and 📥/📑 ask for your notes in an
+inline box first. The token lives in that browser's local storage and nowhere
+else; tap the chip again to sign out. The workflows behind the buttons see
+exactly the issue the link would have opened.
+
 The per-paper buttons file GitHub issues that two workflows act on:
 `queue_actions.yml` makes the mechanical moves (➕ ✅ ✖️ 🧹) and closes the
 issue; `queue_filing.yml` has Claude file a 📥/📑 paper onto a

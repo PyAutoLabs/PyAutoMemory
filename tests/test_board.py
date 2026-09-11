@@ -169,8 +169,11 @@ def test_paper_links_and_issue_actions(tmp_path):
 def test_no_issue_links_without_a_remote(tmp_path):
     """A spawned-template checkout (no remote) renders without dead buttons."""
     html = board.render(board.collect(_tree(tmp_path)), "html")
-    assert "issues/new" not in html
-    assert "arxiv.org/search" in html  # paper links still work
+    # The one-tap script names the link shape it intercepts; that is not a
+    # button, so judge the markup with the script stripped out.
+    markup = re.sub(r"<script>.*</script>", "", html, flags=re.DOTALL)
+    assert "issues/new" not in markup
+    assert "arxiv.org/search" in markup  # paper links still work
 
 
 def test_md_lists_papers(tmp_path):
@@ -216,8 +219,13 @@ def test_html_is_self_contained(tmp_path):
     # no repo identity in this snapshot → the GitHub Page segment drops out
     assert "GitHub Page" not in out
     assert "src=" not in out and "<link" not in out.lower()
-    assert "fetch(" not in out and "XMLHttpRequest" not in out
-    stripped = re.sub(r'data-cmd="[^"]*"', "", out)
+    # The one network call the page may make is the GitHub API, and only
+    # from a tap in one-tap mode — never a load-time fetch of an asset.
+    assert "XMLHttpRequest" not in out
+    script = re.search(r"<script>(.*)</script>", out, re.DOTALL).group(1)
+    assert out.count("fetch(") == script.count("fetch(") == 1
+    assert "fetch(API+" in script and "API='https://api.github.com'" in script
+    stripped = re.sub(r'data-cmd="[^"]*"', "", out.replace(script, ""))
     for m in re.finditer(r"(?:http|https)://", stripped):
         before = stripped[max(0, m.start() - 30):m.start()]
         assert 'href="' in before or "href='" in before, f"non-href URL at {m.start()}"
@@ -718,3 +726,32 @@ def test_pending_filings_without_a_remote_still_name_the_branch(tmp_path):
     for text in (board._render_md(snap), board._render_html(snap)):
         assert "queue-filing/issue-7" in text
         assert "compare/main" not in text
+
+
+# --- one-tap mode ---------------------------------------------------------------
+def test_one_tap_mode_is_wired_only_with_a_remote(tmp_path):
+    """The chip, the API's owner/repo and the toast slot all hang off the repo
+    identity; a spawned template with no remote renders none of them."""
+    snap = _snap_with_remote(tmp_path)
+    html = board._render_html(snap)
+    assert 'data-repo="PyAutoLabs/PyAutoMemory"' in html
+    assert "id='onetap'" in html and 'id="toast"' in html
+    snap["owner"] = snap["repo"] = ""
+    bare = board._render_html(snap)
+    assert "data-repo=" not in bare and "id='onetap'" not in bare
+
+
+def test_one_tap_reads_the_request_back_out_of_the_link(tmp_path):
+    """No second copy of the issue in the markup: the script parses title,
+    body and label from the prefilled link every button already carries, so
+    the workflows see exactly the issue the link would have opened."""
+    html = board._render_html(_snap_with_remote(tmp_path))
+    assert "searchParams.get('body')" in html
+    assert "searchParams.get('labels')" in html
+    assert "/^(?:line|date): (.*)$/m" in html  # the row's hide key
+    assert "restoreHidden();keyChip();" in html
+
+
+def test_one_tap_never_touches_the_page_without_a_token(tmp_path):
+    html = board._render_html(_snap_with_remote(tmp_path))
+    assert "if(!a||!token()||!repo())return;" in html
