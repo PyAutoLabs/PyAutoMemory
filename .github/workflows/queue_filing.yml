@@ -202,6 +202,14 @@ jobs:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           # Default-hidden output masks real failures — surface everything.
           show_full_output: true
+          # The dispatch door (queue_actions.yml's hand-over, the nightly
+          # sweep) runs as github-actions, and the action refuses a run
+          # "initiated by non-human actor" unless that bot is allowed — the
+          # first sweep's three filings all died on exactly that line
+          # (2026-09-10). The `labeled` door is still the human's tap; the
+          # author-association gate above is what keeps strangers out on
+          # both doors.
+          allowed_bots: "github-actions"
           # Workspace edits + the repo's own gates + arXiv metadata lookups.
           # No git/gh: the deterministic steps below own branch/commit/PR.
           claude_args: '--allowedTools "Read,Glob,Grep,Edit,Write,Bash(make:*),Bash(python:*),Bash(python3:*),WebFetch(domain:arxiv.org),WebFetch(domain:export.arxiv.org)"'
@@ -263,16 +271,19 @@ jobs:
                  place, exactly as the `reading-queue.md` case above. If it
                  is already DONE-marked anywhere in reading-queue.md, the
                  paper has been filed before — stop and report that, without
-                 editing anything.
+                 editing anything. If it is in NONE of the three files, the
+                 suggestion simply lapsed before the tap was acted on: the
+                 request itself carries the title and ref, so file it
+                 exactly as the suggestion-tier case above — append the DONE
+                 line to the section — with nothing left to delete.
             5. Run `make validate` and `python -m pytest tests/ -q`; fix your
                own filing mistakes until both are green.
 
             Touch ONLY bibliography/, wiki/, reading-queue.md,
             arxiv-inbox.md and arxiv-interests.md. Do not
             commit — the workflow handles git. If the paper cannot be
-            identified confidently, or its line cannot be found in any of
-            the three files, write the reason to /tmp/filing_error.txt and
-            stop without editing anything.
+            identified confidently, write the reason to
+            /tmp/filing_error.txt and stop without editing anything.
 
       - name: Abort cleanly if Claude could not identify the paper
         if: steps.resolve.outputs.skip != 'yes' && steps.dup.outputs.skip != 'yes'
