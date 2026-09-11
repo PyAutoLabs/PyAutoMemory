@@ -41,6 +41,10 @@ status: drafted
 **Do not use for:**
 - An observed lensed-supernova sample or forecasts for Roman or JWST.
 
+## Goobar et al. 2026 — SN 2025wny I, space-based observations
+
+**Canonical BibTeX key:** `Goobar2026`
+
 ## See also
 
 - [[lensed-supernovae]]
