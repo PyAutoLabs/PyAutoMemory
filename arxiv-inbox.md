@@ -29,7 +29,6 @@ Format:
 ---
 last digest: 2026-09-10
 2026-09-07 — Probing Dark Matter with Strongly Lensed Binary Black Hole Mergers: Prospects in the Near Future — 2609.05020
-2026-09-07 — ALPACA I: Controlling source and PSF systematics in JWST time-delay cosmography with differentiable lens modeling — 2609.04312
 2026-09-09 — Harnessing stellar kinematics to constrain dark energy with the double-source-plane gravitational lens SDSS J0946+1006 — 2609.08573
 2026-09-09 — $\texttt{LensFactory.jl}$: A general-purpose strong lens modeling package — 2609.08649
 2026-09-09 — Observation-driven simulations of strong lensing galaxy clusters — 2609.07840
