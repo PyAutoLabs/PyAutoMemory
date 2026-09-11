@@ -156,9 +156,12 @@ is an open design question (EP review Phase 5).
   LogGaussian `with_limits` crash, Gamma `from_mode` variance inversely
   wrong, negative-sigma unchecked, Beta clamp no-op, etc. Decisions hub:
   PyAutoFit #1331.
-- `ParallelEPOptimiser` recomputes all cavities from the same stale mean
-  field per sweep (standard parallel-EP semantics, but different results
-  from serial) and crashes at completion when `paths=None`. (#1332 F3)
+- `ParallelEPOptimiser` (EP's own process pool across factors) recomputed
+  all cavities from the same stale mean field per sweep and crashed at
+  completion when `paths=None` (#1332 F3). Removed 2026-09-11 (PyAutoFit
+  #1611): EP never combines with Python multiprocessing (ruling 2026-09-09,
+  PyAutoFit #1608) — factor searches run serially and parallelism comes from
+  a JAX-vectorised likelihood.
 
 ## Reading
 
