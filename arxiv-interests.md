@@ -37,7 +37,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-09-11
+last digest: 2026-09-16
 2026-08-28 — [Stats] Cross-simulator transfer with foundation model summaries: Towards robust SKA-era reionization inference — 2608.26354
 2026-08-28 — [SMBHs] Optimal transport regularized dynamic radio interferometric reconstruction — 2608.27192
 2026-08-28 — [Dark Matter] The solitary star cluster of the Andromeda XXV dwarf spheroidal — 2608.26959
@@ -142,3 +142,13 @@ last digest: 2026-09-11
 2026-09-11 — [SMBHs] The THRILS Factor: Investigating the properties of Little Red Dots (LRDs) at 3<z<6 with JWST/NIRSpec — 2609.10803
 2026-09-11 — [Dark Matter] Constraints on the fuzzy dark matter mass using globular clusters in dwarf galaxies from Euclid ERO data — 2609.11328
 2026-09-11 — [Dark Matter] Probing dynamics of extreme galaxies I. Dark matter content in ultra-diffuse galaxies — 2609.10700
+2026-09-16 — [Dark Matter] Lower central dark matter densities in nearby galaxies than predicted by simulations — 2609.16740
+2026-09-16 — [Dark Matter] A Dark-matter Origin of Little Red Dots: Early Seeding and Super-Bondi Accretion — 2609.16122
+2026-09-16 — [Dark Matter] Right Energy, Wrong Profile: Why the 43 GeV Cluster Line Is Unlikely to Be Dark Matter — 2609.16425
+2026-09-16 — [Galaxy Formation / Evolution] Forged in Quenching: Morphological Transformation across Star-forming and Quiescent Galaxies in EAGLE — 2609.16187
+2026-09-16 — [Dark Matter] The Equivalence Principle in the Dark Sector in light of DESI — 2609.17423
+2026-09-16 — [SMBHs] NOCTURNE. II. Extreme radio variability in the heart of early-stage active galactic nuclei — 2609.16384
+2026-09-16 — [SMBHs] The Missing Black Hole in the Large Magellanic Cloud: A Dynamical Prediction for Its Present-Day Location — 2609.16177
+2026-09-16 — [Dark Matter] Cosmological Constrained Axion-Portal Inelastic Dark Matter for the LZ Event — 2609.17412
+2026-09-16 — [Galaxy Formation / Evolution] Population III Host Candidates at $z\sim2$: Strong He II $λ1640$ and Absent UV Metal Lines in HETDEX Ly$α$ Emitters — 2609.16134
+2026-09-16 — [SMBHs] Jet Feedback and the Self-Regulated Growth of Black Holes Embedded in AGN Disks — 2609.16167
