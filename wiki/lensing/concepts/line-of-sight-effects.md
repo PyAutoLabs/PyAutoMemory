@@ -39,11 +39,13 @@ effect is significant for both [[time-delay-cosmography|H0]] and
 - Time-delay cosmography requires κ_ext priors from LOS counting (see
   [[h0licow]], [[tdcosmo]]).
 - PyAutoLens supports multi-plane tracers; the user must decide whether
-  to use single-plane + κ_ext or full multi-plane.
+  to use single-plane + κ_ext or full multi-plane. Per-plane sheets and
+  tidal planes compose as [[mass-field|MassFields]], one per redshift.
 
 ## See also
 
 - [[external-convergence-shear]]
 - [[dark-matter-substructure]]
 - [[time-delay-cosmography]]
+- [[mass-field]]
 - [[sources-external-shear-los]]

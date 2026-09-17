@@ -40,6 +40,10 @@ Both are mandatory in any high-precision lens model.
   signal]] at the ~10–50% level (Despali 2018, He 2021).
 - [[lens-statistics|Population statistics]] inherit a bias if LOS effects
   are not modelled.
+- κ_ext and γ_ext describe the environment, not any deflector: in a
+  multi-deflector model they compose as a [[mass-field|MassField]], a
+  model object that is a peer of the galaxies rather than a property of
+  `lens_0`.
 
 ## See also
 
@@ -47,4 +51,5 @@ Both are mandatory in any high-precision lens model.
 - [[time-delay-cosmography]]
 - [[line-of-sight-effects]]
 - [[shear-ellipticity-degeneracy]]
+- [[mass-field]]
 - [[sources-external-shear-los]]

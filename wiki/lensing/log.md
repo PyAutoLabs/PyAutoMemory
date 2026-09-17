@@ -234,3 +234,21 @@ references became `[[seed-…]]`, and each index gained one *Seed (unverified
 imports)* line saying what they are. Promoting an entry means verifying the
 paper, adding its canonical key to `../../bibliography/pyautomemory.bib`, and
 moving the section into the matching `sources/` page.
+
+---
+
+## 2026-09-17 — `mass-field` entity page
+
+**By:** Claude (PyAutoLabs `massfield-entry` session).
+
+- Added `entities/mass-field.md`: the mass field as a model object — external
+  shear, mass sheets and external potentials as a peer of the galaxies with
+  its own redshift, not a property of `lens_0`. Covers the COOLEST
+  `MassField` entity (`Galan2023`) that PyAutoLens's `MassField` mirrors, the
+  one-field-per-redshift rule, the kept galaxy-attached form, the external
+  potential centre tie and the rejected designs. Delivery status stays in
+  PyAutoMind (epic `mass-field`).
+- Linked it from `entities/pyautolens.md`, `entities/herculens.md`,
+  `concepts/external-convergence-shear.md`,
+  `concepts/line-of-sight-effects.md` and the index's Software line.
+

@@ -32,7 +32,8 @@ PyAutoLens is pursuing under JAX ([[autodiff-implicit-diff]]).
 - **Lineage**: SLITronomy → Herculens code paper (`Galan2022`) →
   neural-field potentials (`Biggio2022`) → cluster/JWST applications.
 - **Interoperability**: the Herculens group authored **COOLEST**
-  (`Galan2023`), the code-independent lens-model exchange standard.
+  (`Galan2023`), the code-independent lens-model exchange standard; its
+  `MassField` entity is what PyAutoLens's [[mass-field]] mirrors.
 
 ## Papers
 

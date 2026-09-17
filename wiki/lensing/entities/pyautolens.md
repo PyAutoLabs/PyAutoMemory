@@ -25,6 +25,10 @@ PyAutoLens user / AI assistant.
 - **Inference**: PyAutoFit (nested sampling, MCMC, search chaining).
 - **Pipelines**: SLaM ([[slam-pipeline]]) for galaxy-scale chained fits.
 - **Data types**: imaging, interferometric, multi-wavelength.
+- **External fields**: shear, mass sheets and external potentials compose
+  as a [[mass-field|MassField]] — a peer of the galaxies with its own
+  `fields=` slot, mirroring COOLEST — or ride on a `Galaxy` in the
+  single-deflector form.
 - **Use cases**: substructure detection, time-delay cosmography, source
   reconstruction, lens population fits.
 
@@ -32,5 +36,6 @@ PyAutoLens user / AI assistant.
 
 - [[slam-pipeline]]
 - [[pyautofit]]
+- [[mass-field]]
 - [[lenstronomy]]
 - [[sources-lens-modeling-methods]]
