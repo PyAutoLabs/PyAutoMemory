@@ -50,3 +50,22 @@ sibling papers when reading the PDFs.
 
 Same Karpathy "LLM Wiki" pattern as the lensing sub-wiki. The largest
 sibling sub-wiki by paper count.
+
+---
+
+## 2026-09-17 — Unverified import seed split out of `sources/`
+
+**By:** Claude (Opus 5, PyAutoMemory seed-split task).
+
+**What changed:** 5 pages (87 entries, 1,487 lines) moved from `sources/` to `seed/`: `bulge-disk-decomposition`, `stellar-halos`, `halo-galaxy-connection`, `dark-matter-geometry-galaxies`, `galaxy-formation-misc`. Every
+entry on them is a filename-inferred stub from the 2026-05 PDF import whose
+canonical key still reads `TODO — no unique match found`, so none of it is
+citeable and none of it was ever claim-verified. `sources/` now holds only
+pages with at least some verified support; `seed/` holds the raw import
+waiting for it.
+
+**Nothing was deleted or rewritten** — the pages moved, their `[[sources-…]]`
+references became `[[seed-…]]`, and each index gained one *Seed (unverified
+imports)* line saying what they are. Promoting an entry means verifying the
+paper, adding its canonical key to `../../bibliography/pyautomemory.bib`, and
+moving the section into the matching `sources/` page.

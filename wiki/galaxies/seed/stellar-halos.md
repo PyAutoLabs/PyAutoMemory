@@ -208,4 +208,4 @@ to the bulge-halo decompositions in PyAutoLens.
 - [[stellar-halos]]
 - [[halo-mass-proxies]]
 - [[low-surface-brightness]]
-- [[sources-halo-galaxy-connection]]
+- [[seed-halo-galaxy-connection]]

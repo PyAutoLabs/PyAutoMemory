@@ -498,4 +498,4 @@ review collection.
 - [[etg-structure]]
 - [[stellar-mass-halo-mass-relation]]
 - [[sources-massive-ellipticals]]
-- [[sources-stellar-halos]]
+- [[seed-stellar-halos]]

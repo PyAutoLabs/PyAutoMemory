@@ -215,3 +215,22 @@ PyAutoMemory#39).
   forward-modelling pipeline (arXiv:2503.22657) was added to the bibliography
   and `sources/lens-modeling-methods.md` during the #34/#36 wiki-hygiene pass
   but never recorded here. No content change; this line closes the log gap.
+
+---
+
+## 2026-09-17 — Unverified import seed split out of `sources/`
+
+**By:** Claude (Opus 5, PyAutoMemory seed-split task).
+
+**What changed:** 1 page (5 entries, 97 lines) moved from `sources/` to `seed/`: `unclassified`. Every
+entry on them is a filename-inferred stub from the 2026-05 PDF import whose
+canonical key still reads `TODO — no unique match found`, so none of it is
+citeable and none of it was ever claim-verified. `sources/` now holds only
+pages with at least some verified support; `seed/` holds the raw import
+waiting for it.
+
+**Nothing was deleted or rewritten** — the pages moved, their `[[sources-…]]`
+references became `[[seed-…]]`, and each index gained one *Seed (unverified
+imports)* line saying what they are. Promoting an entry means verifying the
+paper, adding its canonical key to `../../bibliography/pyautomemory.bib`, and
+moving the section into the matching `sources/` page.

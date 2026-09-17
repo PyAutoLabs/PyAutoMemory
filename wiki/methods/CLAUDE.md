@@ -17,7 +17,8 @@ methods/
 ├── log.md              # append-only compilation log
 ├── concepts/           # Bayes basics, samplers, deep learning, etc.
 ├── entities/           # PyAutoFit, PolyChord, BlackJAX, jax-finufft, …
-└── sources/            # per-topic claim support
+├── sources/            # per-topic claim support
+└── seed/               # unverified 2026-05 import — never cite from here
 ```
 
 ## Schema

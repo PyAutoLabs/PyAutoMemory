@@ -369,5 +369,5 @@ methodology and applications.
 - [[sersic-profile]]
 - [[mge]]
 - [[bulge-disk-decomposition-galaxies]]
-- [[sources-bulge-disk-decomposition]]
+- [[seed-bulge-disk-decomposition]]
 - [[sources-elliptical-galaxies]]

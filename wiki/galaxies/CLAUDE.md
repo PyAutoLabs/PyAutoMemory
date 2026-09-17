@@ -18,7 +18,8 @@ galaxies/
 ├── log.md              # append-only compilation log
 ├── concepts/           # galaxy-formation & morphology topics
 ├── entities/           # surveys (MaNGA, SAMI, COSMOS-Web), notable galaxies
-└── sources/            # per-topic claim support
+├── sources/            # per-topic claim support
+└── seed/               # unverified 2026-05 import — never cite from here
 ```
 
 ## Schema

@@ -31,8 +31,7 @@ The repo has exactly **two content homes**, enforced by
   [`wiki/CLAUDE.md`](wiki/CLAUDE.md). New sub-wikis are added beside the
   existing ones, never at the repo root.
 - **`bibliography/`** — the *only* place BibTeX lives. One canonical file
-  (`pyautomemory.bib`) plus `bibkey_aliases.yaml`; never add loose `.bib`
-  files anywhere else.
+  (`pyautomemory.bib`); never add loose `.bib` files anywhere else.
 
 **Source PDFs live off-repo.** Never commit a paper (PDF/HTML, with or
 without a file extension) — read it, stub it in the right

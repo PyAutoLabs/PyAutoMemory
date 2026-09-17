@@ -28,9 +28,11 @@ Below the inbox sits the **arXiv interests list** (``arxiv-interests.md``):
 the same overnight machinery pointed at everything that is *not* strong
 lensing — black holes, dark matter, galaxy formation, statistics — as one
 day-batch of ten. It renders the same five actions per paper, plus one 🧹
-*clear* button on the batch itself: the list is a backlog rather than a timer,
-so the board shows the OLDEST un-cleared day only and clearing it reveals the
-next. ``scripts/interests_actions.py`` owns that format and those transitions.
+*clear* button on the batch itself: the board shows the OLDEST un-cleared day
+only and clearing it reveals the next. That batch carries a days-left count of
+its own, because it lapses on the inbox's window if nobody clears it — whole,
+a day at a time. ``scripts/interests_actions.py`` owns that format and those
+transitions.
 
 Both suggestion tiers also carry a **freshness line**: the date of the last digest run,
 so an empty inbox says *which* kind of empty it is — arXiv was quiet, or the
@@ -217,6 +219,7 @@ def collect(root: Path | None = None) -> dict:
         # `interests_backlog` are how much is queued behind it.
         "interests": [],
         "interests_date": None,
+        "interests_days_left": None,
         "interests_batches": 0,
         "interests_backlog": 0,
         "interests_last_digest": None,
@@ -233,7 +236,10 @@ def collect(root: Path | None = None) -> dict:
         pages = sorted(wdir.rglob("*.md"))
         stems |= {p.stem for p in pages}
         statuses: dict[str, int] = {}
-        kinds = {"concepts": 0, "entities": 0, "sources": 0}
+        # `seed/` is the 2026-05 import's unverified half, split out of
+        # `sources/`; counted separately so the sub-wiki row does not
+        # read as if those pages were verified claim support.
+        kinds = {"concepts": 0, "entities": 0, "sources": 0, "seed": 0}
         sections = 0
         todo = 0
         resolved: set[str] = set()
@@ -288,9 +294,10 @@ def collect(root: Path | None = None) -> dict:
                 papers.append(_parse_paper(line.strip()))
         _flush()
 
+    today = datetime.datetime.now(datetime.timezone.utc).date()
+
     inbox = root / inbox_actions.INBOX_FILE
     if inbox.exists():
-        today = datetime.datetime.now(datetime.timezone.utc).date()
         inbox_text = inbox.read_text(errors="replace")
         snapshot["inbox_last_digest"] = inbox_actions.last_digest(inbox_text)
         for entry in inbox_actions.papers(inbox_text):
@@ -314,12 +321,19 @@ def collect(root: Path | None = None) -> dict:
         current = interests_actions.current_batch(text)
         if current:
             snapshot["interests_date"] = current[0]
+            # The batch is what lapses, so the days-left is the batch's, not
+            # each paper's — every line in it carries the same date. Kept on
+            # the papers too so an interests paper renders like an inbox one.
+            snapshot["interests_days_left"] = interests_actions.days_left(
+                current[0], today)
             for entry in current[1]:
                 snapshot["interests"].append({
                     "title": entry["title"],
                     "ref": entry["ref"],
                     "line": entry["line"],
                     "added": entry["added"],
+                    "days_left": interests_actions.days_left(entry["added"],
+                                                             today),
                     "topic": entry["topic"],
                     "section": interests_actions.section_for(entry),
                     "done": False,
@@ -763,8 +777,13 @@ def _render_md(snapshot: dict) -> str:
                    if left else " · nothing behind it")
         clear_url = _interests_clear_url(snapshot, date, len(interests))
         clear = f" · [clear this day \U0001f9f9]({clear_url})" if clear_url else ""
+        # The batch's days-left, beside the inbox's per-line one: a batch
+        # nobody clears is swept whole on the same window.
+        dleft = snapshot.get("interests_days_left")
+        left_bit = f" · {dleft}d left" if dleft is not None else ""
         lines += [f"_{date} · {len(interests)} "
-                  f"paper{'s' if len(interests) != 1 else ''}{backlog}{clear}_",
+                  f"paper{'s' if len(interests) != 1 else ''}{left_bit}"
+                  f"{backlog}{clear}_",
                   ""]
         for p_ in interests:
             label = p_["title"].replace("[", "\\[").replace("]", "\\]")
@@ -1264,11 +1283,16 @@ def _render_html(snapshot: dict) -> str:
         # backlog depth matters most, and dropping it from the stale variant
         # hid it twice over: on a render that is already stale, and on a fresh
         # render the moment _EXTRA_JS swaps in `data-stale-text`.
+        # The batch's days-left rides on both texts too, for the same reason
+        # `behind` does: a late digest is exactly when it matters that the day
+        # on screen is about to be swept.
+        idleft = snapshot.get("interests_days_left")
+        ileft = f" · {idleft}d left" if idleft is not None else ""
         imeta = _fresh_span(
             ifresh,
             f"{len(interest_items)} paper"
-            f"{'s' if len(interest_items) != 1 else ''}{behind}",
-            f"{len(interest_items)} paper(s){behind} · {istale_tmpl}")
+            f"{'s' if len(interest_items) != 1 else ''}{ileft}{behind}",
+            f"{len(interest_items)} paper(s){ileft}{behind} · {istale_tmpl}")
         # The batch's date IS its name — this is a backlog of days, and which
         # day you are looking at is the first thing to know.
         interests_block = (
@@ -1321,7 +1345,8 @@ def _render_html(snapshot: dict) -> str:
         wiki_rows.append(
             f"<tr><td class='name'>{link}</td>"
             f"<td>{w['pages']} pages · {w.get('concepts', 0)}c/"
-            f"{w.get('entities', 0)}e/{w.get('sources', 0)}s</td>"
+            f"{w.get('entities', 0)}e/{w.get('sources', 0)}s"
+            f"{('/' + str(w['seed']) + ' seed') if w.get('seed') else ''}</td>"
             f"<td>{_bar(s)} <span class='meta'>{s.get('stub', 0)} stub · "
             f"{s.get('drafted', 0)} drafted</span> "
             f"{_copy_btn(_stub_prompt(snapshot, w['name']), 'copy: upgrade a stub')} "
@@ -1392,7 +1417,8 @@ def _render_html(snapshot: dict) -> str:
 {inbox_block}
 <h2>arXiv interests <span class="muted">(everything that is not strong
  lensing — one day's ten at a time; \U0001f9f9 clears the day and shows the
- next{interests_backlog_note})</span></h2>
+ next; un-cleared batches lapse after {inbox_actions.INBOX_WINDOW_DAYS} days
+{interests_backlog_note})</span></h2>
 {interests_block}
 <h2>Reading queue <span class="muted">({trend_bits})</span>{spark}</h2>
 {filter_box}
