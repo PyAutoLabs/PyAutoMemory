@@ -41,12 +41,15 @@ the schema in [`wiki/CLAUDE.md`](wiki/CLAUDE.md).
   that is **not** strong lensing: black holes, dark matter, galaxy formation,
   statistics. One line per paper as `<YYYY-MM-DD> — [<Topic>] <title>[ — <ref>]`,
   where the topic names the reading-queue section ➕ files it into. It differs
-  from the inbox in one way: it is a **day-batched backlog, not a timer**. Each
-  run appends that day's ten, the dashboard shows the **oldest un-cleared batch
-  only**, and one 🧹 *clear* button drops that whole day and reveals the next —
-  so a fortnight away is a fortnight of batches to cycle through, not a
-  fortnight of lost recommendations. Same five per-paper actions as the inbox.
-  Format and transitions live in `scripts/interests_actions.py`.
+  from the inbox in one way: it is **day-batched**. Each run appends that day's
+  ten, the dashboard shows the **oldest un-cleared batch only**, and one 🧹
+  *clear* button drops that whole day and reveals the next. The seven-day
+  window is the inbox's: a batch nobody clears lapses whole (`sweep` in
+  `scripts/interests_actions.py`, on `INBOX_WINDOW_DAYS`), because at a
+  measured 1.6 % clearance rate an unlapsing backlog just makes the oldest
+  batch — the one on the board — the least relevant thing on it. Same five
+  per-paper actions as the inbox. Format and transitions live in
+  `scripts/interests_actions.py`.
 - [`reading-queue.md`](reading-queue.md) — the paper queue AND the reading
   history: `## ` section headers group papers by domain, one title per line,
   and a read paper is never deleted — its line gains a `DONE <date> — `
@@ -68,7 +71,7 @@ reviewed`), and source-page layout are uniform across sub-wikis.
 ## Citation metadata
 
 The sub-wikis explain which claims papers support. Canonical BibTeX metadata,
-key aliases, downstream-project resolution rules, and validation live in
+downstream-project resolution rules, and validation live in
 [`bibliography/`](bibliography/README.md).
 
 ## Provenance
@@ -77,6 +80,9 @@ The wikis were seeded in 2026-05 from a ~615-paper personal PDF library
 (the PDFs themselves were deleted from the repo the same day, backed up
 externally). Most legacy per-paper entries remain filename-inferred stubs:
 upgrade them to compact, claim-oriented `drafted` entries only after
-verifying the paper, and log the change in the relevant sub-wiki. The live
+verifying the paper, and log the change in the relevant sub-wiki. The eight
+pages on which *every* entry is still such a stub were split out of `sources/`
+into `wiki/<domain>/seed/` — same shape, nothing citeable, promoted a paper at
+a time as each is verified. The live
 counts — pages, maturity, unresolved citation keys, reading queue — are on
 the [dashboard](https://pyautolabs.github.io/PyAutoMemory/).

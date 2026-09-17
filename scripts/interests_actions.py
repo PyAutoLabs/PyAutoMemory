@@ -1,29 +1,41 @@
-"""scripts/interests_actions.py — the arXiv interests list: append, stamp, clear, add, dismiss.
+"""scripts/interests_actions.py — the arXiv interests list: append, stamp, sweep, clear, add, dismiss.
 
 The **second** suggestion tier, sibling of ``inbox_actions.py``. The arXiv
 inbox is strong lensing only; this one is everything else the human reads for —
 black holes, dark matter, galaxy formation, statistics — as the day's ten most
 relevant non-lensing papers, written by PyAutoMind's ``arxiv_interests.yml``.
 
-It is a **day-batched backlog**, and that is the one real difference from the
-inbox:
+It is a **day-batched backlog**, and the batch is the one real difference from
+the inbox — the granularity of everything, the window included:
 
 * The inbox is a flat list on a seven-day timer: act on a line or it lapses.
-* This list never lapses. Each run appends one dated batch, the Dashboard shows
-  the **oldest un-cleared batch only**, and one 🧹 *clear* button drops that
-  whole day and reveals the next. So a week away is a week of batches to cycle
-  through, not a week of lost recommendations — the human asked to see every
-  day's ten, not the last seven days' worth of whatever survived.
+* This list is the same timer applied to a **day at a time**. Each run appends
+  one dated batch, the Dashboard shows the **oldest un-cleared batch only**, and
+  one 🧹 *clear* button drops that whole day and reveals the next — but a batch
+  nobody clears lapses in its own right after :data:`inbox_actions.INBOX_WINDOW_DAYS`
+  days, whole, exactly as an un-acted inbox line does.
+
+  It did not always. The list was built as "a backlog, not a timer — nothing
+  here lapses", on the reasoning that a fortnight away should be a fortnight of
+  batches to cycle through rather than a fortnight of lost recommendations. The
+  measurement said otherwise: of 123 papers appended, **2 were promoted to the
+  reading queue and 1 batch was cleared** — a 1.6 % clearance rate, with 114
+  entries sitting unread in 11 day-batches. A backlog nobody walks forward
+  through is not a backlog, it is a pile that makes the oldest batch (the one
+  the Dashboard shows) the least relevant thing on the board. Seven days is how
+  long a suggestion is worth looking at; after that the recommendation has aged
+  out whether or not anyone tapped 🧹.
 
 Nothing else differs. The line format is the inbox's (``<date> — <text>``) with
 one addition — an optional ``[Topic]`` naming the reading-queue section the
 ➕ button files into, because these papers span domains where the inbox's all
 route to "Strong Lensing". The per-paper actions are the same four, and the
 freshness stamp is the same line, parsed by the same code: this module imports
-``inbox_actions`` rather than restating any of it.
+``inbox_actions`` rather than restating any of it — the window and ``days_left``
+included, so there is no second literal to drift.
 
-A cleared batch is not lost — git history holds it, exactly as for a swept
-inbox line, and for the same reason: a suggestion nobody acted on is not
+A cleared or swept batch is not lost — git history holds it, exactly as for a
+swept inbox line, and for the same reason: a suggestion nobody acted on is not
 reading history.
 
 Each subcommand prints exactly one status token on stdout.
@@ -31,6 +43,7 @@ Each subcommand prints exactly one status token on stdout.
 Usage:
     python scripts/interests_actions.py append --papers-file picks.json
     python scripts/interests_actions.py stamp
+    python scripts/interests_actions.py sweep
     python scripts/interests_actions.py clear   --date 2026-08-25
     python scripts/interests_actions.py add     --body-file /tmp/issue_body.txt
     python scripts/interests_actions.py dismiss --body-file /tmp/issue_body.txt
@@ -173,6 +186,40 @@ def append(interests_text: str, known_texts: list[str], entries: list[dict],
     return "\n".join(lines) + "\n", len(fresh)
 
 
+def days_left(date: str, today: datetime.date) -> int:
+    """Days a batch has left before it lapses — the inbox's window, unchanged.
+
+    A one-line passthrough on purpose: the window and the arithmetic have one
+    owner (``inbox_actions``), and callers that want a batch's days-left (the
+    board's column, the sweep below) should not have to know that.
+    """
+    return inbox_actions.days_left(date, today)
+
+
+def sweep(interests_text: str,
+          today: datetime.date) -> tuple[str, list[tuple[str, int]]]:
+    """Drop every batch past the window. Returns ``(new_text, lapsed)``.
+
+    ``lapsed`` is ``[(date, papers_dropped)]``, oldest first. A **whole day**
+    goes or none of it does: the 🧹 button acts on a day, so the day is the unit
+    the human works in and the unit that ages out. Like the inbox's sweep this
+    is idempotent — a second run finds nothing left to drop — and what it drops
+    stays in git history.
+    """
+    lapsed = [(date, len(batch)) for date, batch in batches(interests_text)
+              if days_left(date, today) == 0]
+    if not lapsed:
+        return interests_text, []
+    dead = {date for date, _ in lapsed}
+    out = []
+    for raw in interests_text.rstrip("\n").splitlines():
+        parsed = parse_line(raw)
+        if parsed and parsed[0] in dead:
+            continue
+        out.append(raw)
+    return "\n".join(out) + "\n", lapsed
+
+
 def clear(interests_text: str, date: str) -> tuple[str, int]:
     """Drop a whole day's batch. Returns ``(new_text, dropped_count)``.
 
@@ -267,6 +314,17 @@ def _cmd_stamp(ns) -> tuple[str, int]:
     return (f"stamped:{date}", 0)
 
 
+def _cmd_sweep(ns) -> tuple[str, int]:
+    interests = Path(ns.interests)
+    text, lapsed = sweep(interests.read_text(errors="replace"), _today(ns))
+    if lapsed:
+        interests.write_text(text)
+        for date, n in lapsed:
+            print(f"lapsed: {date} ({n} paper{'s' if n != 1 else ''})",
+                  file=sys.stderr)
+    return (f"swept:{sum(n for _, n in lapsed)}", 0)
+
+
 def _cmd_clear(ns) -> tuple[str, int]:
     interests = Path(ns.interests)
     text = interests.read_text(errors="replace")
@@ -340,6 +398,9 @@ def main(argv: list[str] | None = None) -> int:
 
     p = sub.add_parser("stamp", help="record that the digest ran today")
     p.set_defaults(fn=_cmd_stamp)
+
+    p = sub.add_parser("sweep", help="drop whole batches past the window")
+    p.set_defaults(fn=_cmd_sweep)
 
     p = sub.add_parser("clear", help="drop a whole day's batch")
     p.add_argument("--date", dest="batch_date", default=None,

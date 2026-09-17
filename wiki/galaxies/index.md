@@ -82,16 +82,18 @@ These pages describe claim support. Canonical citation metadata and key-manageme
 live in [`../../bibliography/`](../../bibliography/README.md).
 
 - [[sources-elliptical-galaxies]]
-- [[sources-bulge-disk-decomposition]]
 - [[sources-light-profile-fitting]]
 - [[sources-ifu-spectroscopy]]
 - [[sources-kinematics-galaxies]]
 - [[sources-cosmos-survey]]
-- [[sources-stellar-halos]]
-- [[sources-halo-galaxy-connection]]
 - [[sources-high-redshift]]
-- [[sources-dark-matter-geometry-galaxies]]
-- [[sources-galaxy-formation-misc]]
+- **Seed (unverified imports):** [[seed-bulge-disk-decomposition]],
+  [[seed-stellar-halos]], [[seed-halo-galaxy-connection]],
+  [[seed-dark-matter-geometry-galaxies]], [[seed-galaxy-formation-misc]] —
+  filename-inferred stubs from the 2026-05 PDF import, every entry still
+  reading `Canonical BibTeX key: TODO — no unique match found`. They live in
+  `seed/`, not `sources/`, and **nothing in them may be cited** until the paper
+  itself is verified and the entry promoted into the matching `sources/` page.
 
 ## Meta
 

@@ -80,6 +80,20 @@ def _snap_with_remote(tmp_path):
     return snap
 
 
+def test_seed_pages_are_counted_apart_from_sources(tmp_path):
+    # `seed/` is the unverified import; a sub-wiki row that folded it into
+    # `sources` would read as if those pages were verified claim support.
+    root = _tree(tmp_path)
+    seed = root / "wiki" / "demo" / "seed"
+    seed.mkdir()
+    (seed / "unverified.md").write_text(
+        "---\ntitle: Seed\ntype: sources\nstatus: stub\n---\n\n"
+        "## One\n**Canonical BibTeX key:** TODO — no unique match found.\n")
+    (w,) = board.collect(root)["wikis"]
+    assert (w["sources"], w["seed"], w["pages"]) == (1, 1, 4)
+    assert "1 seed" in board.render(board.collect(root), "html")
+
+
 def test_counts_from_a_synthetic_tree(tmp_path):
     snap = board.collect(_tree(tmp_path))
     (w,) = snap["wikis"]

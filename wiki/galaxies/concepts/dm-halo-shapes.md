@@ -45,9 +45,9 @@ parameters — a possible systematic on inferred shear / convergence.
 
 ## Key references
 
-- Satellite alignment statistics: [[sources-dark-matter-geometry-galaxies]].
+- Satellite alignment statistics: [[seed-dark-matter-geometry-galaxies]].
 - Intrinsic ETG shapes: [[sources-ifu-spectroscopy#weijmans-2014-intrinsic-shape-etg-kinematic-misalignments]].
-- Hydrodynamic comparison: [[sources-dark-matter-geometry-galaxies#tenneti-2015-intrinsic-alignment-disk-etg]].
+- Hydrodynamic comparison: [[seed-dark-matter-geometry-galaxies#tenneti-2015-intrinsic-alignment-disk-etg]].
 
 ## See also
 

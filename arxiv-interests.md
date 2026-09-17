@@ -16,18 +16,28 @@ Format:
   into — these papers span domains, so unlike the strong-lensing inbox there is
   no single destination. A topic naming no real section falls back to
   `## Interests` (`FALLBACK_SECTION` in `scripts/interests_actions.py`).
-- **A backlog, not a timer.** Nothing here lapses. The Dashboard shows the
-  **oldest un-cleared batch only**, and its 🧹 *clear* button drops that whole
-  day and reveals the next — so a fortnight away is a fortnight of batches to
-  cycle through, one tap each, not a fortnight of lost recommendations. This is
-  the one way this list differs from `arxiv-inbox.md`, which lapses after seven
-  days.
+- **A backlog on the inbox's timer.** The Dashboard shows the **oldest
+  un-cleared batch only**, and its 🧹 *clear* button drops that whole day and
+  reveals the next — but a batch nobody clears **lapses after 7 days**
+  (`INBOX_WINDOW_DAYS` in `scripts/inbox_actions.py`, reused by
+  `interests_actions.py sweep`) and is swept by the nightly job. The batch is
+  the unit: the whole day goes, never part of one.
+
+  This list was built the other way — "a backlog, not a timer; nothing here
+  lapses" — so that a fortnight away would be a fortnight of batches to cycle
+  through rather than a fortnight of lost recommendations. The measurement
+  said otherwise: of 123 papers appended, **2 reached the reading queue and 1
+  batch was cleared** — a 1.6 % clearance rate, leaving 114 entries in 11
+  day-batches unread. A backlog nobody walks forward through is not a backlog,
+  and it makes the oldest batch — the one the Dashboard shows — the least
+  relevant thing on the board. Seven days is how long a suggestion is worth
+  looking at; the same rule as `arxiv-inbox.md`, applied a day at a time.
 - Each paper carries the same one-tap actions as the inbox: 📄 straight to the
   PDF, ➕ add to the reading queue, 📥 intake into memory, 📑 make citeable,
   ✖️ dismiss.
-- A cleared batch is not lost: git history holds it. Same reasoning as the
-  inbox sweep — the never-delete rule in `reading-queue.md` protects *reading
-  history*, and an un-acted suggestion is not history.
+- A cleared or swept batch is not lost: git history holds it. Same reasoning as
+  the inbox sweep — the never-delete rule in `reading-queue.md` protects
+  *reading history*, and an un-acted suggestion is not history.
 - One `last digest: <YYYY-MM-DD>` line, directly below the `---`, records the
   last run of the nightly digest — **papers or none** — so an empty list says
   *which* kind of empty it is: dated today it is a genuinely quiet day, four

@@ -109,7 +109,11 @@ live in [`../../bibliography/`](../../bibliography/README.md).
 - [[sources-gr-cosmology]]
 - [[sources-specific-lenses]]
 - [[sources-galaxy-formation]]
-- [[sources-unclassified]]
+- **Seed (unverified imports):** [[seed-unclassified]] — filename-inferred
+  stubs from the 2026-05 PDF import, every entry still reading `Canonical
+  BibTeX key: TODO — no unique match found`. They live in `seed/`, not
+  `sources/`, and **nothing in them may be cited** until the paper itself is
+  verified and the entry promoted into the matching `sources/` page.
 
 ## Meta
 

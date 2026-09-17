@@ -104,3 +104,22 @@ three crash-level bugs found and fixed (from_dict 0.0-drop, AggregateFITS fd
 leak at ~500 results, database slicing inversion). Durable methodology lessons
 (fresh-Aggregator staging, idle-machine grids, interleaved A/B under load)
 recorded. Cross-linked from index.md (Software ecosystem).
+
+---
+
+## 2026-09-17 — Unverified import seed split out of `sources/`
+
+**By:** Claude (Opus 5, PyAutoMemory seed-split task).
+
+**What changed:** 2 pages (8 entries, 163 lines) moved from `sources/` to `seed/`: `deep-learning-methods`, `medical-imaging-adjacents`. Every
+entry on them is a filename-inferred stub from the 2026-05 PDF import whose
+canonical key still reads `TODO — no unique match found`, so none of it is
+citeable and none of it was ever claim-verified. `sources/` now holds only
+pages with at least some verified support; `seed/` holds the raw import
+waiting for it.
+
+**Nothing was deleted or rewritten** — the pages moved, their `[[sources-…]]`
+references became `[[seed-…]]`, and each index gained one *Seed (unverified
+imports)* line saying what they are. Promoting an entry means verifying the
+paper, adding its canonical key to `../../bibliography/pyautomemory.bib`, and
+moving the section into the matching `sources/` page.

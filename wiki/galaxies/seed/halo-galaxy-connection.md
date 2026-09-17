@@ -126,5 +126,5 @@ occupation.
 
 - [[stellar-to-halo-mass]]
 - [[halo-occupation]]
-- [[sources-stellar-halos]]
+- [[seed-stellar-halos]]
 - [[sources-mass-models]]

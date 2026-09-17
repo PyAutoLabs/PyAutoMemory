@@ -1,15 +1,17 @@
 """tests/test_interests_actions.py — the arXiv interests list.
 
-The list's contract, and specifically the two things that make it NOT the
+The list's contract, and specifically the thing that makes it NOT the
 strong-lensing inbox: it is grouped into day batches with the oldest one
-current, and `clear` drops a whole day rather than a line lapsing on a timer.
-Everything else — line format, dedup, the add/dismiss transitions — is the
-inbox's contract, tested here because this module owns the `[Topic]` the inbox
-lines do not carry.
+current, so `clear` and `sweep` both act on a whole day where the inbox acts on
+a line. The window itself is the inbox's — a batch nobody clears lapses after
+`INBOX_WINDOW_DAYS`. Everything else — line format, dedup, the add/dismiss
+transitions — is the inbox's contract, tested here because this module owns the
+`[Topic]` the inbox lines do not carry.
 """
 
 from __future__ import annotations
 
+import datetime
 import json
 import sys
 from pathlib import Path
@@ -18,6 +20,7 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
+import inbox_actions as ib  # noqa: E402
 import interests_actions as ia  # noqa: E402
 
 LIST = """# arXiv interests
@@ -197,6 +200,48 @@ def test_clear_keeps_the_prose_and_the_stamp():
     assert "last digest: 2026-08-27" in text
 
 
+
+# --- sweep --------------------------------------------------------------------
+def _day(iso):
+    return datetime.date.fromisoformat(iso)
+
+
+def test_days_left_is_the_inboxs_window_unchanged():
+    # One owner for the number. If the inbox's window moves, this moves with it.
+    today = _day("2026-08-27")
+    assert ia.days_left("2026-08-25", today) == ib.days_left("2026-08-25", today)
+    assert ia.days_left("2026-08-25", today) == ib.INBOX_WINDOW_DAYS - 2
+
+
+def test_sweep_drops_only_batches_past_the_window():
+    # 2026-08-25 is seven days old on 2026-09-01; 2026-08-26 has a day left.
+    text, lapsed = ia.sweep(LIST, _day("2026-09-01"))
+    assert lapsed == [("2026-08-25", 2)]
+    assert [p["added"] for p in ia.papers(text)] == ["2026-08-26"]
+
+
+def test_sweep_takes_the_whole_batch_never_part_of_one():
+    text, lapsed = ia.sweep(LIST, _day("2026-09-03"))
+    assert lapsed == [("2026-08-25", 2), ("2026-08-26", 1)]
+    assert ia.papers(text) == []
+    # The prose header and the freshness stamp are not papers and must survive.
+    assert "Prose header, not papers." in text
+    assert "last digest: 2026-08-27" in text
+
+
+def test_sweep_leaves_a_fresh_list_untouched():
+    text, lapsed = ia.sweep(LIST, _day("2026-08-27"))
+    assert lapsed == []
+    assert text == LIST
+
+
+def test_sweep_is_idempotent():
+    once, first = ia.sweep(LIST, _day("2026-09-01"))
+    twice, second = ia.sweep(once, _day("2026-09-01"))
+    assert second == []
+    assert twice == once
+
+
 # --- remove / add_to_queue ----------------------------------------------------
 def test_remove_takes_the_line_as_written():
     line = "2026-08-25 — [SMBHs] A tidal disruption event — 2608.30001"
@@ -281,6 +326,23 @@ def test_cli_append_and_stamp(repo, capsys):
     text = (repo / "arxiv-interests.md").read_text()
     assert "last digest: 2026-08-28" in text
     assert "2026-08-28 — [Stats] A new paper — 2608.50001" in text
+
+
+def test_cli_sweep_drops_lapsed_batches(repo, capsys):
+    assert _run(repo, "--today", "2026-09-01", "sweep") == 0
+    out = capsys.readouterr()
+    assert out.out.strip() == "swept:2"
+    assert "lapsed: 2026-08-25 (2 papers)" in out.err
+    text = (repo / "arxiv-interests.md").read_text()
+    assert "2608.30001" not in text
+    assert "2608.30004" in text
+
+
+def test_cli_sweep_reports_a_quiet_run_without_touching_the_file(repo, capsys):
+    before = (repo / "arxiv-interests.md").read_text()
+    assert _run(repo, "--today", "2026-08-27", "sweep") == 0
+    assert capsys.readouterr().out.strip() == "swept:0"
+    assert (repo / "arxiv-interests.md").read_text() == before
 
 
 def test_cli_clear_by_date_then_by_body(repo, capsys):
