@@ -1,6 +1,6 @@
 # Galaxies Wiki — Index
 
-Top-level navigation. See `CLAUDE.md` for the schema and how the assistant
+Top-level navigation. See [AGENTS.md](AGENTS.md) for the schema and how the assistant
 should use this wiki.
 
 ## Start here
@@ -97,5 +97,5 @@ live in [`../../bibliography/`](../../bibliography/README.md).
 
 ## Meta
 
-- [[CLAUDE]] — schema and usage rules.
+- [AGENTS.md](AGENTS.md) — schema and usage rules.
 - [[log]] — compilation history.

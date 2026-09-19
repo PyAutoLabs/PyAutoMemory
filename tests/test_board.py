@@ -175,7 +175,7 @@ def test_work_queue_prompts_reference_the_documented_workflow(tmp_path):
     assert "reading-queue.md" in html          # file-the-next-paper prompt
     assert "make validate" in html             # every prompt ends at the gate
     assert "/memory demo" in html              # the recall chip
-    assert "wiki/CLAUDE.md" in html            # the schema anchor
+    assert "wiki/AGENTS.md" in html            # the schema anchor
 
 
 def test_paper_links_and_issue_actions(tmp_path):

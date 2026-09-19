@@ -28,7 +28,7 @@ The repo has exactly **two content homes**, enforced by
 `make validate-structure` (CI runs it on every push/PR):
 
 - **`wiki/<domain>/`** — every sub-wiki, following the shared schema in
-  [`wiki/CLAUDE.md`](wiki/CLAUDE.md). New sub-wikis are added beside the
+  [`wiki/AGENTS.md`](wiki/AGENTS.md). New sub-wikis are added beside the
   existing ones, never at the repo root.
 - **`bibliography/`** — the *only* place BibTeX lives. One canonical file
   (`pyautomemory.bib`); never add loose `.bib` files anywhere else.

@@ -79,7 +79,7 @@ and the claim support together, then passes `make validate` (CI-enforced on
 every push).
 
 The wiki schema is defined in
-[`wiki/CLAUDE.md`](wiki/CLAUDE.md) and inherited by every
+[`wiki/AGENTS.md`](wiki/AGENTS.md) and inherited by every
 sub-wiki. How agents should read this repo: [AGENTS.md](AGENTS.md). The
 organism this repo is the Memory of:
 [PyAutoBrain/ORGANISM.md](https://github.com/PyAutoLabs/PyAutoBrain/blob/main/ORGANISM.md),

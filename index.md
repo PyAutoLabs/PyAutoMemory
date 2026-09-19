@@ -3,7 +3,7 @@
 The PyAuto organism's long-term knowledge: a multi-domain knowledge base of
 accumulated scientific and project knowledge, organised as several
 Karpathy-style LLM wikis over a shared canonical bibliography. Each sub-wiki uses
-the schema in [`wiki/CLAUDE.md`](wiki/CLAUDE.md).
+the schema in [`wiki/AGENTS.md`](wiki/AGENTS.md).
 
 ## Sub-wikis
 
@@ -62,8 +62,8 @@ the schema in [`wiki/CLAUDE.md`](wiki/CLAUDE.md).
 ## Schema
 
 The schema is defined once in
-[`wiki/CLAUDE.md`](wiki/CLAUDE.md) and inherited by
-all sub-wikis. Each sub-wiki has its own `CLAUDE.md` that diverges
+[`wiki/AGENTS.md`](wiki/AGENTS.md) and inherited by
+all sub-wikis. Each sub-wiki has its own `AGENTS.md` that diverges
 only on the `## Scope` section. Per-page frontmatter, naming
 conventions, `[[wiki-links]]`, status flags (`stub | drafted |
 reviewed`), and source-page layout are uniform across sub-wikis.
