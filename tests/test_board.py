@@ -24,6 +24,29 @@ import interests_actions  # noqa: E402
 
 BODY_MARKER = "the-secret-claim-text-that-must-never-leak"
 
+
+def test_theme_finds_grouped_brain_from_outer_workspace(tmp_path, monkeypatch):
+    brain_board = tmp_path / "organs" / "PyAutoBrain" / "board"
+    brain_board.mkdir(parents=True)
+    (brain_board / "_theme.py").write_text("GROUPED_THEME = True\n")
+    monkeypatch.setenv("PYAUTO_ROOT", str(tmp_path))
+    monkeypatch.setattr(board, "MEMORY_HOME", tmp_path / "PyAutoMemory")
+    monkeypatch.delitem(sys.modules, "_theme", raising=False)
+    monkeypatch.setattr(sys, "path", sys.path.copy())
+    try:
+        assert board.theme().GROUPED_THEME
+    finally:
+        sys.modules.pop("_theme", None)
+
+
+def test_workspace_root_marker_stays_at_outer_root(tmp_path, monkeypatch):
+    memory = tmp_path / "organs" / "PyAutoMemory"
+    memory.mkdir(parents=True)
+    (tmp_path / ".pyauto-root").touch()
+    monkeypatch.delenv("PYAUTO_ROOT", raising=False)
+    monkeypatch.setattr(board, "MEMORY_HOME", memory)
+    assert board._workspace_root() == tmp_path
+
 # The freshness/staleness banners are computed against `snapshot["generated"]`,
 # so a fixture with fixed dates and a live clock ages out of its own window and
 # the suite goes red on a calendar day rather than on a code change (it did, on
