@@ -28,7 +28,7 @@ Papers waiting to be read and filed. Format:
   - A line that is *only* an arXiv link is still a paper — the title was just
     never written, so the board labels it `arXiv:<id>`.
 - Filing a read paper: add its canonical entry to `bibliography/`, stub it in
-  the matching `wiki/<domain>/sources/*.md` page per `wiki/CLAUDE.md`, then
+  the matching `wiki/<domain>/sources/*.md` page per `wiki/AGENTS.md`, then
   mark the line DONE and run `make validate`.
 
 (Moved from `admin_jammy/papers.md` on 2026-05-22, when this repo — then

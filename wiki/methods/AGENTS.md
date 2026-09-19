@@ -1,4 +1,57 @@
-# Agent Instructions
+# Methods AI Assistant — Statistical & Computational Methods Wiki
 
-Read `CLAUDE.md` in this directory. It is the shared source of truth for local
-agent instructions; adapt Claude-specific wording to the current agent.
+This sub-wiki gives an AI assistant the scientific context of the
+**methodological** tooling that underpins PyAutoLens, PyAutoFit, and
+related codes: Bayesian inference, nested and Hamiltonian sampling,
+deep learning for astrophysics, probabilistic programming languages,
+linear-algebra primitives (NUFFT, message passing), and the wider
+scientific-software ecosystem. Sibling of `../lensing/` under
+`PyAutoMemory/`, same Karpathy "LLM Wiki" pattern.
+
+## Layout
+
+```
+methods/
+├── AGENTS.md           # this file — schema + scope
+├── index.md            # top-level navigation
+├── log.md              # append-only compilation log
+├── concepts/           # Bayes basics, samplers, deep learning, etc.
+├── entities/           # PyAutoFit, PolyChord, BlackJAX, jax-finufft, …
+├── sources/            # per-topic claim support
+└── seed/               # unverified 2026-05 import — never cite from here
+```
+
+## Schema
+
+Inherits verbatim from [`../AGENTS.md`](../AGENTS.md).
+
+## Scope
+
+In-scope folders:
+
+- `Stats/` — Bayesian methods, likelihood-free inference, MCMC,
+  sampler comparisons.
+- `GaussianLinearModels/` — Gaussian linear models, conjugate priors,
+  closed-form posteriors used in linear inversion.
+- `PPLs/` — probabilistic programming languages (Stan, PyMC, NumPyro,
+  Pyro, etc.).
+- `Deep Learning/` — CNNs, BNNs, simulation-based inference applied
+  to astrophysics (cross-references `../lensing/sources-deep-learning-lensing.md`).
+- `Software/` — general-purpose scientific software references (samplers,
+  optimisers, JAX ecosystem).
+- `Simulation/` — Monte Carlo simulation methodology, hierarchical
+  forward modelling.
+- Root-level `PolyChord.pdf`, `linearalgebra.pdf`, `NUFFTPAper.pdf`,
+  `PYNUFFT.pdf`, `MessagePassingIsAWayOfLife.pdf`, `BigData.pdf`,
+  `PyLops` (folder), `imfit.pdf`, `Profit2019.pdf`.
+
+Adjacent topics that link out:
+- Lens-modelling-specific Bayesian / regularisation methods —
+  `../lensing/concepts/bayesian-inference-lensing.md` and
+  `../lensing/concepts/regularization.md`.
+- Mass-model / source-reconstruction software entities —
+  `../lensing/entities/{pyautolens,pyautofit,lenstronomy}.md`.
+
+## How the assistant should use this wiki
+
+Same protocol as `../AGENTS.md`.

@@ -1,8 +1,8 @@
 """Resolve every ``[[wikilink]]`` in the wiki against the pages that exist.
 
-``[[slug]]`` is the wiki's cross-reference mechanism (``wiki/CLAUDE.md``,
+``[[slug]]`` is the wiki's cross-reference mechanism (``wiki/AGENTS.md``,
 "Cross-references"): a slug is a page's filename without ``.md``, slugs are
-unique across sub-wikis so a link needs no path (``wiki/smbh/CLAUDE.md``), and
+unique across sub-wikis so a link needs no path (``wiki/smbh/AGENTS.md``), and
 a link with no target yet is *legal* — it marks a page somebody meant to write.
 
 That last rule is why this lint is a **ratchet, not a gate**. The wiki carries
@@ -64,7 +64,7 @@ PREFIXED_FOLDERS = ("sources", "seed")
 
 #: The schema page itself is documentation *of* the syntax, not a page of
 #: references: every example slug in it is illustrative.
-SKIP_FILES = ("wiki/CLAUDE.md",)
+SKIP_FILES = ("wiki/AGENTS.md", "wiki/CLAUDE.md")
 
 
 def strip_code(text: str) -> str:

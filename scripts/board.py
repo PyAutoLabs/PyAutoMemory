@@ -5,7 +5,7 @@ waiting to be read, which paper sections still need a canonical BibTeX key,
 how mature each sub-wiki is — each work queue carrying a one-tap 📋 copy
 block holding a paste-ready Claude Code prompt that executes this repo's own
 documented workflow (``bibliography/README.md`` "Adding a paper",
-``wiki/CLAUDE.md``'s schema) — plus contents cards with ``/memory <domain>``
+``wiki/AGENTS.md``'s schema) — plus contents cards with ``/memory <domain>``
 recall chips. Reading-queue sections expand to the individual papers: each
 title links out to the arXiv abstract page (or, when the line carries no ref,
 a title search — see ``scripts/arxiv_refs.py``), carries a 📄 button onto the
@@ -508,7 +508,7 @@ def _queue_issue_url(snapshot: dict, section: str, paper: dict,
                 f"{where}\n\n"
                 f"{notes}\n\n"
                 "Workflow (bibliography/README.md \"Adding a paper\", "
-                "wiki/CLAUDE.md): verify the paper against an authoritative "
+                "wiki/AGENTS.md): verify the paper against an authoritative "
                 "record, add its canonical entry to the bibliography/ BibTeX "
                 "file, add a minimal section to the matching "
                 "wiki/<domain>/sources/ page — canonical key plus the notes "
@@ -522,7 +522,7 @@ def _queue_issue_url(snapshot: dict, section: str, paper: dict,
                 f"{where}\n\n"
                 f"{notes}\n\n"
                 "Workflow (bibliography/README.md \"Adding a paper\", "
-                "wiki/CLAUDE.md): verify the paper against an authoritative "
+                "wiki/AGENTS.md): verify the paper against an authoritative "
                 "record, add its canonical entry to the bibliography/ BibTeX "
                 "file, stub it in the matching wiki/<domain>/sources/ page — "
                 "incorporating the notes above — mark its queue line "
@@ -661,7 +661,7 @@ def _read_prompt(snapshot: dict, section: str) -> str:
             f"{repo}/reading-queue.md: verify it against an authoritative "
             f"record, add its canonical entry to the bibliography/ BibTeX "
             f"file, stub it in the matching wiki/<domain>/sources/ page per "
-            f"wiki/CLAUDE.md, mark its queue line 'DONE <date> — <title>', "
+            f"wiki/AGENTS.md, mark its queue line 'DONE <date> — <title>', "
             f"and run make validate.")
 
 
@@ -678,7 +678,7 @@ def _stub_prompt(snapshot: dict, wiki: str) -> str:
     repo = snapshot.get("repo") or "the memory repo"
     return (f"Upgrade one stub page in {repo}/wiki/{wiki}/ to drafted: verify "
             f"its claims against the cited sources, expand it per the schema "
-            f"in wiki/CLAUDE.md, set status: drafted, and run make validate.")
+            f"in wiki/AGENTS.md, set status: drafted, and run make validate.")
 
 
 def _inbox_freshness(snapshot: dict, key: str = "inbox_last_digest") -> dict:
