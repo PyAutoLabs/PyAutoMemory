@@ -11,7 +11,10 @@ queue. Neither test touches the network: the resolver's HTTP call is injected.
 from __future__ import annotations
 
 import sys
+import urllib.error
 from pathlib import Path
+
+import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
@@ -181,7 +184,7 @@ def test_a_broader_query_does_not_mean_a_looser_match():
         query=fake) is None
 
 
-def test_resolve_title_is_injectable_and_survives_a_dead_api():
+def test_resolve_title_is_injectable_and_reports_a_dead_api():
     calls = []
 
     def fake(params):
@@ -195,7 +198,25 @@ def test_resolve_title_is_injectable_and_survives_a_dead_api():
     def dead(params):
         raise OSError("arxiv is down")
 
-    assert arxiv_refs.resolve_title("Anything", query=dead) is None
+    with pytest.raises(arxiv_refs.ArxivAPIError):
+        arxiv_refs.resolve_title("Anything", query=dead)
+
+
+def test_api_query_falls_back_to_curl_on_urllib_406(monkeypatch):
+    def rejected(*args, **kwargs):
+        raise urllib.error.HTTPError(
+            "https://export.arxiv.org/api/query", 406, "edge refusal", {}, None
+        )
+
+    seen = []
+    monkeypatch.setattr(arxiv_refs.urllib.request, "urlopen", rejected)
+    monkeypatch.setattr(
+        arxiv_refs, "_curl_get",
+        lambda url: seen.append(url) or b"<feed/>",
+    )
+
+    assert arxiv_refs._api_query({"search_query": "all:test"}, delays=()) == b"<feed/>"
+    assert len(seen) == 1
 
 
 # --- the backfill -------------------------------------------------------------
@@ -262,6 +283,45 @@ def test_backfill_limit_caps_the_arxiv_calls(tmp_path):
     backfill.backfill(root, write=True, limit=2, resolve=resolve,
                       sleep=lambda _: None, log=lambda *a: None)
     assert len(seen) == 2
+
+
+def test_backfill_reports_transport_failure_without_marking(tmp_path):
+    root = _tree(tmp_path)
+    before_queue = (root / "reading-queue.md").read_text()
+
+    def failed(_title):
+        raise arxiv_refs.ArxivAPIError("HTTP 406 after retries")
+
+    stats = backfill.backfill(
+        root,
+        write=True,
+        limit=10,
+        mark_unresolved=True,
+        resolve=failed,
+        sleep=lambda _: None,
+        log=lambda *a: None,
+    )
+
+    assert stats["api_failed"] == 1
+    assert stats["unmatched"] == 0
+    assert stats["marked"] == 0
+    assert (root / "reading-queue.md").read_text() == before_queue
+
+
+def test_main_exits_nonzero_when_the_api_failed(monkeypatch, tmp_path):
+    monkeypatch.setattr(
+        backfill,
+        "backfill",
+        lambda *args, **kwargs: {
+            "scanned": 3,
+            "matched": 0,
+            "unmatched": 0,
+            "api_failed": 1,
+            "marked": 0,
+            "files": [],
+        },
+    )
+    assert backfill.main(["--root", str(tmp_path)]) == 1
 
 
 def test_backfill_is_idempotent(tmp_path):
