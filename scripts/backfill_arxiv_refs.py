@@ -122,9 +122,10 @@ def backfill(root: Path, *, write: bool, limit: int, mark_unresolved: bool = Fal
     so no later run asks about it again — a human-driven cleanup, never the
     nightly's own decision (see :func:`mark_unresolved_line`).
     """
-    stats = {"scanned": 0, "matched": 0, "unmatched": 0, "marked": 0,
-             "files": []}
+    stats = {"scanned": 0, "matched": 0, "unmatched": 0, "api_failed": 0,
+             "marked": 0, "files": []}
     budget = limit
+    api_down = False
     for name in TARGETS:
         path = root / name
         if not path.exists():
@@ -137,7 +138,17 @@ def backfill(root: Path, *, write: bool, limit: int, mark_unresolved: bool = Fal
             if budget <= 0:
                 break
             budget -= 1
-            ref = resolve(title)
+            try:
+                ref = resolve(title)
+            except arxiv_refs.ArxivAPIError as e:
+                # A transport failure is not a negative identification. Stop
+                # here: another title would hit the same dead endpoint, and
+                # --mark-unresolved must never turn an outage into permanent
+                # NOTE markers.
+                stats["api_failed"] += 1
+                api_down = True
+                log(f"  ! arXiv API failure   {title[:90]} ({e})")
+                break
             if ref:
                 lines[idx] = apply_ref(lines[idx], ref)
                 changed += 1
@@ -162,8 +173,11 @@ def backfill(root: Path, *, write: bool, limit: int, mark_unresolved: bool = Fal
             if write:
                 path.write_text("\n".join(lines) + "\n")
         marked = f", {file_marked} NOTE-marked" if file_marked else ""
+        failed = f", {stats['api_failed']} API failure" if stats["api_failed"] else ""
         log(f"{name}: {len(todo)} ref-less, {changed - file_marked} resolved"
-            f"{marked}{'' if write else ' (dry run — nothing written)'}")
+            f"{marked}{failed}{'' if write else ' (dry run — nothing written)'}")
+        if api_down:
+            break
     return stats
 
 
@@ -185,12 +199,13 @@ def main(argv: list[str] | None = None) -> int:
     stats = backfill(args.root, write=args.write, limit=args.limit,
                      mark_unresolved=args.mark_unresolved)
     marked = f", {stats['marked']} NOTE-marked" if stats["marked"] else ""
+    failed = f", {stats['api_failed']} API failure" if stats["api_failed"] else ""
     print(f"\n{stats['matched']} resolved, {stats['unmatched']} unresolved"
-          f"{marked}, {stats['scanned']} ref-less lines in total.")
-    # Not an error: an unresolved title is a normal outcome (not on arXiv, or
-    # too ambiguous to be safe), and a run that resolves nothing must not fail
-    # the nightly job.
-    return 0
+          f"{marked}{failed}, {stats['scanned']} ref-less lines in total.")
+    # A genuine no-match is normal and stays exit 0. A transport failure is a
+    # broken run: after _api_query has already exhausted its retry ladder we
+    # stop rather than misreporting the whole queue as unresolved.
+    return 1 if stats["api_failed"] else 0
 
 
 if __name__ == "__main__":
