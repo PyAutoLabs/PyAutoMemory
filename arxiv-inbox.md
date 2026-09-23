@@ -27,9 +27,4 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-09-16
-2026-09-10 — Associating binary black holes with galactic centres using lensed gravitational waves — 2609.10285
-2026-09-10 — TDCOSMO XXX: Spatially resolved kinematics of the deflectors in time-delay lens systems B1608+656 and SDSSJ1206+4332 from JWST-NIRSpec observation — 2609.09411
-2026-09-10 — Chasing Cosmic Reionization: An Extremely Faint Highly Magnified Source at $z=5.66$ with high $ξ_{\rm ion}$ — 2609.09281
-2026-09-11 — TDCOSMO XXXI: New techniques in line-of-sight studies of time delay lenses — 2609.11652
-2026-09-16 — Gravitational lensing of gravitational waves by galaxy clusters — 2609.16891
+last digest: 2026-09-23
