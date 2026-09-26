@@ -55,13 +55,13 @@ counts, reading-queue sections, wikilink totals. Repo identity (for links)
 derives from ``git remote`` — nothing is hardcoded, so the script travels
 into spawned templates unchanged.
 
-Published by ``.github/workflows/knowledge_board.yml`` (Pages + badge + the
-README ``memory:begin/end`` strip). Nothing is committed —
-``validate_structure.py`` bans ``.html`` and gates the root allowlist, so the
+Published by ``.github/workflows/knowledge_board.yml`` (Pages + badge.json +
+state.json, the organ-cockpit feed, + the README ``memory:begin/end`` strip).
+Nothing is committed — ``validate_structure.py`` bans ``.html`` and gates the root allowlist, so the
 board is rendered fresh in CI, the Heart pattern.
 
 Usage:
-    python scripts/board.py [--md | --md-brief | --html | --badge | --json]
+    python scripts/board.py [--md | --md-brief | --html | --badge | --state | --json]
 """
 
 from __future__ import annotations
@@ -1454,6 +1454,144 @@ def badge_endpoint(snapshot: dict) -> dict:
             "message": f"{t['pages']} pages · {pct}% cited", "color": "blueviolet"}
 
 
+# --- the organ-cockpit feed (state.json, contract v1) ---------------------------
+# One small, schema-pinned document per organ that the Brain's cockpit polls
+# (``state.json`` on Pages, beside badge.json). It is a PROJECTION of the same
+# snapshot every other surface renders, so the cockpit can never disagree with
+# this board; the contract is owned by the Brain (``board/state_schema.json``,
+# validated by ``board/_state.py`` in CI) and the Memory only ever emits it —
+# it never imports the Brain to do so, so the script still travels into
+# spawned templates that have no Brain beside them.
+STATE_SCHEMA_VERSION = 1
+STATE_STATUSES = ("green", "yellow", "red", "stale", "grey")
+_STATE_TEXT_MAX = 160
+# The inbox can hold dozens of suggestions; the cockpit is a glance, not the
+# queue, so only the first few become rows — the board page holds the rest.
+_STATE_INBOX_CAP = 5
+
+
+def _iso_z(ts) -> str:
+    """``ts`` as ISO-8601 UTC with a ``Z`` suffix, whole seconds.
+
+    ``collect`` stamps ``datetime.now(utc).isoformat()`` (``+00:00`` with
+    microseconds) and a hand-built snapshot may be naive; the cockpit compares
+    ages across organs on one clock, so both are normalised (naive is read as
+    UTC). An unparseable or empty stamp becomes *now* — the moment this feed
+    was written — rather than a string the validator would reject.
+    """
+    try:
+        t = datetime.datetime.fromisoformat(str(ts)) if ts else None
+    except ValueError:
+        t = None
+    if t is None:
+        t = datetime.datetime.now(datetime.timezone.utc)
+    elif t.tzinfo is None:
+        t = t.replace(tzinfo=datetime.timezone.utc)
+    return t.astimezone(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def _clip(text, limit: int = _STATE_TEXT_MAX) -> str:
+    """One line of at most ``limit`` chars — the contract's row width."""
+    text = " ".join(str(text).split())
+    return text if len(text) <= limit else text[: limit - 1] + "…"
+
+
+def to_state(snapshot: dict) -> dict:
+    """The organ-cockpit feed (fmt='state'): contract v1 of PyAutoBrain#416.
+
+    status: grey when no wiki pages were observed (nothing read is never
+    green — a spawned template or a broken checkout must not look fine);
+    yellow when a suggestion digest has gone stale, a filing waits on a merge,
+    or any sub-wiki still carries stub pages or TODO BibTeX keys; else green.
+    There is deliberately NO red: the Memory holds knowledge, nothing in it can
+    break or block a release — the worst it can be is behind.
+
+    The headline is the badge message (so the cockpit and the README badge say
+    the same thing), prefixed with the first reason when yellow. Items are the
+    rows that ask something of a human, most urgent first, each carrying the
+    same copy-for-Claude prompt or issue link the board page offers.
+    """
+    t = _totals(snapshot)
+    repo_url = _repo_url(snapshot)
+    # A remote-less checkout (spawned template, test tree) has no Pages URL;
+    # state.json is published beside index.html, so "./" is the board itself.
+    page = pages_url(snapshot) or "./"
+    state = {
+        "schema_version": STATE_SCHEMA_VERSION,
+        "organ": BOARD_KEY,
+        "repo": snapshot.get("repo") or "PyAutoMemory",
+        "status": "grey",
+        "headline": "no wiki pages observed",
+        "updated": _iso_z(snapshot.get("generated")),
+        "pages_url": page,
+        "items": [],
+    }
+    if not t["pages"]:
+        return state
+
+    yellow: list[dict] = []
+    info: list[dict] = []
+    reasons: list[str] = []
+    for key, label in (("inbox_last_digest", "arXiv inbox"),
+                       ("interests_last_digest", "arXiv interests")):
+        fresh = _inbox_freshness(snapshot, key)
+        if fresh["stale"]:
+            reasons.append(f"{label} digest stale")
+            yellow.append({
+                "severity": "yellow",
+                "text": _clip(f"{label}: no digest since {fresh['stamp']} "
+                              f"({fresh['weekdays']} weekdays) — the nightly "
+                              f"filing may be broken"),
+                "url": pages_url(snapshot) or None, "prompt": None})
+    filings = snapshot.get("filings") or []
+    if filings:
+        reasons.append("filings awaiting merge")
+        for f in filings:
+            yellow.append({
+                "severity": "yellow",
+                "text": _clip(f"filing #{f['issue']} reached {f['branch']} "
+                              f"but not main — open and merge its PR"),
+                "url": (f"{repo_url}/compare/main...{f['branch']}?expand=1"
+                        if repo_url else None),
+                "prompt": None})
+    waiting = False
+    for w in snapshot.get("wikis") or []:
+        stubs = (w.get("statuses") or {}).get("stub", 0)
+        todos = w.get("todo", 0)
+        if not (stubs or todos):
+            continue
+        waiting = True
+        # One row per wiki, but its prompt names the bigger job first: TODO
+        # keys block citation, stubs only block maturity.
+        prompt = (_todo_prompt(snapshot, w["name"]) if todos
+                  else _stub_prompt(snapshot, w["name"]))
+        info.append({
+            "severity": "info",
+            "text": _clip(f"{w['name']}: {stubs} stub{'s' if stubs != 1 else ''}"
+                          f", {todos} todo{'s' if todos != 1 else ''}"),
+            "url": (f"{repo_url}/tree/main/wiki/{w['name']}" if repo_url
+                    else None),
+            "prompt": prompt})
+    if waiting:
+        reasons.append("stubs/todos waiting")
+    for p in (snapshot.get("inbox") or [])[:_STATE_INBOX_CAP]:
+        info.append({
+            "severity": "info",
+            "text": _clip(f"inbox: {p['title']} ({p.get('days_left')}d left)"),
+            "url": _queue_issue_url(snapshot,
+                                    inbox_actions.INBOX_TARGET_SECTION, p,
+                                    "add", source=inbox_actions.INBOX_FILE)
+            or None,
+            "prompt": None})
+
+    badge = badge_endpoint(snapshot)["message"]
+    state.update(
+        status="yellow" if reasons else "green",
+        headline=_clip(f"{reasons[0]} · {badge}" if reasons else badge),
+        items=yellow + info)
+    return state
+
+
 def render(snapshot: dict, fmt: str = "md") -> str:
     if fmt == "md":
         return _render_md(snapshot)
@@ -1463,6 +1601,8 @@ def render(snapshot: dict, fmt: str = "md") -> str:
         return _render_html(snapshot)
     if fmt == "badge":
         return json.dumps(badge_endpoint(snapshot))
+    if fmt == "state":
+        return json.dumps(to_state(snapshot), indent=2)
     if fmt == "json":
         return json.dumps({**snapshot, "pages_url": pages_url(snapshot)},
                           indent=2, sort_keys=True)
@@ -1478,12 +1618,15 @@ def main(argv: list[str] | None = None) -> int:
     g.add_argument("--md-brief", action="store_true", help="the README strip")
     g.add_argument("--html", action="store_true", help="the Pages page")
     g.add_argument("--badge", action="store_true", help="shields endpoint JSON")
+    g.add_argument("--state", action="store_true",
+                   help="organ-cockpit state.json feed (Brain contract v1)")
     g.add_argument("--json", action="store_true", help="the machine surface")
     ns = ap.parse_args(argv)
     snap = collect()
     fmt = "md"
     for name, label in (("md", "md"), ("md_brief", "md-brief"),
-                        ("html", "html"), ("badge", "badge"), ("json", "json")):
+                        ("html", "html"), ("badge", "badge"), ("json", "json"),
+                        ("state", "state")):
         if getattr(ns, name):
             fmt = label
             break
