@@ -4,6 +4,7 @@ name: Dashboard
 # and wikis (scripts/board.py, the Heart/Hands dashboard pattern):
 #   * the GitHub Pages page (one-tap 📋 work prompts for a phone),
 #   * badge.json (the shields endpoint the README badge reads),
+#   * state.json (the organ-cockpit feed, Brain contract v1 — validated below),
 #   * the one-line README strip between the memory:begin/end markers.
 #
 # Contents-level only: titles and counts, never claim text. Nothing is
@@ -91,9 +92,17 @@ jobs:
           mkdir -p _site
           python scripts/board.py --html     > _site/index.html
           python scripts/board.py --badge    > _site/badge.json
+          python scripts/board.py --state    > _site/state.json
           python scripts/board.py --md       > board.md
           cp board.md _site/dashboard.md
           python scripts/board.py --md-brief > readme_strip.md
+
+      # The contract is owned by the Brain (board/_state.py +
+      # board/state_schema.json); the Memory only emits it. A feed that has
+      # drifted from the contract fails the job here, before Pages publishes
+      # something the cockpit would reject.
+      - name: Validate the cockpit feed against the Brain contract
+        run: python3 PyAutoBrain/board/_state.py _site/state.json
 
       - name: Write the board to the job step summary
         run: cat board.md >> "$GITHUB_STEP_SUMMARY"

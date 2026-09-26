@@ -9,6 +9,7 @@ page body text.
 
 from __future__ import annotations
 
+import datetime
 import json
 import re
 import sys
@@ -158,13 +159,13 @@ def test_counts_from_a_synthetic_tree(tmp_path):
 
 def test_every_fmt_renders(tmp_path):
     snap = board.collect(_tree(tmp_path))
-    for fmt in ("md", "md-brief", "html", "badge", "json"):
+    for fmt in ("md", "md-brief", "html", "badge", "state", "json"):
         assert board.render(snap, fmt)
 
 
 def test_contents_level_only_no_body_text_leaks(tmp_path):
     snap = board.collect(_tree(tmp_path))
-    for fmt in ("md", "md-brief", "html", "badge", "json"):
+    for fmt in ("md", "md-brief", "html", "badge", "state", "json"):
         assert BODY_MARKER not in board.render(snap, fmt)
 
 
@@ -792,3 +793,117 @@ def test_one_tap_reads_the_request_back_out_of_the_link(tmp_path):
 def test_one_tap_never_touches_the_page_without_a_token(tmp_path):
     html = board._render_html(_snap_with_remote(tmp_path))
     assert "if(!a||!token()||!repo())return;" in html
+
+
+# --- the organ-cockpit feed (state.json, contract v1) ---------------------------
+# The contract is owned by the Brain (board/_state.py); these tests copy its
+# required-keys/enum check rather than importing it, so the Memory suite never
+# depends on a sibling checkout for its own feed's shape. CI runs the real
+# validator on the published file.
+STATE_REQUIRED = ("schema_version", "organ", "repo", "status", "headline",
+                  "updated", "pages_url", "items")
+STATE_STATUSES = ("green", "yellow", "red", "stale", "grey")
+STATE_SEVERITIES = ("red", "yellow", "info")
+
+
+def _assert_state_shape(state):
+    assert all(k in state for k in STATE_REQUIRED)
+    assert state["schema_version"] == 1 and state["organ"] == "memory"
+    assert state["status"] in STATE_STATUSES
+    assert state["headline"].strip() and "\n" not in state["headline"]
+    assert state["pages_url"].strip()
+    for item in state["items"]:
+        assert item["severity"] in STATE_SEVERITIES
+        assert item["text"].strip() and len(item["text"]) <= 160
+
+
+def _state_snap(tmp_path):
+    snap = board.collect(_tree(tmp_path))
+    snap["owner"], snap["repo"] = "SomeOrg", "MemRepo"
+    snap["generated"] = FIXTURE_NOW
+    return snap
+
+
+def test_state_has_the_contract_shape(tmp_path):
+    state = board.to_state(_state_snap(tmp_path))
+    _assert_state_shape(state)
+    assert state["repo"] == "MemRepo"
+    assert state["pages_url"] == "https://someorg.github.io/MemRepo/"
+    assert state["updated"] == "2026-08-26T09:00:00Z"
+    assert datetime.datetime.fromisoformat(state["updated"][:-1] + "+00:00")
+
+
+def test_state_updated_is_whole_second_utc_z():
+    # naive → read as UTC; unparseable → now, still a valid Z stamp
+    assert board._iso_z("2026-08-26T09:00:00.123456") == "2026-08-26T09:00:00Z"
+    assert board._iso_z("2026-08-26T10:00:00+01:00") == "2026-08-26T09:00:00Z"
+    now = board._iso_z("not a date")
+    assert now.endswith("Z") and datetime.datetime.fromisoformat(now[:-1])
+
+
+def test_state_stubs_and_todos_become_info_rows_with_prompts(tmp_path):
+    state = board.to_state(_state_snap(tmp_path))
+    assert state["status"] == "yellow"
+    assert state["headline"].startswith("stubs/todos waiting · ")
+    assert "50% cited" in state["headline"]
+    (row,) = [i for i in state["items"] if i["text"].startswith("demo:")]
+    assert row["severity"] == "info" and row["text"] == "demo: 1 stub, 1 todo"
+    assert row["prompt"] == board._todo_prompt(_state_snap(tmp_path / "x"),
+                                               "demo")
+    assert row["url"] == "https://github.com/SomeOrg/MemRepo/tree/main/wiki/demo"
+
+
+def test_state_inbox_papers_are_capped_info_rows(tmp_path):
+    snap = _state_snap(tmp_path)
+    snap["inbox"] = [dict(snap["inbox"][0], title=f"Paper {n}")
+                     for n in range(8)]
+    rows = [i for i in board.to_state(snap)["items"]
+            if i["text"].startswith("inbox:")]
+    assert len(rows) == 5
+    assert all(r["severity"] == "info" and "issues/new" in r["url"]
+               for r in rows)
+
+
+def test_state_is_green_with_nothing_waiting(tmp_path):
+    snap = _state_snap(tmp_path)
+    for w in snap["wikis"]:
+        w["statuses"], w["todo"] = {"drafted": w["pages"]}, 0
+    snap["inbox"] = []
+    state = board.to_state(snap)
+    assert state["status"] == "green" and state["items"] == []
+    assert state["headline"] == board.badge_endpoint(snap)["message"]
+
+
+def test_a_stale_inbox_turns_the_state_yellow(tmp_path):
+    snap = _inbox(tmp_path, "2026-08-19")
+    for w in snap["wikis"]:
+        w["statuses"], w["todo"] = {"drafted": w["pages"]}, 0
+    state = board.to_state(snap)
+    _assert_state_shape(state)
+    assert state["status"] == "yellow"
+    assert state["headline"].startswith("arXiv inbox digest stale")
+    assert state["items"][0]["severity"] == "yellow"
+    assert "no digest since 2026-08-19" in state["items"][0]["text"]
+
+
+def test_pending_filings_turn_the_state_yellow(tmp_path):
+    snap = _state_snap(tmp_path)
+    snap["filings"] = [{"issue": 7, "branch": "queue-filing/issue-7"}]
+    state = board.to_state(snap)
+    assert state["status"] == "yellow"
+    assert state["items"][0]["url"].endswith(
+        "/compare/main...queue-filing/issue-7?expand=1")
+
+
+def test_an_empty_tree_is_grey_never_green(tmp_path):
+    (tmp_path / "wiki").mkdir()
+    state = board.to_state(board.collect(tmp_path))
+    _assert_state_shape(state)
+    assert state["status"] == "grey" and state["items"] == []
+    # no remote: the feed still names a page — the board beside it
+    assert state["pages_url"] == "./"
+
+
+def test_render_state_is_valid_json(tmp_path):
+    state = json.loads(board.render(_state_snap(tmp_path), "state"))
+    _assert_state_shape(state)
