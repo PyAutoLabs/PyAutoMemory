@@ -27,4 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-09-23
+last digest: 2026-09-29
+2026-09-29 — Improving Lens Modelling from Ground-Based Imaging with Deconvolution — 2609.34305
+2026-09-29 — Constraining the Light Curves of Magnified Stellar Events at z ~ 0.725 — 2609.33925
+2026-09-29 — SLICE: Unveiling the Multi-Component Merging Core of SPT-CLJ1150-2805 Through Strong-Lensing Mass Modelling — 2609.31944
