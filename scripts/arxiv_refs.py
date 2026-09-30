@@ -32,7 +32,11 @@ is an *arXiv* question. They are deliberately separate.
 from __future__ import annotations
 
 import re
+import subprocess
+import sys
+import time
 import unicodedata
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -58,6 +62,19 @@ SEARCH_BASE = "https://arxiv.org/search/?searchtype=title&query="
 API_URL = "https://export.arxiv.org/api/query"
 #: arXiv asks for one request every few seconds; the backfill honours this.
 API_DELAY_SECONDS = 3.0
+USER_AGENT = (
+    "PyAutoMemory reading-queue backfill "
+    "(+https://github.com/PyAutoLabs/PyAutoMemory)"
+)
+ACCEPT = "application/atom+xml"
+RETRY_DELAYS = (5, 15, 45, 90, 180)
+RETRY_STATUSES = {406, 429, 500, 502, 503, 504}
+TRANSIENT = (urllib.error.URLError, TimeoutError, ConnectionError)
+_CURL_STATUS_MARKER = b"\n__PYAUTO_HTTP_STATUS__:"
+
+
+class ArxivAPIError(RuntimeError):
+    """The arXiv API could not answer a lookup reliably."""
 
 
 def arxiv_id(ref: str | None) -> str | None:
@@ -151,13 +168,112 @@ def normalise_title(title: str) -> str:
     return _PUNCT_RE.sub("", folded.lower())
 
 
-def _api_query(params: dict) -> bytes:
-    url = f"{API_URL}?{urllib.parse.urlencode(params)}"
+def _curl_get(url: str) -> bytes:
+    """Alternate transport for the Fastly 406 seen from urllib clients."""
+    try:
+        result = subprocess.run(
+            [
+                "curl",
+                "--silent",
+                "--show-error",
+                "--location",
+                "--connect-timeout",
+                "20",
+                "--max-time",
+                "60",
+                "--user-agent",
+                USER_AGENT,
+                "--header",
+                f"Accept: {ACCEPT}",
+                "--write-out",
+                _CURL_STATUS_MARKER.decode() + "%{http_code}",
+                url,
+            ],
+            capture_output=True,
+            check=False,
+        )
+    except FileNotFoundError as e:
+        raise urllib.error.URLError("curl is not installed") from e
+
+    if result.returncode != 0:
+        detail = result.stderr.decode("utf-8", "replace").strip()
+        raise urllib.error.URLError(detail or f"curl exited {result.returncode}")
+
+    body, marker, status_raw = result.stdout.rpartition(_CURL_STATUS_MARKER)
+    if not marker:
+        raise urllib.error.URLError("curl returned no HTTP status marker")
+    try:
+        status = int(status_raw.strip())
+    except ValueError as e:
+        raise urllib.error.URLError(
+            f"curl returned invalid HTTP status {status_raw!r}"
+        ) from e
+    if not 200 <= status < 300:
+        raise urllib.error.HTTPError(
+            url, status, f"curl HTTP {status}", {}, None
+        )
+    return body
+
+
+def _request_once(url: str) -> bytes:
     req = urllib.request.Request(
-        url, headers={"User-Agent": "PyAutoMemory reading-queue backfill "
-                                    "(+https://github.com/PyAutoLabs/PyAutoMemory)"})
-    with urllib.request.urlopen(req, timeout=60) as resp:
-        return resp.read()
+        url, headers={"User-Agent": USER_AGENT, "Accept": ACCEPT}
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            return resp.read()
+    except urllib.error.HTTPError as e:
+        if e.code != 406:
+            raise
+        print(
+            "  arXiv API urllib HTTP 406 — retrying this request with curl",
+            file=sys.stderr,
+        )
+        return _curl_get(url)
+
+
+def _api_query(params: dict, *, delays: tuple | None = None) -> bytes:
+    """Query arXiv with retry/backoff and make transport failure explicit.
+
+    September 2026 exposed two independent failure modes: arXiv can throttle
+    shared runners with 429/406, and Fastly can reject Python's stdlib client
+    fingerprint with a persistent 406 while curl succeeds. The latter gets one
+    immediate alternate-transport attempt; real throttling still backs off.
+    """
+    if delays is None:
+        delays = RETRY_DELAYS
+    url = f"{API_URL}?{urllib.parse.urlencode(params)}"
+    attempts = len(delays) + 1
+    last_error = None
+    for attempt in range(1, attempts + 1):
+        try:
+            return _request_once(url)
+        except urllib.error.HTTPError as e:
+            last_error = e
+            if e.code not in RETRY_STATUSES or attempt == attempts:
+                break
+            wait = delays[attempt - 1]
+            retry_after = (e.headers or {}).get("Retry-After")
+            if retry_after and str(retry_after).strip().isdigit():
+                wait = max(wait, min(int(retry_after), max(delays)))
+            reason = f"HTTP {e.code}"
+        except TRANSIENT as e:
+            last_error = e
+            if attempt == attempts:
+                break
+            wait = delays[attempt - 1]
+            reason = f"{type(e).__name__}: {e}"
+
+        print(
+            f"  arXiv API {reason} (attempt {attempt}/{attempts}) — "
+            f"retrying in {wait}s",
+            file=sys.stderr,
+        )
+        time.sleep(wait)
+
+    raise ArxivAPIError(
+        f"arXiv API unavailable after {attempts} attempt(s): {last_error}"
+    ) from last_error
 
 
 def parse_api_entries(raw: bytes) -> list[dict]:
@@ -242,6 +358,12 @@ def resolve_title(title: str, max_results: int = 50,
     try:
         raw = query({"search_query": f'ti:"{phrase}"',
                      "start": 0, "max_results": max_results})
-    except Exception:
-        return None
+    except ArxivAPIError:
+        raise
+    except (urllib.error.URLError, TimeoutError, ConnectionError, OSError) as e:
+        # Injected query functions in tests and alternate callers may not use
+        # _api_query(), so normalise their transport failures to the same
+        # explicit signal. None remains reserved for a real arXiv answer that
+        # contains no unique exact title match.
+        raise ArxivAPIError(f"arXiv API lookup failed: {e}") from e
     return match_entries(title, parse_api_entries(raw))
