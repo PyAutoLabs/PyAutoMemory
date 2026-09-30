@@ -916,3 +916,58 @@ def test_an_empty_tree_is_grey_never_green(tmp_path):
 def test_render_state_is_valid_json(tmp_path):
     state = json.loads(board.render(_state_snap(tmp_path), "state"))
     _assert_state_shape(state)
+
+
+# --- the catch-up banner -------------------------------------------------------------
+# `last_ingested` is computed by `catch_up.last_ingested("all")`; each test
+# below pins both it and the snapshot's own clock, so no wall clock is read.
+def _banner_snap(tmp_path, last, now="2026-09-30T09:00:00+00:00"):
+    snap = _state_snap(tmp_path)
+    snap["last_ingested"], snap["generated"] = last, now
+    return snap
+
+
+def test_last_ingested_is_collected_from_a_scope_section(tmp_path):
+    root = _tree(tmp_path)
+    # `_tree`'s DONE sits in "Demo Papers", which no catch-up scope owns.
+    assert board.collect(root)["last_ingested"] is None
+    q = root / "reading-queue.md"
+    q.write_text(q.read_text() + "\n## Strong Lensing\nDONE 2026-09-01 — X\n")
+    assert board.collect(root)["last_ingested"] == "2026-09-01"
+
+
+def test_no_banner_under_the_threshold(tmp_path):
+    snap = _banner_snap(tmp_path, "2026-09-24")  # 6 days
+    assert board._days_since_ingest(snap) == 6
+    assert "lost for a while" not in board.render(snap, "md")
+    assert "class='catchup'" not in board.render(snap, "html")
+    assert board.to_state(snap)["days_since_ingest"] == 6
+
+
+def test_banner_at_the_threshold_carries_the_day_count(tmp_path):
+    snap = _banner_snap(tmp_path, "2026-09-23")  # exactly CATCH_UP_DAYS
+    assert board.CATCH_UP_DAYS == 7
+    md = board.render(snap, "md")
+    assert "_…so… I've been lost for a while_" in md
+    assert "**7 days since papers were last ingested into memory**" in md
+    assert "`/catch_up lensing`" in md
+    # Top of the markdown: before the contents line.
+    assert md.index("lost for a while") < md.index("_Contents")
+
+
+def test_banner_html_sits_above_the_hero_with_a_copy_button(tmp_path):
+    snap = _banner_snap(tmp_path, "2026-09-11")
+    page = board.render(snap, "html")
+    assert "<em>…so… I&#x27;ve been lost for a while</em>" in page
+    assert "19 days since papers were last ingested into memory" in page
+    assert 'data-cmd="/catch_up lensing"' in page
+    assert page.index("class='catchup'") < page.index('class="hero"')
+    assert board.to_state(snap)["days_since_ingest"] == 19
+
+
+def test_no_banner_when_nothing_is_on_record(tmp_path):
+    snap = _banner_snap(tmp_path, None)
+    assert board._days_since_ingest(snap) is None
+    assert "lost for a while" not in board.render(snap, "md")
+    assert "class='catchup'" not in board.render(snap, "html")
+    assert board.to_state(snap)["days_since_ingest"] is None
