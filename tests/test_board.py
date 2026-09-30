@@ -278,9 +278,16 @@ def test_live_repo_statuses_are_schema_valid():
     assert seen <= {"stub", "drafted", "reviewed"}, f"schema-invalid statuses: {seen}"
 
 
-# The canonical board family, in the order `PyAutoBrain/config/policy.yaml`
-# declares it. This board is `memory`, so its own chip never appears.
-FAMILY_WITHOUT_MEMORY = ["brain", "mind", "cortex", "heart", "hands", "organism"]
+def _family_without_memory() -> list[str]:
+    """The canonical board family, in the order `PyAutoBrain/config/policy.yaml`
+    `board: boards:` declares it, minus this board (`memory`).
+
+    Derived from the Brain — the same `_theme.board_links` read the renderer
+    makes — never written out here. A literal in this file pinned the
+    six-board family and went red once the Eyes, the Nerves and the Gut got
+    boards (PyAutoMind#450); the next organ birth must not re-break it.
+    """
+    return list(board.theme().board_links("", board.BOARD_KEY))
 
 
 def _footer(tmp_path) -> str:
@@ -302,7 +309,9 @@ def test_the_family_footer_carries_the_cortex_in_the_canonical_order(tmp_path):
     `config/policy.yaml` lights it in every footer at once.
     """
     footer = _footer(tmp_path)
-    assert re.findall(r'data-organ="(\w+)"', footer) == FAMILY_WITHOUT_MEMORY
+    family = _family_without_memory()
+    assert "cortex" in family and board.BOARD_KEY not in family
+    assert re.findall(r'data-organ="(\w+)"', footer) == family
     assert "https://someorg.github.io/PyAutoCortex/" in footer
 
 
