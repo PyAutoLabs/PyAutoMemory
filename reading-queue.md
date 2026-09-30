@@ -96,6 +96,43 @@ DONE 2026-09-03 — Follow-up of SN 2025wny I: Space-based Observations of the F
 DONE 2026-09-07 — ALPACA I: Controlling source and PSF systematics in JWST time-delay cosmography with differentiable lens modeling — 2609.04312
 DONE 2026-09-11 — Strong Lensing Cosmology with Population-level Calibrated Neural Ratio Estimation — 2608.23534
 DONE 2026-09-11 — TDCOSMO. XXVII. JWST-based Lens Models and H$_0$ Measurement of WFI2033, HE0435, and PG1115 — 2608.27566
+Detecting Extragalactic Exoplanets With Fast Radio Burst Nanolensing
+LUMA: A CNN for Strong Gravitational Lens Searches in Astronomical Imaging
+JWST lensed quasar dark matter survey V: Hints of self-interacting dark matter from 29 quadruply imaged quasars
+Improving Lens Modelling from Ground-Based Imaging with Deconvolution
+Constraining the Light Curves of Magnified Stellar Events at z ~ 0.725
+SLICE: Unveiling the Multi-Component Merging Core of SPT-CLJ1150-2805 Through Strong-Lensing Mass Modelling
+Gravitational lensing of gravitational waves by galaxy clusters
+TDCOSMO XXXI: New techniques in line-of-sight studies of time delay lenses
+MUSE spectroscopy of the compact dual AGN in the $z=3.273$ radio-loud gravitational lens MG B2016+112
+SN Helios: A Multiply Imaged Type II Supernova Opening Time-Delay Cosmography beyond redshift of 3
+Joint Model-independent Constraints on the Post-Newtonian Parameter and Cosmic Curvature from Galaxy-scale Strong Lensing, SNe Ia, BAO, and Cosmic Chronometers
+Wave-Optics Imprints of Warm Dark Matter Subhalos with Prompt Cusps on Strongly Lensed Gravitational Waves
+A sub-100 pc view at z~5 of a Multiply-Imaged Massive Quiescent Galaxy
+Shape Degeneracies: the likely culprit for the differences between lens mass models of galaxy clusters
+Reducing False Positives in Strong-Lens Searches with Generalized-Mean Consensus of Machine-Learning Ensembles in the Kilo-Degree Survey
+LATED: JWST integral field spectroscopy of a galaxy caught in chemical infancy at $z=4.8$ behind Abell 2744
+Probing modified gravity with galaxy-cluster-lensed gravitational-wave time delays: impact of systematic effects
+Impact on time delays due to milli-lensing by subhalos on lensed gravitational waves
+Feeding the Void: Co-evolution of the SIDM-seeded Black Hole and the dark halo after core-collapse
+Lens Modeling and Cosmological Inference from an Impure Sample of Galaxy-Galaxy Strong Lenses
+LenNet: Direct Detection and Localization of Strong Gravitational Lenses in Wide-Field Sky Survey Images
+Identification of gravitational lenses obscured by foreground light in the KiDS dataset using U-Nets and ResNets
+Constraints on the Pop III Sky Surface Brightness from High-Redshift Caustic Transients in MACS0416
+Probing submillimeter number counts below the confusion limit: extreme-value statistics of the P(D) distribution and its modulation by gravitational lensing
+Early steps in the hierarchical assembly of a Milky Way-mass galaxy 1 Gyr after the Big Bang
+Follow-up of SN 2025wny VI: The Rate and Detectable Population of Strongly Lensed SLSNe-I in ZTF
+Galaxy-Galaxy Strong Lensing simulation with the GPU acceleration across surveys and multi-bands
+Resolving 3 Exotic Hyperbolic-Umbilic Lensing Configurations in the "Cosmic Mantis": An Exploration of RXJ0437.1+0043 with JWST
+Chandra Lensing-cluster Ultradeep Extragalactic Survey (CLUES) I: A 2 Ms Point-Source Catalog of the Abell 2744 Field
+Diffraction of gravitational waves by extended dark objects
+KMT-2026-BLG-0083L: A Two-Jovian-Planet System Orbiting an M Dwarf Discovered by Microlensing
+Associating binary black holes with galactic centres using lensed gravitational waves
+TDCOSMO XXX: Spatially resolved kinematics of the deflectors in time-delay lens systems B1608+656 and SDSSJ1206+4332 from JWST-NIRSpec observation
+Chasing Cosmic Reionization: An Extremely Faint Highly Magnified Source at $z=5.66$ with high $ξ_{\rm ion}$
+$\texttt{LensFactory.jl}$: A general-purpose strong lens modeling package
+A Missing Tool for Calculating Auto/Cross-correlation Function under Nonuniform Sampling Observations
+Harnessing stellar kinematics to constrain dark energy with the double-source-plane gravitational lens SDSS J0946+1006
 
 
 ## SMBHs
