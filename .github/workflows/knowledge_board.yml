@@ -49,7 +49,12 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # Full history: the catch-up banner dates the last ingest from the
+      # commits that added bib entries (scripts/catch_up.py); a shallow clone
+      # has none of them.
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       # A prefilled `…/issues/new?…&labels=x` URL silently drops `x` when the
       # label does not exist in the repo, and queue_actions.yml gates on the

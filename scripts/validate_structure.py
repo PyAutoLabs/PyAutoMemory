@@ -22,6 +22,7 @@ ALLOWED_TOP_DIRS = {
     ".github",
     "bibliography",
     "scripts",
+    "skills",  # organ-owned agent skills (e.g. skills/catch_up), like Mind's skills/
     "tests",
     "wiki",
 }

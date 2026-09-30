@@ -84,6 +84,16 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import arxiv_refs  # noqa: E402
 import inbox_actions  # noqa: E402
 import interests_actions  # noqa: E402
+import catch_up  # noqa: E402
+
+#: How many days without an ingest before the board asks for a catch-up. A week:
+#: the suggestion tiers lapse on the same seven days
+#: (``inbox_actions.INBOX_WINDOW_DAYS``), so past it the inbox alone no longer
+#: holds everything that was missed — git history does, which is exactly what
+#: ``scripts/catch_up.py`` reads back.
+CATCH_UP_DAYS = 7
+CATCH_UP_LYRIC = "…so… I've been lost for a while"  # Fred again..
+CATCH_UP_CMD = "/catch_up lensing"
 
 # The family look lives once, in the Brain (``board/_theme.py``): the
 # stylesheet, the hero that redraws this organ's logo as a mark, and the
@@ -233,7 +243,14 @@ def collect(root: Path | None = None) -> dict:
         # Filings that reached a `queue-filing/issue-<n>` branch but not
         # main — the one thing on the page that is a human's merge to make.
         "filings": _pending_filings() if root == MEMORY_HOME else [],
+        # When memory last took a paper in (any scope): git + files, never the
+        # network. None when nothing is on record or git is unavailable.
+        "last_ingested": None,
     }
+    try:
+        snapshot["last_ingested"] = catch_up.last_ingested("all", root)
+    except Exception:  # noqa: BLE001 — the banner is advisory, never fatal
+        snapshot["last_ingested"] = None
 
     stems: set[str] = set()
     all_slugs: list[str] = []
@@ -595,6 +612,51 @@ def _read_trend(snapshot: dict) -> dict:
     return trend
 
 
+def _days_since_ingest(snapshot: dict) -> int | None:
+    """Days from ``last_ingested`` to the snapshot's ``generated`` date.
+
+    Pure like :func:`_read_trend` — relative to the snapshot, not the wall
+    clock — so a fixture renders the same banner on any calendar day. None when
+    either date is missing or unparseable.
+    """
+    try:
+        now = datetime.date.fromisoformat(str(snapshot.get("generated"))[:10])
+        last = datetime.date.fromisoformat(str(snapshot.get("last_ingested")))
+    except ValueError:
+        return None
+    return max(0, (now - last).days)
+
+
+def _catch_up_due(snapshot: dict) -> int | None:
+    """The day count when the catch-up banner should show, else None."""
+    days = _days_since_ingest(snapshot)
+    return days if days is not None and days >= CATCH_UP_DAYS else None
+
+
+def _catch_up_md(snapshot: dict) -> list[str]:
+    days = _catch_up_due(snapshot)
+    if days is None:
+        return []
+    return [f"> _{CATCH_UP_LYRIC}_", ">",
+            f"> **{days} days since papers were last ingested into memory** "
+            f"(last: {snapshot.get('last_ingested')}) — run `{CATCH_UP_CMD}`",
+            ""]
+
+
+def _catch_up_html(snapshot: dict) -> str:
+    days = _catch_up_due(snapshot)
+    if days is None:
+        return ""
+    last = _html.escape(str(snapshot.get("last_ingested")))
+    return (f"<section class='catchup'><p class='lyric'><em>"
+            f"{_html.escape(CATCH_UP_LYRIC)}</em></p>"
+            f"<p><strong>{days} days since papers were last ingested into "
+            f"memory</strong> <span class='muted'>(last: {last})</span> "
+            f"<code>{_html.escape(CATCH_UP_CMD)}</code> "
+            f"{_copy_btn(CATCH_UP_CMD, 'copy: catch up on strong lensing')}"
+            f"</p></section>")
+
+
 def _totals(snapshot: dict) -> dict:
     wikis = snapshot.get("wikis") or []
     statuses: dict[str, int] = {}
@@ -717,7 +779,7 @@ def _inbox_empty_note(fresh: dict) -> str:
 # --- renderers ------------------------------------------------------------------
 def _render_md(snapshot: dict) -> str:
     t = _totals(snapshot)
-    lines = ["# PyAutoMemory Dashboard", "",
+    lines = ["# PyAutoMemory Dashboard", "", *_catch_up_md(snapshot),
              "_Contents and work queues — the knowledge itself lives in the "
              "wiki pages._", "",
              f"**{t['pages']} pages** across {len(snapshot.get('wikis') or [])} "
@@ -956,6 +1018,9 @@ a.act.busy{opacity:.5;pointer-events:none}
  color:var(--bg);opacity:0;transition:opacity .2s;pointer-events:none;z-index:9}
 #toast.show{opacity:1}
 #toast.bad{background:var(--warn)}
+.catchup{border-left:3px solid var(--warn);padding:.4em .9em;margin:0 0 1em}
+.catchup p{margin:.25em 0}
+.catchup .lyric{color:var(--warn)}
 """
 
 # The shared copy handler is delegated, so a chip inside a <summary> would
@@ -1413,6 +1478,7 @@ def _render_html(snapshot: dict) -> str:
 <style>{t_.css(BOARD_KEY)}{_EXTRA_CSS}</style>
 </head>
 <body{body_attrs}>
+{_catch_up_html(snapshot)}
 {hero}
 {stats}
 <p class="muted mdsrc"><a href="dashboard.md">markdown version</a>{github_link}{onetap}</p>
@@ -1525,6 +1591,8 @@ def to_state(snapshot: dict) -> dict:
         "updated": _iso_z(snapshot.get("generated")),
         "pages_url": page,
         "items": [],
+        # Days since memory last ingested a paper (None: nothing on record).
+        "days_since_ingest": _days_since_ingest(snapshot),
     }
     if not t["pages"]:
         return state

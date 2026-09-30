@@ -39,6 +39,14 @@ without a file extension) — read it, stub it in the right
 and run `make validate`. Unrecognised top-level files/folders fail the lint;
 the allowlist is in `scripts/validate_structure.py`.
 
+## Skills
+
+Organ-owned skills live in `skills/<name>/` (`SKILL.md` + the procedure),
+like Mind's. [`skills/catch_up/`](skills/catch_up/catch_up.md) is the
+after-time-away door: `scripts/catch_up.py` harvests what was missed since
+the last ingest, the agent curates it into intake / cite / queue / skip, the
+human confirms once, and the chosen papers are filed in one PR.
+
 ## What does NOT live here
 
 - **Operational history** — what the organism *did* (prior tasks, decisions,

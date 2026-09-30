@@ -78,6 +78,12 @@ the metadata
 and the claim support together, then passes `make validate` (CI-enforced on
 every push).
 
+Away for a while? [`/catch_up`](skills/catch_up/catch_up.md) collects every
+paper missed since memory last ingested one — lapsed suggestions from git
+history, the open queue, and an arXiv gap-fill over days the digest never ran
+(`scripts/catch_up.py`) — for one triage and one filing PR. The dashboard
+shows a banner once a week has passed without an ingest.
+
 The wiki schema is defined in
 [`wiki/AGENTS.md`](wiki/AGENTS.md) and inherited by every
 sub-wiki. How agents should read this repo: [AGENTS.md](AGENTS.md). The
