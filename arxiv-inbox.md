@@ -27,7 +27,10 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-09-29
+last digest: 2026-09-30
 2026-09-29 — Improving Lens Modelling from Ground-Based Imaging with Deconvolution — 2609.34305
 2026-09-29 — Constraining the Light Curves of Magnified Stellar Events at z ~ 0.725 — 2609.33925
 2026-09-29 — SLICE: Unveiling the Multi-Component Merging Core of SPT-CLJ1150-2805 Through Strong-Lensing Mass Modelling — 2609.31944
+2026-09-30 — Detecting Extragalactic Exoplanets With Fast Radio Burst Nanolensing — 2609.36988
+2026-09-30 — LUMA: A CNN for Strong Gravitational Lens Searches in Astronomical Imaging — 2609.36857
+2026-09-30 — JWST lensed quasar dark matter survey V: Hints of self-interacting dark matter from 29 quadruply imaged quasars — 2609.35974
