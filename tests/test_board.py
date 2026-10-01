@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import datetime
 import json
+import pytest
 import re
 import sys
 from pathlib import Path
@@ -101,6 +102,7 @@ def _snap_with_remote(tmp_path):
     snap = board.collect(_tree(tmp_path))
     snap["owner"], snap["repo"] = "PyAutoLabs", "PyAutoMemory"
     snap["generated"] = FIXTURE_NOW
+    snap["lensing_ingest_evidence"] = {"last_ingested": FIXTURE_NOW[:10], "done": FIXTURE_NOW[:10], "bib": None}
     return snap
 
 
@@ -830,6 +832,7 @@ def _state_snap(tmp_path):
     snap = board.collect(_tree(tmp_path))
     snap["owner"], snap["repo"] = "SomeOrg", "MemRepo"
     snap["generated"] = FIXTURE_NOW
+    snap["lensing_ingest_evidence"] = {"last_ingested": FIXTURE_NOW[:10], "done": FIXTURE_NOW[:10], "bib": None}
     return snap
 
 
@@ -919,11 +922,12 @@ def test_render_state_is_valid_json(tmp_path):
 
 
 # --- the catch-up banner -------------------------------------------------------------
-# `last_ingested` is computed by `catch_up.last_ingested("all")`; each test
+# Legacy all-scope activity and scoped lensing evidence stay distinct; each test
 # below pins both it and the snapshot's own clock, so no wall clock is read.
 def _banner_snap(tmp_path, last, now="2026-09-30T09:00:00+00:00"):
     snap = _state_snap(tmp_path)
     snap["last_ingested"], snap["generated"] = last, now
+    snap["lensing_ingest_evidence"] = {"last_ingested": last, "done": last, "bib": None}
     return snap
 
 
@@ -948,26 +952,105 @@ def test_banner_at_the_threshold_carries_the_day_count(tmp_path):
     snap = _banner_snap(tmp_path, "2026-09-23")  # exactly CATCH_UP_DAYS
     assert board.CATCH_UP_DAYS == 7
     md = board.render(snap, "md")
-    assert "_…so… I've been lost for a while_" in md
-    assert "**7 days since papers were last ingested into memory**" in md
+    assert "**Strong-lensing catch-up due**" in md
+    assert "2026-09-23 (7 days ago)" in md
+    assert "after 7 days" in md
     assert "`/catch_up lensing`" in md
     # Top of the markdown: before the contents line.
-    assert md.index("lost for a while") < md.index("_Contents")
+    assert md.index("Strong-lensing catch-up due") < md.index("_Contents")
 
 
 def test_banner_html_sits_above_the_hero_with_a_copy_button(tmp_path):
     snap = _banner_snap(tmp_path, "2026-09-11")
     page = board.render(snap, "html")
     assert "<em>…so… I&#x27;ve been lost for a while</em>" in page
-    assert "19 days since papers were last ingested into memory" in page
+    assert "2026-09-11 (19 days ago)" in page
     assert 'data-cmd="/catch_up lensing"' in page
     assert page.index("class='catchup'") < page.index('class="hero"')
     assert board.to_state(snap)["days_since_ingest"] == 19
 
 
-def test_no_banner_when_nothing_is_on_record(tmp_path):
+def test_unknown_banner_when_nothing_is_on_record(tmp_path):
     snap = _banner_snap(tmp_path, None)
     assert board._days_since_ingest(snap) is None
     assert "lost for a while" not in board.render(snap, "md")
-    assert "class='catchup'" not in board.render(snap, "html")
+    assert "Strong-lensing freshness unknown" in board.render(snap, "html")
     assert board.to_state(snap)["days_since_ingest"] is None
+
+
+@pytest.mark.parametrize("age,expected", [(6, "healthy"), (7, "stale"), (8, "stale")])
+def test_lensing_catch_up_threshold_has_one_model_for_every_surface(tmp_path, age, expected):
+    cutoff = (datetime.date(2026, 9, 30) - datetime.timedelta(days=age)).isoformat()
+    snap = _banner_snap(tmp_path, cutoff)
+    model = board._lensing_catch_up(snap)
+    state = board.to_state(snap)
+    assert state["lensing_catch_up"] == model
+    assert model["state"] == expected and model["threshold_days"] == 7
+    assert model["age_days"] == age
+    rows = [i for i in state["items"] if i.get("id") == model["id"]]
+    if expected == "healthy":
+        assert not rows
+    else:
+        assert len(rows) == 1 and rows[0]["reason"] == model["reason"]
+        assert model["reason"] in board.render(snap, "md")
+        assert model["reason"] in board.render(snap, "html")
+        assert rows[0]["actions"][0]["target"] == "/catch_up lensing"
+        assert rows[0]["actions"][0]["safety"] == "scientific_judgement"
+        assert "requires_human_decision" not in rows[0]  # No invented choice.
+
+
+def test_non_lensing_activity_cannot_mask_lensing_staleness(tmp_path):
+    root = _tree(tmp_path)
+    q = root / "reading-queue.md"
+    q.write_text(q.read_text() + "\n## Strong Lensing\nDONE 2026-09-01 — Lens\n\n## SMBHs\nDONE 2026-09-30 — BH\n")
+    snap = board.collect(root)
+    snap["generated"] = "2026-09-30T09:00:00Z"
+    assert snap["last_ingested"] == "2026-09-30"  # Legacy all-scope field.
+    assert board._lensing_catch_up(snap)["last_activity"] == "2026-09-01"
+    assert board._lensing_catch_up(snap)["state"] == "stale"
+
+
+def test_read_completion_is_not_misreported_as_verified_ingestion(tmp_path):
+    snap = _banner_snap(tmp_path, "2026-09-23")
+    model = board._lensing_catch_up(snap)
+    assert model["last_ingestion"] is None
+    assert model["last_completed"] == "2026-09-23"
+    snap["lensing_ingest_evidence"]["bib"] = {"date": "2026-09-21", "commit": "abc123"}
+    model = board._lensing_catch_up(snap)
+    assert model["last_ingestion"] == {"date": "2026-09-21", "commit": "abc123"}
+    assert model["last_activity"] == "2026-09-23"
+    assert any(e["url"].endswith("/commit/abc123") for e in model["evidence"])
+    assert any("reading-queue.md#strong-lensing" in e["url"] for e in model["evidence"])
+
+
+@pytest.mark.parametrize("last", [None, "invalid", "2026-10-02"])
+def test_missing_invalid_and_future_activity_is_unknown(tmp_path, last):
+    snap = _banner_snap(tmp_path, last)
+    model = board._lensing_catch_up(snap)
+    assert model["state"] == "unknown" and model["age_days"] is None
+    row = next(i for i in board.to_state(snap)["items"] if i.get("id") == model["id"])
+    assert row["state"] == "unknown"
+    assert "freshness unknown" in row["text"]
+
+
+def test_invalid_snapshot_clock_is_unknown(tmp_path):
+    model = board._lensing_catch_up(_banner_snap(tmp_path, "2026-09-23", "invalid"))
+    assert model["state"] == "unknown" and model["checked_at"] is None
+
+
+def test_unknown_collector_evidence_does_not_fall_back_to_other_topics(tmp_path, monkeypatch):
+    def failed(*args, **kwargs):
+        raise OSError("unavailable")
+    monkeypatch.setattr(board.catch_up, "ingest_evidence", failed)
+    snap = board.collect(_tree(tmp_path))
+    snap["last_ingested"] = "2026-09-30"
+    snap["generated"] = "2026-09-30T09:00:00Z"
+    assert board._lensing_catch_up(snap)["state"] == "unknown"
+
+
+def test_cutoff_requires_matching_scoped_evidence(tmp_path):
+    snap = _banner_snap(tmp_path, "2026-09-29")
+    snap["lensing_ingest_evidence"]["done"] = "2026-09-01"
+    assert board._lensing_catch_up(snap)["state"] == "unknown"
+    snap["lensing_ingest_evidence"]["done"] = None
+    assert board._lensing_catch_up(snap)["state"] == "unknown"
