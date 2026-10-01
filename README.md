@@ -19,8 +19,8 @@ See the **[PyAutoMemory Dashboard](https://pyautolabs.github.io/PyAutoMemory/)**
 for managing all of it from one page: the reading
 queue, the paper sections still needing a canonical citation key, and each
 sub-wiki's maturity — every work queue carrying a one-tap 📋 button that
-copies a paste-ready Claude prompt (file the next paper, resolve keys,
-upgrade a stub, or `/memory <domain>` to recall what's known). Every queued
+copies a paste-ready AI assistant prompt (file the next paper, resolve keys,
+upgrade a stub, or `Use the memory skill. <domain>` to recall what's known). Every queued
 paper links to its arXiv abstract page and carries a 📄 button onto the PDF
 itself, so a phone can collect a stack of papers to read offline in one tap
 each.
@@ -93,8 +93,8 @@ verified bib-plus-sources commit, while `last_completed` is a queue DONE date
 (which may mean read-without-filing); `last_activity` is the existing catch-up
 cutoff, the later of those dates. Legacy all-scope fields remain available.
 
-The cockpit copies the existing `/catch_up lensing` prompt and links to its
-procedure. Its safety is `scientific_judgement`: candidate selection and filing
+The cockpit copies an instruction to read `skills/catch_up/SKILL.md` and use
+the catch_up skill with `lensing`, and links to its procedure. Its safety is `scientific_judgement`: candidate selection and filing
 retain the procedure's human review. Observing staleness executes nothing, and
 no scientific choice is fabricated before candidates are harvested.
 
