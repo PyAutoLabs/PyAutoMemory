@@ -246,11 +246,16 @@ def collect(root: Path | None = None) -> dict:
         # When memory last took a paper in (any scope): git + files, never the
         # network. None when nothing is on record or git is unavailable.
         "last_ingested": None,
+        "lensing_ingest_evidence": None,
     }
     try:
         snapshot["last_ingested"] = catch_up.last_ingested("all", root)
     except Exception:  # noqa: BLE001 — the banner is advisory, never fatal
         snapshot["last_ingested"] = None
+    try:
+        snapshot["lensing_ingest_evidence"] = catch_up.ingest_evidence("lensing", root)
+    except Exception:  # advisory: failed observation is unknown, never fresh
+        snapshot["lensing_ingest_evidence"] = None
 
     stems: set[str] = set()
     all_slugs: list[str] = []
@@ -627,34 +632,96 @@ def _days_since_ingest(snapshot: dict) -> int | None:
     return max(0, (now - last).days)
 
 
+def _lensing_catch_up(snapshot: dict) -> dict:
+    """Owner's existing seven-day cutoff, with its evidence and manual action.
+
+    DONE can mean read-without-filing. Keep the actual bib+sources ingestion
+    separate; never call a queue completion a successful ingestion.
+    """
+    evidence = snapshot.get("lensing_ingest_evidence")
+    evidence = evidence if isinstance(evidence, dict) else {}
+    repo = _repo_url(snapshot)
+    runbook = f"{repo}/blob/main/skills/catch_up/catch_up.md" if repo else None
+    queue = f"{repo}/blob/main/reading-queue.md#strong-lensing" if repo else None
+    bib = evidence.get("bib") if isinstance(evidence.get("bib"), dict) else None
+    result = {
+        "id": "memory:lensing-catch-up", "scope": "lensing", "state": "unknown",
+        "last_activity": evidence.get("last_ingested"),
+        "last_completed": evidence.get("done"), "last_ingestion": bib,
+        "age_days": None, "threshold_days": CATCH_UP_DAYS, "due_at": None,
+        "checked_at": None, "evidence": [],
+        "reason": "No lensing paper activity is on record; freshness is unknown.",
+        "actions": [{"id": "catch-up", "label": "Copy lensing catch-up prompt",
+                     "kind": "prompt", "target": CATCH_UP_CMD,
+                     "safety": "scientific_judgement"}],
+        "recommended_action_id": "catch-up",
+    }
+    if queue and evidence.get("done"):
+        result["evidence"].append({"kind": "queue_completion", "date": evidence["done"], "url": queue})
+    if bib and repo and bib.get("commit"):
+        result["evidence"].append({"kind": "ingestion_commit", "date": bib.get("date"),
+                                   "url": f"{repo}/commit/{bib['commit']}"})
+    if runbook:
+        result["actions"].append({"id": "runbook", "label": "Catch-up procedure",
+                                  "kind": "link", "target": runbook, "safety": "read_only"})
+    try:
+        now = datetime.datetime.fromisoformat(str(snapshot.get("generated")))
+        if now.tzinfo is None:
+            raise ValueError("missing timezone")
+        today = now.astimezone(datetime.timezone.utc).date()
+        result["checked_at"] = _iso_z(snapshot["generated"])
+    except ValueError:
+        result["reason"] = "The snapshot time is missing or invalid; lensing freshness is unknown."
+        return result
+    dates = [evidence.get("last_ingested"), evidence.get("done"), bib and bib.get("date")]
+    if all(d is None for d in dates):
+        return result
+    try:
+        parsed = [datetime.date.fromisoformat(str(d)) for d in dates if d is not None]
+        cutoff = datetime.date.fromisoformat(str(evidence.get("last_ingested")))
+        if any(d > today for d in parsed):
+            raise ValueError("future evidence")
+        sources = [datetime.date.fromisoformat(str(d)) for d in dates[1:] if d is not None]
+        if not sources or cutoff != max(sources):
+            raise ValueError("inconsistent cutoff")
+    except ValueError:
+        result["reason"] = "Lensing activity dates are invalid, inconsistent or in the future; verify the evidence."
+        return result
+    days = (today - cutoff).days
+    result.update(age_days=days, state="stale" if days >= CATCH_UP_DAYS else "healthy",
+                  due_at=(cutoff + datetime.timedelta(days=CATCH_UP_DAYS)).isoformat() + "T00:00:00Z")
+    result["reason"] = (f"Last recorded lensing paper activity: {cutoff} ({days} days ago); "
+                        f"catch-up is due after {CATCH_UP_DAYS} days. "
+                        "Activity includes queue completion or verified ingestion; paper selection remains human-reviewed.")
+    return result
+
+
 def _catch_up_due(snapshot: dict) -> int | None:
-    """The day count when the catch-up banner should show, else None."""
-    days = _days_since_ingest(snapshot)
-    return days if days is not None and days >= CATCH_UP_DAYS else None
+    model = _lensing_catch_up(snapshot)
+    return model["age_days"] if model["state"] == "stale" else None
 
 
 def _catch_up_md(snapshot: dict) -> list[str]:
-    days = _catch_up_due(snapshot)
-    if days is None:
+    model = _lensing_catch_up(snapshot)
+    if model["state"] == "healthy":
         return []
-    return [f"> _{CATCH_UP_LYRIC}_", ">",
-            f"> **{days} days since papers were last ingested into memory** "
-            f"(last: {snapshot.get('last_ingested')}) — run `{CATCH_UP_CMD}`",
-            ""]
+    title = "Strong-lensing catch-up due" if model["state"] == "stale" else "Strong-lensing freshness unknown"
+    return [f"> **{title}**", f"> {model['reason']}",
+            f"> Next: `{CATCH_UP_CMD}` — human-reviewed paper selection.", ""]
 
 
 def _catch_up_html(snapshot: dict) -> str:
-    days = _catch_up_due(snapshot)
-    if days is None:
+    model = _lensing_catch_up(snapshot)
+    if model["state"] == "healthy":
         return ""
-    last = _html.escape(str(snapshot.get("last_ingested")))
-    return (f"<section class='catchup'><p class='lyric'><em>"
-            f"{_html.escape(CATCH_UP_LYRIC)}</em></p>"
-            f"<p><strong>{days} days since papers were last ingested into "
-            f"memory</strong> <span class='muted'>(last: {last})</span> "
-            f"<code>{_html.escape(CATCH_UP_CMD)}</code> "
-            f"{_copy_btn(CATCH_UP_CMD, 'copy: catch up on strong lensing')}"
-            f"</p></section>")
+    title = "Strong-lensing catch-up due" if model["state"] == "stale" else "Strong-lensing freshness unknown"
+    lyric = (f"<p class='lyric'><em>{_html.escape(CATCH_UP_LYRIC)}</em></p>"
+             if model["state"] == "stale" else "")
+    return (f"<section class='catchup'>{lyric}<p><strong>{title}</strong></p>"
+            f"<p>{_html.escape(model['reason'])}</p>"
+            f"<p><code>{_html.escape(CATCH_UP_CMD)}</code> "
+            f"{_copy_btn(CATCH_UP_CMD, 'copy: catch up on strong lensing')} "
+            "<span class='muted'>Human-reviewed paper selection</span></p></section>")
 
 
 def _totals(snapshot: dict) -> dict:
@@ -1593,6 +1660,7 @@ def to_state(snapshot: dict) -> dict:
         "items": [],
         # Days since memory last ingested a paper (None: nothing on record).
         "days_since_ingest": _days_since_ingest(snapshot),
+        "lensing_catch_up": _lensing_catch_up(snapshot),
     }
     if not t["pages"]:
         return state
@@ -1651,6 +1719,19 @@ def to_state(snapshot: dict) -> dict:
                                     "add", source=inbox_actions.INBOX_FILE)
             or None,
             "prompt": None})
+
+    catchup = state["lensing_catch_up"]
+    if catchup["state"] != "healthy":
+        stale = catchup["state"] == "stale"
+        text = "Strong-lensing catch-up due" if stale else "Strong-lensing freshness unknown"
+        reasons.append(text)
+        yellow.append({
+            "id": catchup["id"], "severity": "yellow" if stale else "info",
+            "state": catchup["state"], "text": text, "reason": catchup["reason"],
+            "url": catchup["evidence"][0]["url"] if catchup["evidence"] else page,
+            "prompt": CATCH_UP_CMD, "actions": catchup["actions"],
+            "recommended_action_id": catchup["recommended_action_id"],
+        })
 
     badge = badge_endpoint(snapshot)["message"]
     state.update(

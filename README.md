@@ -82,7 +82,21 @@ Away for a while? [`/catch_up`](skills/catch_up/catch_up.md) collects every
 paper missed since memory last ingested one — lapsed suggestions from git
 history, the open queue, and an arXiv gap-fill over days the digest never ran
 (`scripts/catch_up.py`) — for one triage and one filing PR. The dashboard
-shows a banner once a week has passed without an ingest.
+shows a strong-lensing catch-up banner after seven days without recorded lensing
+paper activity. Recent activity in other topics does not reset that clock.
+
+The same `lensing_catch_up` record backs the banner and cockpit feed: canonical
+state, cutoff date, age, seven-day threshold/deadline, observation time, evidence
+links and explicit action descriptors. Healthy work adds no attention row;
+missing, invalid or future dates are unknown. `last_ingestion` identifies the
+verified bib-plus-sources commit, while `last_completed` is a queue DONE date
+(which may mean read-without-filing); `last_activity` is the existing catch-up
+cutoff, the later of those dates. Legacy all-scope fields remain available.
+
+The cockpit copies the existing `/catch_up lensing` prompt and links to its
+procedure. Its safety is `scientific_judgement`: candidate selection and filing
+retain the procedure's human review. Observing staleness executes nothing, and
+no scientific choice is fabricated before candidates are harvested.
 
 The wiki schema is defined in
 [`wiki/AGENTS.md`](wiki/AGENTS.md) and inherited by every
