@@ -3,9 +3,9 @@
 A phone-readable, MANAGEMENT-FIRST view of the repo's knowledge: what is
 waiting to be read, which paper sections still need a canonical BibTeX key,
 how mature each sub-wiki is — each work queue carrying a one-tap 📋 copy
-block holding a paste-ready Claude Code prompt that executes this repo's own
+block holding a paste-ready AI assistant prompt that executes this repo's own
 documented workflow (``bibliography/README.md`` "Adding a paper",
-``wiki/AGENTS.md``'s schema) — plus contents cards with ``/memory <domain>``
+``wiki/AGENTS.md``'s schema) — plus contents cards with ``Use the memory skill. <domain>``
 recall chips. Reading-queue sections expand to the individual papers: each
 title links out to the arXiv abstract page (or, when the line carries no ref,
 a title search — see ``scripts/arxiv_refs.py``), carries a 📄 button onto the
@@ -93,7 +93,7 @@ import catch_up  # noqa: E402
 #: ``scripts/catch_up.py`` reads back.
 CATCH_UP_DAYS = 7
 CATCH_UP_LYRIC = "…so… I've been lost for a while"  # Fred again..
-CATCH_UP_CMD = "/catch_up lensing"
+CATCH_UP_CMD = "Read PyAutoMemory/skills/catch_up/SKILL.md and follow the catch_up skill with arguments: lensing."
 
 # The family look lives once, in the Brain (``board/_theme.py``): the
 # stylesheet, the hero that redraws this organ's logo as a mark, and the
@@ -831,7 +831,7 @@ def _inbox_freshness(snapshot: dict, key: str = "inbox_last_digest") -> dict:
     owner = snapshot.get("owner")
     workflow_url = (f"https://github.com/{owner}/PyAutoMind/actions/workflows/{workflow}"
                     if owner else None)
-    prompt = (f"/bug investigate {label} digest freshness; inspect the recorded "
+    prompt = (f"Use the bug skill. investigate {label} digest freshness; inspect the recorded "
               f"date in {filename} and the {workflow} workflow before choosing a remedy")
     if workflow_url:
         prompt += f" — {workflow_url}"
@@ -1063,7 +1063,7 @@ def _bar(statuses: dict) -> str:
 _LEDE = ("What the organism knows, and what it still owes a citation. On a "
          "paper: \U0001f4e5 intake · \U0001f4d1 cite · \u2705 mark read — each opens a "
          "prefilled issue (add notes, submit to act). \U0001f9f9 clears a whole "
-         "interests day. \U0001f4cb copies a Claude Code prompt.")
+         "interests day. \U0001f4cb copies an AI assistant prompt.")
 
 _EXTRA_CSS = """
 .bar{display:inline-block;width:90px;height:8px;border-radius:4px;
@@ -1537,7 +1537,7 @@ def _render_html(snapshot: dict) -> str:
             f"<td>{_bar(s)} <span class='meta'>{s.get('stub', 0)} stub · "
             f"{s.get('drafted', 0)} drafted</span> "
             f"{_copy_btn(_stub_prompt(snapshot, w['name']), 'copy: upgrade a stub')} "
-            f"{_copy_btn('/memory ' + w['name'], 'copy: recall this domain')}"
+            f"{_copy_btn('Use the memory skill. ' + w['name'], 'copy: recall this domain')}"
             f"</td></tr>")
 
     n_batches = snapshot.get("interests_batches") or 0
@@ -1691,7 +1691,7 @@ def to_state(snapshot: dict) -> dict:
     The headline is the badge message (so the cockpit and the README badge say
     the same thing), prefixed with the first reason when yellow. Items are the
     rows that ask something of a human, most urgent first, each carrying the
-    same copy-for-Claude prompt or issue link the board page offers.
+    same copy-for-assistant prompt or issue link the board page offers.
     """
     t = _totals(snapshot)
     repo_url = _repo_url(snapshot)

@@ -177,7 +177,7 @@ def test_work_queue_prompts_reference_the_documented_workflow(tmp_path):
     assert "data-cmd=" in html  # the shared copy handler's payload hook
     assert "reading-queue.md" in html          # file-the-next-paper prompt
     assert "make validate" in html             # every prompt ends at the gate
-    assert "/memory demo" in html              # the recall chip
+    assert "Use the memory skill. demo" in html              # the recall chip
     assert "wiki/AGENTS.md" in html            # the schema anchor
 
 
@@ -956,7 +956,7 @@ def test_banner_at_the_threshold_carries_the_day_count(tmp_path):
     assert "**Strong-lensing catch-up due**" in md
     assert "2026-09-23 (7 days ago)" in md
     assert "after 7 days" in md
-    assert "`/catch_up lensing`" in md
+    assert "`Read PyAutoMemory/skills/catch_up/SKILL.md and follow the catch_up skill with arguments: lensing.`" in md
     # Top of the markdown: before the contents line.
     assert md.index("Strong-lensing catch-up due") < md.index("_Contents")
 
@@ -966,7 +966,7 @@ def test_banner_html_sits_above_the_hero_with_a_copy_button(tmp_path):
     page = board.render(snap, "html")
     assert "<em>…so… I&#x27;ve been lost for a while</em>" in page
     assert "2026-09-11 (19 days ago)" in page
-    assert 'data-cmd="/catch_up lensing"' in page
+    assert 'data-cmd="Read PyAutoMemory/skills/catch_up/SKILL.md and follow the catch_up skill with arguments: lensing."' in page
     assert page.index("class='catchup'") < page.index('class="hero"')
     assert board.to_state(snap)["days_since_ingest"] == 19
 
@@ -995,7 +995,7 @@ def test_lensing_catch_up_threshold_has_one_model_for_every_surface(tmp_path, ag
         assert len(rows) == 1 and rows[0]["reason"] == model["reason"]
         assert model["reason"] in board.render(snap, "md")
         assert model["reason"] in board.render(snap, "html")
-        assert rows[0]["actions"][0]["target"] == "/catch_up lensing"
+        assert rows[0]["actions"][0]["target"] == "Read PyAutoMemory/skills/catch_up/SKILL.md and follow the catch_up skill with arguments: lensing."
         assert rows[0]["actions"][0]["safety"] == "scientific_judgement"
         assert "requires_human_decision" not in rows[0]  # No invented choice.
 
@@ -1112,7 +1112,7 @@ def test_digest_scopes_share_feed_evidence_and_explicit_actions(tmp_path):
     assert state['digests']['interests']['evidence_url'].endswith('/arxiv-interests.md')
     assert all(a['safety'] == ('read_only' if a['kind'] == 'link' else 'requires_approval')
                for a in row['actions'])
-    assert row['prompt'].startswith('/bug investigate')
+    assert row['prompt'].startswith('Use the bug skill. investigate')
 
 
 def test_quiet_digest_and_backlog_have_same_freshness(tmp_path):
