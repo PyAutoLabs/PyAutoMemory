@@ -448,7 +448,7 @@ def test_the_stamp_is_collected(tmp_path):
 def test_a_quiet_day_says_the_digest_ran(tmp_path):
     """The state the old wording could not distinguish from a broken run."""
     md = board._render_md(_inbox(tmp_path, "2026-08-25"))
-    assert "the last digest ran 2026-08-25 and found nothing" in md
+    assert "the last digest ran 2026-08-25; nothing is waiting" in md
     assert "⚠" not in md
 
 
@@ -716,10 +716,10 @@ def test_the_two_tiers_carry_their_own_stamps(tmp_path):
     """One digest can break while the other keeps running; the page must not
     report the healthy one's date for the broken one."""
     snap = _snap_with_remote(tmp_path)
-    snap["inbox_last_digest"] = "2026-08-27"
+    snap["inbox_last_digest"] = "2026-08-25"
     snap["interests_last_digest"] = "2026-08-20"
     html = board._render_html(snap)
-    assert "data-last-digest='2026-08-27'" in html
+    assert "data-last-digest='2026-08-25'" in html
     assert "data-last-digest='2026-08-20'" in html
 
 
@@ -832,6 +832,7 @@ def _state_snap(tmp_path):
     snap = board.collect(_tree(tmp_path))
     snap["owner"], snap["repo"] = "SomeOrg", "MemRepo"
     snap["generated"] = FIXTURE_NOW
+    snap["inbox_last_digest"] = snap["interests_last_digest"] = FIXTURE_NOW[:10]
     snap["lensing_ingest_evidence"] = {"last_ingested": FIXTURE_NOW[:10], "done": FIXTURE_NOW[:10], "bib": None}
     return snap
 
@@ -895,7 +896,7 @@ def test_a_stale_inbox_turns_the_state_yellow(tmp_path):
     assert state["status"] == "yellow"
     assert state["headline"].startswith("arXiv inbox digest stale")
     assert state["items"][0]["severity"] == "yellow"
-    assert "no digest since 2026-08-19" in state["items"][0]["text"]
+    assert "no digest since 2026-08-19" in state["items"][0]["reason"]
 
 
 def test_pending_filings_turn_the_state_yellow(tmp_path):
@@ -1054,3 +1055,89 @@ def test_cutoff_requires_matching_scoped_evidence(tmp_path):
     assert board._lensing_catch_up(snap)["state"] == "unknown"
     snap["lensing_ingest_evidence"]["done"] = None
     assert board._lensing_catch_up(snap)["state"] == "unknown"
+
+
+@pytest.mark.parametrize('today,age,state', [
+    ('2026-08-21', 0, 'healthy'), ('2026-08-23', 0, 'healthy'),
+    ('2026-08-24', 1, 'healthy'), ('2026-08-25', 2, 'stale'),
+])
+def test_digest_weekday_boundary(tmp_path, today, age, state):
+    snap = _state_snap(tmp_path)
+    snap.update(generated=today + 'T09:00:00Z', inbox_last_digest='2026-08-21')
+    fresh = board._inbox_freshness(snap)
+    assert (fresh['weekdays'], fresh['state']) == (age, state)
+    assert fresh['threshold_weekdays'] == 2
+    assert fresh['last_recorded'] == '2026-08-21'
+
+
+@pytest.mark.parametrize('stamp', [None, '', 'bad', '2026-02-30',
+                                  '2026-08-27', '20260826', 123])
+def test_untrustworthy_digest_stamp_is_unknown(tmp_path, stamp):
+    snap = _state_snap(tmp_path)
+    snap['inbox_last_digest'] = stamp
+    fresh = board.to_state(snap)['digests']['lensing']
+    assert fresh['state'] == 'unknown'
+    assert fresh['last_recorded'] is None and fresh['weekdays'] is None
+    row = next(r for r in board.to_state(snap)['items']
+               if r.get('id') == 'memory:digest:lensing')
+    assert row['state'] == 'unknown' and row['reason'] == fresh['reason']
+    assert "data-last-digest='bad'" not in board._render_html(snap)
+    assert fresh['reason'] in board._render_md(snap)
+
+
+@pytest.mark.parametrize('clock', [None, 'bad', '2026-08-26T09:00:00'])
+def test_digest_requires_a_valid_observation_time(tmp_path, clock):
+    snap = _state_snap(tmp_path)
+    snap['generated'] = clock
+    fresh = board._inbox_freshness(snap)
+    assert fresh['state'] == 'unknown' and fresh['checked_at'] is None
+
+
+def test_digest_scopes_share_feed_evidence_and_explicit_actions(tmp_path):
+    snap = _state_snap(tmp_path)
+    snap['inbox_last_digest'] = '2026-08-21'
+    state = board.to_state(snap)
+    assert state['digests']['interests']['state'] == 'healthy'
+    assert state['digests']['lensing']['state'] == 'stale'
+    rows = [r for r in state['items'] if r.get('id', '').startswith('memory:digest:')]
+    assert len(rows) == 1
+    row = rows[0]
+    fresh = state['digests']['lensing']
+    assert fresh == board._inbox_freshness(snap)
+    assert row['actions'] == fresh['actions']
+    assert row['recommended_action_id'] == 'inspect-workflow'
+    assert fresh['workflow_url'].endswith('/PyAutoMind/actions/workflows/arxiv_papers.yml')
+    assert fresh['evidence_url'].endswith('/MemRepo/blob/main/arxiv-inbox.md')
+    assert state['digests']['interests']['workflow_url'].endswith('/arxiv_interests.yml')
+    assert state['digests']['interests']['evidence_url'].endswith('/arxiv-interests.md')
+    assert all(a['safety'] == ('read_only' if a['kind'] == 'link' else 'requires_approval')
+               for a in row['actions'])
+    assert row['prompt'].startswith('/bug investigate')
+
+
+def test_quiet_digest_and_backlog_have_same_freshness(tmp_path):
+    snap = _state_snap(tmp_path)
+    populated = board.to_state(snap)['digests']
+    snap['inbox'], snap['interests'] = [], []
+    assert board.to_state(snap)['digests'] == populated
+    assert all(f['state'] == 'healthy' for f in populated.values())
+    assert not any(r.get('id', '').startswith('memory:digest:')
+                   for r in board.to_state(snap)['items'])
+
+
+def test_digest_without_remote_offers_manual_investigation(tmp_path):
+    snap = _state_snap(tmp_path)
+    snap['owner'], snap['repo'] = None, None
+    fresh = board._inbox_freshness(snap)
+    assert fresh['workflow_url'] is None and fresh['evidence_url'] is None
+    assert [a['id'] for a in fresh['actions']] == ['investigate']
+    assert fresh['recommended_action_id'] == 'investigate'
+
+
+def test_invalid_digest_is_escaped_and_never_given_to_browser_clock(tmp_path):
+    snap = _state_snap(tmp_path)
+    snap['inbox_last_digest'] = '<script>oops</script>'
+    html = board._render_html(snap)
+    assert '<script>oops</script>' not in html
+    assert 'digest date is invalid or in the future' in html
+    assert "data-last-digest='<" not in html

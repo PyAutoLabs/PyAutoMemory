@@ -98,6 +98,16 @@ procedure. Its safety is `scientific_judgement`: candidate selection and filing
 retain the procedure's human review. Observing staleness executes nothing, and
 no scientific choice is fabricated before candidates are harvested.
 
+The feed also exposes independent `digests.lensing` and `digests.interests`
+records, shared with the board freshness indicators. Each records its canonical
+state, last recorded date, checked time, elapsed weekdays, two-weekday threshold,
+reason and evidence/action links. Empty queues with a recent stamp stay healthy;
+missing, invalid or future stamps are unknown. The stamp proves a digest was
+recorded, not that every workflow step succeeded. Stale/unknown cockpit rows
+link to the owning Mind workflow and offer a manual investigation prompt
+(`requires_approval`); detection never reruns a workflow. Digest delivery and
+human lensing catch-up remain separate clocks.
+
 The wiki schema is defined in
 [`wiki/AGENTS.md`](wiki/AGENTS.md) and inherited by every
 sub-wiki. How agents should read this repo: [AGENTS.md](AGENTS.md). The

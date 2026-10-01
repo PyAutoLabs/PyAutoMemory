@@ -810,37 +810,81 @@ def _stub_prompt(snapshot: dict, wiki: str) -> str:
             f"in wiki/AGENTS.md, set status: drafted, and run make validate.")
 
 
+# The existing Mind producers write independent date stamps in these files.
+DIGESTS = {
+    "inbox_last_digest": ("lensing", "arXiv inbox", "arxiv-inbox.md", "arxiv_papers.yml"),
+    "interests_last_digest": ("interests", "arXiv interests", "arxiv-interests.md", "arxiv_interests.yml"),
+}
+
+
 def _inbox_freshness(snapshot: dict, key: str = "inbox_last_digest") -> dict:
-    """A suggestion tier's freshness facts, shared by both renderers.
+    """One owner policy for both board renderers and the cockpit feed.
 
-    ``key`` picks the tier — the strong-lensing inbox or the interests list.
-    Each has its own nightly digest and so its own way to be silently broken.
-
-    ``stale`` is what the *markdown* fallback can say. The HTML page must not
-    trust it for the warning: see ``_EXTRA_JS``.
+    A filing stamp is evidence of a recorded digest, not a GitHub run ID or
+    proof that every step of that workflow succeeded. Empty queues do not
+    change freshness: a quiet-day stamp is just as valid as a populated one.
     """
+    scope, label, filename, workflow = DIGESTS[key]
     stamp = snapshot.get(key)
+    repo = _repo_url(snapshot)
+    evidence_url = f"{repo}/blob/main/{filename}" if repo else None
+    owner = snapshot.get("owner")
+    workflow_url = (f"https://github.com/{owner}/PyAutoMind/actions/workflows/{workflow}"
+                    if owner else None)
+    prompt = (f"/bug investigate {label} digest freshness; inspect the recorded "
+              f"date in {filename} and the {workflow} workflow before choosing a remedy")
+    if workflow_url:
+        prompt += f" — {workflow_url}"
+    actions = []
+    if workflow_url:
+        actions.append({"id": "inspect-workflow", "label": "Inspect workflow", "kind": "link",
+                        "target": workflow_url, "safety": "read_only"})
+    if evidence_url:
+        actions.append({"id": "view-stamp", "label": "View digest stamp", "kind": "link",
+                        "target": evidence_url, "safety": "read_only"})
+    actions.append({"id": "investigate", "label": "Copy investigation prompt", "kind": "prompt",
+                    "target": prompt, "safety": "requires_approval"})
+    result = {"id": f"memory:digest:{scope}", "scope": scope, "label": label,
+              "stamp": stamp, "last_recorded": None, "checked_at": None,
+              "weekdays": None, "threshold_weekdays": inbox_actions.INBOX_STALE_WEEKDAYS,
+              "state": "unknown", "stale": False, "evidence_url": evidence_url,
+              "workflow_url": workflow_url, "actions": actions,
+              "recommended_action_id": "inspect-workflow" if workflow_url else "investigate",
+              "reason": "no run recorded yet — digest freshness unknown"}
     try:
-        today = datetime.datetime.fromisoformat(
-            str(snapshot.get("generated"))).date()
+        now = datetime.datetime.fromisoformat(str(snapshot.get("generated")))
+        if now.tzinfo is None:
+            raise ValueError("missing timezone")
+        today = now.astimezone(datetime.timezone.utc).date()
+        result["checked_at"] = _iso_z(snapshot["generated"])
     except (TypeError, ValueError):
-        today = datetime.datetime.now(datetime.timezone.utc).date()
-    return {
-        "stamp": stamp,
-        "weekdays": inbox_actions.weekdays_since(stamp, today) if stamp else 0,
-        "stale": inbox_actions.is_stale(stamp, today),
-    }
+        result["reason"] = "snapshot time is missing or invalid — digest freshness unknown"
+        return result
+    if stamp is None:
+        return result
+    try:
+        parsed = datetime.date.fromisoformat(stamp)
+        if parsed.isoformat() != stamp or parsed > today:
+            raise ValueError("future or noncanonical date")
+    except (TypeError, ValueError):
+        result["reason"] = "digest date is invalid or in the future — freshness unknown; inspect the stamp"
+        return result
+    weekdays = inbox_actions.weekdays_since(stamp, today)
+    stale = inbox_actions.is_stale(stamp, today)
+    result.update(last_recorded=stamp, weekdays=weekdays, stale=stale,
+                  state="stale" if stale else "healthy")
+    result["reason"] = (f"no digest since {stamp} ({weekdays} weekdays) — the nightly filing may be broken; "
+                        f"threshold: {inbox_actions.INBOX_STALE_WEEKDAYS} weekdays" if stale else
+                        f"digest recorded {stamp}; {weekdays} weekdays elapsed, below the "
+                        f"{inbox_actions.INBOX_STALE_WEEKDAYS}-weekday threshold")
+    return result
 
 
 def _inbox_empty_note(fresh: dict) -> str:
-    """Why a tier is empty — quiet, suspect, or never run. Plain text."""
-    if fresh["stale"]:
-        return (f"no digest since {fresh['stamp']} "
-                f"({fresh['weekdays']} weekdays) — the nightly filing may be "
-                f"broken")
-    if fresh["stamp"]:
-        return f"the last digest ran {fresh['stamp']} and found nothing"
-    return "the nightly arXiv digest fills this — no run recorded yet"
+    """Why a tier is empty without inferring the number of papers fetched."""
+    if fresh["state"] != "healthy":
+        return fresh["reason"]
+    return f"the last digest ran {fresh['stamp']}; nothing is waiting"
 
 
 # --- renderers ------------------------------------------------------------------
@@ -880,7 +924,9 @@ def _render_md(snapshot: dict) -> str:
     inbox = snapshot.get("inbox") or []
     fresh = _inbox_freshness(snapshot)
     if inbox:
-        digest = (f"last digest {fresh['stamp']} · " if fresh["stamp"] else "")
+        digest = (f"last digest {fresh['last_recorded']} · " if fresh["last_recorded"] else "")
+        if fresh["state"] != "healthy":
+            digest += fresh["reason"] + " · "
         warn = ("⚠ " if fresh["stale"] else "")
         lines += [f"_{len(inbox)} waiting · {warn}{digest}un-acted suggestions "
                   f"lapse after {inbox_actions.INBOX_WINDOW_DAYS} days._", ""]
@@ -906,6 +952,7 @@ def _render_md(snapshot: dict) -> str:
     interests = snapshot.get("interests") or []
     ifresh = _inbox_freshness(snapshot, "interests_last_digest")
     if interests:
+        lines += [f"_{ifresh['reason']}_", ""]
         date = snapshot.get("interests_date") or "?"
         left = max(0, (snapshot.get("interests_batches") or 1) - 1)
         backlog = (f" · {left} more day{'s' if left != 1 else ''} behind it"
@@ -1343,7 +1390,9 @@ def _render_html(snapshot: dict) -> str:
                     cls: str = "meta") -> str:
         """`fresh` is explicit because the page renders two tiers, each with
         its own digest, its own stamp and its own way of going silent."""
-        if not fresh["stamp"]:
+        if fresh["state"] == "unknown":
+            if fresh["reason"] not in now_text:
+                now_text += " · " + fresh["reason"]
             return f"<span class='{cls}'>{_html.escape(now_text)}</span>"
         if fresh["stale"]:
             # Already stale at render time: show the warning now, so a reader
@@ -1661,6 +1710,7 @@ def to_state(snapshot: dict) -> dict:
         # Days since memory last ingested a paper (None: nothing on record).
         "days_since_ingest": _days_since_ingest(snapshot),
         "lensing_catch_up": _lensing_catch_up(snapshot),
+        "digests": {spec[0]: _inbox_freshness(snapshot, key) for key, spec in DIGESTS.items()},
     }
     if not t["pages"]:
         return state
@@ -1668,17 +1718,20 @@ def to_state(snapshot: dict) -> dict:
     yellow: list[dict] = []
     info: list[dict] = []
     reasons: list[str] = []
-    for key, label in (("inbox_last_digest", "arXiv inbox"),
-                       ("interests_last_digest", "arXiv interests")):
-        fresh = _inbox_freshness(snapshot, key)
-        if fresh["stale"]:
-            reasons.append(f"{label} digest stale")
+    for fresh in state["digests"].values():
+        if fresh["state"] != "healthy":
+            label = fresh["label"]
+            text = f"{label} digest stale" if fresh["stale"] else f"{label} digest freshness unknown"
+            reasons.append(text)
+            prompt = next(a["target"] for a in fresh["actions"] if a["id"] == "investigate")
             yellow.append({
-                "severity": "yellow",
-                "text": _clip(f"{label}: no digest since {fresh['stamp']} "
-                              f"({fresh['weekdays']} weekdays) — the nightly "
-                              f"filing may be broken"),
-                "url": pages_url(snapshot) or None, "prompt": None})
+                "id": fresh["id"], "state": fresh["state"],
+                "severity": "yellow" if fresh["stale"] else "info",
+                "text": _clip(text), "reason": fresh["reason"],
+                "url": fresh["evidence_url"], "prompt": prompt,
+                "actions": fresh["actions"],
+                "recommended_action_id": fresh["recommended_action_id"],
+            })
     filings = snapshot.get("filings") or []
     if filings:
         reasons.append("filings awaiting merge")
