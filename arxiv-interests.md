@@ -47,118 +47,14 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-09-16
-2026-08-28 — [Stats] Cross-simulator transfer with foundation model summaries: Towards robust SKA-era reionization inference — 2608.26354
-2026-08-28 — [SMBHs] Optimal transport regularized dynamic radio interferometric reconstruction — 2608.27192
-2026-08-28 — [Dark Matter] The solitary star cluster of the Andromeda XXV dwarf spheroidal — 2608.26959
-2026-08-28 — [Dark Matter] Scatter, bias, and chaos of satellite orbits in triaxial dark matter haloes — 2608.26249
-2026-08-28 — [Dark Matter] ELUCID-DESI II. Revealing dark matter mass, tidal, and velocity (MTV) fields using galaxy group phase information — 2608.26668
-2026-08-28 — [Dark Matter] Paleo-Detectors as a Novel Probe of Dark Matter-Nucleus Effective Interactions — 2608.26289
-2026-08-28 — [Dark Matter] Effects of the interaction of dark matter and neutron-star matter on extreme and intermediate mass-ratio inspirals — 2608.26274
-2026-08-28 — [Galaxy Formation / Evolution] SERENADE III: Insight into the Origin of the High Dust Temperature and High [O III]/[C II] Ratio at $z\gtrsim6$ — 2608.26708
-2026-08-28 — [Galaxy Formation / Evolution] COSMOS-Web: From early star-formation enhancement to late suppression in galaxy groups — 2608.26348
-2026-08-28 — [Dark Matter] Barren but not Empty: The Impact of Void Environments on Galaxy and Halo Populations — 2608.26256
-2026-08-28 — [Stats] Derivative hierarchy as the origin of kernel-dependent trends in Gaussian process reconstructions of the hubble parameter — 2608.26774
-2026-08-28 — [Galaxy Formation / Evolution] The origin of the stellar mass-size relation of satellite galaxies in the COLIBRE simulations — 2608.26275
-2026-08-28 — [Stats] $\texttt{SPINE}$: Symbolic Models to Predict the Evolution of the $Λ$CDM Nonlinear Power Spectrum — 2608.26276
-2026-08-28 — [Dark Matter] Revisiting the enigmatic sixth star cluster in the Fornax dwarf spheroidal galaxy — 2608.27270
-2026-08-31 — [SMBHs] Overmassive supermassive black holes in SDSS close galaxy pairs — 2608.27730
-2026-08-31 — [SMBHs] Formation of black hole stars via star--black hole collisions — 2608.27596
-2026-08-31 — [Galaxy Formation / Evolution] Dust and PAHs in late-stage galaxy evolution: Imprints of TP-AGB dust injection, grain growth and AGN feedback in high-z quiescent galaxies with JWST and ALMA — 2608.27571
-2026-08-31 — [Stats] Fast and efficient nested sampling with BEST — 2608.28514
-2026-08-31 — [SMBHs] Relativistic outflows power a quasi-periodic eruption: constraints on energetics, mass loss, and emission mechanisms — 2608.28507
-2026-08-31 — [SMBHs] From Inspiral to Expansion: The Wake-Driven Torque on Binary Black Holes in Gaseous Medium — 2608.27970
-2026-08-31 — [SMBHs] A Similarity Theorem and Its Breakdown in Atomic Black Hole Accretion — 2608.28587
-2026-08-31 — [Stats] Learning the averaged history of an inhomogeneous universe from its present day density field — 2608.27962
-2026-08-31 — [Dark Matter] Low-energy antinuclei measurements for background-free indirect dark matter searches and PBH signatures — 2608.27787
-2026-08-31 — [Dark Matter] A Unified Tracer Analysis of DESI DR2 Baryon Acoustic Oscillations — 2608.27830
-2026-09-01 — [SMBHs] ALMA CO(2-1) Gas Dynamics in NGC 315: A Multi-Method Benchmark for Supermassive Black Hole Mass Measurement — 2608.31015
-2026-09-01 — [SMBHs] A Self-Sustaining Black Hole Engine Powered by the Tidal Disruptions of Stars — 2608.28947
-2026-09-01 — [Galaxy Formation / Evolution] The Structural Abundance Crisis of Massive Galaxies in Current Cosmological Simulations — 2608.29893
-2026-09-01 — [Dark Matter] Stellar streams around dwarf galaxies are observationally rare in the local Universe — 2608.30806
-2026-09-01 — [Dark Matter] Photon--Dark Matter Elastic Scattering: An Effective-Operator Scan and First Operator-Resolved Sensitivity Estimates from the Galactic Halo — 2608.29546
-2026-09-01 — [SMBHs] The multi-frequency radio light curve of the sub-pc SMBH binary candidate PG 1302-102 — 2608.29682
-2026-09-01 — [Galaxy Formation / Evolution] Radio-dust connection in quasars driven by powerful ionised outflows — 2608.28775
-2026-09-01 — [Galaxy Formation / Evolution] Caught Napping by JWST UNCOVER+MegaScience: Constraining bursty star formation histories and number densities of mini-quenched galaxies at redshifts 4-7 — 2608.30011
-2026-09-01 — [Galaxy Formation / Evolution] Constraining Baryonic Feedback at $z\sim 1$ with the H$α$ Luminosity Function — 2608.30698
-2026-09-01 — [SMBHs] Evidence for an accretion-driven subpopulation of black holes in GWTC-5.0 — 2608.29072
-2026-09-02 — [SMBHs] Nanohertz Gravitational-Wave Constraints on Supermassive Binary Black Holes at Cosmic Dawn — 2609.00613
-2026-09-02 — [Galaxy Formation / Evolution] Slow stellar halo rotation as a signature of disc flips and GES-like mergers — 2609.01208
-2026-09-02 — [Stats] Connecting radio pulsars, magnetars, and XDINSs in a unified evolutionary framework using simulation-based inference — 2609.00962
-2026-09-02 — [SMBHs] Accretion-disk sizes in two quasars with interferometrically resolved broad-line regions at $z=2.3$ and $z=4.0$ — 2609.00278
-2026-09-02 — [Dark Matter] Extragalactic Stellar Streams in Time-Dependent Cosmological Halos — 2609.00526
-2026-09-02 — [Galaxy Formation / Evolution] ELVES-Dwarf. II. A Systematic Search for Satellite Systems of Dwarf Galaxies in the Local Volume — 2609.00283
-2026-09-02 — [Dark Matter] Scalar wave scattering by black holes embedded in dark matter halos — 2609.01391
-2026-09-02 — [Dark Matter] Baryonic feedback suppression of the matter power spectrum: a three-parameter fitting formula and its single-parameter reduction — 2609.00807
-2026-09-02 — [Stats] $\texttt{BilbyFlow}$: user-friendly neural posterior estimation for gravitational-wave astronomy — 2609.00766
-2026-09-02 — [SMBHs] Extreme AGN Variability in WISE: Powerful Flares and Candidate Tidal Disruption Events in AGN — 2609.01421
-2026-09-03 — [SMBHs] JWST Reveals a Candidate Supermassive Black Hole Binary at z=4.3 in the Brightest Sub-millimeter Galaxy in COSMOS-Web — 2609.01711
-2026-09-03 — [Galaxy Formation / Evolution] The GOGREEN Survey: AI Powered Deconvolution Lifts The Veil on Outside-in Environmental Quenching at z > 1 — 2609.01903
-2026-09-03 — [Dark Matter] Dark Matter at the Kinematic Edge: Interpreting the 248 keV LZ Nuclear-Recoil Candidate — 2609.02608
-2026-09-03 — [SMBHs] Feeding The Little Monster: An Accreting Intermediate-Mass Black Hole In A Minor Merger Secondary Galaxy — 2609.02667
-2026-09-03 — [Dark Matter] Dark Matter Halo Tumbling Induced by Torques from Massive Mergers — 2609.01796
-2026-09-03 — [Dark Matter] Ultralight Bosons Explain the Mass-Spin Correlations in the Merging Binary Black Hole Population — 2609.02678
-2026-09-03 — [SMBHs] Magnetized accretion onto rapidly spinning binary black holes: mini-disk thermodynamics, magnetic transport, and dual jets — 2609.02867
-2026-09-03 — [Stats] Blast.jl: Differentiable Non-Limber Power Spectra for Joint Clustering, Shear, and CMB lensing Analyses — 2609.01855
-2026-09-03 — [Stats] Revisiting orbital recurrence in the dimmings of Boyajian's star (KIC~8462852) — 2609.02726
-2026-09-03 — [Stats] Learning and Predicting the Nonlinear Variability of X-ray Binaries with the Koopman Operator — 2609.01734
-2026-09-04 — [SMBHs] Rapid Growth of Intermediate-Mass Black Holes through Disk-induced Stellar DisruptionsRapid Growth of Intermediate-Mass Black Holes through Disk-induced Stellar Disruptions — 2609.03701
-2026-09-04 — [SMBHs] Unlocking the QPE Mystery: Star-Disk Collisions in Realistic AGN Disks — 2609.03011
-2026-09-04 — [Galaxy Formation / Evolution] Bright star-forming galaxies naturally forming at z>10 in the Shark semi-analytic model — 2609.03537
-2026-09-04 — [Dark Matter] Strong Constraints for Line Signals from Dark Matter Annihilation in Sub-halo — 2609.03016
-2026-09-04 — [SMBHs] Sgr A* as a Galactic PeVatron: Multimessenger Signatures of the Magnetic Penrose Process — 2609.04051
-2026-09-04 — [SMBHs] Absolute Motion of the Infrared Counterpart to Sagittarius A* in the Gaia Celestial Reference Frame 3 and Limits on an Intermediate-mass Black Hole Companion — 2609.04077
-2026-09-04 — [Dark Matter] Euclid preparation. The shape of halo profiles in ΛCDM and non-standard cosmologies — 2609.04192
-2026-09-04 — [Galaxy Formation / Evolution] Same galaxy, different CGM: how the metal loading of galactic winds regulates the baryon cycle in Milky Way-mass galaxies — 2609.03083
-2026-09-04 — [Stats] Observational selection effects on radio pulsars are minimal for masses, but significant for orbits and spins — 2609.03157
-2026-09-04 — [Dark Matter] Prospects for probing dark matter with filamentary 21cm emission — 2609.03649
-2026-09-07 — [Galaxy Formation / Evolution] Widespread Inflows Reveal Baryonic Cycling in Star-forming and Quiescent Galaxies — 2609.04327
-2026-09-07 — [SMBHs] Preferential accretion onto eccentric and unequal binary black holes — 2609.04491
-2026-09-07 — [Dark Matter] Supernovae Unite: Combining Pantheon+ and DES-SN5YR — 2609.05053
-2026-09-07 — [Stats] A guide to choosing data compression methods for cosmological inference — 2609.04829
-2026-09-07 — [Galaxy Formation / Evolution] Extending the Stellar-to-Halo Mass Relation to Dwarf Galaxies with DESI DR1 — 2609.04351
-2026-09-07 — [SMBHs] Electromagnetic alignment and jet precession around supermassive black holes: Quasi-periodic oscillations in tidal disruption events — 2609.05350
-2026-09-07 — [Galaxy Formation / Evolution] Rapid quenching and early gas depletion in the core of a galaxy protocluster at z=2.2 — 2609.05285
-2026-09-07 — [SMBHs] JWST/NIRSpec Reveals Diverse Nuclear Environments in Dwarf Galaxies Hosting AGN — 2609.04315
-2026-09-07 — [Stats] Fast Bayesian Inference for Long-Duration Gravitational-Wave Signals in 3G detectors — 2609.05375
-2026-09-07 — [Stats] Tracing the Cosmic Origins: Machine Learning Reconstruction of the Primordial Density Field from EoR Observations — 2609.05412
-2026-09-09 — [SMBHs] Small-Scale Clustering of Primordial Black Holes: The Little Red Dot Mass Function and the High-Redshift Galaxy Tension — 2609.09078
-2026-09-09 — [Galaxy Formation / Evolution] AEON-z5: A Candidate AGN-driven Outflow Enriching the Circumgalactic Medium at $z\simeq5.23$ — 2609.08264
-2026-09-09 — [SMBHs] Near-Horizon Tidal Disruption Events — 2609.08430
-2026-09-09 — [SMBHs] Hierarchical Inference of the Supermassive Black Hole Binary Merger Rates from Joint Searches using Pulsar Timing Arrays — 2609.09086
-2026-09-09 — [SMBHs] A New Sample of $\sim$ 100 Intermediate-mass Black Holes Reaching $z \approx 1$ — 2609.07836
-2026-09-09 — [Dark Matter] Detection prospects for heavy WIMP dark matter around M31* in microwave band — 2609.08771
-2026-09-09 — [Stats] Neural Posterior Estimation for Tomographic Weak Lensing Mass Mapping — 2609.07833
-2026-09-09 — [Galaxy Formation / Evolution] TILING I: Field-level Bayesian reconstruction of cosmological initial conditions during the epoch of reionization — 2609.09102
-2026-09-09 — [SMBHs] J023721.13$-$010528.5: A Giant $S$-shaped Radio Galaxy Showing Four Episodes of Jet Activity — 2609.08506
-2026-09-09 — [Galaxy Formation / Evolution] The environmental dependence of the circumgalactic medium in a high-resolution cosmological simulation — 2609.08654
-2026-09-10 — [SMBHs] Overmassive No More: The Case for Little Red Dots Hosting Black Hole Seeds as Massive as Single Supermassive Stars — 2609.09274
-2026-09-10 — [SMBHs] First Detection of Radio Polarization During Jet Formation in the Changing-Look AGN 1ES 1927+654 — 2609.09539
-2026-09-10 — [Dark Matter] CROCODILE-SIDM: Tidal Formation of Dark Matter-Deficient Galaxies as a Test Case — 2609.09729
-2026-09-10 — [Galaxy Formation / Evolution] JWST Spectra Conclusively Show an Excess of Neutral Gas Outflows in Quiescent Galaxies at z=2-5 — 2609.09459
-2026-09-10 — [Stats] Beyond the BLUE I: the advantage ceiling - how much can any estimator beat the matched filter in mm/submm survey data? — 2609.10475
-2026-09-10 — [Stats] Likelihood-free inference with nuisance parameters through normalizing flows — 2609.10534
-2026-09-10 — [SMBHs] Exploring the AGN population in protoclusters: results from the TNG300 simulation and comparison with observations — 2609.09297
-2026-09-10 — [Stats] Inductive Biases in Field-Level Cosmological Inference from Galaxy Catalogs — 2609.09504
-2026-09-10 — [SMBHs] Extending the Little Red Dot population at intermediate redshift with VIPERS — 2609.10319
-2026-09-10 — [Galaxy Formation / Evolution] From stardust to interstellar grain growth in the first galaxies: a cosmological transition in dust evolution near z ~ 8.9 — 2609.10290
-2026-09-11 — [Stats] Hierarchical Population Inference with Normalizing Flows for Binary Black Holes — 2609.11885
-2026-09-11 — [SMBHs] Probing the details of relativistic electrons with multifrequency observations of M87 black hole — 2609.11609
-2026-09-11 — [SMBHs] Binary-black hole spin population results may be driven by prior degeneracies — 2609.10753
-2026-09-11 — [Stats] Learning JWST. I. A Foundation Model for New Population Discoveries and Morphology-Aware Photometric Redshift Measurements in the JADES Survey — 2609.11879
-2026-09-11 — [Dark Matter] Generating the wide sequence of Diffuse Galaxies with de Broglie waves of Dark Matter — 2609.11510
-2026-09-11 — [SMBHs] Black Hole-Galaxy Correlations in Cluster Zoomed-in Simulations: GIZMO-SIMBA and TNG-Cluster — 2609.11191
-2026-09-11 — [Dark Matter] Impact of LSST systematics on stellar-stream density fluctuations for dark matter — 2609.10897
-2026-09-11 — [SMBHs] The THRILS Factor: Investigating the properties of Little Red Dots (LRDs) at 3<z<6 with JWST/NIRSpec — 2609.10803
-2026-09-11 — [Dark Matter] Constraints on the fuzzy dark matter mass using globular clusters in dwarf galaxies from Euclid ERO data — 2609.11328
-2026-09-11 — [Dark Matter] Probing dynamics of extreme galaxies I. Dark matter content in ultra-diffuse galaxies — 2609.10700
-2026-09-16 — [Dark Matter] Lower central dark matter densities in nearby galaxies than predicted by simulations — 2609.16740
-2026-09-16 — [Dark Matter] A Dark-matter Origin of Little Red Dots: Early Seeding and Super-Bondi Accretion — 2609.16122
-2026-09-16 — [Dark Matter] Right Energy, Wrong Profile: Why the 43 GeV Cluster Line Is Unlikely to Be Dark Matter — 2609.16425
-2026-09-16 — [Galaxy Formation / Evolution] Forged in Quenching: Morphological Transformation across Star-forming and Quiescent Galaxies in EAGLE — 2609.16187
-2026-09-16 — [Dark Matter] The Equivalence Principle in the Dark Sector in light of DESI — 2609.17423
-2026-09-16 — [SMBHs] NOCTURNE. II. Extreme radio variability in the heart of early-stage active galactic nuclei — 2609.16384
-2026-09-16 — [SMBHs] The Missing Black Hole in the Large Magellanic Cloud: A Dynamical Prediction for Its Present-Day Location — 2609.16177
-2026-09-16 — [Dark Matter] Cosmological Constrained Axion-Portal Inelastic Dark Matter for the LZ Event — 2609.17412
-2026-09-16 — [Galaxy Formation / Evolution] Population III Host Candidates at $z\sim2$: Strong He II $λ1640$ and Absent UV Metal Lines in HETDEX Ly$α$ Emitters — 2609.16134
-2026-09-16 — [SMBHs] Jet Feedback and the Self-Regulated Growth of Black Holes Embedded in AGN Disks — 2609.16167
+last digest: 2026-10-05
+2026-10-05 — [SMBHs] The Structure in the Structure Function of Black Hole Light Curves — 2610.02729
+2026-10-05 — [Dark Matter] Baryonic Imprints on DM Halos: the concentration-mass relation and its dependence on 28 model parameters in the CAMELS suite — 2610.03544
+2026-10-05 — [SMBHs] Separating the Optical to Near-Infrared Light of AGN and Their Host Galaxies — 2610.02465
+2026-10-05 — [Galaxy Formation / Evolution] A two-stage settling of the Milky Way disk revealed by precise ChronoGal ages — 2610.03164
+2026-10-05 — [Stats] Dark Energy Survey Year 6 Results: fast and interpretable posterior predictive checks for correlated cosmic probes — 2610.03447
+2026-10-05 — [SMBHs] Suppression of spiral density waves in collisionless accretion flows — 2610.02475
+2026-10-05 — [Dark Matter] The Largest Catalog of Dwarf Galaxy Groups: Transient Structures or Building Blocks of the Universe? — 2610.02587
+2026-10-05 — [Stats] A novel, fast, and accurate code for cosmological loop calculations — 2610.03466
+2026-10-05 — [Dark Matter] Higgsino dark matter compatible with the LUX-ZEPLIN high-energy nuclear-recoil event and IceCube constraints — 2610.03692
+2026-10-05 — [Galaxy Formation / Evolution] Star Cluster Populations in 38 Spiral Galaxies: Evidence for Near-Universal Mass and Age Distributions from PHANGS — 2610.02606
