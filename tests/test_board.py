@@ -961,13 +961,13 @@ def test_banner_at_the_threshold_carries_the_day_count(tmp_path):
     assert md.index("Strong-lensing catch-up due") < md.index("_Contents")
 
 
-def test_banner_html_sits_above_the_hero_with_a_copy_button(tmp_path):
+def test_catchup_html_follows_banner_and_navigation_with_a_copy_button(tmp_path):
     snap = _banner_snap(tmp_path, "2026-09-11")
     page = board.render(snap, "html")
     assert "<em>…so… I&#x27;ve been lost for a while</em>" in page
     assert "2026-09-11 (19 days ago)" in page
     assert 'data-cmd="Read PyAutoMemory/skills/catch_up/SKILL.md and follow the catch_up skill with arguments: lensing."' in page
-    assert page.index("class='catchup'") < page.index('class="hero"')
+    assert page.index('class="hero"') < page.index('class="board-nav"') < page.index("class='catchup'")
     assert board.to_state(snap)["days_since_ingest"] == 19
 
 

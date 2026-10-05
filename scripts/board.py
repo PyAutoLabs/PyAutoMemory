@@ -1565,14 +1565,23 @@ def _render_html(snapshot: dict) -> str:
     # section that is a human's merge, and an empty "nothing waiting" line
     # would only teach the eye to skip it.
     filings_block = (
-        f"<h2>Filings awaiting merge <span class=\"muted\">({len(filing_items)} "
+        f"<h2 id='filings'>Filings awaiting merge <span class=\"muted\">({len(filing_items)} "
         f"on a branch, not yet in memory — merge the PR to finish the "
         f"intake)</span></h2><ul class='papers'>{''.join(filing_items)}</ul>"
         if filing_items else "")
 
-    hero = t_.hero(BOARD_KEY, "Dashboard", _LEDE)
-    stats = t_.stats((t["pages"], "Pages"), (f"{pct}%", "Cited"),
-                     (t["todo"], "To cite"), (t["queued"], "Queued"))
+    navigation = [
+        {"href": "#arxiv-inbox", "label": "arXiv inbox"},
+        {"href": "#arxiv-interests", "label": "arXiv interests"},
+        {"href": "#reading-queue", "label": "Reading queue", "count": t["queued"]},
+        {"href": "#citation-work", "label": "To cite", "count": t["todo"]},
+        {"href": "#sub-wikis", "label": "Pages", "count": t["pages"], "context": f"{pct}% cited"},
+    ]
+    if _catch_up_html(snapshot):
+        navigation.insert(0, {"href": "#catch-up", "label": "Catch up"})
+    if filing_items:
+        navigation.insert(0, {"href": "#filings", "label": "Filings awaiting merge", "count": len(filing_items)})
+    hero = t_.hero(BOARD_KEY, "Dashboard", _LEDE, navigation=navigation)
     # The way back from the Pages board to the repository front door; the
     # segment drops out when the snapshot carries no owner/repo.
     repo_url = _repo_url(snapshot)
@@ -1594,27 +1603,26 @@ def _render_html(snapshot: dict) -> str:
 <style>{t_.css(BOARD_KEY)}{_EXTRA_CSS}</style>
 </head>
 <body{body_attrs}>
-{_catch_up_html(snapshot)}
 {hero}
-{stats}
+<section id="catch-up">{_catch_up_html(snapshot)}</section>
 <p class="muted mdsrc"><a href="dashboard.md">markdown version</a>{github_link}{onetap}</p>
 <div id="toast"></div>
 {filings_block}
-<h2>arXiv inbox <span class="muted">(suggested overnight — un-acted papers
+<h2 id='arxiv-inbox'>arXiv inbox <span class="muted">(suggested overnight — un-acted papers
  lapse after {inbox_actions.INBOX_WINDOW_DAYS} days)</span></h2>
 {inbox_block}
-<h2>arXiv interests <span class="muted">(everything that is not strong
+<h2 id='arxiv-interests'>arXiv interests <span class="muted">(everything that is not strong
  lensing — one day's ten at a time; \U0001f9f9 clears the day and shows the
  next; un-cleared batches lapse after {inbox_actions.INBOX_WINDOW_DAYS} days
 {interests_backlog_note})</span></h2>
 {interests_block}
-<h2>Reading queue <span class="muted">({trend_bits})</span>{spark}</h2>
+<h2 id='reading-queue'>Reading queue <span class="muted">({trend_bits})</span>{spark}</h2>
 {filter_box}
 {''.join(queue_blocks)}
-<h2>Citation work queue <span class="muted">({t['todo']} sections need a
+<h2 id='citation-work'>Citation work queue <span class="muted">({t['todo']} sections need a
  canonical key)</span></h2>
 <table class="recent">{''.join(todo_rows)}</table>
-<h2>Sub-wikis <span class="muted">({snapshot.get('bib_entries', 0)} bibliography
+<h2 id='sub-wikis'>Sub-wikis <span class="muted">({snapshot.get('bib_entries', 0)} bibliography
  entries · {snapshot.get('links', {}).get('wanted', 0)} wanted pages)</span></h2>
 <table class="recent">{''.join(wiki_rows)}</table>
 {_boards_nav(snapshot)}
