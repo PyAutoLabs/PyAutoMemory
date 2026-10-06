@@ -27,10 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-05
-2026-09-29 — Improving Lens Modelling from Ground-Based Imaging with Deconvolution — 2609.34305
-2026-09-29 — Constraining the Light Curves of Magnified Stellar Events at z ~ 0.725 — 2609.33925
-2026-09-29 — SLICE: Unveiling the Multi-Component Merging Core of SPT-CLJ1150-2805 Through Strong-Lensing Mass Modelling — 2609.31944
+last digest: 2026-10-06
 2026-09-30 — Detecting Extragalactic Exoplanets With Fast Radio Burst Nanolensing — 2609.36988
 2026-09-30 — LUMA: A CNN for Strong Gravitational Lens Searches in Astronomical Imaging — 2609.36857
 2026-09-30 — JWST lensed quasar dark matter survey V: Hints of self-interacting dark matter from 29 quadruply imaged quasars — 2609.35974
@@ -41,3 +38,5 @@ last digest: 2026-10-05
 2026-10-01 — Testing Offsets Between Cluster-Scale Halos and BCGs in Strong Lensing Models Using the Jackknife Method — 2609.38310
 2026-10-05 — Point spread function requirements for dark matter subhalo detection with the Habitable Worlds Observatory — 2610.02315
 2026-10-05 — Inferring magnetic field strengths in high-redshift lensing galaxies from Faraday rotation measure observations — 2610.02328
+2026-10-06 — Measuring the Moving Lens Effect with Wide-Separation Lensed Quasars — 2610.04865
+2026-10-06 — SCALES. II. The Internal Composition of Giant Star-Forming Clumps at $z = 1 - 4$ — 2610.03867
