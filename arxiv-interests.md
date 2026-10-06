@@ -47,7 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-05
+last digest: 2026-10-06
 2026-10-05 — [SMBHs] The Structure in the Structure Function of Black Hole Light Curves — 2610.02729
 2026-10-05 — [Dark Matter] Baryonic Imprints on DM Halos: the concentration-mass relation and its dependence on 28 model parameters in the CAMELS suite — 2610.03544
 2026-10-05 — [SMBHs] Separating the Optical to Near-Infrared Light of AGN and Their Host Galaxies — 2610.02465
@@ -58,3 +58,13 @@ last digest: 2026-10-05
 2026-10-05 — [Stats] A novel, fast, and accurate code for cosmological loop calculations — 2610.03466
 2026-10-05 — [Dark Matter] Higgsino dark matter compatible with the LUX-ZEPLIN high-energy nuclear-recoil event and IceCube constraints — 2610.03692
 2026-10-05 — [Galaxy Formation / Evolution] Star Cluster Populations in 38 Spiral Galaxies: Evidence for Near-Universal Mass and Age Distributions from PHANGS — 2610.02606
+2026-10-06 — [SMBHs] Gravitational-wave background from supermassive black holes without merger trees: Tidally regulated mergers and direct inference from the NANOGrav 15 yr data — 2610.06220
+2026-10-06 — [SMBHs] Internal Radiative Feedback Triggers Global Collapse and Direct-Collapse Black Hole Formation in Metal-free Atomic-Cooling Haloes — 2610.03877
+2026-10-06 — [Galaxy Formation / Evolution] The star-forming past and quenching of brightest cluster galaxies in TNG-Cluster — 2610.06634
+2026-10-06 — [Stats] Not just a phase: detecting nanohertz gravitational waves from phase alone — 2610.06178
+2026-10-06 — [Dark Matter] Baryonic Imprints on DM Halos: characterizing the full concentration-mass probability distribution with CAMELS — 2610.03946
+2026-10-06 — [Stats] AI-assisted super-resolution cosmological simulations V: Cosmology-aware super-resolution — 2610.06710
+2026-10-06 — [Dark Matter] Cusps, cores, and one acceleration: dark-matter haloes versus modified dynamics across the full SPARC sample — 2610.05871
+2026-10-06 — [SMBHs] Jets with Streaks: the Global Dynamics and Structure of Striped Poynting flux dominated Jets — 2610.04796
+2026-10-06 — [Galaxy Formation / Evolution] Unveiling the Origins of the Molecular Gas Reservoirs in Recently Quenched Massive Galaxies — 2610.06680
+2026-10-06 — [Stats] Fast Bayesian Updating of the Neutron-Star Equation of State with Neural Posterior and Evidence Estimation — 2610.05121
