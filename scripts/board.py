@@ -1604,6 +1604,7 @@ def _render_html(snapshot: dict) -> str:
 </head>
 <body{body_attrs}>
 {hero}
+{t_.prompt_heading("memory")}
 <section id="catch-up">{_catch_up_html(snapshot)}</section>
 <p class="muted mdsrc"><a href="dashboard.md">markdown version</a>{github_link}{onetap}</p>
 <div id="toast"></div>
