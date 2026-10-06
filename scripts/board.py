@@ -753,6 +753,18 @@ def _repo_url(snapshot: dict) -> str:
     return f"https://github.com/{owner}/{repo}" if owner and repo else ""
 
 
+CHECKIN_PROMPT = (
+    "Review the Memory knowledge board in this chat. Read PyAutoMemory/AGENTS.md, "
+    "its index and relevant domain indexes; then inspect the reading queue, digest "
+    "freshness, unresolved canonical keys and stub work. Read at most two or three "
+    "relevant pages after each index. Summarize priorities and propose one bounded "
+    "next step, retaining missing evidence as unknown. Apply my direction while "
+    "keeping the queue in view. Follow existing catch-up selection approval and "
+    "development workflow for writes; do not bulk-ingest papers, commit source "
+    "PDFs or post issues automatically."
+)
+
+
 # The one-tap board family — the cross-board footer nav every board carries,
 # each board skipping its own entry.
 #
@@ -1587,6 +1599,10 @@ def _render_html(snapshot: dict) -> str:
     repo_url = _repo_url(snapshot)
     github_link = (f' · <a href="{repo_url}/blob/main/README.md">'
                    "GitHub Page</a>" if repo_url else "")
+    panel = t_.orchestration_panel(
+        "memory", "", "", CHECKIN_PROMPT,
+        work_links=([{"label": snapshot["repo"], "href": repo_url}] if repo_url else []),
+        organ="memory")
     # One-tap mode needs the API's owner/repo and a place to turn it on; both
     # drop out with the repo identity, like every other GitHub-facing chip.
     owner, repo = snapshot.get("owner"), snapshot.get("repo")
@@ -1604,7 +1620,7 @@ def _render_html(snapshot: dict) -> str:
 </head>
 <body{body_attrs}>
 {hero}
-{t_.prompt_heading("memory")}
+{panel}
 <section id="catch-up">{_catch_up_html(snapshot)}</section>
 <p class="muted mdsrc"><a href="dashboard.md">markdown version</a>{github_link}{onetap}</p>
 <div id="toast"></div>

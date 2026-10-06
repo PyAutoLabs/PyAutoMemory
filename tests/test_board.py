@@ -1141,3 +1141,29 @@ def test_invalid_digest_is_escaped_and_never_given_to_browser_clock(tmp_path):
     assert '<script>oops</script>' not in html
     assert 'digest date is invalid or in the future' in html
     assert "data-last-digest='<" not in html
+
+
+def test_orchestration_preview_targets_memory_and_preserves_paper_actions(tmp_path):
+    import html as html_module
+
+    snap = {**_snap_with_remote(tmp_path), "owner": "SomeOrg", "repo": "MemoryWork"}
+    page = board.render(snap, "html")
+    preview = re.search(r'<textarea id="orchestration-memory-prompt"[^>]*>(.*?)</textarea>',
+                        page, re.S).group(1)
+    assert html_module.unescape(preview) == (
+        board.CHECKIN_PROMPT + "\n\nWork on GitHub:\n"
+        "- MemoryWork: https://github.com/SomeOrg/MemoryWork")
+    assert page.index('class="hero"') < page.index('id="orchestration-memory"')
+    assert page.index('id="orchestration-memory"') < page.index('id="catch-up"')
+    assert board.theme().prompt_heading("memory", heading_id="orchestration-memory-heading") in page
+    assert 'data-repo="SomeOrg/MemoryWork"' in page
+    assert board._EXTRA_JS in page
+    assert "https://github.com/SomeOrg/MemoryWork/issues/new?" in page
+    assert 'data-orchestration-copy' in page
+
+
+def test_orchestration_without_memory_remote_is_explicit(tmp_path):
+    snap = {**_snap_with_remote(tmp_path), "owner": None, "repo": None}
+    page = board.render(snap, "html")
+    assert "Work repository unavailable in this snapshot." in page
+    assert "https://github.com/None/None" not in page
