@@ -760,7 +760,10 @@ def test_pending_filings_render_above_the_inbox_with_a_pr_link(tmp_path):
         assert "Filings awaiting merge" in text
         assert "compare/main...queue-filing/issue-91?expand=1" in text
         assert "/issues/91" in text
-        assert text.index("Filings awaiting merge") < text.index("arXiv inbox")
+        if '<!doctype html>' in text:
+            assert text.index("id='filings'") < text.index("id='arxiv-inbox'")
+        else:
+            assert text.index("Filings awaiting merge") < text.index("arXiv inbox")
 
 
 def test_no_filings_section_when_nothing_waits(tmp_path):
