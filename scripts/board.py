@@ -1621,7 +1621,8 @@ def _render_html(snapshot: dict) -> str:
     panel = t_.orchestration_panel(
         "memory", "", "", CHECKIN_PROMPT,
         work_links=([{"label": snapshot["repo"], "href": repo_url}] if repo_url else []),
-        organ="memory")
+        organ="memory", refreshed_at=snapshot.get("generated"),
+        refresh_url=(repo_url + "/actions/workflows/knowledge_board.yml" if repo_url else None))
     # One-tap mode needs the API's owner/repo and a place to turn it on; both
     # drop out with the repo identity, like every other GitHub-facing chip.
     owner, repo = snapshot.get("owner"), snapshot.get("repo")
