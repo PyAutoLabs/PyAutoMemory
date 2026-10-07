@@ -47,7 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-06
+last digest: 2026-10-07
 2026-10-05 — [SMBHs] The Structure in the Structure Function of Black Hole Light Curves — 2610.02729
 2026-10-05 — [Dark Matter] Baryonic Imprints on DM Halos: the concentration-mass relation and its dependence on 28 model parameters in the CAMELS suite — 2610.03544
 2026-10-05 — [SMBHs] Separating the Optical to Near-Infrared Light of AGN and Their Host Galaxies — 2610.02465
@@ -68,3 +68,13 @@ last digest: 2026-10-06
 2026-10-06 — [SMBHs] Jets with Streaks: the Global Dynamics and Structure of Striped Poynting flux dominated Jets — 2610.04796
 2026-10-06 — [Galaxy Formation / Evolution] Unveiling the Origins of the Molecular Gas Reservoirs in Recently Quenched Massive Galaxies — 2610.06680
 2026-10-06 — [Stats] Fast Bayesian Updating of the Neutron-Star Equation of State with Neural Posterior and Evidence Estimation — 2610.05121
+2026-10-07 — [SMBHs] Radiation pressure powers quasar broad absorption line winds but fails to drive galaxy feedback — 2610.07624
+2026-10-07 — [SMBHs] Chaotic accretion can (still) explain early supermassive black hole growth — 2610.07947
+2026-10-07 — [SMBHs] Halo Mass Function Constraints on Early Galaxy and AGN Populations in the JWST Era — 2610.08731
+2026-10-07 — [SMBHs] Hierarchical Black Hole Mergers at High Redshift: Predictions for LISA and LGWA from SEEDZ — 2610.07183
+2026-10-07 — [Stats] Scalable and sequential inference of the neutron star equation of state with the Einstein Telescope — 2610.07975
+2026-10-07 — [Stats] Spectra: Exact Component Transport for Test-Time Prior Adaptation in Simulation-Based Inference — 2610.08021
+2026-10-07 — [Stats] Fast and accurate differentiable code of the galaxy power spectrum based on Eulerian and Lagrangian one-loop perturbation theories — 2610.08023
+2026-10-07 — [Stats] When, Why, and How CMB Compression Fails — 2610.08728
+2026-10-07 — [SMBHs] Galaxy merger-driven signatures in massive black hole pair hosts across cosmic time — 2610.08709
+2026-10-07 — [Galaxy Formation / Evolution] The impact of feedback and cosmology on Cosmic Infrared Background cross-correlations — 2610.08436
