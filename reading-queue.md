@@ -40,7 +40,7 @@ PyAutoPaper, now PyAutoMemory — became the unified knowledge repo.)
 DONE 2026-08-21 — The X-Ray Continuum Emission Region in the Lensed Quasar SDSS J133907.23+131038.6 is Much Smaller than the Accretion Disk
 Confirmation of the Finch Flatter-Fainter Relation for the Quadruple Images of Lensed Point Sources — 2608.17116
 The Koi Pond: A Strongly Lensed Protocluster Core hosting a Diverse Population of DSFGs — 2608.15997
-Addressing position anomalies in the Strong Gravitational Lensing System HS~0810+2554 through Dark Matter Subhalos — 2608.15554
+DONE 2026-10-07 — Addressing position anomalies in the Strong Gravitational Lensing System HS~0810+2554 through Dark Matter Subhalos — 2608.15554
 The Fornax Cluster VLT Spectroscopic Survey - V. Mass modelling of the BCG NGC 1399 out to 150 kpc — 2608.02730
 Galaxy-LRD Strong Lenses: A Missing Population? — 2608.02739
 Cosmic CORALS: Timing the Universe with high-z star clusters — 2607.19472
