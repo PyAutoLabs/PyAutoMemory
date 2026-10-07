@@ -1632,7 +1632,7 @@ def _render_html(snapshot: dict) -> str:
               "every button from this page instead of opening GitHub — paste "
               "a fine-grained token once, kept in this browser only'>"
               "\U0001f511 set up one-tap</button>" if repo_url else "")
-    return f"""<!doctype html>
+    return t_.section_layout(f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PyAutoMemory Dashboard</title>
@@ -1668,7 +1668,7 @@ nothing here is committed; generated
 {_html.escape(str(snapshot.get('generated') or '?'))}.</footer>
 <script>{t_.JS}{_EXTRA_JS}</script>
 </body></html>
-"""
+""")
 
 
 def badge_endpoint(snapshot: dict) -> dict:
