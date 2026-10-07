@@ -27,10 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-06
-2026-09-30 — Detecting Extragalactic Exoplanets With Fast Radio Burst Nanolensing — 2609.36988
-2026-09-30 — LUMA: A CNN for Strong Gravitational Lens Searches in Astronomical Imaging — 2609.36857
-2026-09-30 — JWST lensed quasar dark matter survey V: Hints of self-interacting dark matter from 29 quadruply imaged quasars — 2609.35974
+last digest: 2026-10-07
 2026-10-01 — Sub-kiloparsec Test of the Kennicutt-Schmidt Relation in a Strongly Lensed Dusty Star-Forming Galaxy at z~2.78 — 2609.40233
 2026-10-01 — Effects of a central dark matter core on time-delay cosmography with galaxy clusters — 2609.39796
 2026-10-01 — Stacked strong and weak lensing united: Improved measurement of the stellar and dark matter distributions in massive early-type galaxies at $z\sim 0.5$ — 2609.39040
