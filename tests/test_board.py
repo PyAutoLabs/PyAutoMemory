@@ -32,6 +32,7 @@ def test_theme_finds_grouped_brain_from_outer_workspace(tmp_path, monkeypatch):
     brain_board.mkdir(parents=True)
     (brain_board / "_theme.py").write_text("GROUPED_THEME = True\n")
     monkeypatch.setenv("PYAUTO_ROOT", str(tmp_path))
+    monkeypatch.delenv("PYAUTO_BRAIN", raising=False)
     monkeypatch.setattr(board, "MEMORY_HOME", tmp_path / "PyAutoMemory")
     monkeypatch.delitem(sys.modules, "_theme", raising=False)
     monkeypatch.setattr(sys, "path", sys.path.copy())
@@ -1167,3 +1168,13 @@ def test_orchestration_without_memory_remote_is_explicit(tmp_path):
     page = board.render(snap, "html")
     assert "Work repository unavailable in this snapshot." in page
     assert "https://github.com/None/None" not in page
+
+
+def test_panel_refresh_uses_capture_not_ingest_date(tmp_path, monkeypatch):
+    theme = board.theme()
+    calls = []
+    monkeypatch.setattr(theme, "orchestration_panel", lambda *a, **kw: calls.append(kw) or "")
+    snap = {**_snap_with_remote(tmp_path), "owner": "SomeOrg", "repo": "MemoryWork"}
+    board.render(snap, "html")
+    assert calls[0]["refreshed_at"] == snap["generated"]
+    assert calls[0]["refresh_url"] == "https://github.com/SomeOrg/MemoryWork/actions/workflows/knowledge_board.yml"
