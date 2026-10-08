@@ -47,7 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-07
+last digest: 2026-10-08
 2026-10-05 — [SMBHs] The Structure in the Structure Function of Black Hole Light Curves — 2610.02729
 2026-10-05 — [Dark Matter] Baryonic Imprints on DM Halos: the concentration-mass relation and its dependence on 28 model parameters in the CAMELS suite — 2610.03544
 2026-10-05 — [SMBHs] Separating the Optical to Near-Infrared Light of AGN and Their Host Galaxies — 2610.02465
@@ -78,3 +78,13 @@ last digest: 2026-10-07
 2026-10-07 — [Stats] When, Why, and How CMB Compression Fails — 2610.08728
 2026-10-07 — [SMBHs] Galaxy merger-driven signatures in massive black hole pair hosts across cosmic time — 2610.08709
 2026-10-07 — [Galaxy Formation / Evolution] The impact of feedback and cosmology on Cosmic Infrared Background cross-correlations — 2610.08436
+2026-10-08 — [SMBHs] Can LISA See Inside the Little Red Dots? — 2610.08964
+2026-10-08 — [Galaxy Formation / Evolution] Early onset of the hot circumgalactic medium around Milky Way galaxies — 2610.08931
+2026-10-08 — [SMBHs] Widespread steep X-ray spectra of luminous $z\simeq5.85-7.5$ quasars and their implications for future X-ray surveys — 2610.10522
+2026-10-08 — [SMBHs] A relativistic inflow candidate in a quasar at cosmic noon — 2610.10267
+2026-10-08 — [SMBHs] A Decade-Scale Ionization Echo of Black-Hole Accretion in Galactic Nuclei — 2610.10373
+2026-10-08 — [SMBHs] Changing-look Active Galactic Nuclei from the Dark Energy Spectroscopic Instrument. VII. Testing Disk-Corona Diagnostics with eROSITA — 2610.10331
+2026-10-08 — [Galaxy Formation / Evolution] SAGE26 Paper I: Modelling the baryon cycle from cosmic dawn to the present day — 2610.09564
+2026-10-08 — [SMBHs] Quasi-periodic eruption spectral-timing: EMRIs crossing warped accretion disks — 2610.10110
+2026-10-08 — [Galaxy Formation / Evolution] Euclid Quick Data Release (Q1). Exploring the complexity of quenching processes across time, environment, and mass through recently quenched galaxies — 2610.08999
+2026-10-08 — [Dark Matter] Measuring the Clustering of tSZ-Selected Galaxy Clusters with SPT-3G — 2610.08947
