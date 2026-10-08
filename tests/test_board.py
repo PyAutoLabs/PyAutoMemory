@@ -184,8 +184,10 @@ def test_work_queue_prompts_reference_the_documented_workflow(tmp_path):
 
 def test_paper_links_and_issue_actions(tmp_path):
     html = board.render(_snap_with_remote(tmp_path), "html")
-    # the header links the markdown twin and the repository front door
-    assert '<a href="dashboard.md">markdown version</a>' in html
+    # Shared section_layout renders the Markdown source as an accessible icon.
+    markdown_link = re.search(r'<a\b[^>]*href="dashboard.md"[^>]*>', html)
+    assert markdown_link is not None
+    assert 'aria-label="Markdown version"' in markdown_link.group(0)
     assert ('<a href="https://github.com/PyAutoLabs/PyAutoMemory/blob/main/'
             'README.md">GitHub Page</a>') in html
     # ref'd paper → its abstract page; bare title → an arXiv title search
