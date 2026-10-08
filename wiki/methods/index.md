@@ -13,6 +13,9 @@ should use this wiki.
 
 ## Samplers
 
+- [[sampler-candidate-curation]] — bounded source-backed shortlist and on-demand
+  public-provenance handoff to Insight; no scheduled scan.
+
 - [[mcmc-samplers]] — Metropolis-Hastings, ensemble samplers, Eryn.
 - [[hamiltonian-monte-carlo]] — NUTS, BlackJAX, NumPyro, Stan; gradients
   via JAX.
