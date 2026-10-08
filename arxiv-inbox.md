@@ -27,13 +27,11 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-07
-2026-10-01 — Sub-kiloparsec Test of the Kennicutt-Schmidt Relation in a Strongly Lensed Dusty Star-Forming Galaxy at z~2.78 — 2609.40233
-2026-10-01 — Effects of a central dark matter core on time-delay cosmography with galaxy clusters — 2609.39796
-2026-10-01 — Stacked strong and weak lensing united: Improved measurement of the stellar and dark matter distributions in massive early-type galaxies at $z\sim 0.5$ — 2609.39040
-2026-10-01 — Toward Detecting the Moving Lens Effect with Optical Spectroscopy — 2609.38457
-2026-10-01 — Testing Offsets Between Cluster-Scale Halos and BCGs in Strong Lensing Models Using the Jackknife Method — 2609.38310
+last digest: 2026-10-08
 2026-10-05 — Point spread function requirements for dark matter subhalo detection with the Habitable Worlds Observatory — 2610.02315
 2026-10-05 — Inferring magnetic field strengths in high-redshift lensing galaxies from Faraday rotation measure observations — 2610.02328
 2026-10-06 — Measuring the Moving Lens Effect with Wide-Separation Lensed Quasars — 2610.04865
 2026-10-06 — SCALES. II. The Internal Composition of Giant Star-Forming Clumps at $z = 1 - 4$ — 2610.03867
+2026-10-08 — A Gravitationally Lensed Low-Luminosity AGN From The Cosmic Noon — 2610.10244
+2026-10-08 — (Monty Python and the) HoliGRALE: A Hybrid GRALE Lens Inversion Methodology Diagnostically Evaluated with Synthetic and Real Data — 2610.09014
+2026-10-08 — The BUFFALO Survey : The Subhalo Mass Function for Abell 2744 with Strong+Weak Gravitational Lensing — 2610.08919
