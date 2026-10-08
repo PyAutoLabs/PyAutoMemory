@@ -123,3 +123,12 @@ references became `[[seed-…]]`, and each index gained one *Seed (unverified
 imports)* line saying what they are. Promoting an entry means verifying the
 paper, adding its canonical key to `../../bibliography/pyautomemory.bib`, and
 moving the section into the matching `sources/` page.
+
+
+## 2026-10-08 — Bounded sampler literature curation
+
+Verified primary public records for dynesty, Nautilus, BlackJAX, NUTS, UltraNest
+and pocoMC. Resolved the dynesty source section to existing `Speagle2020`; added
+five canonical entries and compact claim support. Added candidate curation and
+an on-demand public-provenance Insight handoff using existing catch-up machinery.
+Integration is a dated source-roster check; no benchmark verdict, install or run.
