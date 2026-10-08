@@ -188,8 +188,7 @@ def test_paper_links_and_issue_actions(tmp_path):
     markdown_link = re.search(r'<a\b[^>]*href="dashboard.md"[^>]*>', html)
     assert markdown_link is not None
     assert 'aria-label="Markdown version"' in markdown_link.group(0)
-    assert ('<a href="https://github.com/PyAutoLabs/PyAutoMemory/blob/main/'
-            'README.md">GitHub Page</a>') in html
+    assert 'GitHub Page</a>' not in html
     # ref'd paper → its abstract page; bare title → an arXiv title search
     assert "https://arxiv.org/abs/2406.01234" in html
     assert ("https://arxiv.org/search/?searchtype=title&amp;query=Title%20One"
