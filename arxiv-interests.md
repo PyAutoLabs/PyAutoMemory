@@ -47,7 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-08
+last digest: 2026-10-09
 2026-10-05 — [SMBHs] The Structure in the Structure Function of Black Hole Light Curves — 2610.02729
 2026-10-05 — [Dark Matter] Baryonic Imprints on DM Halos: the concentration-mass relation and its dependence on 28 model parameters in the CAMELS suite — 2610.03544
 2026-10-05 — [SMBHs] Separating the Optical to Near-Infrared Light of AGN and Their Host Galaxies — 2610.02465
@@ -88,3 +88,13 @@ last digest: 2026-10-08
 2026-10-08 — [SMBHs] Quasi-periodic eruption spectral-timing: EMRIs crossing warped accretion disks — 2610.10110
 2026-10-08 — [Galaxy Formation / Evolution] Euclid Quick Data Release (Q1). Exploring the complexity of quenching processes across time, environment, and mass through recently quenched galaxies — 2610.08999
 2026-10-08 — [Dark Matter] Measuring the Clustering of tSZ-Selected Galaxy Clusters with SPT-3G — 2610.08947
+2026-10-09 — [SMBHs] ACORN I. Massive Black Hole Seeding and Tidal Disruption Events from Star Clusters in Cosmological Simulations — 2610.12398
+2026-10-09 — [Stats] Feedback-Conditional 3D Reconstruction of Cosmic Baryons with Flow Matching — 2610.10741
+2026-10-09 — [SMBHs] Disk Structure May Determine AGN Variability and Explain the Accretion Disk Size Problem: No Broad Line Region Required — 2610.12462
+2026-10-09 — [SMBHs] Cosmic Duets II. Growth and accretion in Gaia Multi-Peak dual AGN at Cosmic Noon — 2610.10687
+2026-10-09 — [Galaxy Formation / Evolution] JWST CAPERS: Spectroscopic evaluation of very high redshift galaxy candidates — 2610.12322
+2026-10-09 — [SMBHs] Prevalence of radio Active Galactic Nuclei in galaxy groups since z=3.5 in the COSMOS-Web field — 2610.10719
+2026-10-09 — [Stats] Evidence for orbital eccentricity supports a hierarchical origin for GW231123 — 2610.12205
+2026-10-09 — [Stats] Opening the Black Box: What Neural Networks Learn from Pulsar Timing Array Data — 2610.12308
+2026-10-09 — [Galaxy Formation / Evolution] Inflow-driven galaxy evolution - II: A hierarchy in the scaling relations of star-forming galaxies — 2610.12394
+2026-10-09 — [SMBHs] Pushing Variability Searches to Extreme Dwarf Galaxies with the Vera C. Rubin Observatory Data Preview 2 — 2610.10755
