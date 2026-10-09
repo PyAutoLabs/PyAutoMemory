@@ -27,7 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-08
+last digest: 2026-10-09
 2026-10-05 — Point spread function requirements for dark matter subhalo detection with the Habitable Worlds Observatory — 2610.02315
 2026-10-05 — Inferring magnetic field strengths in high-redshift lensing galaxies from Faraday rotation measure observations — 2610.02328
 2026-10-06 — Measuring the Moving Lens Effect with Wide-Separation Lensed Quasars — 2610.04865
