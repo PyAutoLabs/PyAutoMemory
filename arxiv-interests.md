@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-09
-2026-10-05 — [SMBHs] The Structure in the Structure Function of Black Hole Light Curves — 2610.02729
-2026-10-05 — [Dark Matter] Baryonic Imprints on DM Halos: the concentration-mass relation and its dependence on 28 model parameters in the CAMELS suite — 2610.03544
-2026-10-05 — [SMBHs] Separating the Optical to Near-Infrared Light of AGN and Their Host Galaxies — 2610.02465
-2026-10-05 — [Galaxy Formation / Evolution] A two-stage settling of the Milky Way disk revealed by precise ChronoGal ages — 2610.03164
-2026-10-05 — [Stats] Dark Energy Survey Year 6 Results: fast and interpretable posterior predictive checks for correlated cosmic probes — 2610.03447
-2026-10-05 — [SMBHs] Suppression of spiral density waves in collisionless accretion flows — 2610.02475
-2026-10-05 — [Dark Matter] The Largest Catalog of Dwarf Galaxy Groups: Transient Structures or Building Blocks of the Universe? — 2610.02587
-2026-10-05 — [Stats] A novel, fast, and accurate code for cosmological loop calculations — 2610.03466
-2026-10-05 — [Dark Matter] Higgsino dark matter compatible with the LUX-ZEPLIN high-energy nuclear-recoil event and IceCube constraints — 2610.03692
-2026-10-05 — [Galaxy Formation / Evolution] Star Cluster Populations in 38 Spiral Galaxies: Evidence for Near-Universal Mass and Age Distributions from PHANGS — 2610.02606
+last digest: 2026-10-12
 2026-10-06 — [SMBHs] Gravitational-wave background from supermassive black holes without merger trees: Tidally regulated mergers and direct inference from the NANOGrav 15 yr data — 2610.06220
 2026-10-06 — [SMBHs] Internal Radiative Feedback Triggers Global Collapse and Direct-Collapse Black Hole Formation in Metal-free Atomic-Cooling Haloes — 2610.03877
 2026-10-06 — [Galaxy Formation / Evolution] The star-forming past and quenching of brightest cluster galaxies in TNG-Cluster — 2610.06634
@@ -98,3 +88,13 @@ last digest: 2026-10-09
 2026-10-09 — [Stats] Opening the Black Box: What Neural Networks Learn from Pulsar Timing Array Data — 2610.12308
 2026-10-09 — [Galaxy Formation / Evolution] Inflow-driven galaxy evolution - II: A hierarchy in the scaling relations of star-forming galaxies — 2610.12394
 2026-10-09 — [SMBHs] Pushing Variability Searches to Extreme Dwarf Galaxies with the Vera C. Rubin Observatory Data Preview 2 — 2610.10755
+2026-10-12 — [Galaxy Formation / Evolution] A Burst of Reionization in the Dark Ages — 2610.12552
+2026-10-12 — [SMBHs] A dust-reddened quasar in a [C II]-luminous host at z=6.55 — 2610.13758
+2026-10-12 — [Stats] Neural Estimation of Summary Statistics for Simulation-Based Inference with Non-Asymptotic Guarantees — 2610.13031
+2026-10-12 — [Stats] SLICE: Sequential Likelihood-Free Inference via Conformal E-Values — 2610.13855
+2026-10-12 — [SMBHs] The Population of Type~1 Active Galactic Nuclei in Dark Energy Spectroscopic Instrument. I. Profile-dependent Measurements of the Low-redshift Sample — 2610.13218
+2026-10-12 — [Galaxy Formation / Evolution] When dust growth takes over: the origin of dust in post-reionization galaxies — 2610.12591
+2026-10-12 — [Galaxy Formation / Evolution] A Single Line-Emitter Identified in an Unbiased Search with JWST/NIRSpec: Multi-Object Coronagraphy for Slitless Spectroscopy — 2610.12553
+2026-10-12 — [SMBHs] Extreme mass ratio inspirals from the Hills mechanism, The eccentricity distribution of Hills EMRIs in LISA — 2610.13294
+2026-10-12 — [SMBHs] Resistive alignment of a black-hole magnetosphere — 2610.13288
+2026-10-12 — [Stats] Amortised Inference through One-Step Implicit Sampling — 2610.12679
