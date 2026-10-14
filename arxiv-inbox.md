@@ -27,7 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-13
+last digest: 2026-10-14
 2026-10-08 — A Gravitationally Lensed Low-Luminosity AGN From The Cosmic Noon — 2610.10244
 2026-10-08 — (Monty Python and the) HoliGRALE: A Hybrid GRALE Lens Inversion Methodology Diagnostically Evaluated with Synthetic and Real Data — 2610.09014
 2026-10-08 — The BUFFALO Survey : The Subhalo Mass Function for Abell 2744 with Strong+Weak Gravitational Lensing — 2610.08919
