@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-13
-2026-10-07 — [SMBHs] Radiation pressure powers quasar broad absorption line winds but fails to drive galaxy feedback — 2610.07624
-2026-10-07 — [SMBHs] Chaotic accretion can (still) explain early supermassive black hole growth — 2610.07947
-2026-10-07 — [SMBHs] Halo Mass Function Constraints on Early Galaxy and AGN Populations in the JWST Era — 2610.08731
-2026-10-07 — [SMBHs] Hierarchical Black Hole Mergers at High Redshift: Predictions for LISA and LGWA from SEEDZ — 2610.07183
-2026-10-07 — [Stats] Scalable and sequential inference of the neutron star equation of state with the Einstein Telescope — 2610.07975
-2026-10-07 — [Stats] Spectra: Exact Component Transport for Test-Time Prior Adaptation in Simulation-Based Inference — 2610.08021
-2026-10-07 — [Stats] Fast and accurate differentiable code of the galaxy power spectrum based on Eulerian and Lagrangian one-loop perturbation theories — 2610.08023
-2026-10-07 — [Stats] When, Why, and How CMB Compression Fails — 2610.08728
-2026-10-07 — [SMBHs] Galaxy merger-driven signatures in massive black hole pair hosts across cosmic time — 2610.08709
-2026-10-07 — [Galaxy Formation / Evolution] The impact of feedback and cosmology on Cosmic Infrared Background cross-correlations — 2610.08436
+last digest: 2026-10-14
 2026-10-08 — [SMBHs] Can LISA See Inside the Little Red Dots? — 2610.08964
 2026-10-08 — [Galaxy Formation / Evolution] Early onset of the hot circumgalactic medium around Milky Way galaxies — 2610.08931
 2026-10-08 — [SMBHs] Widespread steep X-ray spectra of luminous $z\simeq5.85-7.5$ quasars and their implications for future X-ray surveys — 2610.10522
@@ -88,3 +78,13 @@ last digest: 2026-10-13
 2026-10-12 — [SMBHs] Extreme mass ratio inspirals from the Hills mechanism, The eccentricity distribution of Hills EMRIs in LISA — 2610.13294
 2026-10-12 — [SMBHs] Resistive alignment of a black-hole magnetosphere — 2610.13288
 2026-10-12 — [Stats] Amortised Inference through One-Step Implicit Sampling — 2610.12679
+2026-10-14 — [SMBHs] Massive black holes in the first billion years with JWST — 2610.18263
+2026-10-14 — [Galaxy Formation / Evolution] Mergers may not be the main channel for galaxy stellar mass growth at redshift $z\gtrsim5$: Predictions from cosmological hierarchical models and simulations — 2610.17575
+2026-10-14 — [Dark Matter] MUSE-DARK IV. Comparing Dark Matter Densities to Star Formation Histories in 375 intermediate-z galaxies — 2610.18282
+2026-10-14 — [SMBHs] The Connection Between the Growth of Massive Black Holes and Their Dynamical Histories — 2610.18659
+2026-10-14 — [Galaxy Formation / Evolution] Untangling Similarities and Differences in Star Formation Histories Across Cosmological Simulations — 2610.17359
+2026-10-14 — [SMBHs] A radio counterpart of the local little-red-dot J092359+415736 — 2610.17559
+2026-10-14 — [SMBHs] Scaling Up: A Global Optical/X-ray Correlation For Reprocessing Across Black Hole Masses — 2610.17248
+2026-10-14 — [Dark Matter] MeV dark matter decay forecasts for the COSI mission — 2610.17217
+2026-10-14 — [SMBHs] Delving into the depths of NGC 3783 with XRISM VI. Evidence for a failed wind based on Fe xxv absorption line variability — 2610.18429
+2026-10-14 — [SMBHs] The ePESSTO+ census of ZTF nuclear transients. I. What flares in galactic nuclei? — 2610.18633
