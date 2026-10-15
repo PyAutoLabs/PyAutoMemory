@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-14
-2026-10-08 — [SMBHs] Can LISA See Inside the Little Red Dots? — 2610.08964
-2026-10-08 — [Galaxy Formation / Evolution] Early onset of the hot circumgalactic medium around Milky Way galaxies — 2610.08931
-2026-10-08 — [SMBHs] Widespread steep X-ray spectra of luminous $z\simeq5.85-7.5$ quasars and their implications for future X-ray surveys — 2610.10522
-2026-10-08 — [SMBHs] A relativistic inflow candidate in a quasar at cosmic noon — 2610.10267
-2026-10-08 — [SMBHs] A Decade-Scale Ionization Echo of Black-Hole Accretion in Galactic Nuclei — 2610.10373
-2026-10-08 — [SMBHs] Changing-look Active Galactic Nuclei from the Dark Energy Spectroscopic Instrument. VII. Testing Disk-Corona Diagnostics with eROSITA — 2610.10331
-2026-10-08 — [Galaxy Formation / Evolution] SAGE26 Paper I: Modelling the baryon cycle from cosmic dawn to the present day — 2610.09564
-2026-10-08 — [SMBHs] Quasi-periodic eruption spectral-timing: EMRIs crossing warped accretion disks — 2610.10110
-2026-10-08 — [Galaxy Formation / Evolution] Euclid Quick Data Release (Q1). Exploring the complexity of quenching processes across time, environment, and mass through recently quenched galaxies — 2610.08999
-2026-10-08 — [Dark Matter] Measuring the Clustering of tSZ-Selected Galaxy Clusters with SPT-3G — 2610.08947
+last digest: 2026-10-15
 2026-10-09 — [SMBHs] ACORN I. Massive Black Hole Seeding and Tidal Disruption Events from Star Clusters in Cosmological Simulations — 2610.12398
 2026-10-09 — [Stats] Feedback-Conditional 3D Reconstruction of Cosmic Baryons with Flow Matching — 2610.10741
 2026-10-09 — [SMBHs] Disk Structure May Determine AGN Variability and Explain the Accretion Disk Size Problem: No Broad Line Region Required — 2610.12462
@@ -88,3 +78,13 @@ last digest: 2026-10-14
 2026-10-14 — [Dark Matter] MeV dark matter decay forecasts for the COSI mission — 2610.17217
 2026-10-14 — [SMBHs] Delving into the depths of NGC 3783 with XRISM VI. Evidence for a failed wind based on Fe xxv absorption line variability — 2610.18429
 2026-10-14 — [SMBHs] The ePESSTO+ census of ZTF nuclear transients. I. What flares in galactic nuclei? — 2610.18633
+2026-10-15 — [SMBHs] The Dance of the Little Red Dots: Spectroscopy of Two Blue Companions at z = 3.9 and 5.5 Reveals Young, Metal-Poor Starbursts Merging with Their LRDs within a Few Hundred Myr — 2610.18968
+2026-10-15 — [Stats] Low-cost neural summaries for cosmological inference: an ensemble of convolutional neural networks trained on approximate simulations — 2610.19891
+2026-10-15 — [Galaxy Formation / Evolution] Galactic Outflows and Star-Formation Quenching: A JWST Perspective — 2610.19182
+2026-10-15 — [SMBHs] Are Broad Mg II Galaxies Fading AGN? — 2610.19126
+2026-10-15 — [Dark Matter] The Atacama Cosmology Telescope: DR6 Constraints on Isotropic Time-Dependent Cosmic Birefringence from Axion-like Particles — 2610.19049
+2026-10-15 — [Dark Matter] Wave Cold Dark Matter Can Reproduce the Radial Acceleration Relation in X-ray Elliptical Galaxies — 2610.18969
+2026-10-15 — [SMBHs] SQuIGGLE: Radio AGN Found Predominantly in Young, Gas-rich Post-starburst Galaxies at z ~ 0.7 — 2610.19146
+2026-10-15 — [Stats] jax-SNANA: A GPU-accelerated Supernova Framework for the SBI Era — 2610.19000
+2026-10-15 — [Galaxy Formation / Evolution] Sleeping or Dead? Probing the Quenching Mechanism of JWST Dormant Galaxies at z > 3 with ALMA — 2610.19926
+2026-10-15 — [SMBHs] Scalar-Assisted Growth of Supermassive Black Holes: Boson-Mass Windows and Observational Constraints — 2610.18986
