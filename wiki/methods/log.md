@@ -142,3 +142,13 @@ hand-written section pointing at `autofit_inference`'s
 `gaussian_x3@1`): per-task grouping, wave 1 ranks nothing, the
 pilot's coverage and statuses. The index entry names it. No benchmark
 verdict was added.
+
+## 2026-10-15 — Route search campaign records through Insight
+
+Replaced the duplicate A5 campaign summary in [[sampler-benchmarks]] with links
+to Insight's existing wave-1 and wave-2 records and the project-owned catalogue
+and protocol. Retained the pinned catalogue revision for historical provenance
+and the reusable task-comparability lesson. Earlier benchmark sections remain
+historical evidence pending a separate destination/provenance audit. The write
+contract now routes inference campaigns through Insight and profiling through
+Pulse; permanence alone does not make a campaign record Memory content.
