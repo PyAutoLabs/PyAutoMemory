@@ -27,8 +27,8 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-14
-2026-10-08 — A Gravitationally Lensed Low-Luminosity AGN From The Cosmic Noon — 2610.10244
-2026-10-08 — (Monty Python and the) HoliGRALE: A Hybrid GRALE Lens Inversion Methodology Diagnostically Evaluated with Synthetic and Real Data — 2610.09014
-2026-10-08 — The BUFFALO Survey : The Subhalo Mass Function for Abell 2744 with Strong+Weak Gravitational Lensing — 2610.08919
+last digest: 2026-10-15
 2026-10-12 — Nailing down the Hubble constant value through time delay cosmography: A 3% measurement from SN Refsdal — 2610.12595
+2026-10-15 — Strong gravitational lensing with Euclid — 2610.19835
+2026-10-15 — Microcaustics: Fast GPU-Accelerated Dynamical Microlensing of Time-Dependent Extended Sources — 2610.19703
+2026-10-15 — Cosmology with strong gravitational lenses — 2610.19598
