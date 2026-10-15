@@ -5,6 +5,7 @@ topics: [samplers, benchmarks, profiling, jax]
 sources:
   - autofit_workspace_developer/searches_minimal/output/ (local, regenerable)
   - autolens_profiling (local repo, HPC campaign results)
+  - autofit_inference/catalogue/search_catalogue.json (pinned commit 3463aa1, protocol gaussian_x3@1)
 status: drafted
 ---
 
@@ -71,6 +72,43 @@ From the `autolens_profiling` HPC runs ("searches first-class" series):
 
 Raw outputs, job scripts and result JSON/PNGs live in
 `autolens_profiling` (per-run directories; see that repo's AGENTS.md).
+
+## The search catalogue — every PyAutoFit search, per task (2026-10)
+
+The organism's first benchmark that covers **every search in the
+manifest** rather than a hand-picked few lives in `autofit_inference`:
+`catalogue/search_catalogue.json` (schema
+`autofit-inference-search-catalogue`, version 1), read here at commit
+`3463aa19014b6bd83563018568f0fb4a2376f8eb`.
+
+- **Protocol id `gaussian_x3@1`** — a toy likelihood (three blended or
+  separated 1D Gaussians, datasets `gaussian_x3_blend` /
+  `gaussian_x3_separated`), pre-registered in that repo's
+  `wiki/project/protocol_gaussian_x3.md`. Campaign task
+  `gaussian_x3_search_wave1`.
+- **Grouped by requested task, never compared across tasks**:
+  `point_map` (judged by protocol §4(a): max log posterior within 1 nat
+  of the reference MAP), `posterior` (§4(b): relabelled medians,
+  sigma-ratio band, PPC χ², mode coverage), `evidence` (§4(b)+§4(c):
+  posterior accuracy and ln Z within 1 nat).
+- **Wave 1 ranks nothing** (protocol §9): its rows calibrate the
+  protocol's thresholds. 223 of 520 expected runs landed before the
+  B3 wrap-up ruling (2026-10-08) stopped the pilot; the rest are
+  deferred to wave 2 on RAL. The pilot ran on PyAutoFit `main` before
+  phase A2 (gradients under JAX), so the BFGS / L-BFGS non-finite
+  results it records are not a judgement on those searches.
+- Per-search status at that commit: 13 `measured`, NSS `deferred`
+  (phase A3b), Drawer `unsupported` (a sanity floor that answers no
+  task).
+- The catalogue embeds the search-manifest snapshot it was built
+  against (`catalogue/search_manifest.json`, `search-manifest@1`), so a
+  row is keyed by the same registry name the rosters, the capability
+  matrix and the Brain's samplers faculty use. The faculty lists the
+  catalogue's cells as its `mature (autofit_inference search
+  catalogue)` tier.
+
+Read it as coverage and failure modes per task until a ranking wave
+lands; quote no "fastest search" from wave 1.
 
 ## Benchmark hygiene
 

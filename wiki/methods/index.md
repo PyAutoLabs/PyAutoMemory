@@ -25,7 +25,8 @@ should use this wiki.
 - [[initialization-chaining]] — which samplers provide vs require
   starting points; PyAutoFit chained searches.
 - [[sampler-benchmarks]] — the benchmarking-campaign record (MLTracker
-  contract, minimal + A100 results, raw-output locations).
+  contract, minimal + A100 results, raw-output locations) and the
+  per-task search catalogue (`autofit_inference`, protocol `gaussian_x3@1`).
 - [[gradient-optimizer-benchmarks]] — JAX MAP/optimization study on the MGE
   lens likelihood (CPU + A100): diversity × gradients; multi-start Adam scales
   (GIGA-Lens), SVGD reaches truth, CMA-ES collapses.
