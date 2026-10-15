@@ -132,3 +132,13 @@ and pocoMC. Resolved the dynesty source section to existing `Speagle2020`; added
 five canonical entries and compact claim support. Added candidate curation and
 an on-demand public-provenance Insight handoff using existing catch-up machinery.
 Integration is a dated source-roster check; no benchmark verdict, install or run.
+
+
+## 2026-10-15 — Search catalogue pointer on the sampler-benchmarks page
+
+Search-extensibility A5 (consumers). [[sampler-benchmarks]] gains a
+hand-written section pointing at `autofit_inference`'s
+`catalogue/search_catalogue.json` (commit 3463aa1, protocol
+`gaussian_x3@1`): per-task grouping, wave 1 ranks nothing, the
+pilot's coverage and statuses. The index entry names it. No benchmark
+verdict was added.
