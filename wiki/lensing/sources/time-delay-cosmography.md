@@ -168,6 +168,25 @@ refer to for how H0 analysis is performed currently.
 **Canonical BibTeX key:** `Galan2026`
 
 
+
+## Li 2026 — WFI2033 composite time-delay modelling
+
+**Canonical BibTeX key:** `Li2026WFI2033`
+**Reference:** Li et al. 2026, arXiv:2607.08576 (v1); doi:10.48550/arXiv.2607.08576.
+**Concepts:** [[bulge-halo-decomposition]], [[time-delay-cosmography]], [[mass-sheet-degeneracy]]
+
+**Supports:**
+- Uses JWST/NIRCam imaging and measured quasar time delays to fit MGE-traced stellar mass with a free radial mass-to-light gradient plus a generalised NFW halo.
+- Tests two external cosmological priors; within each, time delays restrict mass-sheet freedom and allow the stellar and dark components to be separated.
+- Explores cosmological inference without stellar kinematics, but finds that the H0–halo-scale-radius degeneracy prevents a robust standalone H0 constraint.
+
+**Use when:**
+- Discussing composite lens models for time-delay lenses, their cosmological dependence, or the need for additional information in H0 inference.
+
+**Do not use for:**
+- Evidence for a precise, independent H0 measurement or for eliminating mass-sheet freedom using imaging alone.
+
+
 ## See also
 
 - [[time-delay-cosmography]]

@@ -138,6 +138,25 @@ status: stub
 - Evidence until the paper identity and canonical key are verified.
 
 
+
+## Li 2026 — Jackpot stellar–dark-matter decomposition
+
+**Canonical BibTeX key:** `Li2026Jackpot`
+**Reference:** Li et al. 2026, MNRAS 548, stag683; doi:10.1093/mnras/stag683; arXiv:2602.20889 (v2).
+**Concepts:** [[bulge-halo-decomposition]], [[mass-sheet-degeneracy]], [[mass-models]]
+
+**Supports:**
+- Models J0946+1006 using MGE-traced stellar mass, allowing a radial mass-to-light gradient, plus a generalised NFW dark halo.
+- The two source planes provide additional constraints on radial structure and mass-sheet freedom.
+- Within the tested models, the preferred stellar normalisation is Salpeter-like, with an approximately constant mass-to-light ratio and an NFW-compatible inner halo slope.
+
+**Use when:**
+- Citing a recent composite mass analysis of a double-source-plane lens or motivating stellar–dark-matter decomposition with Euclid lenses.
+
+**Do not use for:**
+- A universal IMF or halo-profile conclusion for all ellipticals, or a model-independent removal of every mass-sheet degeneracy.
+
+
 ## See also
 
 - [[bulge-halo-decomposition]]

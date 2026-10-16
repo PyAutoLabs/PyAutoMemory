@@ -234,3 +234,20 @@ references became `[[seed-…]]`, and each index gained one *Seed (unverified
 imports)* line saying what they are. Promoting an entry means verifying the
 paper, adding its canonical key to `../../bibliography/pyautomemory.bib`, and
 moving the section into the matching `sources/` page.
+
+
+## 2026-10-10 — Li composite lens models
+
+Verified arXiv:2602.20889v2 and arXiv:2607.08576v1 and added canonical
+bibliography entries `Li2026Jackpot` and `Li2026WFI2033`. Added concise claim
+support in the bulge–halo and time-delay source collections. Explicitly
+distinguished the WFI2033 cosmological-prior analysis from its exploratory
+H0 inference, which does not yield a robust standalone constraint. No PDFs
+were stored in the repository.
+
+
+## 2026-10-11 — DSPL references for the Euclid manuscript
+
+- Added missing canonical entries `Sahu2025DSPL` (ApJ 991, 72) and `EuclidQ1DSPL` (A&A 711, A29), checking DOI, arXiv ID, and title for duplicates.
+- Added compact support and scope notes in `sources/gr-cosmology.md`, distinguishing the AGEL cosmography measurement from the Euclid Q1 candidate-discovery and modelling study.
+- Verified against arXiv:2504.00656, arXiv:2503.15327, and their published records. Author confirmed that “Sheu” meant Sahu and that the Li reference was the Euclid Q1 paper.
