@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-15
-2026-10-09 — [SMBHs] ACORN I. Massive Black Hole Seeding and Tidal Disruption Events from Star Clusters in Cosmological Simulations — 2610.12398
-2026-10-09 — [Stats] Feedback-Conditional 3D Reconstruction of Cosmic Baryons with Flow Matching — 2610.10741
-2026-10-09 — [SMBHs] Disk Structure May Determine AGN Variability and Explain the Accretion Disk Size Problem: No Broad Line Region Required — 2610.12462
-2026-10-09 — [SMBHs] Cosmic Duets II. Growth and accretion in Gaia Multi-Peak dual AGN at Cosmic Noon — 2610.10687
-2026-10-09 — [Galaxy Formation / Evolution] JWST CAPERS: Spectroscopic evaluation of very high redshift galaxy candidates — 2610.12322
-2026-10-09 — [SMBHs] Prevalence of radio Active Galactic Nuclei in galaxy groups since z=3.5 in the COSMOS-Web field — 2610.10719
-2026-10-09 — [Stats] Evidence for orbital eccentricity supports a hierarchical origin for GW231123 — 2610.12205
-2026-10-09 — [Stats] Opening the Black Box: What Neural Networks Learn from Pulsar Timing Array Data — 2610.12308
-2026-10-09 — [Galaxy Formation / Evolution] Inflow-driven galaxy evolution - II: A hierarchy in the scaling relations of star-forming galaxies — 2610.12394
-2026-10-09 — [SMBHs] Pushing Variability Searches to Extreme Dwarf Galaxies with the Vera C. Rubin Observatory Data Preview 2 — 2610.10755
+last digest: 2026-10-16
 2026-10-12 — [Galaxy Formation / Evolution] A Burst of Reionization in the Dark Ages — 2610.12552
 2026-10-12 — [SMBHs] A dust-reddened quasar in a [C II]-luminous host at z=6.55 — 2610.13758
 2026-10-12 — [Stats] Neural Estimation of Summary Statistics for Simulation-Based Inference with Non-Asymptotic Guarantees — 2610.13031
@@ -88,3 +78,13 @@ last digest: 2026-10-15
 2026-10-15 — [Stats] jax-SNANA: A GPU-accelerated Supernova Framework for the SBI Era — 2610.19000
 2026-10-15 — [Galaxy Formation / Evolution] Sleeping or Dead? Probing the Quenching Mechanism of JWST Dormant Galaxies at z > 3 with ALMA — 2610.19926
 2026-10-15 — [SMBHs] Scalar-Assisted Growth of Supermassive Black Holes: Boson-Mass Windows and Observational Constraints — 2610.18986
+2026-10-16 — [SMBHs] The Radius-Luminosity Relationship for Active Galactic Nuclei with Hierarchical Bayesian Reverberation Mapping — 2610.22096
+2026-10-16 — [SMBHs] How Little Red Dots Turn Blue: Evolution of Kelvin-Helmholtz Contracting Black Hole Envelopes and Observational Diagnostics — 2610.20709
+2026-10-16 — [Stats] Conditional Mean Flows: Few-Step Densities for Simulation-Based Inference — 2610.21657
+2026-10-16 — [SMBHs] Wandering intermediate-mass black holes and off-nuclear tidal disruption events from early star clusters — 2610.20719
+2026-10-16 — [Dark Matter] Hydrostatic Equilibrium Constraints on the Fuzzy Dark Matter Mass from Dwarf Spheroidals: Method, Systematics, and Robustness — 2610.21722
+2026-10-16 — [SMBHs] A Comprehensive AGN Inventory for the Dwarf-Dominated RESOLVE and ECO Surveys: Mass-Dependent AGN Types and Occupation Fractions — 2610.22115
+2026-10-16 — [SMBHs] Neutrino production at the extreme vicinity of supermassive black hole in NGC 1068 — 2610.21110
+2026-10-16 — [Dark Matter] Compact Dark Matter with Globular Cluster Pulsars — 2610.20732
+2026-10-16 — [SMBHs] A model for the image structure and spectral energy distribution of relativistic jets — 2610.20961
+2026-10-16 — [Galaxy Formation / Evolution] An Attenuation Bump at z=9.3: Probing Dust Diversity at Cosmic Dawn — 2610.20722
