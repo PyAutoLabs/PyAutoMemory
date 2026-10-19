@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-16
-2026-10-12 — [Galaxy Formation / Evolution] A Burst of Reionization in the Dark Ages — 2610.12552
-2026-10-12 — [SMBHs] A dust-reddened quasar in a [C II]-luminous host at z=6.55 — 2610.13758
-2026-10-12 — [Stats] Neural Estimation of Summary Statistics for Simulation-Based Inference with Non-Asymptotic Guarantees — 2610.13031
-2026-10-12 — [Stats] SLICE: Sequential Likelihood-Free Inference via Conformal E-Values — 2610.13855
-2026-10-12 — [SMBHs] The Population of Type~1 Active Galactic Nuclei in Dark Energy Spectroscopic Instrument. I. Profile-dependent Measurements of the Low-redshift Sample — 2610.13218
-2026-10-12 — [Galaxy Formation / Evolution] When dust growth takes over: the origin of dust in post-reionization galaxies — 2610.12591
-2026-10-12 — [Galaxy Formation / Evolution] A Single Line-Emitter Identified in an Unbiased Search with JWST/NIRSpec: Multi-Object Coronagraphy for Slitless Spectroscopy — 2610.12553
-2026-10-12 — [SMBHs] Extreme mass ratio inspirals from the Hills mechanism, The eccentricity distribution of Hills EMRIs in LISA — 2610.13294
-2026-10-12 — [SMBHs] Resistive alignment of a black-hole magnetosphere — 2610.13288
-2026-10-12 — [Stats] Amortised Inference through One-Step Implicit Sampling — 2610.12679
+last digest: 2026-10-19
 2026-10-14 — [SMBHs] Massive black holes in the first billion years with JWST — 2610.18263
 2026-10-14 — [Galaxy Formation / Evolution] Mergers may not be the main channel for galaxy stellar mass growth at redshift $z\gtrsim5$: Predictions from cosmological hierarchical models and simulations — 2610.17575
 2026-10-14 — [Dark Matter] MUSE-DARK IV. Comparing Dark Matter Densities to Star Formation Histories in 375 intermediate-z galaxies — 2610.18282
@@ -88,3 +78,13 @@ last digest: 2026-10-16
 2026-10-16 — [Dark Matter] Compact Dark Matter with Globular Cluster Pulsars — 2610.20732
 2026-10-16 — [SMBHs] A model for the image structure and spectral energy distribution of relativistic jets — 2610.20961
 2026-10-16 — [Galaxy Formation / Evolution] An Attenuation Bump at z=9.3: Probing Dust Diversity at Cosmic Dawn — 2610.20722
+2026-10-19 — [SMBHs] Clustering of JWST LRDs. Implications for PBHs and other early-forming seeds — 2610.23806
+2026-10-19 — [Stats] ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference — 2610.23825
+2026-10-19 — [Galaxy Formation / Evolution] How bright can a galaxy be? Extreme value predictions for high-redshift survey observables — 2610.23016
+2026-10-19 — [SMBHs] What can a uniform reflection pipeline establish about supermassive black hole spin? An audit and a corrected analysis of 57 AGN with XMM and NuSTAR — 2610.23081
+2026-10-19 — [SMBHs] $\texttt{GASTRO-BH}$: Effects of a Central Black Hole in GSE-like Dwarf-galaxy Mergers Around Milky Way-like Hosts — 2610.22860
+2026-10-19 — [SMBHs] Exploring Cosmic Rays from Gravity-Limited Acceleration at Supermassive Black Holes — 2610.23393
+2026-10-19 — [SMBHs] A precessing AGN with S-shaped morphology discovered in MALS — 2610.23738
+2026-10-19 — [Dark Matter] Foreground dependence of the 20 GeV Galactic halo gamma-ray excess and its proposed connection to the LUX-ZEPLIN event — 2610.23713
+2026-10-19 — [Dark Matter] Hidden Disruption in Milky Way-like Satellite Galaxy Populations — 2610.22481
+2026-10-19 — [Dark Matter] Analytic and numerical study of dark matter halos in the Horndeski theory — 2610.22819
