@@ -27,8 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-16
-2026-10-12 — Nailing down the Hubble constant value through time delay cosmography: A 3% measurement from SN Refsdal — 2610.12595
+last digest: 2026-10-19
 2026-10-15 — Strong gravitational lensing with Euclid — 2610.19835
 2026-10-15 — Microcaustics: Fast GPU-Accelerated Dynamical Microlensing of Time-Dependent Extended Sources — 2610.19703
 2026-10-15 — Cosmology with strong gravitational lenses — 2610.19598
