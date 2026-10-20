@@ -47,7 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-19
+last digest: 2026-10-20
 2026-10-14 — [SMBHs] Massive black holes in the first billion years with JWST — 2610.18263
 2026-10-14 — [Galaxy Formation / Evolution] Mergers may not be the main channel for galaxy stellar mass growth at redshift $z\gtrsim5$: Predictions from cosmological hierarchical models and simulations — 2610.17575
 2026-10-14 — [Dark Matter] MUSE-DARK IV. Comparing Dark Matter Densities to Star Formation Histories in 375 intermediate-z galaxies — 2610.18282
@@ -88,3 +88,13 @@ last digest: 2026-10-19
 2026-10-19 — [Dark Matter] Foreground dependence of the 20 GeV Galactic halo gamma-ray excess and its proposed connection to the LUX-ZEPLIN event — 2610.23713
 2026-10-19 — [Dark Matter] Hidden Disruption in Milky Way-like Satellite Galaxy Populations — 2610.22481
 2026-10-19 — [Dark Matter] Analytic and numerical study of dark matter halos in the Horndeski theory — 2610.22819
+2026-10-20 — [SMBHs] Modeling Multi-band Active Galactic Nuclei Lightcurves Using an Self-supervised Attentive Neural Process Network — 2610.24195
+2026-10-20 — [Stats] ERGO-ML and how to directly infer the multi-temperature nature of intra-cluster gas: simulation-based inference with TNG-Cluster — 2610.26627
+2026-10-20 — [Stats] Exploring the Evidence for Evolving Dark Energy with the Jeffreys prior — 2610.26493
+2026-10-20 — [SMBHs] Tidal Disruption Events in Active Galactic Nuclei: Thermal Radiation and Jets — 2610.24849
+2026-10-20 — [Galaxy Formation / Evolution] The DARWIN Project: Cosmological Simulations of Galaxy Formation down to Dwarf Scales in Diverse Environments — 2610.25786
+2026-10-20 — [SMBHs] Clumpy Outflows from Super-Eddington Accreting Black Holes. II. Conditions for Clump Formation — 2610.24660
+2026-10-20 — [SMBHs] The accretion flow and jet of M87: broadband modelling across spatial scales — 2610.26434
+2026-10-20 — [Galaxy Formation / Evolution] PRISMS/U13151. A Glimpse into the Earliest Phases of Galaxy Formation through an Ultra-Faint System $\approx$ 500 Myr after the Big Bang — 2610.26560
+2026-10-20 — [Galaxy Formation / Evolution] Star formation history of Draco revealed by DESI DR1: suppressed early star formation efficiency for Milky Way dwarf galaxies — 2610.26375
+2026-10-20 — [Dark Matter] Multimessenger Probes of Primordial Black Holes with Gravitational Wave and 21 cm Observations — 2610.24067
