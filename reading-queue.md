@@ -133,6 +133,7 @@ Chasing Cosmic Reionization: An Extremely Faint Highly Magnified Source at $z=5.
 $\texttt{LensFactory.jl}$: A general-purpose strong lens modeling package — 2609.08649
 A Missing Tool for Calculating Auto/Cross-correlation Function under Nonuniform Sampling Observations — 2609.08604
 Harnessing stellar kinematics to constrain dark energy with the double-source-plane gravitational lens SDSS J0946+1006 — 2609.08573
+Strong gravitational lensing with Euclid — 2610.19835
 
 
 ## SMBHs
