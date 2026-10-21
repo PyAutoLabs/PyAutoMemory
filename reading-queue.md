@@ -136,6 +136,7 @@ Harnessing stellar kinematics to constrain dark energy with the double-source-pl
 Strong gravitational lensing with Euclid — 2610.19835
 Microcaustics: Fast GPU-Accelerated Dynamical Microlensing of Time-Dependent Extended Sources — 2610.19703
 Cosmology with strong gravitational lenses — 2610.19598
+Statistical Strong Lensing V. Inference with Microlensed Quasars — 2610.24423
 
 
 ## SMBHs
