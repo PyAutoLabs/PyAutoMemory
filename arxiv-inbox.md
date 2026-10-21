@@ -28,7 +28,6 @@ Format:
 
 ---
 last digest: 2026-10-21
-2026-10-15 — Microcaustics: Fast GPU-Accelerated Dynamical Microlensing of Time-Dependent Extended Sources — 2610.19703
 2026-10-15 — Cosmology with strong gravitational lenses — 2610.19598
 2026-10-16 — Tracing small-scale structure formation through cosmic time with strong gravitational lensing: A case for a next-generation sub-millimetre/millimetre interferometer — 2610.20710
 2026-10-20 — Statistical Strong Lensing V. Inference with Microlensed Quasars — 2610.24423
