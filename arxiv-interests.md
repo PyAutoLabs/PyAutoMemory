@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-20
-2026-10-14 — [SMBHs] Massive black holes in the first billion years with JWST — 2610.18263
-2026-10-14 — [Galaxy Formation / Evolution] Mergers may not be the main channel for galaxy stellar mass growth at redshift $z\gtrsim5$: Predictions from cosmological hierarchical models and simulations — 2610.17575
-2026-10-14 — [Dark Matter] MUSE-DARK IV. Comparing Dark Matter Densities to Star Formation Histories in 375 intermediate-z galaxies — 2610.18282
-2026-10-14 — [SMBHs] The Connection Between the Growth of Massive Black Holes and Their Dynamical Histories — 2610.18659
-2026-10-14 — [Galaxy Formation / Evolution] Untangling Similarities and Differences in Star Formation Histories Across Cosmological Simulations — 2610.17359
-2026-10-14 — [SMBHs] A radio counterpart of the local little-red-dot J092359+415736 — 2610.17559
-2026-10-14 — [SMBHs] Scaling Up: A Global Optical/X-ray Correlation For Reprocessing Across Black Hole Masses — 2610.17248
-2026-10-14 — [Dark Matter] MeV dark matter decay forecasts for the COSI mission — 2610.17217
-2026-10-14 — [SMBHs] Delving into the depths of NGC 3783 with XRISM VI. Evidence for a failed wind based on Fe xxv absorption line variability — 2610.18429
-2026-10-14 — [SMBHs] The ePESSTO+ census of ZTF nuclear transients. I. What flares in galactic nuclei? — 2610.18633
+last digest: 2026-10-21
 2026-10-15 — [SMBHs] The Dance of the Little Red Dots: Spectroscopy of Two Blue Companions at z = 3.9 and 5.5 Reveals Young, Metal-Poor Starbursts Merging with Their LRDs within a Few Hundred Myr — 2610.18968
 2026-10-15 — [Stats] Low-cost neural summaries for cosmological inference: an ensemble of convolutional neural networks trained on approximate simulations — 2610.19891
 2026-10-15 — [Galaxy Formation / Evolution] Galactic Outflows and Star-Formation Quenching: A JWST Perspective — 2610.19182
@@ -98,3 +88,13 @@ last digest: 2026-10-20
 2026-10-20 — [Galaxy Formation / Evolution] PRISMS/U13151. A Glimpse into the Earliest Phases of Galaxy Formation through an Ultra-Faint System $\approx$ 500 Myr after the Big Bang — 2610.26560
 2026-10-20 — [Galaxy Formation / Evolution] Star formation history of Draco revealed by DESI DR1: suppressed early star formation efficiency for Milky Way dwarf galaxies — 2610.26375
 2026-10-20 — [Dark Matter] Multimessenger Probes of Primordial Black Holes with Gravitational Wave and 21 cm Observations — 2610.24067
+2026-10-21 — [Dark Matter] Searching for Dense Perturbers in Cold Dark Matter Simulations — 2610.27236
+2026-10-21 — [Dark Matter] ASTROLABE: A 3D Particle-Level Surrogate for Cosmology Simulation with Physical Flow Matching — 2610.27068
+2026-10-21 — [SMBHs] Balmer breaks in accreting super-massive black hole binaries — 2610.27076
+2026-10-21 — [Galaxy Formation / Evolution] Leviathan: a very massive, extended sub-millimetre galaxy spectroscopically confirmed at $\rm z = 4.05$ — 2610.27101
+2026-10-21 — [Stats] Modular Bayesian Inference for Partially Misspecified Mixtures with Uncertain Class Labels — 2610.27085
+2026-10-21 — [Dark Matter] Kinematically isolating intracluster light in AS1063: a distinct stellar population tracing the dark matter core — 2610.28013
+2026-10-21 — [Stats] Gaussian process-based Bayesian imaging of bolometric (sub-)millimetre data — 2610.27733
+2026-10-21 — [SMBHs] Probing the Optical/UV Continuum Variability of Active Galactic Nuclei with the Damped Random Walk Model — 2610.27806
+2026-10-21 — [Galaxy Formation / Evolution] The clumpy fraction of galaxies at $z=1-9$ with JADES: evidence for a mass-dependent transition in clump origin — 2610.28515
+2026-10-21 — [Stats] Are Dynamical Dark-Energy Cosmologies Old Enough? — 2610.27209
