@@ -52,7 +52,7 @@ merge** until its PR lands — the paper is not in memory before then.
 <!-- The line below is auto-updated by .github/workflows/knowledge_board.yml (everything -->
 <!-- between the memory:begin/memory:end markers is replaced with the rendered strip). -->
 <!-- memory:begin -->
-🧠 **162 pages** · 71 drafted · 41% of 660 paper sections cite a resolved key · 229 papers queued · [dashboard →](https://pyautolabs.github.io/PyAutoMemory/)
+🧠 **162 pages** · 71 drafted · 41% of 660 paper sections cite a resolved key · 231 papers queued · [dashboard →](https://pyautolabs.github.io/PyAutoMemory/)
 <!-- memory:end -->
 
 ## The sub-wikis
