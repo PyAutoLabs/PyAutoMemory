@@ -205,6 +205,14 @@ status: stub
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
+## Williams 2026 — shape degeneracies in cluster mass models
+
+**Canonical BibTeX key:** `Williams2026Shape`
+**Reference:** Shape Degeneracies: the likely culprit for the differences between lens mass models of galaxy clusters; arXiv:2609.27147
+**Concepts:** [[cluster-lensing]], [[mass-sheet-degeneracy]], [[source-position-transformation]]
+
+**Supports:**
+- Argues analytically that generalized shape degeneracies, not the mass-sheet or source-position transformation, drive <30 kpc differences between cluster mass maps; they are suppressed near tight image groupings and shift time delays by ~1% (up to ~10% for some sources) in MACS J0416.
 
 ## See also
 

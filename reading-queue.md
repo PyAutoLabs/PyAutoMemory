@@ -82,13 +82,13 @@ The Case for Space: Estimating Precise Time Delays from Ground- and Space-Based 
 JWST Discovery of Strong Lensing from a Galaxy Cluster at Cosmic Noon: Giant Arcs and a Highly Concentrated Core of XLSSC 122 — 2508.08356
 HOLISMOKES XVIII: Detecting strongly lensed SNe Ia from time series of multi-band LSST-like imaging data
 The  collar of early-type galaxies -- probing evolution by focusing on the inner stellar density profile
-High-Dimensional Bayesian Model Comparison in Cosmology with GPU-accelerated Nested Sampling and Neural Emulators — 2509.13307
+DONE 2026-10-21 — High-Dimensional Bayesian Model Comparison in Cosmology with GPU-accelerated Nested Sampling and Neural Emulators — 2509.13307
 THE STELLAR AND DARK MATTER DISTRIBUTIONS IN ELLIPTICAL GALAXIES MEASURED BY  STACKED WEAK GRAVITATIONAL LENSING
-Model independent lensing sub-structure detection with multiply-imaged star clusters constellations — 2608.21253
+DONE 2026-10-21 — Model independent lensing sub-structure detection with multiply-imaged star clusters constellations — 2608.21253
 On what scales does strong lensing robustly constrain the mass profile of low-mass perturbers? — 2608.20454
 Measuring Extragalactic Microlens Masses and Motions in Strongly Lensed Quasar Systems with Intensity Interferometry — 2608.27577
 TDCOSMO XXIX: JWST/NIRSpec IFU Spatially Resolved Kinematics of Three Time-delay Lenses — 2609.03089
-Host Dependence and Line-of-Sight Effects on Galaxy-Galaxy Strong Lensing in Clusters — 2608.30079
+DONE 2026-10-21 — Host Dependence and Line-of-Sight Effects on Galaxy-Galaxy Strong Lensing in Clusters — 2608.30079
 DONE 2026-09-11 — TDCOSMO XXVIII. The Hubble constant from the quadruply lensed quasar J1537$-$3010 with precise time delays — 2609.00179
 HOLISMOKES -- XVIII. Cosmology with strongly lensed type II supernovae: Effects of instrumental setups on $H_0$ — 2608.26331
 DONE 2026-09-01 — Mapping the Information Geometry of an Unresolved Dark Matter Population using a Differentiable Strong Lensing Simulator — 2608.18224
@@ -109,7 +109,7 @@ SN Helios: A Multiply Imaged Type II Supernova Opening Time-Delay Cosmography be
 Joint Model-independent Constraints on the Post-Newtonian Parameter and Cosmic Curvature from Galaxy-scale Strong Lensing, SNe Ia, BAO, and Cosmic Chronometers — 2609.29377
 Wave-Optics Imprints of Warm Dark Matter Subhalos with Prompt Cusps on Strongly Lensed Gravitational Waves — 2609.28626
 A sub-100 pc view at z~5 of a Multiply-Imaged Massive Quiescent Galaxy — 2609.28474
-Shape Degeneracies: the likely culprit for the differences between lens mass models of galaxy clusters — 2609.27147
+DONE 2026-10-21 — Shape Degeneracies: the likely culprit for the differences between lens mass models of galaxy clusters — 2609.27147
 Reducing False Positives in Strong-Lens Searches with Generalized-Mean Consensus of Machine-Learning Ensembles in the Kilo-Degree Survey — 2609.24891
 LATED: JWST integral field spectroscopy of a galaxy caught in chemical infancy at $z=4.8$ behind Abell 2744 — 2609.24589
 Probing modified gravity with galaxy-cluster-lensed gravitational-wave time delays: impact of systematic effects — 2609.24351
