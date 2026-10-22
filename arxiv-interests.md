@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-21
-2026-10-15 — [SMBHs] The Dance of the Little Red Dots: Spectroscopy of Two Blue Companions at z = 3.9 and 5.5 Reveals Young, Metal-Poor Starbursts Merging with Their LRDs within a Few Hundred Myr — 2610.18968
-2026-10-15 — [Stats] Low-cost neural summaries for cosmological inference: an ensemble of convolutional neural networks trained on approximate simulations — 2610.19891
-2026-10-15 — [Galaxy Formation / Evolution] Galactic Outflows and Star-Formation Quenching: A JWST Perspective — 2610.19182
-2026-10-15 — [SMBHs] Are Broad Mg II Galaxies Fading AGN? — 2610.19126
-2026-10-15 — [Dark Matter] The Atacama Cosmology Telescope: DR6 Constraints on Isotropic Time-Dependent Cosmic Birefringence from Axion-like Particles — 2610.19049
-2026-10-15 — [Dark Matter] Wave Cold Dark Matter Can Reproduce the Radial Acceleration Relation in X-ray Elliptical Galaxies — 2610.18969
-2026-10-15 — [SMBHs] SQuIGGLE: Radio AGN Found Predominantly in Young, Gas-rich Post-starburst Galaxies at z ~ 0.7 — 2610.19146
-2026-10-15 — [Stats] jax-SNANA: A GPU-accelerated Supernova Framework for the SBI Era — 2610.19000
-2026-10-15 — [Galaxy Formation / Evolution] Sleeping or Dead? Probing the Quenching Mechanism of JWST Dormant Galaxies at z > 3 with ALMA — 2610.19926
-2026-10-15 — [SMBHs] Scalar-Assisted Growth of Supermassive Black Holes: Boson-Mass Windows and Observational Constraints — 2610.18986
+last digest: 2026-10-22
 2026-10-16 — [SMBHs] The Radius-Luminosity Relationship for Active Galactic Nuclei with Hierarchical Bayesian Reverberation Mapping — 2610.22096
 2026-10-16 — [SMBHs] How Little Red Dots Turn Blue: Evolution of Kelvin-Helmholtz Contracting Black Hole Envelopes and Observational Diagnostics — 2610.20709
 2026-10-16 — [Stats] Conditional Mean Flows: Few-Step Densities for Simulation-Based Inference — 2610.21657
@@ -98,3 +88,13 @@ last digest: 2026-10-21
 2026-10-21 — [SMBHs] Probing the Optical/UV Continuum Variability of Active Galactic Nuclei with the Damped Random Walk Model — 2610.27806
 2026-10-21 — [Galaxy Formation / Evolution] The clumpy fraction of galaxies at $z=1-9$ with JADES: evidence for a mass-dependent transition in clump origin — 2610.28515
 2026-10-21 — [Stats] Are Dynamical Dark-Energy Cosmologies Old Enough? — 2610.27209
+2026-10-22 — [SMBHs] Discovery of a Broad-Line Active Galactic Nucleus at $z = 9.98$ — 2610.28735
+2026-10-22 — [SMBHs] Prior volume effect inflates the gravitational-wave background in pulsar timing arrays — 2610.28739
+2026-10-22 — [Dark Matter] Not so Fast: Revised Calibration of SIDM Core Collapse — 2610.28890
+2026-10-22 — [SMBHs] A Little Red Dot emerging from a nitrogen-rich UV-luminous galaxy with Very Massive Stars — 2610.29887
+2026-10-22 — [Dark Matter] Gravothermal Evolution of Self-Interacting Dark Matter Halos across Knudsen Numbers — 2610.28745
+2026-10-22 — [Dark Matter] Poisson Clustering and Seed Effect of PBHs: Implications for Microlensing, Gravitational Waves, Little Red Dots and Ultra-Faint Dwarf Galaxies — 2610.28723
+2026-10-22 — [Stats] PIANISTpy: A JAX-based Python package for velocity-anisotropic astrophysical equilibrium models — 2610.28758
+2026-10-22 — [SMBHs] Lasting mEMRIs: Signatures of Multiple Black Hole Extreme Mass Ratio Inspirals from AGN discs — 2610.29376
+2026-10-22 — [Galaxy Formation / Evolution] Unveiling the correlation between the UV 2175 Å dust attenuation bump, PAH emission, and gas-phase metallicity at cosmic noon — 2610.28743
+2026-10-22 — [Stats] Noisy Pipelines I: An end-to-end pipeline to perform multivariate noise inference for LISA — 2610.28726
