@@ -19,23 +19,19 @@ name: Queue filing
 # only triage+ users can apply labels at all; the dispatch door re-checks
 # the association from the API, since it has no event to read it from.
 #
-# The PR is created with the runner's GITHUB_TOKEN, so `pull_request`
-# workflows (validate.yml) do NOT run on it — `make validate` + pytest run
-# here as the gate instead, before anything is pushed.
+# `make validate` + pytest run here as the gate before anything is pushed.
 #
-# **Opening the PR needs a token that is allowed to.** GITHUB_TOKEN may open
-# a PR only when "Allow GitHub Actions to create and approve pull requests"
-# is on (Settings → Actions → General → Workflow permissions — and when the
-# organisation enforces that setting the repo page does not even show it).
-# So the PR step prefers a `QUEUE_PR_TOKEN` repo secret when one exists: a
-# fine-grained personal access token scoped to this repo with *Pull
-# requests: read and write* (plus the metadata read it gets by default).
-# A PR opened with it also runs validate.yml, which a GITHUB_TOKEN-created
-# PR never does. Without either, the filing still lands on its
-# `queue-filing/issue-<n>` branch, gated, and the issue gets a one-tap
-# compare link instead of a PR — but nothing reaches `main` until a human
-# opens and merges it, and the board's *Filings awaiting merge* section is
-# where those branches wait. Six did between 2026-09-01 and 2026-09-11.
+# **The branch push and the PR use the org `pyautolabs-bot` App.** The step
+# mints a one-hour token scoped to this repo (contents + pull-requests write)
+# immediately before the push. GITHUB_TOKEN could open a PR only when "Allow
+# GitHub Actions to create and approve pull requests" is on, and a PR it
+# opened never ran validate.yml; an App-opened PR does both. There is no
+# fallback: if the mint, the push or `gh pr create` fails the job fails and
+# the failure step comments on the issue. (The old compare-link fallback left
+# six filings stranded on their branches between 2026-09-01 and 2026-09-11;
+# the board's *Filings awaiting merge* section still lists any branch whose
+# PR has not landed.) Issue comments stay on the job token, so they remain
+# `github-actions[bot]`'s — queue_sweep.yml keys "already answered" off that.
 #
 # A second tap on the same paper does not file it twice: a filing branch
 # that already exists for this issue, or for another open issue naming the
@@ -305,15 +301,27 @@ jobs:
           make validate
           python -m pytest tests/ -q
 
+      # Minted after the Claude step, right before use: the token lives one
+      # hour, and a filing run can spend much of that inside Claude.
+      - name: Mint App token (this repo — push the branch, open the PR)
+        id: app_token
+        if: steps.resolve.outputs.skip != 'yes' && steps.dup.outputs.skip != 'yes'
+        uses: actions/create-github-app-token@v3
+        with:
+          client-id: ${{ vars.APP_CLIENT_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          owner: PyAutoLabs
+          repositories: PyAutoMemory
+          permission-contents: write
+          permission-pull-requests: write
+
       - name: Branch, commit, push, open the PR (explicit paths only)
         if: steps.resolve.outputs.skip != 'yes' && steps.dup.outputs.skip != 'yes'
         env:
-          # Empty when the secret is not set; the PR step then falls back to
-          # the job token and the repo setting decides (header above).
-          PR_TOKEN: ${{ secrets.QUEUE_PR_TOKEN }}
+          PR_TOKEN: ${{ steps.app_token.outputs.token }}
         run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name  "pyautolabs-bot[bot]"
+          git config user.email "346909844+pyautolabs-bot[bot]@users.noreply.github.com"
           branch="queue-filing/issue-${ISSUE}"
           git checkout -b "$branch"
           git add bibliography/ wiki/ reading-queue.md arxiv-inbox.md arxiv-interests.md
@@ -323,30 +331,27 @@ jobs:
           git commit -m "queue: file paper from #${ISSUE}"
           # claude-code-action rewires the checkout git credentials for its
           # own short-lived OIDC token (the first live run died here with
-          # 'Invalid username or token') — push with the job token explicitly.
-          git push "https://x-access-token:${GH_TOKEN}@github.com/${GH_REPO}.git" "HEAD:refs/heads/${branch}"
+          # 'Invalid username or token'). Drop whatever it and checkout left
+          # in the local config — a credentialed remote URL and the persisted
+          # auth header — so git asks gh (`gh auth setup-git`, reading the
+          # App token) and nothing else.
+          git remote set-url origin "https://github.com/${GH_REPO}.git"
+          git config --local --unset-all http.https://github.com/.extraheader || true
+          GH_TOKEN="$PR_TOKEN" gh auth setup-git
+          GH_TOKEN="$PR_TOKEN" git push origin "HEAD:refs/heads/${branch}"
           {
             echo "Files the paper requested in #${ISSUE} (label: $(cat /tmp/issue_label.txt))."
             echo
             echo "Rendered by claude-code-action from the issue's section/line/notes;"
-            echo "\`make validate\` + \`pytest tests/\` ran green in the filing workflow"
-            echo "(GITHUB_TOKEN-created PRs do not trigger validate.yml)."
+            echo "\`make validate\` + \`pytest tests/\` ran green in the filing workflow."
             echo
             echo "Closes #${ISSUE}."
           } > /tmp/pr_body.md
-          if GH_TOKEN="${PR_TOKEN:-$GH_TOKEN}" gh pr create --base main --head "$branch" \
+          pr_url=$(GH_TOKEN="$PR_TOKEN" gh pr create --base main --head "$branch" \
               --title "queue filing: paper from #${ISSUE}" \
-              --body-file /tmp/pr_body.md; then
-            gh issue comment "$ISSUE" --body \
-              "Filing PR opened: $(gh pr view "$branch" --json url --jq .url). Review and merge to complete the intake."
-          else
-            # Repo/org policy can forbid Actions-created PRs. The branch is
-            # pushed and gated — degrade to a one-tap PR link, not a failure.
-            # The board lists the branch under "Filings awaiting merge" until
-            # it lands or is deleted.
-            gh issue comment "$ISSUE" --body \
-              "Filing branch pushed and gated: \`${branch}\` — but this repo's policy blocks Actions from opening PRs. Open it with one tap: ${GITHUB_SERVER_URL}/${GH_REPO}/compare/main...${branch}?expand=1 — or make this automatic by adding a \`QUEUE_PR_TOKEN\` repo secret (a fine-grained PAT with pull-requests write on this repo; see queue_filing.yml's header). Until it is merged, the paper is on that branch and not in memory; the dashboard lists it under *Filings awaiting merge*."
-          fi
+              --body-file /tmp/pr_body.md)
+          gh issue comment "$ISSUE" --body \
+            "Filing PR opened: ${pr_url}. Review and merge to complete the intake."
 
       - name: Report failure on the issue
         if: failure()

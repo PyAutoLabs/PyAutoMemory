@@ -38,9 +38,9 @@ The per-paper buttons file GitHub issues that two workflows act on:
 `queue_actions.yml` makes the mechanical moves (➕ ✅ ✖️ 🧹) and closes the
 issue; `queue_filing.yml` has Claude file a 📥/📑 paper onto a
 `queue-filing/issue-<n>` branch, gated, for a human to merge — and it opens
-that PR itself when a `QUEUE_PR_TOKEN` repo secret (a fine-grained PAT with
-pull-requests write on this repo) exists, or when *Allow GitHub Actions to
-create and approve pull requests* is on (Settings → Actions → General). A tap
+that PR itself with a short-lived token from the organisation's GitHub App
+(contents and pull-requests write on this repo only), so the PR's own checks
+run; if the PR cannot be opened the run fails and says so on the issue. A tap
 whose label the issue
 form dropped is read from its title; whatever nothing acted on is
 re-dispatched by the nightly `queue_sweep.yml`; and a filing that reached its
