@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-22
-2026-10-16 — [SMBHs] The Radius-Luminosity Relationship for Active Galactic Nuclei with Hierarchical Bayesian Reverberation Mapping — 2610.22096
-2026-10-16 — [SMBHs] How Little Red Dots Turn Blue: Evolution of Kelvin-Helmholtz Contracting Black Hole Envelopes and Observational Diagnostics — 2610.20709
-2026-10-16 — [Stats] Conditional Mean Flows: Few-Step Densities for Simulation-Based Inference — 2610.21657
-2026-10-16 — [SMBHs] Wandering intermediate-mass black holes and off-nuclear tidal disruption events from early star clusters — 2610.20719
-2026-10-16 — [Dark Matter] Hydrostatic Equilibrium Constraints on the Fuzzy Dark Matter Mass from Dwarf Spheroidals: Method, Systematics, and Robustness — 2610.21722
-2026-10-16 — [SMBHs] A Comprehensive AGN Inventory for the Dwarf-Dominated RESOLVE and ECO Surveys: Mass-Dependent AGN Types and Occupation Fractions — 2610.22115
-2026-10-16 — [SMBHs] Neutrino production at the extreme vicinity of supermassive black hole in NGC 1068 — 2610.21110
-2026-10-16 — [Dark Matter] Compact Dark Matter with Globular Cluster Pulsars — 2610.20732
-2026-10-16 — [SMBHs] A model for the image structure and spectral energy distribution of relativistic jets — 2610.20961
-2026-10-16 — [Galaxy Formation / Evolution] An Attenuation Bump at z=9.3: Probing Dust Diversity at Cosmic Dawn — 2610.20722
+last digest: 2026-10-23
 2026-10-19 — [SMBHs] Clustering of JWST LRDs. Implications for PBHs and other early-forming seeds — 2610.23806
 2026-10-19 — [Stats] ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference — 2610.23825
 2026-10-19 — [Galaxy Formation / Evolution] How bright can a galaxy be? Extreme value predictions for high-redshift survey observables — 2610.23016
@@ -98,3 +88,13 @@ last digest: 2026-10-22
 2026-10-22 — [SMBHs] Lasting mEMRIs: Signatures of Multiple Black Hole Extreme Mass Ratio Inspirals from AGN discs — 2610.29376
 2026-10-22 — [Galaxy Formation / Evolution] Unveiling the correlation between the UV 2175 Å dust attenuation bump, PAH emission, and gas-phase metallicity at cosmic noon — 2610.28743
 2026-10-22 — [Stats] Noisy Pipelines I: An end-to-end pipeline to perform multivariate noise inference for LISA — 2610.28726
+2026-10-23 — [Stats] 2Flow2SN: Dusty Supernova Cosmology with Photometric Redshifts and Contamination using Neural Simulation-Based Inference — 2610.30244
+2026-10-23 — [Stats] Simulation-based inference of profile evolution for high-precision pulsar timing — 2610.31450
+2026-10-23 — [Dark Matter] Same Events, Weaker Bound: Model Dependence in Magellanic Microlensing Limits on Primordial Black Holes — 2610.30510
+2026-10-23 — [SMBHs] The black hole-galaxy correlations of the 12 micron local AGN sample: a NuSTAR perspective — 2610.30285
+2026-10-23 — [SMBHs] A Catalog of Spectral Properties for DESI DR1 Quasars — 2610.31416
+2026-10-23 — [Stats] Assessing the consistency of the CPL dark-energy model with cosmological data: Simulation-calibrated neural posterior disagreement — 2610.31044
+2026-10-23 — [SMBHs] A recurring changing state AGN discovered in the SAMI Galaxy Survey and SDSS — 2610.30816
+2026-10-23 — [Stats] Self-Supervised Representation Learning for JWST Galaxy Images and Low Resolution Spectra — 2610.31078
+2026-10-23 — [SMBHs] Lomb-Scargle Recovery of Periodic Binary Signals across Black Hole Mass and Cadence — 2610.30772
+2026-10-23 — [Galaxy Formation / Evolution] The Milky Way's Early Disk Was Built in Bursts. II. The Multi-component Age-Metallicity Structure of the High-$α$ Disk — 2610.30659
