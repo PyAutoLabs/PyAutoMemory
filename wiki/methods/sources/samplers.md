@@ -191,3 +191,12 @@ hopping, and the libraries that implement them.
 
 **Do not use for:**
 - An evidence estimator or proof of multimodal coverage.
+
+## Lovick 2025 — GPU-accelerated nested sampling for cosmological model comparison
+
+**Canonical BibTeX key:** `Lovick2025`
+**Reference:** High-Dimensional Bayesian Model Comparison in Cosmology with GPU-accelerated Nested Sampling and Neural Emulators; arXiv:2509.13307
+**Concepts:** [[gpu-nested-sampling]], [[nested-sampling]]
+
+**Supports:**
+- Demonstrates GPU nested sampling with JAX neural emulators giving evidences and Bayes factors for a 39-dimensional ΛCDM vs w0wa cosmic-shear analysis in ~2 days on one A100, putting nested sampling on equal footing with MCMC-plus-decoupled-evidence methods.

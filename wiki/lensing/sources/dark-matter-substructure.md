@@ -539,6 +539,15 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 **Do not use for:**
 - Claims about how line-of-sight structure, external multipoles, or the mass-sheet transform specifically interact with the radial subhalo signal — the paper does not settle this; it remains an open question to check against the text before citing.
 
+## Fung 2026 — model-independent substructure detection with star-cluster constellations
+
+**Canonical BibTeX key:** `Fung2026`
+**Reference:** Model independent lensing sub-structure detection with multiply-imaged star clusters constellations; arXiv:2608.21253
+**Concepts:** [[dark-matter-substructure]], [[cluster-lensing]]
+
+**Supports:**
+- Proposes a lens-model-free, data-driven "geometrical-duality" test (the optical Liouville theorem applied across scales) for sub-resolution substructure, applied to 11 multiply imaged star clusters in SMACS0723 with JWST; one outlier pair is consistent with CDM subhaloes of 10^8–10^9 M_sun.
+
 ## See also
 
 - [[dark-matter-substructure]]

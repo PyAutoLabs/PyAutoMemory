@@ -150,6 +150,14 @@ status: stub
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
+## Roche 2026 — host dependence and LOS effects on cluster GGSL
+
+**Canonical BibTeX key:** `Roche2026`
+**Reference:** Host Dependence and Line-of-Sight Effects on Galaxy-Galaxy Strong Lensing in Clusters; arXiv:2608.30079
+**Concepts:** [[cluster-lensing]], [[line-of-sight-effects]]
+
+**Supports:**
+- Revisits the observed-vs-simulated galaxy–galaxy strong-lensing excess in clusters: correlated LOS material raises P_GGSL by a few to ~15%, hydro runs give up to 10x more GGSL than DM-only, P_GGSL scales roughly as θ_E^2, and the residual tension depends on the field-of-view definition.
 
 ## See also
 

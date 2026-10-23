@@ -152,3 +152,10 @@ and the reusable task-comparability lesson. Earlier benchmark sections remain
 historical evidence pending a separate destination/provenance audit. The write
 contract now routes inference campaigns through Insight and profiling through
 Pulse; permanence alone does not make a campaign record Memory content.
+
+## 2026-10-21 — Catch-up since 2026-10-16
+
+Lensing catch-up filed `Lovick2025` (arXiv:2509.13307, GPU-accelerated nested
+sampling with neural emulators for cosmological model comparison) as a cite-tier
+stub in `sources/samplers.md`, verified against arXiv. No benchmark verdict was
+added. See the lensing log for the rest of the batch.
