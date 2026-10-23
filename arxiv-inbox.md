@@ -27,6 +27,6 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-22
-2026-10-16 — Tracing small-scale structure formation through cosmic time with strong gravitational lensing: A case for a next-generation sub-millimetre/millimetre interferometer — 2610.20710
+last digest: 2026-10-23
 2026-10-20 — Late-time distance consistency and model-independent curvature inference with strong lensing, quasars, and galaxy clusters — 2610.26097
+2026-10-23 — Gravitational Wave Diffractive Images Reveal the Structure of Astrophysical Objects — 2610.31441
