@@ -251,3 +251,15 @@ were stored in the repository.
 - Added missing canonical entries `Sahu2025DSPL` (ApJ 991, 72) and `EuclidQ1DSPL` (A&A 711, A29), checking DOI, arXiv ID, and title for duplicates.
 - Added compact support and scope notes in `sources/gr-cosmology.md`, distinguishing the AGEL cosmography measurement from the Euclid Q1 candidate-discovery and modelling study.
 - Verified against arXiv:2504.00656, arXiv:2503.15327, and their published records. Author confirmed that “Sheu” meant Sahu and that the Li reference was the Euclid Q1 paper.
+
+## 2026-10-21 — Catch-up since 2026-10-16
+
+**intake:** none.
+
+**cite** (canonical bib entry + compact stub, verified against arXiv; no journal record yet):
+- `Fung2026` (arXiv:2608.21253) — model-independent substructure detection with JWST star-cluster constellations → `sources/dark-matter-substructure.md`.
+- `Williams2026Shape` (arXiv:2609.27147) — shape degeneracies behind differing cluster mass maps → `sources/degeneracies-systematics.md`.
+- `Roche2026` (arXiv:2608.30079) — host dependence and line-of-sight effects on cluster GGSL → `sources/cluster-lensing.md`.
+- `Lovick2025` (arXiv:2509.13307) — GPU-accelerated nested sampling for cosmological model comparison → `../methods/sources/samplers.md` (no lensing home; logged in the methods log too).
+
+**queue:** none added. The four existing `reading-queue.md` lines were marked `DONE 2026-10-21` in place.
