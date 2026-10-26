@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-23
-2026-10-19 — [SMBHs] Clustering of JWST LRDs. Implications for PBHs and other early-forming seeds — 2610.23806
-2026-10-19 — [Stats] ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference — 2610.23825
-2026-10-19 — [Galaxy Formation / Evolution] How bright can a galaxy be? Extreme value predictions for high-redshift survey observables — 2610.23016
-2026-10-19 — [SMBHs] What can a uniform reflection pipeline establish about supermassive black hole spin? An audit and a corrected analysis of 57 AGN with XMM and NuSTAR — 2610.23081
-2026-10-19 — [SMBHs] $\texttt{GASTRO-BH}$: Effects of a Central Black Hole in GSE-like Dwarf-galaxy Mergers Around Milky Way-like Hosts — 2610.22860
-2026-10-19 — [SMBHs] Exploring Cosmic Rays from Gravity-Limited Acceleration at Supermassive Black Holes — 2610.23393
-2026-10-19 — [SMBHs] A precessing AGN with S-shaped morphology discovered in MALS — 2610.23738
-2026-10-19 — [Dark Matter] Foreground dependence of the 20 GeV Galactic halo gamma-ray excess and its proposed connection to the LUX-ZEPLIN event — 2610.23713
-2026-10-19 — [Dark Matter] Hidden Disruption in Milky Way-like Satellite Galaxy Populations — 2610.22481
-2026-10-19 — [Dark Matter] Analytic and numerical study of dark matter halos in the Horndeski theory — 2610.22819
+last digest: 2026-10-26
 2026-10-20 — [SMBHs] Modeling Multi-band Active Galactic Nuclei Lightcurves Using an Self-supervised Attentive Neural Process Network — 2610.24195
 2026-10-20 — [Stats] ERGO-ML and how to directly infer the multi-temperature nature of intra-cluster gas: simulation-based inference with TNG-Cluster — 2610.26627
 2026-10-20 — [Stats] Exploring the Evidence for Evolving Dark Energy with the Jeffreys prior — 2610.26493
@@ -98,3 +88,13 @@ last digest: 2026-10-23
 2026-10-23 — [Stats] Self-Supervised Representation Learning for JWST Galaxy Images and Low Resolution Spectra — 2610.31078
 2026-10-23 — [SMBHs] Lomb-Scargle Recovery of Periodic Binary Signals across Black Hole Mass and Cadence — 2610.30772
 2026-10-23 — [Galaxy Formation / Evolution] The Milky Way's Early Disk Was Built in Bursts. II. The Multi-component Age-Metallicity Structure of the High-$α$ Disk — 2610.30659
+2026-10-26 — [SMBHs] Local Analogs of Little Red Dots: Clues to the X-ray Weakness — 2610.32430
+2026-10-26 — [Dark Matter] The Galactic Center Gamma-Ray Excess and the Look-Elsewhere Effect — 2610.32845
+2026-10-26 — [Stats] Complete Multi-Band Structural Characterization for 10 Million Galaxies in the Hyper Suprime-Cam Wide Survey using Deep Learning — 2610.32913
+2026-10-26 — [Stats] Forward model of the Gaia DR3 selection function — 2610.32551
+2026-10-26 — [SMBHs] An Extra-nuclear Water Maser in NGC 1106 Likely Driven By An AGN Shock: Implications for Maser-based Black Hole Mass Measurements — 2610.31753
+2026-10-26 — [Galaxy Formation / Evolution] Galaxy Luminosity Functions at z~7-10 from Four Years of JWST Observations — 2610.32307
+2026-10-26 — [SMBHs] Tracking the Evolution of Supermassive Black Hole Binaries with Pulsar Terms — 2610.32736
+2026-10-26 — [Stats] Prospects of Detecting Cosmological Domain Walls in the Cosmic Microwave Background — 2610.31761
+2026-10-26 — [Stats] Sparse Bayesian Neural Networks via Sticky Piecewise Deterministic Markov Processes — 2610.32753
+2026-10-26 — [Galaxy Formation / Evolution] Star clusters at cosmic dawn I: the emergence of the initial cluster mass function — 2610.32497
