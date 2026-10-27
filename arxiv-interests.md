@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-26
-2026-10-20 — [SMBHs] Modeling Multi-band Active Galactic Nuclei Lightcurves Using an Self-supervised Attentive Neural Process Network — 2610.24195
-2026-10-20 — [Stats] ERGO-ML and how to directly infer the multi-temperature nature of intra-cluster gas: simulation-based inference with TNG-Cluster — 2610.26627
-2026-10-20 — [Stats] Exploring the Evidence for Evolving Dark Energy with the Jeffreys prior — 2610.26493
-2026-10-20 — [SMBHs] Tidal Disruption Events in Active Galactic Nuclei: Thermal Radiation and Jets — 2610.24849
-2026-10-20 — [Galaxy Formation / Evolution] The DARWIN Project: Cosmological Simulations of Galaxy Formation down to Dwarf Scales in Diverse Environments — 2610.25786
-2026-10-20 — [SMBHs] Clumpy Outflows from Super-Eddington Accreting Black Holes. II. Conditions for Clump Formation — 2610.24660
-2026-10-20 — [SMBHs] The accretion flow and jet of M87: broadband modelling across spatial scales — 2610.26434
-2026-10-20 — [Galaxy Formation / Evolution] PRISMS/U13151. A Glimpse into the Earliest Phases of Galaxy Formation through an Ultra-Faint System $\approx$ 500 Myr after the Big Bang — 2610.26560
-2026-10-20 — [Galaxy Formation / Evolution] Star formation history of Draco revealed by DESI DR1: suppressed early star formation efficiency for Milky Way dwarf galaxies — 2610.26375
-2026-10-20 — [Dark Matter] Multimessenger Probes of Primordial Black Holes with Gravitational Wave and 21 cm Observations — 2610.24067
+last digest: 2026-10-27
 2026-10-21 — [Dark Matter] Searching for Dense Perturbers in Cold Dark Matter Simulations — 2610.27236
 2026-10-21 — [Dark Matter] ASTROLABE: A 3D Particle-Level Surrogate for Cosmology Simulation with Physical Flow Matching — 2610.27068
 2026-10-21 — [SMBHs] Balmer breaks in accreting super-massive black hole binaries — 2610.27076
@@ -98,3 +88,13 @@ last digest: 2026-10-26
 2026-10-26 — [Stats] Prospects of Detecting Cosmological Domain Walls in the Cosmic Microwave Background — 2610.31761
 2026-10-26 — [Stats] Sparse Bayesian Neural Networks via Sticky Piecewise Deterministic Markov Processes — 2610.32753
 2026-10-26 — [Galaxy Formation / Evolution] Star clusters at cosmic dawn I: the emergence of the initial cluster mass function — 2610.32497
+2026-10-27 — [Stats] FastPM: Fast Pretrained Model for Cosmological Simulation-Based Inference — 2610.33955
+2026-10-27 — [SMBHs] Initial Conditions of Magnetized AGN Accretion Disks from Cloud Capture and Disruption — 2610.33297
+2026-10-27 — [SMBHs] Multiphase Gas Structure in JWST Little Red Dots — 2610.34552
+2026-10-27 — [SMBHs] The Hosts and Mass Distribution Function of the Most Massive Black Holes: Implications for the nHz Gravitational Wave Background — 2610.33162
+2026-10-27 — [Stats] Cracking into RACS - I. Measuring the cosmic dipole in the RACS-low3 and RACS-mid1 radio surveys with simulation-based inference — 2610.35207
+2026-10-27 — [Dark Matter] Dark Matter and MOND successes and degeneracies in reproducing SPARC rotation curves and weak lensing data — 2610.33157
+2026-10-27 — [Galaxy Formation / Evolution] Recently launched AGN-driven outflow in a lensed quiescent galaxy at Cosmic Noon — 2610.33176
+2026-10-27 — [Galaxy Formation / Evolution] How Quickly Did the Giants Form? Constraining the Formation Timescales of Massive Quiescent Galaxies at Cosmic Noon Using Chemical Evolution Modelling — 2610.34883
+2026-10-27 — [SMBHs] Constraining Supermassive Black Hole Seeding and Accretion via Occupation Fractions and Mass-Weighted Distributions — 2610.35673
+2026-10-27 — [Stats] Intrinsic Information Rates of Summaries in Simulation-Based Inference — 2610.34703
