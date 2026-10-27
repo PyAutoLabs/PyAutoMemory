@@ -27,7 +27,9 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-26
-2026-10-20 — Late-time distance consistency and model-independent curvature inference with strong lensing, quasars, and galaxy clusters — 2610.26097
+last digest: 2026-10-27
 2026-10-23 — Gravitational Wave Diffractive Images Reveal the Structure of Astrophysical Objects — 2610.31441
 2026-10-26 — Semi-Analytic Predictions for Strong-Lensing Perturbers in Cold and Self-Interacting Dark Matter — 2610.31881
+2026-10-27 — SN Ares: A Strongly Lensed Type IIb Supernova at $\mathbf{z=1.276}$ with a Predicted 70-Year Time Delay — 2610.33161
+2026-10-27 — Constraining the Inner Dark Matter Profiles of Strong-Lensing Galaxy Clusters — 2610.33370
+2026-10-27 — Recently launched AGN-driven outflow in a lensed quiescent galaxy at Cosmic Noon — 2610.33176
