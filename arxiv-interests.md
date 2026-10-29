@@ -47,27 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-27
-2026-10-21 — [Dark Matter] Searching for Dense Perturbers in Cold Dark Matter Simulations — 2610.27236
-2026-10-21 — [Dark Matter] ASTROLABE: A 3D Particle-Level Surrogate for Cosmology Simulation with Physical Flow Matching — 2610.27068
-2026-10-21 — [SMBHs] Balmer breaks in accreting super-massive black hole binaries — 2610.27076
-2026-10-21 — [Galaxy Formation / Evolution] Leviathan: a very massive, extended sub-millimetre galaxy spectroscopically confirmed at $\rm z = 4.05$ — 2610.27101
-2026-10-21 — [Stats] Modular Bayesian Inference for Partially Misspecified Mixtures with Uncertain Class Labels — 2610.27085
-2026-10-21 — [Dark Matter] Kinematically isolating intracluster light in AS1063: a distinct stellar population tracing the dark matter core — 2610.28013
-2026-10-21 — [Stats] Gaussian process-based Bayesian imaging of bolometric (sub-)millimetre data — 2610.27733
-2026-10-21 — [SMBHs] Probing the Optical/UV Continuum Variability of Active Galactic Nuclei with the Damped Random Walk Model — 2610.27806
-2026-10-21 — [Galaxy Formation / Evolution] The clumpy fraction of galaxies at $z=1-9$ with JADES: evidence for a mass-dependent transition in clump origin — 2610.28515
-2026-10-21 — [Stats] Are Dynamical Dark-Energy Cosmologies Old Enough? — 2610.27209
-2026-10-22 — [SMBHs] Discovery of a Broad-Line Active Galactic Nucleus at $z = 9.98$ — 2610.28735
-2026-10-22 — [SMBHs] Prior volume effect inflates the gravitational-wave background in pulsar timing arrays — 2610.28739
-2026-10-22 — [Dark Matter] Not so Fast: Revised Calibration of SIDM Core Collapse — 2610.28890
-2026-10-22 — [SMBHs] A Little Red Dot emerging from a nitrogen-rich UV-luminous galaxy with Very Massive Stars — 2610.29887
-2026-10-22 — [Dark Matter] Gravothermal Evolution of Self-Interacting Dark Matter Halos across Knudsen Numbers — 2610.28745
-2026-10-22 — [Dark Matter] Poisson Clustering and Seed Effect of PBHs: Implications for Microlensing, Gravitational Waves, Little Red Dots and Ultra-Faint Dwarf Galaxies — 2610.28723
-2026-10-22 — [Stats] PIANISTpy: A JAX-based Python package for velocity-anisotropic astrophysical equilibrium models — 2610.28758
-2026-10-22 — [SMBHs] Lasting mEMRIs: Signatures of Multiple Black Hole Extreme Mass Ratio Inspirals from AGN discs — 2610.29376
-2026-10-22 — [Galaxy Formation / Evolution] Unveiling the correlation between the UV 2175 Å dust attenuation bump, PAH emission, and gas-phase metallicity at cosmic noon — 2610.28743
-2026-10-22 — [Stats] Noisy Pipelines I: An end-to-end pipeline to perform multivariate noise inference for LISA — 2610.28726
+last digest: 2026-10-29
 2026-10-23 — [Stats] 2Flow2SN: Dusty Supernova Cosmology with Photometric Redshifts and Contamination using Neural Simulation-Based Inference — 2610.30244
 2026-10-23 — [Stats] Simulation-based inference of profile evolution for high-precision pulsar timing — 2610.31450
 2026-10-23 — [Dark Matter] Same Events, Weaker Bound: Model Dependence in Magellanic Microlensing Limits on Primordial Black Holes — 2610.30510
