@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-29
-2026-10-23 — [Stats] 2Flow2SN: Dusty Supernova Cosmology with Photometric Redshifts and Contamination using Neural Simulation-Based Inference — 2610.30244
-2026-10-23 — [Stats] Simulation-based inference of profile evolution for high-precision pulsar timing — 2610.31450
-2026-10-23 — [Dark Matter] Same Events, Weaker Bound: Model Dependence in Magellanic Microlensing Limits on Primordial Black Holes — 2610.30510
-2026-10-23 — [SMBHs] The black hole-galaxy correlations of the 12 micron local AGN sample: a NuSTAR perspective — 2610.30285
-2026-10-23 — [SMBHs] A Catalog of Spectral Properties for DESI DR1 Quasars — 2610.31416
-2026-10-23 — [Stats] Assessing the consistency of the CPL dark-energy model with cosmological data: Simulation-calibrated neural posterior disagreement — 2610.31044
-2026-10-23 — [SMBHs] A recurring changing state AGN discovered in the SAMI Galaxy Survey and SDSS — 2610.30816
-2026-10-23 — [Stats] Self-Supervised Representation Learning for JWST Galaxy Images and Low Resolution Spectra — 2610.31078
-2026-10-23 — [SMBHs] Lomb-Scargle Recovery of Periodic Binary Signals across Black Hole Mass and Cadence — 2610.30772
-2026-10-23 — [Galaxy Formation / Evolution] The Milky Way's Early Disk Was Built in Bursts. II. The Multi-component Age-Metallicity Structure of the High-$α$ Disk — 2610.30659
+last digest: 2026-10-30
 2026-10-26 — [SMBHs] Local Analogs of Little Red Dots: Clues to the X-ray Weakness — 2610.32430
 2026-10-26 — [Dark Matter] The Galactic Center Gamma-Ray Excess and the Look-Elsewhere Effect — 2610.32845
 2026-10-26 — [Stats] Complete Multi-Band Structural Characterization for 10 Million Galaxies in the Hyper Suprime-Cam Wide Survey using Deep Learning — 2610.32913
@@ -78,3 +68,13 @@ last digest: 2026-10-29
 2026-10-27 — [Galaxy Formation / Evolution] How Quickly Did the Giants Form? Constraining the Formation Timescales of Massive Quiescent Galaxies at Cosmic Noon Using Chemical Evolution Modelling — 2610.34883
 2026-10-27 — [SMBHs] Constraining Supermassive Black Hole Seeding and Accretion via Occupation Fractions and Mass-Weighted Distributions — 2610.35673
 2026-10-27 — [Stats] Intrinsic Information Rates of Summaries in Simulation-Based Inference — 2610.34703
+2026-10-30 — [SMBHs] The coupled evolution of nuclear star clusters and intermediate-mass black holes in a dwarf-galaxy merger — 2610.38767
+2026-10-30 — [SMBHs] Black Hole Spin Evolution in Magnetized Accretion Flows — 2610.38673
+2026-10-30 — [Stats] Celia: Catalog Embeddings Learned from cosmologIcal simulAtions — 2610.40218
+2026-10-30 — [Stats] Field-level inference under pressure: the information content of the thermal Sunyaev-Zel'dovich field — 2610.40617
+2026-10-30 — [Stats] Robust statistical significance for Gravitational Wave inference — 2610.39785
+2026-10-30 — [SMBHs] The unresolved high-mass frontier of the black hole Fundamental Plane — 2610.40606
+2026-10-30 — [SMBHs] Odds Estimation for Supermassive Black Hole Binaries in Local Core Galaxies — 2610.38886
+2026-10-30 — [Galaxy Formation / Evolution] PRISMS GHZ8: Evidence for a Young Burst and Potential Merger Activity at z=10.23 — 2610.40633
+2026-10-30 — [SMBHs] On The Scaling Relations Between Black Holes And The Galaxy/Bulge Mass And Their Connections With The Black Hole Occupation Fraction — 2610.38699
+2026-10-30 — [Galaxy Formation / Evolution] Feeding or Fleeing: The Impact of Enhanced Early Black Hole Growth on Circumgalactic Clumps at $z > 6$ — 2610.39692
