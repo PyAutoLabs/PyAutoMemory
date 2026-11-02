@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-10-30
-2026-10-26 — [SMBHs] Local Analogs of Little Red Dots: Clues to the X-ray Weakness — 2610.32430
-2026-10-26 — [Dark Matter] The Galactic Center Gamma-Ray Excess and the Look-Elsewhere Effect — 2610.32845
-2026-10-26 — [Stats] Complete Multi-Band Structural Characterization for 10 Million Galaxies in the Hyper Suprime-Cam Wide Survey using Deep Learning — 2610.32913
-2026-10-26 — [Stats] Forward model of the Gaia DR3 selection function — 2610.32551
-2026-10-26 — [SMBHs] An Extra-nuclear Water Maser in NGC 1106 Likely Driven By An AGN Shock: Implications for Maser-based Black Hole Mass Measurements — 2610.31753
-2026-10-26 — [Galaxy Formation / Evolution] Galaxy Luminosity Functions at z~7-10 from Four Years of JWST Observations — 2610.32307
-2026-10-26 — [SMBHs] Tracking the Evolution of Supermassive Black Hole Binaries with Pulsar Terms — 2610.32736
-2026-10-26 — [Stats] Prospects of Detecting Cosmological Domain Walls in the Cosmic Microwave Background — 2610.31761
-2026-10-26 — [Stats] Sparse Bayesian Neural Networks via Sticky Piecewise Deterministic Markov Processes — 2610.32753
-2026-10-26 — [Galaxy Formation / Evolution] Star clusters at cosmic dawn I: the emergence of the initial cluster mass function — 2610.32497
+last digest: 2026-11-02
 2026-10-27 — [Stats] FastPM: Fast Pretrained Model for Cosmological Simulation-Based Inference — 2610.33955
 2026-10-27 — [SMBHs] Initial Conditions of Magnetized AGN Accretion Disks from Cloud Capture and Disruption — 2610.33297
 2026-10-27 — [SMBHs] Multiphase Gas Structure in JWST Little Red Dots — 2610.34552
@@ -78,3 +68,13 @@ last digest: 2026-10-30
 2026-10-30 — [Galaxy Formation / Evolution] PRISMS GHZ8: Evidence for a Young Burst and Potential Merger Activity at z=10.23 — 2610.40633
 2026-10-30 — [SMBHs] On The Scaling Relations Between Black Holes And The Galaxy/Bulge Mass And Their Connections With The Black Hole Occupation Fraction — 2610.38699
 2026-10-30 — [Galaxy Formation / Evolution] Feeding or Fleeing: The Impact of Enhanced Early Black Hole Growth on Circumgalactic Clumps at $z > 6$ — 2610.39692
+2026-11-02 — [SMBHs] Bridging Scales: Multi-Zone GRMHD-Informed Anisotropic AGN Feedback in Galaxies — 2610.40784
+2026-11-02 — [Stats] When precise inference is wrong: Diagnosing model misspecification with applications to cosmic dawn and reionisation — 2610.40770
+2026-11-02 — [Dark Matter] The multiple origins of spurs in stellar streams: a challenge for dark matter diagnostics — 2610.41842
+2026-11-02 — [SMBHs] Cosmic merger rates and population evolution of binary black hole mergers in AGN disks — 2610.40787
+2026-11-02 — [Galaxy Formation / Evolution] OASIS III: Bursty star formation drives observed galaxy sizes at $z\geq4$ — 2610.41491
+2026-11-02 — [Stats] Learning Galaxy Kinematics from Spatially Unresolved Spectra — 2610.40789
+2026-11-02 — [SMBHs] How to feed your dragon: the role of turbulence in AGN activity — 2610.40788
+2026-11-02 — [Dark Matter] Dark Halos, Intermediate-Mass BH and Nuclear Stellar Clusters in Dwarf Spheroidals — 2610.41522
+2026-11-02 — [SMBHs] The Broad-Line Region Size-Luminosity Relation in AGN Constrained by the Viewing Angle with the FRADO Model — 2610.41594
+2026-11-02 — [Galaxy Formation / Evolution] The Size-Mass Relation and Inside-Out Quenching of Massive Quiescent Galaxies at $2<z<3$ with JWST PRIMER and MINERVA — 2610.40937
