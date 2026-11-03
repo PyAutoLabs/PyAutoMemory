@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-02
-2026-10-27 — [Stats] FastPM: Fast Pretrained Model for Cosmological Simulation-Based Inference — 2610.33955
-2026-10-27 — [SMBHs] Initial Conditions of Magnetized AGN Accretion Disks from Cloud Capture and Disruption — 2610.33297
-2026-10-27 — [SMBHs] Multiphase Gas Structure in JWST Little Red Dots — 2610.34552
-2026-10-27 — [SMBHs] The Hosts and Mass Distribution Function of the Most Massive Black Holes: Implications for the nHz Gravitational Wave Background — 2610.33162
-2026-10-27 — [Stats] Cracking into RACS - I. Measuring the cosmic dipole in the RACS-low3 and RACS-mid1 radio surveys with simulation-based inference — 2610.35207
-2026-10-27 — [Dark Matter] Dark Matter and MOND successes and degeneracies in reproducing SPARC rotation curves and weak lensing data — 2610.33157
-2026-10-27 — [Galaxy Formation / Evolution] Recently launched AGN-driven outflow in a lensed quiescent galaxy at Cosmic Noon — 2610.33176
-2026-10-27 — [Galaxy Formation / Evolution] How Quickly Did the Giants Form? Constraining the Formation Timescales of Massive Quiescent Galaxies at Cosmic Noon Using Chemical Evolution Modelling — 2610.34883
-2026-10-27 — [SMBHs] Constraining Supermassive Black Hole Seeding and Accretion via Occupation Fractions and Mass-Weighted Distributions — 2610.35673
-2026-10-27 — [Stats] Intrinsic Information Rates of Summaries in Simulation-Based Inference — 2610.34703
+last digest: 2026-11-03
 2026-10-30 — [SMBHs] The coupled evolution of nuclear star clusters and intermediate-mass black holes in a dwarf-galaxy merger — 2610.38767
 2026-10-30 — [SMBHs] Black Hole Spin Evolution in Magnetized Accretion Flows — 2610.38673
 2026-10-30 — [Stats] Celia: Catalog Embeddings Learned from cosmologIcal simulAtions — 2610.40218
@@ -78,3 +68,13 @@ last digest: 2026-11-02
 2026-11-02 — [Dark Matter] Dark Halos, Intermediate-Mass BH and Nuclear Stellar Clusters in Dwarf Spheroidals — 2610.41522
 2026-11-02 — [SMBHs] The Broad-Line Region Size-Luminosity Relation in AGN Constrained by the Viewing Angle with the FRADO Model — 2610.41594
 2026-11-02 — [Galaxy Formation / Evolution] The Size-Mass Relation and Inside-Out Quenching of Massive Quiescent Galaxies at $2<z<3$ with JWST PRIMER and MINERVA — 2610.40937
+2026-11-03 — [SMBHs] EMBER: A Little Red Dot Candidate at $z_{\rm spec}=10.36$ in the Seed Black Hole Era — 2611.00195
+2026-11-03 — [SMBHs] Dynamically defined bulges reveal that early-type galaxies with compact bulges host more massive black holes — 2611.01469
+2026-11-03 — [SMBHs] MARTA: A "little" black hole hidden in a clumpy, metal-poor galaxy at z~3.8 — 2611.00199
+2026-11-03 — [Dark Matter] See you again: an $80^\circ$ NGC~5466 stellar stream and its constraints on the Galactic dark halo mass — 2611.02653
+2026-11-03 — [Dark Matter] Baryonic feedback and intrinsic alignments in profile: a frequentist view of DES Y3 cosmic shear — 2611.03537
+2026-11-03 — [SMBHs] Introducing Aurora: A New Black Hole Seeding Model With Explicit Environmental Coupling — 2611.01315
+2026-11-03 — [Galaxy Formation / Evolution] Episodic Star Formation - II. The Origin of the Fundamental Metallicity Relation — 2611.03645
+2026-11-03 — [SMBHs] Angular Momentum Transport across Accretion States around a rapidly spinning black hole — 2611.01827
+2026-11-03 — [Galaxy Formation / Evolution] The Stellar-Mass Dependence of Feedback-Driven Outflows in DESI DR1 Star-Forming Galaxies — 2611.02580
+2026-11-03 — [Stats] Accelerating posterior sampling in Bayesian inverse problems with diffusion models: an online-offline perspective — 2611.01300
