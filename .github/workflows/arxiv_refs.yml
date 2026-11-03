@@ -16,6 +16,13 @@ name: arXiv refs backfill
 # historical backlog over a few nights. Titles arXiv genuinely does not have are
 # re-attempted each run — the deliberate cost of keeping no per-line failure
 # state, and bounded by the same cap.
+#
+# An arXiv *outage* is not a non-match. The script retries 429/406/5xx along a
+# back-off ladder honouring Retry-After; a lookup that still gets no answer is
+# counted as an API failure, stops the run, is never NOTE-marked, and exits
+# non-zero. This job then commits whatever resolved before the failure and
+# goes red at the end — it ran green through every night of the 2026-09-14..18
+# outage because a bare `except` turned each 429 into "no unique match".
 
 on:
   schedule:
@@ -66,7 +73,7 @@ jobs:
           DRY_RUN: ${{ inputs.dry_run }}
           MARK_UNRESOLVED: ${{ inputs.mark_unresolved }}
         run: |
-          set -u
+          set -u -o pipefail
           args="--limit ${LIMIT:-60}"
           [ "${DRY_RUN:-false}" = "true" ] || args="$args --write"
           # Never on the schedule: `inputs.*` is empty on a cron fire, so this
@@ -74,9 +81,20 @@ jobs:
           [ "${MARK_UNRESOLVED:-false}" != "true" ] || args="$args --mark-unresolved"
           # `-u`: unbuffered, so the log streams while the run is in flight
           # instead of arriving in one block at the end.
-          python -u scripts/backfill_arxiv_refs.py $args | tee /tmp/backfill.log
+          # The exit status is captured, not acted on here: a transport failure
+          # must still let the refs resolved before it be validated and
+          # committed. The last step turns it into a red job.
+          status=0
+          python -u scripts/backfill_arxiv_refs.py $args | tee /tmp/backfill.log || status=$?
+          echo "status=${status}" >> "$GITHUB_OUTPUT"
           {
             echo '## arXiv refs backfill'
+            if [ "$status" -ne 0 ]; then
+              echo
+              echo "> **arXiv API failure** — a lookup got no answer after the retry ladder (exit ${status})."
+              echo "> The run stopped there; nothing was NOTE-marked on a failed lookup."
+              echo
+            fi
             echo '```'
             cat /tmp/backfill.log
             echo '```'
@@ -117,3 +135,13 @@ jobs:
       - name: Refresh the dashboard
         if: steps.backfill.outputs.changed == 'yes' && github.ref == 'refs/heads/main'
         run: gh workflow run knowledge_board.yml --ref main
+
+      # Last, so partial progress is committed first: an arXiv outage turns the
+      # job red instead of reporting "N ref-less, 0 resolved" in green.
+      - name: Fail on arXiv API failure
+        if: steps.backfill.outputs.status != '0'
+        env:
+          STATUS: ${{ steps.backfill.outputs.status }}
+        run: |
+          echo "::error::arXiv refs backfill exited ${STATUS} — arXiv API transport failure (see the step summary)"
+          exit 1
