@@ -27,8 +27,8 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-02
-2026-10-27 — SN Ares: A Strongly Lensed Type IIb Supernova at $\mathbf{z=1.276}$ with a Predicted 70-Year Time Delay — 2610.33161
-2026-10-27 — Constraining the Inner Dark Matter Profiles of Strong-Lensing Galaxy Clusters — 2610.33370
-2026-10-27 — Recently launched AGN-driven outflow in a lensed quiescent galaxy at Cosmic Noon — 2610.33176
+last digest: 2026-11-03
 2026-11-02 — Hints of self-interacting dark matter from strong gravitational lensing — 2610.40766
+2026-11-03 — What can strong lensing recover in edge-on disc galaxies? A mock study based on TNG50 simulations — 2611.03084
+2026-11-03 — Euclid Quick Data Release (Q1). Mass-to-light ratio of elliptical galaxies: constraints from strong lensing — 2611.00224
+2026-11-03 — A Supermagnified Little Red Dot with a Resolved Host — 2611.00202
