@@ -27,7 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-03
+last digest: 2026-11-04
 2026-11-02 — Hints of self-interacting dark matter from strong gravitational lensing — 2610.40766
 2026-11-03 — What can strong lensing recover in edge-on disc galaxies? A mock study based on TNG50 simulations — 2611.03084
 2026-11-03 — Euclid Quick Data Release (Q1). Mass-to-light ratio of elliptical galaxies: constraints from strong lensing — 2611.00224
