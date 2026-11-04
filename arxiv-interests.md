@@ -47,7 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-03
+last digest: 2026-11-04
 2026-10-30 — [SMBHs] The coupled evolution of nuclear star clusters and intermediate-mass black holes in a dwarf-galaxy merger — 2610.38767
 2026-10-30 — [SMBHs] Black Hole Spin Evolution in Magnetized Accretion Flows — 2610.38673
 2026-10-30 — [Stats] Celia: Catalog Embeddings Learned from cosmologIcal simulAtions — 2610.40218
@@ -78,3 +78,13 @@ last digest: 2026-11-03
 2026-11-03 — [SMBHs] Angular Momentum Transport across Accretion States around a rapidly spinning black hole — 2611.01827
 2026-11-03 — [Galaxy Formation / Evolution] The Stellar-Mass Dependence of Feedback-Driven Outflows in DESI DR1 Star-Forming Galaxies — 2611.02580
 2026-11-03 — [Stats] Accelerating posterior sampling in Bayesian inverse problems with diffusion models: an online-offline perspective — 2611.01300
+2026-11-04 — [SMBHs] UV spectra of little red dots: Broad-line N/C, gas recycling and black hole masses — 2611.05349
+2026-11-04 — [Dark Matter] 3D dark matter map of the JWST COSMOS-Web field using diffusion-based generative priors — 2611.03786
+2026-11-04 — [Stats] SBi3PCF: cosmology with Dark Energy Survey Year 3 cosmic shear — 2611.05367
+2026-11-04 — [Dark Matter] Gaia's dark partners: A new signature of dissipative dark matter — 2611.03793
+2026-11-04 — [SMBHs] How Fast do Black Holes Spin? — 2611.04361
+2026-11-04 — [SMBHs] A full chemical network treatment of supermassive black hole seed formation from dark matter annihilation or decay — 2611.03802
+2026-11-04 — [SMBHs] Towards Self-consistent Modeling of Quasi-Stars and their NLTE Spectra: Implications for Little Red Dots — 2611.03819
+2026-11-04 — [Galaxy Formation / Evolution] How bursty star formation shapes spectral diversity at high redshifts: breaking degeneracies in early galaxy formation — 2611.03790
+2026-11-04 — [SMBHs] The STARfall pathway: forging intermediate-mass black holes through stellar collisions in dense star clusters — 2611.03812
+2026-11-04 — [Stats] Stress-Testing Small-Scale Cosmological Inference With Empirical Galaxy--Halo Connection Models — 2611.04419
