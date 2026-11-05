@@ -47,7 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-04
+last digest: 2026-11-05
 2026-10-30 — [SMBHs] The coupled evolution of nuclear star clusters and intermediate-mass black holes in a dwarf-galaxy merger — 2610.38767
 2026-10-30 — [SMBHs] Black Hole Spin Evolution in Magnetized Accretion Flows — 2610.38673
 2026-10-30 — [Stats] Celia: Catalog Embeddings Learned from cosmologIcal simulAtions — 2610.40218
@@ -88,3 +88,13 @@ last digest: 2026-11-04
 2026-11-04 — [Galaxy Formation / Evolution] How bursty star formation shapes spectral diversity at high redshifts: breaking degeneracies in early galaxy formation — 2611.03790
 2026-11-04 — [SMBHs] The STARfall pathway: forging intermediate-mass black holes through stellar collisions in dense star clusters — 2611.03812
 2026-11-04 — [Stats] Stress-Testing Small-Scale Cosmological Inference With Empirical Galaxy--Halo Connection Models — 2611.04419
+2026-11-05 — [SMBHs] The M87 Black Hole Mass from JWST and Keck Stellar Kinematics Spanning 10 pc to 10 kpc — 2611.05486
+2026-11-05 — [SMBHs] Spectroscopy-informed Deep Learning Searches for Photometric Little Red Dots in JWST Surveys — 2611.06026
+2026-11-05 — [Dark Matter] DESI DR2 Results III: The Mass of the Milky Way — 2611.05518
+2026-11-05 — [Galaxy Formation / Evolution] The impact of Population III stars on the elemental enrichment of ultra-faint galaxies in the FIRE-3 zoom-in simulations — 2611.05589
+2026-11-05 — [SMBHs] Revisiting the Stellar-Dynamical Mass of the Central Black Hole in NGC 3227 — 2611.05547
+2026-11-05 — [Dark Matter] Dynamics of self-gravitating halos with decaying dark matter — 2611.05474
+2026-11-05 — [Galaxy Formation / Evolution] AGN Host Galaxies in COSMOS-Web: Linking Structural Evolution and Star Formation Quenching up to $z=5$ — 2611.06443
+2026-11-05 — [Dark Matter] Gravitational-Wave Microlensing as a Probe of Compact Object Population — 2611.05947
+2026-11-05 — [Stats] Evolutionary Map of the Universe (EMU): Selection of active galactic nuclei and star-formation emission with machine-learning techniques — 2611.06190
+2026-11-05 — [SMBHs] ReveaLLAGN 2: Exploring the Nuclear Gas and Stellar Kinematics of Nearby LLAGNs with JWST/NIRSpec IFU — 2611.05496
