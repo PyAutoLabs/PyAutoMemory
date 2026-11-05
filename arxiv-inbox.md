@@ -27,8 +27,10 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-04
+last digest: 2026-11-05
 2026-11-02 — Hints of self-interacting dark matter from strong gravitational lensing — 2610.40766
 2026-11-03 — What can strong lensing recover in edge-on disc galaxies? A mock study based on TNG50 simulations — 2611.03084
 2026-11-03 — Euclid Quick Data Release (Q1). Mass-to-light ratio of elliptical galaxies: constraints from strong lensing — 2611.00224
 2026-11-03 — A Supermagnified Little Red Dot with a Resolved Host — 2611.00202
+2026-11-05 — Euclid Quick Data Release (Q1). Refining the strong lens sample with Space Warps crowd-sourced science — 2611.06667
+2026-11-05 — A pocket of oxygen in a near-pristine galaxy at z=4.2: chemical inhomogeneity at 10-parsec scales in LAP2 — 2611.05487
