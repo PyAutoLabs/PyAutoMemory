@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-05
-2026-10-30 — [SMBHs] The coupled evolution of nuclear star clusters and intermediate-mass black holes in a dwarf-galaxy merger — 2610.38767
-2026-10-30 — [SMBHs] Black Hole Spin Evolution in Magnetized Accretion Flows — 2610.38673
-2026-10-30 — [Stats] Celia: Catalog Embeddings Learned from cosmologIcal simulAtions — 2610.40218
-2026-10-30 — [Stats] Field-level inference under pressure: the information content of the thermal Sunyaev-Zel'dovich field — 2610.40617
-2026-10-30 — [Stats] Robust statistical significance for Gravitational Wave inference — 2610.39785
-2026-10-30 — [SMBHs] The unresolved high-mass frontier of the black hole Fundamental Plane — 2610.40606
-2026-10-30 — [SMBHs] Odds Estimation for Supermassive Black Hole Binaries in Local Core Galaxies — 2610.38886
-2026-10-30 — [Galaxy Formation / Evolution] PRISMS GHZ8: Evidence for a Young Burst and Potential Merger Activity at z=10.23 — 2610.40633
-2026-10-30 — [SMBHs] On The Scaling Relations Between Black Holes And The Galaxy/Bulge Mass And Their Connections With The Black Hole Occupation Fraction — 2610.38699
-2026-10-30 — [Galaxy Formation / Evolution] Feeding or Fleeing: The Impact of Enhanced Early Black Hole Growth on Circumgalactic Clumps at $z > 6$ — 2610.39692
+last digest: 2026-11-06
 2026-11-02 — [SMBHs] Bridging Scales: Multi-Zone GRMHD-Informed Anisotropic AGN Feedback in Galaxies — 2610.40784
 2026-11-02 — [Stats] When precise inference is wrong: Diagnosing model misspecification with applications to cosmic dawn and reionisation — 2610.40770
 2026-11-02 — [Dark Matter] The multiple origins of spurs in stellar streams: a challenge for dark matter diagnostics — 2610.41842
@@ -98,3 +88,13 @@ last digest: 2026-11-05
 2026-11-05 — [Dark Matter] Gravitational-Wave Microlensing as a Probe of Compact Object Population — 2611.05947
 2026-11-05 — [Stats] Evolutionary Map of the Universe (EMU): Selection of active galactic nuclei and star-formation emission with machine-learning techniques — 2611.06190
 2026-11-05 — [SMBHs] ReveaLLAGN 2: Exploring the Nuclear Gas and Stellar Kinematics of Nearby LLAGNs with JWST/NIRSpec IFU — 2611.05496
+2026-11-06 — [Dark Matter] Probing the Seed Effect of Supermassive Primordial Black Holes with Weak Gravitational Lensing — 2611.07574
+2026-11-06 — [SMBHs] Black Hole Seeds and Little Red Dots: Connecting Formation and Growth with a JWST Multi-Cycle Treasury Program — 2611.07006
+2026-11-06 — [Stats] Is Morphology All You Need? Quantifying Imprints of Past Star Formation in the Present-Day Morphologies of Galaxies — 2611.07373
+2026-11-06 — [SMBHs] Violent relaxation in hierarchical stellar systems: pathways toward massive black hole formation in the early Universe — 2611.07546
+2026-11-06 — [SMBHs] AGN Archaeology: A Systematic Search for Fading AGN in MaNGA — 2611.07028
+2026-11-06 — [SMBHs] The complex periodic variability of PKS 0301-243: hints of a supermassive black hole binary candidate — 2611.08332
+2026-11-06 — [Dark Matter] Latest $ν$s from the Earliest Galaxies: Probing neutrino self-interactions with JWST — 2611.07013
+2026-11-06 — [Galaxy Formation / Evolution] The ALPINE-CRISTAL-JWST Survey: The Tully-Fisher Relation at $z = 4-6$ — 2611.07064
+2026-11-06 — [SMBHs] The HST-Hyperion Survey: X-ray AGN Enhancement in the Hyperion Proto-supercluster — 2611.07047
+2026-11-06 — [Stats] A Machine Learning Approach to Coupling Photoionization & Multi-Frequency Radiation Hydrodynamics — 2611.07162
