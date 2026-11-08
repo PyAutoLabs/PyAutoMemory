@@ -96,8 +96,8 @@ entry is a stub.
 
 ## Tian — Einstein rings mass discrepancy
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Tian2017`
+**Reference:** Mass discrepancy-acceleration relation in Einstein rings; doi:10.1093/mnras/stx2056; arXiv:1702.00183; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[einstein-radius]], [[radial-angular-degeneracy]]
 
 **Supports TODO:**

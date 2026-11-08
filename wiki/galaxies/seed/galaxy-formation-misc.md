@@ -414,8 +414,8 @@ review collection.
 
 ## UnRead — Kocevski 2017 black hole growth CANDELS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Kocevski2017`
+**Reference:** CANDELS: Elevated Black Hole Growth in the Progenitors of Compact Quiescent Galaxies at z ∼ 2; doi:10.3847/1538-4357/aa8566; arXiv:1710.05921; The Astrophysical Journal
 **Concepts:** [[smbh-accretion]] (cross-link `../smbh/`)
 
 **Supports TODO:**
@@ -462,8 +462,8 @@ review collection.
 
 ## SpiralsMorph — MacArthur 2009 stellar pop spiral bulges
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `MacArthur2009a`
+**Reference:** Stellar population and kinematic profiles in spiral bulges and discs: Population synthesis of integrated spectra; doi:10.1111/j.1365-2966.2009.14519.x; arXiv:0901.4135; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[bulges-vs-pseudobulges]]
 
 **Supports TODO:**
@@ -478,8 +478,8 @@ review collection.
 
 ## SpiralsMorph — Thomas 2006 rejuvenation of spiral bulges
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Thomas2007`
+**Reference:** Rejuvenation of spiral bulges; doi:10.1111/j.1365-2966.2005.09871.x; arXiv:astro-ph/0512415; MNRAS
 **Concepts:** [[bulges-vs-pseudobulges]]
 
 **Supports TODO:**

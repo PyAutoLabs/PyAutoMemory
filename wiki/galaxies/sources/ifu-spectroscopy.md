@@ -205,8 +205,8 @@ backbone of modern galaxy-population work.
 
 ## MaNGA — Greene 2017 kinematic / morphology
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Greene2017b`
+**Reference:** SDSS-IV MaNGA: Probing the Kinematic Morphology–Density Relation of Early-type Galaxies with MaNGA; doi:10.3847/2041-8213/aa8ace; arXiv:1708.07843; The Astrophysical Journal
 **Concepts:** [[etg-kinematics]]
 
 **Supports TODO:**

@@ -46,8 +46,8 @@ for lensing.
 
 ## Medical — He 2023 CUP framework
 
-**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
+**Canonical BibTeX key:** `He2023a`
+**Reference:** A cross-cohort computational framework to trace tumor tissue-of-origin based on RNA sequencing; doi:10.1038/s41598-023-42465-8; Scientific Reports
 **Concepts:** [[deep-learning-astro]]
 
 **Supports TODO:**

@@ -62,8 +62,8 @@ hopping, and the libraries that implement them.
 
 ## Nested basin sampling
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Griffiths2019`
+**Reference:** Nested Basin-Sampling; doi:10.1021/acs.jctc.9b00567; Journal of Chemical Theory and Computation
 **Concepts:** [[nested-sampling]]
 
 **Supports TODO:**

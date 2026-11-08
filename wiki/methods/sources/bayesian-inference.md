@@ -13,8 +13,8 @@ machinery used in astrophysics fits.
 
 ## Variational inference — review for statisticians
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Blei2017`
+**Reference:** Variational Inference: A Review for Statisticians; doi:10.1080/01621459.2017.1285773; arXiv:1601.00670; Journal of the American Statistical Association
 **Concepts:** [[bayesian-inference]]
 
 **Supports TODO:**
@@ -29,8 +29,8 @@ machinery used in astrophysics fits.
 
 ## Expectation propagation as a way of life
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Vehtari2020`
+**Reference:** Expectation propagation as a way of life: A framework for Bayesian inference on partitioned data; arXiv:1412.4869; Journal of Machine Learning Research
 **Concepts:** [[bayesian-inference]], [[message-passing]]
 
 **Supports TODO:**

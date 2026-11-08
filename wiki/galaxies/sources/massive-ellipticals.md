@@ -319,8 +319,8 @@ matters directly for PyAutoLens priors.
 
 ## Trujillo — strong size evolution of ETGs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Trujillo2007`
+**Reference:** Strong size evolution of the most massive galaxies since z ∼ 2; doi:10.1111/j.1365-2966.2007.12388.x; arXiv:0709.0621; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[etg-structure]], [[high-redshift-galaxies]]
 
 **Supports TODO:**
