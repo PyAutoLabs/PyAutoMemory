@@ -22,7 +22,6 @@ status: stub
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Atek 2015 — HFF UV LF
 
 **Canonical BibTeX key:** `Atek2015`
@@ -37,7 +36,6 @@ status: stub
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Jullo 2008 — cosmological constraints
 
@@ -54,7 +52,6 @@ status: stub
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Harrington 2016 — Planck SL sources
 
 **Canonical BibTeX key:** `Harrington2016`
@@ -70,7 +67,6 @@ status: stub
 
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
-
 
 ## Locuss 2009 — cluster cool-core / BCG offset
 
@@ -103,22 +99,6 @@ status: stub
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
-## Abell 1201 X-ray (root)
-
-**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
-**Concepts:** [[cluster-lensing]] (cross-link `../entities/abell-1201.md`)
-
-**Supports TODO:**
-- TODO — not migrated: canonical-key identity needs manual verification.
-
-**Use when TODO:**
-- TODO — use only after the paper identity and canonical key are resolved.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
 ## Harvey 2015 — non-gravitational interactions
 
 **Canonical BibTeX key:** `Harvey2015`
@@ -133,7 +113,6 @@ status: stub
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Harvey 2015 — non-gravitational interactions II
 

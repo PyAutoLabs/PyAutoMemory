@@ -26,7 +26,6 @@ location within the buried channel.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Hall 2014 — traps in situ
 
 **Canonical BibTeX key:** `Hall2014a`
@@ -42,7 +41,6 @@ location within the buried channel.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Skottfelt 2017 — trap pumping
 
 **Canonical BibTeX key:** `Skottfelt2017a`
@@ -57,7 +55,6 @@ location within the buried channel.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Skottfelt 2017 — compare Euclid data
 
@@ -76,7 +73,6 @@ location within the buried channel.
 **Do not use for:**
 - PyAutoCTI package citation or HST ACS pixel-based correction performance.
 
-
 ## Gow 2016 — correction via trap pumping
 
 **Canonical BibTeX key:** `Gow2016`
@@ -91,7 +87,6 @@ location within the buried channel.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Murray 2013 — pumping and signal relation
 
@@ -108,7 +103,6 @@ location within the buried channel.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Euclid trap-pumping serial-direction
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `Skottfelt`, `Skottfelta`.
@@ -123,23 +117,6 @@ location within the buried channel.
 
 **Do not use for TODO:**
 - Evidence until the ambiguous canonical key is resolved.
-
-
-## CTI calibration — Henk
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** [[trap-pumping]], [[euclid-vis-cti]]
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
 
 ## See also
 

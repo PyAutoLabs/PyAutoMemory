@@ -25,7 +25,6 @@ backbone of modern galaxy-population work.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Cappellari 2008 — inclination dust via IFS
 
 **Canonical BibTeX key:** `Cappellari2008`
@@ -40,7 +39,6 @@ backbone of modern galaxy-population work.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Cappellari 2012 — IMF ATLAS3D
 
@@ -58,7 +56,6 @@ backbone of modern galaxy-population work.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## Krajnović 2011 — ATLAS3D II morphology
 
 **Canonical BibTeX key:** `Krajnovic2011`
@@ -73,7 +70,6 @@ backbone of modern galaxy-population work.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Krajnović 2012 — ATLAS3D XVII Sérsic fits
 
@@ -90,7 +86,6 @@ backbone of modern galaxy-population work.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Emsellem 2011 — ATLAS3D kinematic misalignments
 
 **Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
@@ -105,7 +100,6 @@ backbone of modern galaxy-population work.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Weijmans 2014 — intrinsic shape ETG kinematic misalignments
 
@@ -122,7 +116,6 @@ backbone of modern galaxy-population work.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Bellstedt 2018 — SLUGGS mass profile to 4 Re
 
 **Canonical BibTeX key:** `Bellstedt2018`
@@ -137,7 +130,6 @@ backbone of modern galaxy-population work.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Greene 2018 — MaNGA angular momentum early-types
 
@@ -154,7 +146,6 @@ backbone of modern galaxy-population work.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Van de Sande — SAMI stellar moments
 
 **Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
@@ -169,7 +160,6 @@ backbone of modern galaxy-population work.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## MaNGA — Ellison 2017 SF radial gradient
 
@@ -186,7 +176,6 @@ backbone of modern galaxy-population work.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## MaNGA — Greene 2017 angular momentum
 
 **Canonical BibTeX key:** `Greene2017`
@@ -201,7 +190,6 @@ backbone of modern galaxy-population work.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## MaNGA — Greene 2017 kinematic / morphology
 
@@ -218,7 +206,6 @@ backbone of modern galaxy-population work.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## MaNGA — Johnston B/D 2017
 
 **Canonical BibTeX key:** `Johnston2016`
@@ -233,7 +220,6 @@ backbone of modern galaxy-population work.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## MaNGA — Lacerna 2020 ETG quenching
 
@@ -251,7 +237,6 @@ backbone of modern galaxy-population work.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## MaNGA — Li 2016 IMF
 
 **Canonical BibTeX key:** `Li2017`
@@ -266,7 +251,6 @@ backbone of modern galaxy-population work.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## MaNGA — Ran 2016
 
@@ -283,7 +267,6 @@ backbone of modern galaxy-population work.
 **Do not use for TODO:**
 - Evidence until the ambiguous canonical key is resolved.
 
-
 ## MaNGA — Tabor B/D 2017
 
 **Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
@@ -298,39 +281,6 @@ backbone of modern galaxy-population work.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
-
-## ETG Kine 1 — root
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** [[etg-kinematics]]
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
-
-## ETG Kine 2 — root
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** [[etg-kinematics]]
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
 
 ## Ferraras 2019 — SAMI radial gradient ETG
 
@@ -347,7 +297,6 @@ backbone of modern galaxy-population work.
 
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
-
 
 ## See also
 

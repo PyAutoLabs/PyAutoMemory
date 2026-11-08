@@ -25,7 +25,6 @@ work by core developers / collaborators that uses it.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Alexander 2018 — disk superfluid
 
 **Canonical BibTeX key:** `Alexander2019`
@@ -42,7 +41,6 @@ work by core developers / collaborators that uses it.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## Alexander 2020 — GSoC decoding
 
 **Canonical BibTeX key:** `Alexander2020`
@@ -58,7 +56,6 @@ work by core developers / collaborators that uses it.
 
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
-
 
 ## Brown 2019 — deep learning weird DM
 
@@ -91,7 +88,6 @@ work by core developers / collaborators that uses it.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## He 2021 — LOS vs sub
 
 **Canonical BibTeX key:** `He2022b`
@@ -106,7 +102,6 @@ work by core developers / collaborators that uses it.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Hermans 2019 — likelihood-free
 
@@ -124,7 +119,6 @@ work by core developers / collaborators that uses it.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## Maresca 2021 — ALMA functionality
 
 **Canonical BibTeX key:** `Maresca2022`
@@ -140,7 +134,6 @@ work by core developers / collaborators that uses it.
 
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
-
 
 ## Messias 2019 — gas H-ATLAS
 
@@ -158,7 +151,6 @@ work by core developers / collaborators that uses it.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## Yang 2019 — CO ALMA dust
 
 **Canonical BibTeX key:** `Yang2019`
@@ -173,39 +165,6 @@ work by core developers / collaborators that uses it.
 
 **Do not use for TODO:**
 - Evidence until the ambiguous canonical key is resolved.
-
-
-## PyAutoLens 1807.05566 — root
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** [[pyautolens]]
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
-
-## AutoLens — root
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** [[pyautolens]]
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
 
 ## AutoLens paper 1 resubmit 2018-02-16
 
@@ -222,23 +181,6 @@ work by core developers / collaborators that uses it.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
-## MN-23-4123-MJ R1 proof
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** [[pyautolens]]
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
-
 ## MN-24-0938-MJ R2 proof
 
 **Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
@@ -253,7 +195,6 @@ work by core developers / collaborators that uses it.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Rusu — MNRAS proof
 
@@ -270,7 +211,6 @@ work by core developers / collaborators that uses it.
 
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
-
 
 ## See also
 

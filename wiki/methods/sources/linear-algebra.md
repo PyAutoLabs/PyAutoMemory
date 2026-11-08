@@ -24,7 +24,6 @@ status: stub
 **Do not use for:**
 - Non-negative least squares in general or probabilistic sampling methods.
 
-
 ## Brodersen & de Jong 1997 — FNNLS
 
 **Canonical BibTeX key:** `Bro1997`
@@ -42,7 +41,6 @@ status: stub
 **Do not use for:**
 - Bayesian posterior sampling or astronomical image modelling claims.
 
-
 ## Fergus 2014 — spectra as nuisance
 
 **Canonical BibTeX key:** `Fergus2014`
@@ -57,7 +55,6 @@ status: stub
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Ness 2014 — Cannon stellar labels
 
@@ -74,7 +71,6 @@ status: stub
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Wang 2016 — causal Kepler
 
 **Canonical BibTeX key:** `Wang2016`
@@ -90,7 +86,6 @@ status: stub
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Wang 2017 — pixel-level time-domain
 
 **Canonical BibTeX key:** `Wang2017`
@@ -105,7 +100,6 @@ status: stub
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Linear algebra — root
 
@@ -123,23 +117,6 @@ status: stub
 
 **Do not use for:**
 - A primary source for a specific astronomy algorithm.
-
-
-## Big data — root
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** [[linear-inversion]]
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
 
 ## See also
 

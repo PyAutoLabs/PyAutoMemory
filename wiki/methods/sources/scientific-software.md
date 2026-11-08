@@ -27,7 +27,6 @@ either uses or interoperates with.
 **Do not use for:**
 - PyAutoLens-specific lens modelling unless PyAutoFit is the cited dependency.
 
-
 ## PyAutoLens
 
 **Canonical BibTeX key:** `Nightingale2021`
@@ -44,7 +43,6 @@ either uses or interoperates with.
 
 **Do not use for:**
 - General probabilistic-programming claims better supported by PyAutoFit.
-
 
 ## PyLops
 
@@ -63,7 +61,6 @@ either uses or interoperates with.
 **Do not use for:**
 - A NUFFT-specific algorithm unless PyLops is the implementation being cited.
 
-
 ## Colossus 2018
 
 **Canonical BibTeX key:** `Diemer2018`
@@ -78,7 +75,6 @@ either uses or interoperates with.
 
 **Do not use for TODO:**
 - Evidence until the ambiguous canonical key is resolved.
-
 
 ## numba SC15
 
@@ -95,7 +91,6 @@ either uses or interoperates with.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## jimaging — MDPI
 
 **Canonical BibTeX key:** TODO — ambiguous candidates: `PyNUFFT`, `pynufft`.
@@ -110,7 +105,6 @@ either uses or interoperates with.
 
 **Do not use for TODO:**
 - Evidence until the ambiguous canonical key is resolved.
-
 
 ## NUFFT GPU (cross-listed)
 
@@ -143,22 +137,6 @@ either uses or interoperates with.
 
 **Do not use for:**
 - PyAutoLens/PyAutoFit implementation details.
-
-
-## ProFit 2019 — root
-
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
-**Concepts:** [[scientific-software]], [[light-profile-fitting]]
-
-**Supports TODO:**
-- TODO — not migrated: automated canonical-key match was unsafe.
-
-**Use when TODO:**
-- TODO — use only after the paper identity and canonical key are resolved.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
 
 ## See also
 

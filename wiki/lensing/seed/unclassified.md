@@ -27,7 +27,6 @@ create a new one); update `log.md` when this is done.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## MN-24-0938 R3 proof
 
 **Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
@@ -42,23 +41,6 @@ create a new one); update `log.md` when this is done.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
-
-## MN-24-0938 proof
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** unknown (MNRAS proof)
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
 
 ## Scaling up Lensing — ULiège
 
@@ -75,7 +57,6 @@ create a new one); update `log.md` when this is done.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Detections stochastic no zeros
 
 **Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
@@ -90,7 +71,6 @@ create a new one); update `log.md` when this is done.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## See also
 
