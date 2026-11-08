@@ -27,7 +27,6 @@ either uses or interoperates with.
 **Do not use for:**
 - PyAutoLens-specific lens modelling unless PyAutoFit is the cited dependency.
 
-
 ## PyAutoLens
 
 **Canonical BibTeX key:** `Nightingale2021`
@@ -44,7 +43,6 @@ either uses or interoperates with.
 
 **Do not use for:**
 - General probabilistic-programming claims better supported by PyAutoFit.
-
 
 ## PyLops
 
@@ -63,11 +61,10 @@ either uses or interoperates with.
 **Do not use for:**
 - A NUFFT-specific algorithm unless PyLops is the implementation being cited.
 
-
 ## Colossus 2018
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Diemer2018`, `colossus`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `Diemer2018`
+**Reference:** COLOSSUS: A Python Toolkit for Cosmology, Large-scale Structure, and Dark Matter Halos; doi:10.3847/1538-4365/aaee8c; arXiv:1712.04512; ApJS
 **Concepts:** [[scientific-software]]
 
 **Supports TODO:**
@@ -79,11 +76,10 @@ either uses or interoperates with.
 **Do not use for TODO:**
 - Evidence until the ambiguous canonical key is resolved.
 
-
 ## numba SC15
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `numba`
+**Reference:** Numba: a LLVM-based Python JIT compiler; doi:10.1145/2833157.2833162; Proceedings of the Second Workshop on the LLVM Compiler Infrastructure in HPC - LLVM '15
 **Concepts:** [[scientific-software]]
 
 **Supports TODO:**
@@ -94,7 +90,6 @@ either uses or interoperates with.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## jimaging — MDPI
 
@@ -110,7 +105,6 @@ either uses or interoperates with.
 
 **Do not use for TODO:**
 - Evidence until the ambiguous canonical key is resolved.
-
 
 ## NUFFT GPU (cross-listed)
 
@@ -143,22 +137,6 @@ either uses or interoperates with.
 
 **Do not use for:**
 - PyAutoLens/PyAutoFit implementation details.
-
-
-## ProFit 2019 — root
-
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
-**Concepts:** [[scientific-software]], [[light-profile-fitting]]
-
-**Supports TODO:**
-- TODO — not migrated: automated canonical-key match was unsafe.
-
-**Use when TODO:**
-- TODO — use only after the paper identity and canonical key are resolved.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
 
 ## See also
 

@@ -9,8 +9,8 @@ status: stub
 
 ## Suyu 2016 — H0liCOW
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Suyu2016`
+**Reference:** H0LiCOW - I. H0 Lenses in COSMOGRAIL's Wellspring: Program overview; doi:10.1093/mnras/stx483; arXiv:1607.00017; MNRAS
 **Concepts:** [[h0licow]], [[time-delay-cosmography]]
 
 **Supports TODO:**
@@ -25,8 +25,8 @@ status: stub
 
 ## Birrer 2018 — H0liCOW IX
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Birrer2018`
+**Reference:** H0LiCOW - IX. Cosmographic analysis of the doubly imaged quasar SDSS 1206+4332 and a new measurement of the Hubble constant; doi:10.1093/mnras/stz200; arXiv:1809.01274; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[h0licow]], [[lenstronomy]]
 
 **Supports TODO:**
@@ -75,8 +75,8 @@ status: stub
 
 ## Tagore 2017 — error on H0
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Tagore2017`
+**Reference:** Reducing biases on H0 measurements using strong lensing and galaxy dynamics: Results from the eagle simulation; doi:10.1093/mnras/stx2965; arXiv:1706.07733; MNRAS
 **Concepts:** [[time-delay-cosmography]], [[mass-sheet-degeneracy]]
 
 **Supports TODO:**
@@ -91,8 +91,8 @@ status: stub
 
 ## Rana 2017 — cosmic distance ladder
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Rana2017`
+**Reference:** Probing the cosmic distance duality relation using time delay lenses; doi:10.1088/1475-7516/2017/07/010; arXiv:1705.04549; Journal of Cosmology and Astroparticle Physics
 **Concepts:** [[time-delay-cosmography]]
 
 **Supports TODO:**
@@ -107,8 +107,8 @@ status: stub
 
 ## Ding 2018 — time-delay model challenge
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Ding2018a`
+**Reference:** Time Delay Lens Modeling Challenge: I. Experimental Design; arXiv:1801.01506
 **Concepts:** [[time-delay-cosmography]]
 
 **Supports TODO:**
@@ -123,8 +123,8 @@ status: stub
 
 ## Grillo 2018 — H0 from SN Refsdal
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Grillo2018`
+**Reference:** Measuring the Value of the Hubble Constant “à la Refsdal”; doi:10.3847/1538-4357/aac2c9; arXiv:1802.01584; The Astrophysical Journal
 **Concepts:** [[lensed-supernovae]], [[time-delay-cosmography]]
 
 **Supports TODO:**

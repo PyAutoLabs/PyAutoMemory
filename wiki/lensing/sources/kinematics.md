@@ -9,8 +9,8 @@ status: stub
 
 ## Gebhardt 2011 — M87 with Gemini IFIS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Gebhardt2011`
+**Reference:** The black hole mass in M87 from Gemini/NIFS adaptive optics observations; doi:10.1088/0004-637x/729/2/119; arXiv:1101.1954; ApJ
 **Concepts:** [[kinematics-and-lensing]]
 
 **Supports TODO:**
@@ -25,8 +25,8 @@ status: stub
 
 ## Smith 2017 — stellar dynamics IMF
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Smith2017`
+**Reference:** Stellar dynamics in the strong-lensing central galaxy of Abell 1201: A low stellar mass-to-light ratio, a large central compact mass and a standard dark matter halo; doi:10.1093/mnras/stx1573; arXiv:1706.07055; MNRAS
 **Concepts:** [[kinematics-and-lensing]], [[microlensing-imf]]
 
 **Supports TODO:**
@@ -58,8 +58,8 @@ status: stub
 
 ## Talbot 2018 — MaNGA lenses
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Talbot2018`
+**Reference:** SDSS-IV MaNGA: The spectroscopic discovery of strongly lensed galaxies; doi:10.1093/mnras/sty653; arXiv:1803.03604; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[kinematics-and-lensing]]
 
 **Supports TODO:**

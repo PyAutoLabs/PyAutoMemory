@@ -43,8 +43,8 @@ status: stub
 
 ## Planck 2015 — cosmological parameters
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `PlanckCollaboration2015a`
+**Reference:** Planck 2015 results: XIII. Cosmological parameters; doi:10.1051/0004-6361/201525830; arXiv:1502.01589; A\&A
 **Concepts:** [[gr-tests]]
 
 **Supports TODO:**
@@ -59,8 +59,8 @@ status: stub
 
 ## Lee 2016 — DM environments Bolshoi-Planck
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Lee2016`
+**Reference:** Properties of dark matter haloes as a function of local environment density; doi:10.1093/mnras/stw3348; arXiv:1610.02108; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[gr-tests]]
 
 **Supports TODO:**

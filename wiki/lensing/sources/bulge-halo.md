@@ -9,8 +9,8 @@ status: stub
 
 ## Etherington 2022 — bulge–halo
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Etherington2023`
+**Reference:** Beyond the bulge-halo conspiracy? Density profiles of early-type galaxies from extended-source strong lensing; arXiv:2207.04070; MNRAS
 **Concepts:** [[bulge-halo-decomposition]], [[pyautolens]]
 
 **Supports TODO:**
@@ -26,15 +26,15 @@ status: stub
 ## Etherington 2023 — beyond bulge
 
 **Canonical BibTeX key:** `Etherington2023`
-**Reference:** Beyond the bulge – halo conspiracy ? Density profiles of early-type galaxies fr om extended-source strong lensing; MNRAS
+**Reference:** Beyond the bulge-halo conspiracy? Density profiles of early-type galaxies from extended-source strong lensing; MNRAS
 **Concepts:** [[bulge-halo-decomposition]]
 
 **Supports:**
-- Addresses Beyond the bulge – halo conspiracy ? Density profiles of early-type galaxies fr om extended-source strong lensing as the verified public title/reference scope for this source.
+- Addresses Beyond the bulge-halo conspiracy? Density profiles of early-type galaxies from extended-source strong lensing as the verified public title/reference scope for this source.
 - Provides citable context for [[bulge-halo-decomposition]] when the claim is limited to that verified scope.
 
 **Use when:**
-- Citing the paper for its verified title/reference scope: Beyond the bulge – halo conspiracy ? Density profiles of early-type galaxies fr om extended-source strong lensing.
+- Citing the paper for its verified title/reference scope: Beyond the bulge-halo conspiracy? Density profiles of early-type galaxies from extended-source strong lensing.
 
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
@@ -59,8 +59,8 @@ status: stub
 
 ## Oldham 2016 — red nuggets
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Oldham2016`
+**Reference:** Red nuggets grow inside-out: Evidence from gravitational lensing; doi:10.1093/mnras/stw2832; arXiv:1611.00008; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[bulge-halo-decomposition]]
 
 **Supports TODO:**
@@ -92,8 +92,8 @@ status: stub
 
 ## Sonnenfeld 2018 — radial gradients
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Sonnenfeld2018`, `Sonnenfeld2018a`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `Sonnenfeld2018`
+**Reference:** Evidence for radial variations in the stellar mass-to-light ratio of massive galaxies from weak and strong lensing; doi:10.1093/mnras/sty2262; arXiv:1801.01883; MNRAS
 **Concepts:** [[bulge-halo-decomposition]]
 
 **Supports TODO:**
@@ -108,8 +108,8 @@ status: stub
 
 ## Xu 2016 — inner structure MST in ETGs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Xu2016`
+**Reference:** The inner structure of early-type galaxies in the Illustris simulation; doi:10.1093/mnras/stx899; arXiv:1610.07605; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[bulge-halo-decomposition]], [[mass-sheet-degeneracy]]
 
 **Supports TODO:**

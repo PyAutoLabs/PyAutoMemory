@@ -12,8 +12,8 @@ survey-specific work in [[sources-massive-ellipticals]].
 
 ## Kormendy 2015 — elliptical galaxies
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Kormendy2015a`
+**Reference:** Elliptical galaxies and bulges of disc galaxies: Summary of progress and outstanding issues; doi:10.1007/978-3-319-19378-6_16; arXiv:1504.03330; Galactic Bulges
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -62,8 +62,8 @@ survey-specific work in [[sources-massive-ellipticals]].
 
 ## Oosterloo 2002 — extended HI disk
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Oosterloo2002`
+**Reference:** EXTENDED H i DISKS IN DUST LANE ELLIPTICAL GALAXIES 1 Thomas A. Oosterloo and Raffaella Morganti; arXiv:astro-ph/0111141; The Astronomical Journal
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**

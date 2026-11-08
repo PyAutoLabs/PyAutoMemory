@@ -145,8 +145,8 @@ status: stub
 
 ## O'Riordan 2019 — BPL I (broken power-law)
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Oriordan2019`
+**Reference:** Galaxy mass profiles from strong lensing I: the circular power-law model; doi:10.1093/mnras/stz1603; arXiv:1904.08400; MNRAS
 **Concepts:** [[mass-models]]
 
 **Supports TODO:**
@@ -178,8 +178,8 @@ status: stub
 
 ## O'Riordan 2020 — BPL II (alternate)
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Oriordan2020`
+**Reference:** Galaxy mass profiles from strong lensing II: The elliptical power-law model; doi:10.1093/mnras/staa1697; arXiv:2004.13435; MNRAS
 **Concepts:** [[mass-models]]
 
 **Supports TODO:**

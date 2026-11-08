@@ -13,8 +13,8 @@ mitigation via supplementary buried channels.
 
 ## Prodhomme 2011 — impact on Gaia astrometry
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Prodhomme2012`
+**Reference:** The impact of CCD radiation damage on Gaia astrometry - I. Image location estimation in the presence of radiation damage; doi:10.1111/j.1365-2966.2011.19934.x; arXiv:1110.1547; MNRAS
 **Concepts:** [[ccd-trap-physics]]
 
 **Supports TODO:**
@@ -46,8 +46,8 @@ mitigation via supplementary buried channels.
 
 ## Crowley 2016 — Radiation 30-month Gaia L2
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Crowley2016`
+**Reference:** Radiation effects on the Gaia CCDs after 30 months at L2; doi:10.1117/12.2232078; arXiv:1608.01476; High Energy, Optical, and Infrared Detectors for Astronomy VII
 **Concepts:** [[ccd-trap-physics]]
 
 **Supports TODO:**
@@ -62,8 +62,8 @@ mitigation via supplementary buried channels.
 
 ## Seabroke 2008 — radiation model
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Seabroke2008`
+**Reference:** Modelling radiation damage to ESA's Gaia satellite CCDs; doi:10.1117/12.790968; arXiv:0809.0293; High Energy, Optical, and Infrared Detectors for Astronomy III
 **Concepts:** [[ccd-trap-physics]]
 
 **Supports TODO:**
@@ -78,8 +78,8 @@ mitigation via supplementary buried channels.
 
 ## Seabroke 2013 — supplementary buried channels
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Seabroke2013`
+**Reference:** Digging supplementary buried channels: Investigating the notch architecture within the CCD pixels on ESA's Gaia satellite; doi:10.1093/mnras/stt121; arXiv:1302.1873; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[ccd-trap-physics]]
 
 **Supports TODO:**

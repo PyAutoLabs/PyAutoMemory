@@ -12,8 +12,8 @@ work by core developers / collaborators that uses it.
 
 ## Etherington 2022 — automated modelling
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Etherington2022`
+**Reference:** Automated galaxy-galaxy strong lens modelling: No lens left behind; doi:10.1093/mnras/stac2639; arXiv:2202.09201; MNRAS
 **Concepts:** [[lens-modeling-methods]], [[pyautolens]]
 
 **Supports TODO:**
@@ -24,7 +24,6 @@ work by core developers / collaborators that uses it.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Alexander 2018 — disk superfluid
 
@@ -42,7 +41,6 @@ work by core developers / collaborators that uses it.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## Alexander 2020 — GSoC decoding
 
 **Canonical BibTeX key:** `Alexander2020`
@@ -58,7 +56,6 @@ work by core developers / collaborators that uses it.
 
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
-
 
 ## Brown 2019 — deep learning weird DM
 
@@ -91,11 +88,10 @@ work by core developers / collaborators that uses it.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## He 2021 — LOS vs sub
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `He2022b`
+**Reference:** Galaxy–galaxy strong lens perturbations: line-of-sight haloes versus lens subhaloes; doi:10.1093/mnras/stac759; arXiv:2110.04512; MNRAS
 **Concepts:** [[line-of-sight-effects]], [[dark-matter-substructure]]
 
 **Supports TODO:**
@@ -106,7 +102,6 @@ work by core developers / collaborators that uses it.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Hermans 2019 — likelihood-free
 
@@ -124,7 +119,6 @@ work by core developers / collaborators that uses it.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## Maresca 2021 — ALMA functionality
 
 **Canonical BibTeX key:** `Maresca2022`
@@ -140,7 +134,6 @@ work by core developers / collaborators that uses it.
 
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
-
 
 ## Messias 2019 — gas H-ATLAS
 
@@ -158,11 +151,10 @@ work by core developers / collaborators that uses it.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## Yang 2019 — CO ALMA dust
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Yang2019`, `Yang2019b`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `Yang2019`
+**Reference:** CO, H2O, H2O+ line and dust emission in a z = 3.63 strongly lensed starburst merger at sub-kiloparsec scales; doi:10.1051/0004-6361/201833876; arXiv:1903.00273; Astronomy and Astrophysics
 **Concepts:** [[interferometric-lensing]], [[lensed-source-science]]
 
 **Supports TODO:**
@@ -174,43 +166,10 @@ work by core developers / collaborators that uses it.
 **Do not use for TODO:**
 - Evidence until the ambiguous canonical key is resolved.
 
-
-## PyAutoLens 1807.05566 — root
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** [[pyautolens]]
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
-
-## AutoLens — root
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** [[pyautolens]]
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
-
 ## AutoLens paper 1 resubmit 2018-02-16
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Nightingale2018`
+**Reference:** AutoLens: Automated modeling of a strong lens's light, mass, and source; doi:10.1093/mnras/sty1264; arXiv:1708.07377; MNRAS
 **Concepts:** [[pyautolens]]
 
 **Supports TODO:**
@@ -221,23 +180,6 @@ work by core developers / collaborators that uses it.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
-
-## MN-23-4123-MJ R1 proof
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** [[pyautolens]]
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
 
 ## MN-24-0938-MJ R2 proof
 
@@ -254,7 +196,6 @@ work by core developers / collaborators that uses it.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Rusu — MNRAS proof
 
 **Canonical BibTeX key:** `Rusu2019`
@@ -270,7 +211,6 @@ work by core developers / collaborators that uses it.
 
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
-
 
 ## See also
 

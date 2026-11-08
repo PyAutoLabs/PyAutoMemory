@@ -31,8 +31,8 @@ mapping, ALMA molecular-gas dynamics, and the EHT.
 
 ## Peterson 2004 — broad-line region
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Peterson2004`
+**Reference:** Central Masses and Broad‐Line Region Sizes of Active Galactic Nuclei. II. A Homogeneous Analysis of a Large Reverberation‐Mapping Database; doi:10.1086/423269; arXiv:astro-ph/0407299; ApJ
 **Concepts:** [[smbh-mass-measurement]]
 
 **Supports TODO:**
@@ -114,8 +114,8 @@ mapping, ALMA molecular-gas dynamics, and the EHT.
 
 ## Event Horizon Telescope 2019 — M87 first image
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `EHT2019`
+**Reference:** First M87 Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole; doi:10.3847/2041-8213/ab0ec7; arXiv:1906.11238; ApJL
 **Concepts:** [[smbh-mass-measurement]]
 
 **Supports TODO:**
@@ -148,8 +148,8 @@ mapping, ALMA molecular-gas dynamics, and the EHT.
 
 ## Thater 2019 — six new SMBHs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Thater2019a`
+**Reference:** Six new supermassive black hole mass determinations from adaptive-optics assisted SINFONI observations; arXiv:1902.10175; A\&A
 **Concepts:** [[smbh-mass-measurement]]
 
 **Supports TODO:**
@@ -164,8 +164,8 @@ mapping, ALMA molecular-gas dynamics, and the EHT.
 
 ## Do 2014 — SMBHs with thirty-metre telescopes
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
+**Canonical BibTeX key:** `Do2014`
+**Reference:** Prospects for measuring supermassive black hole masses with future extremely large telescopes; doi:10.1088/0004-6256/147/4/93; arXiv:1401.7988; Astronomical Journal
 **Concepts:** [[smbh-mass-measurement]]
 
 **Supports TODO:**
@@ -197,8 +197,8 @@ mapping, ALMA molecular-gas dynamics, and the EHT.
 
 ## Sanghvi 2014 — low-mass quasar disc correction
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
+**Canonical BibTeX key:** `Sanghvi2014`
+**Reference:** The black hole-host galaxy relation for very low mass quasars; doi:10.1093/mnras/stu1822; arXiv:1409.1948; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[smbh-mass-measurement]]
 
 **Supports TODO:**

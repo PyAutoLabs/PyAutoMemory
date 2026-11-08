@@ -14,8 +14,8 @@ CTI bias into cosmic-shear measurements.
 
 ## Cropper 2013 — defining weak lensing requirements
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Cropper2013`
+**Reference:** Defining a weak lensing experiment in space; doi:10.1093/mnras/stt384; MNRAS
 **Concepts:** [[cti-shape-bias]], [[euclid-vis-cti]]
 
 **Supports TODO:**
@@ -27,11 +27,10 @@ CTI bias into cosmic-shear measurements.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Israel 2015 — CTI correction for Euclid
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Israel2015`
+**Reference:** How well can charge transfer inefficiency be corrected? A parameter sensitivity study for iterative correction; doi:10.1093/mnras/stv1660; arXiv:1506.07831; MNRAS
 **Concepts:** [[forward-model-cti]], [[euclid-vis-cti]]
 
 **Supports TODO:**
@@ -42,7 +41,6 @@ CTI bias into cosmic-shear measurements.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Azzollini 2021 — charge-injection report
 
@@ -60,7 +58,6 @@ CTI bias into cosmic-shear measurements.
 **Do not use for:**
 - Peer-reviewed CTI algorithm performance claims unless the calibration report itself is the intended source.
 
-
 ## Euclid Prep IX — mean redshift
 
 **Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
@@ -76,11 +73,10 @@ CTI bias into cosmic-shear measurements.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Kitching 2019 — propagating bias
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Kitching2019`
+**Reference:** Propagating Residual Biases in Cosmic Shear Power Spectra; doi:10.21105/astro.1904.07173; arXiv:1904.07173; The Open Journal of Astrophysics
 **Concepts:** [[cti-shape-bias]], [[euclid-vis-cti]]
 
 **Supports TODO:**
@@ -91,12 +87,11 @@ CTI bias into cosmic-shear measurements.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Paykari 2019 — propagating bias
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Paykari2020`
+**Reference:** Euclid preparation. VI. Verifying the performance of cosmic shear experiments; doi:10.1051/0004-6361/201936980; arXiv:astro-ph.co/1910.10521; A\&A
 **Concepts:** [[cti-shape-bias]], [[euclid-vis-cti]]
 
 **Supports TODO:**
@@ -107,39 +102,6 @@ CTI bias into cosmic-shear measurements.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
-
-## Euclid TP serial — root-level
-
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Skottfelt`, `Skottfelta`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
-**Concepts:** [[trap-pumping]], [[euclid-vis-cti]]
-
-**Supports TODO:**
-- TODO — not migrated: canonical key is ambiguous, so claim support must be verified after key resolution.
-
-**Use when TODO:**
-- TODO — use only after the canonical key and paper identity are resolved.
-
-**Do not use for TODO:**
-- Evidence until the ambiguous canonical key is resolved.
-
-
-## CTI calibration — Henk
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** [[trap-pumping]], [[euclid-vis-cti]]
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
 
 ## See also
 

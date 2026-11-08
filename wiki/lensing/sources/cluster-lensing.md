@@ -22,11 +22,10 @@ status: stub
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Atek 2015 — HFF UV LF
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Atek2015`
+**Reference:** New constraints on the faint end of the UV luminosity function at z ∼ 7-8 using the gravitational lensing of the hubble frontier fields cluster A2744; doi:10.1088/0004-637x/800/1/18; arXiv:1409.0512; Astrophysical Journal
 **Concepts:** [[hubble-frontier-fields]], [[lensed-source-science]]
 
 **Supports TODO:**
@@ -37,7 +36,6 @@ status: stub
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Jullo 2008 — cosmological constraints
 
@@ -53,7 +51,6 @@ status: stub
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Harrington 2016 — Planck SL sources
 
@@ -71,11 +68,10 @@ status: stub
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## Locuss 2009 — cluster cool-core / BCG offset
 
-**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
+**Canonical BibTeX key:** `Sanderson2009`
+**Reference:** LoCuSS: The connection between brightest cluster galaxy activity, gas cooling and dynamical disturbance of X-ray cluster cores; doi:10.1111/j.1365-2966.2009.15214.x; arXiv:0906.1808; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[cluster-lensing]]
 
 **Supports TODO:**
@@ -103,26 +99,10 @@ status: stub
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
-## Abell 1201 X-ray (root)
-
-**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
-**Concepts:** [[cluster-lensing]] (cross-link `../entities/abell-1201.md`)
-
-**Supports TODO:**
-- TODO — not migrated: canonical-key identity needs manual verification.
-
-**Use when TODO:**
-- TODO — use only after the paper identity and canonical key are resolved.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
 ## Harvey 2015 — non-gravitational interactions
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Harvey2015`
+**Reference:** The nongravitational interactions of dark matter in colliding galaxy clusters; doi:10.1126/science.1261381; arXiv:1503.07675; Science
 **Concepts:** [[cluster-lensing]], [[dark-matter-physics]]
 
 **Supports TODO:**
@@ -134,11 +114,10 @@ status: stub
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Harvey 2015 — non-gravitational interactions II
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Harvey2015`
+**Reference:** The nongravitational interactions of dark matter in colliding galaxy clusters; doi:10.1126/science.1261381; arXiv:1503.07675; Science
 **Concepts:** [[cluster-lensing]], [[dark-matter-physics]]
 
 **Supports TODO:**

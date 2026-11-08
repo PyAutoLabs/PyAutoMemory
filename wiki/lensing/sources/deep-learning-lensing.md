@@ -26,8 +26,8 @@ status: stub
 
 ## Morningstar 2019 — deep-learning source reconstruction
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Morningstar2019`
+**Reference:** Data-driven Reconstruction of Gravitationally Lensed Galaxies Using Recurrent Inference Machines; doi:10.3847/1538-4357/ab35d7; arXiv:1901.01359; The Astrophysical Journal
 **Concepts:** [[deep-learning-lensing]], [[source-reconstruction]]
 
 **Supports TODO:**
@@ -59,8 +59,8 @@ status: stub
 
 ## Brehmer 2019 — mining DM substructure
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Brehmer2019`
+**Reference:** Mining for Dark Matter Substructure: Inferring Subhalo Population Properties from Strong Lenses with Machine Learning; doi:10.3847/1538-4357/ab4c41; arXiv:1909.02005; The Astrophysical Journal
 **Concepts:** [[deep-learning-lensing]], [[dark-matter-substructure]]
 
 **Supports TODO:**

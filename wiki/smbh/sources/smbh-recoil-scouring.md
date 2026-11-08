@@ -65,8 +65,8 @@ shallow inner-light gradients that interact with mass-profile fits.
 
 ## Hlavacek-Larrondo — UMBH
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `HlavacekLarrondo2012`
+**Reference:** On the hunt for ultramassive black holes in brightest cluster galaxies; arXiv:1204.5759; MNRAS
 **Concepts:** [[smbh-scouring]], [[smbh-mass-measurement]]
 
 **Supports TODO:**

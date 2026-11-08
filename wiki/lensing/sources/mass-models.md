@@ -80,8 +80,8 @@ entry is a stub.
 
 ## Shajib 2019 — is every strong lens happy
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Pub---ae2019`, `Shajib2018`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `Shajib2018`
+**Reference:** Is every strong lens model unhappy in its own way? Uniform modelling of a sample of 13 quadruply+ imaged quasars; doi:10.1093/mnras/sty3397; arXiv:1807.09278; MNRAS
 **Concepts:** [[mass-models]]
 
 **Supports TODO:**
@@ -96,8 +96,8 @@ entry is a stub.
 
 ## Tian — Einstein rings mass discrepancy
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Tian2017`
+**Reference:** Mass discrepancy-acceleration relation in Einstein rings; doi:10.1093/mnras/stx2056; arXiv:1702.00183; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[einstein-radius]], [[radial-angular-degeneracy]]
 
 **Supports TODO:**
@@ -112,8 +112,8 @@ entry is a stub.
 
 ## Li 2018 — SIS / Einstein-mass discrepancy
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Li2018a`
+**Reference:** The Discrepancy between Einstein Mass and Dynamical Mass for SIS and Power-law Mass Models; doi:10.3847/1538-4357/aaab50; arXiv:1803.00819; The Astrophysical Journal
 **Concepts:** [[einstein-radius]], [[mass-models]]
 
 **Supports TODO:**

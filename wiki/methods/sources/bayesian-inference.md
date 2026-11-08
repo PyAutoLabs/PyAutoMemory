@@ -13,8 +13,8 @@ machinery used in astrophysics fits.
 
 ## Variational inference — review for statisticians
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Blei2017`
+**Reference:** Variational Inference: A Review for Statisticians; doi:10.1080/01621459.2017.1285773; arXiv:1601.00670; Journal of the American Statistical Association
 **Concepts:** [[bayesian-inference]]
 
 **Supports TODO:**
@@ -26,11 +26,10 @@ machinery used in astrophysics fits.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Expectation propagation as a way of life
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Vehtari2020`
+**Reference:** Expectation propagation as a way of life: A framework for Bayesian inference on partitioned data; arXiv:1412.4869; Journal of Machine Learning Research
 **Concepts:** [[bayesian-inference]], [[message-passing]]
 
 **Supports TODO:**
@@ -41,7 +40,6 @@ machinery used in astrophysics fits.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Vehtari 2020 — EP
 
@@ -60,7 +58,6 @@ machinery used in astrophysics fits.
 **Do not use for:**
 - Nested sampling, MCMC convergence diagnostics, or lens-specific source regularization.
 
-
 ## Barthelme 2014 — EP-ABC
 
 **Canonical BibTeX key:** `Barthelme2014`
@@ -78,23 +75,6 @@ machinery used in astrophysics fits.
 **Do not use for:**
 - General-purpose nested sampling or probabilistic-programming language design.
 
-
-## Expectation propagation gates — slides
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** [[bayesian-inference]], [[message-passing]]
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
-
 ## Minka — gates technical report
 
 **Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
@@ -109,23 +89,6 @@ machinery used in astrophysics fits.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
-
-## Factor graphs
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** [[bayesian-inference]], [[message-passing]]
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
 
 ## Message passing is a way of life
 
@@ -142,11 +105,10 @@ machinery used in astrophysics fits.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Czekala 2015 — Gaussian-process noise
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Czekala2015`
+**Reference:** Constructing a Flexible Likelihood Function for Spectroscopic Inference; doi:10.1088/0004-637x/812/2/128; arXiv:1412.5177; ApJ
 **Concepts:** [[bayesian-inference]]
 
 **Supports TODO:**
@@ -157,7 +119,6 @@ machinery used in astrophysics fits.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Regier 2015 — Celeste variational inference
 
@@ -176,11 +137,10 @@ machinery used in astrophysics fits.
 **Do not use for:**
 - Strong-lensing source reconstruction unless the comparison is explicitly methodological.
 
-
 ## 2008.09375 — unidentified arXiv
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Arora2020`
+**Reference:** Using strong gravitational lensing to probe the post reionization HI power spectrum; arXiv:2008.09375
 **Concepts:** [[bayesian-inference]]
 
 **Supports TODO:**
@@ -191,7 +151,6 @@ machinery used in astrophysics fits.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## See also
 

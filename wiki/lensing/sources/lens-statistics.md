@@ -9,7 +9,7 @@ status: stub
 
 ## Sonnenfeld 2021 — stats I
 
-**Canonical BibTeX key:** `Sonnenfeld2021a`
+**Canonical BibTeX key:** `Sonnenfeld2021`
 **Reference:** Statistical strong lensing I. Constraints on the inner structure of galaxies from samples of a thousand lenses; doi:10.1051/0004-6361/202142062; A\&A
 **Concepts:** [[lens-statistics]]
 

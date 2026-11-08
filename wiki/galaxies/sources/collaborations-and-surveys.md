@@ -27,8 +27,8 @@ Survey overview / instrument papers from the `Collaborations/` folder.
 
 ## Eisenstein 2001 — SDSS LRG
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Eisenstein2001`
+**Reference:** Spectroscopic Target Selection for the Sloan Digital Sky Survey: The Luminous Red Galaxy Sample; doi:10.1086/323717; arXiv:astro-ph/0108153; The Astronomical Journal
 **Concepts:** [[stellar-mass-halo-mass-relation]]
 
 **Supports TODO:**
@@ -43,8 +43,8 @@ Survey overview / instrument papers from the `Collaborations/` folder.
 
 ## Euclid 2011
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Laureijs2011`
+**Reference:** Euclid Definition Study Report; arXiv:1110.3193
 **Concepts:** [[cosmos-web]]
 
 **Supports TODO:**
@@ -59,8 +59,8 @@ Survey overview / instrument papers from the `Collaborations/` folder.
 
 ## Hildebrandt 2016 — KiDS cosmology
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Hildebrandt2017`
+**Reference:** KiDS-450: Cosmological parameter constraints from tomographic weak gravitational lensing; doi:10.1093/mnras/stw2805; arXiv:1606.05338; MNRAS
 **Concepts:** none specific (cross-link `../lensing/sources/weak-lensing.md`)
 
 **Supports TODO:**

@@ -27,27 +27,10 @@ hopping, and the libraries that implement them.
 **Do not use for:**
 - Dynamic nested sampling in dynesty or MCMC ensemble sampling.
 
-
-## PolyChord — root copy
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** [[nested-sampling]]
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
-
 ## Buchner — PyMultiNest
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Buchner2014`, `Johannesen2007`, `pymultinest`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `Buchner2014`
+**Reference:** X-ray spectral modelling of the AGN obscuring region in the CDFS: Bayesian model selection and catalogue; doi:10.1051/0004-6361/201322971; arXiv:1402.0004; A\&A
 **Concepts:** [[nested-sampling]]
 
 **Supports TODO:**
@@ -59,11 +42,10 @@ hopping, and the libraries that implement them.
 **Do not use for TODO:**
 - Evidence until the ambiguous canonical key is resolved.
 
-
 ## Nested basin sampling
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Griffiths2019`
+**Reference:** Nested Basin-Sampling; doi:10.1021/acs.jctc.9b00567; Journal of Chemical Theory and Computation
 **Concepts:** [[nested-sampling]]
 
 **Supports TODO:**
@@ -74,7 +56,6 @@ hopping, and the libraries that implement them.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Dynesty
 
@@ -92,11 +73,10 @@ hopping, and the libraries that implement them.
 **Do not use for:**
 - Assuming a winner on an untested likelihood or current integration status.
 
-
 ## emcee
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Emcee`, `Foreman-Mackey2013`, `emcee`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `emcee`
+**Reference:** emcee : The MCMC Hammer; doi:10.1086/670067; arXiv:1202.3665; Publications of the Astronomical Society of the Pacific
 **Concepts:** [[mcmc-samplers]]
 
 **Supports TODO:**
@@ -107,7 +87,6 @@ hopping, and the libraries that implement them.
 
 **Do not use for TODO:**
 - Evidence until the ambiguous canonical key is resolved.
-
 
 ## See also
 

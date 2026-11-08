@@ -9,8 +9,8 @@ status: stub
 
 ## Wertz 2018 — pySPT
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Wertz2018`
+**Reference:** A dedicated source-position transformation package: PySPT; doi:10.1051/0004-6361/201732242; arXiv:1801.04151; Astronomy and Astrophysics
 **Concepts:** [[source-position-transformation]], [[mass-sheet-degeneracy]]
 
 **Supports TODO:**
@@ -42,7 +42,7 @@ status: stub
 
 ## Kochanek 2021 — radial dog
 
-**Canonical BibTeX key:** `Kochanek2021a`
+**Canonical BibTeX key:** `Kochanek2021`
 **Reference:** Overconstrained models of time delay lenses redux: How the angular tail wags the radial dog; arXiv:2003.08395; doi:10.1093/mnras/staa4033; MNRAS
 **Concepts:** [[radial-angular-degeneracy]]
 
@@ -76,8 +76,8 @@ status: stub
 
 ## Keeton 1997 — shear vs ellipticity
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Keeton1997`
+**Reference:** Shear and Ellipticity in Gravitational Lenses; doi:10.1086/304172; arXiv:astro-ph/9610163; The Astrophysical Journal
 **Concepts:** [[shear-ellipticity-degeneracy]]
 
 **Supports TODO:**
@@ -126,8 +126,8 @@ status: stub
 
 ## Gomer 2018 — quad-plane fundamentals
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Gomer2018`
+**Reference:** The impact of $\Lambda$CDM substructure and baryon-dark matter transition on the image positions of quad galaxy lenses; doi:10.1093/mnras/stx3294; arXiv:1712.07665; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[shear-ellipticity-degeneracy]], [[mass-models]]
 
 **Supports TODO:**
@@ -142,8 +142,8 @@ status: stub
 
 ## Gomer 2023 — NFW + potential / mass
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Gomer2023`
+**Reference:** The ellipticity parameterization for an NFW profile: An overlooked angular structure in strong lens modeling; doi:10.1051/0004-6361/202346308; arXiv:2310.03077; A\&A
 **Concepts:** [[mass-models]], [[radial-angular-degeneracy]]
 
 **Supports TODO:**

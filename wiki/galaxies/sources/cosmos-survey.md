@@ -27,23 +27,6 @@ high-z morphology.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
-## COSMOS-Web — root
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** [[cosmos-web]]
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
-
 ## Faure 2008 — SL candidates
 
 **Canonical BibTeX key:** `Faure2008`
@@ -59,7 +42,6 @@ high-z morphology.
 
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
-
 
 ## Jackson 2008 — SL candidates
 
@@ -77,7 +59,6 @@ high-z morphology.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## Pourrahmani 2017 — LensExtractor
 
 **Canonical BibTeX key:** `Pourrahmani2018`
@@ -93,7 +74,6 @@ high-z morphology.
 
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
-
 
 ## More 2012 — SARCS
 
@@ -111,7 +91,6 @@ high-z morphology.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## Liu 2024 — hyperluminous SL
 
 **Canonical BibTeX key:** `Liu2024`
@@ -127,7 +106,6 @@ high-z morphology.
 
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
-
 
 ## Koekemoer 2011 — CANDELS
 
@@ -145,7 +123,6 @@ high-z morphology.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## Aretxaga 2011 — millimeter survey COSMOS
 
 **Canonical BibTeX key:** `Aretxaga2011`
@@ -161,7 +138,6 @@ high-z morphology.
 
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
-
 
 ## ArangoToro 2023 — CIGALE
 
@@ -179,7 +155,6 @@ high-z morphology.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## Noll 2009 — CIGALE
 
 **Canonical BibTeX key:** `Noll2009`
@@ -196,11 +171,10 @@ high-z morphology.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## Balogh 2014 — GEEC2
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Balogh2014`
+**Reference:** The GEEC2 spectroscopic survey of Galaxy groups at 0.8 < z < 1; doi:10.1093/mnras/stu1332; arXiv:1406.4528; MNRAS
 **Concepts:** [[high-redshift-galaxies]]
 
 **Supports TODO:**
@@ -211,7 +185,6 @@ high-z morphology.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Garvin 2022 — HST crowd-source
 
@@ -229,7 +202,6 @@ high-z morphology.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## Guzzo 2007 — weird weak-lensing lens
 
 **Canonical BibTeX key:** `Guzzo2007`
@@ -245,7 +217,6 @@ high-z morphology.
 
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
-
 
 ## Jin 2018 — dust random lens
 
@@ -263,7 +234,6 @@ high-z morphology.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## Kreckel 2013 — dust
 
 **Canonical BibTeX key:** `Kreckel2013`
@@ -279,7 +249,6 @@ high-z morphology.
 
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
-
 
 ## Shuntov 2024 — reduction
 
@@ -297,7 +266,6 @@ high-z morphology.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
 ## Van der Wel 2013 — QUADM25
 
 **Canonical BibTeX key:** `VanDerWel2013`
@@ -313,7 +281,6 @@ high-z morphology.
 
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
-
 
 ## van Dokkum 2024 — full
 
@@ -331,23 +298,6 @@ high-z morphology.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
-
-## poster 2
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** none
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
-
 ## Rimondini Gaia 2018 — root
 
 **Canonical BibTeX key:** `Rimoldini2018`
@@ -363,7 +313,6 @@ high-z morphology.
 
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
-
 
 ## See also
 

@@ -13,8 +13,8 @@ SMBHs at z > 4.
 
 ## Smith 2019 — SMBHs in the early universe
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Smith2019`
+**Reference:** Supermassive black holes in the early universe; doi:10.1080/00107514.2019.1615715; arXiv:1904.12890; Contemporary Physics
 **Concepts:** [[smbh-seeds]], [[high-redshift-galaxies]]
 
 **Supports TODO:**
@@ -29,8 +29,8 @@ SMBHs at z > 4.
 
 ## Jin 2017 — super-Eddington
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Jin2017`
+**Reference:** Super-Eddington QSO RX J0439.6-5311 - I. Origin of the soft X-ray excess and structure of the inner accretion flow; doi:10.1093/mnras/stx718; arXiv:1703.07118; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[smbh-accretion]]
 
 **Supports TODO:**
@@ -45,8 +45,8 @@ SMBHs at z > 4.
 
 ## Mehrgan 2019 — SMBH 40 billion solar masses
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Mehrgan2019`
+**Reference:** A 40 billion solar-mass black hole in the extreme core of Holm 15A, the central galaxy of Abell 85; arXiv:1907.10608; ApJ
 **Concepts:** [[smbh-mass-measurement]], [[smbh-host-scaling]]
 
 **Supports TODO:**
@@ -115,8 +115,8 @@ SMBHs at z > 4.
 
 ## McAlpine 2017 — linking BH growth
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `McAlpine2017`
+**Reference:** The link between galaxy and black hole growth in the EAGLE simulation; arXiv:1701.01122; MNRAS
 **Concepts:** [[smbh-accretion]], [[smbh-host-scaling]]
 
 **Supports TODO:**

@@ -13,8 +13,8 @@ lensing-specific applications (which live in
 
 ## Schmidhuber 2014 — deep learning review
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Schmidhuber2014`
+**Reference:** Deep Learning in Neural Networks: An Overview; arXiv:1404.7828
 **Concepts:** [[deep-learning-astro]]
 
 **Supports TODO:**
@@ -45,8 +45,8 @@ lensing-specific applications (which live in
 
 ## Lanusse — CMU deep
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Lanusse2017a`
+**Reference:** CMU DeepLens: Deep learning for automatic image-based galaxy-galaxy strong lens finding; doi:10.1093/mnras/stx1665; arXiv:1703.02642; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[deep-learning-astro]]
 
 **Supports TODO:**

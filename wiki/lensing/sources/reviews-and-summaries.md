@@ -12,8 +12,8 @@ introductions or for cross-referencing established field-knowledge.
 
 ## Achwanden 2017 — order from chaos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Aschwanden2017`
+**Reference:** Order out of Randomness: Self-Organization Processes in Astrophysics; doi:10.1007/s11214-018-0489-2; arXiv:1708.03394; Space Science Reviews
 **Concepts:** none specific
 
 **Supports TODO:**
@@ -45,8 +45,8 @@ introductions or for cross-referencing established field-knowledge.
 
 ## Graham 2011 — elliptical / disk scaling laws
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Graham2011`
+**Reference:** Elliptical and disk galaxy structure and modern scaling laws; doi:10.1007/978-94-007-5609-0_2; arXiv:1108.0997; Planets, Stars and Stellar Systems: Volume 6: Extragalactic Astronomy and Cosmology
 **Concepts:** none specific
 
 **Supports TODO:**
@@ -95,8 +95,8 @@ introductions or for cross-referencing established field-knowledge.
 
 ## Kormendy 2015 — elliptical bulge
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Kormendy2015a`
+**Reference:** Elliptical galaxies and bulges of disc galaxies: Summary of progress and outstanding issues; doi:10.1007/978-3-319-19378-6_16; arXiv:1504.03330; Galactic Bulges
 **Concepts:** none specific (cross-link `../galaxies/`)
 
 **Supports TODO:**
@@ -111,8 +111,8 @@ introductions or for cross-referencing established field-knowledge.
 
 ## Latif 2016 — BH seeds
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
+**Canonical BibTeX key:** `Latif2016`
+**Reference:** Formation of supermassive black hole seeds; doi:10.1017/pasa.2016.41; arXiv:1605.07391; PASA
 **Concepts:** none specific (cross-link `../smbh/`)
 
 **Supports TODO:**
@@ -144,7 +144,7 @@ introductions or for cross-referencing established field-knowledge.
 ## Smith 2019 — BH early universe
 
 **Canonical BibTeX key:** `Smith2019`
-**Reference:** Supermassive black holes in the early universe; arXiv:2001.08420; doi:10.1080/00107514.2019.1615715; Contemporary Physics
+**Reference:** Supermassive black holes in the early universe; arXiv:1904.12890; doi:10.1080/00107514.2019.1615715; Contemporary Physics
 **Concepts:** none specific (cross-link `../smbh/`)
 
 **Supports:**
@@ -160,8 +160,8 @@ introductions or for cross-referencing established field-knowledge.
 
 ## Sofue 2016 — rotation curves spirals
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
+**Canonical BibTeX key:** `Sofue2016`
+**Reference:** Rotation and Mass in the Milky Way and Spiral Galaxies; arXiv:1608.08350
 **Concepts:** [[dark-matter-physics]]
 
 **Supports TODO:**

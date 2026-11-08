@@ -77,8 +77,8 @@ status: stub
 
 ## Shu 2016 — BELLS-GALLERY
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Shu2016a`
+**Reference:** The BOSS Emission-Line Lens Survey. IV. Smooth Lens Models for the BELLS GALLERY Sample; arXiv:1608.08707; ApJ
 **Concepts:** [[bells-gallery]]
 
 **Supports TODO:**

@@ -29,8 +29,8 @@ methodology and applications.
 
 ## Graham 2000 — spirals
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Graham2001a`
+**Reference:** An Investigation into the Prominence of Spiral Galaxy Bulges; doi:10.1086/318767; arXiv:astro-ph/0011256; AJ
 **Concepts:** [[sersic-profile]]
 
 **Supports TODO:**
@@ -45,8 +45,8 @@ methodology and applications.
 
 ## Peng 2009 — beyond axisymmetry
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Peng2010`
+**Reference:** Detailed decomposition of galaxy images. II. beyond axisymmetric models; doi:10.1088/0004-6256/139/6/2097; arXiv:0912.0731; Astronomical Journal
 **Concepts:** [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -61,8 +61,8 @@ methodology and applications.
 
 ## Peng 2010 — extra components
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Peng2010`
+**Reference:** Detailed decomposition of galaxy images. II. beyond axisymmetric models; doi:10.1088/0004-6256/139/6/2097; arXiv:0912.0731; Astronomical Journal
 **Concepts:** [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -77,8 +77,8 @@ methodology and applications.
 
 ## Peng 2010 — AJ 139 2097
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Peng2010`
+**Reference:** Detailed decomposition of galaxy images. II. beyond axisymmetric models; doi:10.1088/0004-6256/139/6/2097; arXiv:0912.0731; Astronomical Journal
 **Concepts:** [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -93,8 +93,8 @@ methodology and applications.
 
 ## Devour 2017 — inclination and dust Sérsic biases
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Devour2017`
+**Reference:** Revealing strong bias in common measures of galaxy properties using new inclination-independent structures; doi:10.1093/mnrasl/slx021; arXiv:1702.06528; Monthly Notices of the Royal Astronomical Society: Letters
 **Concepts:** [[sersic-profile]]
 
 **Supports TODO:**
@@ -109,8 +109,8 @@ methodology and applications.
 
 ## Van der Wel 2012 — CANDELS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `VanDerWel2012`
+**Reference:** Structural parameters of galaxies in candels; doi:10.1088/0067-0049/203/2/24; arXiv:1211.6954; Astrophysical Journal, Supplement Series
 **Concepts:** [[light-profile-fitting]], [[high-redshift-galaxies]]
 
 **Supports TODO:**
@@ -125,8 +125,8 @@ methodology and applications.
 
 ## Buitrago 2008 — GOODS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Buitrago2008`
+**Reference:** Size evolution of the most massive galaxies at 1.7<z<3 from GOODS NICMOS survey imaging; doi:10.1086/592836; arXiv:0807.4141; The Astrophysical Journal
 **Concepts:** [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -157,8 +157,8 @@ methodology and applications.
 
 ## Hopkins 2006 — merger-driven model
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Hopkins2006`
+**Reference:** A Unified, Merger‐driven Model of the Origin of Starbursts, Quasars, the Cosmic X‐Ray Background, Supermassive Black Holes, and Galaxy Spheroids; doi:10.1086/499298; arXiv:astro-ph/0506398; The Astrophysical Journal Supplement Series
 **Concepts:** [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -173,8 +173,8 @@ methodology and applications.
 
 ## Naab 2007 — ETG formation from initial conditions
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Naab2007`
+**Reference:** Formation of Early‐Type Galaxies from Cosmological Initial Conditions; doi:10.1086/510841; arXiv:astro-ph/0512235; The Astrophysical Journal
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -189,8 +189,8 @@ methodology and applications.
 
 ## Naab 2009 — minor mergers
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Naab2009`
+**Reference:** Minor mergers and the size evolution of elliptical galaxies; doi:10.1088/0004-637x/699/2/l178; arXiv:0903.1636; Astrophysical Journal Letters
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -237,8 +237,8 @@ methodology and applications.
 
 ## Barro — progenitor compact quiescent
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Barro2013`
+**Reference:** CANDELS: The progenitors of compact quiescent galaxies at z ∼ 2; doi:10.1088/0004-637x/765/2/104; arXiv:1206.5000; Astrophysical Journal
 **Concepts:** [[etg-structure]], [[high-redshift-galaxies]]
 
 **Supports TODO:**
@@ -269,8 +269,8 @@ methodology and applications.
 
 ## Buta 2017 — rings GalZoo
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Buta2017`
+**Reference:** Galactic rings revisited - I. CVRHS classifications of 3962 ringed galaxies from the Galaxy Zoo 2 Database; doi:10.1093/mnras/stx1829; arXiv:1707.06589; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -285,8 +285,8 @@ methodology and applications.
 
 ## Barazza 2008 — bars in local galaxies
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Barazza2008a`
+**Reference:** Bars in Disk-Dominated and Bulge-Dominated Galaxies at z~0: New Insights from ~3600 SDSS Galaxies; doi:10.1086/526510; arXiv:0710.4674; ApJ
 **Concepts:** [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -301,8 +301,8 @@ methodology and applications.
 
 ## Gadotti 2009 — bar SDSS fits
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Gadotti2008a`
+**Reference:** Structural properties of pseudo-bulges, classical bulges and elliptical galaxies: A Sloan Digital Sky Survey perspective; doi:10.1111/j.1365-2966.2008.14257.x; arXiv:0810.1953; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -317,8 +317,8 @@ methodology and applications.
 
 ## Gadotti 2010 — bars secular evolution
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Gadotti2011`
+**Reference:** Secular evolution and structural properties of stellar bars in galaxies; doi:10.1111/j.1365-2966.2011.18945.x; arXiv:1003.1719; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -333,8 +333,8 @@ methodology and applications.
 
 ## Greco 2017 — LSB Hyper Suprime
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Greco2017`
+**Reference:** Illuminating Low-Surface-Brightness Galaxies with the Hyper Suprime-Cam Survey; doi:10.3847/1538-4357/aab842; arXiv:1709.04474
 **Concepts:** [[light-profile-fitting]]
 
 **Supports TODO:**

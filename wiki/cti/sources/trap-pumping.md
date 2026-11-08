@@ -13,8 +13,8 @@ location within the buried channel.
 
 ## Hall 2014 — trap properties from trap pumping
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Hall2014`
+**Reference:** Determination of in situ trap properties in CCDs using a "single-trap pumping" technique; doi:10.1109/tns.2013.2295941; IEEE Transactions on Nuclear Science
 **Concepts:** [[trap-pumping]]
 
 **Supports TODO:**
@@ -25,12 +25,11 @@ location within the buried channel.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Hall 2014 — traps in situ
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Hall2014a`
+**Reference:** In situ trap parameter studies in CCDs for space applications; doi:10.1117/12.2055906; High Energy, Optical, and Infrared Detectors for Astronomy VI
 **Concepts:** [[trap-pumping]]
 
 **Supports TODO:**
@@ -42,11 +41,10 @@ location within the buried channel.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Skottfelt 2017 — trap pumping
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Skottfelt2017a`
+**Reference:** Trap pumping schemes for the Euclid CCD273 detector: Characterisation of electrodes and defects; doi:10.1088/1748-0221/12/12/c12033; J. Instrum.
 **Concepts:** [[trap-pumping]], [[euclid-vis-cti]]
 
 **Supports TODO:**
@@ -57,7 +55,6 @@ location within the buried channel.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Skottfelt 2017 — compare Euclid data
 
@@ -76,11 +73,10 @@ location within the buried channel.
 **Do not use for:**
 - PyAutoCTI package citation or HST ACS pixel-based correction performance.
 
-
 ## Gow 2016 — correction via trap pumping
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Gow2016`
+**Reference:** Simplified charge transfer inefficiency correction in CCDs by trap-pumping; doi:10.1117/12.2232706; High Energy, Optical, and Infrared Detectors for Astronomy VII
 **Concepts:** [[trap-pumping]], [[forward-model-cti]]
 
 **Supports TODO:**
@@ -92,11 +88,10 @@ location within the buried channel.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
-
 ## Murray 2013 — pumping and signal relation
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Murray2013a`
+**Reference:** The relationship between pumped traps and signal loss in buried channel CCDs; doi:10.1117/12.2024826; UV/Optical/IR Space Telescopes and Instruments: Innovative Technologies and Concepts VI
 **Concepts:** [[trap-pumping]]
 
 **Supports TODO:**
@@ -107,7 +102,6 @@ location within the buried channel.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
 
 ## Euclid trap-pumping serial-direction
 
@@ -123,23 +117,6 @@ location within the buried channel.
 
 **Do not use for TODO:**
 - Evidence until the ambiguous canonical key is resolved.
-
-
-## CTI calibration — Henk
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** [[trap-pumping]], [[euclid-vis-cti]]
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
 
 ## See also
 

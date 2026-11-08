@@ -14,8 +14,8 @@ matters directly for PyAutoLens priors.
 
 ## Ma 2014 — MASSIVE I overview
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Ma2014`
+**Reference:** The massive survey. I. A volume-limited integral-field spectroscopic study of the most massive early-type galaxies within 108 Mpc; doi:10.1088/0004-637x/795/2/158; arXiv:1407.1054; Astrophysical Journal
 **Concepts:** [[massive-ellipticals]], [[etg-structure]]
 
 **Supports TODO:**
@@ -30,8 +30,8 @@ matters directly for PyAutoLens priors.
 
 ## Greene 2015 — MASSIVE II stellar populations
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Greene2015`, `Greene2015a`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `Greene2015`
+**Reference:** The MASSIVE Survey. II. Stellar Population Trends Out to Large Radius in Massive Early-Type Galaxies; doi:10.1088/0004-637x/807/1/11; arXiv:1504.02483; Astrophysical Journal
 **Concepts:** [[massive-ellipticals]], [[etg-radial-gradients]]
 
 **Supports TODO:**
@@ -46,8 +46,8 @@ matters directly for PyAutoLens priors.
 
 ## Goulding 2017 — MASSIVE III X-ray halos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Goulding2016a`
+**Reference:** The MASSIVE Survey. IV. The X-Ray Halos of the Most Massive Early-Type Galaxies in the Nearby Universe; doi:10.3847/0004-637x/826/2/167; arXiv:1604.01764; The Astrophysical Journal
 **Concepts:** [[massive-ellipticals]]
 
 **Supports TODO:**
@@ -62,8 +62,8 @@ matters directly for PyAutoLens priors.
 
 ## Veale 2017 — MASSIVE V angular momentum
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Veale2016`
+**Reference:** The MASSIVE Survey - V. Spatially resolved stellar angular momentum, velocity dispersion, and higher moments of the 41 most massive local early-type galaxies; doi:10.1093/mnras/stw2330; arXiv:1609.00391; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[etg-kinematics]]
 
 **Supports TODO:**
@@ -78,8 +78,8 @@ matters directly for PyAutoLens priors.
 
 ## Veale 2018 — MASSIVE VII angular momentum
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Veale2017a`
+**Reference:** The MASSIVE Survey - VII. The relationship of angular momentum, stellar mass and environment of early-type galaxies; doi:10.1093/mnras/stx1639; arXiv:1703.08573; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[etg-kinematics]]
 
 **Supports TODO:**
@@ -94,8 +94,8 @@ matters directly for PyAutoLens priors.
 
 ## Veale 2018 — MASSIVE VIII stellar velocity profile
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Veale2017b`
+**Reference:** The MASSIVE survey - VIII. Stellar velocity dispersion profiles and environmental dependence of early-type galaxies; doi:10.1093/mnras/stx2717; arXiv:1708.00870; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[etg-kinematics]]
 
 **Supports TODO:**
@@ -110,8 +110,8 @@ matters directly for PyAutoLens priors.
 
 ## Pandya 2017 — MASSIVE VI warm gas
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Pandya2017`
+**Reference:** The MASSIVE Survey. VI. The Spatial Distribution and Kinematics of Warm Ionized Gas in the Most Massive Local Early-type Galaxies; doi:10.3847/1538-4357/aa5ebc; arXiv:1701.08772; The Astrophysical Journal
 **Concepts:** [[massive-ellipticals]]
 
 **Supports TODO:**
@@ -126,8 +126,8 @@ matters directly for PyAutoLens priors.
 
 ## Ene 2018 — MASSIVE X kinematic / photometric offsets
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Ene2018`, `Ene2018a`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `Ene2018`
+**Reference:** The MASSIVE Survey - X. Misalignment between kinematic and photometric axes and intrinsic shapes of massive early-type galaxies; doi:10.1093/mnras/sty1649; arXiv:1802.00014; MNRAS
 **Concepts:** [[etg-kinematics]]
 
 **Supports TODO:**
@@ -142,8 +142,8 @@ matters directly for PyAutoLens priors.
 
 ## Goullard 2018 — MASSIVE IX photometric offsets
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Goullaud2018`, `Goullaud2018a`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `Goullaud2018`
+**Reference:** The MASSIVE Survey. IX. Photometric Analysis of 35 High-mass Early-type Galaxies with HST WFC3/IR; doi:10.3847/1538-4357/aab1f3; arXiv:1801.08245; ApJ
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -158,8 +158,8 @@ matters directly for PyAutoLens priors.
 
 ## Greene 2019 — MASSIVE XII
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Greene2019`
+**Reference:** The MASSIVE Survey. XII. Connecting Stellar Populations of Early-type Galaxies to Kinematics and Environment; doi:10.3847/1538-4357/ab01e3; ApJ
 **Concepts:** [[massive-ellipticals]], [[etg-radial-gradients]]
 
 **Supports TODO:**
@@ -174,8 +174,8 @@ matters directly for PyAutoLens priors.
 
 ## MASSIVE 9 — photometry catalog
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Goullaud2018`
+**Reference:** The MASSIVE Survey. IX. Photometric Analysis of 35 High-mass Early-type Galaxies with HST WFC3/IR; doi:10.3847/1538-4357/aab1f3; arXiv:1801.08245; ApJ
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -206,8 +206,8 @@ matters directly for PyAutoLens priors.
 
 ## Schombert 2015
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Schombert2015a`
+**Reference:** The structure of galaxies. III. Two structural families of ellipticals; doi:10.1088/0004-6256/150/5/162; arXiv:1509.08381; Astronomical Journal
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -222,8 +222,8 @@ matters directly for PyAutoLens priors.
 
 ## Peng 2010 — AJ 139 2097
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Peng2010`
+**Reference:** Detailed decomposition of galaxy images. II. beyond axisymmetric models; doi:10.1088/0004-6256/139/6/2097; arXiv:0912.0731; Astronomical Journal
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -238,8 +238,8 @@ matters directly for PyAutoLens priors.
 
 ## de Lucia 2006 — BCG semi-analytic
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `DeLucia2007`
+**Reference:** The hierarchical formation of the brightest cluster galaxies; doi:10.1111/j.1365-2966.2006.11287.x; arXiv:astro-ph/0606519; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[massive-ellipticals]]
 
 **Supports TODO:**
@@ -254,8 +254,8 @@ matters directly for PyAutoLens priors.
 
 ## Steinmetz — hierarchical origin of galaxies
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Steinmetz2002`
+**Reference:** The hierarchical origin of galaxy morphologies; doi:10.1016/s1384-1076(02)00102-1; arXiv:astro-ph/0202466; New Astronomy
 **Concepts:** [[massive-ellipticals]]
 
 **Supports TODO:**
@@ -270,8 +270,8 @@ matters directly for PyAutoLens priors.
 
 ## Lauer 2005 — dust in ETG centres
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Lauer2005`
+**Reference:** The Centers of Early-Type Galaxies with Hubble Space Telescope . V. New WFPC2 Photometry; doi:10.1086/429565; arXiv:astro-ph/0412040; The Astronomical Journal
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -286,8 +286,8 @@ matters directly for PyAutoLens priors.
 
 ## Rest 2001 — centres of ETGs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Rest2001`
+**Reference:** WFPC2 Images of the Central Regions of Early-Type Galaxies. I. The Data; doi:10.1086/320370; arXiv:astro-ph/0102286; Database
 **Concepts:** [[etg-structure]], [[smbh-scouring]]
 
 **Supports TODO:**
@@ -319,8 +319,8 @@ matters directly for PyAutoLens priors.
 
 ## Trujillo — strong size evolution of ETGs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Trujillo2007`
+**Reference:** Strong size evolution of the most massive galaxies since z ∼ 2; doi:10.1111/j.1365-2966.2007.12388.x; arXiv:0709.0621; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[etg-structure]], [[high-redshift-galaxies]]
 
 **Supports TODO:**
@@ -335,8 +335,8 @@ matters directly for PyAutoLens priors.
 
 ## Lilly 2016 — progenitor bias and surface brightness
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Lilly2016`
+**Reference:** Surface Density Effects in Quenching: Cause or Effect?; doi:10.3847/0004-637x/833/1/1; arXiv:1604.06459; The Astrophysical Journal
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -351,8 +351,8 @@ matters directly for PyAutoLens priors.
 
 ## Szomoru 2011 — morphology evolution of galaxies HST
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Szomoru2011a`
+**Reference:** Morphological evolution of galaxies from ultra-deep hubble space telescope wide field camera 3 imaging: The hubble sequence at z ∼ 2; doi:10.1088/2041-8205/735/1/l22; arXiv:1106.1641; Astrophysical Journal Letters
 **Concepts:** [[etg-structure]], [[high-redshift-galaxies]]
 
 **Supports TODO:**
@@ -367,8 +367,8 @@ matters directly for PyAutoLens priors.
 
 ## Newman 2012 — ETG mass growth
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Newman2012a`
+**Reference:** Can minor merging account for the size growth of quiescent galaxies? New results from the CANDELS survey; doi:10.1088/0004-637x/746/2/162; arXiv:1110.1637; Astrophysical Journal
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -399,8 +399,8 @@ matters directly for PyAutoLens priors.
 
 ## Huang 2012 — three-component ETG models
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Huang2013a`
+**Reference:** The Carnegie-Irvine Galaxy Survey. Iii. the three-component structure of nearby elliptical galaxies; doi:10.1088/0004-637x/766/1/47; arXiv:1212.2639; Astrophysical Journal
 **Concepts:** [[etg-structure]], [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -415,8 +415,8 @@ matters directly for PyAutoLens priors.
 
 ## Oh 2017 — multiple photometric ETG components
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Oh2017`
+**Reference:** Testing the Presence of Multiple Photometric Components in Nearby Early-type Galaxies Using SDSS; doi:10.3847/1538-4357/836/1/115; arXiv:1612.06495; ApJ
 **Concepts:** [[etg-structure]], [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -431,8 +431,8 @@ matters directly for PyAutoLens priors.
 
 ## Oh 2017 — two-component Sérsic local SDSS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Oh2017`
+**Reference:** Testing the Presence of Multiple Photometric Components in Nearby Early-type Galaxies Using SDSS; doi:10.3847/1538-4357/836/1/115; arXiv:1612.06495; ApJ
 **Concepts:** [[etg-structure]], [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -462,8 +462,8 @@ matters directly for PyAutoLens priors.
 
 ## Chevance 2012 — shape evolution at high-z
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Chevance2012`
+**Reference:** On the shapes and structures of high-redshift compact galaxies; doi:10.1088/2041-8205/754/2/l24; arXiv:1206.3579; Astrophysical Journal Letters
 **Concepts:** [[etg-structure]], [[high-redshift-galaxies]]
 
 **Supports TODO:**
@@ -495,8 +495,8 @@ matters directly for PyAutoLens priors.
 
 ## Morishita 2018 — metallicity high-z
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Morishita2018a`
+**Reference:** Metal Deficiency in Two Massive Dead Galaxies at z~2; arXiv:1803.01852; ApJL
 **Concepts:** [[high-redshift-galaxies]]
 
 **Supports TODO:**

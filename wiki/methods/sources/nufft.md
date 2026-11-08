@@ -28,7 +28,6 @@ and for the PyLops sparse-linear-operator framework.
 **Do not use for:**
 - GPU-specific NUFFT auto-tuning or PyNUFFT package citation.
 
-
 ## PyNUFFT
 
 **Canonical BibTeX key:** `Lin2017`
@@ -46,7 +45,6 @@ and for the PyLops sparse-linear-operator framework.
 **Do not use for:**
 - General NUFFT theory independent of the package.
 
-
 ## NUFFT GPU
 
 **Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautomemory.bib` before citing.
@@ -61,22 +59,6 @@ and for the PyLops sparse-linear-operator framework.
 
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
-
-## PyLops — root
-
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
-**Concepts:** [[linear-inversion]], [[nufft]]
-
-**Supports TODO:**
-- TODO — not migrated: paper identity or canonical bibliography entry is unresolved.
-
-**Use when TODO:**
-- TODO — use only after the paper is identified and claim support is verified.
-
-**Do not use for TODO:**
-- Evidence until the paper identity and canonical key are verified.
-
 
 ## PyLops — Software/
 
@@ -94,7 +76,6 @@ and for the PyLops sparse-linear-operator framework.
 
 **Do not use for:**
 - A NUFFT-specific algorithm unless PyLops is the implementation being cited.
-
 
 ## See also
 
