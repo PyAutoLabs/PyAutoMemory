@@ -55,7 +55,7 @@ Dynamical models of cluster members to probe the total mass properties of cluste
 COOL-LAMPS IX: A Rare Duo of Quasars Each Lensed by a Single Massive Galaxy Cluster — 2605.13514
 Beyond collective fluctuations: probing micro-image swarms in lensed quasars with intensity interferometry — 2605.02181
 Constraining Axion-like Particles through Multi-epoch Monitoring of Strong Gravitational Lenses — 2602.12863
-Mapping dark matter in the Bullet Cluster using JWST imaging and spectroscopy — 2601.22245
+DONE 2026-11-08 — Mapping dark matter in the Bullet Cluster using JWST imaging and spectroscopy — 2601.22245
 Detecting Strongly-Lensed Supernovae in Wide-field Space Telescope Imaging via Deep Learning — 2512.19886
 Microlensing Black Hole Shadows-II: Constraining Primordial Black Hole Dark Matter using the photon rings of M87 and Sgr A* — 2512.20037
 SLICE -- Combining Strong Lensing and X-ray in AC\,114. Insights into the Merger Scenario
@@ -98,7 +98,7 @@ DONE 2026-09-11 — Strong Lensing Cosmology with Population-level Calibrated Ne
 DONE 2026-09-11 — TDCOSMO. XXVII. JWST-based Lens Models and H$_0$ Measurement of WFI2033, HE0435, and PG1115 — 2608.27566
 Detecting Extragalactic Exoplanets With Fast Radio Burst Nanolensing — 2609.36988
 LUMA: A CNN for Strong Gravitational Lens Searches in Astronomical Imaging — 2609.36857
-JWST lensed quasar dark matter survey V: Hints of self-interacting dark matter from 29 quadruply imaged quasars — 2609.35974
+DONE 2026-11-08 — JWST lensed quasar dark matter survey V: Hints of self-interacting dark matter from 29 quadruply imaged quasars — 2609.35974
 Improving Lens Modelling from Ground-Based Imaging with Deconvolution — 2609.34305
 Constraining the Light Curves of Magnified Stellar Events at z ~ 0.725 — 2609.33925
 SLICE: Unveiling the Multi-Component Merging Core of SPT-CLJ1150-2805 Through Strong-Lensing Mass Modelling — 2609.31944
@@ -249,7 +249,7 @@ Baryonic Imprints on DM Halos: the concentration-mass relation and its dependenc
 Beyond Best-Fits and Model Selection -- Introducing "Reliability" of cusp-core inference of dark matter halos — 2310.20272
 Can prompt cusps of WIMP dark matter be detected as individual gamma-ray sources? — 2310.15214
 The formation of cores in galaxies across cosmic time -- the existence of cores is not in tension with the LCDM paradigm — 2310.13055
-Till the core collapses: the evolution and properties of self-interacting dark matter subhalos — 2310.09910
+DONE 2026-11-08 — Till the core collapses: the evolution and properties of self-interacting dark matter subhalos — 2310.09910
 The abundance of core--collapsed subhalos in SIDM: insights from structure formation in ΛCDM
 Tracking the evolution of satellite galaxies: mass stripping and dark-matter deficient galaxies — 2212.12090
 New Constraints on Warm Dark Matter from the Lyman-α Forest Power Spectrum — 2209.14220
@@ -259,7 +259,7 @@ The shape of dark matter haloes: results from weak lensing in the Ultraviolet Ne
 A lensing multi-messenger channel: Combining LIGO-Virgo-Kagra lensed gravitational-wave measurements with Euclid observations
 Chandra Observations of Spikey: A Possible Self-lensing Supermassive Black Hole Binary System
 The massive relic galaxy NGC 1277 is dark matter deficient. From dynamical models of integral-field stellar kinematics out to five effective radii — 2303.11360
-The impact of baryonic potentials on the gravothermal evolution of self-interacting dark matter haloes — 2306.08028
+DONE 2026-11-08 — The impact of baryonic potentials on the gravothermal evolution of self-interacting dark matter haloes — 2306.08028
 Is the mysterious {\it Punctum} a primordial black hole? — 2608.25423
 
 ## Stats

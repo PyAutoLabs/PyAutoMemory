@@ -135,6 +135,20 @@ status: stub
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
+## Gilman 2026 — JWST lensed quasar survey V: hints of SIDM from 29 quads
+
+**Canonical BibTeX key:** `Gilman2026SIDM`
+**Reference:** JWST lensed quasar dark matter survey V: Hints of self-interacting dark matter from 29 quadruply imaged quasars; arXiv:2609.35974 (submitted to PRD)
+**Concepts:** [[flux-ratio-anomalies]], [[dark-matter-physics]], [[dark-matter-substructure]]
+
+**Supports:**
+- Flux-ratio analysis of 29 JWST quadruply imaged quasars inferring the abundance of core-collapsed haloes and subhaloes (~10^6–10^10.7 M_sun); explaining the data without core collapse requires both more globular clusters and more subhaloes than expected, which the authors read as a hint of self-interacting dark matter over CDM.
+
+**Use when:**
+- The go-to citation for SIDM evidence from strong lensing / flux-ratio anomalies (human note, 2026-10-07). The companion Yukawa-scattering interpretation is arXiv:2610.40766 (not filed).
+
+**Do not use for:**
+- Quantitative cross-section values or the significance of the preference without checking the paper text; the survey numbering is inconsistent across the series (arXiv:2604.05237 is also titled "Survey V"), so cite by arXiv ID.
 
 ## See also
 

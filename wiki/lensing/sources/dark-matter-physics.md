@@ -187,6 +187,35 @@ status: stub
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
+## Zeng 2023 — core collapse of SIDM subhaloes
+
+**Canonical BibTeX key:** `Zeng2023`
+**Reference:** Till the core collapses: the evolution and properties of self-interacting dark matter subhalos; arXiv:2310.09910 (v3 matches the Physical Review D version)
+**Concepts:** [[dark-matter-physics]], [[dark-matter-substructure]]
+
+**Supports:**
+- A hierarchical, linear-cost framework for evolving populations of SIDM subhaloes: subhaloes generally core-collapse faster than field haloes unless the cross-section at orbital velocities is large enough for host evaporation to slow them; core-collapsed subhaloes are proposed to explain the ultra-steep substructure density profiles reported from HST lensing.
+
+**Use when:**
+- Explaining why core-collapsed subhaloes are the SIDM lensing signature (background for `Gilman2026SIDM`).
+
+**Do not use for:**
+- The cross-section needed for core collapse in a typical lens — the number differs between arXiv versions; check v3.
+
+## Zhong 2023 — baryonic potentials and SIDM gravothermal evolution
+
+**Canonical BibTeX key:** `Zhong2023`
+**Reference:** The impact of baryonic potentials on the gravothermal evolution of self-interacting dark matter haloes; arXiv:2306.08028; MNRAS 526, 758–770 (2023)
+**Concepts:** [[dark-matter-physics]]
+
+**Supports:**
+- Semi-analytic gravothermal fluid model with a static baryonic potential, calibrated on N-body runs: baryons change central density, core size and velocity dispersion and speed up both core expansion and collapse; the final DM profile is insensitive to how the baryonic potential grew.
+
+**Use when:**
+- Arguing that baryon-dominated lens galaxies accelerate SIDM core collapse.
+
+**Do not use for:**
+- Lensing-specific predictions; the paper is about halo dynamics, not lensing observables.
 
 ## See also
 

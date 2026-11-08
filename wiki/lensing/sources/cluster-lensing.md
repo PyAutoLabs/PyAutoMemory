@@ -138,6 +138,21 @@ status: stub
 **Supports:**
 - Revisits the observed-vs-simulated galaxy–galaxy strong-lensing excess in clusters: correlated LOS material raises P_GGSL by a few to ~15%, hydro runs give up to 10x more GGSL than DM-only, P_GGSL scales roughly as θ_E^2, and the residual tension depends on the field-of-view definition.
 
+## Rihtaršič 2026 — JWST lens model of the Bullet Cluster
+
+**Canonical BibTeX key:** `Rihtarsic2026`
+**Reference:** Mapping dark matter in the Bullet Cluster using JWST imaging and spectroscopy; arXiv:2601.22245; doi:10.1051/0004-6361/202659214; A&A 710, A207 (2026)
+**Concepts:** [[cluster-lensing]], [[dark-matter-physics]]
+
+**Supports:**
+- A revised strong-lensing model of the Bullet Cluster from JWST NIRCam imaging plus NIRSpec spectroscopy; the added JWST multiple-image systems shrink the uncertainty on the mass-peak / X-ray-peak offset (the classic SIDM test) by about a factor of three.
+
+**Use when:**
+- Citing a current, JWST-era Bullet Cluster lens model, or as the target dataset for scaling PyAutoLens (JAX) cluster modelling: the human flagged it as "probably the end goal" for cluster modelling, and its data are public per the paper's data-availability statement.
+
+**Do not use for:**
+- A specific SIDM cross-section bound or the offset value itself without checking the paper text (verified here from the abstract and publisher listing only).
+
 ## See also
 
 - [[cluster-lensing]]
