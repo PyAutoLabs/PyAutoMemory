@@ -9,8 +9,8 @@ status: stub
 
 ## Suyu 2016 — H0liCOW
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Suyu2016`
+**Reference:** H0LiCOW - I. H0 Lenses in COSMOGRAIL's Wellspring: Program overview; doi:10.1093/mnras/stx483; arXiv:1607.00017; MNRAS
 **Concepts:** [[h0licow]], [[time-delay-cosmography]]
 
 **Supports TODO:**
@@ -25,8 +25,8 @@ status: stub
 
 ## Birrer 2018 — H0liCOW IX
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Birrer2018`
+**Reference:** H0LiCOW - IX. Cosmographic analysis of the doubly imaged quasar SDSS 1206+4332 and a new measurement of the Hubble constant; doi:10.1093/mnras/stz200; arXiv:1809.01274; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[h0licow]], [[lenstronomy]]
 
 **Supports TODO:**

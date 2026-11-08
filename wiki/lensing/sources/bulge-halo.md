@@ -59,8 +59,8 @@ status: stub
 
 ## Oldham 2016 — red nuggets
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Oldham2016`
+**Reference:** Red nuggets grow inside-out: Evidence from gravitational lensing; doi:10.1093/mnras/stw2832; arXiv:1611.00008; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[bulge-halo-decomposition]]
 
 **Supports TODO:**

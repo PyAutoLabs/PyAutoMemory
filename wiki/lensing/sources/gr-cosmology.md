@@ -43,8 +43,8 @@ status: stub
 
 ## Planck 2015 — cosmological parameters
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `PlanckCollaboration2015a`
+**Reference:** Planck 2015 results: XIII. Cosmological parameters; doi:10.1051/0004-6361/201525830; arXiv:1502.01589; A\&A
 **Concepts:** [[gr-tests]]
 
 **Supports TODO:**

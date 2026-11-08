@@ -95,8 +95,8 @@ hopping, and the libraries that implement them.
 
 ## emcee
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Emcee`, `Foreman-Mackey2013`, `emcee`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `emcee`
+**Reference:** emcee : The MCMC Hammer; doi:10.1086/670067; arXiv:1202.3665; Publications of the Astronomical Society of the Pacific
 **Concepts:** [[mcmc-samplers]]
 
 **Supports TODO:**

@@ -64,8 +64,8 @@ filename-inferred and unread.
 
 ## Graham 2016 — galactic bulges and SMBHs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Graham2016`
+**Reference:** Galaxy bulges and their massive black holes: a review; arXiv:1501.02937; ASSL (Galactic Bulges)
 **Concepts:** [[smbh-host-scaling]], [[bulges-vs-pseudobulges]]
 
 **Supports TODO:**
@@ -98,8 +98,8 @@ filename-inferred and unread.
 
 ## Kormendy 2004 — SMBH summary
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Kormendy2004`
+**Reference:** The Stellar-Dynamical Search for Supermassive Black Holes in Galactic Nuclei; doi:10.1146/annurev.astro.33.1.581; arXiv:astro-ph/0306353; Coevolution of Black Holes and Galaxies
 **Concepts:** [[smbh-host-scaling]]
 
 **Supports TODO:**
@@ -184,8 +184,8 @@ filename-inferred and unread.
 
 ## Savorgnan 2016 — SMBH and galaxy I
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Savorgnan2016`
+**Reference:** Supermassive Black Holes and Their Host Spheroids. I. Disassembling Galaxies; doi:10.3847/0067-0049/222/1/10; arXiv:1511.07446; ApJS
 **Concepts:** [[smbh-host-scaling]]
 
 **Supports TODO:**
@@ -216,8 +216,8 @@ filename-inferred and unread.
 
 ## de Nicola 2019 — SMBHs
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Ferrarese2000`, `Ferrarese2000a`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `DeNicola2019a`
+**Reference:** The Fundamental Relation between Supermassive Black Holes and Their Host Galaxies; doi:10.1093/mnras/stz2472; arXiv:1909.01749; MNRAS
 **Concepts:** [[smbh-host-scaling]]
 
 **Supports TODO:**

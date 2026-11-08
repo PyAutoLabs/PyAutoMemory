@@ -45,8 +45,8 @@ SMBHs at z > 4.
 
 ## Mehrgan 2019 — SMBH 40 billion solar masses
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Mehrgan2019`
+**Reference:** A 40 billion solar-mass black hole in the extreme core of Holm 15A, the central galaxy of Abell 85; arXiv:1907.10608; ApJ
 **Concepts:** [[smbh-mass-measurement]], [[smbh-host-scaling]]
 
 **Supports TODO:**
@@ -115,8 +115,8 @@ SMBHs at z > 4.
 
 ## McAlpine 2017 — linking BH growth
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `McAlpine2017`
+**Reference:** The link between galaxy and black hole growth in the EAGLE simulation; arXiv:1701.01122; MNRAS
 **Concepts:** [[smbh-accretion]], [[smbh-host-scaling]]
 
 **Supports TODO:**

@@ -94,8 +94,8 @@ work by core developers / collaborators that uses it.
 
 ## He 2021 — LOS vs sub
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `He2022b`
+**Reference:** Galaxy–galaxy strong lens perturbations: line-of-sight haloes versus lens subhaloes; doi:10.1093/mnras/stac759; arXiv:2110.04512; MNRAS
 **Concepts:** [[line-of-sight-effects]], [[dark-matter-substructure]]
 
 **Supports TODO:**
@@ -209,8 +209,8 @@ work by core developers / collaborators that uses it.
 
 ## AutoLens paper 1 resubmit 2018-02-16
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Nightingale2018`
+**Reference:** AutoLens: Automated modeling of a strong lens's light, mass, and source; doi:10.1093/mnras/sty1264; arXiv:1708.07377; MNRAS
 **Concepts:** [[pyautolens]]
 
 **Supports TODO:**

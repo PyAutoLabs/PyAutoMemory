@@ -128,8 +128,8 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Amorscio 2022 — sensitivity
 
-**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
+**Canonical BibTeX key:** `Amorisco2022`
+**Reference:** Halo concentration strengthens dark matter constraints in galaxy–galaxy strong lensing analyses; doi:10.1093/mnras/stab3527; arXiv:2109.00018; MNRAS
 **Concepts:** [[dark-matter-substructure]]
 
 **Supports TODO:**
@@ -143,8 +143,8 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## He 2017 — substructure halos vs globular clusters
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `He2017`
+**Reference:** Globular clusters vs dark matter haloes in strong lensing observations; doi:10.1093/mnras/sty2260; arXiv:1707.01849; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[dark-matter-substructure]]
 
 **Supports TODO:**
@@ -225,8 +225,8 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Diaz-Rivero 2019 — subhalo without lens model
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `DiazRivero2020`
+**Reference:** Direct detection of dark matter substructure in strong lens images with convolutional neural networks; doi:10.1103/physrevd.101.023515; arXiv:1910.00015; Physical Review D
 **Concepts:** [[dark-matter-substructure]], [[deep-learning-lensing]]
 
 **Supports TODO:**
@@ -341,8 +341,8 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Benitez 2020 — detailed structure of halos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Benitez-Llambay2020`
+**Reference:** The detailed structure and the onset of galaxy formation in low-mass gaseous dark matter haloes; doi:10.1093/mnras/staa2698; arXiv:2004.06124; MNRAS
 **Concepts:** [[dark-matter-substructure]]
 
 **Supports TODO:**
@@ -509,8 +509,8 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Vegetti 2018 — stellar streams / neutrinos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Vegetti2018`
+**Reference:** Constraining sterile neutrino cosmologies with strong gravitational lensing observations at redshift z $\sim$ 0.2; doi:10.1093/mnras/sty2393; arXiv:1801.01505; MNRAS
 **Concepts:** [[dark-matter-substructure]], [[dark-matter-physics]]
 
 **Supports TODO:**

@@ -174,8 +174,8 @@ matters directly for PyAutoLens priors.
 
 ## MASSIVE 9 — photometry catalog
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Goullaud2018`
+**Reference:** The MASSIVE Survey. IX. Photometric Analysis of 35 High-mass Early-type Galaxies with HST WFC3/IR; doi:10.3847/1538-4357/aab1f3; arXiv:1801.08245; ApJ
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -206,8 +206,8 @@ matters directly for PyAutoLens priors.
 
 ## Schombert 2015
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Schombert2015a`
+**Reference:** The structure of galaxies. III. Two structural families of ellipticals; doi:10.1088/0004-6256/150/5/162; arXiv:1509.08381; Astronomical Journal
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -254,8 +254,8 @@ matters directly for PyAutoLens priors.
 
 ## Steinmetz — hierarchical origin of galaxies
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Steinmetz2002`
+**Reference:** The hierarchical origin of galaxy morphologies; doi:10.1016/s1384-1076(02)00102-1; arXiv:astro-ph/0202466; New Astronomy
 **Concepts:** [[massive-ellipticals]]
 
 **Supports TODO:**
@@ -399,8 +399,8 @@ matters directly for PyAutoLens priors.
 
 ## Huang 2012 — three-component ETG models
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Huang2013a`
+**Reference:** The Carnegie-Irvine Galaxy Survey. Iii. the three-component structure of nearby elliptical galaxies; doi:10.1088/0004-637x/766/1/47; arXiv:1212.2639; Astrophysical Journal
 **Concepts:** [[etg-structure]], [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -415,8 +415,8 @@ matters directly for PyAutoLens priors.
 
 ## Oh 2017 — multiple photometric ETG components
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Oh2017`
+**Reference:** Testing the Presence of Multiple Photometric Components in Nearby Early-type Galaxies Using SDSS; doi:10.3847/1538-4357/836/1/115; arXiv:1612.06495; ApJ
 **Concepts:** [[etg-structure]], [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -431,8 +431,8 @@ matters directly for PyAutoLens priors.
 
 ## Oh 2017 — two-component Sérsic local SDSS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Oh2017`
+**Reference:** Testing the Presence of Multiple Photometric Components in Nearby Early-type Galaxies Using SDSS; doi:10.3847/1538-4357/836/1/115; arXiv:1612.06495; ApJ
 **Concepts:** [[etg-structure]], [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -495,8 +495,8 @@ matters directly for PyAutoLens priors.
 
 ## Morishita 2018 — metallicity high-z
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Morishita2018a`
+**Reference:** Metal Deficiency in Two Massive Dead Galaxies at z~2; arXiv:1803.01852; ApJL
 **Concepts:** [[high-redshift-galaxies]]
 
 **Supports TODO:**

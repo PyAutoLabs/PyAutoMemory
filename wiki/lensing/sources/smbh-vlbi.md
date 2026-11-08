@@ -76,8 +76,8 @@ status: stub
 
 ## Edge 2003 — Abell 1201
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
+**Canonical BibTeX key:** `Edge2003`
+**Reference:** A unique small-scale gravitational arc in Abell 1201; doi:10.1086/381193; arXiv:astro-ph/0311205; ApJL
 **Concepts:** [[abell-1201]]
 
 **Supports TODO:**

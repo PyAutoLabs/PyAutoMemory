@@ -14,8 +14,8 @@ and `sources-cluster-lensing.md`.
 
 ## Bartelmann 2016 — weak-lensing summary
 
-**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
+**Canonical BibTeX key:** `Bartelmann2017`
+**Reference:** Weak gravitational lensing; doi:10.4249/scholarpedia.32440; arXiv:1612.06535; Scholarpedia
 **Concepts:** [[weak-lensing]]
 
 **Supports TODO:**

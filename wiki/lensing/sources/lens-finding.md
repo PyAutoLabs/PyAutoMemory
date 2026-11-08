@@ -153,8 +153,8 @@ status: drafted
 
 ## Space Warps 2017 — Spaghetti
 
-**Canonical BibTeX key:** TODO — no unambiguous match in the supplied bibliography
-**Reference:** Space Warps 2017 — Spaghetti
+**Canonical BibTeX key:** `Kung2017`
+**Reference:** Models of gravitational lens candidates from SpaceWarps CFHTLS; doi:10.1093/mnras/stx3012; arXiv:1711.07297; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[lens-finding]], [[space-warps]]
 
 **Supports TODO:**

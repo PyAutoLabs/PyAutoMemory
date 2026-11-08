@@ -145,8 +145,8 @@ machinery used in astrophysics fits.
 
 ## Czekala 2015 — Gaussian-process noise
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Czekala2015`
+**Reference:** Constructing a Flexible Likelihood Function for Spectroscopic Inference; doi:10.1088/0004-637x/812/2/128; arXiv:1412.5177; ApJ
 **Concepts:** [[bayesian-inference]]
 
 **Supports TODO:**
@@ -179,8 +179,8 @@ machinery used in astrophysics fits.
 
 ## 2008.09375 — unidentified arXiv
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Arora2020`
+**Reference:** Using strong gravitational lensing to probe the post reionization HI power spectrum; arXiv:2008.09375
 **Concepts:** [[bayesian-inference]]
 
 **Supports TODO:**

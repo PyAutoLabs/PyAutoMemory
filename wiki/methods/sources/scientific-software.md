@@ -66,8 +66,8 @@ either uses or interoperates with.
 
 ## Colossus 2018
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Diemer2018`, `colossus`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `Diemer2018`
+**Reference:** COLOSSUS: A Python Toolkit for Cosmology, Large-scale Structure, and Dark Matter Halos; doi:10.3847/1538-4365/aaee8c; arXiv:1712.04512; ApJS
 **Concepts:** [[scientific-software]]
 
 **Supports TODO:**
@@ -82,8 +82,8 @@ either uses or interoperates with.
 
 ## numba SC15
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `numba`
+**Reference:** Numba: a LLVM-based Python JIT compiler; doi:10.1145/2833157.2833162; Proceedings of the Second Workshop on the LLVM Compiler Infrastructure in HPC - LLVM '15
 **Concepts:** [[scientific-software]]
 
 **Supports TODO:**

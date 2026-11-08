@@ -74,8 +74,8 @@ status: stub
 
 ## Locuss 2009 — cluster cool-core / BCG offset
 
-**Canonical BibTeX key:** TODO — previous automated match was not sufficiently verified for claim use; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
+**Canonical BibTeX key:** `Sanderson2009`
+**Reference:** LoCuSS: The connection between brightest cluster galaxy activity, gas cooling and dynamical disturbance of X-ray cluster cores; doi:10.1111/j.1365-2966.2009.15214.x; arXiv:0906.1808; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[cluster-lensing]]
 
 **Supports TODO:**
@@ -121,8 +121,8 @@ status: stub
 
 ## Harvey 2015 — non-gravitational interactions
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Harvey2015`
+**Reference:** The nongravitational interactions of dark matter in colliding galaxy clusters; doi:10.1126/science.1261381; arXiv:1503.07675; Science
 **Concepts:** [[cluster-lensing]], [[dark-matter-physics]]
 
 **Supports TODO:**
@@ -137,8 +137,8 @@ status: stub
 
 ## Harvey 2015 — non-gravitational interactions II
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Harvey2015`
+**Reference:** The nongravitational interactions of dark matter in colliding galaxy clusters; doi:10.1126/science.1261381; arXiv:1503.07675; Science
 **Concepts:** [[cluster-lensing]], [[dark-matter-physics]]
 
 **Supports TODO:**

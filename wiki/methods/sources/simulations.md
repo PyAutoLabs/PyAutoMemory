@@ -30,8 +30,8 @@ gas-physics work and pure DM-only studies.
 
 ## IllustrisTNG — Nelson 2017 colour bimodality
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Nelson2018`
+**Reference:** First results from the IllustrisTNG simulations: the galaxy colour bimodality; arXiv:1707.03395; MNRAS
 **Concepts:** [[forward-modelling]]
 
 **Supports TODO:**
@@ -62,8 +62,8 @@ gas-physics work and pure DM-only studies.
 
 ## Genel 2017 — IllustrisTNG size evolution
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Genel2017`
+**Reference:** The size evolution of star-forming and quenched galaxies in the IllustrisTNG simulation; doi:10.1093/mnras/stx3078; arXiv:1707.05327; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[forward-modelling]]
 
 **Supports TODO:**
@@ -78,8 +78,8 @@ gas-physics work and pure DM-only studies.
 
 ## Algorry 2016 — barred galaxies in EAGLE
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Algorry2016`
+**Reference:** Barred galaxies in the EAGLE cosmological hydrodynamical simulation; doi:10.1093/mnras/stx1008; arXiv:1609.05909; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[forward-modelling]]
 
 **Supports TODO:**
@@ -160,8 +160,8 @@ gas-physics work and pure DM-only studies.
 
 ## Pontzen — CDM heats 2015
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Pontzen2014`
+**Reference:** Cold dark matter heats up; doi:10.1038/nature12953; arXiv:1402.1764; Nature
 **Concepts:** [[forward-modelling]]
 
 **Supports TODO:**
@@ -208,8 +208,8 @@ gas-physics work and pure DM-only studies.
 
 ## Oman 2017 — cores wrong
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Oman2017`
+**Reference:** Non-circular motions and the diversity of dwarf galaxy rotation curves; doi:10.1093/mnras/sty2687; arXiv:1706.07478; MNRAS
 **Concepts:** [[forward-modelling]]
 
 **Supports TODO:**
@@ -242,8 +242,8 @@ gas-physics work and pure DM-only studies.
 
 ## Di Cintio 2017 — SIDM
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `DiCintio2017`
+**Reference:** A rumble in the dark: Signatures of self-interacting dark matter in supermassive black hole dynamics and galaxy density profiles; doi:10.1093/mnras/stx1043; arXiv:1701.04410; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[forward-modelling]]
 
 **Supports TODO:**
@@ -258,8 +258,8 @@ gas-physics work and pure DM-only studies.
 
 ## Ferrero 2016 — Tully-Fisher
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Ferrero2017`
+**Reference:** Size matters: Abundance matching, galaxy sizes, and the Tully-Fisher relation in EAGLE; doi:10.1093/mnras/stw2691; arXiv:1607.03100; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[forward-modelling]]
 
 **Supports TODO:**
@@ -292,8 +292,8 @@ gas-physics work and pure DM-only studies.
 
 ## Mukherjee 2019 — SEAGLE II
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
+**Canonical BibTeX key:** `Mukherjee2021`
+**Reference:** SEAGLE - II. Constraints on feedback models in galaxy formation from massive early-type strong-lens galaxies; doi:10.1093/mnras/stab693; arXiv:1901.01095; MNRAS
 **Concepts:** [[forward-modelling]]
 
 **Supports TODO:**

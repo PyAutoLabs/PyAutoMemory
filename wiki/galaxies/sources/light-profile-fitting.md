@@ -189,8 +189,8 @@ methodology and applications.
 
 ## Naab 2009 — minor mergers
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Naab2009`
+**Reference:** Minor mergers and the size evolution of elliptical galaxies; doi:10.1088/0004-637x/699/2/l178; arXiv:0903.1636; Astrophysical Journal Letters
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -317,8 +317,8 @@ methodology and applications.
 
 ## Gadotti 2010 — bars secular evolution
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Gadotti2011`
+**Reference:** Secular evolution and structural properties of stellar bars in galaxies; doi:10.1111/j.1365-2966.2011.18945.x; arXiv:1003.1719; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[light-profile-fitting]]
 
 **Supports TODO:**

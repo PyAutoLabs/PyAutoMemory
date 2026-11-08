@@ -76,8 +76,8 @@ status: stub
 
 ## Keeton 1997 — shear vs ellipticity
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Keeton1997`
+**Reference:** Shear and Ellipticity in Gravitational Lenses; doi:10.1086/304172; arXiv:astro-ph/9610163; The Astrophysical Journal
 **Concepts:** [[shear-ellipticity-degeneracy]]
 
 **Supports TODO:**

@@ -25,8 +25,8 @@ status: stub
 
 ## McKean 2015 — SKA strong lensing
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `McKean2015`
+**Reference:** Strong gravitational lensing with the SKA; doi:10.22323/1.215.0084; arXiv:1502.03362; Advancing Astrophysics with the Square Kilometre Array (AASKA14), PoS
 **Concepts:** [[interferometric-lensing]]
 
 **Supports TODO:**
@@ -58,8 +58,8 @@ status: stub
 
 ## Dye 2017 — modelling ALMA
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Dye2017`
+**Reference:** Modelling high-resolution ALMA observations of strongly lensed highly star-forming galaxies detected by Herschel; doi:10.1093/mnras/sty513; arXiv:1705.05413; MNRAS
 **Concepts:** [[interferometric-lensing]], [[source-reconstruction]]
 
 **Supports TODO:**

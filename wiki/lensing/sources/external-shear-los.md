@@ -60,8 +60,8 @@ status: stub
 
 ## Chirivì 2017 — LOS clusters
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Chirivi2017`
+**Reference:** MACS J0416.1-2403: Impact of line-of-sight structures on strong gravitational lensing modelling of galaxy clusters; doi:10.1051/0004-6361/201731433; arXiv:1706.07815; Astronomy and Astrophysics
 **Concepts:** [[line-of-sight-effects]], [[cluster-lensing]]
 
 **Supports TODO:**

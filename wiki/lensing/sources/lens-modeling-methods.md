@@ -145,8 +145,8 @@ plus field knowledge; verify against PDF before quoting.
 
 ## Tessore 2015 — lensed images of power-law ellipsoids
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Tessore2015`
+**Reference:** The elliptical power law profile lens; doi:10.1051/0004-6361/201526773; arXiv:1507.01819; A\&A
 **Concepts:** [[mass-models]]
 
 **Supports TODO:**
