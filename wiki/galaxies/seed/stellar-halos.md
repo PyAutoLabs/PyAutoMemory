@@ -77,8 +77,8 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Greene 2012 — small sample metals
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Greene2012`
+**Reference:** The Stellar Halos of Massive Elliptical Galaxies; arXiv:1202.4464; ApJ
 **Concepts:** [[stellar-halos]]
 
 **Supports TODO:**

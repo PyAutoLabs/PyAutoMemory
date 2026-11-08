@@ -95,8 +95,8 @@ CTI bias into cosmic-shear measurements.
 
 ## Paykari 2019 — propagating bias
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Paykari2020`
+**Reference:** Euclid preparation. VI. Verifying the performance of cosmic shear experiments; doi:10.1051/0004-6361/201936980; arXiv:astro-ph.co/1910.10521; A\&A
 **Concepts:** [[cti-shape-bias]], [[euclid-vis-cti]]
 
 **Supports TODO:**

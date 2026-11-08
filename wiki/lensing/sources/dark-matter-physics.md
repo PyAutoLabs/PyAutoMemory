@@ -91,8 +91,8 @@ status: stub
 
 ## Navarro 1996 — NFW
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
+**Canonical BibTeX key:** `Navarro1996`
+**Reference:** The Structure of Cold Dark Matter Halos; doi:10.1086/177173; arXiv:astro-ph/9508025; ApJ
 **Concepts:** [[mass-models]] (NFW), [[dark-matter-physics]]
 
 **Supports TODO:**

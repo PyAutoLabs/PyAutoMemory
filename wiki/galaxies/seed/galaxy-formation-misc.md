@@ -270,8 +270,8 @@ review collection.
 
 ## Cooper 2009 — galactic stellar halos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Cooper2010`
+**Reference:** Galactic stellar haloes in the CDM model; doi:10.1111/j.1365-2966.2010.16740.x; arXiv:0910.3211; MNRAS
 **Concepts:** [[stellar-halos]]
 
 **Supports TODO:**

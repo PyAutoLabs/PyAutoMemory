@@ -13,8 +13,8 @@ mitigation via supplementary buried channels.
 
 ## Prodhomme 2011 — impact on Gaia astrometry
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Prodhomme2012`
+**Reference:** The impact of CCD radiation damage on Gaia astrometry - I. Image location estimation in the presence of radiation damage; doi:10.1111/j.1365-2966.2011.19934.x; arXiv:1110.1547; MNRAS
 **Concepts:** [[ccd-trap-physics]]
 
 **Supports TODO:**
