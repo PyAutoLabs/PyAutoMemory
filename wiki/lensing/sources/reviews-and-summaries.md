@@ -160,8 +160,8 @@ introductions or for cross-referencing established field-knowledge.
 
 ## Sofue 2016 — rotation curves spirals
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
+**Canonical BibTeX key:** `Sofue2016`
+**Reference:** Rotation and Mass in the Milky Way and Spiral Galaxies; arXiv:1608.08350
 **Concepts:** [[dark-matter-physics]]
 
 **Supports TODO:**

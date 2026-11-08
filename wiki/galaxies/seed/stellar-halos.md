@@ -109,8 +109,8 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Huang 2017 — stellar halos 1D
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Huang2017`
+**Reference:** Individual stellar haloes of massive galaxies measured to 100 kpc at 0.3 \textlessz \textless0.5 using Hyper Suprime-Cam; doi:10.1093/mnras/stx3200; arXiv:1707.01904; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[stellar-halos]], [[halo-mass-proxies]]
 
 **Supports TODO:**

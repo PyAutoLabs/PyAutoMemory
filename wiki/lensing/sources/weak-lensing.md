@@ -112,8 +112,8 @@ and `sources-cluster-lensing.md`.
 
 ## Hoekstra 2004 — weak-lensing halo shape
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Hoekstra2004`
+**Reference:** Properties of galaxy dark matter halos from weak lensing; doi:10.1086/382726; arXiv:astro-ph/0306515; The Astrophysical Journal
 **Concepts:** [[weak-lensing]]
 
 **Supports TODO:**

@@ -46,8 +46,8 @@ hopping, and the libraries that implement them.
 
 ## Buchner — PyMultiNest
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Buchner2014`, `Johannesen2007`, `pymultinest`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `Buchner2014`
+**Reference:** X-ray spectral modelling of the AGN obscuring region in the CDFS: Bayesian model selection and catalogue; doi:10.1051/0004-6361/201322971; arXiv:1402.0004; A\&A
 **Concepts:** [[nested-sampling]]
 
 **Supports TODO:**
