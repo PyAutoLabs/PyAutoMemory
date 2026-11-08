@@ -42,7 +42,7 @@ status: stub
 
 ## Kochanek 2021 — radial dog
 
-**Canonical BibTeX key:** `Kochanek2021a`
+**Canonical BibTeX key:** `Kochanek2021`
 **Reference:** Overconstrained models of time delay lenses redux: How the angular tail wags the radial dog; arXiv:2003.08395; doi:10.1093/mnras/staa4033; MNRAS
 **Concepts:** [[radial-angular-degeneracy]]
 

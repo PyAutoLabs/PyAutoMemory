@@ -144,7 +144,7 @@ introductions or for cross-referencing established field-knowledge.
 ## Smith 2019 — BH early universe
 
 **Canonical BibTeX key:** `Smith2019`
-**Reference:** Supermassive black holes in the early universe; arXiv:2001.08420; doi:10.1080/00107514.2019.1615715; Contemporary Physics
+**Reference:** Supermassive black holes in the early universe; arXiv:1904.12890; doi:10.1080/00107514.2019.1615715; Contemporary Physics
 **Concepts:** none specific (cross-link `../smbh/`)
 
 **Supports:**
