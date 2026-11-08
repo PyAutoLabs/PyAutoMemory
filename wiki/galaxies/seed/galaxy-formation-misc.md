@@ -30,8 +30,8 @@ review collection.
 
 ## Baugh 1996 — evolution of halos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Baugh1996`
+**Reference:** Evolution of the Bubble sequence in hierarchical models for galaxy formation; doi:10.1093/mnras/283.4.1361; arXiv:astro-ph/9602085; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[stellar-mass-halo-mass-relation]]
 
 **Supports TODO:**
@@ -62,8 +62,8 @@ review collection.
 
 ## Bower 2016 — BH nemesis of galaxy formation
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Bower2017`
+**Reference:** The dark nemesis of galaxy formation: Why hot haloes trigger black hole growth and bring star formation to an end; doi:10.1093/mnras/stw2735; arXiv:1607.07445; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[galaxy-quenching]] (cross-link `../smbh/`)
 
 **Supports TODO:**
@@ -126,8 +126,8 @@ review collection.
 
 ## De Lucia 2006 — BCG formation
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `De-Lucia:2007aa`, `DeLucia2007`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `DeLucia2007`
+**Reference:** The hierarchical formation of the brightest cluster galaxies; doi:10.1111/j.1365-2966.2006.11287.x; arXiv:astro-ph/0606519; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[massive-ellipticals]]
 
 **Supports TODO:**
@@ -142,8 +142,8 @@ review collection.
 
 ## De Lucia 2006 — formation history of ellipticals
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `DeLucia2005`
+**Reference:** The formation history of elliptical galaxies; doi:10.1111/j.1365-2966.2005.09879.x; arXiv:astro-ph/0509725; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -174,8 +174,8 @@ review collection.
 
 ## Guo 2007 — galaxy growth in CDM
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Guo2008a`
+**Reference:** Galaxy growth in the concordance $\Lambda$cDM cosmology; doi:10.1111/j.1365-2966.2007.12619.x; arXiv:0708.1814; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[stellar-mass-halo-mass-relation]]
 
 **Supports TODO:**
@@ -190,8 +190,8 @@ review collection.
 
 ## Guo 2007 — galaxy growth in CDM (b)
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Guo2008a`
+**Reference:** Galaxy growth in the concordance $\Lambda$cDM cosmology; doi:10.1111/j.1365-2966.2007.12619.x; arXiv:0708.1814; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[stellar-mass-halo-mass-relation]]
 
 **Supports TODO:**
@@ -254,8 +254,8 @@ review collection.
 
 ## Oser 2009 — two-phase formation
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Oser2010a`, `Oser:2010aa`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `Oser2010`
+**Reference:** The two phases of galaxy formation; doi:10.1088/0004-637x/725/2/2312; arXiv:1010.1381; Astrophysical Journal
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -350,8 +350,8 @@ review collection.
 
 ## Xie 2014 — size evolution
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Xie2015`
+**Reference:** The size evolution of elliptical galaxies; doi:10.1093/mnras/stu2487; arXiv:1410.2341; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -366,8 +366,8 @@ review collection.
 
 ## UnRead — Belfiore 2017 MaNGA green valley
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Belfiore2017`
+**Reference:** SDSS IV MaNGA - sSFR profiles and the slow quenching of discs in green valley galaxies; doi:10.1093/mnras/sty768; arXiv:1710.05034; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[galaxy-quenching]]
 
 **Supports TODO:**
@@ -382,8 +382,8 @@ review collection.
 
 ## UnRead — Coenda 2017 green valley environment
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Coenda2017`
+**Reference:** Green valley galaxies as a transition population in different environments; doi:10.1093/mnras/stx2707; arXiv:1710.05928; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[galaxy-quenching]]
 
 **Supports TODO:**
@@ -398,8 +398,8 @@ review collection.
 
 ## UnRead — Constantin 2017 bulge morphology CALIFA
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Costantin2017`
+**Reference:** The intrinsic shape of bulges in the CALIFA survey; doi:10.1051/0004-6361/201731823; arXiv:1710.05222; A\&A
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
 
 **Supports TODO:**
@@ -430,8 +430,8 @@ review collection.
 
 ## UnRead — Spindler 2017 MaNGA SF radial
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Spindler2017`
+**Reference:** SDSS-IV MaNGA: The spatial distribution of star formation and its dependence on mass, structure, and environment; doi:10.1093/mnras/sty247; arXiv:1710.05049; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[ifu-spectroscopy]]
 
 **Supports TODO:**
@@ -446,8 +446,8 @@ review collection.
 
 ## UnRead — Ness 2014 stellar labeling (duplicate)
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Ness2015`
+**Reference:** THE CANNON: A DATA-DRIVEN APPROACH to STELLAR LABEL DETERMINATION; doi:10.1088/0004-637x/808/1/16; arXiv:1501.07604; Astrophysical Journal
 **Concepts:** [[gaussian-linear-models]]
 
 **Supports TODO:**

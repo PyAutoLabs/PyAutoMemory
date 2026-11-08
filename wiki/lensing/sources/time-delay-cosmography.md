@@ -75,8 +75,8 @@ status: stub
 
 ## Tagore 2017 — error on H0
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Tagore2017`
+**Reference:** Reducing biases on H0 measurements using strong lensing and galaxy dynamics: Results from the eagle simulation; doi:10.1093/mnras/stx2965; arXiv:1706.07733; MNRAS
 **Concepts:** [[time-delay-cosmography]], [[mass-sheet-degeneracy]]
 
 **Supports TODO:**

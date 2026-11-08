@@ -59,8 +59,8 @@ status: stub
 
 ## Lee 2016 — DM environments Bolshoi-Planck
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Lee2016`
+**Reference:** Properties of dark matter haloes as a function of local environment density; doi:10.1093/mnras/stw3348; arXiv:1610.02108; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[gr-tests]]
 
 **Supports TODO:**

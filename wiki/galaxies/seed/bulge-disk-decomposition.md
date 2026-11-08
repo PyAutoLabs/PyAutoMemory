@@ -45,8 +45,8 @@ models.
 
 ## Brooks 2016 — bulges in cosmological sims
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Brooks2015`
+**Reference:** Bulge formation via mergers in cosmological simulations; doi:10.1007/978-3-319-19378-6_12; arXiv:1511.04095; Galactic Bulges
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
 
 **Supports TODO:**
@@ -61,8 +61,8 @@ models.
 
 ## Christensen 2015 — simulated disk with bulge
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Christensen2014`
+**Reference:** Simulating disc galaxy bulges that are consistent with observed scaling relations; doi:10.1093/mnrasl/slu020; arXiv:1402.2702; Monthly Notices of the Royal Astronomical Society: Letters
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
 
 **Supports TODO:**
@@ -109,8 +109,8 @@ models.
 
 ## Mendez 2007 — bulge intrinsic shape
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Mendez-Abreu2008`
+**Reference:** Structural properties of disk galaxies. I. The intrinsic equatorial ellipticity of bulges; arXiv:0802.0010; A\&A
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
 
 **Supports TODO:**
@@ -141,8 +141,8 @@ models.
 
 ## Mendez 2016 — B/D CALIFA
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Mendez-Abreu2016`
+**Reference:** Two-dimensional multi-component photometric decomposition of CALIFA galaxies; doi:10.1051/0004-6361/201629525; arXiv:1610.05324; Astronomy and Astrophysics
 **Concepts:** [[bulge-disk-decomposition-galaxies]], [[ifu-spectroscopy]]
 
 **Supports TODO:**

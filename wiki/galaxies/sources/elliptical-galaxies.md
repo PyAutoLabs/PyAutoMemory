@@ -62,8 +62,8 @@ survey-specific work in [[sources-massive-ellipticals]].
 
 ## Oosterloo 2002 — extended HI disk
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Oosterloo2002`
+**Reference:** EXTENDED H i DISKS IN DUST LANE ELLIPTICAL GALAXIES 1 Thomas A. Oosterloo and Raffaella Morganti; arXiv:astro-ph/0111141; The Astronomical Journal
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**

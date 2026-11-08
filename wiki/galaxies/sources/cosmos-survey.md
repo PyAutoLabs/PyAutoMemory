@@ -199,8 +199,8 @@ high-z morphology.
 
 ## Balogh 2014 — GEEC2
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Balogh2014`
+**Reference:** The GEEC2 spectroscopic survey of Galaxy groups at 0.8 < z < 1; doi:10.1093/mnras/stu1332; arXiv:1406.4528; MNRAS
 **Concepts:** [[high-redshift-galaxies]]
 
 **Supports TODO:**

@@ -108,8 +108,8 @@ status: stub
 
 ## Xu 2016 — inner structure MST in ETGs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Xu2016`
+**Reference:** The inner structure of early-type galaxies in the Illustris simulation; doi:10.1093/mnras/stx899; arXiv:1610.07605; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[bulge-halo-decomposition]], [[mass-sheet-degeneracy]]
 
 **Supports TODO:**

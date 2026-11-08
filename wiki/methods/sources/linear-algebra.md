@@ -61,8 +61,8 @@ status: stub
 
 ## Ness 2014 — Cannon stellar labels
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Ness2015`
+**Reference:** THE CANNON: A DATA-DRIVEN APPROACH to STELLAR LABEL DETERMINATION; doi:10.1088/0004-637x/808/1/16; arXiv:1501.07604; Astrophysical Journal
 **Concepts:** [[gaussian-linear-models]]
 
 **Supports TODO:**

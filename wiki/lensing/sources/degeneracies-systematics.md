@@ -142,8 +142,8 @@ status: stub
 
 ## Gomer 2023 — NFW + potential / mass
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Gomer2023`
+**Reference:** The ellipticity parameterization for an NFW profile: An overlooked angular structure in strong lens modeling; doi:10.1051/0004-6361/202346308; arXiv:2310.03077; A\&A
 **Concepts:** [[mass-models]], [[radial-angular-degeneracy]]
 
 **Supports TODO:**

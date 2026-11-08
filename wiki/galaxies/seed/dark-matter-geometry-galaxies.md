@@ -46,8 +46,8 @@ work in `../lensing/`.
 
 ## Agustsson 2005 — distance of satellites
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Agustsson2006a`
+**Reference:** The Locations of Satellite Galaxies in a $\Lambda$CDM Universe; doi:10.1086/507084; arXiv:astro-ph/0505272; The Astrophysical Journal
 **Concepts:** [[dm-halo-shapes]]
 
 **Supports TODO:**
@@ -62,8 +62,8 @@ work in `../lensing/`.
 
 ## Aubert 2004 — isotropy of halos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Aubert2004`
+**Reference:** The origin and implications of dark matter anisotropic cosmic infall on ≈ L* haloes; doi:10.1111/j.1365-2966.2004.07883.x; arXiv:astro-ph/0402405; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[dm-halo-shapes]]
 
 **Supports TODO:**
@@ -94,8 +94,8 @@ work in `../lensing/`.
 
 ## Bailin 2008 — anisotropic distribution
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Bailin2008`
+**Reference:** The anisotropic distribution of satellite galaxies; arXiv:0706.1350; MNRAS
 **Concepts:** [[dm-halo-shapes]]
 
 **Supports TODO:**
@@ -158,8 +158,8 @@ work in `../lensing/`.
 
 ## Liao 2016 — segregation of baryons
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Liao2016`
+**Reference:** The segregation of baryons and dark matter during halo assembly; doi:10.1093/mnras/stx1391; arXiv:1610.07592; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[dm-halo-shapes]]
 
 **Supports TODO:**
@@ -302,8 +302,8 @@ work in `../lensing/`.
 
 ## Tenneti — galaxy shapes massive black
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Tenneti2014`
+**Reference:** Galaxy shapes and intrinsic alignments in the MassiveBlack-II simulation; doi:10.1093/mnras/stu586; arXiv:1403.4215; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[dm-halo-shapes]]
 
 **Supports TODO:**
@@ -318,8 +318,8 @@ work in `../lensing/`.
 
 ## Tenneti 2015 — intrinsic alignment disk / ETG
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Tenneti2016`
+**Reference:** Intrinsic alignments of disc and elliptical galaxies in the MassiveBlack-II and Illustris simulations; doi:10.1093/mnras/stw1823; arXiv:1510.07024; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[dm-halo-shapes]]
 
 **Supports TODO:**
@@ -430,8 +430,8 @@ work in `../lensing/`.
 
 ## Zehavi 2017 — assembly bias galaxy content
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Zehavi2017`
+**Reference:** The Impact of Assembly Bias on the Galaxy Content of Dark Matter Halos; doi:10.3847/1538-4357/aaa54a; arXiv:1706.07871; The Astrophysical Journal
 **Concepts:** [[halo-occupation]]
 
 **Supports TODO:**

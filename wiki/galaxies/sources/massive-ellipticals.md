@@ -46,8 +46,8 @@ matters directly for PyAutoLens priors.
 
 ## Goulding 2017 — MASSIVE III X-ray halos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Goulding2016a`
+**Reference:** The MASSIVE Survey. IV. The X-Ray Halos of the Most Massive Early-Type Galaxies in the Nearby Universe; doi:10.3847/0004-637x/826/2/167; arXiv:1604.01764; The Astrophysical Journal
 **Concepts:** [[massive-ellipticals]]
 
 **Supports TODO:**
@@ -78,8 +78,8 @@ matters directly for PyAutoLens priors.
 
 ## Veale 2018 — MASSIVE VII angular momentum
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Veale2017a`
+**Reference:** The MASSIVE Survey - VII. The relationship of angular momentum, stellar mass and environment of early-type galaxies; doi:10.1093/mnras/stx1639; arXiv:1703.08573; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[etg-kinematics]]
 
 **Supports TODO:**
@@ -142,8 +142,8 @@ matters directly for PyAutoLens priors.
 
 ## Goullard 2018 — MASSIVE IX photometric offsets
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Goullaud2018`, `Goullaud2018a`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `Goullaud2018`
+**Reference:** The MASSIVE Survey. IX. Photometric Analysis of 35 High-mass Early-type Galaxies with HST WFC3/IR; doi:10.3847/1538-4357/aab1f3; arXiv:1801.08245; ApJ
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -158,8 +158,8 @@ matters directly for PyAutoLens priors.
 
 ## Greene 2019 — MASSIVE XII
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Greene2019`
+**Reference:** The MASSIVE Survey. XII. Connecting Stellar Populations of Early-type Galaxies to Kinematics and Environment; doi:10.3847/1538-4357/ab01e3; ApJ
 **Concepts:** [[massive-ellipticals]], [[etg-radial-gradients]]
 
 **Supports TODO:**
@@ -238,8 +238,8 @@ matters directly for PyAutoLens priors.
 
 ## de Lucia 2006 — BCG semi-analytic
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `DeLucia2007`
+**Reference:** The hierarchical formation of the brightest cluster galaxies; doi:10.1111/j.1365-2966.2006.11287.x; arXiv:astro-ph/0606519; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[massive-ellipticals]]
 
 **Supports TODO:**
@@ -286,8 +286,8 @@ matters directly for PyAutoLens priors.
 
 ## Rest 2001 — centres of ETGs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Rest2001`
+**Reference:** WFPC2 Images of the Central Regions of Early-Type Galaxies. I. The Data; doi:10.1086/320370; arXiv:astro-ph/0102286; Database
 **Concepts:** [[etg-structure]], [[smbh-scouring]]
 
 **Supports TODO:**

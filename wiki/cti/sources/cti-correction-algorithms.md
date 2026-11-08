@@ -31,8 +31,8 @@ Euclid-specific extension.
 
 ## Bristow 2003 — first-pixel CTI correction
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Bristow2003`
+**Reference:** Application of Model Derived Charge Transfer Inefficiency Corrections to STIS Photometric CCD Data; arXiv:astro-ph/0310714; preprint (astro-ph/0310714)
 **Concepts:** [[forward-model-cti]]
 
 **Supports TODO:**
@@ -47,8 +47,8 @@ Euclid-specific extension.
 
 ## Massey 2009 — CTI correction I
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Massey2010d`
+**Reference:** Pixel-based correction for charge transfer inefficiency in the hubble space telescope advanced camera for surveys; doi:10.1111/j.1365-2966.2009.15638.x; arXiv:0909.0507; MNRAS
 **Concepts:** [[forward-model-cti]], [[arctic-algorithm]]
 
 **Supports TODO:**

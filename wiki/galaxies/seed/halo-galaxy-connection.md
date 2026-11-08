@@ -28,8 +28,8 @@ occupation.
 
 ## Tinker 2018 — most massives
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Tinker2016`
+**Reference:** The Correlation between Halo Mass and Stellar Mass for the Most Massive Galaxies in the Universe; doi:10.3847/1538-4357/aa6845; arXiv:1607.04678; The Astrophysical Journal
 **Concepts:** [[stellar-to-halo-mass]]
 
 **Supports TODO:**
@@ -92,8 +92,8 @@ occupation.
 
 ## Oh 2016 — SDSS multiple-photometric test
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Oh2017`
+**Reference:** Testing the Presence of Multiple Photometric Components in Nearby Early-type Galaxies Using SDSS; doi:10.3847/1538-4357/836/1/115; arXiv:1612.06495; ApJ
 **Concepts:** [[stellar-to-halo-mass]]
 
 **Supports TODO:**

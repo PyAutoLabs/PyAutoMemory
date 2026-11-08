@@ -12,8 +12,8 @@ red dots" puzzle.
 
 ## Akins 2024 — little red dot
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Akins2024`
+**Reference:** COSMOS-Web: The over-abundance and physical nature of "little red dots"--Implications for early galaxy and SMBH assembly; arXiv:2406.10341
 **Concepts:** [[little-red-dots]]
 
 **Supports TODO:**

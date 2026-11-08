@@ -193,8 +193,8 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Ran Li 2016 — substructure
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Li2016b`
+**Reference:** Constraints on the identity of the dark matter from strong gravitational lenses; doi:10.1093/mnras/stw939; arXiv:1512.06507; MNRAS
 **Concepts:** [[dark-matter-substructure]]
 
 **Supports TODO:**
@@ -291,8 +291,8 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Benitez 2020 — detailed structure of halos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Benitez-Llambay2020`
+**Reference:** The detailed structure and the onset of galaxy formation in low-mass gaseous dark matter haloes; doi:10.1093/mnras/staa2698; arXiv:2004.06124; MNRAS
 **Concepts:** [[dark-matter-substructure]]
 
 **Supports TODO:**

@@ -77,8 +77,8 @@ backbone of modern galaxy-population work.
 
 ## Krajnović 2012 — ATLAS3D XVII Sérsic fits
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Krajnovic2013`
+**Reference:** The ATLAS3D project - XVII. Linking photometric and kinematic signatures of stellar discs in early-type galaxies; doi:10.1093/mnras/sts315; arXiv:1210.8167; MNRAS
 **Concepts:** [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -173,8 +173,8 @@ backbone of modern galaxy-population work.
 
 ## MaNGA — Ellison 2017 SF radial gradient
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Ellison2017`
+**Reference:** Star formation is boosted (and quenched) from the inside-out: Radial star formation profiles from MaNGA; doi:10.1093/mnras/stx2882; arXiv:1711.00915; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[ifu-spectroscopy]]
 
 **Supports TODO:**
@@ -189,8 +189,8 @@ backbone of modern galaxy-population work.
 
 ## MaNGA — Greene 2017 angular momentum
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Greene2017`
+**Reference:** SDSS-IV MaNGA: Uncovering the Angular Momentum Content of Central and Satellite Early-type Galaxies; doi:10.3847/1538-4357/aa9bde; arXiv:1708.07845; The Astrophysical Journal
 **Concepts:** [[etg-kinematics]]
 
 **Supports TODO:**
@@ -221,8 +221,8 @@ backbone of modern galaxy-population work.
 
 ## MaNGA — Johnston B/D 2017
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Johnston2016`
+**Reference:** SDSS-IV MaNGA: Bulge-disc decomposition of IFU data cubes (BUDDI); doi:10.1093/mnras/stw2823; arXiv:1611.00609; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
 
 **Supports TODO:**
@@ -254,8 +254,8 @@ backbone of modern galaxy-population work.
 
 ## MaNGA — Li 2016 IMF
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Li2017`
+**Reference:** SDSS-IV MaNGA: Variation of the Stellar Initial Mass Function in Spiral and Early-type Galaxies; doi:10.3847/1538-4357/aa662a; arXiv:1703.04894; The Astrophysical Journal
 **Concepts:** [[etg-radial-gradients]]
 
 **Supports TODO:**
