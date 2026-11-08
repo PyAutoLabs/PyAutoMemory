@@ -263,3 +263,16 @@ were stored in the repository.
 - `Lovick2025` (arXiv:2509.13307) — GPU-accelerated nested sampling for cosmological model comparison → `../methods/sources/samplers.md` (no lensing home; logged in the methods log too).
 
 **queue:** none added. The four existing `reading-queue.md` lines were marked `DONE 2026-10-21` in place.
+
+## 2026-11-08 — SIDM / dark-matter group (queue-intake #121, #128 + two queue lines)
+
+Filed by hand from a Claude Code session because the queue-intake workflow failed for #121 and #128. Metadata was checked against the arXiv and publisher listings via web search; arXiv and A&A could not be fetched directly from the session, so author lists stop at the confirmed lead authors (`and others`).
+
+**cite:**
+- `Rihtarsic2026` (arXiv:2601.22245; A&A 710, A207) — JWST Bullet Cluster lens model → `sources/cluster-lensing.md`. Human note kept: the target dataset for PyAutoLens-JAX cluster modelling (#128).
+- `Gilman2026SIDM` (arXiv:2609.35974) — 29 JWST quads hint at SIDM → `sources/flux-ratios.md`. Human note kept: the go-to SIDM lensing citation (#121).
+- `Zeng2023` (arXiv:2310.09910) — core collapse of SIDM subhaloes → `sources/dark-matter-physics.md`.
+- `Zhong2023` (arXiv:2306.08028; MNRAS 526, 758) — baryons accelerate SIDM gravothermal evolution → `sources/dark-matter-physics.md`.
+
+**queue:** the four `reading-queue.md` lines were marked `DONE 2026-11-08` in place.
+
