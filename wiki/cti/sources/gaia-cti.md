@@ -46,8 +46,8 @@ mitigation via supplementary buried channels.
 
 ## Crowley 2016 — Radiation 30-month Gaia L2
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Crowley2016`
+**Reference:** Radiation effects on the Gaia CCDs after 30 months at L2; doi:10.1117/12.2232078; arXiv:1608.01476; High Energy, Optical, and Infrared Detectors for Astronomy VII
 **Concepts:** [[ccd-trap-physics]]
 
 **Supports TODO:**

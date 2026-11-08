@@ -13,8 +13,8 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Bullock & Johnston 2005 — Milky Way stellar halo simulation
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Bullock2005`
+**Reference:** Tracing Galaxy Formation with Stellar Halos. I. Methods; doi:10.1086/497422; arXiv:astro-ph/0506467; The Astrophysical Journal
 **Concepts:** [[stellar-halos]]
 
 **Supports TODO:**
@@ -61,8 +61,8 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Elias 2018 — stellar halos Milky Way Illustris
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Elias2018a`
+**Reference:** Stellar halos in illustris: Probing the histories of milky way-mass galaxies; doi:10.1093/mnras/sty1718; arXiv:1801.07273; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[stellar-halos]]
 
 **Supports TODO:**

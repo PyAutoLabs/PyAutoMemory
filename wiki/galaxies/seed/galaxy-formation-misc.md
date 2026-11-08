@@ -46,8 +46,8 @@ review collection.
 
 ## Bower 2006 — breaking the galaxy-formation hierarchy
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Bower2006`
+**Reference:** Breaking the hierarchy of galaxy formation; doi:10.1111/j.1365-2966.2006.10519.x; arXiv:astro-ph/0511338; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[galaxy-quenching]]
 
 **Supports TODO:**
@@ -94,8 +94,8 @@ review collection.
 
 ## Bullock 2005 — tracing galaxy formation
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Bullock2005`
+**Reference:** Tracing Galaxy Formation with Stellar Halos. I. Methods; doi:10.1086/497422; arXiv:astro-ph/0506467; The Astrophysical Journal
 **Concepts:** [[stellar-mass-halo-mass-relation]]
 
 **Supports TODO:**
@@ -238,8 +238,8 @@ review collection.
 
 ## Laporte 2013 — growth since z=2
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Laporte2013`
+**Reference:** The growth in size and mass of cluster galaxies since z = 2; doi:10.1093/mnras/stt912; arXiv:1301.5319; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**

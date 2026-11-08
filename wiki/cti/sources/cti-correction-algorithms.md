@@ -63,8 +63,8 @@ Euclid-specific extension.
 
 ## Massey 2010 — CTI correction on HST
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Massey2010d`
+**Reference:** Pixel-based correction for charge transfer inefficiency in the hubble space telescope advanced camera for surveys; doi:10.1111/j.1365-2966.2009.15638.x; arXiv:0909.0507; MNRAS
 **Concepts:** [[forward-model-cti]], [[hubble-acs-cti]]
 
 **Supports TODO:**
@@ -177,8 +177,8 @@ Euclid-specific extension.
 
 ## Short 2013 — analytic CTI model
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Short2013`
+**Reference:** An analytical model of radiation-induced charge transfer inefficiency for CCD detectors; doi:10.1093/mnras/stt114; arXiv:1302.1416; MNRAS
 **Concepts:** [[forward-model-cti]]
 
 **Supports TODO:**

@@ -76,8 +76,8 @@ status: stub
 
 ## Jaroszynski 2012 — shear redshift
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Jaroszynski2012`
+**Reference:** Background, foreground and nearby matter influence on strong gravitational lenses; doi:10.1111/j.1365-2966.2012.21197.x; arXiv:1204.6223; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[external-convergence-shear]]
 
 **Supports TODO:**

@@ -13,8 +13,8 @@ filename-inferred and unread.
 
 ## Ferrarese & Merritt 2000 — M–σ relation
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
+**Canonical BibTeX key:** `Ferrarese2000`
+**Reference:** A Fundamental Relation between Supermassive Black Holes and Their Host Galaxies; doi:10.1086/312838; arXiv:astro-ph/0006053; ApJL
 **Concepts:** [[smbh-host-scaling]]
 
 **Supports TODO:**

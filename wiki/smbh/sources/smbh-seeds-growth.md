@@ -13,8 +13,8 @@ SMBHs at z > 4.
 
 ## Smith 2019 — SMBHs in the early universe
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Smith2019`
+**Reference:** Supermassive black holes in the early universe; doi:10.1080/00107514.2019.1615715; arXiv:1904.12890; Contemporary Physics
 **Concepts:** [[smbh-seeds]], [[high-redshift-galaxies]]
 
 **Supports TODO:**

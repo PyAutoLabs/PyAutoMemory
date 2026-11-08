@@ -91,8 +91,8 @@ status: stub
 
 ## Rana 2017 — cosmic distance ladder
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Rana2017`
+**Reference:** Probing the cosmic distance duality relation using time delay lenses; doi:10.1088/1475-7516/2017/07/010; arXiv:1705.04549; Journal of Cosmology and Astroparticle Physics
 **Concepts:** [[time-delay-cosmography]]
 
 **Supports TODO:**

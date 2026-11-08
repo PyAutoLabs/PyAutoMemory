@@ -161,8 +161,8 @@ work by core developers / collaborators that uses it.
 
 ## Yang 2019 — CO ALMA dust
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Yang2019`, `Yang2019b`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `Yang2019`
+**Reference:** CO, H2O, H2O+ line and dust emission in a z = 3.63 strongly lensed starburst merger at sub-kiloparsec scales; doi:10.1051/0004-6361/201833876; arXiv:1903.00273; Astronomy and Astrophysics
 **Concepts:** [[interferometric-lensing]], [[lensed-source-science]]
 
 **Supports TODO:**

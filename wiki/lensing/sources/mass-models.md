@@ -80,8 +80,8 @@ entry is a stub.
 
 ## Shajib 2019 — is every strong lens happy
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Pub---ae2019`, `Shajib2018`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `Shajib2018`
+**Reference:** Is every strong lens model unhappy in its own way? Uniform modelling of a sample of 13 quadruply+ imaged quasars; doi:10.1093/mnras/sty3397; arXiv:1807.09278; MNRAS
 **Concepts:** [[mass-models]]
 
 **Supports TODO:**

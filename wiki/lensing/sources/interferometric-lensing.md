@@ -9,8 +9,8 @@ status: stub
 
 ## Powell 2020 — VLBI subhalo
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Powell2020`
+**Reference:** A novel approach to visibility-space modelling of interferometric gravitational lens observations at high angular resolution; doi:10.1093/mnras/staa2740; arXiv:2005.03609; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[interferometric-lensing]], [[dark-matter-substructure]]
 
 **Supports TODO:**

@@ -92,8 +92,8 @@ status: stub
 
 ## Sonnenfeld 2018 — radial gradients
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Sonnenfeld2018`, `Sonnenfeld2018a`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `Sonnenfeld2018`
+**Reference:** Evidence for radial variations in the stellar mass-to-light ratio of massive galaxies from weak and strong lensing; doi:10.1093/mnras/sty2262; arXiv:1801.01883; MNRAS
 **Concepts:** [[bulge-halo-decomposition]]
 
 **Supports TODO:**

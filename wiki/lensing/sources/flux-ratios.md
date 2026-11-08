@@ -25,8 +25,8 @@ status: stub
 
 ## Gilman 2018 — probe DM forward model
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Gilman2017`
+**Reference:** Probing the nature of dark matter by forward modelling flux ratios in strong gravitational lenses; doi:10.1093/mnras/sty2261; arXiv:1712.04945; MNRAS
 **Concepts:** [[flux-ratio-anomalies]], [[dark-matter-physics]]
 
 **Supports TODO:**

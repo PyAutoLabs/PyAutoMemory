@@ -9,8 +9,8 @@ status: stub
 
 ## Rizzo 2018 — kinematics of lensed sources
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Rizzo2018`
+**Reference:** A novel 3D technique to study the kinematics of lensed galaxies; doi:10.1093/mnras/sty2594; arXiv:1809.07340; MNRAS
 **Concepts:** [[lensed-source-science]], [[kinematics-and-lensing]]
 
 **Supports TODO:**

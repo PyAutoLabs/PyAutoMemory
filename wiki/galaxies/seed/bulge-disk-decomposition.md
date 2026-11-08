@@ -29,8 +29,8 @@ models.
 
 ## Brooks 2015 — simulated bulge via mergers
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Brooks2015`
+**Reference:** Bulge formation via mergers in cosmological simulations; doi:10.1007/978-3-319-19378-6_12; arXiv:1511.04095; Galactic Bulges
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
 
 **Supports TODO:**

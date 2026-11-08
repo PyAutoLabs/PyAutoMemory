@@ -30,8 +30,8 @@ matters directly for PyAutoLens priors.
 
 ## Greene 2015 — MASSIVE II stellar populations
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Greene2015`, `Greene2015a`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `Greene2015`
+**Reference:** The MASSIVE Survey. II. Stellar Population Trends Out to Large Radius in Massive Early-Type Galaxies; doi:10.1088/0004-637x/807/1/11; arXiv:1504.02483; Astrophysical Journal
 **Concepts:** [[massive-ellipticals]], [[etg-radial-gradients]]
 
 **Supports TODO:**
@@ -126,8 +126,8 @@ matters directly for PyAutoLens priors.
 
 ## Ene 2018 — MASSIVE X kinematic / photometric offsets
 
-**Canonical BibTeX key:** TODO — ambiguous candidates: `Ene2018`, `Ene2018a`.
-**Reference:** TODO — resolve the paper identity against `bibliography/pyautomemory.bib` and an authoritative public record.
+**Canonical BibTeX key:** `Ene2018`
+**Reference:** The MASSIVE Survey - X. Misalignment between kinematic and photometric axes and intrinsic shapes of massive early-type galaxies; doi:10.1093/mnras/sty1649; arXiv:1802.00014; MNRAS
 **Concepts:** [[etg-kinematics]]
 
 **Supports TODO:**

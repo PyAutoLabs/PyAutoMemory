@@ -93,8 +93,8 @@ methodology and applications.
 
 ## Devour 2017 — inclination and dust Sérsic biases
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Devour2017`
+**Reference:** Revealing strong bias in common measures of galaxy properties using new inclination-independent structures; doi:10.1093/mnrasl/slx021; arXiv:1702.06528; Monthly Notices of the Royal Astronomical Society: Letters
 **Concepts:** [[sersic-profile]]
 
 **Supports TODO:**
@@ -125,8 +125,8 @@ methodology and applications.
 
 ## Buitrago 2008 — GOODS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Buitrago2008`
+**Reference:** Size evolution of the most massive galaxies at 1.7<z<3 from GOODS NICMOS survey imaging; doi:10.1086/592836; arXiv:0807.4141; The Astrophysical Journal
 **Concepts:** [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -269,8 +269,8 @@ methodology and applications.
 
 ## Buta 2017 — rings GalZoo
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Buta2017`
+**Reference:** Galactic rings revisited - I. CVRHS classifications of 3962 ringed galaxies from the Galaxy Zoo 2 Database; doi:10.1093/mnras/stx1829; arXiv:1707.06589; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[light-profile-fitting]]
 
 **Supports TODO:**

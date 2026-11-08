@@ -164,8 +164,8 @@ mapping, ALMA molecular-gas dynamics, and the EHT.
 
 ## Do 2014 — SMBHs with thirty-metre telescopes
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
+**Canonical BibTeX key:** `Do2014`
+**Reference:** Prospects for measuring supermassive black hole masses with future extremely large telescopes; doi:10.1088/0004-6256/147/4/93; arXiv:1401.7988; Astronomical Journal
 **Concepts:** [[smbh-mass-measurement]]
 
 **Supports TODO:**
@@ -197,8 +197,8 @@ mapping, ALMA molecular-gas dynamics, and the EHT.
 
 ## Sanghvi 2014 — low-mass quasar disc correction
 
-**Canonical BibTeX key:** TODO — previous automated match failed heading/title consistency; resolve against `bibliography/pyautomemory.bib` before citing.
-**Reference:** TODO — verify the public paper record and canonical BibTeX key.
+**Canonical BibTeX key:** `Sanghvi2014`
+**Reference:** The black hole-host galaxy relation for very low mass quasars; doi:10.1093/mnras/stu1822; arXiv:1409.1948; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[smbh-mass-measurement]]
 
 **Supports TODO:**

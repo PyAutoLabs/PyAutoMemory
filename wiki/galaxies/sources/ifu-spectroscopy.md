@@ -141,8 +141,8 @@ backbone of modern galaxy-population work.
 
 ## Greene 2018 — MaNGA angular momentum early-types
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Greene2017`
+**Reference:** SDSS-IV MaNGA: Uncovering the Angular Momentum Content of Central and Satellite Early-type Galaxies; doi:10.3847/1538-4357/aa9bde; arXiv:1708.07845; The Astrophysical Journal
 **Concepts:** [[etg-kinematics]]
 
 **Supports TODO:**

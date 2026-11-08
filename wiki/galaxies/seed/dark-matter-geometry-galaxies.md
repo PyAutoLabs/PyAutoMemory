@@ -190,8 +190,8 @@ work in `../lensing/`.
 
 ## Libeskind 2014 — universal subhalo accretion
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Libeskind2014`
+**Reference:** The universal nature of subhalo accretion; doi:10.1093/mnras/stu1216; arXiv:1407.0394; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[dm-halo-shapes]]
 
 **Supports TODO:**
