@@ -77,8 +77,8 @@ methodology and applications.
 
 ## Peng 2010 — AJ 139 2097
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Peng2010`
+**Reference:** Detailed decomposition of galaxy images. II. beyond axisymmetric models; doi:10.1088/0004-6256/139/6/2097; arXiv:0912.0731; Astronomical Journal
 **Concepts:** [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -157,8 +157,8 @@ methodology and applications.
 
 ## Hopkins 2006 — merger-driven model
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Hopkins2006`
+**Reference:** A Unified, Merger‐driven Model of the Origin of Starbursts, Quasars, the Cosmic X‐Ray Background, Supermassive Black Holes, and Galaxy Spheroids; doi:10.1086/499298; arXiv:astro-ph/0506398; The Astrophysical Journal Supplement Series
 **Concepts:** [[light-profile-fitting]]
 
 **Supports TODO:**
@@ -173,8 +173,8 @@ methodology and applications.
 
 ## Naab 2007 — ETG formation from initial conditions
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Naab2007`
+**Reference:** Formation of Early‐Type Galaxies from Cosmological Initial Conditions; doi:10.1086/510841; arXiv:astro-ph/0512235; The Astrophysical Journal
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -333,8 +333,8 @@ methodology and applications.
 
 ## Greco 2017 — LSB Hyper Suprime
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Greco2017`
+**Reference:** Illuminating Low-Surface-Brightness Galaxies with the Hyper Suprime-Cam Survey; doi:10.3847/1538-4357/aab842; arXiv:1709.04474
 **Concepts:** [[light-profile-fitting]]
 
 **Supports TODO:**

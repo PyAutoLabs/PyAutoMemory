@@ -29,8 +29,8 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Cooper 2013 — from SAMs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Cooper2013`
+**Reference:** Galactic accretion and the outer structure of galaxies in the CDM model; doi:10.1093/mnras/stt1245; arXiv:1303.6283; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[stellar-halos]]
 
 **Supports TODO:**
@@ -45,8 +45,8 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## D'Souza 2014 — parametrise stellar halos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `DSouza2014`
+**Reference:** Parametrizing the stellar haloes of galaxies; doi:10.1093/mnras/stu1194; arXiv:1404.2123; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[stellar-halos]]
 
 **Supports TODO:**
@@ -93,8 +93,8 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Greene 2013 — sample of 33 metals
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Greene2013`
+**Reference:** The stellar halos of massive elliptical galaxies. II. Detailed abundance ratios at large radius; doi:10.1088/0004-637x/776/2/64; arXiv:1308.2682; Astrophysical Journal
 **Concepts:** [[stellar-halos]]
 
 **Supports TODO:**
@@ -125,8 +125,8 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Huang 2018 — stellar halo env detect
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Huang2018`
+**Reference:** A detection of the environmental dependence of the sizes and stellar haloes of massive central galaxies; doi:10.1093/mnras/sty1136; arXiv:1803.02824; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[stellar-halos]], [[halo-mass-proxies]]
 
 **Supports TODO:**
@@ -141,8 +141,8 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Buitrago 2017 — 6 halos HUDF redshift 0.65
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Buitrago2017a`
+**Reference:** The cosmic assembly of stellar haloes in massive early-type Galaxies; doi:10.1093/mnras/stw3382; arXiv:1602.01846; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[stellar-halos]]
 
 **Supports TODO:**
@@ -189,8 +189,8 @@ to the bulge-halo decompositions in PyAutoLens.
 
 ## Cohen 2018 — Dragonfly V
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Cohen2018`
+**Reference:** The Dragonfly Nearby Galaxies Survey. V. HST /ACS Observations of 23 Low Surface Brightness Objects in the Fields of NGC 1052, NGC 1084, M96, and NGC 4258; doi:10.3847/1538-4357/aae7c8; arXiv:1807.06016; The Astrophysical Journal
 **Concepts:** [[low-surface-brightness]], [[stellar-halos]]
 
 **Supports TODO:**

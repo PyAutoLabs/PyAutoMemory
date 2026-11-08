@@ -14,8 +14,8 @@ review collection.
 
 ## Cole 2000 — hierarchical galaxy formation
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Cole2000`
+**Reference:** Hierarchical galaxy formation; doi:10.1046/j.1365-8711.2000.03879.x; arXiv:astro-ph/0007281; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[galaxy-morphology]]
 
 **Supports TODO:**
@@ -78,8 +78,8 @@ review collection.
 
 ## Boylan-Kolchin 2006 — red mergers
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Boylan-Kolchin2006`
+**Reference:** Red mergers and the assembly of massive elliptical galaxies: The fundamental plane and its projections; doi:10.1111/j.1365-2966.2006.10379.x; arXiv:astro-ph/0601400; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -110,8 +110,8 @@ review collection.
 
 ## Croton 2006 — many lives of AGN
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Croton2006`
+**Reference:** The many lives of active galactic nuclei: Cooling flows, black holes and the luminosities and colours of galaxies; doi:10.1111/j.1365-2966.2005.09675.x; arXiv:astro-ph/0508046; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[galaxy-quenching]] (cross-link `../smbh/`)
 
 **Supports TODO:**
@@ -158,8 +158,8 @@ review collection.
 
 ## Furlong 2017 — size evolution EAGLE
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Furlong2017`
+**Reference:** Size evolution of normal and compact galaxies in the EAGLE simulation; doi:10.1093/mnras/stw2740; arXiv:1510.05645; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -206,8 +206,8 @@ review collection.
 
 ## Kormendy 2009 — structural evolution
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Kormendy2009`
+**Reference:** Structure and formation of elliptical and spheroidal galaxies; doi:10.1088/0067-0049/182/1/216; arXiv:0810.1681; ApJS
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -286,8 +286,8 @@ review collection.
 
 ## Cooper 2015 — in-situ halos
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Cooper2015`
+**Reference:** Formation of in situ stellar haloes in Milky Way-mass galaxies; doi:10.1093/mnras/stv2057; arXiv:1501.04630; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[stellar-halos]]
 
 **Supports TODO:**
@@ -302,8 +302,8 @@ review collection.
 
 ## Amorisco 2017 — contributions to stellar halo
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Amorisco2017`
+**Reference:** Contributions to the accreted stellar halo: An atlas of stellar deposition; doi:10.1093/mnras/stw2229; arXiv:1511.08806; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[stellar-halos]]
 
 **Supports TODO:**
@@ -318,8 +318,8 @@ review collection.
 
 ## Trujillo 2006 — size evolution
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Trujillo2006`
+**Reference:** The Size Evolution of Galaxies since z ∼3: Combining SDSS, GEMS, and FIRES; doi:10.1086/506464; ApJ
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**
@@ -334,8 +334,8 @@ review collection.
 
 ## Roy 2018 — size evolution KiDS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Roy2018`
+**Reference:** Evolution of galaxy size-stellar mass relation from the Kilo-Degree Survey; doi:10.1093/mnras/sty1917; arXiv:1807.06085; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[etg-structure]]
 
 **Supports TODO:**

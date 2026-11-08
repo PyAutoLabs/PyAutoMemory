@@ -60,8 +60,8 @@ occupation.
 
 ## Leauthaud 2017 — lensing is low
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Leauthaud2017`
+**Reference:** Lensing is low: Cosmology, galaxy formation or new physics?; doi:10.1093/mnras/stx258; arXiv:1611.08606; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[stellar-to-halo-mass]], [[scatter-in-smhm]]
 
 **Supports TODO:**
@@ -76,8 +76,8 @@ occupation.
 
 ## Charlton 2017 — halo-mass-on-stellar-mass dependence
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Charlton2017`
+**Reference:** The dependence of halo mass on galaxy size at fixed stellar mass using weak lensing; doi:10.1093/mnras/stx2068; arXiv:1707.04924; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[stellar-to-halo-mass]]
 
 **Supports TODO:**
@@ -108,8 +108,8 @@ occupation.
 
 ## Dutton — dark-matter core 2018
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Dutton12018`
+**Reference:** NIHAO XX: The impact of the star formation threshold on the cusp-core transformation of cold dark matter haloes; arXiv:1811.10625
 **Concepts:** [[dm-rotation-curves]]
 
 **Supports TODO:**

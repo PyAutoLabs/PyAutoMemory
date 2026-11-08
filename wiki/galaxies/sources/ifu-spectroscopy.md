@@ -12,8 +12,8 @@ backbone of modern galaxy-population work.
 
 ## Bacon 2001 — SAURON
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Bacon2001`
+**Reference:** The SAURON project - I. The panoramic integral-field spectrograph; doi:10.1046/j.1365-8711.2001.04612.x; arXiv:astro-ph/0103451; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[ifu-spectroscopy]]
 
 **Supports TODO:**
@@ -28,8 +28,8 @@ backbone of modern galaxy-population work.
 
 ## Cappellari 2008 — inclination dust via IFS
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Cappellari2008`
+**Reference:** Measuring the inclination and mass-to-light ratio of axisymmetric galaxies via anisotropic Jeans models of stellar kinematics; doi:10.1111/j.1365-2966.2008.13754.x; arXiv:0806.0042; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[ifu-spectroscopy]]
 
 **Supports TODO:**
@@ -61,8 +61,8 @@ backbone of modern galaxy-population work.
 
 ## Krajnović 2011 — ATLAS3D II morphology
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Krajnovic2011`
+**Reference:** The ATLAS3D project - II. Morphologies, kinemetric features and alignment between photometric and kinematic axes of early-type galaxies; doi:10.1111/j.1365-2966.2011.18560.x; arXiv:1102.3801; MNRAS
 **Concepts:** [[ifu-spectroscopy]]
 
 **Supports TODO:**
@@ -109,8 +109,8 @@ backbone of modern galaxy-population work.
 
 ## Weijmans 2014 — intrinsic shape ETG kinematic misalignments
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Weijmans2014`
+**Reference:** The ATLAS3D project - XXIV. The intrinsic shape distribution of early-type galaxies; doi:10.1093/mnras/stu1603; arXiv:1408.1099; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[etg-kinematics]]
 
 **Supports TODO:**
@@ -125,8 +125,8 @@ backbone of modern galaxy-population work.
 
 ## Bellstedt 2018 — SLUGGS mass profile to 4 Re
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Bellstedt2018`
+**Reference:** The SLUGGS survey: A comparison of total-mass profiles of early-type galaxies from observations and cosmological simulations, to $\sim$4 effective radii; doi:10.1093/mnras/sty456; arXiv:1803.02373; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[ifu-spectroscopy]], [[etg-radial-gradients]]
 
 **Supports TODO:**

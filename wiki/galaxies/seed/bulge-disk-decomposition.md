@@ -13,8 +13,8 @@ models.
 
 ## Lackner 2012 — astro-motivated B/D decomposition
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Lackner2012`
+**Reference:** Astrophysically motivated bulge-disc decompositions of Sloan Digital Sky Survey galaxies; doi:10.1111/j.1365-2966.2012.20450.x; arXiv:1201.0763; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
 
 **Supports TODO:**
@@ -77,8 +77,8 @@ models.
 
 ## Hopkins 2009 — gas on morphology
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Hopkins2009`
+**Reference:** The effects of gas on morphological transformation in mergers: Implications for bulge and disc demographics; doi:10.1111/j.1365-2966.2009.14983.x; arXiv:0901.4111; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
 
 **Supports TODO:**
@@ -93,8 +93,8 @@ models.
 
 ## Kruk 2017 — offset disks / bars
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Kruk2017`
+**Reference:** Galaxy Zoo: Finding offset discs and bars in SDSS galaxies; doi:10.1093/mnras/stx1026; arXiv:1705.00007; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[bulge-disk-decomposition-galaxies]]
 
 **Supports TODO:**

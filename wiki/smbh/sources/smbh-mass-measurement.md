@@ -31,8 +31,8 @@ mapping, ALMA molecular-gas dynamics, and the EHT.
 
 ## Peterson 2004 — broad-line region
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Peterson2004`
+**Reference:** Central Masses and Broad‐Line Region Sizes of Active Galactic Nuclei. II. A Homogeneous Analysis of a Large Reverberation‐Mapping Database; doi:10.1086/423269; arXiv:astro-ph/0407299; ApJ
 **Concepts:** [[smbh-mass-measurement]]
 
 **Supports TODO:**

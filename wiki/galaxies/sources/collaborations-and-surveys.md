@@ -27,8 +27,8 @@ Survey overview / instrument papers from the `Collaborations/` folder.
 
 ## Eisenstein 2001 — SDSS LRG
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Eisenstein2001`
+**Reference:** Spectroscopic Target Selection for the Sloan Digital Sky Survey: The Luminous Red Galaxy Sample; doi:10.1086/323717; arXiv:astro-ph/0108153; The Astronomical Journal
 **Concepts:** [[stellar-mass-halo-mass-relation]]
 
 **Supports TODO:**

@@ -29,8 +29,8 @@ SMBHs at z > 4.
 
 ## Jin 2017 — super-Eddington
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Jin2017`
+**Reference:** Super-Eddington QSO RX J0439.6-5311 - I. Origin of the soft X-ray excess and structure of the inner accretion flow; doi:10.1093/mnras/stx718; arXiv:1703.07118; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[smbh-accretion]]
 
 **Supports TODO:**

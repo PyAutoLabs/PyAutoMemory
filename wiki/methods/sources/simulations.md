@@ -94,8 +94,8 @@ gas-physics work and pure DM-only studies.
 
 ## Rosas-Guevara 2016 — SMBH in EAGLE
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Rosas-Guevara2016`
+**Reference:** Supermassive black holes in the EAGLE Universe. Revealing the observables of their growth; doi:10.1093/mnras/stw1679; arXiv:1604.00020; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[forward-modelling]] (cross-link `../smbh/`)
 
 **Supports TODO:**
@@ -110,8 +110,8 @@ gas-physics work and pure DM-only studies.
 
 ## Lovell 2018 — dark-matter fractions
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Lovell2018a`
+**Reference:** The fraction of dark matter within galaxies from the IllustrisTNG simulations; doi:10.1093/mnras/sty2339; arXiv:1801.10170; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[forward-modelling]]
 
 **Supports TODO:**
@@ -144,8 +144,8 @@ gas-physics work and pure DM-only studies.
 
 ## Governato 2015 — faint dwarfs
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Governato2015`
+**Reference:** Faint dwarfs as a test of DM models: WDM versus CDM; doi:10.1093/mnras/stu2720; arXiv:1407.0022; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[forward-modelling]]
 
 **Supports TODO:**
@@ -176,8 +176,8 @@ gas-physics work and pure DM-only studies.
 
 ## Pontzen — quenching 2017
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Pontzen2017`
+**Reference:** How to quench a galaxy; doi:10.1093/mnras/stw2627; arXiv:1607.02507; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[forward-modelling]]
 
 **Supports TODO:**
@@ -192,8 +192,8 @@ gas-physics work and pure DM-only studies.
 
 ## Pontzen — sphere 2015
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Pontzen2015a`
+**Reference:** Milking the spherical cow - on aspherical dynamics in spherical coordinates; doi:10.1093/mnras/stv1032; arXiv:1502.07356; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[forward-modelling]]
 
 **Supports TODO:**

@@ -45,8 +45,8 @@ status: stub
 
 ## Fergus 2014 — spectra as nuisance
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Fergus2014`
+**Reference:** S4: A spatial-spectral model for speckle suppression; doi:10.1088/0004-637x/794/2/161; arXiv:1408.4248; Astrophysical Journal
 **Concepts:** [[gaussian-linear-models]]
 
 **Supports TODO:**
@@ -77,8 +77,8 @@ status: stub
 
 ## Wang 2016 — causal Kepler
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Wang2016`
+**Reference:** A causal, data-driven approach to modeling the Kepler data; doi:10.1088/1538-3873/128/967/094503; arXiv:1508.01853; Publ. Astron. Soc. Pac.
 **Concepts:** [[gaussian-linear-models]]
 
 **Supports TODO:**
@@ -93,8 +93,8 @@ status: stub
 
 ## Wang 2017 — pixel-level time-domain
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Wang2017`
+**Reference:** A pixel-level model for event discovery in time-domain imaging; arXiv:1710.02428
 **Concepts:** [[gaussian-linear-models]]
 
 **Supports TODO:**

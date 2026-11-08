@@ -114,8 +114,8 @@ filename-inferred and unread.
 
 ## Heckman & Best 2014 — SMBH coevolution
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Heckman2014`
+**Reference:** The coevolution of galaxies and supermassive black holes: Insights from surveys of the contemporary universe; doi:10.1146/annurev-astro-081913-035722; arXiv:1403.4620; Annual Review of Astronomy and Astrophysics
 **Concepts:** [[smbh-host-scaling]], [[smbh-accretion]]
 
 **Supports TODO:**
