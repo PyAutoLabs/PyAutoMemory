@@ -9,8 +9,8 @@ status: stub
 
 ## Wertz 2018 — pySPT
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Wertz2018`
+**Reference:** A dedicated source-position transformation package: PySPT; doi:10.1051/0004-6361/201732242; arXiv:1801.04151; Astronomy and Astrophysics
 **Concepts:** [[source-position-transformation]], [[mass-sheet-degeneracy]]
 
 **Supports TODO:**
@@ -126,8 +126,8 @@ status: stub
 
 ## Gomer 2018 — quad-plane fundamentals
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Gomer2018`
+**Reference:** The impact of $\Lambda$CDM substructure and baryon-dark matter transition on the image positions of quad galaxy lenses; doi:10.1093/mnras/stx3294; arXiv:1712.07665; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[shear-ellipticity-degeneracy]], [[mass-models]]
 
 **Supports TODO:**

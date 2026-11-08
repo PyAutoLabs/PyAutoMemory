@@ -59,8 +59,8 @@ status: stub
 
 ## Berg 2018 — window on star formation
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Berg2018`
+**Reference:** A Window on the Earliest Star Formation: Extreme Photoionization Conditions of a High-ionization, Low-metallicity Lensed Galaxy at z ∼ 2*; doi:10.3847/1538-4357/aab7fa; arXiv:1803.02340; The Astrophysical Journal
 **Concepts:** [[lensed-source-science]]
 
 **Supports TODO:**
@@ -75,8 +75,8 @@ status: stub
 
 ## Bayliss 2017 — hydrogen in lensed quasar
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Bayliss2017`
+**Reference:** Spatially Resolved Patchy Ly $\alpha$ Emission within the Central Kiloparsec of a Strongly Lensed Quasar Host Galaxy at z = 2.8; doi:10.3847/2041-8213/aa831a; arXiv:1708.00453; The Astrophysical Journal
 **Concepts:** [[lensed-source-science]]
 
 **Supports TODO:**
@@ -91,8 +91,8 @@ status: stub
 
 ## Lipnicky 2018 — hydrogen in lensed spiral
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Lipnicky2018`
+**Reference:** The first detection of neutral hydrogen in emission in a strong spiral lens; doi:10.1093/mnras/sty326; arXiv:1802.01588; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[lensed-source-science]]
 
 **Supports TODO:**
@@ -107,8 +107,8 @@ status: stub
 
 ## James 2018 — Horseshoe UV
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `James2018`
+**Reference:** Mapping UV properties throughout the cosmic horseshoe: Lessons from VLT-MUSE; doi:10.1093/mnras/sty315; arXiv:1802.00455; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[lensed-source-science]], [[cosmic-horseshoe]]
 
 **Supports TODO:**

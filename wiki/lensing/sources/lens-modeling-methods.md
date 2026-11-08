@@ -129,8 +129,8 @@ plus field knowledge; verify against PDF before quoting.
 
 ## Holloway 2024 — Bayesian lens finding
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Holloway2024`
+**Reference:** A Bayesian approach to strong lens finding in the era of wide-area surveys; doi:10.1093/mnras/stae875; arXiv:2311.07455; MNRAS
 **Concepts:** [[lens-finding]], [[bayesian-inference-lensing]], [[pyautolens]]
 
 **Supports TODO:**

@@ -14,8 +14,8 @@ CTI bias into cosmic-shear measurements.
 
 ## Cropper 2013 — defining weak lensing requirements
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Cropper2013`
+**Reference:** Defining a weak lensing experiment in space; doi:10.1093/mnras/stt384; MNRAS
 **Concepts:** [[cti-shape-bias]], [[euclid-vis-cti]]
 
 **Supports TODO:**
@@ -30,8 +30,8 @@ CTI bias into cosmic-shear measurements.
 
 ## Israel 2015 — CTI correction for Euclid
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Israel2015`
+**Reference:** How well can charge transfer inefficiency be corrected? A parameter sensitivity study for iterative correction; doi:10.1093/mnras/stv1660; arXiv:1506.07831; MNRAS
 **Concepts:** [[forward-model-cti]], [[euclid-vis-cti]]
 
 **Supports TODO:**
@@ -79,8 +79,8 @@ CTI bias into cosmic-shear measurements.
 
 ## Kitching 2019 — propagating bias
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Kitching2019`
+**Reference:** Propagating Residual Biases in Cosmic Shear Power Spectra; doi:10.21105/astro.1904.07173; arXiv:1904.07173; The Open Journal of Astrophysics
 **Concepts:** [[cti-shape-bias]], [[euclid-vis-cti]]
 
 **Supports TODO:**

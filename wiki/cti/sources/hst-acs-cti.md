@@ -31,8 +31,8 @@ growth.
 
 ## Anderson 2010 — CTI correction on HST
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Anderson2010`
+**Reference:** An Empirical Pixel-Based Correction for Imperfect CTE. I. HST's Advanced Camera for Surveys; doi:10.1086/656399; arXiv:1007.3987; Publ. Astron. Soc. Pac.
 **Concepts:** [[forward-model-cti]], [[hubble-acs-cti]]
 
 **Supports TODO:**

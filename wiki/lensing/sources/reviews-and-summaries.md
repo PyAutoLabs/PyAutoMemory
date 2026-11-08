@@ -95,8 +95,8 @@ introductions or for cross-referencing established field-knowledge.
 
 ## Kormendy 2015 — elliptical bulge
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Kormendy2015a`
+**Reference:** Elliptical galaxies and bulges of disc galaxies: Summary of progress and outstanding issues; doi:10.1007/978-3-319-19378-6_16; arXiv:1504.03330; Galactic Bulges
 **Concepts:** none specific (cross-link `../galaxies/`)
 
 **Supports TODO:**

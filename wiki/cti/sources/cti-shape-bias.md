@@ -13,8 +13,8 @@ requirements on Euclid VIS CTI correction.
 
 ## Rhodes 2010 — CTI on galaxy shape
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Rhodes2010`
+**Reference:** The Effects of Charge Transfer Inefficiency (CTI) on Galaxy Shape Measurements; doi:10.1086/651675; arXiv:1002.1479; Publ. Astron. Soc. Pac.
 **Concepts:** [[cti-shape-bias]]
 
 **Supports TODO:**
@@ -29,8 +29,8 @@ requirements on Euclid VIS CTI correction.
 
 ## Cropper 2013 — defining WL
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Cropper2013`
+**Reference:** Defining a weak lensing experiment in space; doi:10.1093/mnras/stt384; MNRAS
 **Concepts:** [[cti-shape-bias]]
 
 **Supports TODO:**

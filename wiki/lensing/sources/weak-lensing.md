@@ -80,8 +80,8 @@ and `sources-cluster-lensing.md`.
 
 ## Rhodes 2001 — detection of shear
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Rhodes2001`
+**Reference:** Detection of Cosmic Shear with the Hubble Space Telescope Survey Strip; doi:10.1086/320336; arXiv:astro-ph/0101213; The Astrophysical Journal
 **Concepts:** [[weak-lensing]]
 
 **Supports TODO:**
@@ -128,8 +128,8 @@ and `sources-cluster-lensing.md`.
 
 ## Mandelbaum 2018 — HSC shear calibration
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Mandelbaum2018`
+**Reference:** Weak lensing shear calibration with simulations of the HSC survey; doi:10.1093/mnras/sty2420; arXiv:1710.00885; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[weak-lensing]]
 
 **Supports TODO:**

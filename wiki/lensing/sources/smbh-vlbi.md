@@ -43,8 +43,8 @@ status: stub
 
 ## Chen 2018 — SMBH
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Chen2018`
+**Reference:** A Likely Supermassive Black Hole Revealed by Its Einstein Radius in Hubble Frontier Fields Images; doi:10.3847/1538-4357/aad17b; arXiv:1805.05051; ApJ
 **Concepts:** [[smbh-from-lensing]]
 
 **Supports TODO:**

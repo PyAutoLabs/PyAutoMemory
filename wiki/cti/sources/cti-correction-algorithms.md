@@ -97,8 +97,8 @@ Euclid-specific extension.
 
 ## Massey 2014 — CTI correction II
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Massey2014`
+**Reference:** An improved model of charge transfer inefficiency and correction algorithm for the Hubble Space Telescope; doi:10.1093/mnras/stu012; arXiv:1401.1151; MNRAS
 **Concepts:** [[forward-model-cti]], [[arctic-algorithm]]
 
 **Supports TODO:**
@@ -113,8 +113,8 @@ Euclid-specific extension.
 
 ## Anderson 2010 — CTI correction on HST
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Anderson2010`
+**Reference:** An Empirical Pixel-Based Correction for Imperfect CTE. I. HST's Advanced Camera for Surveys; doi:10.1086/656399; arXiv:1007.3987; Publ. Astron. Soc. Pac.
 **Concepts:** [[forward-model-cti]], [[hubble-acs-cti]]
 
 **Supports TODO:**
@@ -161,8 +161,8 @@ Euclid-specific extension.
 
 ## Israel 2015 — CTI correction for Euclid
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Israel2015`
+**Reference:** How well can charge transfer inefficiency be corrected? A parameter sensitivity study for iterative correction; doi:10.1093/mnras/stv1660; arXiv:1506.07831; MNRAS
 **Concepts:** [[forward-model-cti]], [[euclid-vis-cti]]
 
 **Supports TODO:**
@@ -193,8 +193,8 @@ Euclid-specific extension.
 
 ## Murray 2012 — mitigating CTI
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Murray2012`
+**Reference:** Mitigating radiation-induced charge transfer inefficiency in full-frame CCD applications by 'pumping' traps; doi:10.1117/12.926804; High Energy, Optical, and Infrared Detectors for Astronomy V
 **Concepts:** [[forward-model-cti]]
 
 **Supports TODO:**
@@ -209,8 +209,8 @@ Euclid-specific extension.
 
 ## Murray 2013 — multi-level clocking
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Murray2013`
+**Reference:** Multi-level parallel clocking of CCDs for: improving charge transfer efficiency, clearing persistence, clocked anti-blooming, and generating low-noise backgrounds for pumping; doi:10.1117/12.2024839; UV/Optical/IR Space Telescopes and Instruments: Innovative Technologies and Concepts VI
 **Concepts:** [[forward-model-cti]]
 
 **Supports TODO:**

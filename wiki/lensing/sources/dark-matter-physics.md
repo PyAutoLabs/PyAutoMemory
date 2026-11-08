@@ -26,8 +26,8 @@ status: stub
 
 ## Gómez 2016 — fermionic DM
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Gomez2016`
+**Reference:** Strong lensing by fermionic dark matter in galaxies; doi:10.1103/physrevd.94.123004; arXiv:1610.03442; Physical Review D
 **Concepts:** [[dark-matter-physics]]
 
 **Supports TODO:**
@@ -140,8 +140,8 @@ status: stub
 
 ## Iwanus 2017 — DM signatures in cosmo sims
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Iwanus2017`
+**Reference:** Dark matter annihilation feedback in cosmological simulations - I: Code convergence and idealized haloes; doi:10.1093/mnras/stx1974; arXiv:1707.06770; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[dark-matter-physics]]
 
 **Supports TODO:**

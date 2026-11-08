@@ -12,8 +12,8 @@ work by core developers / collaborators that uses it.
 
 ## Etherington 2022 — automated modelling
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Etherington2022`
+**Reference:** Automated galaxy-galaxy strong lens modelling: No lens left behind; doi:10.1093/mnras/stac2639; arXiv:2202.09201; MNRAS
 **Concepts:** [[lens-modeling-methods]], [[pyautolens]]
 
 **Supports TODO:**

@@ -47,8 +47,8 @@ radiation-induced trap creation, and electrode-level modelling.
 
 ## Wood 2014 — p-channel CTI
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Wood2014`
+**Reference:** Studying charge-trapping defects within the silicon lattice of a p-channel CCD using a single-trap "pumping" technique; doi:10.1088/1748-0221/9/12/c12028; Journal of Instrumentation
 **Concepts:** [[ccd-trap-physics]]
 
 **Supports TODO:**
@@ -79,8 +79,8 @@ radiation-induced trap creation, and electrode-level modelling.
 
 ## Prodhomme 2011 — electrode-level CTI
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Prodhomme2011`
+**Reference:** Electrode level Monte Carlo model of radiation damage effects on astronomical CCDs; doi:10.1111/j.1365-2966.2011.18537.x; arXiv:1103.3630; MNRAS
 **Concepts:** [[ccd-trap-physics]]
 
 **Supports TODO:**
@@ -95,8 +95,8 @@ radiation-induced trap creation, and electrode-level modelling.
 
 ## Seabroke 2011 — Silvaco 3D CTI
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Seabroke2011`
+**Reference:** Modelling Gaia CCD pixels with silvaco 3D engineering software; doi:10.1051/eas/1045077; arXiv:1009.2431; EAS Publications Series
 **Concepts:** [[ccd-trap-physics]]
 
 **Supports TODO:**
@@ -111,8 +111,8 @@ radiation-induced trap creation, and electrode-level modelling.
 
 ## Seabroke 2008 — radiation modelling for Gaia
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Seabroke2008`
+**Reference:** Modelling radiation damage to ESA's Gaia satellite CCDs; doi:10.1117/12.790968; arXiv:0809.0293; High Energy, Optical, and Infrared Detectors for Astronomy III
 **Concepts:** [[ccd-trap-physics]]
 
 **Supports TODO:**
@@ -127,8 +127,8 @@ radiation-induced trap creation, and electrode-level modelling.
 
 ## Seabroke 2013 — supplementary buried channels
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Seabroke2013`
+**Reference:** Digging supplementary buried channels: Investigating the notch architecture within the CCD pixels on ESA's Gaia satellite; doi:10.1093/mnras/stt121; arXiv:1302.1873; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[ccd-trap-physics]]
 
 **Supports TODO:**

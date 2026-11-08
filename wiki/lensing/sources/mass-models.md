@@ -112,8 +112,8 @@ entry is a stub.
 
 ## Li 2018 — SIS / Einstein-mass discrepancy
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Li2018a`
+**Reference:** The Discrepancy between Einstein Mass and Dynamical Mass for SIS and Power-law Mass Models; doi:10.3847/1538-4357/aaab50; arXiv:1803.00819; The Astrophysical Journal
 **Concepts:** [[einstein-radius]], [[mass-models]]
 
 **Supports TODO:**

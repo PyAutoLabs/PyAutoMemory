@@ -11,8 +11,8 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Vegetti 2018 — sterile-neutrino constraints
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Vegetti2018`
+**Reference:** Constraining sterile neutrino cosmologies with strong gravitational lensing observations at redshift z $\sim$ 0.2; doi:10.1093/mnras/sty2393; arXiv:1801.01505; MNRAS
 **Concepts:** [[dark-matter-substructure]], [[dark-matter-physics]]
 
 **Supports TODO:**
@@ -95,8 +95,8 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Despali 2022 — sensitivity
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Despali2022`
+**Reference:** Detecting low-mass haloes with strong gravitational lensing I: the effect of data quality and lensing configuration; doi:10.1093/mnras/stab3537; arXiv:2111.08718; MNRAS
 **Concepts:** [[dark-matter-substructure]]
 
 **Supports TODO:**
@@ -275,8 +275,8 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Sawala 2016 — the chosen few
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Sawala2016`
+**Reference:** The chosen few: The low-mass haloes that host faint galaxies; doi:10.1093/mnras/stv2597; arXiv:1406.6362; MNRAS
 **Concepts:** [[dark-matter-substructure]]
 
 **Supports TODO:**
@@ -493,8 +493,8 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 
 ## Sawala 2016 — the chosen few
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Sawala2016`
+**Reference:** The chosen few: The low-mass haloes that host faint galaxies; doi:10.1093/mnras/stv2597; arXiv:1406.6362; MNRAS
 **Concepts:** [[dark-matter-substructure]]
 
 **Supports TODO:**

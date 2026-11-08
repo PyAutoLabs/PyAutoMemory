@@ -25,8 +25,8 @@ status: stub
 
 ## Atek 2015 — HFF UV LF
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Atek2015`
+**Reference:** New constraints on the faint end of the UV luminosity function at z ∼ 7-8 using the gravitational lensing of the hubble frontier fields cluster A2744; doi:10.1088/0004-637x/800/1/18; arXiv:1409.0512; Astrophysical Journal
 **Concepts:** [[hubble-frontier-fields]], [[lensed-source-science]]
 
 **Supports TODO:**

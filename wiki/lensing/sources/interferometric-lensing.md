@@ -74,8 +74,8 @@ status: stub
 
 ## Enia 2018 — ALMA imaging
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Enia2018`
+**Reference:** The Herschel-ATLAS: Magnifications and physical sizes of 500-μm-selected strongly lensed galaxies; doi:10.1093/mnras/sty021; arXiv:1801.01831; Monthly Notices of the Royal Astronomical Society
 **Concepts:** [[interferometric-lensing]]
 
 **Supports TODO:**

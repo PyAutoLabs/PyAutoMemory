@@ -107,8 +107,8 @@ status: stub
 
 ## Ding 2018 — time-delay model challenge
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Ding2018a`
+**Reference:** Time Delay Lens Modeling Challenge: I. Experimental Design; arXiv:1801.01506
 **Concepts:** [[time-delay-cosmography]]
 
 **Supports TODO:**
@@ -123,8 +123,8 @@ status: stub
 
 ## Grillo 2018 — H0 from SN Refsdal
 
-**Canonical BibTeX key:** TODO — no unique match found in `bibliography/pyautomemory.bib`.
-**Reference:** TODO — identify the public paper record and add or resolve the canonical BibTeX key.
+**Canonical BibTeX key:** `Grillo2018`
+**Reference:** Measuring the Value of the Hubble Constant “à la Refsdal”; doi:10.3847/1538-4357/aac2c9; arXiv:1802.01584; The Astrophysical Journal
 **Concepts:** [[lensed-supernovae]], [[time-delay-cosmography]]
 
 **Supports TODO:**
