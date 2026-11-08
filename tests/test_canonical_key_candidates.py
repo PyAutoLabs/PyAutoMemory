@@ -105,3 +105,18 @@ def test_normalize_arxiv_strips_prefix_and_version():
 
     assert normalize_arxiv("arxiv:1302.1873v1") == "1302.1873"
     assert normalize_arxiv("astro-ph/0101213") == "astro-ph/0101213"
+
+
+def test_title_only_heading_matches_by_normalized_title(tmp_path):
+    page = "# P\n\n## Strong lensing fermionic dark matter galaxies\n\n" + TODO
+    bib = _write(tmp_path, page)
+    (section,) = build_report(tmp_path, bib)
+    assert section.candidates[0]["key"] == "Gomez2016"
+    assert section.candidates[0]["by"] == "title"
+
+
+def test_prefixed_heading_parses_inner_author_year(tmp_path):
+    bib = _write(tmp_path, "# P\n\n## UnRead — Smith 2019 black holes early universe\n\n" + TODO)
+    (section,) = build_report(tmp_path, bib)
+    assert section.author == "smith" and section.year == "2019"
+    assert section.candidates[0]["key"] == "Smith2019"

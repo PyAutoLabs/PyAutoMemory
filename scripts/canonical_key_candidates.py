@@ -29,6 +29,10 @@ from scripts.validate_literature_citations import (
 
 TODO_KEY = re.compile(r"^\*\*Canonical BibTeX key:\*\*\s*TODO\b", re.MULTILINE)
 HEADING = re.compile(r"^(?P<author>.+?)\s+(?P<year>(?:18|19|20)\d\d)[a-z]?\b\s*(?:[—–-]+\s*(?P<tag>.*))?$")
+INNER_AUTHOR_YEAR = re.compile(r"(?:^|[—–-]\s*)(?P<author>[A-Z][A-Za-zÀ-ÿ'\-]+)(?:\s+(?:&|and)\s+[A-Z][A-Za-zÀ-ÿ'\-]+|\s+et\s+al\.?)?\s+(?P<year>(?:18|19|20)\d\d)[a-z]?\b")
+#: Minimum share of a heading's content words that must appear in an entry
+#: title before a title-only match is proposed.
+TITLE_OVERLAP = 0.6
 DOI = re.compile(r"10\.\d{4,9}/[^\s;,)`]+", re.IGNORECASE)
 ARXIV = re.compile(r"\b(\d{4}\.\d{4,5}|[a-z-]+(?:\.[A-Z]{2})?/\d{7})(?:v\d+)?\b")
 ENTRY_START = re.compile(r"^\s*@(?!comment\b|string\b|preamble\b)[A-Za-z]+\s*[({]\s*([^,\s]+)\s*,", re.MULTILINE | re.IGNORECASE)
@@ -134,6 +138,15 @@ def collect_todo_sections(root: Path) -> list[TodoSection]:
                     section.author = re.sub(r"[^a-z]", "", fold(parsed.group("author").split()[0]))
                     section.year = parsed.group("year")
                     section.tag = parsed.group("tag") or ""
+                else:
+                    # "Prefix — Author Year tag" (e.g. "UnRead — Belfiore 2017 MaNGA ...")
+                    inner = INNER_AUTHOR_YEAR.search(heading)
+                    if inner:
+                        section.author = re.sub(r"[^a-z]", "", fold(inner.group("author")))
+                        section.year = inner.group("year")
+                        section.tag = heading[inner.end():].strip(" —–-")
+                    else:
+                        section.tag = heading
                 sections.append(section)
     return sections
 
@@ -165,6 +178,18 @@ def rank(section: TodoSection, entries: list[BibEntry]) -> list[dict]:
                 "key": entry.key, "by": "author+year", "confidence": confidence,
                 "score": round(score, 2), "title": entry.title,
             }
+    if not found and not (section.author and section.year):
+        tag_words = words(section.tag)
+        if len(tag_words) >= 3:
+            for entry in entries:
+                overlap = len(tag_words & words(entry.title))
+                score = overlap / len(tag_words)
+                if score >= TITLE_OVERLAP:
+                    found[entry.key] = {
+                        "key": entry.key, "by": "title",
+                        "confidence": "medium" if score >= 0.8 else "low",
+                        "score": round(score, 2), "title": entry.title,
+                    }
     order = {"exact": 0, "high": 1, "medium": 2, "low": 3}
     return sorted(found.values(), key=lambda c: (order[c["confidence"]], -c["score"], c["key"]))
 
