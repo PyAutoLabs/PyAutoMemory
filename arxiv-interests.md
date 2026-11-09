@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-06
-2026-11-02 — [SMBHs] Bridging Scales: Multi-Zone GRMHD-Informed Anisotropic AGN Feedback in Galaxies — 2610.40784
-2026-11-02 — [Stats] When precise inference is wrong: Diagnosing model misspecification with applications to cosmic dawn and reionisation — 2610.40770
-2026-11-02 — [Dark Matter] The multiple origins of spurs in stellar streams: a challenge for dark matter diagnostics — 2610.41842
-2026-11-02 — [SMBHs] Cosmic merger rates and population evolution of binary black hole mergers in AGN disks — 2610.40787
-2026-11-02 — [Galaxy Formation / Evolution] OASIS III: Bursty star formation drives observed galaxy sizes at $z\geq4$ — 2610.41491
-2026-11-02 — [Stats] Learning Galaxy Kinematics from Spatially Unresolved Spectra — 2610.40789
-2026-11-02 — [SMBHs] How to feed your dragon: the role of turbulence in AGN activity — 2610.40788
-2026-11-02 — [Dark Matter] Dark Halos, Intermediate-Mass BH and Nuclear Stellar Clusters in Dwarf Spheroidals — 2610.41522
-2026-11-02 — [SMBHs] The Broad-Line Region Size-Luminosity Relation in AGN Constrained by the Viewing Angle with the FRADO Model — 2610.41594
-2026-11-02 — [Galaxy Formation / Evolution] The Size-Mass Relation and Inside-Out Quenching of Massive Quiescent Galaxies at $2<z<3$ with JWST PRIMER and MINERVA — 2610.40937
+last digest: 2026-11-09
 2026-11-03 — [SMBHs] EMBER: A Little Red Dot Candidate at $z_{\rm spec}=10.36$ in the Seed Black Hole Era — 2611.00195
 2026-11-03 — [SMBHs] Dynamically defined bulges reveal that early-type galaxies with compact bulges host more massive black holes — 2611.01469
 2026-11-03 — [SMBHs] MARTA: A "little" black hole hidden in a clumpy, metal-poor galaxy at z~3.8 — 2611.00199
@@ -98,3 +88,13 @@ last digest: 2026-11-06
 2026-11-06 — [Galaxy Formation / Evolution] The ALPINE-CRISTAL-JWST Survey: The Tully-Fisher Relation at $z = 4-6$ — 2611.07064
 2026-11-06 — [SMBHs] The HST-Hyperion Survey: X-ray AGN Enhancement in the Hyperion Proto-supercluster — 2611.07047
 2026-11-06 — [Stats] A Machine Learning Approach to Coupling Photoionization & Multi-Frequency Radiation Hydrodynamics — 2611.07162
+2026-11-09 — [SMBHs] Where the red rise stops: JWST/MIRI reveals a near-infrared turnover in the Little Red Dot Abell2744-QSO1 — 2611.09397
+2026-11-09 — [SMBHs] Magnetically Arrested Accretion and Black Hole Spin in a Semi-Analytic Model of Galaxy Formation — 2611.08599
+2026-11-09 — [Dark Matter] The AIDA-TNG project: Galactic bar pattern speeds in self-interacting dark matter — 2611.09852
+2026-11-09 — [Stats] New optimisations for exact, scalable 2D Gaussian process inference, with applications to astronomical time-series — 2611.09198
+2026-11-09 — [Galaxy Formation / Evolution] Jeans Dynamical Constraints on the IMF in Massive Quiescent Galaxies at $z\sim0.7$ from JWST/NIRSpec — 2611.08612
+2026-11-09 — [SMBHs] GW230729\_082317 and GW231118\_005626: A Candidate of Hierarchical Triple Mergers — 2611.09338
+2026-11-09 — [Stats] Phentax: A JAX implementation of the IMRPhenomTHM waveform model — 2611.08596
+2026-11-09 — [Dark Matter] Axion cloud survival in nuclear star clusters — 2611.09236
+2026-11-09 — [SMBHs] KCWI Observations of Type 2 Quasar-driven Ionized Outflows at z~0.1 — 2611.08828
+2026-11-09 — [Dark Matter] Nonstandard Dark Matter at Nonlinear Scales — 2611.08636
