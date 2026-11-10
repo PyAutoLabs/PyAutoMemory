@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-09
-2026-11-03 — [SMBHs] EMBER: A Little Red Dot Candidate at $z_{\rm spec}=10.36$ in the Seed Black Hole Era — 2611.00195
-2026-11-03 — [SMBHs] Dynamically defined bulges reveal that early-type galaxies with compact bulges host more massive black holes — 2611.01469
-2026-11-03 — [SMBHs] MARTA: A "little" black hole hidden in a clumpy, metal-poor galaxy at z~3.8 — 2611.00199
-2026-11-03 — [Dark Matter] See you again: an $80^\circ$ NGC~5466 stellar stream and its constraints on the Galactic dark halo mass — 2611.02653
-2026-11-03 — [Dark Matter] Baryonic feedback and intrinsic alignments in profile: a frequentist view of DES Y3 cosmic shear — 2611.03537
-2026-11-03 — [SMBHs] Introducing Aurora: A New Black Hole Seeding Model With Explicit Environmental Coupling — 2611.01315
-2026-11-03 — [Galaxy Formation / Evolution] Episodic Star Formation - II. The Origin of the Fundamental Metallicity Relation — 2611.03645
-2026-11-03 — [SMBHs] Angular Momentum Transport across Accretion States around a rapidly spinning black hole — 2611.01827
-2026-11-03 — [Galaxy Formation / Evolution] The Stellar-Mass Dependence of Feedback-Driven Outflows in DESI DR1 Star-Forming Galaxies — 2611.02580
-2026-11-03 — [Stats] Accelerating posterior sampling in Bayesian inverse problems with diffusion models: an online-offline perspective — 2611.01300
+last digest: 2026-11-10
 2026-11-04 — [SMBHs] UV spectra of little red dots: Broad-line N/C, gas recycling and black hole masses — 2611.05349
 2026-11-04 — [Dark Matter] 3D dark matter map of the JWST COSMOS-Web field using diffusion-based generative priors — 2611.03786
 2026-11-04 — [Stats] SBi3PCF: cosmology with Dark Energy Survey Year 3 cosmic shear — 2611.05367
@@ -98,3 +88,13 @@ last digest: 2026-11-09
 2026-11-09 — [Dark Matter] Axion cloud survival in nuclear star clusters — 2611.09236
 2026-11-09 — [SMBHs] KCWI Observations of Type 2 Quasar-driven Ionized Outflows at z~0.1 — 2611.08828
 2026-11-09 — [Dark Matter] Nonstandard Dark Matter at Nonlinear Scales — 2611.08636
+2026-11-10 — [SMBHs] Little Red Dots from Primordial Black Holes: Non-Gaussianity and Accretion Evade $μ$-Distortion Constraints — 2611.12861
+2026-11-10 — [SMBHs] AGN Feedback Turbulence in Cool-core Clusters: Evidence from XRISM — 2611.12845
+2026-11-10 — [Galaxy Formation / Evolution] The Cool Circumgalactic Echo of the Stellar-to-Halo Mass Relatio — 2611.12734
+2026-11-10 — [Stats] Two-Phase Rapid Simulation-Based Inference with Differentiable Simulators — 2611.12422
+2026-11-10 — [SMBHs] A Self-Interacting Dark-Matter Route to Supermassive Kerr Black Holes via Super-Eddington Bondi Accretion: Mass-Spin Evolution — 2611.12282
+2026-11-10 — [Dark Matter] Dust in cold and warm dark matter in a suite of zoom-in simulations of Milky Way analogues — 2611.12047
+2026-11-10 — [Stats] FAIR Universe Weak Lensing ML Uncertainty Challenge: Dataset and Cosmological Inference Competition — 2611.10228
+2026-11-10 — [SMBHs] The Edge of the Warm Corona in Active Galactic Nuclei — 2611.12595
+2026-11-10 — [SMBHs] The shape and velocity of black hole coronas — 2611.11884
+2026-11-10 — [Dark Matter] Negative Dynamical Friction in Dark Matter Spikes around Rotating Black Holes — 2611.11380
