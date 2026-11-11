@@ -27,7 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-10
+last digest: 2026-11-11
 2026-11-05 — Euclid Quick Data Release (Q1). Refining the strong lens sample with Space Warps crowd-sourced science — 2611.06667
 2026-11-05 — A pocket of oxygen in a near-pristine galaxy at z=4.2: chemical inhomogeneity at 10-parsec scales in LAP2 — 2611.05487
 2026-11-06 — Confirming HSC strong lens candidates with DESI Spectroscopy. II. Analysis of 80 galaxy-scale systems with lens redshifts above 0.8 — 2611.07524
@@ -37,3 +37,5 @@ last digest: 2026-11-10
 2026-11-09 — Short-term optical monitoring of quadruply imaged quasars — 2611.08633
 2026-11-09 — VENUS: Strong Lens Mass Models and Einstein Radii of 60 Galaxy Clusters — 2611.08630
 2026-11-10 — Revisiting the Einstein Cross with X-shooter spectra: New estimates of accretion disk parameters and broad emission line profiles from microlensing — 2611.12448
+2026-11-11 — Leveraging Lensing-driven Early Warnings: Joint Detectability of lensed Gravitational Waves and their LSST Optical Counterparts — 2611.14343
+2026-11-11 — The PAU Survey: Dissecting strong-lensing systems with narrow-band photometric redshifts — 2611.14229
