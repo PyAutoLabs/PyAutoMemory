@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-10
-2026-11-04 — [SMBHs] UV spectra of little red dots: Broad-line N/C, gas recycling and black hole masses — 2611.05349
-2026-11-04 — [Dark Matter] 3D dark matter map of the JWST COSMOS-Web field using diffusion-based generative priors — 2611.03786
-2026-11-04 — [Stats] SBi3PCF: cosmology with Dark Energy Survey Year 3 cosmic shear — 2611.05367
-2026-11-04 — [Dark Matter] Gaia's dark partners: A new signature of dissipative dark matter — 2611.03793
-2026-11-04 — [SMBHs] How Fast do Black Holes Spin? — 2611.04361
-2026-11-04 — [SMBHs] A full chemical network treatment of supermassive black hole seed formation from dark matter annihilation or decay — 2611.03802
-2026-11-04 — [SMBHs] Towards Self-consistent Modeling of Quasi-Stars and their NLTE Spectra: Implications for Little Red Dots — 2611.03819
-2026-11-04 — [Galaxy Formation / Evolution] How bursty star formation shapes spectral diversity at high redshifts: breaking degeneracies in early galaxy formation — 2611.03790
-2026-11-04 — [SMBHs] The STARfall pathway: forging intermediate-mass black holes through stellar collisions in dense star clusters — 2611.03812
-2026-11-04 — [Stats] Stress-Testing Small-Scale Cosmological Inference With Empirical Galaxy--Halo Connection Models — 2611.04419
+last digest: 2026-11-11
 2026-11-05 — [SMBHs] The M87 Black Hole Mass from JWST and Keck Stellar Kinematics Spanning 10 pc to 10 kpc — 2611.05486
 2026-11-05 — [SMBHs] Spectroscopy-informed Deep Learning Searches for Photometric Little Red Dots in JWST Surveys — 2611.06026
 2026-11-05 — [Dark Matter] DESI DR2 Results III: The Mass of the Milky Way — 2611.05518
@@ -98,3 +88,13 @@ last digest: 2026-11-10
 2026-11-10 — [SMBHs] The Edge of the Warm Corona in Active Galactic Nuclei — 2611.12595
 2026-11-10 — [SMBHs] The shape and velocity of black hole coronas — 2611.11884
 2026-11-10 — [Dark Matter] Negative Dynamical Friction in Dark Matter Spikes around Rotating Black Holes — 2611.11380
+2026-11-11 — [Dark Matter] Depletion of Dark Matter Spikes by Massive Black Hole Mergers — 2611.13170
+2026-11-11 — [Stats] Simulation-Based Inference on EMRI Frequency Tracks: Harmonic Identification and Parameter Constraints from Search Outputs — 2611.14255
+2026-11-11 — [Galaxy Formation / Evolution] Less is More: Unbiased Galaxy Clustering from Fewer Merger Trees — 2611.13083
+2026-11-11 — [SMBHs] Dust Reverberation Mapping of Low-Mass Active Galactic Nuclei — 2611.13181
+2026-11-11 — [Dark Matter] Unidentified Sources in the 4FGL-DR4 Fermi-LAT Catalog as Potential Dark Matter Satellites — 2611.13095
+2026-11-11 — [Stats] Self-Interacting Neutrinos in NEDE and DRMD Cosmologies: Posteriors, profiles and evidence using CLiENT — 2611.13756
+2026-11-11 — [Galaxy Formation / Evolution] Tracing early galaxies back in time: implications for the dearth of galaxies beyond z~15 — 2611.13835
+2026-11-11 — [Dark Matter] Self-interacting dark matter and neutrino masses from MeV-scale lepton-number breaking — 2611.13617
+2026-11-11 — [SMBHs] Revealing Hidden Excitation in the Core of NGC 4696: New Infrared Diagnostic Diagrams with JWST — 2611.13116
+2026-11-11 — [Stats] ExoPlanetLab: Bayesian orbit fitting of Gaia-DR4 epoch astrometry, radial velocities and relative astrometry — 2611.13770
