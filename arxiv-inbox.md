@@ -27,9 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-11
-2026-11-05 — Euclid Quick Data Release (Q1). Refining the strong lens sample with Space Warps crowd-sourced science — 2611.06667
-2026-11-05 — A pocket of oxygen in a near-pristine galaxy at z=4.2: chemical inhomogeneity at 10-parsec scales in LAP2 — 2611.05487
+last digest: 2026-11-12
 2026-11-06 — Confirming HSC strong lens candidates with DESI Spectroscopy. II. Analysis of 80 galaxy-scale systems with lens redshifts above 0.8 — 2611.07524
 2026-11-06 — Dust Survival in Lensed Quiescent Galaxies at $z>1$ Depends on How They Quench — 2611.07237
 2026-11-09 — Lessons from double-plane lenses for galaxy profiles, the Hubble tension, and the mass-sheet degeneracy — 2611.09856
