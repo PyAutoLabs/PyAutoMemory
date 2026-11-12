@@ -117,3 +117,5 @@ documented in full at <https://pyautoscientist.readthedocs.io>.
 
 Licence: structure and tooling MIT; wiki content CC BY 4.0 — see
 [LICENSE](LICENSE).
+
+<sub><i><a href="https://www.youtube.com/watch?v=4k6nSd2t4B0">i remember, i remember, i remember</a></i></sub>
