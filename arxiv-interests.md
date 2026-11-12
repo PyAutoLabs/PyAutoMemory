@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-11
-2026-11-05 — [SMBHs] The M87 Black Hole Mass from JWST and Keck Stellar Kinematics Spanning 10 pc to 10 kpc — 2611.05486
-2026-11-05 — [SMBHs] Spectroscopy-informed Deep Learning Searches for Photometric Little Red Dots in JWST Surveys — 2611.06026
-2026-11-05 — [Dark Matter] DESI DR2 Results III: The Mass of the Milky Way — 2611.05518
-2026-11-05 — [Galaxy Formation / Evolution] The impact of Population III stars on the elemental enrichment of ultra-faint galaxies in the FIRE-3 zoom-in simulations — 2611.05589
-2026-11-05 — [SMBHs] Revisiting the Stellar-Dynamical Mass of the Central Black Hole in NGC 3227 — 2611.05547
-2026-11-05 — [Dark Matter] Dynamics of self-gravitating halos with decaying dark matter — 2611.05474
-2026-11-05 — [Galaxy Formation / Evolution] AGN Host Galaxies in COSMOS-Web: Linking Structural Evolution and Star Formation Quenching up to $z=5$ — 2611.06443
-2026-11-05 — [Dark Matter] Gravitational-Wave Microlensing as a Probe of Compact Object Population — 2611.05947
-2026-11-05 — [Stats] Evolutionary Map of the Universe (EMU): Selection of active galactic nuclei and star-formation emission with machine-learning techniques — 2611.06190
-2026-11-05 — [SMBHs] ReveaLLAGN 2: Exploring the Nuclear Gas and Stellar Kinematics of Nearby LLAGNs with JWST/NIRSpec IFU — 2611.05496
+last digest: 2026-11-12
 2026-11-06 — [Dark Matter] Probing the Seed Effect of Supermassive Primordial Black Holes with Weak Gravitational Lensing — 2611.07574
 2026-11-06 — [SMBHs] Black Hole Seeds and Little Red Dots: Connecting Formation and Growth with a JWST Multi-Cycle Treasury Program — 2611.07006
 2026-11-06 — [Stats] Is Morphology All You Need? Quantifying Imprints of Past Star Formation in the Present-Day Morphologies of Galaxies — 2611.07373
