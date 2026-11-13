@@ -214,6 +214,43 @@ status: stub
 **Supports:**
 - Argues analytically that generalized shape degeneracies, not the mass-sheet or source-position transformation, drive <30 kpc differences between cluster mass maps; they are suppressed near tight image groupings and shift time delays by ~1% (up to ~10% for some sources) in MACS J0416.
 
+## Johnson 2026 — double-plane lenses constrain the mass sheet
+
+**Canonical BibTeX key:** `Johnson2026DoublePlane`
+**Reference:** Lessons from double-plane lenses for galaxy profiles, the Hubble tension, and the mass-sheet degeneracy; arXiv:2611.09856
+**Concepts:** [[mass-sheet-degeneracy]], [[time-delay-cosmography]], [[hubble-tension]]
+
+**Supports:**
+- Double-plane lenses are still subject to the mass-sheet degeneracy, but with a prior on the relative expansion history (the cosmological scaling factor) the imaging alone constrains it, with no time delays, velocity dispersions or H0 prior needed.
+- The imaging is sensitive to one specific combination of the mass-sheet components of the two lens planes, not to each separately.
+- Applies literature scaling factors for J0946 and AGEL0353, a point-image measurement for J1721 (the "Einstein zig-zag" lens) and a reference Ωm to bound the mass-sheet component of each system.
+- Images of a second source can improve H0 from an individual time-delay lens by up to ~50%, depending on key assumptions.
+- Forecasts that Euclid and LSST double-plane samples will strongly constrain the population of mass sheets in lens galaxies, with knock-on value for H0, dark energy and dark-matter profiles.
+
+**Use when:**
+- Arguing that double-source-plane systems break the MSD from imaging alone (given an expansion-history prior), or motivating a population-level mass-sheet prior for time-delay H0.
+
+**Do not use for:**
+- A measured H0 or dark-energy result; the ~50% gain is a forecast that depends on assumptions, and the single-system mass-sheet bounds lean on literature scaling factors.
+
+## Bowden 2026 — compound-lens mass-sheet biases in double-source-plane cosmology
+
+**Canonical BibTeX key:** `Bowden2026`
+**Reference:** Can we constrain cosmology with compound gravitational lenses?; arXiv:2611.15714 (submitted to MNRAS)
+**Concepts:** [[mass-sheet-degeneracy]], [[gr-tests]], [[selection-effects]]
+
+**Supports:**
+- In double-source-plane lenses, compound lensing by the first source introduces extra mass-sheet transformations that bias the recovered distance ratio β.
+- Simulations based on SDSS J0946+1006 with varied source-1 mass distributions show a strong correlation between source 1's stellar-to-halo mass and the recovered β.
+- In a mock Euclid DSPL catalogue, source-1 properties are poorly constrained at Euclid resolution, so the correlated bias is hidden inside the statistical error rather than removed.
+- Flat wCDM (w0, Ωm) inferred from the full mock Euclid sample is biased; restricting to a well-modelled "gold" sub-sample brings it to within ~2σ (Euclid) and ~1σ (HST-like imaging) of the truth.
+
+**Use when:**
+- Citing a systematic for DSPL cosmology from the mass of the intermediate (first-source) plane, or justifying a gold-sample cut and sufficient source-1 model complexity.
+
+**Do not use for:**
+- Results from real data; all conclusions come from simulated J0946-like systems and a mock Euclid catalogue.
+
 ## See also
 
 - [[mass-sheet-degeneracy]]

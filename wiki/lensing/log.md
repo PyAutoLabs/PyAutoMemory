@@ -276,3 +276,29 @@ Filed by hand from a Claude Code session because the queue-intake workflow faile
 
 **queue:** the four `reading-queue.md` lines were marked `DONE 2026-11-08` in place.
 
+
+## 2026-11-13 — Catch-up since 2026-11-08
+
+`/catch_up lensing`: 103 candidates (queue 85, inbox history 13, arXiv gap-fill 5), human-confirmed tiers. Every entry was verified against the arXiv API; claims are scoped to the abstracts. No journal record yet unless noted.
+
+**intake** (full section):
+- `EuclidDR1EclipseC` (arXiv:2611.15888) — ECLIPSE C, PyAutoLens-JAX modelling of the DR1 candidates → `sources/pyautolens-papers.md`.
+- `EuclidDR1EclipseA` (arXiv:2611.15883) — ECLIPSE A, DR1 strong-lens catalogue → `sources/lens-finding.md`.
+- `EuclidDR1EclipseB` (arXiv:2611.15886) — ECLIPSE B, DR1 discovery pipeline → `sources/lens-finding.md`.
+- `EuclidDR1EclipseD` (arXiv:2611.15877) — ECLIPSE D, photo-z and lens census → `sources/lens-statistics.md`.
+- `Sonnenfeld2026` (arXiv:2610.19835; EPJ Plus 141, 1099) — strong lensing with Euclid review → `sources/reviews-and-summaries.md`.
+- `Johnson2026DoublePlane` (arXiv:2611.09856) — mass-sheet degeneracy in double-plane lenses → `sources/degeneracies-systematics.md`.
+- `Bowden2026` (arXiv:2611.15714) — compound-lens MSTs bias DSPL distance ratios → `sources/degeneracies-systematics.md`.
+- `Tajalli2026` (arXiv:2608.20454) — scales on which lensing constrains low-mass perturbers → `sources/dark-matter-substructure.md`.
+- `vandenBosch2026` (arXiv:2611.09546) — transient lensing of core-collapsing SIDM haloes → `sources/dark-matter-physics.md`.
+
+**cite** (compact stub):
+- `EuclidDR1NISPArcs` (2611.15891), `Geng2026` (2611.14229) → `sources/lens-statistics.md`.
+- `Li2026HSCDESI` (2611.07524) → `sources/lens-finding.md`; `Normann2026` (2611.14678) → `sources/specific-lenses.md`.
+- `Treu2026Review` (2610.19598) → `sources/time-delay-cosmography.md`.
+- `Holloway2026` (2609.21699), `Ballard2026` (2609.08573) → `sources/gr-cosmology.md`.
+- `Knabel2026` (2609.03089), `Mozumdar2026` (2609.09411) → `sources/kinematics.md`; `Johnson2026LOS` (2609.11652) → `sources/external-shear-los.md`.
+- `Li2026SIDMStars` (2611.14800) → `sources/dark-matter-physics.md`; `Keeley2025` (2511.07765) → `sources/flux-ratios.md`; `Campbell2026` (2607.02663) → `sources/deep-learning-lensing.md`.
+- `Paic2026` (2609.34305), `Meena2026` (2609.08649; J. Astrophys. Astron.) → `sources/lens-modeling-methods.md`; `Oguri2026` (2611.08630) → `sources/cluster-lensing.md`.
+
+**queue:** at the human's request, filed papers stay on the reading list. The 12 promoted queue lines were left open, not marked DONE. Open lines were appended for the 13 newly filed papers that were not already queued and for 3 queue-tier papers (2611.12448, 2611.08633, 2611.15056). 9 off-topic queue lines were skipped and left untouched.

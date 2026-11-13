@@ -293,6 +293,35 @@ plus field knowledge; verify against PDF before quoting.
 **Do not use for:**
 - Attributing the method to PyAutoLens or Herculens — this analysis uses GLEE.
 
+## Paic 2026 — STARRED deconvolution before lens modelling of ground-based imaging
+
+**Canonical BibTeX key:** `Paic2026`
+**Reference:** Improving Lens Modelling from Ground-Based Imaging with Deconvolution; arXiv:2609.34305 (accepted, MDPI Galaxies)
+**Concepts:** [[hsc-survey-lenses]], [[einstein-radius]], [[mass-models]]
+
+**Supports:**
+- Proposes STARRED starlet-regularised deconvolution as a preprocessing step for HSC-SSP lens modelling; on seven HSC-like mocks the resolution boost from ~0.6" to ~0.15" gives improved accuracy and sub-3% precision on the Einstein radius and mass axis ratio.
+
+**Use when:**
+- Citing deconvolution as a way to model large ground-based lens samples (HSC, LSST) without space-based follow-up.
+
+**Do not use for:**
+- Results on real HSC lenses — validation is on mocks only.
+
+## Meena 2026 — LensFactory.jl
+
+**Canonical BibTeX key:** `Meena2026`
+**Reference:** LensFactory.jl: A general-purpose strong lens modeling package; arXiv:2609.08649; doi:10.1007/s12036-026-10197-6; Journal of Astrophysics and Astronomy (2026)
+**Concepts:** [[cluster-lensing]], [[mass-models]]
+
+**Supports:**
+- Open-source Julia strong-lens modelling package with single- and multi-plane lensing, analytic profiles and native multi-threading (cluster-scale reconstructions in hours on a desktop); validated on the Ares/Hera simulated clusters and on JWST SMACS J0723 (image-plane RMS 0.46"), and introduces "singularity maps" to compare higher-order derivatives of the lensing potential between models.
+
+**Use when:**
+- Listing alternative (non-Python) lens-modelling codes, especially for cluster-scale work.
+
+**Do not use for:**
+- Pixelized-source or extended-arc modelling capability claims — the abstract describes analytic profiles and point-image constraints; check the paper.
 
 ## See also
 
