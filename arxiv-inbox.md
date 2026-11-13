@@ -27,9 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-12
-2026-11-06 — Confirming HSC strong lens candidates with DESI Spectroscopy. II. Analysis of 80 galaxy-scale systems with lens redshifts above 0.8 — 2611.07524
-2026-11-06 — Dust Survival in Lensed Quiescent Galaxies at $z>1$ Depends on How They Quench — 2611.07237
+last digest: 2026-11-13
 2026-11-09 — Lessons from double-plane lenses for galaxy profiles, the Hubble tension, and the mass-sheet degeneracy — 2611.09856
 2026-11-09 — Through Ups and Downs: the Transient Lensing Behaviour of SIDM halos undergoing Core Collapse — 2611.09546
 2026-11-09 — Short-term optical monitoring of quadruply imaged quasars — 2611.08633
@@ -37,3 +35,9 @@ last digest: 2026-11-12
 2026-11-10 — Revisiting the Einstein Cross with X-shooter spectra: New estimates of accretion disk parameters and broad emission line profiles from microlensing — 2611.12448
 2026-11-11 — Leveraging Lensing-driven Early Warnings: Joint Detectability of lensed Gravitational Waves and their LSST Optical Counterparts — 2611.14343
 2026-11-11 — The PAU Survey: Dissecting strong-lensing systems with narrow-band photometric redshifts — 2611.14229
+2026-11-13 — Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) A: Strong lens catalogue overview — 2611.15883
+2026-11-13 — Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) C: Lens modelling pipeline overview — 2611.15888
+2026-11-13 — Localization of gravitational-wave source behind galaxy clusters by gravitational-wave lensing — 2611.16916
+2026-11-13 — Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) B: Discovery pipeline overview — 2611.15886
+2026-11-13 — Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) D: Photometric redshifts and the first census of strong lenses in the galaxy evolution framework — 2611.15877
+2026-11-13 — Euclid Data Release 1 (DR1). NISP spectroscopy of gravitational arcs and multiple images — 2611.15891
