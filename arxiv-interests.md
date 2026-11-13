@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-12
-2026-11-06 — [Dark Matter] Probing the Seed Effect of Supermassive Primordial Black Holes with Weak Gravitational Lensing — 2611.07574
-2026-11-06 — [SMBHs] Black Hole Seeds and Little Red Dots: Connecting Formation and Growth with a JWST Multi-Cycle Treasury Program — 2611.07006
-2026-11-06 — [Stats] Is Morphology All You Need? Quantifying Imprints of Past Star Formation in the Present-Day Morphologies of Galaxies — 2611.07373
-2026-11-06 — [SMBHs] Violent relaxation in hierarchical stellar systems: pathways toward massive black hole formation in the early Universe — 2611.07546
-2026-11-06 — [SMBHs] AGN Archaeology: A Systematic Search for Fading AGN in MaNGA — 2611.07028
-2026-11-06 — [SMBHs] The complex periodic variability of PKS 0301-243: hints of a supermassive black hole binary candidate — 2611.08332
-2026-11-06 — [Dark Matter] Latest $ν$s from the Earliest Galaxies: Probing neutrino self-interactions with JWST — 2611.07013
-2026-11-06 — [Galaxy Formation / Evolution] The ALPINE-CRISTAL-JWST Survey: The Tully-Fisher Relation at $z = 4-6$ — 2611.07064
-2026-11-06 — [SMBHs] The HST-Hyperion Survey: X-ray AGN Enhancement in the Hyperion Proto-supercluster — 2611.07047
-2026-11-06 — [Stats] A Machine Learning Approach to Coupling Photoionization & Multi-Frequency Radiation Hydrodynamics — 2611.07162
+last digest: 2026-11-13
 2026-11-09 — [SMBHs] Where the red rise stops: JWST/MIRI reveals a near-infrared turnover in the Little Red Dot Abell2744-QSO1 — 2611.09397
 2026-11-09 — [SMBHs] Magnetically Arrested Accretion and Black Hole Spin in a Semi-Analytic Model of Galaxy Formation — 2611.08599
 2026-11-09 — [Dark Matter] The AIDA-TNG project: Galactic bar pattern speeds in self-interacting dark matter — 2611.09852
@@ -88,3 +78,13 @@ last digest: 2026-11-12
 2026-11-11 — [Dark Matter] Self-interacting dark matter and neutrino masses from MeV-scale lepton-number breaking — 2611.13617
 2026-11-11 — [SMBHs] Revealing Hidden Excitation in the Core of NGC 4696: New Infrared Diagnostic Diagrams with JWST — 2611.13116
 2026-11-11 — [Stats] ExoPlanetLab: Bayesian orbit fitting of Gaia-DR4 epoch astrometry, radial velocities and relative astrometry — 2611.13770
+2026-11-13 — [SMBHs] The Black Hole Mass of the Sunflower Galaxy NGC 5055: Direct Measurement via Stellar Kinematics with Keck/OSIRIS Laser Guide Star Adaptive Optics — 2611.16490
+2026-11-13 — [SMBHs] Double Blandford: Resistive GRMHD simulations of accreting black holes simultaneously launch winds and jets — 2611.16641
+2026-11-13 — [Dark Matter] Probing Ultralight Higher-spin Dark Matter using Stellar Kinematics of Dwarf Galaxies — 2611.17204
+2026-11-13 — [Galaxy Formation / Evolution] The ultraviolet continuum slopes of galaxies at $\mathbf{z \gtrsim 12}$ selected from ${\mathbf{0.6 \, deg}^2}$ of JWST imaging — 2611.17208
+2026-11-13 — [Stats] Rapid Multiparameter Gravitational-Wave Tests of General Relativity with Neural Posterior Estimation — 2611.17038
+2026-11-13 — [Stats] Global Fit Inference for LISA with samsara++ — 2611.17266
+2026-11-13 — [SMBHs] Parallel alignment of radio AGN jets and large cosmic web structures in the direction of the Shapley supercluster — 2611.17202
+2026-11-13 — [SMBHs] Rebrightening in the Radio: Secondary Flares from Tidal Disruption Events AT2019ehz and AT2019eve — 2611.15875
+2026-11-13 — [Galaxy Formation / Evolution] The full Gaia colour-magnitude diagram with white dwarfs reveals a declining Milky Way star formation history — 2611.17337
+2026-11-13 — [Galaxy Formation / Evolution] A flash before dawn: 21 cm signatures of transient reionization from supermassive Pop III stars — 2611.16006
