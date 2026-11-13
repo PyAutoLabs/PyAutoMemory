@@ -138,6 +138,22 @@ Microcaustics: Fast GPU-Accelerated Dynamical Microlensing of Time-Dependent Ext
 Cosmology with strong gravitational lenses — 2610.19598
 Statistical Strong Lensing V. Inference with Microlensed Quasars — 2610.24423
 Dual and lensed AGN at sub-arcsecond separations uncovered by ERIS — 2610.27086
+Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) C: Lens modelling pipeline overview — 2611.15888
+Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) A: Strong lens catalogue overview — 2611.15883
+Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) B: Discovery pipeline overview — 2611.15886
+Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) D: Photometric redshifts and the first census of strong lenses in the galaxy evolution framework — 2611.15877
+Lessons from double-plane lenses for galaxy profiles, the Hubble tension, and the mass-sheet degeneracy — 2611.09856
+Can we constrain cosmology with compound gravitational lenses? — 2611.15714
+Through Ups and Downs: the Transient Lensing Behaviour of SIDM halos undergoing Core Collapse — 2611.09546
+Euclid Data Release 1 (DR1). NISP spectroscopy of gravitational arcs and multiple images — 2611.15891
+The PAU Survey: Dissecting strong-lensing systems with narrow-band photometric redshifts — 2611.14229
+Confirming HSC strong lens candidates with DESI Spectroscopy. II. Analysis of 80 galaxy-scale systems with lens redshifts above 0.8 — 2611.07524
+CosmoSim: Lens-parameter estimation of the Einstein Cross NGC 6505 using machine learning — 2611.14678
+VENUS: Strong Lens Mass Models and Einstein Radii of 60 Galaxy Clusters — 2611.08630
+Self-interacting Dark Matter signatures from stars extremely magnified by galaxy clusters — 2611.14800
+Revisiting the Einstein Cross with X-shooter spectra: New estimates of accretion disk parameters and broad emission line profiles from microlensing — 2611.12448
+Short-term optical monitoring of quadruply imaged quasars — 2611.08633
+Prospects for probing supermassive binary black holes in strongly lensed active galactic nuclei via microlensing effects — 2611.15056
 
 
 ## SMBHs

@@ -102,6 +102,20 @@ status: stub
   dark energy and matter density, not subhalo populations.
 - Real-survey results — validated on simulations only at time of writing.
 
+## Campbell 2026 — polar-coordinate inputs for CNN subhalo detection
+
+**Canonical BibTeX key:** `Campbell2026`
+**Reference:** Polar coordinate transformations for machine learning based dark matter subhalo detection in strong gravitational lenses; arXiv:2607.02663
+**Concepts:** [[deep-learning-lensing]], [[dark-matter-substructure]]
+
+**Supports:**
+- On simulated HST images, CNNs (with a predicted uncertainty) given polar-transformed lens images detect more subhaloes than with Cartesian inputs at all tested masses, by ~15 per cent for 10^9–10^9.5 M_sun; gains are largest at low S/N and low concentration, and pretrained networks beat random initialisation.
+
+**Use when:**
+- Citing input-representation choices (polar unwrapping of the arc) for ML subhalo detection.
+
+**Do not use for:**
+- Real-data subhalo detections — the tests are on simulated HST observations only.
 
 ## See also
 

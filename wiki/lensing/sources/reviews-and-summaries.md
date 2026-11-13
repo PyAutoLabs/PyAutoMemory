@@ -173,6 +173,24 @@ introductions or for cross-referencing established field-knowledge.
 **Do not use for TODO:**
 - Evidence until the paper identity and canonical key are verified.
 
+## Sonnenfeld 2026 — strong lensing with Euclid (review)
+
+**Canonical BibTeX key:** `Sonnenfeld2026`
+**Reference:** Strong gravitational lensing with Euclid; arXiv:2610.19835; doi:10.1140/epjp/s13360-026-08300-5; Eur. Phys. J. Plus 141, 1099 (2026)
+**Concepts:** [[lens-finding]], [[lens-statistics]], [[euclid-q1]], [[dark-matter-substructure]]
+
+**Supports:**
+- Euclid is expected to find roughly 10^5 new strong lenses, increasing the number of known lenses by a factor of about 30.
+- The Q1 quick release already revealed hundreds of lenses with varied deflectors, from isolated galaxies to clusters and from early-type galaxies to edge-on discs.
+- Up to four double-source-plane lenses were already found in Q1.
+- Anticipates future discoveries: the strong-lensing signature of dwarf satellite galaxies and lenses with unusually many images.
+
+**Use when:**
+- Introducing what the Euclid lens sample will bring to the field, or citing a short forward-looking review of Euclid strong lensing.
+
+**Do not use for:**
+- DR1 catalogue numbers (written from Q1; use `EuclidDR1EclipseA`), or methods detail; it is a perspective piece (EPJ Plus Focus Point "Surprises from major new telescopes").
+
 ## See also
 
 - [[seed-galaxy-formation-misc]]

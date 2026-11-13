@@ -217,6 +217,41 @@ status: stub
 **Do not use for:**
 - Lensing-specific predictions; the paper is about halo dynamics, not lensing observables.
 
+## van den Bosch 2026 — transient lensing of core-collapsing SIDM haloes
+
+**Canonical BibTeX key:** `vandenBosch2026`
+**Reference:** Through Ups and Downs: the Transient Lensing Behaviour of SIDM halos undergoing Core Collapse; arXiv:2611.09546 (submitted to MNRAS)
+**Concepts:** [[dark-matter-physics]], [[dark-matter-substructure]]
+
+**Supports:**
+- Using an emulator calibrated on gravothermal fluid calculations, follows isolated NFW haloes with elastic, velocity-independent self-interactions through core formation and deep core collapse, computing finite-source magnifications, critical curves and source-plane cross sections (with external shear in some runs).
+- Lensing strength is non-monotonic in time: it drops during core formation, rises in early collapse, then generally declines at late stages even though the central density keeps growing, because a small dense inner core sits inside a more extended, lower-density core.
+- Generalized NFW haloes with cusps rho ∝ r^-gamma, gamma >= 2, always lens more efficiently than core-collapsed SIDM haloes of equal mass, so they are poor proxies for core-collapsed haloes, including for arc and Einstein-ring size and radial-thickness demographics.
+- SIDM haloes are optimal lenses when the characteristic core surface density is close to critical, typically early in core collapse; the time-averaged enhancement over NFW depends on the lensing statistic, concentration and cross-section.
+
+**Use when:**
+- Arguing that central density alone does not characterise SIDM lensing and that the evolving mass distribution must be modelled explicitly.
+- Cautioning against using steep power-law / gNFW profiles as stand-ins for core-collapsed subhaloes (relevant to `Gilman2026SIDM`, `Zeng2023`).
+
+**Do not use for:**
+- Velocity-dependent cross-section results or populations of subhaloes in a host — the calculations are for isolated spherical haloes with velocity-independent cross-sections.
+- Observational constraints on the SIDM cross-section.
+
+## Li 2026 — SIDM signatures from cluster-lensed stars
+
+**Canonical BibTeX key:** `Li2026SIDMStars`
+**Reference:** Self-interacting Dark Matter signatures from stars extremely magnified by galaxy clusters; arXiv:2611.14800
+**Concepts:** [[dark-matter-physics]], [[cluster-lensing]], [[dark-matter-substructure]]
+
+**Supports:**
+- Models how the spatial distribution of cluster-lensed star transients around the critical curve depends on the velocity-dependent SIDM cross-section; SIDM is the only model class found in which the sign of the distribution's skewness is set by its own particle parameters. Applied to the "Dragon" arc in Abell 370, the observed width and negative skewness are explained if many subhaloes have core-collapsed to steep slopes, qualitatively favouring an effective cross-section of ~500–1000 cm^2/g for 10^6–10^8 M_sun haloes (inner 3D slope >~ 2.5, Bayes factor ~10^2), ignoring environmental effects on collapse.
+
+**Use when:**
+- Citing caustic-crossing / lensed-star statistics as a probe of SIDM subhaloes in clusters.
+
+**Do not use for:**
+- A firm cross-section measurement — the preference is qualitative and neglects environmental (de)acceleration of core collapse.
+
 ## See also
 
 - [[dark-matter-physics]]
