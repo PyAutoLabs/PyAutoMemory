@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-13
-2026-11-09 — [SMBHs] Where the red rise stops: JWST/MIRI reveals a near-infrared turnover in the Little Red Dot Abell2744-QSO1 — 2611.09397
-2026-11-09 — [SMBHs] Magnetically Arrested Accretion and Black Hole Spin in a Semi-Analytic Model of Galaxy Formation — 2611.08599
-2026-11-09 — [Dark Matter] The AIDA-TNG project: Galactic bar pattern speeds in self-interacting dark matter — 2611.09852
-2026-11-09 — [Stats] New optimisations for exact, scalable 2D Gaussian process inference, with applications to astronomical time-series — 2611.09198
-2026-11-09 — [Galaxy Formation / Evolution] Jeans Dynamical Constraints on the IMF in Massive Quiescent Galaxies at $z\sim0.7$ from JWST/NIRSpec — 2611.08612
-2026-11-09 — [SMBHs] GW230729\_082317 and GW231118\_005626: A Candidate of Hierarchical Triple Mergers — 2611.09338
-2026-11-09 — [Stats] Phentax: A JAX implementation of the IMRPhenomTHM waveform model — 2611.08596
-2026-11-09 — [Dark Matter] Axion cloud survival in nuclear star clusters — 2611.09236
-2026-11-09 — [SMBHs] KCWI Observations of Type 2 Quasar-driven Ionized Outflows at z~0.1 — 2611.08828
-2026-11-09 — [Dark Matter] Nonstandard Dark Matter at Nonlinear Scales — 2611.08636
+last digest: 2026-11-16
 2026-11-10 — [SMBHs] Little Red Dots from Primordial Black Holes: Non-Gaussianity and Accretion Evade $μ$-Distortion Constraints — 2611.12861
 2026-11-10 — [SMBHs] AGN Feedback Turbulence in Cool-core Clusters: Evidence from XRISM — 2611.12845
 2026-11-10 — [Galaxy Formation / Evolution] The Cool Circumgalactic Echo of the Stellar-to-Halo Mass Relatio — 2611.12734
@@ -88,3 +78,13 @@ last digest: 2026-11-13
 2026-11-13 — [SMBHs] Rebrightening in the Radio: Secondary Flares from Tidal Disruption Events AT2019ehz and AT2019eve — 2611.15875
 2026-11-13 — [Galaxy Formation / Evolution] The full Gaia colour-magnitude diagram with white dwarfs reveals a declining Milky Way star formation history — 2611.17337
 2026-11-13 — [Galaxy Formation / Evolution] A flash before dawn: 21 cm signatures of transient reionization from supermassive Pop III stars — 2611.16006
+2026-11-16 — [SMBHs] Constraining Accretion Regimes of Little Red Dots from Their Variability — 2611.18153
+2026-11-16 — [Dark Matter] Beyond the Inner Slope $γ$: A Schwarzschild-based Probe of the Core-Cusp Problem in the Milky Way Dwarf Spheroidal Galaxies — 2611.17835
+2026-11-16 — [SMBHs] Effect of galaxy-informed merger timescales on massive black hole binaries in LISA — 2611.17409
+2026-11-16 — [Stats] bihalofit-JAX: A Differentiable Code for the Nonlinear Matter Bispectrum and its Projected Statistics — 2611.18281
+2026-11-16 — [Galaxy Formation / Evolution] Unsupervised learning reveals a small number of galaxy formation pathways in IllustrisTNG — 2611.17559
+2026-11-16 — [Dark Matter] Predicting Individual Dark Matter Halo Concentrations from Their Assembly Histories — 2611.17676
+2026-11-16 — [Dark Matter] Precise Deep-Learning Reconstruction of Galaxy Cluster Mass Maps and Substructures from Optical Observations — 2611.18487
+2026-11-16 — [SMBHs] Extending an X-ray & Mid-Infrared diagnostic for absorption in Active Galactic Nuclei to higher redshifts using NuSTAR and XMM-Newton — 2611.18286
+2026-11-16 — [Stats] Gravitational-wave hierarchical inference from population samples — 2611.17428
+2026-11-16 — [SMBHs] WISE-VAULT: Decade-long Mid-Infrared Variability of WISE AGN — 2611.17996
