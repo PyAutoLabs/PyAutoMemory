@@ -27,8 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-16
-2026-11-10 — Revisiting the Einstein Cross with X-shooter spectra: New estimates of accretion disk parameters and broad emission line profiles from microlensing — 2611.12448
+last digest: 2026-11-17
 2026-11-11 — Leveraging Lensing-driven Early Warnings: Joint Detectability of lensed Gravitational Waves and their LSST Optical Counterparts — 2611.14343
 2026-11-11 — The PAU Survey: Dissecting strong-lensing systems with narrow-band photometric redshifts — 2611.14229
 2026-11-13 — Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) A: Strong lens catalogue overview — 2611.15883
@@ -41,3 +40,5 @@ last digest: 2026-11-16
 2026-11-16 — Euclid Data Release 1 (DR1). AstroVink-TREX: Automated strong gravitational lens segmentation as input for mass modelling pipelines — 2611.17894
 2026-11-16 — Euclid Data Release 1 (DR1). Enhancing deep-learning models: the impact of image processing and training data selection for strong-lens detection — 2611.17420
 2026-11-16 — Probing the Activity History of Repeating Fast Radio Bursts with Cluster Lensing — 2611.17833
+2026-11-17 — Euclid Data Release 1 (DR1). Double-source-plane lens candidates — 2611.20166
+2026-11-17 — The mass density slope of early-type galaxies: newest results from the redshift distribution of strong gravitational lenses — 2611.20141
