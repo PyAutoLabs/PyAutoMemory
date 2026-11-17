@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-16
-2026-11-10 — [SMBHs] Little Red Dots from Primordial Black Holes: Non-Gaussianity and Accretion Evade $μ$-Distortion Constraints — 2611.12861
-2026-11-10 — [SMBHs] AGN Feedback Turbulence in Cool-core Clusters: Evidence from XRISM — 2611.12845
-2026-11-10 — [Galaxy Formation / Evolution] The Cool Circumgalactic Echo of the Stellar-to-Halo Mass Relatio — 2611.12734
-2026-11-10 — [Stats] Two-Phase Rapid Simulation-Based Inference with Differentiable Simulators — 2611.12422
-2026-11-10 — [SMBHs] A Self-Interacting Dark-Matter Route to Supermassive Kerr Black Holes via Super-Eddington Bondi Accretion: Mass-Spin Evolution — 2611.12282
-2026-11-10 — [Dark Matter] Dust in cold and warm dark matter in a suite of zoom-in simulations of Milky Way analogues — 2611.12047
-2026-11-10 — [Stats] FAIR Universe Weak Lensing ML Uncertainty Challenge: Dataset and Cosmological Inference Competition — 2611.10228
-2026-11-10 — [SMBHs] The Edge of the Warm Corona in Active Galactic Nuclei — 2611.12595
-2026-11-10 — [SMBHs] The shape and velocity of black hole coronas — 2611.11884
-2026-11-10 — [Dark Matter] Negative Dynamical Friction in Dark Matter Spikes around Rotating Black Holes — 2611.11380
+last digest: 2026-11-17
 2026-11-11 — [Dark Matter] Depletion of Dark Matter Spikes by Massive Black Hole Mergers — 2611.13170
 2026-11-11 — [Stats] Simulation-Based Inference on EMRI Frequency Tracks: Harmonic Identification and Parameter Constraints from Search Outputs — 2611.14255
 2026-11-11 — [Galaxy Formation / Evolution] Less is More: Unbiased Galaxy Clustering from Fewer Merger Trees — 2611.13083
@@ -88,3 +78,13 @@ last digest: 2026-11-16
 2026-11-16 — [SMBHs] Extending an X-ray & Mid-Infrared diagnostic for absorption in Active Galactic Nuclei to higher redshifts using NuSTAR and XMM-Newton — 2611.18286
 2026-11-16 — [Stats] Gravitational-wave hierarchical inference from population samples — 2611.17428
 2026-11-16 — [SMBHs] WISE-VAULT: Decade-long Mid-Infrared Variability of WISE AGN — 2611.17996
+2026-11-17 — [Stats] Compressed Simulation-Based Inference: Neural Posterior Estimation for Massive Data via Low-Dimensional Sketches — 2611.21286
+2026-11-17 — [Stats] Summary Sufficiency in Simulation-Based Inference via Mutual Information — 2611.21158
+2026-11-17 — [Galaxy Formation / Evolution] Interpreting JWST UV luminosity functions and angular correlation functions via a "universal language" for high-redshift galaxies — 2611.18850
+2026-11-17 — [SMBHs] Independent interferometric observable confirms black hole shadow in M87* — 2611.20418
+2026-11-17 — [Stats] A COMPASS to the Galaxy: Joint nucleosynthetic yield set comparison and parameter inference in Galactic chemical evolution — 2611.21175
+2026-11-17 — [SMBHs] Unveiling the Multi-Phase Outflow in NGC 4151 with JWST Observations - I. Integrated Properties of the Outflow — 2611.20236
+2026-11-17 — [Dark Matter] Rest-frame annihilation lines of $\sim70$ GeV WIMPs in 23,000 stacked galaxy clusters — 2611.21595
+2026-11-17 — [SMBHs] EP241206a: A Sub-kilosecond X-Ray Flare Possibly from an Active Galactic Nucleus with a Flux Increase over 3 Orders of Magnitude — 2611.21369
+2026-11-17 — [Dark Matter] On the origin of Milky Way binary black holes with LISA — 2611.21337
+2026-11-17 — [Stats] CONGA: Compiling Gaussian Fiber Geometry for Structured Bayesian Inference — 2611.20995
