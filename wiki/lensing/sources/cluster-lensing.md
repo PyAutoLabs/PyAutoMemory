@@ -153,6 +153,21 @@ status: stub
 **Do not use for:**
 - A specific SIDM cross-section bound or the offset value itself without checking the paper text (verified here from the abstract and publisher listing only).
 
+## Oguri 2026 — VENUS mass models of 60 JWST clusters
+
+**Canonical BibTeX key:** `Oguri2026`
+**Reference:** VENUS: Strong Lens Mass Models and Einstein Radii of 60 Galaxy Clusters; arXiv:2611.08630
+**Concepts:** [[cluster-lensing]], [[einstein-radius]]
+
+**Supports:**
+- glafic mass models of the 60 clusters of the JWST VENUS Treasury program from ~4500 multiple images (~1150 new, ~50 per cluster), jackknife-validated; for z_s = 9 the median Einstein radius is ~30" (up to ~60"), with MACS J0717.5+3745, MACS J0600.1-2008 and PLCK G287.0+32.9 the largest, and the Einstein-radius distribution is compatible with CDM.
+
+**Use when:**
+- Citing a large, homogeneous set of JWST-era cluster lens models or the Einstein-radius distribution of the strongest lensing clusters.
+
+**Do not use for:**
+- Free-form or hybrid-model results — the models are parametric (glafic).
+
 ## See also
 
 - [[cluster-lensing]]

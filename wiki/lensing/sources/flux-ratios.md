@@ -150,6 +150,21 @@ status: stub
 **Do not use for:**
 - Quantitative cross-section values or the significance of the preference without checking the paper text; the survey numbering is inconsistent across the series (arXiv:2604.05237 is also titled "Survey V"), so cite by arXiv ID.
 
+## Keeley 2025 — JWST lensed quasar DM survey III: full-sample WDM constraint
+
+**Canonical BibTeX key:** `Keeley2025`
+**Reference:** JWST Lensed Quasar Dark Matter Survey III: Dark Matter Sensitive Flux Ratios and Warm Dark Matter Constraint from the Full Sample; arXiv:2511.07765
+**Concepts:** [[flux-ratio-anomalies]], [[dark-matter-substructure]], [[multipoles]]
+
+**Supports:**
+- MIRI multiband warm-dust flux ratios for the full sample of 31 lensed quasars, forward-modelled with tidal stripping, globular clusters and m=1, 3, 4 multipole macromodels; gives a factor ~2 improvement in sensitivity to a halo-mass-function turnover, with m_hm < 10^7.8 M_sun (thermal relic > 5.6 keV) for a galacticus subhalo prior, or < 10^7.6 M_sun (> 6.4 keV) for an N-body prior, both at Bayes factor 10:1.
+
+**Use when:**
+- Citing the current flux-ratio warm-dark-matter bound from the JWST MIRI lensed-quasar sample.
+
+**Do not use for:**
+- SIDM evidence from the same programme — cite `Gilman2026SIDM` instead; the numbering of the survey series is inconsistent, so cite by arXiv ID.
+
 ## See also
 
 - [[flux-ratio-anomalies]]

@@ -88,6 +88,36 @@ status: stub
 - Evidence until the paper identity and canonical key are verified.
 
 
+## Knabel 2026 — TDCOSMO XXIX: JWST resolved kinematics of three time-delay lenses
+
+**Canonical BibTeX key:** `Knabel2026`
+**Reference:** TDCOSMO XXIX: JWST/NIRSpec IFU Spatially Resolved Kinematics of Three Time-delay Lenses; arXiv:2609.03089 (submitted to PRD)
+**Concepts:** [[kinematics-and-lensing]], [[mass-sheet-degeneracy]], [[time-delay-cosmography]]
+
+**Supports:**
+- JWST-NIRSpec IFU stellar kinematic maps of the deflectors in HE0435-1223, PG1115+080 and WFI2033-4723, with 6–11% per-bin total uncertainties and ~1.2% bin-to-bin correlated errors; aperture dispersions agree with the earlier TDCOSMO values (within 0.9σ) while average uncertainty drops from 3.7% to 2.4%. PG1115 is a fast rotator, the other two slow rotators.
+
+**Use when:**
+- Citing the resolved JWST kinematics feeding the TDCOSMO 2026 H0 analysis, used to break the MSD.
+
+**Do not use for:**
+- An H0 value; this paper delivers kinematic data only.
+
+## Mozumdar 2026 — TDCOSMO XXX: JWST kinematics of B1608+656 and SDSS J1206+4332
+
+**Canonical BibTeX key:** `Mozumdar2026`
+**Reference:** TDCOSMO XXX: Spatially resolved kinematics of the deflectors in time-delay lens systems B1608+656 and SDSSJ1206+4332 from JWST-NIRSpec observation; arXiv:2609.09411 (submitted to PRD)
+**Concepts:** [[kinematics-and-lensing]], [[time-delay-cosmography]]
+
+**Supports:**
+- JWST-NIRSpec IFU resolved kinematics of both primary deflectors (both show rotation; fast/regular rotators), plus first redshifts and dispersions of the perturbers: B1608 G2 σ = 188 ± 7 ± 2 km/s at z = 0.6307, J1206 G1 σ = 100 ± 21 ± 2 km/s at z = 0.7403; defines where G2's tidal influence on B1608 G1 is negligible enough for Jeans modelling.
+
+**Use when:**
+- Citing resolved deflector/perturber kinematics for these two TDCOSMO lenses, or a criterion for Jeans modelling in an interacting deflector.
+
+**Do not use for:**
+- Cosmological parameters; data products only, combined later in the TDCOSMO 2026 milestone.
+
 ## See also
 
 - [[kinematics-and-lensing]]

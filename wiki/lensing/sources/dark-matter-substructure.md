@@ -548,6 +548,27 @@ Per-paper stubs of substructure-detection literature. All marked stub.
 **Supports:**
 - Proposes a lens-model-free, data-driven "geometrical-duality" test (the optical Liouville theorem applied across scales) for sub-resolution substructure, applied to 11 multiply imaged star clusters in SMACS0723 with JWST; one outlier pair is consistent with CDM subhaloes of 10^8–10^9 M_sun.
 
+## Tajalli 2026 — the robust radius of low-mass perturbers
+
+**Canonical BibTeX key:** `Tajalli2026`
+**Reference:** On what scales does strong lensing robustly constrain the mass profile of low-mass perturbers?; arXiv:2608.20454; doi:10.1093/mnras/stag2025; MNRAS (2026)
+**Concepts:** [[dark-matter-substructure]], [[gravitational-imaging]], [[line-of-sight-effects]]
+
+**Supports:**
+- Gives a Fisher-information definition of the "robust radius" of a lensing perturber: for any spherically symmetric smooth profile with at least two free parameters there is a pivot radius where the projected-mass estimate decorrelates from the local logarithmic slope and has minimum relative uncertainty.
+- Consequence: the projected mass inside that radius is recovered consistently by any profile that fits the data well enough, so it is the profile-independent quantity to report for a detected subhalo.
+- To leading order the robust radius is the weighted geometric mean of the arc-pixel distances from the halo, with weights set by the perturber deflection angle, the macro-model magnification and the source surface-brightness gradient; corrections beyond leading order scale with the weighted log-width of the arc.
+- Constraining power on profile properties beyond amplitude (e.g. the slope) depends on the arc's radial leverage around the perturber and on the perturber's deflection imprint on high-S/N pixels.
+- Applies to both subhaloes and line-of-sight haloes, and captures the effect of data resolution and signal-to-noise.
+
+**Use when:**
+- Justifying which mass (and at what radius) to quote for a gravitational-imaging detection, or comparing perturber masses measured with different density profiles (NFW, truncated, power-law, cored).
+- Explaining why slope/concentration constraints on a perturber are weak unless the arc gives radial leverage; follows the empirical findings of the SHARP perturber analyses (e.g. `Tajalli2025`, arXiv:2505.07944).
+
+**Do not use for:**
+- A measurement of any specific perturber's mass or profile — this is a methods/theory paper.
+- Claims about population-level (flux-ratio or statistical) substructure inference.
+
 ## See also
 
 - [[dark-matter-substructure]]

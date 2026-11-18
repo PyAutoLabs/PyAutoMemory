@@ -309,6 +309,57 @@ status: drafted
 **Do not use for:**
 - Any quantitative result, method detail or interpretation. The paper is an unpublished Euclid Consortium draft; replace this entry with verified claims once it is on arXiv.
 
+## Euclid Collaboration: Lines 2026 — ECLIPSE A, DR1 strong-lens catalogue
+
+**Canonical BibTeX key:** `EuclidDR1EclipseA`
+**Reference:** Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) A: Strong lens catalogue overview; arXiv:2611.15883 (submitted to A&A, Euclid DR1 special issue)
+**Concepts:** [[lens-finding]], [[lens-statistics]], [[euclid-q1]], [[deep-learning-lensing]]
+
+**Supports:**
+- 15 072 high-confidence strong-lens candidates over 2000 deg^2 of Euclid DR1 (6073 grade A, 8999 grade B), published with a further 9010 grade C candidates; more high-confidence candidates than all previous catalogues combined.
+- 68 million of roughly 900 million DR1 sources passed the catalogue selection and were searched by a pipeline combining five machine-learning models, about 7000 citizen scientists and 67 strong-lensing experts.
+- The catalogue includes 84 candidate double-source-plane lenses, over 1000 candidate disc lenses and several hundred candidate lensed AGN/quasars.
+- Deflectors are mostly massive and quiescent (log M*/M_sun = 11.39 +0.29/-0.33, Salpeter IMF) at z = 0.68 +0.33/-0.29, with typical Einstein radius 0.85 +0.44/-0.24 arcsec; extrapolating by area gives over 100 000 high-confidence candidates in the Euclid Wide Survey.
+
+**Use when:**
+- Citing the Euclid DR1 lens sample, its size and composition, or the forecast Euclid Wide Survey yield.
+
+**Do not use for:**
+- Search-stage details or completeness (use `EuclidDR1EclipseB`), or lens-model methodology (use `EuclidDR1EclipseC`); Q1-era numbers (use the `EuclidCollaboration2025*` entries).
+
+## Euclid Collaboration: Holloway 2026 — ECLIPSE B, DR1 discovery pipeline
+
+**Canonical BibTeX key:** `EuclidDR1EclipseB`
+**Reference:** Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) B: Discovery pipeline overview; arXiv:2611.15886 (submitted to A&A, Euclid DR1 special issue)
+**Concepts:** [[lens-finding]], [[deep-learning-lensing]], [[selection-effects]], [[space-warps]]
+
+**Supports:**
+- The DR1 search runs in stages: a catalogue-level cut, a machine-learning and ensemble search, a two-stage citizen-science search, and expert grading of candidates.
+- Neural networks classified over 68 million objects; volunteers made more than 4.5 million classifications of 300 000 objects; researchers inspected over 30 000 objects.
+- Measured completeness is 0.73 +0.08/-0.15 for grade A ('definite') systems and 0.34 +0.05/-0.06 for grade A+B, so the search finds most definite lenses in the DR1 area.
+- Expert grading is subjective; the paper calibrates individual inspector biases and shows that lens modelling (ECLIPSE C) helps decide the nature of a candidate.
+
+**Use when:**
+- Citing how Euclid DR1 lenses were found, the completeness of a multi-stage ML + citizen-science + expert search, or inspector-bias calibration.
+
+**Do not use for:**
+- Catalogue-level population statistics (use `EuclidDR1EclipseA`) or the performance of a single named network.
+
+## Li, Shu & Nie 2026 — HSC lenses at z_lens > 0.8 confirmed with DESI
+
+**Canonical BibTeX key:** `Li2026HSCDESI`
+**Reference:** Confirming HSC strong lens candidates with DESI Spectroscopy. II. Analysis of 80 galaxy-scale systems with lens redshifts above 0.8; arXiv:2611.07524
+**Concepts:** [[lens-finding]], [[hsc-survey-lenses]], [[mass-models]]
+
+**Supports:**
+- Lens modelling of 80 galaxy-scale candidates with z_lens > 0.8 (from paper I's 84) classifies 71 (about 90%) as secure, 8 as probable or possible, and 1 as a non-lens, nearly tripling the known galaxy-scale lenses at z_lens > 0.8.
+
+**Use when:**
+- Citing a high-redshift (z_lens > 0.8) galaxy-scale lens sample for total-mass-slope evolution tests.
+
+**Do not use for:**
+- A measured density-slope evolution; this paper confirms the sample, it does not yet report the slope result.
+
 ## See also
 
 - [[lens-finding]]

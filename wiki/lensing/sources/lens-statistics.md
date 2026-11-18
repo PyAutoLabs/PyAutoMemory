@@ -91,6 +91,53 @@ status: stub
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
+## Euclid Collaboration: Nersesian 2026 — ECLIPSE D, DR1 lens photo-z and stellar populations
+
+**Canonical BibTeX key:** `EuclidDR1EclipseD`
+**Reference:** Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) D: Photometric redshifts and the first census of strong lenses in the galaxy evolution framework; arXiv:2611.15877 (intended for the A&A Euclid DR1 special issue)
+**Concepts:** [[lens-statistics]], [[selection-effects]], [[pyautolens]]
+
+**Supports:**
+- A homogeneous catalogue of photometric redshifts and physical properties for 9538 galaxy-scale strong lenses from the Euclid DR1 sample.
+- Uses deblended lens photometry from PyAutoLens modelling of Euclid and ground-based images, avoiding the lens/source blending that limits standard catalogue photometry.
+- Photo-z from Phosphoros template fitting; stellar mass, SFR, age and metallicity from Prospector SED fits (non-parametric SFH, Salpeter IMF), checked against spectroscopic redshifts and external surveys.
+- Lenses span 0.13 ≲ z_phot ≲ 1.98 (median 0.68 +0.33/-0.29), dominated by massive quiescent galaxies with M* in [10^10, 10^12.1] M_sun and median log M*/M_sun = 11.39 +0.29/-0.33.
+
+**Use when:**
+- Citing the redshift and stellar-mass distribution of the Euclid DR1 lens population, or deblended-photometry SED fitting of lens galaxies.
+
+**Do not use for:**
+- Lens-model quality or Einstein-radius statistics (use `EuclidDR1EclipseC`), or spectroscopic redshifts.
+
+## Euclid Collaboration: Bergamini 2026 — DR1 NISP spectroscopy of lensed arcs
+
+**Canonical BibTeX key:** `EuclidDR1NISPArcs`
+**Reference:** Euclid Data Release 1 (DR1). NISP spectroscopy of gravitational arcs and multiple images; arXiv:2611.15891 (intended for the A&A Euclid DR1 special issue)
+**Concepts:** [[lens-statistics]], [[cluster-lensing]], [[lensed-source-science]]
+
+**Supports:**
+- Proof of concept that Euclid NISP slitless spectra give source redshifts and emission-line images for lensed features: four systems (giant arcs in SPT-CLJ0411-4819 and Abell 2280, a quadruply imaged AGN candidate behind a z=0.68 galaxy, and a galaxy-scale Einstein ring at z_d=0.235).
+
+**Use when:**
+- Arguing that Euclid's own spectroscopy can supply source redshifts for its lens sample.
+
+**Do not use for:**
+- Redshift success rates across the DR1 lens population; only four systems are analysed.
+
+## Geng 2026 — PAU narrow-band photo-z of lens and source
+
+**Canonical BibTeX key:** `Geng2026`
+**Reference:** The PAU Survey: Dissecting strong-lensing systems with narrow-band photometric redshifts; arXiv:2611.14229
+**Concepts:** [[lens-statistics]], [[lens-finding]]
+
+**Supports:**
+- Lens-model-informed photometry (component regions from broad-band models, point-reflection subtraction) with PAU narrow bands plus HSC/CFHT broad bands recovers separate lens and source photo-z on eight known lenses: all eight lens peaks within |δz| ≤ 0.014 of spectroscopy and four source peaks (z_s ≤ 1.23) within 0.025; symmetric subtraction cuts the median source |δz| from 0.336 to 0.071.
+
+**Use when:**
+- Citing narrow-band photometry as a route to source redshifts for blended survey lenses.
+
+**Do not use for:**
+- Calibrated photo-z uncertainties or blind candidate performance; the authors say both are still pending.
 
 ## See also
 

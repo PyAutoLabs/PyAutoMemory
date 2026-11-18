@@ -187,6 +187,21 @@ refer to for how H0 analysis is performed currently.
 - Evidence for a precise, independent H0 measurement or for eliminating mass-sheet freedom using imaging alone.
 
 
+## Treu 2026 — review: cosmology with strong lenses
+
+**Canonical BibTeX key:** `Treu2026Review`
+**Reference:** Cosmology with strong gravitational lenses; arXiv:2610.19598 (Reviews of Modern Physics, invited article)
+**Concepts:** [[time-delay-cosmography]], [[hubble-tension]], [[dark-matter-substructure]]
+
+**Supports:**
+- A 59-page review of strong lensing as a cosmological probe: time-delay and multiplane lenses for H0 and the dark-energy equation of state, and image distortions for subhalo abundance and structure; covers JWST-era results including a 3%-precision flat-ΛCDM H0 and a tentative hint of dark-matter self-interaction, and the Euclid/Rubin/Roman/SKA outlook.
+
+**Use when:**
+- A single up-to-date review citation for strong-lensing cosmology (H0, dark energy, dark matter).
+
+**Do not use for:**
+- Primary measurements; cite the underlying TDCOSMO and dark-matter papers for numbers.
+
 ## See also
 
 - [[time-delay-cosmography]]

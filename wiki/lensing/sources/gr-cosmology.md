@@ -105,6 +105,38 @@ status: stub
 **Do not use for:**
 - A completed dark-energy measurement from these four candidates or an assertion that every candidate is spectroscopically confirmed.
 
+## Holloway 2026 — cosmology from an impure photometric lens sample
+
+**Canonical BibTeX key:** `Holloway2026`
+**Reference:** Lens Modeling and Cosmological Inference from an Impure Sample of Galaxy-Galaxy Strong Lenses; arXiv:2609.21699 (LSST DESC; submitted to MNRAS)
+**Concepts:** [[deep-learning-lensing]], [[einstein-radius]], [[lens-statistics]]
+
+**Supports:**
+- A neural network measures Einstein radii of simulated LSST lenses to 3.7% mean precision with calibrated errors; the COSMIC-BEAMS formalism then infers Ωm, ΩΛ and w (precisions 0.1, 0.03, 0.15 in wCDM) without bias from a sample with up to 50% false positives.
+- Forecasts that ~100,000 photometric (unconfirmed) LSST lenses give w precision equivalent to 2500–3500 spectroscopic systems.
+
+**Use when:**
+- Citing cosmology from Einstein-radius statistics of large, contaminated photometric lens samples.
+
+**Do not use for:**
+- Real-data constraints; it is a simulation-based proof of concept.
+
+## Ballard 2026 — kinematics-informed dark energy from SDSS J0946+1006
+
+**Canonical BibTeX key:** `Ballard2026`
+**Reference:** Harnessing stellar kinematics to constrain dark energy with the double-source-plane gravitational lens SDSS J0946+1006; arXiv:2609.08573 (submitted to MNRAS)
+**Concepts:** [[mass-sheet-degeneracy]], [[kinematics-and-lensing]], [[gr-tests]]
+
+**Supports:**
+- Joint multi-plane modelling of HST near-IR and near-UV imaging plus a VLT-MUSE velocity dispersion of the foreground deflector; the imaging fits well either way, but the kinematic constraint is essential to move the preferred cosmology out of tension with other dark-energy probes (lifting the multi-plane mass-sheet degeneracy).
+- With Planck, w = −1.01 (+0.08/−0.13); with Pantheon SNe Ia, w = −0.99 (+0.13/−0.15); combined with DESI BAO, (w0, wa) = (−0.87, −0.22) does not reproduce the DESI tension with ΛCDM. Substructure and multipole perturbations have only a modest effect.
+
+**Use when:**
+- Citing a single-system DSPL dark-energy constraint, or the need for a deflector kinematic tracer in multi-plane cosmography.
+
+**Do not use for:**
+- Stand-alone w without an external CMB/SNe/BAO combination; the third source only weakly constrains wCDM.
+
 ## See also
 
 - [[gr-tests]]

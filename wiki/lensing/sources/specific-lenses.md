@@ -58,6 +58,21 @@ status: drafted
 **Do not use for:**
 - A strong-lens catalogue, a measured time delay, or a final Hubble-constant inference for WGD 2038-4008.
 
+## Normann, Hjemli & Schaathun 2026 — CosmoSim ML model of NGC 6505
+
+**Canonical BibTeX key:** `Normann2026`
+**Reference:** CosmoSim: Lens-parameter estimation of the Einstein Cross NGC 6505 using machine learning; arXiv:2611.14678
+**Concepts:** [[deep-learning-lensing]], [[einstein-radius]]
+
+**Supports:**
+- A CNN trained only on CosmoSim simulations predicts SIE lens and source parameters for 21 images of 19 Euclid and AGEL lenses; for the Einstein Cross NGC 6505 the ML reconstruction recovers the four-image structure at least as well as the discovery-team model, and Einstein radii agree with catalogue values (mean relative difference 0.08 Euclid, 0.19 AGEL) while ellipticities differ systematically.
+
+**Use when:**
+- Citing a simulation-trained ML parameter estimate of NGC 6505 or a CosmoSim application to real data.
+
+**Do not use for:**
+- A precise mass model of NGC 6505; the model is a single SIE and ellipticities are biased.
+
 ## See also
 
 - [[lens-statistics]]

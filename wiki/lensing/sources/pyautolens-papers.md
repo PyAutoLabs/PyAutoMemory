@@ -212,6 +212,25 @@ work by core developers / collaborators that uses it.
 **Do not use for:**
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
+## Euclid Collaboration: Nightingale 2026 — ECLIPSE C, automated DR1 lens modelling
+
+**Canonical BibTeX key:** `EuclidDR1EclipseC`
+**Reference:** Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) C: Lens modelling pipeline overview; arXiv:2611.15888 (submitted to A&A, Euclid DR1 special issue)
+**Concepts:** [[pyautolens]], [[source-reconstruction]], [[mass-models]], [[einstein-radius]], [[lens-statistics]]
+
+**Supports:**
+- Automated PyAutoLens-JAX modelling of 15 072 Euclid DR1 strong-lens candidates (grade A+B), over an order of magnitude larger than any previously modelled sample.
+- Three fits per system, with multi-Gaussian expansion (MGE), pixelised (adaptive Delaunay) and Sérsic sources, all using an isothermal ellipsoid plus external shear; the fits also give lens-light subtraction and deblended photometry.
+- Models were graded by more than 20 expert inspectors (75% agreement threshold): of 6073 grade A candidates, 4098 (67.5%) are successfully modelled and 580 (9.6%) are failures, with 1032 (17.0%) reaching no consensus; for the 8999 grade B candidates the success rate falls to 43.1%, mostly because more cases reach no consensus (37.6%) rather than more agreed failures (12.9%).
+- Successfully modelled A+B systems have a median effective Einstein radius of 0.85 arcsec and a median total I_E-band source magnification of 8.1.
+- Successful models, inferred properties and magnified-source reconstructions are released through the ECLIPSE catalogue (euclid-eclipse-lenses.org; Zenodo doi:10.5281/zenodo.19654904).
+
+**Use when:**
+- Citing the PyAutoLens/JAX pipeline used at Euclid scale, the ECLIPSE model catalogue, or modelling success and failure rates for automated lens modelling of survey candidates.
+
+**Do not use for:**
+- Discovery-pipeline completeness or the candidate catalogue itself (use `EuclidDR1EclipseB` / `EuclidDR1EclipseA`), or lens photometric redshifts and stellar masses (use `EuclidDR1EclipseD`); not a refereed result yet.
+
 ## See also
 
 - [[pyautolens]]

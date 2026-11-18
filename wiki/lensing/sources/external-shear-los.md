@@ -124,6 +124,21 @@ status: stub
 - More specific quantitative results, modelling assumptions, or interpretation beyond the verified title/reference metadata without checking the paper text.
 
 
+## Johnson 2026 — TDCOSMO XXXI: line-of-sight κ_ext with observer/lens/source terms
+
+**Canonical BibTeX key:** `Johnson2026LOS`
+**Reference:** TDCOSMO XXXI: New techniques in line-of-sight studies of time delay lenses; arXiv:2609.11652
+**Concepts:** [[external-convergence-shear]], [[line-of-sight-effects]], [[time-delay-cosmography]]
+
+**Supports:**
+- Updates weighted-number-count κ_ext estimation using the Euclid Flagship simulation and a breakdown of the line-of-sight contribution between observer, lens and source (the first κ_ext estimates to include the observer–lens and lens–source terms), applied to the 11 lenses of the TDCOSMO 2026 milestone; estimates stay within 1σ of earlier values for all but one previously studied system, with the median κ_ext moving from −0.002 to −0.006.
+
+**Use when:**
+- Citing the κ_ext inputs or methodology behind the TDCOSMO 2026 H0 sample.
+
+**Do not use for:**
+- External shear from lens models, or an H0 value.
+
 ## See also
 
 - [[external-convergence-shear]]
