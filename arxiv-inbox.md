@@ -27,9 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-17
-2026-11-11 — Leveraging Lensing-driven Early Warnings: Joint Detectability of lensed Gravitational Waves and their LSST Optical Counterparts — 2611.14343
-2026-11-11 — The PAU Survey: Dissecting strong-lensing systems with narrow-band photometric redshifts — 2611.14229
+last digest: 2026-11-18
 2026-11-13 — Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) A: Strong lens catalogue overview — 2611.15883
 2026-11-13 — Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) C: Lens modelling pipeline overview — 2611.15888
 2026-11-13 — Localization of gravitational-wave source behind galaxy clusters by gravitational-wave lensing — 2611.16916
