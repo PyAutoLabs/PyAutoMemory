@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-17
-2026-11-11 — [Dark Matter] Depletion of Dark Matter Spikes by Massive Black Hole Mergers — 2611.13170
-2026-11-11 — [Stats] Simulation-Based Inference on EMRI Frequency Tracks: Harmonic Identification and Parameter Constraints from Search Outputs — 2611.14255
-2026-11-11 — [Galaxy Formation / Evolution] Less is More: Unbiased Galaxy Clustering from Fewer Merger Trees — 2611.13083
-2026-11-11 — [SMBHs] Dust Reverberation Mapping of Low-Mass Active Galactic Nuclei — 2611.13181
-2026-11-11 — [Dark Matter] Unidentified Sources in the 4FGL-DR4 Fermi-LAT Catalog as Potential Dark Matter Satellites — 2611.13095
-2026-11-11 — [Stats] Self-Interacting Neutrinos in NEDE and DRMD Cosmologies: Posteriors, profiles and evidence using CLiENT — 2611.13756
-2026-11-11 — [Galaxy Formation / Evolution] Tracing early galaxies back in time: implications for the dearth of galaxies beyond z~15 — 2611.13835
-2026-11-11 — [Dark Matter] Self-interacting dark matter and neutrino masses from MeV-scale lepton-number breaking — 2611.13617
-2026-11-11 — [SMBHs] Revealing Hidden Excitation in the Core of NGC 4696: New Infrared Diagnostic Diagrams with JWST — 2611.13116
-2026-11-11 — [Stats] ExoPlanetLab: Bayesian orbit fitting of Gaia-DR4 epoch astrometry, radial velocities and relative astrometry — 2611.13770
+last digest: 2026-11-18
 2026-11-13 — [SMBHs] The Black Hole Mass of the Sunflower Galaxy NGC 5055: Direct Measurement via Stellar Kinematics with Keck/OSIRIS Laser Guide Star Adaptive Optics — 2611.16490
 2026-11-13 — [SMBHs] Double Blandford: Resistive GRMHD simulations of accreting black holes simultaneously launch winds and jets — 2611.16641
 2026-11-13 — [Dark Matter] Probing Ultralight Higher-spin Dark Matter using Stellar Kinematics of Dwarf Galaxies — 2611.17204
@@ -88,3 +78,13 @@ last digest: 2026-11-17
 2026-11-17 — [SMBHs] EP241206a: A Sub-kilosecond X-Ray Flare Possibly from an Active Galactic Nucleus with a Flux Increase over 3 Orders of Magnitude — 2611.21369
 2026-11-17 — [Dark Matter] On the origin of Milky Way binary black holes with LISA — 2611.21337
 2026-11-17 — [Stats] CONGA: Compiling Gaussian Fiber Geometry for Structured Bayesian Inference — 2611.20995
+2026-11-18 — [SMBHs] Shocks and Trails in the Circumgalactic Medium Driven by Runaway Supermassive Black Holes — 2611.21738
+2026-11-18 — [SMBHs] Dual and Binary AGN at Cosmic Dawn: The need for a JWST Program to resolve the merger channel of Early Black Hole Growth — 2611.22487
+2026-11-18 — [SMBHs] Lord/Egg of the LRDs: One geometry for its many faces — 2611.22316
+2026-11-18 — [Stats] Baryonification V: Thermal Sunyaev-Zel'dovich maps from dark-matter-only lightcones — 2611.21733
+2026-11-18 — [SMBHs] The Impact of Seeding Threshold on Wandering Black Hole Populations and Merger Rates — 2611.21756
+2026-11-18 — [Stats] Efficient and Optimal Analysis of Galaxy Surveys on Large Scales — 2611.21718
+2026-11-18 — [Galaxy Formation / Evolution] The meaning of Milky Way mass estimates in the presence of the LMC — 2611.21732
+2026-11-18 — [Dark Matter] Probing Velocity-Dependent WIMP Dark Matter Annihilation in Large-Scale Structure — 2611.22387
+2026-11-18 — [Dark Matter] Finite-wavelength corrections to dynamical friction in fuzzy dark matter: a causal linear-response approach — 2611.22134
+2026-11-18 — [SMBHs] XQR30: ALMA Observations Reveal the Diverse Structure of Cold Gas within z>6 Quasar Host Galaxies — 2611.21755
