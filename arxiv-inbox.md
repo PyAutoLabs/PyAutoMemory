@@ -27,7 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-18
+last digest: 2026-11-19
 2026-11-13 — Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) A: Strong lens catalogue overview — 2611.15883
 2026-11-13 — Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) C: Lens modelling pipeline overview — 2611.15888
 2026-11-13 — Localization of gravitational-wave source behind galaxy clusters by gravitational-wave lensing — 2611.16916
@@ -40,3 +40,4 @@ last digest: 2026-11-18
 2026-11-16 — Probing the Activity History of Repeating Fast Radio Bursts with Cluster Lensing — 2611.17833
 2026-11-17 — Euclid Data Release 1 (DR1). Double-source-plane lens candidates — 2611.20166
 2026-11-17 — The mass density slope of early-type galaxies: newest results from the redshift distribution of strong gravitational lenses — 2611.20141
+2026-11-19 — A twist in the tail: GWLENS, a fast and accurate tool for wave-optics lensing of gravitational waves — 2611.24621
