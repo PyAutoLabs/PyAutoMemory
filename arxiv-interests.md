@@ -47,7 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-18
+last digest: 2026-11-19
 2026-11-13 — [SMBHs] The Black Hole Mass of the Sunflower Galaxy NGC 5055: Direct Measurement via Stellar Kinematics with Keck/OSIRIS Laser Guide Star Adaptive Optics — 2611.16490
 2026-11-13 — [SMBHs] Double Blandford: Resistive GRMHD simulations of accreting black holes simultaneously launch winds and jets — 2611.16641
 2026-11-13 — [Dark Matter] Probing Ultralight Higher-spin Dark Matter using Stellar Kinematics of Dwarf Galaxies — 2611.17204
@@ -88,3 +88,13 @@ last digest: 2026-11-18
 2026-11-18 — [Dark Matter] Probing Velocity-Dependent WIMP Dark Matter Annihilation in Large-Scale Structure — 2611.22387
 2026-11-18 — [Dark Matter] Finite-wavelength corrections to dynamical friction in fuzzy dark matter: a causal linear-response approach — 2611.22134
 2026-11-18 — [SMBHs] XQR30: ALMA Observations Reveal the Diverse Structure of Cold Gas within z>6 Quasar Host Galaxies — 2611.21755
+2026-11-19 — [SMBHs] A Tight Broad-line Width-Luminosity Relation in Little Red Dots and Its Consequence for Virial Black Hole Masses — 2611.24217
+2026-11-19 — [SMBHs] Radio emission from a local Little Red Dot: a challenge to the ionized cocoon scenario — 2611.24387
+2026-11-19 — [SMBHs] A $10^5\,M_\odot$ Black Hole in the Bulgeless Spiral Galaxy IC 342: First Stellar-Dynamical $M_{\rm BH}$ Measurement with Keck/OSIRIS LGS-AO — 2611.24608
+2026-11-19 — [SMBHs] Excess intergalactic heating around a dual quasar system 2.8 Gyr after the Big Bang — 2611.23487
+2026-11-19 — [SMBHs] Reconstructing the mass-redshift distribution of supermassive black holes using multiband gravitational-wave observations — 2611.24281
+2026-11-19 — [SMBHs] Powerful Radio Jets and Galaxy Assembly Align at Cosmic Noon — 2611.24490
+2026-11-19 — [SMBHs] Deep Multiwavelength Constraints on the Host Galaxies and Black-Hole Growth of Dwarf AGNs — 2611.24698
+2026-11-19 — [SMBHs] Seeing through the fog: astrophysical priors and the evidence for new physics in pulsar timing arrays — 2611.23371
+2026-11-19 — [Stats] Interpretable attention-based neural posterior estimation for fast radio burst cosmology — 2611.24542
+2026-11-19 — [Dark Matter] Leading Axion Sensitivity with Interstellar Medium Optical Line Emission — 2611.23385
