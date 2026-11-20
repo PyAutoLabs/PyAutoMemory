@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-19
-2026-11-13 — [SMBHs] The Black Hole Mass of the Sunflower Galaxy NGC 5055: Direct Measurement via Stellar Kinematics with Keck/OSIRIS Laser Guide Star Adaptive Optics — 2611.16490
-2026-11-13 — [SMBHs] Double Blandford: Resistive GRMHD simulations of accreting black holes simultaneously launch winds and jets — 2611.16641
-2026-11-13 — [Dark Matter] Probing Ultralight Higher-spin Dark Matter using Stellar Kinematics of Dwarf Galaxies — 2611.17204
-2026-11-13 — [Galaxy Formation / Evolution] The ultraviolet continuum slopes of galaxies at $\mathbf{z \gtrsim 12}$ selected from ${\mathbf{0.6 \, deg}^2}$ of JWST imaging — 2611.17208
-2026-11-13 — [Stats] Rapid Multiparameter Gravitational-Wave Tests of General Relativity with Neural Posterior Estimation — 2611.17038
-2026-11-13 — [Stats] Global Fit Inference for LISA with samsara++ — 2611.17266
-2026-11-13 — [SMBHs] Parallel alignment of radio AGN jets and large cosmic web structures in the direction of the Shapley supercluster — 2611.17202
-2026-11-13 — [SMBHs] Rebrightening in the Radio: Secondary Flares from Tidal Disruption Events AT2019ehz and AT2019eve — 2611.15875
-2026-11-13 — [Galaxy Formation / Evolution] The full Gaia colour-magnitude diagram with white dwarfs reveals a declining Milky Way star formation history — 2611.17337
-2026-11-13 — [Galaxy Formation / Evolution] A flash before dawn: 21 cm signatures of transient reionization from supermassive Pop III stars — 2611.16006
+last digest: 2026-11-20
 2026-11-16 — [SMBHs] Constraining Accretion Regimes of Little Red Dots from Their Variability — 2611.18153
 2026-11-16 — [Dark Matter] Beyond the Inner Slope $γ$: A Schwarzschild-based Probe of the Core-Cusp Problem in the Milky Way Dwarf Spheroidal Galaxies — 2611.17835
 2026-11-16 — [SMBHs] Effect of galaxy-informed merger timescales on massive black hole binaries in LISA — 2611.17409
@@ -98,3 +88,13 @@ last digest: 2026-11-19
 2026-11-19 — [SMBHs] Seeing through the fog: astrophysical priors and the evidence for new physics in pulsar timing arrays — 2611.23371
 2026-11-19 — [Stats] Interpretable attention-based neural posterior estimation for fast radio burst cosmology — 2611.24542
 2026-11-19 — [Dark Matter] Leading Axion Sensitivity with Interstellar Medium Optical Line Emission — 2611.23385
+2026-11-20 — [SMBHs] The Galaxy Activity, Torus, and Outflow Survey: N. Little Red Dots are not dust deficient: constraints from Seyfert 1 JWST spectra — 2611.26483
+2026-11-20 — [Dark Matter] Dark Matter Model Implications of a Candidate Sub-halo Near the Sun, and the Data Needed to Discriminate Among Them — 2611.25359
+2026-11-20 — [Galaxy Formation / Evolution] Top-heavy Initial Mass Functions are not enough at cosmic dawn — 2611.25027
+2026-11-20 — [SMBHs] The Cosmic Infrared Background from Population III.1 Supermassive Stars and Black Holes — 2611.25355
+2026-11-20 — [SMBHs] Little Red Dots from Primordial Vacuum Bubbles — 2611.26620
+2026-11-20 — [Galaxy Formation / Evolution] Magnolia: a highly magnetized galaxy at redshift $z\simeq9$ — 2611.25937
+2026-11-20 — [Galaxy Formation / Evolution] Every galaxy is a radio source: a stellar-mass dependent minimum 150 MHz luminosity identified in the LoTSS Deep Fields — 2611.26618
+2026-11-20 — [Stats] Simulation-based inference for gravitational-wave cosmology: parameter reconstruction of a first-order electroweak phase transition — 2611.25036
+2026-11-20 — [Stats] SlotFlow-GB: A Neural Framework for Trans-Dimensional Inference of Overlapping Galactic Binaries — 2611.26057
+2026-11-20 — [Stats] Square Kilometre Array Science Data Challenge 3b: EoR inference — 2611.25823
