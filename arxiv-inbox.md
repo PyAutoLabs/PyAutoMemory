@@ -27,13 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-19
-2026-11-13 — Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) A: Strong lens catalogue overview — 2611.15883
-2026-11-13 — Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) C: Lens modelling pipeline overview — 2611.15888
-2026-11-13 — Localization of gravitational-wave source behind galaxy clusters by gravitational-wave lensing — 2611.16916
-2026-11-13 — Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) B: Discovery pipeline overview — 2611.15886
-2026-11-13 — Euclid Data Release 1 (DR1). Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) D: Photometric redshifts and the first census of strong lenses in the galaxy evolution framework — 2611.15877
-2026-11-13 — Euclid Data Release 1 (DR1). NISP spectroscopy of gravitational arcs and multiple images — 2611.15891
+last digest: 2026-11-20
 2026-11-16 — Multipoles in the IllustrisTNG simulation galaxies and implications for Strong Gravitational Lens modelling in Time-delay Cosmography — 2611.17538
 2026-11-16 — Euclid Data Release 1 (DR1). AstroVink-TREX: Automated strong gravitational lens segmentation as input for mass modelling pipelines — 2611.17894
 2026-11-16 — Euclid Data Release 1 (DR1). Enhancing deep-learning models: the impact of image processing and training data selection for strong-lens detection — 2611.17420
