@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-20
-2026-11-16 — [SMBHs] Constraining Accretion Regimes of Little Red Dots from Their Variability — 2611.18153
-2026-11-16 — [Dark Matter] Beyond the Inner Slope $γ$: A Schwarzschild-based Probe of the Core-Cusp Problem in the Milky Way Dwarf Spheroidal Galaxies — 2611.17835
-2026-11-16 — [SMBHs] Effect of galaxy-informed merger timescales on massive black hole binaries in LISA — 2611.17409
-2026-11-16 — [Stats] bihalofit-JAX: A Differentiable Code for the Nonlinear Matter Bispectrum and its Projected Statistics — 2611.18281
-2026-11-16 — [Galaxy Formation / Evolution] Unsupervised learning reveals a small number of galaxy formation pathways in IllustrisTNG — 2611.17559
-2026-11-16 — [Dark Matter] Predicting Individual Dark Matter Halo Concentrations from Their Assembly Histories — 2611.17676
-2026-11-16 — [Dark Matter] Precise Deep-Learning Reconstruction of Galaxy Cluster Mass Maps and Substructures from Optical Observations — 2611.18487
-2026-11-16 — [SMBHs] Extending an X-ray & Mid-Infrared diagnostic for absorption in Active Galactic Nuclei to higher redshifts using NuSTAR and XMM-Newton — 2611.18286
-2026-11-16 — [Stats] Gravitational-wave hierarchical inference from population samples — 2611.17428
-2026-11-16 — [SMBHs] WISE-VAULT: Decade-long Mid-Infrared Variability of WISE AGN — 2611.17996
+last digest: 2026-11-23
 2026-11-17 — [Stats] Compressed Simulation-Based Inference: Neural Posterior Estimation for Massive Data via Low-Dimensional Sketches — 2611.21286
 2026-11-17 — [Stats] Summary Sufficiency in Simulation-Based Inference via Mutual Information — 2611.21158
 2026-11-17 — [Galaxy Formation / Evolution] Interpreting JWST UV luminosity functions and angular correlation functions via a "universal language" for high-redshift galaxies — 2611.18850
@@ -98,3 +88,13 @@ last digest: 2026-11-20
 2026-11-20 — [Stats] Simulation-based inference for gravitational-wave cosmology: parameter reconstruction of a first-order electroweak phase transition — 2611.25036
 2026-11-20 — [Stats] SlotFlow-GB: A Neural Framework for Trans-Dimensional Inference of Overlapping Galactic Binaries — 2611.26057
 2026-11-20 — [Stats] Square Kilometre Array Science Data Challenge 3b: EoR inference — 2611.25823
+2026-11-23 — [SMBHs] Hotter than Little Red Dots: Two Quasars with $T\sim10^4\,\mathrm{K}$ blackbody-like continua at $z\sim4$ — 2611.27856
+2026-11-23 — [SMBHs] Little Red Dots at Cosmic Noon: Spectroscopic Identification and Broad-Line Properties — 2611.26710
+2026-11-23 — [SMBHs] The role of gas on the collisional runaway path to supermassive black hole seeds — 2611.26885
+2026-11-23 — [Stats] Diffusing the assumptions: towards realistic LISA stochastic component separation with physics-aware simulation-based inference — 2611.27848
+2026-11-23 — [Galaxy Formation / Evolution] Nearly pristine gas and hard ionizing radiation one billion years after the Big Bang — 2611.27979
+2026-11-23 — [SMBHs] Disrupted stars and captured compact objects: Combining observations from multiple messengers to infer the population of massive black holes — 2611.27742
+2026-11-23 — [SMBHs] Little Red Dots at Cosmic Noon: Spectroscopy Reveals Declining Abundance but a Non-Evolving Luminosity Function Shape — 2611.26685
+2026-11-23 — [Stats] Features investigated: A detailed study of axion monodromy inflation using CLiENT — 2611.27265
+2026-11-23 — [SMBHs] Lost in the Signal Model: Confusion Between Deterministic and Stochastic Gravitational Wave Signals in Pulsar Timing Array Data — 2611.26681
+2026-11-23 — [SMBHs] A TESS Search for Optical Variability in Intermediate-mass Black Hole Candidates — 2611.27890
