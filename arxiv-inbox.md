@@ -27,11 +27,8 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-20
-2026-11-16 — Multipoles in the IllustrisTNG simulation galaxies and implications for Strong Gravitational Lens modelling in Time-delay Cosmography — 2611.17538
-2026-11-16 — Euclid Data Release 1 (DR1). AstroVink-TREX: Automated strong gravitational lens segmentation as input for mass modelling pipelines — 2611.17894
-2026-11-16 — Euclid Data Release 1 (DR1). Enhancing deep-learning models: the impact of image processing and training data selection for strong-lens detection — 2611.17420
-2026-11-16 — Probing the Activity History of Repeating Fast Radio Bursts with Cluster Lensing — 2611.17833
+last digest: 2026-11-23
 2026-11-17 — Euclid Data Release 1 (DR1). Double-source-plane lens candidates — 2611.20166
 2026-11-17 — The mass density slope of early-type galaxies: newest results from the redshift distribution of strong gravitational lenses — 2611.20141
 2026-11-19 — A twist in the tail: GWLENS, a fast and accurate tool for wave-optics lensing of gravitational waves — 2611.24621
+2026-11-23 — Baryon-Enhanced Strong Lensing Signatures of Self-Interacting Dark Matter Subhalos — 2611.27249
