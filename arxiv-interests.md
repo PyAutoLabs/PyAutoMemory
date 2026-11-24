@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-23
-2026-11-17 — [Stats] Compressed Simulation-Based Inference: Neural Posterior Estimation for Massive Data via Low-Dimensional Sketches — 2611.21286
-2026-11-17 — [Stats] Summary Sufficiency in Simulation-Based Inference via Mutual Information — 2611.21158
-2026-11-17 — [Galaxy Formation / Evolution] Interpreting JWST UV luminosity functions and angular correlation functions via a "universal language" for high-redshift galaxies — 2611.18850
-2026-11-17 — [SMBHs] Independent interferometric observable confirms black hole shadow in M87* — 2611.20418
-2026-11-17 — [Stats] A COMPASS to the Galaxy: Joint nucleosynthetic yield set comparison and parameter inference in Galactic chemical evolution — 2611.21175
-2026-11-17 — [SMBHs] Unveiling the Multi-Phase Outflow in NGC 4151 with JWST Observations - I. Integrated Properties of the Outflow — 2611.20236
-2026-11-17 — [Dark Matter] Rest-frame annihilation lines of $\sim70$ GeV WIMPs in 23,000 stacked galaxy clusters — 2611.21595
-2026-11-17 — [SMBHs] EP241206a: A Sub-kilosecond X-Ray Flare Possibly from an Active Galactic Nucleus with a Flux Increase over 3 Orders of Magnitude — 2611.21369
-2026-11-17 — [Dark Matter] On the origin of Milky Way binary black holes with LISA — 2611.21337
-2026-11-17 — [Stats] CONGA: Compiling Gaussian Fiber Geometry for Structured Bayesian Inference — 2611.20995
+last digest: 2026-11-24
 2026-11-18 — [SMBHs] Shocks and Trails in the Circumgalactic Medium Driven by Runaway Supermassive Black Holes — 2611.21738
 2026-11-18 — [SMBHs] Dual and Binary AGN at Cosmic Dawn: The need for a JWST Program to resolve the merger channel of Early Black Hole Growth — 2611.22487
 2026-11-18 — [SMBHs] Lord/Egg of the LRDs: One geometry for its many faces — 2611.22316
@@ -98,3 +88,13 @@ last digest: 2026-11-23
 2026-11-23 — [Stats] Features investigated: A detailed study of axion monodromy inflation using CLiENT — 2611.27265
 2026-11-23 — [SMBHs] Lost in the Signal Model: Confusion Between Deterministic and Stochastic Gravitational Wave Signals in Pulsar Timing Array Data — 2611.26681
 2026-11-23 — [SMBHs] A TESS Search for Optical Variability in Intermediate-mass Black Hole Candidates — 2611.27890
+2026-11-24 — [SMBHs] Velocity-Window Dependence of the Broad H$α$ Width-Luminosity Relation in Little Red Dots — 2611.29615
+2026-11-24 — [SMBHs] Quasi-hostless LRDs with intrinsically red, faint UV continua — 2611.28209
+2026-11-24 — [SMBHs] Modeling extraordinary relativistic jets on the scale of the cosmic web — 2611.28376
+2026-11-24 — [Stats] Joint Flow-Matching Posteriors for Overlapping LISA Galactic Binaries — 2611.30872
+2026-11-24 — [Galaxy Formation / Evolution] On the effect of a redshift- and metallicity-dependent top-heavy IMF on high-redshift UV luminosity functions — 2611.31148
+2026-11-24 — [SMBHs] Dual Horizon-MAD: A New Mode of Binary Black Hole Magnetically Arrested Accretion with Saturated Horizon Magnetic Fluxes and Intermittent Minidisks — 2611.28237
+2026-11-24 — [Galaxy Formation / Evolution] Discovery of Two Hyperluminous Infrared Galaxies at $z\sim6$ — 2611.29560
+2026-11-24 — [Dark Matter] The Sensitivity of Gamma-Ray Searches for Dark Matter Annihilation in Milky Way Dwarf Galaxies: the LSST Era and Beyond — 2611.31130
+2026-11-24 — [Stats] A Cross-Domain Simulator and Benchmark for Uncertainty Quantification in Global 21-cm Inference — 2611.30444
+2026-11-24 — [Stats] Interpretable morphology-based marked statistics — 2611.31167
