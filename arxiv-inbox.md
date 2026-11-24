@@ -27,8 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-23
-2026-11-17 — Euclid Data Release 1 (DR1). Double-source-plane lens candidates — 2611.20166
-2026-11-17 — The mass density slope of early-type galaxies: newest results from the redshift distribution of strong gravitational lenses — 2611.20141
+last digest: 2026-11-24
 2026-11-19 — A twist in the tail: GWLENS, a fast and accurate tool for wave-optics lensing of gravitational waves — 2611.24621
 2026-11-23 — Baryon-Enhanced Strong Lensing Signatures of Self-Interacting Dark Matter Subhalos — 2611.27249
+2026-11-24 — Euclid Data Release 1 (DR1). Learning machine learning: Investigating the complementarity and biases of strong gravitational lens finding networks on Euclid data — 2611.31231
