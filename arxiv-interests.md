@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-24
-2026-11-18 — [SMBHs] Shocks and Trails in the Circumgalactic Medium Driven by Runaway Supermassive Black Holes — 2611.21738
-2026-11-18 — [SMBHs] Dual and Binary AGN at Cosmic Dawn: The need for a JWST Program to resolve the merger channel of Early Black Hole Growth — 2611.22487
-2026-11-18 — [SMBHs] Lord/Egg of the LRDs: One geometry for its many faces — 2611.22316
-2026-11-18 — [Stats] Baryonification V: Thermal Sunyaev-Zel'dovich maps from dark-matter-only lightcones — 2611.21733
-2026-11-18 — [SMBHs] The Impact of Seeding Threshold on Wandering Black Hole Populations and Merger Rates — 2611.21756
-2026-11-18 — [Stats] Efficient and Optimal Analysis of Galaxy Surveys on Large Scales — 2611.21718
-2026-11-18 — [Galaxy Formation / Evolution] The meaning of Milky Way mass estimates in the presence of the LMC — 2611.21732
-2026-11-18 — [Dark Matter] Probing Velocity-Dependent WIMP Dark Matter Annihilation in Large-Scale Structure — 2611.22387
-2026-11-18 — [Dark Matter] Finite-wavelength corrections to dynamical friction in fuzzy dark matter: a causal linear-response approach — 2611.22134
-2026-11-18 — [SMBHs] XQR30: ALMA Observations Reveal the Diverse Structure of Cold Gas within z>6 Quasar Host Galaxies — 2611.21755
+last digest: 2026-11-25
 2026-11-19 — [SMBHs] A Tight Broad-line Width-Luminosity Relation in Little Red Dots and Its Consequence for Virial Black Hole Masses — 2611.24217
 2026-11-19 — [SMBHs] Radio emission from a local Little Red Dot: a challenge to the ionized cocoon scenario — 2611.24387
 2026-11-19 — [SMBHs] A $10^5\,M_\odot$ Black Hole in the Bulgeless Spiral Galaxy IC 342: First Stellar-Dynamical $M_{\rm BH}$ Measurement with Keck/OSIRIS LGS-AO — 2611.24608
@@ -98,3 +88,13 @@ last digest: 2026-11-24
 2026-11-24 — [Dark Matter] The Sensitivity of Gamma-Ray Searches for Dark Matter Annihilation in Milky Way Dwarf Galaxies: the LSST Era and Beyond — 2611.31130
 2026-11-24 — [Stats] A Cross-Domain Simulator and Benchmark for Uncertainty Quantification in Global 21-cm Inference — 2611.30444
 2026-11-24 — [Stats] Interpretable morphology-based marked statistics — 2611.31167
+2026-11-25 — [SMBHs] Euclid: Discovery of a quasar at z = 8.13 hosting a 360-million-solar-mass black hole — 2611.31385
+2026-11-25 — [Stats] Machine learning enables full Bayesian inference for spinning extreme-mass-ratio inspirals — 2611.31916
+2026-11-25 — [Dark Matter] Enhanced spatial resolution and performance for N-body simulation of self-interacting dark matter — 2611.31364
+2026-11-25 — [SMBHs] AGN feedback in the multiphase inner intracluster medium of a cosmological super-resolved galaxy cluster — 2611.31367
+2026-11-25 — [SMBHs] The SDSS-V Black Hole Mapper Reverberation Mapping Project: Time-delayed Variability of a Quasar's C IV Broad Absorption Troughs — 2611.31415
+2026-11-25 — [Galaxy Formation / Evolution] Resolving the Hubble Tension at $0.1σ$ with Early Dark Energy: Key Role of the Highest-redshift Galaxies from JWST Observations — 2611.32552
+2026-11-25 — [Stats] Hesperos & Eosphoros: A Coupled Differentiable Forced-Photometry Operator and Forward Model for SPHEREx Spectrophotometry — 2611.33092
+2026-11-25 — [Stats] Parallel and perpendicular: a two-population test with POSSUM radio galaxies confirms hint of CMB birefringence — 2611.31411
+2026-11-25 — [Galaxy Formation / Evolution] The dust attenuation scaling relation in the TNG50 simulation — 2611.32592
+2026-11-25 — [Stats] Symbolic Regression Diagnostics of 1D Lyman Alpha Forest Emulator — 2611.31450
