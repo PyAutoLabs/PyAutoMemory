@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-25
-2026-11-19 — [SMBHs] A Tight Broad-line Width-Luminosity Relation in Little Red Dots and Its Consequence for Virial Black Hole Masses — 2611.24217
-2026-11-19 — [SMBHs] Radio emission from a local Little Red Dot: a challenge to the ionized cocoon scenario — 2611.24387
-2026-11-19 — [SMBHs] A $10^5\,M_\odot$ Black Hole in the Bulgeless Spiral Galaxy IC 342: First Stellar-Dynamical $M_{\rm BH}$ Measurement with Keck/OSIRIS LGS-AO — 2611.24608
-2026-11-19 — [SMBHs] Excess intergalactic heating around a dual quasar system 2.8 Gyr after the Big Bang — 2611.23487
-2026-11-19 — [SMBHs] Reconstructing the mass-redshift distribution of supermassive black holes using multiband gravitational-wave observations — 2611.24281
-2026-11-19 — [SMBHs] Powerful Radio Jets and Galaxy Assembly Align at Cosmic Noon — 2611.24490
-2026-11-19 — [SMBHs] Deep Multiwavelength Constraints on the Host Galaxies and Black-Hole Growth of Dwarf AGNs — 2611.24698
-2026-11-19 — [SMBHs] Seeing through the fog: astrophysical priors and the evidence for new physics in pulsar timing arrays — 2611.23371
-2026-11-19 — [Stats] Interpretable attention-based neural posterior estimation for fast radio burst cosmology — 2611.24542
-2026-11-19 — [Dark Matter] Leading Axion Sensitivity with Interstellar Medium Optical Line Emission — 2611.23385
+last digest: 2026-11-26
 2026-11-20 — [SMBHs] The Galaxy Activity, Torus, and Outflow Survey: N. Little Red Dots are not dust deficient: constraints from Seyfert 1 JWST spectra — 2611.26483
 2026-11-20 — [Dark Matter] Dark Matter Model Implications of a Candidate Sub-halo Near the Sun, and the Data Needed to Discriminate Among Them — 2611.25359
 2026-11-20 — [Galaxy Formation / Evolution] Top-heavy Initial Mass Functions are not enough at cosmic dawn — 2611.25027
@@ -98,3 +88,13 @@ last digest: 2026-11-25
 2026-11-25 — [Stats] Parallel and perpendicular: a two-population test with POSSUM radio galaxies confirms hint of CMB birefringence — 2611.31411
 2026-11-25 — [Galaxy Formation / Evolution] The dust attenuation scaling relation in the TNG50 simulation — 2611.32592
 2026-11-25 — [Stats] Symbolic Regression Diagnostics of 1D Lyman Alpha Forest Emulator — 2611.31450
+2026-11-26 — [SMBHs] Black holes in little red and blue dots drive no superwinds in the first 1.5 billion years — 2611.34743
+2026-11-26 — [SMBHs] Less massive black holes in faint hosts: SED fitting of Little Red Dots within the Black Hole Star scenario — 2611.33798
+2026-11-26 — [Dark Matter] Black hole accretion flows as dark matter bolometers — 2611.34172
+2026-11-26 — [Stats] When precision exceeds fidelity: systematic error quantification for inference with misspecified simulators — 2611.33282
+2026-11-26 — [SMBHs] Radio Emission From Low-redshift Little Red Dots — 2611.34144
+2026-11-26 — [Dark Matter] Towards three-dimensional dark matter mapping in the extended solar neighbourhood with Gaia Data Release 3 and deep learning — 2611.33660
+2026-11-26 — [Dark Matter] State of the UNIONS: Four Milky Way companions discovered in a systematic search for northern Local Group satellites — 2611.34775
+2026-11-26 — [SMBHs] AT2024dky as an Off-nuclear Tidal Disruption Event Candidate — 2611.33768
+2026-11-26 — [Galaxy Formation / Evolution] The THESAN-ZOOM project: interpreting candidate Population III-enriched absorption line systems during reionization — 2611.34789
+2026-11-26 — [Galaxy Formation / Evolution] Tipping the scales in Blue Jay: Dust energy balance overpredicts IR luminosity in galaxies at $z\sim2$ — 2611.34802
