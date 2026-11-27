@@ -47,17 +47,7 @@ Format:
   race a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-26
-2026-11-20 — [SMBHs] The Galaxy Activity, Torus, and Outflow Survey: N. Little Red Dots are not dust deficient: constraints from Seyfert 1 JWST spectra — 2611.26483
-2026-11-20 — [Dark Matter] Dark Matter Model Implications of a Candidate Sub-halo Near the Sun, and the Data Needed to Discriminate Among Them — 2611.25359
-2026-11-20 — [Galaxy Formation / Evolution] Top-heavy Initial Mass Functions are not enough at cosmic dawn — 2611.25027
-2026-11-20 — [SMBHs] The Cosmic Infrared Background from Population III.1 Supermassive Stars and Black Holes — 2611.25355
-2026-11-20 — [SMBHs] Little Red Dots from Primordial Vacuum Bubbles — 2611.26620
-2026-11-20 — [Galaxy Formation / Evolution] Magnolia: a highly magnetized galaxy at redshift $z\simeq9$ — 2611.25937
-2026-11-20 — [Galaxy Formation / Evolution] Every galaxy is a radio source: a stellar-mass dependent minimum 150 MHz luminosity identified in the LoTSS Deep Fields — 2611.26618
-2026-11-20 — [Stats] Simulation-based inference for gravitational-wave cosmology: parameter reconstruction of a first-order electroweak phase transition — 2611.25036
-2026-11-20 — [Stats] SlotFlow-GB: A Neural Framework for Trans-Dimensional Inference of Overlapping Galactic Binaries — 2611.26057
-2026-11-20 — [Stats] Square Kilometre Array Science Data Challenge 3b: EoR inference — 2611.25823
+last digest: 2026-11-27
 2026-11-23 — [SMBHs] Hotter than Little Red Dots: Two Quasars with $T\sim10^4\,\mathrm{K}$ blackbody-like continua at $z\sim4$ — 2611.27856
 2026-11-23 — [SMBHs] Little Red Dots at Cosmic Noon: Spectroscopic Identification and Broad-Line Properties — 2611.26710
 2026-11-23 — [SMBHs] The role of gas on the collisional runaway path to supermassive black hole seeds — 2611.26885
