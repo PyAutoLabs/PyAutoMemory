@@ -27,7 +27,7 @@ Format:
   a nightly run; prefer the Dashboard buttons.
 
 ---
-last digest: 2026-11-26
+last digest: 2026-11-27
 2026-11-23 — Baryon-Enhanced Strong Lensing Signatures of Self-Interacting Dark Matter Subhalos — 2611.27249
 2026-11-24 — Euclid Data Release 1 (DR1). Learning machine learning: Investigating the complementarity and biases of strong gravitational lens finding networks on Euclid data — 2611.31231
 2026-11-25 — VENUS: A Census of Strong Lensing in a 60-Cluster JWST Survey — 2611.33142
